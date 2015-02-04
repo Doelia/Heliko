@@ -8,7 +8,7 @@ public class InitScene : MonoBehaviour {
 
 	void Start () {
 		for (int i = 0; i < 100; i++) {
-			Instantiate(prefab, new Vector3(i * 5, 1, 0), Quaternion.identity);
+			Instantiate(prefab, new Vector3(i * 10, 1, 0), Quaternion.identity);
 		}
 	}
 	
