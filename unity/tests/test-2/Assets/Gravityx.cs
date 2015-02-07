@@ -4,7 +4,7 @@ using System.Collections;
 public class Gravityx : MonoBehaviour {
 
 	public Transform center;
-	public int force;
+	public float force;
 
 	// Use this for initialization
 	void Start () {
