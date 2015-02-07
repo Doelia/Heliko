@@ -8,6 +8,9 @@ public class AnimatedSound : MonoBehaviour {
 	
 	}
 
+
+	public AnimationClip anim;
+
 	public int delay = 20; 
 
 	int cpt = 0;
@@ -34,8 +37,13 @@ public class AnimatedSound : MonoBehaviour {
 	}
 
 	void playAnimation() {
+		this.animation.Play ();
+	
+		/*
 		float size = getSizeFromStep () / 10f;
 		this.transform.localScale = new Vector3 (.2f + size, this.transform.localScale.y, this.transform.localScale.z);
+		*/
+		playing = false;
 	}
 	
 	// Update is called once per frame
