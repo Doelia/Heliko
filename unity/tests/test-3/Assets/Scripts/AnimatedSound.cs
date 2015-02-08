@@ -14,7 +14,7 @@ public class AnimatedSound : MonoBehaviour {
 
 	void playAnimation() {
 		foreach (Transform child in transform) {
-			child.animation. Play();
+			child.animation. Play("SpotAnimation");
 		}
 	}
 	
