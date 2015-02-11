@@ -7,7 +7,7 @@ public class MovePlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		this.velocity = new Vector3 (10, 0, 0);
-		Physics.gravity = new Vector3 (0, -5, 0);
+		Physics.gravity = new Vector3 (0, -100, 0);
 	}
 	
 	// Update is called once per frame
@@ -15,7 +15,7 @@ public class MovePlayer : MonoBehaviour {
 		this.rigidbody.velocity = new Vector3(15, this.rigidbody.velocity.y, this.rigidbody.velocity.z);
 
 		if (Input.GetKeyDown ("space")) {
-			this.rigidbody.velocity = new Vector3(15, 0, this.rigidbody.velocity.z);
+			this.rigidbody.velocity = new Vector3(1, 10, this.rigidbody.velocity.z);
 		}
 
 	}

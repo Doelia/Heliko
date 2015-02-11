@@ -8,21 +8,35 @@ public class AnimatedSound : MonoBehaviour {
 	
 	}
 
-	public int delay = 20; 
+	public float tempo = 144;
+	float d;
 
-	int cpt = 0;
+	float getDeltaTempo() {
+		return 60.0f / tempo;
+	}
+
+	int deltaTimeMilli() {
+		return (int) (Time.deltaTime * 1000);
+	}
 
 	void playAnimation() {
 		foreach (Transform child in transform) {
-			child.animation. Play();
+			foreach (Transform cchild in child.transform) {
+				cchild.animation. Play();
+			}
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (cpt % delay == 0) {
+		Debug.Log ("d="+d);
+		d += Time.deltaTime;
+
+		if (d > this.getDeltaTempo()) {
+			Debug.Log("Play Animation!");
+			d = 0;
 			playAnimation();
 		}
-		cpt++;
+
 	}
 }
