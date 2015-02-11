@@ -6,7 +6,7 @@
 \contentsline {paragraph}{Jeux bas\IeC {\'e}s sur la musique}{3}
 \contentsline {paragraph}{Jeux bas\IeC {\'e}s sur l\IeC {\textquoteright }habilit\IeC {\'e} ryhtmique}{3}
 \contentsline {paragraph}{Jeu de type \IeC {\textquotedblleft }Runner\IeC {\textquotedblright }}{3}
-\contentsline {section}{\numberline {3}Articles scientifiques}{3}
+\contentsline {section}{\numberline {3}Documents \IeC {\`a} lire}{3}
 \contentsline {section}{\numberline {4}Concept approfondi}{4}
 \contentsline {subsection}{\numberline {4.1}Principe de progression}{4}
 \contentsline {paragraph}{}{4}
