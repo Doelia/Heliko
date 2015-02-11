@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.11)  11 FEB 2015 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.11)  11 FEB 2015 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,56 +461,56 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <protoPlanete.png, id=20, 703.12688pt x 560.0925pt>
 File: protoPlanete.png Graphic file (type png)
  <use protoPlanete.png>
-Package pdftex.def Info: protoPlanete.png used on input line 58.
+Package pdftex.def Info: protoPlanete.png used on input line 61.
 (pdftex.def)             Requested size: 281.24576pt x 224.03302pt.
 
-<rhythmParadise.png, id=22, 628.59843pt x 432.86719pt>
+[4 <./protoPlanete.png>]
+<rhythmParadise.png, id=27, 628.59843pt x 432.86719pt>
 File: rhythmParadise.png Graphic file (type png)
 
 <use rhythmParadise.png>
-Package pdftex.def Info: rhythmParadise.png used on input line 68.
+Package pdftex.def Info: rhythmParadise.png used on input line 71.
 (pdftex.def)             Requested size: 251.4349pt x 173.1438pt.
- [4 <./protoPlanete.png>] [5 <./rhythmParadise.png>]
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+ [5 <./rhythmParadise.png>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
-[7] <oufGantt3.pdf, id=39, 831.105pt x 2436.10126pt>
+[7] [8] <oufGantt3.pdf, id=42, 831.105pt x 2436.10126pt>
 File: oufGantt3.pdf Graphic file (type pdf)
  <use oufGantt3.pdf>
-Package pdftex.def Info: oufGantt3.pdf used on input line 145.
+Package pdftex.def Info: oufGantt3.pdf used on input line 148.
 (pdftex.def)             Requested size: 831.10297pt x 2436.09535pt.
 File: oufGantt3.pdf Graphic file (type pdf)
 
 <use oufGantt3.pdf>
-Package pdftex.def Info: oufGantt3.pdf used on input line 145.
+Package pdftex.def Info: oufGantt3.pdf used on input line 148.
 (pdftex.def)             Requested size: 831.10297pt x 2436.09535pt.
- <oufGantt3.pdf, id=42, page=1, 831.105pt x 2436.10126pt>
+ <oufGantt3.pdf, id=45, page=1, 831.105pt x 2436.10126pt>
 File: oufGantt3.pdf Graphic file (type pdf)
 
 <use oufGantt3.pdf, page 1>
-Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 145.
+Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 148.
 (pdftex.def)             Requested size: 831.10297pt x 2436.09535pt.
 File: oufGantt3.pdf Graphic file (type pdf)
  <use oufGantt3.pdf, page 1>
-Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 145.
+Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 148.
 (pdftex.def)             Requested size: 288.30405pt x 845.06517pt.
 File: oufGantt3.pdf Graphic file (type pdf)
 
 <use oufGantt3.pdf, page 1>
-Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 145.
+Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 148.
 (pdftex.def)             Requested size: 288.30405pt x 845.06517pt.
 File: oufGantt3.pdf Graphic file (type pdf)
  <use oufGantt3.pdf, page 1>
-Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 145.
+Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 148.
 (pdftex.def)             Requested size: 288.30405pt x 845.06517pt.
 File: oufGantt3.pdf Graphic file (type pdf)
 
 <use oufGantt3.pdf, page 1>
-Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 145.
+Package pdftex.def Info: oufGantt3.pdf, page1 used on input line 148.
 (pdftex.def)             Requested size: 288.30405pt x 845.06517pt.
- [8 <./oufGantt3.pdf>] (./feuilleDeRoute.aux) ) 
+ [9 <./oufGantt3.pdf>] (./feuilleDeRoute.aux) ) 
 Here is how much of TeX's memory you used:
  4191 strings out of 493117
  57763 string characters out of 6135432
@@ -530,10 +530,10 @@ pe1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
 1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
 public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
 blic/cm-super/sfti1200.pfb>
-Output written on feuilleDeRoute.pdf (8 pages, 795101 bytes).
+Output written on feuilleDeRoute.pdf (9 pages, 797489 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
+ 585 PDF objects out of 1000 (max. 8388607)
+ 311 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

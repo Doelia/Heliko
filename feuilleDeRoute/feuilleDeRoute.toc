@@ -12,21 +12,21 @@
 \contentsline {paragraph}{}{4}
 \contentsline {paragraph}{}{4}
 \contentsline {paragraph}{}{4}
-\contentsline {paragraph}{}{4}
-\contentsline {subsection}{\numberline {4.2}Concept de mini-jeu}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {4.2}Concept de mini-jeu}{5}
 \contentsline {paragraph}{}{5}
 \contentsline {paragraph}{}{5}
 \contentsline {paragraph}{}{5}
 \contentsline {paragraph}{Notions techniques}{5}
-\contentsline {subsection}{\numberline {4.3}Niveau infini}{5}
-\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {4.3}Niveau infini}{6}
+\contentsline {paragraph}{}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {subsection}{\numberline {4.4}Partage}{6}
 \contentsline {subsection}{\numberline {4.5}Mon\IeC {\'e}tisation}{6}
 \contentsline {section}{\numberline {5}Dans l'optique du TER}{6}
 \contentsline {paragraph}{}{6}
-\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{7}
 \contentsline {paragraph}{Aspects techniques int\IeC {\'e}gr\IeC {\'e}s au TER}{7}
 \contentsline {paragraph}{Objectifs}{7}
 \contentsline {section}{\numberline {6}R\IeC {\^o}les dans l'\IeC {\'e}quipe}{7}
-\contentsline {section}{\numberline {7}Planning : Diagramme de Gantt}{7}
+\contentsline {section}{\numberline {7}Planning : Diagramme de Gantt}{8}
