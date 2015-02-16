@@ -4,7 +4,7 @@ using System.Collections;
 public class BPMControlor : MonoBehaviour {
 
 	float timeStart = 0;
-	float tempo = 120.0f;
+	float tempo = 150.0f;
 	float d = 0;
 	float lastTime;
 
