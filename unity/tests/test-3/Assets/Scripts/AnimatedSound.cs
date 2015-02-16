@@ -8,7 +8,7 @@ public class AnimatedSound : MonoBehaviour {
 	
 	}
 
-	public float tempo = 144;
+	public float tempo = 50;
 	float d;
 
 	float getDeltaTempo() {

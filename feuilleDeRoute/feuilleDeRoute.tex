@@ -11,7 +11,7 @@
 
 \title{\textbf{Réalisation d'un jeu 2D pour mobile}\\Feuille de route}
 \author{\textit{Équipe OufMania}\\Noé Le Philippe\\Stéphane Wouters\\Thibaut Castanié\\Jolan Konig}
-\date{\textit{Master IMAGINA}}
+\date{\textit{Encadré par Mathieu Lafourcade}}
 
 \maketitle
 \thispagestyle{empty}
@@ -33,9 +33,9 @@ OufMania
 \item Jolan Konig - jolan.konig@etud.univ-montp2.fr
 \end{itemize}
 \section{Analyse de l'existant}
-Plusieurs jeux au gameplay approchant celui visé par l’équipe ont étés testés. Voici ce qu’il en ressort au niveau du gameplay.
+Plusieurs jeux au gameplay approchant celui visé par l’équipe ont été testés. Voici ce qu’il en ressort au niveau du gameplay.
 \paragraph{Jeux basés sur la musique}
-On y trouve souvent une musique par niveau. Il faut taper sur plusieurs notes en synchronisation avec la musique qui est joué en arrière-plan. Les notes ont généralement été posés manuellement par les concepteurs, en fonction du niveau. Certains jeux permettent de charger directement ses propres MP3, la génération du niveau est donc faite à la volée en fonction du fichier.\\
+On y trouve souvent une musique par niveau. Il faut taper sur plusieurs notes en synchronisation avec la musique qui est jouée en arrière-plan. Les notes ont généralement été posées manuellement par les concepteurs, en fonction du niveau. Certains jeux permettent de charger directement ses propres MP3, la génération du niveau est donc faite à la volée en fonction du fichier.\\
 \textit{Exemples : Guitar Hero sur console, TapTap sur iOS et applications de promotions d’album.}
 \paragraph{Jeux basés sur l’habilité ryhtmique}
 Il existe aussi des jeux basés sur l’habileté de l’utilisateur et sa vitesse de réaction où le principe est de taper sur l’écran au bon moment et au bon endroit. L'accent est mis sur le style graphique, il n'y a pas une grande variété dans les musiques et elles n'ont pas de lien direct avec les niveaux. La musique n'est là que pour apporter du rythme ainsi qu’un élément addictif, si elle est agréable à l’oreille.\\
@@ -43,6 +43,15 @@ Il existe aussi des jeux basés sur l’habileté de l’utilisateur et sa vites
 \paragraph{Jeu de type “Runner”}
 Enfin, certains jeux ne proposent qu’un gameplay rapide et de beaux graphismes, en ne prêtant que peu d’importance à la musique. Le contenu du jeu est ainsi plus fourni en niveaux, en personnages et fonctionnalités et les graphismes du jeu sont donc, en conséquence, plus approfondis. L’utilisateur ne joue qu’en fonction de ce qui apparaît à l’écran. La musique peut changer en fonction de l’avancée dans le niveau.\\
 \textit{Exemples : Temple Run sur mobile. Bit.Trip sur Wii et PC.}
+
+\section{Documents à lire}
+\begin{itemize}
+\item \textbf{Defining Game Mechanics}, by Miguel Sicart
+\item \textbf{Sonic Mechanics: Audio as Gameplay}, by Aaron Oldenburg 
+\item \textbf{Subjective Measures of the Influence of Music Customization on the Video Game Play Experience: A Pilot Study} by Alexander Wharton, Karen Collins
+\item \textbf{Play Along - An Approach to Videogame Music} by Zach Whalen
+\end{itemize}
+
 
 \section{Concept approfondi}
 \subsection{Principe de progression}
@@ -73,12 +82,12 @@ Il existe plusieurs états pour un mini jeu :
 \item Parfait
 \end{itemize}
 \paragraph{Notions techniques}
-Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’un nouveau concept rythmique. Il n’est pas possible de les générer à la volée. Les graphismes très simples en 2D seront utilisés, de type dessins. On mettra en place des mécaniques précises qu’on pourra réutiliser sur chacun des mini jeux pour les créer le plus facilement possible.
+Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’un nouveau concept rythmique. Il n’est pas possible de les générer à la volée. On mettra en place des mécaniques précises qu’on pourra réutiliser sur chacun des mini jeux pour les créer le plus facilement possible. Pour les graphismes, de très simples dessins en 2D seront utilisés,. 
 
 \subsection{Niveau infini}
 \paragraph{} Une fois tous les éléments débloqués, le joueur atteint le niveau final qui est un mode infini arcade sur la musique assemblée dans lequel il peut essayer de réaliser le meilleur score possible en incarnant l’escargot. (Qui s’approche de notre idée de départ, mais de façon moins importante).
 
-\paragraph{} La somme de ses scores réalisés au fil du temps sont convertis sous la forme d’une monnaie avec laquelle il peut acheter des effets de lumières et décorations supplémentaires à disposer sur sa planète afin de la personnaliser.
+\paragraph{} La somme de ses scores réalisés au fil du temps est convertie sous la forme d’une monnaie avec laquelle il peut acheter des effets de lumières et décorations supplémentaires à disposer sur sa planète afin de la personnaliser.
 
 \subsection{Partage}
 L’avancement des joueurs, et la personnalisation des planètes, est stockée dans le cloud. Un joueur peut montrer sa planète à ses amis afin de montrer son avancement et ses scores.
@@ -98,17 +107,6 @@ En quittant le principe du mode de jeu arcade infini de type “Runner”, nous 
 
 \paragraph{} Le problème dans ce concept est sûrement la durée de vie du jeu. Une fois les mini-jeux réalisés, le joueur n’a plus de nouvelle activité à faire en dehors du niveau infini. Mais cela constitue une bonne base pour d’éventuels ajouts dans le futur. Pour ce qui est de l'intérêt du jeu, nous nous éloignerons du phénomène du fort "taux de rebond" des joueurs dans un jeu de type runner, qui aurait pu être de mauvaise qualité.
 
-\paragraph{Objectifs} Pour ce qui est de la gestion du temps, nous avons pour le moment du mal à évaluer si nous pouvons réaliser 100\% du projet. Dans le doute, voici la liste des fonctionnalités à réaliser en fonction de leur importance pour un jeu jouable :
-\begin{enumerate}
-\item Réalisation de la planète animée et de ses éléments sonores (activables/désactivables)
-\item Réalisation du moteur de mini-jeux rythmiques
-\item Réalisation du mode de jeu infini/arcade
-\\\\Puis :
-\item Réalisation du système d’achat de lumières et de décorations supplémentaires avec la monnaie
-\item Réalisation du système de partage in-cloud des planètes
-\item Ajout d’autres planètes comprenant d’autres mini-jeux
-\end{enumerate}
-
 \paragraph{Aspects techniques intégrés au TER}
 \begin{itemize}
 \item Développement d’un jeu pour mobile de A à Z (de sa conception à sa mise en ligne)
@@ -123,9 +121,30 @@ En quittant le principe du mode de jeu arcade infini de type “Runner”, nous 
 \item Animation de scènes 2D
 \end{itemize}
 
+\paragraph{Objectifs} Pour ce qui est de la gestion du temps, nous avons pour le moment du mal à évaluer si nous pouvons réaliser 100\% du projet. Dans le doute, voici la liste des fonctionnalités à réaliser en fonction de leur importance pour un jeu jouable :
+\begin{enumerate}
+\item Réalisation de la planète animée et de ses éléments sonores (activables/désactivables)
+\item Réalisation du moteur de mini-jeux rythmiques
+\item Réalisation du mode de jeu infini/arcade
+\\\\Puis :
+\item Réalisation du système d’achat de lumières et de décorations supplémentaires avec la monnaie
+\item Réalisation du système de partage in-cloud des planètes
+\item Ajout d’autres planètes comprenant d’autres mini-jeux
+\end{enumerate}
+
+
+\section{Rôles dans l'équipe}
+Bien que nous participerons tous au développement du projet et que nous nous attribuerons les tâches au fil du temps en fonction du diagramme de Gantt et de l'avancement du projet, nous avons fixés les rôles principaux :
+\begin{itemize}
+\item Chef de projet, Stéphane Wouters
+\item Responsable programmation, Noé Le Philippe
+\item Responsable audio-visuel, Thibaut Castanié
+\item Responsable intégration iOS/Android, Jolan Konig
+\end{itemize}
+
 \section{Planning : Diagramme de Gantt}
 \newpage
 %\includegraphics[scale=0.4,angle=90,origin=c]{diagGantt.png}
-\includepdf{oufGantt2.pdf}
+\includepdf{oufGantt3.pdf}
 
 \end{document}
