@@ -11,7 +11,11 @@ public class Metronome : TempoReceiver {
 	
 	}
 
-	public override void onNotify() {
-		this.GetComponent<AudioSource> ().Play ();
+	public override void onStep() {
+
+	}
+
+	public override void onHalfStep() {
+		//this.GetComponent<AudioSource> ().Play ();
 	}
 }

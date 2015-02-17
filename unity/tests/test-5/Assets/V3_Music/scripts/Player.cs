@@ -21,7 +21,8 @@ public class Player : MonoBehaviour {
 	
 	void goMove() {
 		float d = bc.getScore();
-		this.changeColor(d);
+		//Debug.Log ("delay = "+bc.timeSinceLastTick ());
+		//this.changeColor(d);
 
 		anim.SetBool ("change", true);
 		sound.Play();
