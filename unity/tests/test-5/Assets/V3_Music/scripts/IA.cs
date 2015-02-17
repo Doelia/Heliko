@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class IA : MonoBehaviour {
+public class IA : TempoReceiver {
 
 	Animator anim;
 
@@ -17,13 +17,12 @@ public class IA : MonoBehaviour {
 		removeNextFrame = false;
 	}
 
-	public void onNotify() {
+	public override void onNotify() {
 		goMove();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 		if (removeNextFrame) {
 			anim.SetBool ("change", false);
 		} else {

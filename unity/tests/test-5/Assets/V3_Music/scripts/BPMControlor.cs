@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class BPMControlor : MonoBehaviour {
 
 	public float tempo = 130.0f;
-	float d = 0.3f;
+	public float d = 0.3f;
 	float lastTime;
 
 	public float getDeltaTempo() {
@@ -32,7 +32,12 @@ public class BPMControlor : MonoBehaviour {
 	void notifyChildren() {
 		foreach (Transform s in transform) {
 			foreach (Transform s1 in s) {
-				s1.GetComponent<IA>().onNotify();
+				if (s1.GetComponent<TempoReceiver>() != null) {
+					s1.GetComponent<TempoReceiver>().onNotify();
+				} else {
+					Debug.LogError(s1.name+" : GetComponent TempoReceiver null");
+				}
+
 			}
 		}
 	}
