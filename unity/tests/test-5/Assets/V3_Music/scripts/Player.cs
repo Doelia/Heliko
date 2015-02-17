@@ -16,7 +16,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void changeColor(float x) {
-		//this.GetComponent<SpriteRenderer>().color = new Color (1-x, x, 0);
+		this.GetComponent<SpriteRenderer>().color = new Color (1-x, x, 0);
 	}
 	
 	void goMove() {
@@ -26,6 +26,8 @@ public class Player : MonoBehaviour {
 		anim.SetBool ("change", true);
 		sound.Play();
 	}
+
+	float lastTime = 0;
 	
 	// Update is called once per frame
 	void Update () {
@@ -38,6 +40,8 @@ public class Player : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space)) {
+			float diff = Time.time - lastTime;
+			lastTime = Time.time;
 			goMove();
 		}
 	}

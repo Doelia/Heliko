@@ -3,9 +3,9 @@ using System.Collections;
 
 public class BPMControlor : MonoBehaviour {
 
+	public AudioSource music;
 	public float tempo = 130.0f;
-	public float d = 0.3f;
-	float lastTime;
+	public float d = 0;
 
 	public float getDeltaTempo() {
 		return (60.0f / tempo);
@@ -19,6 +19,10 @@ public class BPMControlor : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		music.Play ();
+		Debug.Log ("Delta 129 = " + (60f / 130f));
+		Debug.Log ("Delta 130 = " + (60f / 130f));
+		Debug.Log ("Delta 131 = " + (60f / 131f));
 	}
 
 	public float timeBeforeNextTick() {
@@ -42,9 +46,18 @@ public class BPMControlor : MonoBehaviour {
 		}
 	}
 
+	float lastTime = 0;
+
+	private float getTime() {
+		return (float) music.timeSamples / 44000f;
+	}
+
 	// Update is called once per frame
 	void Update () {
-		d += Time.deltaTime;
+
+		d += this.getTime() - lastTime;
+		lastTime = this.getTime();
+		
 		if (d > this.getDeltaTempo()) {
 			d = (d - this.getDeltaTempo());
 			this.notifyChildren();
