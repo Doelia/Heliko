@@ -7,7 +7,7 @@ public class MovePlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		this.velocity = new Vector3 (10, 0, 0);
-		Physics.gravity = new Vector3 (0, -500, 0);
+		Physics.gravity = new Vector3 (0, -10, 0);
 	}
 	
 	// Update is called once per frame
