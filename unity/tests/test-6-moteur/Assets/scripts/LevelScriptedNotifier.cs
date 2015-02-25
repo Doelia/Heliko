@@ -14,14 +14,10 @@ public class LevelScriptedNotifier : TempoReceiver {
 	private int eventIndex;
 	public BPMControlor bpm;
 
-	public void Start() {
-		Debug.Log ("in start");
-		loadData ();
-	}
-
 	ArrayList observers;
 
 	void Start() {
+		loadData ();
 		this.observers = new ArrayList ();
 	}
 	

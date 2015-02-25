@@ -80,7 +80,5 @@ public class BPMControlor : MonoBehaviour {
 			dHalf = (dHalf - this.getDeltaTempo());
 			this.notifyChildren(false);
 		}
-		
-		
 	}
 }
