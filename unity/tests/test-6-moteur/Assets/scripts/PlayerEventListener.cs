@@ -4,6 +4,9 @@ using System.Collections;
 public class PlayerEventListener : MonoBehaviour {
 
 	void Start() {
+	}
+
+	public void Awake() {
 		this.observers = new ArrayList ();
 	}
 
@@ -16,7 +19,7 @@ public class PlayerEventListener : MonoBehaviour {
 	void Update() {
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.onFinger (1);
-			e.onFinger (2);
+			//e.onFinger (2);
 		}
 	}
 
