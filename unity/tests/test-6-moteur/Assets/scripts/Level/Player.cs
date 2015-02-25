@@ -7,8 +7,8 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver,PlayerEventReceiver  
 	public PlayerEventListener playerEventListener;
 
 	void Start() {
-		//playerEventListener.connect(this);
-		//levelScriptNotifier.connect (this);
+		playerEventListener.connect(this);
+		levelScriptNotifier.connect (this);
 	}
 
 	public void onEventType (int type) {
@@ -16,11 +16,11 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver,PlayerEventReceiver  
 	}
 
 	public void onFinger(int type) {
-		/*if (this.levelScripted.isGood (type)) {
-			Debug.Log ("Good!");
+		if (this.levelScriptNotifier.isGood (type)) {
+			this.renderer.material.color = new Color(0,1,0);
 		} else {
-			Debug.Log ("Bad");
-		}*/
+			this.renderer.material.color = new Color(1,0,0);
+		}
 	}
 
 
