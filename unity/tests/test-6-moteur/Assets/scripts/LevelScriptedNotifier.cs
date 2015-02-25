@@ -10,13 +10,20 @@ public class LevelScriptedNotifier : TempoReceiver {
 
 	public TextAsset levelData;
 	private int[] stepEvents;
-	private int[] halfStepsEvents;
+	private int[] halfStepEvents;
 	private int eventIndex;
+	public BPMControlor bpm;
+
+	public void Start() {
+		Debug.Log ("in start");
+		loadData ();
+	}
 
 	public void loadData() {
+		Debug.Log (levelData.text);
 		string [] tracks = levelData.text.Split ('\n');
 		stepEvents = stringToIntEvents (tracks [0]);
-		halfStepsEvents = stringToIntEvents (tracks [1]);
+		halfStepEvents = stringToIntEvents (tracks [1]);
 	}
 
 	private int [] stringToIntEvents(string s) {
@@ -44,6 +51,16 @@ public class LevelScriptedNotifier : TempoReceiver {
 	}
 
 	public override void onHalfStep() {
-		notifyChildren (stepEvents [eventIndex]);
+		notifyChildren (halfStepEvents [eventIndex]);
+	}
+
+	public bool isGood (int type) {
+		if (bpm.isOnStep ()) {
+			return stepEvents [eventIndex] == type;
+		} else if (bpm.isOnHalfStep ()) {
+			return halfStepEvents [eventIndex] == type;
+		} else {
+			return false;
+		}
 	}
 }
