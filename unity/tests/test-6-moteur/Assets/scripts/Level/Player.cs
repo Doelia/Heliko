@@ -7,8 +7,8 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver,PlayerEventReceiver  
 	public PlayerEventListener playerEventListener;
 
 	void Start() {
-		playerEventListener.connect(this);
-		levelScriptNotifier.connect (this);
+		//playerEventListener.connect(this);
+		//levelScriptNotifier.connect (this);
 	}
 
 	public void onEventType (int type) {

@@ -16,9 +16,13 @@ public class LevelScriptedNotifier : TempoReceiver {
 
 	ArrayList observers;
 
-	void Start() {
-		loadData ();
+
+	public void Awake() {
 		this.observers = new ArrayList ();
+	}
+
+	public void Start() {
+		loadData ();
 	}
 	
 	public void connect(LevelScriptedReceiver r) {
