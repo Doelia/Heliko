@@ -13,6 +13,16 @@ public class LevelScriptedNotifier : TempoReceiver {
 	private int[] halfStepsEvents;
 	private int eventIndex;
 
+	ArrayList observers;
+
+	void Start() {
+		this.observers = new ArrayList ();
+	}
+	
+	public void connect(LevelScriptedReceiver r) {
+		this.observers.Add (r);
+	}
+
 	public void loadData() {
 		string [] tracks = levelData.text.Split ('\n');
 		stepEvents = stringToIntEvents (tracks [0]);
@@ -29,13 +39,8 @@ public class LevelScriptedNotifier : TempoReceiver {
 	}
 
 	private void notifyChildren(int type) {
-		foreach (Transform s1 in transform) {
-			if (s1.GetComponent<LevelScriptedReceiver>() != null) {
-				s1.GetComponent<LevelScriptedReceiver>().onEventType(type);
-			} else {
-				Debug.LogError(s1.name+" : GetComponent LevelScriptedReceiver null");
-			}
-				
+		foreach (LevelScriptedReceiver e in this.observers) {
+			e.onEventType(type);
 		}
 	}
 	                                
