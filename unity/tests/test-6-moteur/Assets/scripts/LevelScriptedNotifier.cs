@@ -6,12 +6,29 @@ using System.Collections;
  * 
  */
 
-
 public class LevelScriptedNotifier : TempoReceiver {
 
-	//
+	public TextAsset levelData;
+	private int[] stepEvents;
+	private int[] halfStepsEvents;
+	private int eventIndex;
 
-	public void notifChilds(int type) {
+	public void loadData() {
+		string [] tracks = levelData.text.Split ('\n');
+		stepEvents = stringToIntEvents (tracks [0]);
+		halfStepsEvents = stringToIntEvents (tracks [1]);
+	}
+
+	private int [] stringToIntEvents(string s) {
+		string [] events = s.Split (' ');
+		int [] toReturn = new int[events.Length];
+		for (int i = 0; i < events.Length; i++) {
+			toReturn [i] = int.Parse (events [i]);
+		}
+		return toReturn;
+	}
+
+	private void notifyChildren(int type) {
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<LevelScriptedReceiver>() != null) {
 				s1.GetComponent<LevelScriptedReceiver>().onEventType(type);
@@ -23,10 +40,10 @@ public class LevelScriptedNotifier : TempoReceiver {
 	}
 	                                
 	public override void onStep() {
-		this.notifChilds (1); // TEST
+		notifyChildren (stepEvents [eventIndex++]);
 	}
 
 	public override void onHalfStep() {
-		this.notifChilds (2); // TEST
+		notifyChildren (stepEvents [eventIndex]);
 	}
 }
