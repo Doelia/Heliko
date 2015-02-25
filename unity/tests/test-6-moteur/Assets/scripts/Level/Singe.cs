@@ -6,7 +6,7 @@ public class Singe : LevelScriptedReceiver {
 	public int typeListen;
 
 	public override void onEventType (int type) {
-		if (typeListen == 1) {
+		if (typeListen == type) {
 			foreach (Transform s1 in transform) {
 				s1.GetComponent<Animator>().SetTrigger("jump");
 			}
