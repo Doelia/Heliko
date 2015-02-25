@@ -61,11 +61,16 @@ public class LevelScriptedNotifier : TempoReceiver {
 
 	public bool isGood (int type) {
 		if (bpm.isOnStep ()) {
-			return stepEvents [eventIndex] == type;
+			if (stepEvents [eventIndex] == type) {
+				stepEvents [eventIndex] = -1;
+				return true;
+			}
 		} else if (bpm.isOnHalfStep ()) {
-			return halfStepEvents [eventIndex] == type;
-		} else {
-			return false;
+			if (halfStepEvents [eventIndex] == type) {
+				halfStepEvents [eventIndex] = -1;
+				return true;
+			}
 		}
+		return false;
 	}
 }
