@@ -9,6 +9,8 @@ using System.Collections;
 
 public class LevelScriptedNotifier : TempoReceiver {
 
+	//
+
 	public void notifChilds(int type) {
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<LevelScriptedReceiver>() != null) {
@@ -21,7 +23,7 @@ public class LevelScriptedNotifier : TempoReceiver {
 	}
 	                                
 	public override void onStep() {
-
+		this.notifChilds (1); // TEST
 	}
 
 	public override void onHalfStep() {
