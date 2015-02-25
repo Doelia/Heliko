@@ -27,6 +27,6 @@ public class LevelScriptedNotifier : TempoReceiver {
 	}
 
 	public override void onHalfStep() {
-
+		this.notifChilds (2); // TEST
 	}
 }

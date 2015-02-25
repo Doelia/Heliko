@@ -27,16 +27,14 @@ public class BPMControlor : MonoBehaviour {
 	}
 	
 	void notifyChildren(bool isStep) {
-		foreach (Transform s in transform) {
-			foreach (Transform s1 in s) {
-				if (s1.GetComponent<TempoReceiver>() != null) {
-					if (isStep)
-						s1.GetComponent<TempoReceiver>().onStep();
-					else
-						s1.GetComponent<TempoReceiver>().onHalfStep();
-				} else {
-					Debug.LogError(s1.name+" : GetComponent TempoReceiver null");
-				}
+		foreach (Transform s1 in transform) {
+			if (s1.GetComponent<TempoReceiver>() != null) {
+				if (isStep)
+					s1.GetComponent<TempoReceiver>().onStep();
+				else
+					s1.GetComponent<TempoReceiver>().onHalfStep();
+			} else {
+				Debug.LogError(s1.name+" : GetComponent TempoReceiver null");
 			}
 		}
 	}
