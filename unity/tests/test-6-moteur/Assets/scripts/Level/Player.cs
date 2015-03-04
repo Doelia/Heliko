@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour ,LevelScriptedReceiver,PlayerEventReceiver  {
+public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver  {
 
 	public LevelScriptedNotifier levelScriptNotifier;
 	public PlayerEventListener playerEventListener;
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver,PlayerEventReceiver  
 	}
 
 	public void onEventType (int type) {
-
+		
 	}
 
 	public void onFinger(int type) {
