@@ -17,12 +17,12 @@ public class PlayerEventListener : MonoBehaviour {
 	}
 
 	void Update() {
-		if (Input.GetKey(KeyCode.O))
+		if (Input.GetKeyDown(KeyCode.O))
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.onFinger (2);
 		}
 
-		if (Input.GetKey(KeyCode.P))
+		if (Input.GetKeyDown(KeyCode.P))
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.onFinger (1);
 		}
