@@ -6,59 +6,45 @@ public class BPMControlor : MonoBehaviour
 
 	public AudioSource music;
 	public float tempo = 130.0f;
-	public float d = 0;
+	public float errorMargin = 100; // en MS
+	public int offsetStart = 0; // EN MS
+
+	private float d = 0;
+	private float dHalf = 0;
 	private bool notifiedEnter = false;
 	private bool notifiedExit = false;
-	public float errorMargin = 100; // en MS
 
-	float dHalf = 0;
-
-	public float getDeltaTempo ()
-	{
+	public float getDeltaTempo () {
 		return (60.0f / tempo);
 	}
 
-	public float getScore ()
-	{
-		float s = this.timeSinceLastTick () / this.getDeltaTempo ();
-		float s2 = this.timeBeforeNextTick () / this.getDeltaTempo ();
-		return 1 - (Mathf.Min (s, s2) * 2);
-	}
-
-	public bool isOnStep ()
-	{
+	// Donne l'écart en MS avec le step parfait (0 si parfait)
+	public float getScore () {
 		float t = timeSinceLastTick (); // Plus en plus négatif
 		float t2 = timeBeforeNextTick (); // Plus en plus positif
-		float diff = Mathf.Min (t, t2) * 1000; // en MS
-		//Debug.Log ("Diff = " + diff);
-		return (diff < errorMargin);
+		return Mathf.Min (t, t2) * 1000; // en MS
 	}
 
-	public bool isOnHalfStep ()
-	{
-		float f1 = (getDeltaTempo () * 0.5f) * (1 + errorMargin);
-		float f2 = (getDeltaTempo () * 0.5f) * (1 - errorMargin);
-		return d < f1 && d > f2;
+	public bool isOnStep () {
+		return (this.getScore () < errorMargin);
 	}
 
-	void Start ()
-	{
+	void Start () {
 		music.Play ();
+		d = (float) offsetStart / 1000.0f;
+		Debug.Log ("d="+d);
 		this.dHalf = d + this.getDeltaTempo () / 2;
 	}
 	
-	public float timeBeforeNextTick ()
-	{
+	public float timeBeforeNextTick () {
 		return this.getDeltaTempo () - d;
 	}
 	
-	public float timeSinceLastTick ()
-	{
+	public float timeSinceLastTick () {
 		return d;
 	}
 	
-	void notifyChildren ()
-	{
+	void notifyChildren () {
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
 				s1.GetComponent<TempoReceiver> ().onStep ();
@@ -68,8 +54,7 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	void notifyExitSuccessWindow ()
-	{
+	void notifyExitSuccessWindow () {
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
 				s1.GetComponent<TempoReceiver> ().onSuccessWindowExit ();
@@ -79,8 +64,7 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	void notifyEnterSuccessWindow ()
-	{
+	void notifyEnterSuccessWindow () {
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
 				s1.GetComponent<TempoReceiver> ().onSuccessWindowEnter ();
@@ -92,13 +76,11 @@ public class BPMControlor : MonoBehaviour
 	
 	float lastTime = 0;
 	
-	private float getTime ()
-	{
+	private float getTime () {
 		return (float)music.timeSamples / (float)music.clip.frequency;
 	}
 
-	private bool exitedSuccessWindow ()
-	{
+	private bool exitedSuccessWindow () {
 		if (!notifiedExit && !isOnStep ()) {
 			notifiedExit = true;
 			notifiedEnter = false;
@@ -116,11 +98,9 @@ public class BPMControlor : MonoBehaviour
 		}
 		return false;
 	}
-
 	
-	void Update ()
-	{
-		
+	void Update () {
+
 		float diff = this.getTime () - lastTime;
 		lastTime = this.getTime ();
 		d += diff;
@@ -128,6 +108,11 @@ public class BPMControlor : MonoBehaviour
 		
 		if (d > this.getDeltaTempo ()) {
 			d = (d - this.getDeltaTempo ());
+			this.notifyChildren ();
+		}
+
+		if (dHalf > this.getDeltaTempo ()) {
+			dHalf = (dHalf - this.getDeltaTempo ());
 			this.notifyChildren ();
 		}
 
@@ -139,9 +124,6 @@ public class BPMControlor : MonoBehaviour
 			this.notifyExitSuccessWindow ();
 		}
 		
-		if (dHalf > this.getDeltaTempo ()) {
-			dHalf = (dHalf - this.getDeltaTempo ());
-			this.notifyChildren ();
-		}
+
 	}
 }

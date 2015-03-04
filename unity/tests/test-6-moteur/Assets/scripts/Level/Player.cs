@@ -20,7 +20,7 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 
 	public void onFailure ()
 	{
-		Debug.Log ("Fail!");
+		///Debug.Log ("Fail!");
 		this.GetComponent<Animator> ().SetTrigger ("bad");
 	}
 
@@ -29,11 +29,12 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 
 	public void onFinger (int type)
 	{
+		Debug.Log("Score = "+this.levelScriptNotifier.bpm.getScore());
 		if (this.levelScriptNotifier.isGood (type)) {
-			Debug.Log ("Good " + cpt++);
+			//Debug.Log ("Good " + cpt++);
 			this.GetComponent<Animator> ().SetTrigger ("good");
 		} else {
-			Debug.Log ("Bad " + cpt++);
+			//Debug.Log ("Bad " + cpt++);
 			this.GetComponent<Animator> ().SetTrigger ("bad");
 		}
 	}
