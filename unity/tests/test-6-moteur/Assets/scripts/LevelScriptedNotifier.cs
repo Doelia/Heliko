@@ -6,70 +6,93 @@ using System.Collections;
  * 
  */
 
-public class LevelScriptedNotifier : TempoReceiver {
+public class LevelScriptedNotifier : TempoReceiver
+{
 
 	public TextAsset levelData;
 	private int[] stepEvents;
-	private int[] halfStepEvents;
 	private int eventIndex;
 	public BPMControlor bpm;
 	public bool loop;
+	public bool successThisStep;
 
 	ArrayList observers;
 
-
-	public void Awake() {
+	public void Awake ()
+	{
 		this.observers = new ArrayList ();
 		loop = true;
+		successThisStep = false;
 	}
 
-	public void Start() {
+	public void Start ()
+	{
 		loadData ();
 	}
 	
-	public void connect(LevelScriptedReceiver r) {
+	public void connect (LevelScriptedReceiver r)
+	{
 		this.observers.Add (r);
 	}
 
-	public void loadData() {
+	public void loadData ()
+	{
 		Debug.Log (levelData.text);
 		string [] tracks = levelData.text.Split ('\n');
-		stepEvents = stringToIntEvents (tracks [0]);
-		halfStepEvents = stringToIntEvents (tracks [1]);
+		stepEvents = stringToIntEvents (tracks);
 	}
 
-	private int [] stringToIntEvents(string s) {
-		string [] events = s.Split (' ');
-		int [] toReturn = new int[events.Length];
-		for (int i = 0; i < events.Length; i++) {
-			toReturn [i] = int.Parse (events [i]);
+	private int [] stringToIntEvents (string[] s)
+	{
+		string [] steps = s [0].Split (' ');
+		string [] halfSteps = s [1].Split (' ');
+		int [] toReturn = new int[steps.Length * 2];
+		for (int i = 0; i < steps.Length; i++) {
+			toReturn [i * 2] = int.Parse (steps [i]);
+			toReturn [i * 2 + 1] = int.Parse (halfSteps [i]);
 		}
 		return toReturn;
 	}
 
-	private void notifyChildren(int type) {
+	private void notifyChildren (int type)
+	{
 		foreach (LevelScriptedReceiver e in this.observers) {
-			e.onEventType(type);
+			e.onEventType (type);
+		}
+	}
+
+	private void notifyChildrenOfFailure ()
+	{
+		foreach (LevelScriptedReceiver e in this.observers) {
+			e.onFailure ();
 		}
 	}
 	                                
-	public override void onStep() {
+	public override void onStep ()
+	{
 		notifyChildren (stepEvents [eventIndex++]);
 		if (loop && eventIndex >= stepEvents.Length) {
 			eventIndex = 0;
 		}
 	}
 
-	public override void onHalfStep() {
-		notifyChildren (halfStepEvents [eventIndex]);
-	}
-
-	public bool isGood (int type) {
+	public bool isGood (int type)
+	{
 		if (bpm.isOnStep ()) {
 			return stepEvents [eventIndex] == type;
-		} else if (bpm.isOnHalfStep ()) {
-			return halfStepEvents [eventIndex] == type;
 		}
 		return false;
+	}
+
+	public override void onSuccessWindowExit ()
+	{
+		if (!successThisStep && stepEvents [eventIndex] != 0) {
+			notifyChildrenOfFailure ();
+		}
+	}
+
+	public override void onSuccessWindowEnter ()
+	{
+		successThisStep = false;
 	}
 }

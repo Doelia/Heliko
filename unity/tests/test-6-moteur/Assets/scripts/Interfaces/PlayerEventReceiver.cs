@@ -1,7 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public interface PlayerEventReceiver {
+public interface PlayerEventReceiver
+{
 
 	void onFinger (int type);
+	void onFailure ();
 }

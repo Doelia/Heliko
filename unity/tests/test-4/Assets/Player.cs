@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void changeColor(float x) {
-		 this.renderer.material.color = new Color (1-x, x, 0);
+		 this.renderer.material.color = new Color (0, x, 0);
 	}
 
 	int cpt=0;
