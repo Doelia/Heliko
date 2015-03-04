@@ -15,6 +15,7 @@ public class LevelScriptedNotifier : TempoReceiver
 	public BPMControlor bpm;
 	public bool loop;
 	public bool successThisStep;
+	public bool isInWindow;
 
 	ArrayList observers;
 
@@ -78,7 +79,7 @@ public class LevelScriptedNotifier : TempoReceiver
 
 	public bool isGood (int type)
 	{
-		if (bpm.isOnStep () && stepEvents [eventIndex] == type) {
+		if (isInWindow && stepEvents [eventIndex] == type) {
 			successThisStep = true;
 			return true;
 		}
@@ -90,10 +91,12 @@ public class LevelScriptedNotifier : TempoReceiver
 		if (!successThisStep && stepEvents [eventIndex] != 0) {
 			notifyChildrenOfFailure ();
 		}
+		isInWindow = false;
 	}
 
 	public override void onSuccessWindowEnter ()
 	{
 		successThisStep = false;
+		isInWindow = true;
 	}
 }
