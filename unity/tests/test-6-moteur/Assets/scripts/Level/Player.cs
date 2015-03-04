@@ -17,9 +17,9 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver 
 
 	public void onFinger(int type) {
 		if (this.levelScriptNotifier.isGood (type)) {
-			this.renderer.material.color = new Color(0,1,0);
+			this.GetComponent<Animator>().SetTrigger("good");
 		} else {
-			this.renderer.material.color = new Color(1,0,0);
+			this.GetComponent<Animator>().SetTrigger("bad");
 		}
 	}
 
