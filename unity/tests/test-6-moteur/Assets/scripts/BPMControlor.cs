@@ -58,7 +58,7 @@ public class BPMControlor : MonoBehaviour
 		return this.getTimeInOneTickInMS() - getTimeBeforeLastTick();
 	}
 
-	private bool timeIsInWindow() {
+	public bool timeIsInWindow() {
 		return (this.getAbsoluteScore() < errorMargin);
 	}
 
