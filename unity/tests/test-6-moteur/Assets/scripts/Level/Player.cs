@@ -29,11 +29,11 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 	{
 		Debug.Log ("Score = "+this.levelScriptNotifier.bpm.getRelativeScore());
 		if (this.levelScriptNotifier.isGood (type)) {
-			//Debug.Log ("Good " + cpt++);
-			this.GetComponent<Animator> ().SetTrigger ("good");
+			Debug.Log ("Good ");
+			this.GetComponent<Animator> ().SetBool("good", true);
 		} else {
-			//Debug.Log ("Bad " + cpt++);
-			this.GetComponent<Animator> ().SetTrigger ("bad");
+			Debug.Log ("Bad ");
+			this.GetComponent<Animator> ().SetBool("good", false);
 		}
 	}
 }
