@@ -58,6 +58,11 @@ public class BPMControlor : MonoBehaviour
 		return this.getTimeInOneTickInMS() - getTimeBeforeLastTick();
 	}
 
+	private bool timeIsInWindow() {
+		return (this.getAbsoluteScore() < errorMargin);
+	}
+
+	// Ne doit être utilisé en dehors seulement pour les tests, sinon utiliser la window
 	public int getRelativeScore() {
 		int msBefore = this.getTimeBeforeLastTick();
 		int msAfter = this.getTimeAfterNextTick();
@@ -68,12 +73,39 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
+	private int getAbsoluteScore() {
+		int msBefore = this.getTimeBeforeLastTick();
+		int msAfter = this.getTimeAfterNextTick();
+		return Mathf.Min (msBefore, msAfter);
+	}
+
 	// UPDATES
 
 	// Le "d" augmente jusqu'a attendre le temps qu'on veut
 
 	private float d = 0;
 	private float lastTime = 0;
+	private bool notifiedEnter = false;
+	private bool notifiedExit = false;
+
+	private bool exitedSuccessWindow () {		
+			if (!notifiedExit && !timeIsInWindow ()) {		
+				notifiedExit = true;		
+				notifiedEnter = false;		
+				return true;		
+			}		
+		return false;		
+	}		
+				
+	private bool enteredSuccessWindow ()		
+	{		
+		if (!notifiedEnter && timeIsInWindow ()) {		
+			notifiedEnter = true;		
+			notifiedExit = false;		
+			return true;		
+		}		
+		return false;		
+	}
 
 	void Update() {
 		float diff = this.getTimeInMusic () - lastTime;		
@@ -82,9 +114,16 @@ public class BPMControlor : MonoBehaviour
 		
 		if (d > this.getTimeInOneTick ()) {		
 			d = (d - this.getTimeInOneTick ());		
-			this.test ();
-		}		
+			this.notifyChildren();
+		}
 
+		if (enteredSuccessWindow ()) {		
+			this.notifyEnterSuccessWindow ();		
+		}		
+				
+		if (exitedSuccessWindow ()) {		
+			this.notifyExitSuccessWindow ();		
+		}
 	}
 
 
@@ -121,26 +160,13 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	private void test() {
-		nbrTicks++;
-		Debug.Log ("TAP "+nbrTicks);
-		//Debug.Log ("timeInMusic = "+this.getTimeInMusicInMS());
-		//Debug.Log ("timeBeforeFirstTick = "+this.getTimeBeforeFirstTick());
-		//Debug.Log ("timeBefore = "+this.getTimeBeforeLastTick());
-	}
 
 	// START
 
 	void Start () {
 		music.Play ();
 		Debug.Log ("getTimeInOneTickInMS="+getTimeInOneTickInMS());
-		//float d = (float) offsetStart / 1000.0f;
 		d = - Tools.convertToSeconds(offsetStart);
-
-		//InvokeRepeating ("notifyChildren", d, getTimeInOneTick ());
-		//InvokeRepeating ("test", d, getTimeInOneTick ());
-		//InvokeRepeating ("notifyEnterSuccessWindow", d, getTimeInOneTick () - getErrorMarginInSeconds ());
-		//InvokeRepeating ("notifyExitSuccessWindow", d, getTimeInOneTick () + getErrorMarginInSeconds ());
 	}
 	
 
