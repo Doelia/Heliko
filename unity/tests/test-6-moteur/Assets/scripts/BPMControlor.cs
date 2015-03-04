@@ -9,6 +9,8 @@ public class BPMControlor : MonoBehaviour
 	public float errorMargin = 100; // en MS
 	public int offsetStart = 0; // EN MS
 
+	private int nbrTicks = 0;
+
 	// CALCULATEURS SUR LES ATTRIBUTS CONSTANTS
 
 	// Retourne le temps en seconde entre 2 ticks
@@ -25,21 +27,25 @@ public class BPMControlor : MonoBehaviour
 	}
 
 	private float getOffsetStartInSeconds() {
-		return (float) offsetStart / 1000.0f;
+		return (float) errorMargin / 1000.0f;
 	}
 
 	// CALCULATEURS EN FONCTION DU TEMPS
 
 	// Retourne le temps passé en MS depuis le commencement de la musique
-	private int getTimeInMusic () {	
-		int time = Tools.convertToMS( (float) music.timeSamples / (float)music.clip.frequency);		
-		Debug.Log ("Temps passé = "+time);
+	private float getTimeInMusic () {	
+		return (float) music.timeSamples / (float)music.clip.frequency;
+	}
+
+	// Retourne le temps passé en MS depuis le commencement de la musique
+	private int getTimeInMusicInMS () {	
+		int time = Tools.convertToMS(this.getTimeInMusic());		
 		return time;
 	}
 
 	// Retourne le temps passé depuis le tout premier tick (en MS)
 	private int getTimeBeforeFirstTick() {
-		return this.getTimeInMusic() - offsetStart;
+		return this.getTimeInMusicInMS() - offsetStart;
 	}
 
 	// Retourne le temps qu'il s'est passé depuis le dernier tick
@@ -62,11 +68,30 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
+	// UPDATES
+
+	// Le "d" augmente jusqu'a attendre le temps qu'on veut
+
+	private float d = 0;
+	private float lastTime = 0;
+
+	void Update() {
+		float diff = this.getTimeInMusic () - lastTime;		
+		lastTime = this.getTimeInMusic ();		
+		d += diff;
+		
+		if (d > this.getTimeInOneTick ()) {		
+			d = (d - this.getTimeInOneTick ());		
+			this.test ();
+		}		
+
+	}
+
+
 	// NOTIFICATEURS
 	
 
 	private void notifyChildren () {
-		Debug.Log ("TAP!");
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
 				s1.GetComponent<TempoReceiver> ().onStep ();
@@ -96,12 +121,24 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
+	private void test() {
+		nbrTicks++;
+		Debug.Log ("TAP "+nbrTicks);
+		//Debug.Log ("timeInMusic = "+this.getTimeInMusicInMS());
+		//Debug.Log ("timeBeforeFirstTick = "+this.getTimeBeforeFirstTick());
+		//Debug.Log ("timeBefore = "+this.getTimeBeforeLastTick());
+	}
+
 	// START
 
 	void Start () {
 		music.Play ();
-		float d = (float) offsetStart / 1000.0f;
-		InvokeRepeating ("notifyChildren", d, getTimeInOneTick ());
+		Debug.Log ("getTimeInOneTickInMS="+getTimeInOneTickInMS());
+		//float d = (float) offsetStart / 1000.0f;
+		d = - Tools.convertToSeconds(offsetStart);
+
+		//InvokeRepeating ("notifyChildren", d, getTimeInOneTick ());
+		//InvokeRepeating ("test", d, getTimeInOneTick ());
 		//InvokeRepeating ("notifyEnterSuccessWindow", d, getTimeInOneTick () - getErrorMarginInSeconds ());
 		//InvokeRepeating ("notifyExitSuccessWindow", d, getTimeInOneTick () + getErrorMarginInSeconds ());
 	}

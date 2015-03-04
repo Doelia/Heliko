@@ -17,5 +17,9 @@ public class Tools
 	public static int convertToMS(float seconds) {
 		return (int) (seconds*1000.0f);
 	}
+
+	public static float convertToSeconds(int ms) {
+		return ((float) ms/1000.0f);
+	}
 }
 
