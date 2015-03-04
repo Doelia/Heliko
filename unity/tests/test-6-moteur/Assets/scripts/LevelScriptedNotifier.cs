@@ -14,8 +14,8 @@ public class LevelScriptedNotifier : TempoReceiver
 	private int eventIndex;
 	public BPMControlor bpm;
 	public bool loop;
-	public bool successThisStep;
-	public bool isInWindow;
+	private bool successThisStep;
+	private bool isInWindow;
 
 	ArrayList observers;
 

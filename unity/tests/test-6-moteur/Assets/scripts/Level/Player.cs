@@ -21,7 +21,7 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 	public void onFailure ()
 	{
 		///Debug.Log ("Fail!");
-		this.GetComponent<Animator> ().SetTrigger ("bad");
+		//this.GetComponent<Animator> ().SetTrigger ("bad");
 	}
 
 

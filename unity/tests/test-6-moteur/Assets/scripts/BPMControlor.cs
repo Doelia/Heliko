@@ -15,7 +15,7 @@ public class BPMControlor : MonoBehaviour
 
 	// Retourne le temps en seconde entre 2 ticks
 	public float getTimeInOneTick () {
-		return (60.0f / (tempo));
+		return (60.0f / (tempo*2));
 	}
 
 	public int getTimeInOneTickInMS () {
@@ -131,6 +131,7 @@ public class BPMControlor : MonoBehaviour
 	
 
 	private void notifyChildren () {
+		//Debug.Log ("Tap!");
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
 				s1.GetComponent<TempoReceiver> ().onStep ();
