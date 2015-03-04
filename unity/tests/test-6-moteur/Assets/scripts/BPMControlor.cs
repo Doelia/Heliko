@@ -117,7 +117,6 @@ public class BPMControlor : MonoBehaviour
 		return false;
 	}
 
-	
 	void Update ()
 	{
 		
