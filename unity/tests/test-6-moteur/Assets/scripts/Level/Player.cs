@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour ,LevelScriptedReceiver,PlayerEventReceiver
+public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 {
 
 	public LevelScriptedNotifier levelScriptNotifier;
@@ -21,14 +21,20 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver,PlayerEventReceiver
 	public void onFailure ()
 	{
 		Debug.Log ("Fail!");
+		this.GetComponent<Animator> ().SetTrigger ("bad");
 	}
+
+
+	int cpt = 0;
 
 	public void onFinger (int type)
 	{
 		if (this.levelScriptNotifier.isGood (type)) {
-			renderer.material.color = Color.green;
+			Debug.Log ("Good " + cpt++);
+			this.GetComponent<Animator> ().SetTrigger ("good");
 		} else {
-			renderer.material.color = Color.red;
+			Debug.Log ("Bad " + cpt++);
+			this.GetComponent<Animator> ().SetTrigger ("bad");
 		}
 	}
 }

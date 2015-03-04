@@ -5,5 +5,4 @@ public interface PlayerEventReceiver
 {
 
 	void onFinger (int type);
-	void onFailure ();
 }
