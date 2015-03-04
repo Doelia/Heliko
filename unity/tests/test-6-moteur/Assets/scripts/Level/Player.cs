@@ -29,7 +29,7 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 
 	public void onFinger (int type)
 	{
-		Debug.Log("Score = "+this.levelScriptNotifier.bpm.getScore());
+		Debug.Log("ScoreRelatif = "+this.levelScriptNotifier.bpm.getScoreRelatif()+", Score="+this.levelScriptNotifier.bpm.getScore());
 		if (this.levelScriptNotifier.isGood (type)) {
 			//Debug.Log ("Good " + cpt++);
 			this.GetComponent<Animator> ().SetTrigger ("good");
