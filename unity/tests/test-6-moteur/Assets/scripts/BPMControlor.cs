@@ -6,7 +6,7 @@ public class BPMControlor : MonoBehaviour {
 	public AudioSource music;
 	public float tempo = 130.0f;
 	public float d = 0;
-	public float errorMargin = 0.1f;
+	public float errorMargin = 100; // en MS
 
 	float dHalf = 0;
 
@@ -21,9 +21,11 @@ public class BPMControlor : MonoBehaviour {
 	}
 
 	public bool isOnStep() {
-		float f1 = getDeltaTempo () * (1 + errorMargin);
-		float f2 = getDeltaTempo () * (1 - errorMargin);
-		return timeSinceLastTick() < f1 && timeBeforeNextTick() > f2;
+		float t = timeSinceLastTick(); // Plus en plus négatif
+		float t2 = timeBeforeNextTick(); // Plus en plus positif
+		float diff = Mathf.Min (t, t2) * 1000; // en MS
+		Debug.Log ("Diff = "+diff);
+		return (diff < errorMargin);
 	}
 
 	public bool isOnHalfStep() {
