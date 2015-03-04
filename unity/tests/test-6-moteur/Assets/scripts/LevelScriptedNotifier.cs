@@ -13,12 +13,14 @@ public class LevelScriptedNotifier : TempoReceiver {
 	private int[] halfStepEvents;
 	private int eventIndex;
 	public BPMControlor bpm;
+	public bool loop;
 
 	ArrayList observers;
 
 
 	public void Awake() {
 		this.observers = new ArrayList ();
+		loop = true;
 	}
 
 	public void Start() {
@@ -53,6 +55,9 @@ public class LevelScriptedNotifier : TempoReceiver {
 	                                
 	public override void onStep() {
 		notifyChildren (stepEvents [eventIndex++]);
+		if (loop && eventIndex >= stepEvents.Length) {
+			eventIndex = 0;
+		}
 	}
 
 	public override void onHalfStep() {
