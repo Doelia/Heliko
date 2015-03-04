@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerEventListener : MonoBehaviour
 {
+	public bool onKeyDown = true;
 
 	void Start ()
 	{
@@ -22,12 +23,12 @@ public class PlayerEventListener : MonoBehaviour
 
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.O))
+		if ((onKeyDown && Input.GetKeyDown (KeyCode.O)) || (!onKeyDown && Input.GetKey (KeyCode.O)))
 			foreach (PlayerEventReceiver e in this.observers) {
 				e.onFinger (1);
 			}
 
-		if (Input.GetKeyDown (KeyCode.P))
+		if ((onKeyDown && Input.GetKeyDown (KeyCode.P)) || (!onKeyDown && Input.GetKey (KeyCode.P)))
 			foreach (PlayerEventReceiver e in this.observers) {
 				e.onFinger (2);
 			}

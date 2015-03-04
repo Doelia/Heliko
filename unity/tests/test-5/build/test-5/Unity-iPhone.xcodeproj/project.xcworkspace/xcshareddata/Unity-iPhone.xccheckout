@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7B6D989C-C11B-48D4-8E87-F5ED4327E8EC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Unity-iPhone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B18F23BAC839791C910D0373B6F39CD0ADA949CB</key>
+		<string>https://github.com/doelia/oufmania</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>unity/tests/test-5/build/test-5/Unity-iPhone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B18F23BAC839791C910D0373B6F39CD0ADA949CB</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/doelia/oufmania</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B18F23BAC839791C910D0373B6F39CD0ADA949CB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B18F23BAC839791C910D0373B6F39CD0ADA949CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>oufmania</string>
+		</dict>
+	</array>
+</dict>
+</plist>
