@@ -9,7 +9,6 @@ public class BPMControlor : MonoBehaviour
 	public float errorMargin = 100; // en MS
 	public int offsetStart = 0; // EN MS
 
-	private float d = 0;
 	private bool notifiedEnter = false;
 	private bool notifiedExit = false;
 
@@ -26,7 +25,7 @@ public class BPMControlor : MonoBehaviour
 	void Start ()
 	{
 		music.Play ();
-		d = (float)offsetStart / 1000.0f;
+		float d = (float)offsetStart / 1000.0f;
 		InvokeRepeating ("notifyChildren", d, getDeltaTempo ());
 		InvokeRepeating ("notifyEnterSuccessWindow", d, getDeltaTempo () - getErrorMarginInSeconds ());
 		InvokeRepeating ("notifyExitSuccessWindow", d, getDeltaTempo () + getErrorMarginInSeconds ());
