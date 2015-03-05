@@ -69,12 +69,10 @@ public class LevelScriptedNotifier : TempoReceiver
 		}
 	}
 	                                
-	public override void onStep ()
-	{
-		notifyChildren (stepEvents [eventIndex++]);
-		if (loop && eventIndex >= stepEvents.Length) {
-			eventIndex = 0;
-		}
+	public override void onStep () {
+		//Debug.Log("Step");
+		//Debug.Log ("Value index : "+stepEvents [eventIndex]);
+		notifyChildren (stepEvents [eventIndex]);
 	}
 
 	public bool isGood (int type)
@@ -88,17 +86,25 @@ public class LevelScriptedNotifier : TempoReceiver
 
 	public override void onSuccessWindowExit ()
 	{
+		Debug.Log ("Exit");
 		if (stepEvents [eventIndex] != 0) {
 			if (!successThisStep) {
 				notifyChildrenOfFailure ();
 			}
-			isInWindow = false;
+		}
+	}
+
+	private void incrementIndex() {
+		eventIndex++;
+		if (loop && eventIndex >= stepEvents.Length) {
+			eventIndex = 0;
 		}
 	}
 
 	public override void onSuccessWindowEnter ()
 	{
+		Debug.Log ("Enter");
+		this.incrementIndex();
 		successThisStep = false;
-		isInWindow = true;
 	}
 }
