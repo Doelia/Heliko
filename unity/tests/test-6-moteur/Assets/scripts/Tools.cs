@@ -14,12 +14,18 @@ public class Tools
 	public Tools () {
 	}
 
-	public static int convertToMS(float seconds) {
-		return (int) (seconds*1000.0f);
+	public static int convertToMS(double seconds) {
+		return (int) (seconds*1000.0d);
 	}
 
-	public static float convertToSeconds(int ms) {
-		return ((float) ms/1000.0f);
+	public static double convertToSeconds(int ms) {
+		return ((double) ms/1000.0d);
 	}
+
+	public static int getSamplesPerTicks(AudioClip music, int bpm) {
+		double secondsPerTicks = (60.0d / ((double) bpm));
+		return (int) (music.frequency * (60.0d / ((double) bpm)));
+	}
+
 }
 

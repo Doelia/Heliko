@@ -6,7 +6,7 @@ public class BPMControlor : MonoBehaviour
 
 	public AudioSource music = null;
 	public float tempo = 120.0f;
-	public float errorMargin = 100; // en MS
+	public int errorMargin = 100; // en MS
 	public int offsetStart = 0; // EN MS
 
 	// 
@@ -24,22 +24,22 @@ public class BPMControlor : MonoBehaviour
 		return Tools.convertToMS (this.getTimeInOneTick ());
 	}
 
-	private float getErrorMarginInSeconds ()
+	private double getErrorMarginInSeconds ()
 	{
-		return (float)errorMargin / 1000.0f;
+		return Tools.convertToSeconds(errorMargin);
 	}
 
-	private float getOffsetStartInSeconds ()
+	private double getOffsetStartInSeconds ()
 	{
-		return (float)errorMargin / 1000.0f;
+		return Tools.convertToSeconds(offsetStart);
 	}
 
 	// CALCULATEURS EN FONCTION DU TEMPS
 
 	// Retourne le temps passé en MS depuis le commencement de la musique
-	private float getTimeInMusic ()
+	private double getTimeInMusic ()
 	{	
-		return (float)music.timeSamples / (float)music.clip.frequency;
+		return (double)music.timeSamples / (double)music.clip.frequency;
 	}
 
 	// Retourne le temps passé en MS depuis le commencement de la musique
@@ -73,12 +73,11 @@ public class BPMControlor : MonoBehaviour
 	}
 
 	public int getNumStep() {
-		int timeOnStepClosest = this.getTimeInMusicInMS() - this.getRelativeScore() - offsetStart + this.getTimeInOneTickInMS();
+		int timeOnStepClosest = this.getTimeInMusicInMS() - this.getRelativeScore() - offsetStart ;
 		timeOnStepClosest /= this.getTimeInOneTickInMS();
 		return timeOnStepClosest;
 	}
 
-	// Ne doit être utilisé en dehors seulement pour les tests, sinon utiliser la window
 	public int getRelativeScore ()
 	{
 		int msBefore = this.getTimeBeforeLastTick ();
@@ -90,11 +89,6 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	void OnGUI() {
-		GUI.Label(new Rect(0,0,100,100), ""+sc);
-	}
-
-	private int sc;
 	private int getAbsoluteScore ()
 	{
 		int msBefore = this.getTimeBeforeLastTick ();
@@ -103,12 +97,13 @@ public class BPMControlor : MonoBehaviour
 		return score;
 	}
 
+
 	// UPDATES
 
 	// Le "d" augmente jusqu'a attendre le temps qu'on veut
 
-	private float d = 0;
-	private float lastTime = 0;
+	private double d = 0;
+	private double lastTime = 0;
 	private bool notifiedEnter = false;
 	private bool notifiedExit = false;
 
@@ -132,32 +127,6 @@ public class BPMControlor : MonoBehaviour
 		return false;		
 	}
 
-	void Update ()
-	{
-		float diff = this.getTimeInMusic () - lastTime;		
-		lastTime = this.getTimeInMusic ();		
-		d += diff;
-		
-		if (d > this.getTimeInOneTick ()) {		
-			d = (d - this.getTimeInOneTick ());		
-			this.notifyChildren ();
-			Debug.Log (this.getRelativeScore());
-		}
-
-		if (enteredSuccessWindow ()) {	
-			this.notifyEnterSuccessWindow ();		
-		}		
-				
-		if (exitedSuccessWindow ()) {		
-			this.notifyExitSuccessWindow ();		
-		}
-
-		sc = this.getRelativeScore();
-
-		
-	}
-
-
 	// NOTIFICATEURS
 
 	ArrayList observers;
@@ -172,8 +141,11 @@ public class BPMControlor : MonoBehaviour
 		this.observers.Add (r);
 	}
 
+	double last = 0;
 	private void notifyChildren ()
 	{
+		Debug.Log (this.getTimeInMusic() - last);
+		last = this.getTimeInMusic();
 		foreach (TempoReceiver e in this.observers) {
 			e.onStep ();
 		}
@@ -198,9 +170,68 @@ public class BPMControlor : MonoBehaviour
 	void Start ()
 	{
 		music.Play ();
-		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTickInMS ());
-		d = - Tools.convertToSeconds (offsetStart);
+		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTick ());
+		d = - this.getOffsetStartInSeconds();
+
+		int nbrBeats = (int) ( this.music.clip.length / this.getTimeInOneTick());
+		Debug.Log (nbrBeats+" ticks");
+		
+		for (float i = 0; i < nbrBeats; i++) {
+			float time = i*this.getTimeInOneTick();
+			//Debug.Log ("time="+time);
+
+		}
+
+		StartCoroutine(Example(0f));
 	}
+
+	float timePassed = 0f;
+	IEnumerator Example(float time) {
+		while (true) {
+			double u = getTimeInMusic ();
+			double diff = u - lastTime;		
+			lastTime = u;	
+			d += diff;
+			
+			if ( (d) > this.getTimeInOneTick ()) {		
+				d = (d - this.getTimeInOneTick ());		
+
+				//this.notifyChildren ();
+				//Debug.Log (this.getRelativeScore());
+				Debug.Log ("timeBefore="+this.getTimeBeforeLastTick ());
+			}
+
+			yield return new WaitForSeconds(1f/1000f);
+		}
+	}
+
+	void Update ()
+	{
+		/*
+		
+		if (enteredSuccessWindow ()) {	
+			this.notifyEnterSuccessWindow ();		
+		}		
+		
+		if (exitedSuccessWindow ()) {		
+			this.notifyExitSuccessWindow ();		
+		}
+
+		// DEBUG
+		sc = this.getRelativeScore();
+		*/
+		
+	}
+
+
+	// DEBUG
+
+	private int sc;
+	void OnGUI() {
+		GUI.Label(new Rect(0,0,100,100), ""+sc);
+	}
+
+
 	
 
 }
