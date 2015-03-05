@@ -20,7 +20,6 @@ public class Singe : MonoBehaviour, LevelScriptedReceiver
 		}
 
 		if (typeListen == type) {
-			Debug.Log ("pouf");
 			foreach (Transform s1 in transform) {
 				s1.GetComponent<Animator> ().SetTrigger ("jump");
 			}

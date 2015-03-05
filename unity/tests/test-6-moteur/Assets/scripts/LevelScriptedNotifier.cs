@@ -79,7 +79,7 @@ public class LevelScriptedNotifier : TempoReceiver
 
 	public bool isGood (int type)
 	{
-		if (isInWindow && stepEvents [eventIndex] == type) {
+		if (this.bpm.timeIsInWindow() && stepEvents [eventIndex] == type) {
 			successThisStep = true;
 			return true;
 		}
@@ -88,10 +88,12 @@ public class LevelScriptedNotifier : TempoReceiver
 
 	public override void onSuccessWindowExit ()
 	{
-		if (!successThisStep && stepEvents [eventIndex] != 0) {
-			notifyChildrenOfFailure ();
+		if (stepEvents [eventIndex] != 0) {
+			if (!successThisStep) {
+				notifyChildrenOfFailure ();
+			}
+			isInWindow = false;
 		}
-		isInWindow = false;
 	}
 
 	public override void onSuccessWindowEnter ()
