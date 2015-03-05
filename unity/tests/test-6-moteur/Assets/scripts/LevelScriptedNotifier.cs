@@ -16,6 +16,7 @@ public class LevelScriptedNotifier : TempoReceiver
 	public bool loop;
 	private bool successThisStep;
 	private bool isInWindow;
+	int before;
 
 	ArrayList observers;
 
@@ -24,6 +25,7 @@ public class LevelScriptedNotifier : TempoReceiver
 		this.observers = new ArrayList ();
 		loop = true;
 		successThisStep = false;
+		before = 1;
 	}
 
 	public void Start ()
@@ -78,6 +80,8 @@ public class LevelScriptedNotifier : TempoReceiver
 	{
 		//Debug.Log("Step");
 		//Debug.Log ("Value index : "+stepEvents [eventIndex]);
+		this.incrementIndex ();
+		before = 0;
 		notifyChildren (stepEvents [eventIndex]);
 	}
 
@@ -87,7 +91,7 @@ public class LevelScriptedNotifier : TempoReceiver
 			return true;
 		}
 
-		if (this.bpm.timeIsInWindow () && stepEvents [eventIndex] == type) {
+		if (this.bpm.timeIsInWindow () && stepEvents [(eventIndex + before) % stepEvents.Length] == type) {
 			successThisStep = true;
 			Debug.Log ("good");
 			return true;
@@ -117,7 +121,7 @@ public class LevelScriptedNotifier : TempoReceiver
 	public override void onSuccessWindowEnter ()
 	{
 		Debug.Log ("Enter");
-		this.incrementIndex ();
 		successThisStep = false;
+		before = 1;
 	}
 }

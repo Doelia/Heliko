@@ -143,7 +143,6 @@ public class BPMControlor : MonoBehaviour
 
 	// NOTIFICATEURS
 	
-
 	private void notifyChildren ()
 	{
 		//Debug.Log ("Tap!");
