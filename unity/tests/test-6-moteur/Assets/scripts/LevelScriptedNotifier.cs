@@ -73,13 +73,17 @@ public class LevelScriptedNotifier : TempoReceiver
 	public override void onStep () {
 		//Debug.Log("Step");
 		//Debug.Log ("Value index : "+stepEvents [eventIndex]);
-		this.incrementIndex();
+		//this.incrementIndex();
 		if (stepEvents [eventIndex] != 0)
 			notifyChildren (stepEvents [eventIndex]);
 	}
 
 	public bool isGood (int type)
 	{
+		if (successThisStep) {
+			return true;
+		}
+
 		if (this.bpm.timeIsInWindow() && stepEvents [eventIndex] == type) {
 			successThisStep = true;
 			return true;

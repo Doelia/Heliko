@@ -119,12 +119,12 @@ public class BPMControlor : MonoBehaviour
 			this.notifyChildren();
 		}
 
-		if (enteredSuccessWindow ()) {		
-			//this.notifyEnterSuccessWindow ();		
+		if (enteredSuccessWindow ()) {	
+			this.notifyEnterSuccessWindow ();		
 		}		
 				
 		if (exitedSuccessWindow ()) {		
-			//this.notifyExitSuccessWindow ();		
+			this.notifyExitSuccessWindow ();		
 		}
 	}
 
