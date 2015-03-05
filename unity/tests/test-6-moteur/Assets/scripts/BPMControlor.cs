@@ -11,6 +11,8 @@ public class BPMControlor : MonoBehaviour
 
 	private int nbrTicks = 0;
 
+	// 
+
 	// CALCULATEURS SUR LES ATTRIBUTS CONSTANTS
 
 	// Retourne le temps en seconde entre 2 ticks
@@ -142,38 +144,37 @@ public class BPMControlor : MonoBehaviour
 
 
 	// NOTIFICATEURS
-	
+
+	ArrayList observers;
+
+	public void Awake ()
+	{
+		this.observers = new ArrayList ();
+	}
+
+	public void connect (TempoReceiver r)
+	{
+		this.observers.Add (r);
+	}
+
 	private void notifyChildren ()
 	{
-		//Debug.Log ("Tap!");
-		foreach (Transform s1 in transform) {
-			if (s1.GetComponent<TempoReceiver> () != null) {
-				s1.GetComponent<TempoReceiver> ().onStep ();
-			} else {
-				Debug.LogError (s1.name + " : GetComponent TempoReceiver null");
-			}
+		foreach (TempoReceiver e in this.observers) {
+			e.onStep ();
 		}
 	}
 
 	private void notifyExitSuccessWindow ()
 	{
-		foreach (Transform s1 in transform) {
-			if (s1.GetComponent<TempoReceiver> () != null) {
-				s1.GetComponent<TempoReceiver> ().onSuccessWindowExit ();
-			} else {
-				Debug.LogError (s1.name + " : GetComponent TempoReceiver null");
-			}
+		foreach (TempoReceiver e in this.observers) {
+			e.onSuccessWindowExit ();
 		}
 	}
 
 	private void notifyEnterSuccessWindow ()
 	{
-		foreach (Transform s1 in transform) {
-			if (s1.GetComponent<TempoReceiver> () != null) {
-				s1.GetComponent<TempoReceiver> ().onSuccessWindowEnter ();
-			} else {
-				Debug.LogError (s1.name + " : GetComponent TempoReceiver null");
-			}
+		foreach (TempoReceiver e in this.observers) {
+			e.onSuccessWindowEnter ();
 		}
 	}
 
