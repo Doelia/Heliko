@@ -9,8 +9,6 @@ public class BPMControlor : MonoBehaviour
 	public float errorMargin = 100; // en MS
 	public int offsetStart = 0; // EN MS
 
-	private int nbrTicks = 0;
-
 	// 
 
 	// CALCULATEURS SUR LES ATTRIBUTS CONSTANTS
@@ -74,6 +72,12 @@ public class BPMControlor : MonoBehaviour
 		return (this.getAbsoluteScore () < errorMargin);
 	}
 
+	public int getNumStep() {
+		int timeOnStepClosest = this.getTimeInMusicInMS() - this.getRelativeScore() - offsetStart + this.getTimeInOneTickInMS();
+		timeOnStepClosest /= this.getTimeInOneTickInMS();
+		return timeOnStepClosest;
+	}
+
 	// Ne doit être utilisé en dehors seulement pour les tests, sinon utiliser la window
 	public int getRelativeScore ()
 	{
@@ -86,11 +90,17 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
+	void OnGUI() {
+		GUI.Label(new Rect(0,0,100,100), ""+sc);
+	}
+
+	private int sc;
 	private int getAbsoluteScore ()
 	{
 		int msBefore = this.getTimeBeforeLastTick ();
 		int msAfter = this.getTimeAfterNextTick ();
-		return Mathf.Min (msBefore, msAfter);
+		int score = Mathf.Min (msBefore, msAfter);
+		return score;
 	}
 
 	// UPDATES
@@ -131,6 +141,7 @@ public class BPMControlor : MonoBehaviour
 		if (d > this.getTimeInOneTick ()) {		
 			d = (d - this.getTimeInOneTick ());		
 			this.notifyChildren ();
+			Debug.Log (this.getRelativeScore());
 		}
 
 		if (enteredSuccessWindow ()) {	
@@ -140,6 +151,10 @@ public class BPMControlor : MonoBehaviour
 		if (exitedSuccessWindow ()) {		
 			this.notifyExitSuccessWindow ();		
 		}
+
+		sc = this.getRelativeScore();
+
+		
 	}
 
 

@@ -23,6 +23,8 @@ public class PlayerEventListener : MonoBehaviour
 
 	void Update ()
 	{
+	
+
 		if ((onKeyDown && Input.GetKeyDown (KeyCode.O)) || (!onKeyDown && Input.GetKey (KeyCode.O)))
 			foreach (PlayerEventReceiver e in this.observers) {
 				e.onFinger (1);
