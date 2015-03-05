@@ -111,7 +111,7 @@ public class BPMControlor : MonoBehaviour
 	}		
 				
 	private bool enteredSuccessWindow ()
-	{		
+	{
 		if (!notifiedEnter && timeIsInWindow ()) {		
 			notifiedEnter = true;		
 			notifiedExit = false;		
