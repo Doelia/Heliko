@@ -14,58 +14,69 @@ public class BPMControlor : MonoBehaviour
 	// CALCULATEURS SUR LES ATTRIBUTS CONSTANTS
 
 	// Retourne le temps en seconde entre 2 ticks
-	public float getTimeInOneTick () {
-		return (60.0f / (tempo*2));
+	public float getTimeInOneTick ()
+	{
+		return (60.0f / (tempo * 2));
 	}
 
-	public int getTimeInOneTickInMS () {
-		return Tools.convertToMS(this.getTimeInOneTick());
+	public int getTimeInOneTickInMS ()
+	{
+		return Tools.convertToMS (this.getTimeInOneTick ());
 	}
 
-	private float getErrorMarginInSeconds () {
-		return (float) errorMargin / 1000.0f;
+	private float getErrorMarginInSeconds ()
+	{
+		return (float)errorMargin / 1000.0f;
 	}
 
-	private float getOffsetStartInSeconds() {
-		return (float) errorMargin / 1000.0f;
+	private float getOffsetStartInSeconds ()
+	{
+		return (float)errorMargin / 1000.0f;
 	}
 
 	// CALCULATEURS EN FONCTION DU TEMPS
 
 	// Retourne le temps passé en MS depuis le commencement de la musique
-	private float getTimeInMusic () {	
-		return (float) music.timeSamples / (float)music.clip.frequency;
+	private float getTimeInMusic ()
+	{	
+		return (float)music.timeSamples / (float)music.clip.frequency;
 	}
 
 	// Retourne le temps passé en MS depuis le commencement de la musique
-	private int getTimeInMusicInMS () {	
-		int time = Tools.convertToMS(this.getTimeInMusic());		
+	private int getTimeInMusicInMS ()
+	{	
+		int time = Tools.convertToMS (this.getTimeInMusic ());		
 		return time;
 	}
 
 	// Retourne le temps passé depuis le tout premier tick (en MS)
-	private int getTimeBeforeFirstTick() {
-		return this.getTimeInMusicInMS() - offsetStart;
+	private int getTimeBeforeFirstTick ()
+	{
+		return this.getTimeInMusicInMS () - offsetStart;
 	}
 
 	// Retourne le temps qu'il s'est passé depuis le dernier tick
-	private int getTimeBeforeLastTick() {
-		return this.getTimeBeforeFirstTick() % this.getTimeInOneTickInMS();
+	private int getTimeBeforeLastTick ()
+	{
+		return this.getTimeBeforeFirstTick () % this.getTimeInOneTickInMS ();
 	}
 
 	// Retourne le temps restant avant le prochain tick
-	private int getTimeAfterNextTick() {
-		return this.getTimeInOneTickInMS() - getTimeBeforeLastTick();
+	private int getTimeAfterNextTick ()
+	{
+		return this.getTimeInOneTickInMS () - getTimeBeforeLastTick ();
 	}
 
-	public bool timeIsInWindow() {
-		return (this.getAbsoluteScore() < errorMargin);
+	public bool timeIsInWindow ()
+	{
+		return (this.getAbsoluteScore () < errorMargin);
 	}
 
 	// Ne doit être utilisé en dehors seulement pour les tests, sinon utiliser la window
-	public int getRelativeScore() {
-		int msBefore = this.getTimeBeforeLastTick();
-		int msAfter = this.getTimeAfterNextTick();
+	public int getRelativeScore ()
+	{
+		int msBefore = this.getTimeBeforeLastTick ();
+		int msAfter = this.getTimeAfterNextTick ();
 		if (msBefore > msAfter) {
 			return - msAfter;
 		} else {
@@ -73,9 +84,10 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	private int getAbsoluteScore() {
-		int msBefore = this.getTimeBeforeLastTick();
-		int msAfter = this.getTimeAfterNextTick();
+	private int getAbsoluteScore ()
+	{
+		int msBefore = this.getTimeBeforeLastTick ();
+		int msAfter = this.getTimeAfterNextTick ();
 		return Mathf.Min (msBefore, msAfter);
 	}
 
@@ -88,16 +100,17 @@ public class BPMControlor : MonoBehaviour
 	private bool notifiedEnter = false;
 	private bool notifiedExit = false;
 
-	private bool exitedSuccessWindow () {		
-			if (!notifiedExit && !timeIsInWindow ()) {		
-				notifiedExit = true;		
-				notifiedEnter = false;		
-				return true;		
-			}		
+	private bool exitedSuccessWindow ()
+	{		
+		if (!notifiedExit && !timeIsInWindow ()) {		
+			notifiedExit = true;		
+			notifiedEnter = false;		
+			return true;		
+		}		
 		return false;		
 	}		
 				
-	private bool enteredSuccessWindow ()		
+	private bool enteredSuccessWindow ()
 	{		
 		if (!notifiedEnter && timeIsInWindow ()) {		
 			notifiedEnter = true;		
@@ -107,17 +120,18 @@ public class BPMControlor : MonoBehaviour
 		return false;		
 	}
 
-	void Update() {
+	void Update ()
+	{
 		float diff = this.getTimeInMusic () - lastTime;		
 		lastTime = this.getTimeInMusic ();		
 		d += diff;
 		
 		if (d > this.getTimeInOneTick ()) {		
 			d = (d - this.getTimeInOneTick ());		
-			this.notifyChildren();
+			this.notifyChildren ();
 		}
 
-		if (enteredSuccessWindow ()) {		
+		if (enteredSuccessWindow ()) {	
 			this.notifyEnterSuccessWindow ();		
 		}		
 				
@@ -130,7 +144,8 @@ public class BPMControlor : MonoBehaviour
 	// NOTIFICATEURS
 	
 
-	private void notifyChildren () {
+	private void notifyChildren ()
+	{
 		//Debug.Log ("Tap!");
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
@@ -141,7 +156,8 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	private void notifyExitSuccessWindow () {
+	private void notifyExitSuccessWindow ()
+	{
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
 				s1.GetComponent<TempoReceiver> ().onSuccessWindowExit ();
@@ -151,7 +167,8 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	private void notifyEnterSuccessWindow () {
+	private void notifyEnterSuccessWindow ()
+	{
 		foreach (Transform s1 in transform) {
 			if (s1.GetComponent<TempoReceiver> () != null) {
 				s1.GetComponent<TempoReceiver> ().onSuccessWindowEnter ();
@@ -161,13 +178,13 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-
 	// START
 
-	void Start () {
+	void Start ()
+	{
 		music.Play ();
-		Debug.Log ("getTimeInOneTickInMS="+getTimeInOneTickInMS());
-		d = - Tools.convertToSeconds(offsetStart);
+		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTickInMS ());
+		d = - Tools.convertToSeconds (offsetStart);
 	}
 	
 

@@ -21,30 +21,31 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 
 	public void onFailure ()
 	{
-		///Debug.Log ("Fail!");
+		//Debug.Log ("Fail!");
 		//this.GetComponent<Animator> ().SetTrigger ("bad");
 	}
 
-	public void changeColorCube(bool good) {
+	public void changeColorCube (bool good)
+	{
 		if (good) {
-			cube.renderer.material.color = new Color(0,1,0);
+			cube.renderer.material.color = new Color (0, 1, 0);
 		} else {
-			cube.renderer.material.color = new Color(1,0,0);
+			cube.renderer.material.color = new Color (1, 0, 0);
 		}
 	}
 
 
 	public void onFinger (int type)
 	{
-		Debug.Log ("Score = "+this.levelScriptNotifier.bpm.getRelativeScore());
+		Debug.Log ("Score = " + this.levelScriptNotifier.bpm.getRelativeScore ());
 		if (this.levelScriptNotifier.isGood (type)) {
 			Debug.Log ("Good ");
-			this.GetComponent<Animator> ().SetBool("good", true);
-			this.changeColorCube(true);
+			this.GetComponent<Animator> ().SetBool ("good", true);
+			this.changeColorCube (true);
 		} else {
 			Debug.Log ("Bad ");
-			this.GetComponent<Animator> ().SetBool("good", false);
-			this.changeColorCube(false);
+			this.GetComponent<Animator> ().SetBool ("good", false);
+			this.changeColorCube (false);
 		}
 	}
 }
