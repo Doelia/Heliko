@@ -20,8 +20,7 @@ public class BPMControlor : MonoBehaviour
 	// CALCULATEURS SUR LES ATTRIBUTS CONSTANTS
 
 	// Retourne le temps en seconde entre 2 ticks
-	public float getTimeInOneTick ()
-	{
+	public float getTimeInOneTick () {
 		return (60.0f / (tempo * 2));
 	}
 
@@ -66,35 +65,27 @@ public class BPMControlor : MonoBehaviour
 
 	ArrayList observers;
 
-	public void Awake ()
-	{
+	public void Awake () {
 		this.observers = new ArrayList ();
 	}
 
-	public void connect (TempoReceiver r)
-	{
+	public void connect (TempoReceiver r) {
 		this.observers.Add (r);
 	}
 
-	double last = 0;
-	private void notifyChildren ()
-	{
-		//Debug.Log (this.getTimeInMusic () - last);
-		//last = this.getTimeInMusic ();
+	private void notifyChildren () {
 		foreach (TempoReceiver e in this.observers) {
 			e.onStep ();
 		}
 	}
 
-	private void notifyExitSuccessWindow ()
-	{
+	private void notifyExitSuccessWindow () {
 		foreach (TempoReceiver e in this.observers) {
 			e.onSuccessWindowExit ();
 		}
 	}
 
-	private void notifyEnterSuccessWindow ()
-	{
+	private void notifyEnterSuccessWindow () {
 		foreach (TempoReceiver e in this.observers) {
 			e.onSuccessWindowEnter ();
 		}
@@ -102,10 +93,8 @@ public class BPMControlor : MonoBehaviour
 
 	// START
 
-	void Start ()
-	{
+	void Start () {
 		music.Play ();
-		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTick ());
 	}
 
 	void Update ()
@@ -139,6 +128,18 @@ public class BPMControlor : MonoBehaviour
 
 	public double getScoreOnStep() {
 		return (music.timeSamples - getNumStep() * getFrameBetweenTicks()) / getFrameBetweenTicks();
+	}
+
+	private float nextBeatSample = 0f;
+	private int cpt = 0; // Debug
+
+	private float getSamplePeriod() {
+		return (60f / this.tempo) * music.clip.frequency;
+	}
+
+	private float getSampleOffset() {
+		float sampleOffset = (60f / tempo) * music.clip.frequency;
+		return sampleOffset;
 	}
 
 	public double getScore() {
