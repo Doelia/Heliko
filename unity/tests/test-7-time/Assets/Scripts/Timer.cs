@@ -4,6 +4,7 @@ using System.Collections;
 public abstract class Timer : MonoBehaviour {
 
 	public AudioSource audioSource;
+	public float loopTime = 30f; // Taux de rafraichisement. Si égal à zéro, refrech à chaque update
 
 	private float nextBeatSample; // Le numéro du prochain sample à attendre pour un nouveau beat
 	protected float samplePeriod; // Le temps en samples d'un beat
@@ -39,7 +40,7 @@ public abstract class Timer : MonoBehaviour {
 					nextBeatSample += samplePeriod;
 				}
 			}
-			yield return new WaitForSeconds(1 / 1000f);
+			yield return new WaitForSeconds(loopTime / 1000f);
 		}
 	}
 
