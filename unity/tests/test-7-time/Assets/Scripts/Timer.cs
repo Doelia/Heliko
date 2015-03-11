@@ -11,7 +11,6 @@ public abstract class Timer : MonoBehaviour {
 
 	protected MusicTempo music;
 
-	[HideInInspector]
 	private int myMsDelayStartCount = 0;
 
 	protected abstract void beat();

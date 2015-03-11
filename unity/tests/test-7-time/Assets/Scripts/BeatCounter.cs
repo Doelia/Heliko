@@ -7,7 +7,6 @@ public class BeatCounter : Timer {
 	public int timeWindowInMS = 100; // Temps en MS avant et après la window
 
 	void Awake() {
-		Debug.Log("BeatCounter awake");
 		this.observers = new ArrayList ();
 		this.setSampleDelay(delayInMS);
 	}
@@ -38,13 +37,9 @@ public class BeatCounter : Timer {
 		this.notifyChildren();
 	}
 
-	public void Start() {
+	new public void Start() {
 		base.Start();
 	}
-
-	public void Update() {
-	}
-
 
 	// NOTIFIEUR
 	ArrayList observers;

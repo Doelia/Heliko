@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\MusicTempo.cs" />
      <Compile Include="Assets\Scripts\PlayerEventListener.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\Window.cs" />
      <Compile Include="Assets\Scripts\WindowClose.cs" />
      <Compile Include="Assets\Scripts\WindowOpen.cs" />
  <Reference Include="UnityEngine.UI">

@@ -18,6 +18,5 @@ public class MusicTempo : MonoBehaviour {
 	public int getFrequency() {
 		return this.audioSource.clip.frequency;
 	}
-
 	
 }
