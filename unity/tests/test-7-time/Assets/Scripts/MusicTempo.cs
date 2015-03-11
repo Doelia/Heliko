@@ -4,6 +4,7 @@ using System.Collections;
 public class MusicTempo : MonoBehaviour {
 
 	public float bpm = 133f;
+	public float scalar = 1f;
 
 	private AudioSource audioSource;
 	
@@ -12,7 +13,7 @@ public class MusicTempo : MonoBehaviour {
 	}
 
 	public float getSamplePeriod() {
-		return (60f / (bpm * 1)) * audioSource.clip.frequency;
+		return (60f / (scalar * 1)) * audioSource.clip.frequency;
 	}
 
 	public int getFrequency() {
