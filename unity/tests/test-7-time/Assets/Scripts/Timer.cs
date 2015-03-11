@@ -31,13 +31,15 @@ public abstract class Timer : MonoBehaviour {
 	}
 
  	IEnumerator BeatCheck () {
-		while (audioSource.isPlaying) {
-			float currentSample = audioSource.timeSamples;
-			if (currentSample >= (nextBeatSample)) {
-				this.beat();
-				nextBeatSample += samplePeriod;
+		while (true) {
+			if (audioSource.isPlaying) {
+				float currentSample = audioSource.timeSamples;
+				if (currentSample >= (nextBeatSample)) {
+					this.beat();
+					nextBeatSample += samplePeriod;
+				}
 			}
-			yield return new WaitForSeconds(0 / 1000f);
+			yield return new WaitForSeconds(1 / 1000f);
 		}
 	}
 

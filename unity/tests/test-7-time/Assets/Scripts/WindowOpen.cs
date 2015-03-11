@@ -4,7 +4,7 @@ using System.Collections;
 public class WindowOpen : Window {
 
 	new public void Awake() {
-		this.right = 1;
+		this.right = -1;
 		base.Awake();
 	}
 
