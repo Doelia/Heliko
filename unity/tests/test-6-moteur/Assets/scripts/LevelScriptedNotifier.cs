@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 /*
@@ -11,19 +11,21 @@ public class LevelScriptedNotifier : TempoReceiver
 
 	public TextAsset levelData;
 	private int[] stepEvents;
-	private bool successThisStep = false;
-	private int before = 1;
-
+	private int eventIndex;
 	public BPMControlor bpm;
-	public bool loop = true;
-
-	// PROVISOIRE
-	public Transform cube;
+	public bool loop;
+	private bool successThisStep;
+	private bool isInWindow;
+	int before;
 
 	ArrayList observers;
 
-	public void Awake () {
+	public void Awake ()
+	{
 		this.observers = new ArrayList ();
+		loop = true;
+		successThisStep = false;
+		before = 1;
 	}
 
 	public void Start ()
@@ -77,15 +79,21 @@ public class LevelScriptedNotifier : TempoReceiver
 	                                
 	public override void onStep ()
 	{
-		if (stepEvents [this.getIndex()] != 0)
-			notifyChildren (stepEvents [this.getIndex()]);
+		//Debug.Log ("Value index : "+stepEvents [eventIndex]);
+		this.incrementIndex ();
+		before = 0;
+		if (stepEvents [eventIndex] != 0)
+			notifyChildren (stepEvents [eventIndex]);
 	}
 
 	public bool isGood (int type)
 	{
-
+		if (successThisStep) {
+			return true;
+		}
 		if (this.bpm.timeIsInWindow () && stepEvents [getIndex ()] == type) {
 			successThisStep = true;
+			Debug.Log ("good");
 			return true;
 		}
 		return false;
@@ -93,37 +101,30 @@ public class LevelScriptedNotifier : TempoReceiver
 
 	public int getIndex ()
 	{
-		return (this.bpm.getNumStep()) % stepEvents.Length;
-	}
-
-	public void changeColorCube (bool good)
-	{
-		if (good) {
-			cube.renderer.material.color = new Color (0, 1, 0);
-		} else {
-			cube.renderer.material.color = new Color (1, 0, 0);
-		}
-	}
-
-	void OnGUI() {
-		GUI.Label(new Rect(100,0,100,100), "tab["+this.getIndex()+"] = "+this.stepEvents[this.getIndex()]+"");
+		return (eventIndex + before) % stepEvents.Length;
 	}
 
 	public override void onSuccessWindowExit ()
 	{
-		if (this.stepEvents[this.getIndex()] > 0) {
-			this.changeColorCube(false);
+		//Debug.Log ("Exit");
+		if (stepEvents [eventIndex] != 0) {
 			if (!successThisStep) {
 				notifyChildrenOfFailure ();
 			}
 		}
 	}
 
+	private void incrementIndex ()
+	{
+		eventIndex++;
+		if (loop && eventIndex >= stepEvents.Length) {
+			eventIndex = 0;
+		}
+	}
+
 	public override void onSuccessWindowEnter ()
 	{
 		successThisStep = false;
-		if (this.stepEvents[this.getIndex()] > 0) {
-			this.changeColorCube(true);
-		}
+		before = 1;
 	}
 }

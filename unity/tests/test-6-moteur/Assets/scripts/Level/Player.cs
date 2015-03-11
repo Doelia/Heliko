@@ -37,6 +37,8 @@ public class Player : MonoBehaviour ,LevelScriptedReceiver, PlayerEventReceiver
 
 	public void onFinger (int type)
 	{
+		Debug.Log ("score : " + levelScriptNotifier.bpm.getScore ());
+		
 		//Debug.Log ("Score = " + this.levelScriptNotifier.bpm.getRelativeScore ());
 		if (this.levelScriptNotifier.isGood (type)) {
 			this.GetComponent<Animator> ().SetBool ("good", true);
