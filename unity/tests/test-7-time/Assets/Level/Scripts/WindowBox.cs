@@ -3,10 +3,12 @@ using System.Collections;
 
 public class WindowBox : MonoBehaviour, TempoReceiver {
 
-	public BeatCounter beatCounter;
+	public WindowOpen windowOpen;
+	public WindowClose windowClose;
 
 	public void Start () {
-		this.beatCounter.connect(this);
+		this.windowOpen.connect(this);
+		this.windowClose.connect(this);
 	}
 	
 	void Update () {
