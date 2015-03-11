@@ -127,8 +127,8 @@ public class BPMControlor : MonoBehaviour
 	double last = 0;
 	private void notifyChildren () {
 		double timePassed = (this.getTimeInMusic() - last) * 1000;
-		Debug.Log (timePassed+" ms before last tick");
-		//Debug.Log (this.getTimeBeforeLastTick());
+		Debug.Log (timePassed+" time pased");
+		Debug.Log ("score: "+this.getTimeBeforeLastTick());
 		last = this.getTimeInMusic();
 		foreach (TempoReceiver e in this.observers) {
 			e.onStep ();
@@ -152,18 +152,15 @@ public class BPMControlor : MonoBehaviour
 	void Start () {
 		music.Play ();
 		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTickInMS ());
-		d = - this.getOffsetStartInSeconds();
 
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 200; i++) {
 			float voulu = i*getTimeInOneTick();
 			StartCoroutine(WaitAndNotif(voulu));
 		}
 
 	}
 
-	float timePassed = 0f;
 	IEnumerator WaitAndNotif(float waitTime) {
-		Debug.Log("Waiting "+waitTime);
 		yield return new WaitForSeconds(waitTime);
 		this.notifyChildren();
 	}
