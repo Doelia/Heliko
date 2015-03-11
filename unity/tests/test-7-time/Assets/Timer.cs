@@ -5,15 +5,6 @@ public class Timer : MonoBehaviour {
 
 	public AudioSource music;
 
-	double getDelayTick() {
-		double timeInMusic = (double)music.timeSamples / (double)music.clip.frequency;
-		return timeInMusic % this.getTimePerTicks();
-	}
-
-	float getTimePerTicks() {
-		return 60f / 266f;
-	}
-
 	// Use this for initialization
 	void Start() {
 		print ("timePerTicks="+getTimePerTicks());
@@ -31,6 +22,22 @@ public class Timer : MonoBehaviour {
 		yield return new WaitForSeconds(waitTime);
 		double delay = getDelayTick() * 1000;
 		Debug.Log("Delay " + delay+"ms");
+	}
+
+	IEnumerator BeatCheck ()
+	{
+		while (audioSource.isPlaying) {
+			currentSample = (float)AudioSettings.dspTime * audioSource.clip.frequency;
+			
+			if (currentSample >= (nextBeatSample + sampleOffset)) {
+				foreach (GameObject obj in observers) {
+					obj.GetComponent<BeatObserver>().BeatNotify(beatType);
+				}
+				nextBeatSample += samplePeriod;
+			}
+
+			yield return new WaitForSeconds(loopTime / 1000f);
+		}
 	}
 
 	// Update is called once per frame

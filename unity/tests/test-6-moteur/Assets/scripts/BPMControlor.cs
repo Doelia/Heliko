@@ -85,33 +85,6 @@ public class BPMControlor : MonoBehaviour
 		return score;
 	}
 
-	// UPDATES
-
-	// Le "d" augmente jusqu'a attendre le temps qu'on veut
-
-	private double d = 0;
-	private double lastTime = 0;
-	private bool notifiedEnter = false;
-	private bool notifiedExit = false;
-
-	private bool exitedSuccessWindow () {		
-		if (!notifiedExit && !timeIsInWindow ()) {		
-			notifiedExit = true;		
-			notifiedEnter = false;		
-			return true;		
-		}		
-		return false;		
-	}		
-				
-	private bool enteredSuccessWindow () {
-		if (!notifiedEnter && timeIsInWindow ()) {		
-			notifiedEnter = true;		
-			notifiedExit = false;		
-			return true;		
-		}		
-		return false;		
-	}
-
 	// NOTIFICATEURS
 
 	ArrayList observers;
@@ -152,21 +125,39 @@ public class BPMControlor : MonoBehaviour
 	void Start () {
 		music.Play ();
 		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTickInMS ());
-
-		for (int i = 0; i < 200; i++) {
-			float voulu = i*getTimeInOneTick();
-			StartCoroutine(WaitAndNotif(voulu));
-		}
-
-	}
-
-	IEnumerator WaitAndNotif(float waitTime) {
-		yield return new WaitForSeconds(waitTime);
-		this.notifyChildren();
+		Debug.Log ("getSamplePeriod=" + getSamplePeriod ());
+		nextBeatSample = (float)AudioSettings.dspTime * music.clip.frequency;
+		StartCoroutine(BeatCheck());
 	}
 
 	void Update () {
 
+	}
+
+	private float nextBeatSample = 0f;
+	private int cpt = 0; // Debug
+
+	private float getSamplePeriod() {
+		return (60f / this.tempo) * music.clip.frequency;
+	}
+
+	private float getSampleOffset() {
+		float sampleOffset = (60f / tempo) * music.clip.frequency;
+		return sampleOffset;
+	}
+
+	IEnumerator BeatCheck ()
+	{
+		while (music.isPlaying) {
+			float currentSample = (float)AudioSettings.dspTime * music.clip.frequency;
+
+			if (currentSample >= (nextBeatSample + getSampleOffset())) {
+				this.notifyChildren();
+				nextBeatSample += this.getSamplePeriod();
+			}
+			
+			yield return new WaitForSeconds(20 / 1000f);
+		}
 	}
 
 
