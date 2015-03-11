@@ -46,7 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BeatCounter.cs" />
+     <Compile Include="Assets\MusicTempo.cs" />
      <Compile Include="Assets\Timer.cs" />
+     <Compile Include="Assets\Window.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
