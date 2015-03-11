@@ -14,61 +14,51 @@ public class BPMControlor : MonoBehaviour
 	// CALCULATEURS SUR LES ATTRIBUTS CONSTANTS
 
 	// Retourne le temps en seconde entre 2 ticks
-	public float getTimeInOneTick ()
-	{
+	public float getTimeInOneTick () {
 		return (60.0f / (tempo * 2));
 	}
 
-	public int getTimeInOneTickInMS ()
-	{
+	public int getTimeInOneTickInMS () {
 		return Tools.convertToMS (this.getTimeInOneTick ());
 	}
 
-	private double getErrorMarginInSeconds ()
-	{
+	private double getErrorMarginInSeconds () {
 		return Tools.convertToSeconds(errorMargin);
 	}
 
-	private double getOffsetStartInSeconds ()
-	{
+	private double getOffsetStartInSeconds () {
 		return Tools.convertToSeconds(offsetStart);
 	}
 
 	// CALCULATEURS EN FONCTION DU TEMPS
 
 	// Retourne le temps passé en MS depuis le commencement de la musique
-	private double getTimeInMusic ()
-	{	
+	private double getTimeInMusic () {	
 		return (double)music.timeSamples / (double)music.clip.frequency;
 	}
 
 	// Retourne le temps passé en MS depuis le commencement de la musique
-	private int getTimeInMusicInMS ()
-	{	
+	private int getTimeInMusicInMS () {	
 		int time = Tools.convertToMS (this.getTimeInMusic ());		
 		return time;
 	}
 
 	// Retourne le temps passé depuis le tout premier tick (en MS)
-	private int getTimeBeforeFirstTick ()
-	{
+	private int getTimeBeforeFirstTick () {
 		return this.getTimeInMusicInMS () - offsetStart;
 	}
 
 	// Retourne le temps qu'il s'est passé depuis le dernier tick
-	private int getTimeBeforeLastTick ()
-	{
+	private int getTimeBeforeLastTick () {
 		return this.getTimeBeforeFirstTick () % this.getTimeInOneTickInMS ();
 	}
 
 	// Retourne le temps restant avant le prochain tick
-	private int getTimeAfterNextTick ()
-	{
+	private int getTimeAfterNextTick () {
 		return this.getTimeInOneTickInMS () - getTimeBeforeLastTick ();
 	}
 
-	public bool timeIsInWindow ()
-	{
+	public bool timeIsInWindow () {
 		return (this.getAbsoluteScore () < errorMargin);
 	}
 
@@ -78,8 +68,7 @@ public class BPMControlor : MonoBehaviour
 		return timeOnStepClosest;
 	}
 
-	public int getRelativeScore ()
-	{
+	public int getRelativeScore () {
 		int msBefore = this.getTimeBeforeLastTick ();
 		int msAfter = this.getTimeAfterNextTick ();
 		if (msBefore > msAfter) {
@@ -89,14 +78,12 @@ public class BPMControlor : MonoBehaviour
 		}
 	}
 
-	private int getAbsoluteScore ()
-	{
+	private int getAbsoluteScore () {
 		int msBefore = this.getTimeBeforeLastTick ();
 		int msAfter = this.getTimeAfterNextTick ();
 		int score = Mathf.Min (msBefore, msAfter);
 		return score;
 	}
-
 
 	// UPDATES
 
@@ -107,8 +94,7 @@ public class BPMControlor : MonoBehaviour
 	private bool notifiedEnter = false;
 	private bool notifiedExit = false;
 
-	private bool exitedSuccessWindow ()
-	{		
+	private bool exitedSuccessWindow () {		
 		if (!notifiedExit && !timeIsInWindow ()) {		
 			notifiedExit = true;		
 			notifiedEnter = false;		
@@ -117,8 +103,7 @@ public class BPMControlor : MonoBehaviour
 		return false;		
 	}		
 				
-	private bool enteredSuccessWindow ()
-	{
+	private bool enteredSuccessWindow () {
 		if (!notifiedEnter && timeIsInWindow ()) {		
 			notifiedEnter = true;		
 			notifiedExit = false;		
@@ -131,35 +116,32 @@ public class BPMControlor : MonoBehaviour
 
 	ArrayList observers;
 
-	public void Awake ()
-	{
+	public void Awake () {
 		this.observers = new ArrayList ();
 	}
 
-	public void connect (TempoReceiver r)
-	{
+	public void connect (TempoReceiver r) {
 		this.observers.Add (r);
 	}
 
 	double last = 0;
-	private void notifyChildren ()
-	{
-		Debug.Log (this.getTimeInMusic() - last);
+	private void notifyChildren () {
+		double timePassed = (this.getTimeInMusic() - last) * 1000;
+		Debug.Log (timePassed+" ms before last tick");
+		//Debug.Log (this.getTimeBeforeLastTick());
 		last = this.getTimeInMusic();
 		foreach (TempoReceiver e in this.observers) {
 			e.onStep ();
 		}
 	}
 
-	private void notifyExitSuccessWindow ()
-	{
+	private void notifyExitSuccessWindow () {
 		foreach (TempoReceiver e in this.observers) {
 			e.onSuccessWindowExit ();
 		}
 	}
 
-	private void notifyEnterSuccessWindow ()
-	{
+	private void notifyEnterSuccessWindow () {
 		foreach (TempoReceiver e in this.observers) {
 			e.onSuccessWindowEnter ();
 		}
@@ -167,60 +149,27 @@ public class BPMControlor : MonoBehaviour
 
 	// START
 
-	void Start ()
-	{
+	void Start () {
 		music.Play ();
-		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTick ());
+		Debug.Log ("getTimeInOneTickInMS=" + getTimeInOneTickInMS ());
 		d = - this.getOffsetStartInSeconds();
 
-		int nbrBeats = (int) ( this.music.clip.length / this.getTimeInOneTick());
-		Debug.Log (nbrBeats+" ticks");
-		
-		for (float i = 0; i < nbrBeats; i++) {
-			float time = i*this.getTimeInOneTick();
-			//Debug.Log ("time="+time);
-
+		for (int i = 0; i < 20; i++) {
+			float voulu = i*getTimeInOneTick();
+			StartCoroutine(WaitAndNotif(voulu));
 		}
 
-		StartCoroutine(Example(0f));
 	}
 
 	float timePassed = 0f;
-	IEnumerator Example(float time) {
-		while (true) {
-			double u = getTimeInMusic ();
-			double diff = u - lastTime;		
-			lastTime = u;	
-			d += diff;
-			
-			if ( (d) > this.getTimeInOneTick ()) {		
-				d = (d - this.getTimeInOneTick ());		
-
-				//this.notifyChildren ();
-				//Debug.Log (this.getRelativeScore());
-				Debug.Log ("timeBefore="+this.getTimeBeforeLastTick ());
-			}
-
-			yield return new WaitForSeconds(1f/1000f);
-		}
+	IEnumerator WaitAndNotif(float waitTime) {
+		Debug.Log("Waiting "+waitTime);
+		yield return new WaitForSeconds(waitTime);
+		this.notifyChildren();
 	}
 
-	void Update ()
-	{
-		/*
-		
-		if (enteredSuccessWindow ()) {	
-			this.notifyEnterSuccessWindow ();		
-		}		
-		
-		if (exitedSuccessWindow ()) {		
-			this.notifyExitSuccessWindow ();		
-		}
+	void Update () {
 
-		// DEBUG
-		sc = this.getRelativeScore();
-		*/
-		
 	}
 
 
