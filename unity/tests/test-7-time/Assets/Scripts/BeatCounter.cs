@@ -8,6 +8,7 @@ public class BeatCounter : Timer {
 
 	void Awake() {
 		Debug.Log("BeatCounter awake");
+		this.observers = new ArrayList ();
 		this.setSampleDelay(delayInMS);
 	}
 
@@ -20,7 +21,7 @@ public class BeatCounter : Timer {
 	}
 
 	// Retourne le temps passé en MS depuis ou avant le dernier beat (le meilleur des deux)
-	private int getRelativeScore() {
+	public int getRelativeScore() {
 		int score = getScore();
 		float timeBeatInMs = samplePeriod / music.getFrequency() * 1000f;
 		if (score > timeBeatInMs/2f) {
@@ -34,7 +35,7 @@ public class BeatCounter : Timer {
 	}
 
 	protected override void beat() {
-		Debug.Log("Tap!");
+		this.notifyChildren();
 	}
 
 	public void Start() {
@@ -44,5 +45,18 @@ public class BeatCounter : Timer {
 	public void Update() {
 	}
 
+
+	// NOTIFIEUR
+	ArrayList observers;
+
+	public void connect (TempoReceiver r) {
+		this.observers.Add (r);
+	}
+
+	private void notifyChildren () {
+		foreach (TempoReceiver e in this.observers) {
+			e.onStep ();
+		}
+	}
 
 }
