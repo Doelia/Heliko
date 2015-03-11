@@ -29,3 +29,4 @@ public abstract class Window : Timer {
 
 	protected abstract void notifyChildren ();
 }
+
