@@ -29,7 +29,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver
 
 	public void Start () {
 		loadData();
-		wc.connect(this);
+		beatCounter.connect(this);
 		wc.connect(this);
 		wo.connect(this);
 	}
@@ -83,12 +83,14 @@ public class LevelScripted : MonoBehaviour, TempoReceiver
 	public void onStep () {
 		this.incrementIndex ();
 		before = 0;
-		if (stepEvents [getIndex()] != 0)
+		Debug.Log("Step!, stepEvents["+getIndex()+"] = "+stepEvents[getIndex()]);
+		if (stepEvents [getIndex()] > 0) {
 			notifyChildren (stepEvents [getIndex()]);
+		}
 	}
 	
 	public void onSuccessWindowExit () {
-		if (stepEvents [eventIndex] != 0) {
+		if (stepEvents [eventIndex] > 0) {
 			if (!successThisStep) {
 				notifyChildrenOfFailure ();
 			}

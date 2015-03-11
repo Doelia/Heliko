@@ -34,6 +34,7 @@ public class BeatCounter : Timer {
 	}
 
 	protected override void beat() {
+		Debug.Log("Step :)");
 		this.notifyChildren();
 	}
 

@@ -35,6 +35,7 @@ public abstract class Timer : MonoBehaviour {
 		while (true) {
 			if (audioSource.isPlaying) {
 				float currentSample = audioSource.timeSamples;
+				Debug.Log(currentSample+", "+nextBeatSample);
 				if (currentSample >= (nextBeatSample)) {
 					this.beat();
 					nextBeatSample += samplePeriod;

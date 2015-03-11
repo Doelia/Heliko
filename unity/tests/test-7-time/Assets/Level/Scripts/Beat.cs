@@ -1,30 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Beat : MonoBehaviour, TempoReceiver {
+public class Beat : MonoBehaviour, LevelScriptedReceiver {
 
-	public BeatCounter beatCounter;
+	public LevelScripted level;
 
 	public AudioSource snare;
 
 	public void Start () {
-		this.beatCounter.connect(this);
+		this.level.connect(this);
 	}
 	
 	void Update () {
 		
 	}
 
-	public void onStep () {
-		this.GetComponent<Animator> ().SetTrigger ("Move");
-		snare.Play();
+	public void onEventType (int type) {
+		if (type == 1) {
+			this.GetComponent<Animator> ().SetTrigger ("Move");
+			snare.Play();
+		}
 	}
 
-	public void onSuccessWindowExit () {
-
+	public void onFailure() {
+		
 	}
 
-	public void onSuccessWindowEnter () {
-
-	}
 }
