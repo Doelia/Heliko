@@ -13,7 +13,7 @@ public class MusicTempo : MonoBehaviour {
 	}
 
 	public float getSamplePeriod() {
-		return (60f / (scalar * 1)) * audioSource.clip.frequency;
+		return (60f / (bpm * scalar)) * audioSource.clip.frequency;
 	}
 
 	public int getFrequency() {
