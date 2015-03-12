@@ -71,6 +71,11 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 			successThisStep = true;
 			return true;
 		}
+		if (this.beatCounter.isInWindow()) {
+			Debug.Log("is not good because inst an index");
+		} else {
+			Debug.Log("is not good because inst in window");
+		}
 		return false;
 	}
 
