@@ -6,8 +6,7 @@ using System.Collections;
  * 
  */
 
-public class LevelScripted : MonoBehaviour, TempoReceiver
-{
+public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	public bool loop = true;
 	public TextAsset levelData;
@@ -21,7 +20,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver
 	private bool successThisStep = true;
 	private int before = 1;
 
-	ArrayList observers;
+	private ArrayList observers;
 
 	public void Awake () {
 		this.observers = new ArrayList ();
@@ -68,9 +67,6 @@ public class LevelScripted : MonoBehaviour, TempoReceiver
 	}
 	
 	public bool isGood (int type) {
-		if (successThisStep) {
-			return true;
-		}
 		if (this.beatCounter.isInWindow () && stepEvents [getIndex ()] == type) {
 			successThisStep = true;
 			return true;
@@ -83,14 +79,13 @@ public class LevelScripted : MonoBehaviour, TempoReceiver
 	public void onStep () {
 		this.incrementIndex ();
 		before = 0;
-		Debug.Log("Step!, stepEvents["+getIndex()+"] = "+stepEvents[getIndex()]);
 		if (stepEvents [getIndex()] > 0) {
 			notifyChildren (stepEvents [getIndex()]);
 		}
 	}
 	
 	public void onSuccessWindowExit () {
-		if (stepEvents [eventIndex] > 0) {
+		if (stepEvents [getIndex()] > 0) {
 			if (!successThisStep) {
 				notifyChildrenOfFailure ();
 			}

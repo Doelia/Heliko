@@ -10,7 +10,7 @@ public abstract class Window : Timer {
 	public void Awake() {
 		this.observers = new ArrayList ();
 		beatCounter = beatCounterGameObject.GetComponent<BeatCounter>();
-		this.setSampleDelay(beatCounter.delayInMS + right*beatCounter.timeWindowInMS);
+		this.setSampleDelay(beatCounter.delayInMS + right * beatCounter.timeWindowInMS);
 	}
 
 	protected override void beat() {

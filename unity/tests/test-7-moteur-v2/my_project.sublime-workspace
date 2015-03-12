@@ -36,50 +36,10 @@
 	"buffers":
 	[
 		{
-			"file": "Assets/Scripts/Window.cs",
-			"settings":
-			{
-				"buffer_size": 662,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "Assets/Scripts/Timer.cs",
 			"settings":
 			{
-				"buffer_size": 1144,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/PlayerEventListener.cs",
-			"settings":
-			{
-				"buffer_size": 687,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MusicTempo.cs",
-			"settings":
-			{
-				"buffer_size": 400,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/WindowOpen.cs",
-			"settings":
-			{
-				"buffer_size": 279,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/WindowClose.cs",
-			"settings":
-			{
-				"buffer_size": 280,
+				"buffer_size": 1273,
 				"line_ending": "Unix"
 			}
 		},
@@ -87,15 +47,47 @@
 			"file": "Assets/Scripts/BeatCounter.cs",
 			"settings":
 			{
-				"buffer_size": 1255,
+				"buffer_size": 1208,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/Scripts/Interfaces/TempoReceiver.cs",
+			"file": "Assets/Scripts/WindowOpen.cs",
 			"settings":
 			{
-				"buffer_size": 159,
+				"buffer_size": 280,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/WindowClose.cs",
+			"settings":
+			{
+				"buffer_size": 279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MusicTempo.cs",
+			"settings":
+			{
+				"buffer_size": 432,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/LevelScripted.cs",
+			"settings":
+			{
+				"buffer_size": 2524,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Window.cs",
+			"settings":
+			{
+				"buffer_size": 664,
 				"line_ending": "Unix"
 			}
 		}
@@ -144,12 +136,22 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/Interfaces"
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Interfaces"
 	],
 	"file_history":
 	[
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/level.txt",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/PlayerEventListener.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/BeatCounter.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Window.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/LevelScripted.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/MusicTempo.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/WindowOpen.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/WindowClose.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Interfaces/TempoReceiver.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/WindowClose.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/Scripts/Player.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/PlayerEventListener.cs",
@@ -219,169 +221,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/Window.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 662,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								662,
-								662
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "Assets/Scripts/Timer.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1144,
+						"buffer_size": 1273,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								450,
-								450
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Scripts/PlayerEventListener.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								687,
-								687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Assets/Scripts/MusicTempo.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								396,
-								396
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Assets/Scripts/WindowOpen.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 279,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								87,
-								87
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Assets/Scripts/WindowClose.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 280,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								88,
-								88
+								1273,
+								1273
 							]
 						],
 						"settings":
@@ -397,20 +254,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 1,
 					"file": "Assets/Scripts/BeatCounter.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1255,
+						"buffer_size": 1208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								394,
-								405
+								858,
+								868
 							]
 						],
 						"settings":
@@ -422,24 +279,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "Assets/Scripts/Interfaces/TempoReceiver.cs",
+					"buffer": 2,
+					"file": "Assets/Scripts/WindowOpen.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 159,
+						"buffer_size": 280,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								78,
-								78
+								0,
+								0
 							]
 						],
 						"settings":
@@ -450,7 +307,122 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/WindowClose.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/MusicTempo.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/LevelScripted.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1720,
+								1720
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/Window.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

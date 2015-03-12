@@ -37,10 +37,6 @@ public class BeatCounter : Timer {
 		this.notifyChildren();
 	}
 
-	new public void Start() {
-		base.Start();
-	}
-
 	// NOTIFIEUR
 	ArrayList observers;
 
