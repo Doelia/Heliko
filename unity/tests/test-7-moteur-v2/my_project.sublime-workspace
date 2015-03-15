@@ -44,10 +44,10 @@
 			}
 		},
 		{
-			"file": "Assets/Scripts/BeatCounter.cs",
+			"file": "/Applications/MAMP/bin/php/php5.6.2/conf/php.ini",
 			"settings":
 			{
-				"buffer_size": 1208,
+				"buffer_size": 40362,
 				"line_ending": "Unix"
 			}
 		}
@@ -104,16 +104,17 @@
 	],
 	"file_history":
 	[
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Window.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Timer.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/MusicTempo.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/BeatCounter.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Window.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/Scripts/Player.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/Scripts/Beat.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/LevelScripted.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/WindowClose.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/WindowOpen.cs",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Timer.cs",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/Scripts/Player.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/level.txt",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/PlayerEventListener.cs",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/BeatCounter.cs",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/LevelScripted.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Interfaces/TempoReceiver.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/WindowClose.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/Scripts/Player.cs",
@@ -151,7 +152,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -165,6 +166,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"extension",
 			"window",
 			"	\n",
 			"msDelayStartCount"
@@ -185,7 +187,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -201,8 +203,8 @@
 						"selection":
 						[
 							[
-								1624,
-								1624
+								1725,
+								1725
 							]
 						],
 						"settings":
@@ -211,39 +213,38 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 706.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/Scripts/BeatCounter.cs",
+					"file": "/Applications/MAMP/bin/php/php5.6.2/conf/php.ini",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1208,
+						"buffer_size": 40362,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								421,
-								467
+								21006,
+								21006
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

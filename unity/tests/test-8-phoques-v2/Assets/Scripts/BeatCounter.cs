@@ -4,10 +4,11 @@ using System.Collections;
 public class BeatCounter : Timer {
 
 	public int delayInMS = 0;
+	public int nbrTicksDelay = 0; // Nombre de beat à attendre avant de commencer à compte
 
 	void Awake() {
 		this.observers = new ArrayList ();
-		this.setSampleDelay(delayInMS);
+		this.setSampleDelay(delayInMS, nbrTicksDelay);
 	}
 
 	// Retourne le temps passé en MS depuis le dernier beat
@@ -41,10 +42,6 @@ public class BeatCounter : Timer {
 
 	protected override void beat() {
 		this.notifyChildren();
-	}
-
-	public int getNBeat() {
-		return base.getNBeat();
 	}
 
 	// NOTIFIEUR

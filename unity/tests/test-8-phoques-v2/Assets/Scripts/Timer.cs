@@ -13,19 +13,21 @@ public abstract class Timer : MonoBehaviour {
 	protected MusicTempo music;
 
 	private int myMsDelayStartCount = 0;
+	private int myDelayTicks = 0;
 	private int nBeat = 0;
 
 	protected abstract void beat();
 
-	protected void setSampleDelay(int msDelayStartCount) {
+	protected void setSampleDelay(int msDelayStartCount, int delayTicks) {
 		myMsDelayStartCount = msDelayStartCount;
+		myDelayTicks = delayTicks;
 	}
 
 	public MusicTempo getMusic() {
 		return music;
 	}
 
-	protected int getNBeat() {
+	public int getNBeat() {
 		return this.nBeat;
 	}
 
@@ -34,7 +36,9 @@ public abstract class Timer : MonoBehaviour {
 
 		Debug.Log("Time between ticks : "+music.getTimePeriod()*1000);
 
-		sampleDelay = ((float) myMsDelayStartCount / 1000f) * music.getFrequency();
+		float delayMS = myMsDelayStartCount + (myDelayTicks*music.getTimePeriod()*1000f);
+
+		sampleDelay = ((float) delayMS / 1000f) * music.getFrequency();
 		samplePeriod = music.getSamplePeriod();
 		nextBeatSample = sampleDelay;
 
