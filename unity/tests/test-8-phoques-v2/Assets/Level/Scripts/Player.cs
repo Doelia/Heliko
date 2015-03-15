@@ -23,7 +23,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, LevelScriptedReceiver 
 	}
 
 	public void changeColor(bool isGood) {
-		tete.GetComponent<SpriteRenderer>().color = isGood ? new Color(0,1,0) : new Color(1,0,0);
+		tete.GetComponent<SpriteRenderer>().color = isGood ? new Color(0.7f,1,0.7f) : new Color(1,.7f,.7f);
 	}
 
 	public void onEventType(int type) {
