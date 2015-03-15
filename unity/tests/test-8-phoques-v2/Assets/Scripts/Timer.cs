@@ -23,7 +23,7 @@ public abstract class Timer : MonoBehaviour {
 	public void Start() {
 		music = audioSource.GetComponent<MusicTempo>();
 
-		Debug.Log("Time beatween ticks : "+music.getTimePeriod()*1000);
+		Debug.Log("Time between ticks : "+music.getTimePeriod()*1000);
 
 		sampleDelay = ((float) myMsDelayStartCount / 1000f) * music.getFrequency();
 		samplePeriod = music.getSamplePeriod();
