@@ -39,15 +39,15 @@
 			"file": "Assets/Scripts/LevelScripted.cs",
 			"settings":
 			{
-				"buffer_size": 2560,
+				"buffer_size": 2404,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/Scripts/BeatCounter.cs",
+			"file": "Assets/Level/Sounds/music.mp3",
 			"settings":
 			{
-				"buffer_size": 1208,
+				"buffer_size": 6341152,
 				"line_ending": "Unix"
 			}
 		}
@@ -96,14 +96,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/Scripts",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Interfaces"
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Sounds",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Sprites"
 	],
 	"file_history":
 	[
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Scripts/BeatCounter.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Window.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/MusicTempo.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/WindowClose.cs",
@@ -194,15 +193,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2560,
+						"buffer_size": 2404,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1624,
-								1624
+								0,
+								0
 							]
 						],
 						"settings":
@@ -219,25 +218,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/Scripts/BeatCounter.cs",
-					"semi_transient": false,
+					"file": "Assets/Level/Sounds/music.mp3",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1208,
+						"buffer_size": 6341152,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								421,
-								467
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

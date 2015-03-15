@@ -18,6 +18,14 @@ public class PlayerEventListener : MonoBehaviour
 	}
 
 	void Update () {
+		foreach (Touch touch in Input.touches) {
+			if (touch.phase == TouchPhase.Began) {
+				foreach (PlayerEventReceiver e in this.observers) {
+					e.onFinger (1);
+				}
+			}
+		}
+
 		if ((onKeyDown && Input.GetKeyDown (KeyCode.O)) || (!onKeyDown && Input.GetKey (KeyCode.O)))
 			foreach (PlayerEventReceiver e in this.observers) {
 				e.onFinger (1);
