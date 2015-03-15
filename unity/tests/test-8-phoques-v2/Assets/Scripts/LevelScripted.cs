@@ -43,9 +43,11 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 			toReturn [i * 2 + 1] = int.Parse (halfSteps [i]);
 		}
 
+		/*
 		for (int i = 0; i < steps.Length * 2; i++) {
 			Debug.Log (i + " : " + toReturn [i]);
 		}
+		*/
 
 		return toReturn;
 	}
@@ -68,10 +70,8 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	public bool isGood (int type) {
 		int stepTapped = this.beatCounter.getStepClosest();
-		//Debug.Log ("tapped = "+stepTapped+", stepActual = "+this.beatCounter.getNBeat());
 		if (stepEvents [getIndex (stepTapped)] == type) {
 			this.successStep.Add(stepTapped);
-			Debug.Log ("Step "+stepTapped+" OK");
 			return true;
 		}
 		return false;
@@ -81,14 +81,12 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	public void onStep (int nStep) {
 		int actualValue = stepEvents[getIndex(nStep)];
-		//Debug.Log ("value("+nStep+"="+actualValue);
 		if (actualValue > 0) {
 			notifyChildren (actualValue);
 		}
 		if (nStep > 1) {
 			int previousStep = nStep-1;
 			if (isValidStep (previousStep) && !successStep.Contains(previousStep)) {
-				Debug.Log ("Step "+(nStep-1)+" :(");
 				this.notifyChildrenOfFailure();
 			}
 		}

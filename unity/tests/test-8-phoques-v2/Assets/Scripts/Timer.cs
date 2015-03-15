@@ -18,7 +18,6 @@ public abstract class Timer : MonoBehaviour {
 	protected abstract void beat();
 
 	protected void setSampleDelay(int msDelayStartCount) {
-		Debug.Log ("Set sampleDelay at "+msDelayStartCount);
 		myMsDelayStartCount = msDelayStartCount;
 	}
 
