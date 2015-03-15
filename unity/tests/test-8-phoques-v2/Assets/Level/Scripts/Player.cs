@@ -4,12 +4,15 @@ using System.Collections;
 public class Player : MonoBehaviour, PlayerEventReceiver, LevelScriptedReceiver {
 
 	public PlayerEventListener playerEventListener;
-	public BeatCounter beatCounter; // DEBUG
 	public LevelScripted level;
+
+	public AudioSource clap;
+	private Animator anim;
 
 	void Start () {
 		playerEventListener.connect (this);
 		level.connect (this);
+		clap = GetComponent<AudioSource>();
 	}
 
 	public void onEventType(int type) {
@@ -21,8 +24,11 @@ public class Player : MonoBehaviour, PlayerEventReceiver, LevelScriptedReceiver 
 	}
 
 	public void onFinger (int type) {
-		Debug.Log ("Score finger  : " + beatCounter.getRelativeScore());
-		
+		anim.SetTrigger ("change");
+		clap.Play();
+		if (level.isGood(type)) {
+
+		}
 	}
 
 }

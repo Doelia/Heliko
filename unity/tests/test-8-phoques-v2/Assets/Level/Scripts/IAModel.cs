@@ -4,7 +4,6 @@ using System.Collections;
 public class IAModel : MonoBehaviour, LevelScriptedReceiver {
 
 	private Animator anim;
-	public AudioSource audio;
 	public LevelScripted level;
 
 	public void Start () {
