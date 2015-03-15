@@ -12,25 +12,20 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	public TextAsset levelData;
 
 	public BeatCounter beatCounter;
-	public WindowClose wc;
-	public WindowOpen wo;
 	
 	private int[] stepEvents;
-	private int eventIndex = 0;
-	private bool successThisStep = true;
-	private int before = 1;
+	private ArrayList successStep;
 
 	private ArrayList observers;
 
 	public void Awake () {
 		this.observers = new ArrayList ();
+		this.successStep = new ArrayList();
 	}
 
 	public void Start () {
 		loadData();
 		beatCounter.connect(this);
-		wc.connect(this);
-		wo.connect(this);
 	}
 	
 	public void loadData () {
@@ -55,52 +50,50 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 		return toReturn;
 	}
 
-	private void incrementIndex () {
-		eventIndex++;
-		if (loop && eventIndex >= stepEvents.Length) {
-			eventIndex = 0;
-		}
+	public int getIndex (int nBeat) {
+		return (nBeat % stepEvents.Length);
 	}
 
-	public int getIndex () {
-		return (eventIndex + before) % stepEvents.Length;
-	}
-	
-	public bool isGood (int type) {
-		if (this.beatCounter.isInWindow () && stepEvents [getIndex ()] == type) {
-			successThisStep = true;
-			return true;
+	public int getPreviousIndex() {
+		int previous = this.beatCounter.getNBeat() - 1;
+		if (previous < 0) {
+			previous = stepEvents.Length - 1;
 		}
-		if (this.beatCounter.isInWindow()) {
-			Debug.Log("is not good because inst an index");
-		} else {
-			Debug.Log("is not good because inst in window");
+		return (previous);
+	}
+
+	public bool isValidStep(int nStep) {
+		return stepEvents [getIndex (nStep)] > 0;
+	}
+
+	public bool isGood (int type) {
+		int stepTapped = this.beatCounter.getStepClosest();
+		//Debug.Log ("tapped = "+stepTapped+", stepActual = "+this.beatCounter.getNBeat());
+		if (stepEvents [getIndex (stepTapped)] == type) {
+			this.successStep.Add(stepTapped);
+			Debug.Log ("Step "+stepTapped+" OK");
+			return true;
 		}
 		return false;
 	}
 
 	// EVENTS
 
-	public void onStep () {
-		this.incrementIndex ();
-		before = 0;
-		if (stepEvents [getIndex()] > 0) {
-			notifyChildren (stepEvents [getIndex()]);
+	public void onStep (int nStep) {
+		int actualValue = stepEvents[getIndex(nStep)];
+		//Debug.Log ("value("+nStep+"="+actualValue);
+		if (actualValue > 0) {
+			notifyChildren (actualValue);
 		}
-	}
-	
-	public void onSuccessWindowExit () {
-		if (stepEvents [getIndex()] > 0) {
-			if (!successThisStep) {
-				notifyChildrenOfFailure ();
+		if (nStep > 1) {
+			int previousStep = nStep-1;
+			if (isValidStep (previousStep) && !successStep.Contains(previousStep)) {
+				Debug.Log ("Step "+(nStep-1)+" :(");
+				this.notifyChildrenOfFailure();
 			}
 		}
 	}
-
-	public void onSuccessWindowEnter () {
-		successThisStep = false;
-		before = 1;
-	}
+	
 
 	// NOTIFICATIONS
 

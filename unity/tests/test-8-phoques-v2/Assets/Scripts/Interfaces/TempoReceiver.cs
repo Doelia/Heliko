@@ -3,7 +3,5 @@ using System.Collections;
 
 public interface TempoReceiver
 {
-	void onStep ();
-	void onSuccessWindowExit ();
-	void onSuccessWindowEnter ();
+	void onStep (int nStep);
 }

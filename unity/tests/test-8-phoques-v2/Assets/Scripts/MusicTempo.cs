@@ -23,5 +23,13 @@ public class MusicTempo : MonoBehaviour {
 	public int getFrequency() {
 		return this.audioSource.clip.frequency;
 	}
+
+	/// <summary>
+	/// Retourne en millsecondes le temps passé
+	/// </summary>
+	/// <returns>The time passed in MS</returns>
+	public float getTimePassed() {
+		return (float) this.audioSource.timeSamples / (float) getFrequency() * 1000;
+	}
 	
 }

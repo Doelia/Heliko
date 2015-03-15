@@ -4,8 +4,6 @@ using System.Collections;
 public class BeatCounter : Timer {
 
 	public int delayInMS = 0;
-	public int timeWindowInMS = 100; // Temps en MS avant et après la window
-	private int nBeat = 0;
 
 	void Awake() {
 		this.observers = new ArrayList ();
@@ -19,9 +17,9 @@ public class BeatCounter : Timer {
 		score /= music.getFrequency();
 		return (int) (score*1000);
 	}
-
+	
 	// Retourne le temps passé en MS depuis ou avant le dernier beat (le meilleur des deux)
-	public int getRelativeScore() {
+	private int getRelativeScore() {
 		int score = getScore();
 		float timeBeatInMs = samplePeriod / music.getFrequency() * 1000f;
 		if (score > timeBeatInMs/2f) {
@@ -30,17 +28,23 @@ public class BeatCounter : Timer {
 		return score;
 	}
 
-	public bool isInWindow() {
-		return this.getRelativeScore() <= timeWindowInMS;
+	// Retourne le numéro du step le plus proche à ce temps
+	public int getStepClosest() {
+		float currentSample = audioSource.timeSamples - sampleDelay;
+		float score = currentSample % samplePeriod;
+		int step = (int) (currentSample / samplePeriod);
+		if (score > samplePeriod/2) {
+			step++;
+		}
+		return step+1;
 	}
 
 	protected override void beat() {
-		this.nBeat++;
 		this.notifyChildren();
 	}
 
-	protected int getNBeat() {
-		return nBeat;
+	public int getNBeat() {
+		return base.getNBeat();
 	}
 
 	// NOTIFIEUR
@@ -52,7 +56,7 @@ public class BeatCounter : Timer {
 
 	private void notifyChildren () {
 		foreach (TempoReceiver e in this.observers) {
-			e.onStep ();
+			e.onStep (this.getNBeat());
 		}
 	}
 

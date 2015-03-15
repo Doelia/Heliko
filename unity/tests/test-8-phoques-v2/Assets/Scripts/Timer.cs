@@ -13,11 +13,21 @@ public abstract class Timer : MonoBehaviour {
 	protected MusicTempo music;
 
 	private int myMsDelayStartCount = 0;
+	private int nBeat = 0;
 
 	protected abstract void beat();
 
 	protected void setSampleDelay(int msDelayStartCount) {
+		Debug.Log ("Set sampleDelay at "+msDelayStartCount);
 		myMsDelayStartCount = msDelayStartCount;
+	}
+
+	public MusicTempo getMusic() {
+		return music;
+	}
+
+	protected int getNBeat() {
+		return this.nBeat;
 	}
 
 	public void Start() {
@@ -38,6 +48,7 @@ public abstract class Timer : MonoBehaviour {
 			if (audioSource.isPlaying) {
 				float currentSample = audioSource.timeSamples;
 				if (currentSample >= (nextBeatSample)) {
+					nBeat++;
 					this.beat();
 					nextBeatSample += samplePeriod;
 				}
