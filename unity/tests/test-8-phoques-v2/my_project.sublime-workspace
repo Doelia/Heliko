@@ -44,10 +44,26 @@
 			}
 		},
 		{
-			"file": "Assets/Level/Sounds/music.mp3",
+			"file": "Assets/Level/headMove.txt",
 			"settings":
 			{
-				"buffer_size": 6341152,
+				"buffer_size": 3,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Level/Scripts/IAModel.cs",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Level/Scripts/Player.cs",
+			"settings":
+			{
+				"buffer_size": 876,
 				"line_ending": "Unix"
 			}
 		}
@@ -96,9 +112,10 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Sounds",
-		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Sprites"
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Scripts",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Scripts"
 	],
 	"file_history":
 	[
@@ -184,7 +201,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -200,8 +217,65 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1690,
+								1690
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Level/headMove.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Level/Scripts/IAModel.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								390,
+								390
 							]
 						],
 						"settings":
@@ -217,25 +291,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "Assets/Level/Sounds/music.mp3",
+					"buffer": 3,
+					"file": "Assets/Level/Scripts/Player.cs",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 6341152,
+						"buffer_size": 876,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								687,
+								687
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
