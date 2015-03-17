@@ -11,7 +11,7 @@ public class IAModel : MonoBehaviour, LevelScriptedReceiver {
 		anim = GetComponent < Animator >();
 	}
 	
-	public void onEventType (int type) {
+	public void onAction (int type) {
 		if (type == 1) {
 			anim.SetTrigger ("change");
 		}

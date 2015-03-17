@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour, PlayerEventReceiver, LevelScriptedReceiver {
+public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 
 	public PlayerEventListener playerEventListener;
 	public PlayerActions pa;
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, LevelScriptedReceiver 
 
 	void Start () {
 		playerEventListener.connect (this);
-		level.connect (this);
+		pa.connect (this);
 		clap = GetComponent<AudioSource>();
 
 		foreach (Transform s in transform) {
