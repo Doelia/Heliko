@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerActions : MonoBehaviour, LevelScriptedReceiver {
+public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver {
 
 	public LevelScripted level;
+
 	private ArrayList successStep;
 	private int failuresCount;
 	private int stepsCount;
@@ -19,6 +20,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver {
 
 	public void Start() {
 		this.level.connect(this);
+		this.level.beatCounter.connect(this);
 	}
 
 	public void connect (PlayerActionReceiver r) {
@@ -42,10 +44,12 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver {
 	}
 
 	public void onAction(int action){
-		stepsCount++;
-		int nStep = level.beatCounter.getNBeat();
-		if (nStep > 1) {
-			int previousStep = nStep-1;
+
+	}
+
+	public void onStep (int nBeat) {
+		if (nBeat > 1) {
+			int previousStep = nBeat-1;
 			if (level.isStepUseful (previousStep) && !successStep.Contains(previousStep)) {
 				this.notifyFailure();
 			}
