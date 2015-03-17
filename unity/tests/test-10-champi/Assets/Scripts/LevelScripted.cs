@@ -30,19 +30,26 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 
 	private int [] stringToIntEvents (string[] s) {
-		string [] steps = s [0].Split (' ');
-		string [] halfSteps = s [1].Split (' ');
-		int [] toReturn = new int[steps.Length * 2];
-		for (int i = 0; i < steps.Length; i++) {
-			toReturn [i * 2] = int.Parse (steps [i]);
-			toReturn [i * 2 + 1] = int.Parse (halfSteps [i]);
+
+		string [] lineOne = s [0].Split (' ');
+		string [] lineTwo = s [1].Split (' ');
+		string [] lineThree = s [2].Split (' ');
+		string [] lineFour = s [3].Split (' ');
+
+		int nbrLines = 4;
+		int nbrActions = lineOne.Length * nbrLines;
+
+		int [] toReturn = new int[nbrActions];
+		for (int i = 0; i < nbrActions/nbrLines; i++) {
+			toReturn [i * nbrLines + 0] = int.Parse (lineOne [i]);
+			toReturn [i * nbrLines + 1] = int.Parse (lineTwo [i]);
+			toReturn [i * nbrLines + 2] = int.Parse (lineThree [i]);
+			toReturn [i * nbrLines + 3] = int.Parse (lineFour [i]);
 		}
 
-		/*
-		for (int i = 0; i < steps.Length * 2; i++) {
+		for (int i = 0; i < nbrActions; i++) {
 			Debug.Log (i + " : " + toReturn [i]);
 		}
-		*/
 
 		return toReturn;
 	}
