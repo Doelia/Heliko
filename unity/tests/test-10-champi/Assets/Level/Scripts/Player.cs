@@ -20,17 +20,19 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 		handAnimation = animationTransform.GetComponent<Animator>();
 	}
 
-
+	public void changeColor(bool isGood) {
+		carapace.GetComponent<SpriteRenderer>().color = isGood ? new Color(0.7f,1,0.7f) : new Color(1,.7f,.7f);
+	}
 
 	public void onFailure() {
-
+		this.changeColor(false);
 	}
 
 	public void onFinger (int type) {
 		handAnimation.SetTrigger ("Move");
 		carapace.GetComponent<Animator>().SetTrigger("Move");
 		clap.Play();
-		playerActions.isGood(type);
+		this.changeColor(playerActions.isGood(type));
 	}
 
 }
