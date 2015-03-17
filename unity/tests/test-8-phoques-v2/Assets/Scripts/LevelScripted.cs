@@ -8,13 +8,10 @@ using System.Collections;
 
 public class LevelScripted : MonoBehaviour, TempoReceiver {
 
-	public bool loop = true;
 	public TextAsset levelData;
-
 	public BeatCounter beatCounter;
 	
 	private int[] stepEvents;
-
 	private ArrayList observers;
 
 	public void Awake () {
@@ -51,11 +48,12 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 
 	public int getActionFromBeat(int nBeat) {
+		//Debug.Log ("getActionFromBeat("+nBeat+") : stepEvents["+getIndex (nBeat)+"] = "+stepEvents [getIndex (nBeat)]);
 		return stepEvents [getIndex (nBeat)];
 	}
 
-	public bool isStepUseful(int nStep) {
-		return stepEvents [getIndex (nStep)] > 0;
+	public bool isStepUseful(int nBeat) {
+		return getActionFromBeat(nBeat) > 0;
 	}
 
 	private int getIndex (int nBeat) {
@@ -68,9 +66,9 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	// EVENTS
 
-	public void onStep (int nStep) {
-		if (isStepUseful(nStep)) {
-			notifyChildren (getActionFromBeat(nStep));
+	public void onStep (int nBeat) {
+		if (isStepUseful(nBeat)) {
+			notifyChildren (getActionFromBeat(nBeat));
 		}
 	}
 
