@@ -26,10 +26,6 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 		tete.GetComponent<SpriteRenderer>().color = isGood ? new Color(0.7f,1,0.7f) : new Color(1,.7f,.7f);
 	}
 
-	public void onEventType(int type) {
-
-	}
-
 	public void onFailure() {
 		this.changeColor(false);
 	}
