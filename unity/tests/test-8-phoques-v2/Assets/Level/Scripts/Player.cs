@@ -4,7 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour, PlayerEventReceiver, LevelScriptedReceiver {
 
 	public PlayerEventListener playerEventListener;
-	public LevelScripted level;
+	public PlayerActions pa;
 
 	private AudioSource clap;
 	private Animator anim;
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, LevelScriptedReceiver 
 	public void onFinger (int type) {
 		anim.SetTrigger ("change");
 		clap.Play();
-		this.changeColor(level.isGood(type));
+		this.changeColor(pa.isGood(type));
 	}
 
 }

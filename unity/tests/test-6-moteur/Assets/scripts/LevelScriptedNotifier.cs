@@ -124,6 +124,7 @@ public class LevelScriptedNotifier : TempoReceiver
 
 	public override void onSuccessWindowEnter ()
 	{
+		Debug.Log ("entered !");
 		successThisStep = false;
 		before = 1;
 	}

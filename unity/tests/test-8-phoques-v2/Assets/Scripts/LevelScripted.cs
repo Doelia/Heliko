@@ -14,13 +14,11 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	public BeatCounter beatCounter;
 	
 	private int[] stepEvents;
-	private ArrayList successStep;
 
 	private ArrayList observers;
 
 	public void Awake () {
 		this.observers = new ArrayList ();
-		this.successStep = new ArrayList();
 	}
 
 	public void Start () {
@@ -52,8 +50,20 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 		return toReturn;
 	}
 
-	public int getIndex (int nBeat) {
+	public int getActionsNumber() {
+		return stepEvents.Length;
+	}
+
+	public int getActionFromBeat(int nBeat) {
+		return stepEvents [getIndex (nBeat)];
+	}
+
+	private int getIndex (int nBeat) {
 		return (nBeat % stepEvents.Length);
+	}
+
+	public int getCurrentIndex() {
+		return this.beatCounter.getNBeat();
 	}
 
 	public int getPreviousIndex() {
@@ -64,34 +74,17 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 		return (previous);
 	}
 
-	public bool isValidStep(int nStep) {
+	public bool isStepUseful(int nStep) {
 		return stepEvents [getIndex (nStep)] > 0;
-	}
-
-	public bool isGood (int type) {
-		int stepTapped = this.beatCounter.getStepClosest();
-		if (stepEvents [getIndex (stepTapped)] == type) {
-			this.successStep.Add(stepTapped);
-			return true;
-		}
-		return false;
 	}
 
 	// EVENTS
 
 	public void onStep (int nStep) {
-		int actualValue = stepEvents[getIndex(nStep)];
-		if (actualValue > 0) {
-			notifyChildren (actualValue);
-		}
-		if (nStep > 1) {
-			int previousStep = nStep-1;
-			if (isValidStep (previousStep) && !successStep.Contains(previousStep)) {
-				this.notifyChildrenOfFailure();
-			}
+		if (isStepUseful(nStep)) {
+			notifyChildren (getIndex(nStep));
 		}
 	}
-	
 
 	// NOTIFICATIONS
 
@@ -104,13 +97,4 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 			e.onEventType (type);
 		}
 	}
-
-	private void notifyChildrenOfFailure () {
-		foreach (LevelScriptedReceiver e in this.observers) {
-			e.onFailure ();
-		}
-	}
-
-
-
 }

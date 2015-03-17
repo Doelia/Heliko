@@ -35,7 +35,9 @@ public class BPMControlor : MonoBehaviour
 
 	public bool isInLowerWindow() {
 		double d = (getNumStep() + 1 - modifier) * getFrameBetweenTicks() - getErrorMarginFrames();
-		return music.timeSamples > d;
+		Debug.Log("lower : " + d);
+		Debug.Log("music.timeSamples : " + (music.timeSamples));
+		return music.timeSamples - offsetStart > d;
 	}
 
 	public bool isInUpperWindow() {
@@ -123,7 +125,7 @@ public class BPMControlor : MonoBehaviour
 	}
 
 	private int timeSamplesWithOffsetStart() {
-		return music.timeSamples + offsetStart;
+		return music.timeSamples - offsetStart;
 	}
 
 	public double getScoreOnStep() {
@@ -153,8 +155,4 @@ public class BPMControlor : MonoBehaviour
 	{
 		GUI.Label (new Rect (0, 0, 100, 100), "" + sc);
 	}
-
-
-	
-
 }
