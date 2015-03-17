@@ -8,6 +8,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 	private ArrayList successStep;
 	private int failuresCount;
 	private int stepsCount;
+	private string scoreString;
 
 	ArrayList observers;
 
@@ -16,6 +17,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 		this.successStep = new ArrayList();
 		failuresCount = 0;
 		stepsCount = 0;
+		scoreString = "Pourcentage : 100 %";
 	}
 
 	public void Start() {
@@ -44,6 +46,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 	}
 
 	public void onAction(int action){
+		scoreString = "Pourcentage : " + getSuccessPercencage().ToString() + " %";
 		stepsCount++;
 	}
 
@@ -66,8 +69,9 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 	}
 
 	public int getSuccessPercencage() {
-		if(stepsCount > 0)
-			return (int)(((float)getNumberOfSuccess() / (float)stepsCount) * 100);
+		if(stepsCount > 0){
+			return (int) (100 * (1.0f - ((float)failuresCount) / ((float)stepsCount )));
+		}
 		else
 			return 100;
 	}
@@ -79,7 +83,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 		GUI.Label (new Rect (100, 10, 100, 20), s, style);
 		s = "Échecs : " + failuresCount;
 		GUI.Label (new Rect (100, 30, 100, 20), s, style);
-		s = "Pourcentage : " + getSuccessPercencage();
-		GUI.Label (new Rect (100, 50, 100, 20), s, style);
+		Debug.Log(scoreString);
+		GUI.Label (new Rect (100, 50, 100, 20), scoreString, style);
 	}
 }
