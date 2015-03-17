@@ -44,13 +44,14 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 	}
 
 	public void onAction(int action){
-
+		stepsCount++;
 	}
 
 	public void onStep (int nBeat) {
 		if (nBeat > 1) {
 			int previousStep = nBeat-1;
 			if (level.isStepUseful (previousStep) && !successStep.Contains(previousStep)) {
+				failuresCount++;
 				this.notifyFailure();
 			}
 		}
@@ -62,5 +63,23 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 
 	public int getScore() {
 		return stepsCount - failuresCount;
+	}
+
+	public int getSuccessPercencage() {
+		if(stepsCount > 0)
+			return (int)(((float)getNumberOfSuccess() / (float)stepsCount) * 100);
+		else
+			return 100;
+	}
+
+	public void OnGUI () {
+		GUIStyle style = new GUIStyle(GUI.skin.label);
+		style.normal.textColor = Color.black; 
+		string s = "Réussis : " + getNumberOfSuccess();
+		GUI.Label (new Rect (100, 10, 100, 20), s, style);
+		s = "Échecs : " + failuresCount;
+		GUI.Label (new Rect (100, 30, 100, 20), s, style);
+		s = "Pourcentage : " + getSuccessPercencage();
+		GUI.Label (new Rect (100, 50, 100, 20), s, style);
 	}
 }
