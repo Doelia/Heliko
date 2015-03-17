@@ -48,7 +48,6 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 
 	public int getActionFromBeat(int nBeat) {
-		//Debug.Log ("getActionFromBeat("+nBeat+") : stepEvents["+getIndex (nBeat)+"] = "+stepEvents [getIndex (nBeat)]);
 		return stepEvents [getIndex (nBeat)];
 	}
 
