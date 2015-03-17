@@ -30,6 +30,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 		handAnimation.SetTrigger ("Move");
 		carapace.GetComponent<Animator>().SetTrigger("Move");
 		clap.Play();
+		playerActions.isGood(type);
 	}
 
 }
