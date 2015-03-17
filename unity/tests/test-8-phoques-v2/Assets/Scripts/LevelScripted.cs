@@ -50,39 +50,27 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 		return toReturn;
 	}
 
-	public int getActionsNumber() {
-		return stepEvents.Length;
-	}
-
 	public int getActionFromBeat(int nBeat) {
 		return stepEvents [getIndex (nBeat)];
-	}
-
-	private int getIndex (int nBeat) {
-		return (nBeat % stepEvents.Length);
-	}
-
-	public int getCurrentIndex() {
-		return this.beatCounter.getNBeat();
-	}
-
-	public int getPreviousIndex() {
-		int previous = this.beatCounter.getNBeat() - 1;
-		if (previous < 0) {
-			previous = stepEvents.Length - 1;
-		}
-		return (previous);
 	}
 
 	public bool isStepUseful(int nStep) {
 		return stepEvents [getIndex (nStep)] > 0;
 	}
 
+	private int getIndex (int nBeat) {
+		return (nBeat % stepEvents.Length);
+	}
+
+	private int getCurrentIndex() {
+		return getIndex(this.beatCounter.getNBeat());
+	}
+
 	// EVENTS
 
 	public void onStep (int nStep) {
 		if (isStepUseful(nStep)) {
-			notifyChildren (getIndex(nStep));
+			notifyChildren (getActionFromBeat(nStep));
 		}
 	}
 
@@ -94,7 +82,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	private void notifyChildren (int type) {
 		foreach (LevelScriptedReceiver e in this.observers) {
-			e.onEventType (type);
+			e.onAction (type);
 		}
 	}
 }

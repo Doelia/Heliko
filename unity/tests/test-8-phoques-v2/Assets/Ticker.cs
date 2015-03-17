@@ -11,7 +11,7 @@ public class Ticker : MonoBehaviour, LevelScriptedReceiver {
 		tick = GetComponent < AudioSource >();
 	}
 	
-	public void onEventType (int type) {
+	public void onAction (int type) {
 		if (type == 1) {
 			tick.Play();
 		}

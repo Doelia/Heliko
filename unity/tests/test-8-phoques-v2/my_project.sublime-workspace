@@ -42,30 +42,6 @@
 				"buffer_size": 2404,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "Assets/Level/headMove.txt",
-			"settings":
-			{
-				"buffer_size": 3,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Level/Scripts/IAModel.cs",
-			"settings":
-			{
-				"buffer_size": 390,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Level/Scripts/Player.cs",
-			"settings":
-			{
-				"buffer_size": 876,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "",
@@ -119,6 +95,8 @@
 	],
 	"file_history":
 	[
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/headMove.txt",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Scripts/IAModel.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Scripts/BeatCounter.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Window.cs",
 		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/MusicTempo.cs",
@@ -201,7 +179,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -217,65 +195,8 @@
 						"selection":
 						[
 							[
-								1690,
-								1690
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Assets/Level/headMove.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3,
-								3
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Level/Scripts/IAModel.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								390,
-								390
+								337,
+								348
 							]
 						],
 						"settings":
@@ -288,35 +209,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Assets/Level/Scripts/Player.cs",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 876,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								687,
-								687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
