@@ -25,7 +25,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 
 	public bool isGood (int type) {
 		int stepTapped = level.beatCounter.getStepClosest();
-		if (level.getActionFromBeat(stepTapped) == type) {
+		if (stepTapped >= 0 && level.getActionFromBeat(stepTapped) == type) {
 			this.successStep.Add(stepTapped);
 			return true;
 		}
