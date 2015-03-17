@@ -4,7 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 
 	public PlayerEventListener playerEventListener;
-	public PlayerActions pa;
+	public PlayerActions playerActions;
 
 	private AudioSource clap;
 	private Animator anim;
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 
 	void Start () {
 		playerEventListener.connect (this);
-		pa.connect (this);
+		playerActions.connect (this);
 		clap = GetComponent<AudioSource>();
 
 		foreach (Transform s in transform) {
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 	public void onFinger (int type) {
 		anim.SetTrigger ("change");
 		clap.Play();
-		this.changeColor(pa.isGood(type));
+		this.changeColor(playerActions.isGood(type));
 	}
 
 }

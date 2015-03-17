@@ -35,7 +35,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver {
 		return false;
 	}
 
-	public void notifFailure() {
+	public void notifyFailure() {
 		foreach (PlayerActionReceiver e in this.observers) {
 			e.onFailure();
 		}
@@ -47,7 +47,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver {
 		if (nStep > 1) {
 			int previousStep = nStep-1;
 			if (level.isStepUseful (previousStep) && !successStep.Contains(previousStep)) {
-				this.notifFailure();
+				this.notifyFailure();
 			}
 		}
 	}
