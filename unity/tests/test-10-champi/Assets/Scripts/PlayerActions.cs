@@ -83,7 +83,7 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 		GUI.Label (new Rect (100, 10, 100, 20), s, style);
 		s = "Échecs : " + failuresCount;
 		GUI.Label (new Rect (100, 30, 100, 20), s, style);
-		Debug.Log(scoreString);
+		//Debug.Log(scoreString);
 		GUI.Label (new Rect (100, 50, 100, 20), scoreString, style);
 	}
 }

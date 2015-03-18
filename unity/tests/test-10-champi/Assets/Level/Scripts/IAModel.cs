@@ -19,19 +19,16 @@ public class IAModel : MonoBehaviour, LevelScriptedReceiver {
 	
 	public void onAction (int type) {
 		if (type == 1) {
-			brasDroit.SetTrigger ("Move");
-			this.GetComponent<AudioSource>().Play();
-			carapace.GetComponent<Animator>().SetTrigger("Move");
+			brasDroit.SetTrigger ("Down");
 		} else if (type == 2) {
-			brasGauche.SetTrigger ("Move");
-			this.GetComponent<AudioSource>().Play();
-			carapace.GetComponent<Animator>().SetTrigger("Move");
+			brasGauche.SetTrigger ("Down");
 		} else if (type == 3) {
-			brasDroit.SetTrigger ("Move");
-			brasGauche.SetTrigger ("Move");
-			this.GetComponent<AudioSource>().Play();
-			carapace.GetComponent<Animator>().SetTrigger("Move");
+			brasDroit.SetTrigger ("Down");
+			brasGauche.SetTrigger ("Down");
 		}
+		carapace.GetComponent<Animator>().SetTrigger("Move");
+		this.GetComponent<AudioSource>().Play();
+		
 	}
 
 	public void onFailure() {
