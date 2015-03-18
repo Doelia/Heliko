@@ -31,9 +31,17 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 
 	public bool isGood (int type) {
 		int stepTapped = level.beatCounter.getStepClosest();
-		if (stepTapped >= 0 && level.getActionFromBeat(stepTapped) == type) {
+		if (level.getActionFromBeat(stepTapped) == type) {
 			this.successStep.Add(stepTapped);
 			return true;
+		} else if (level.getActionFromBeat(stepTapped-1) == type ) {
+			this.successStep.Add(stepTapped-1);
+			return true;
+		} else {
+			if (level.getActionFromBeat(stepTapped+1) == type ) {
+				this.successStep.Add(stepTapped+1);
+				return true;
+			}
 		}
 		failuresCount++;
 		return false;
@@ -51,8 +59,8 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 	}
 
 	public void onStep (int nBeat) {
-		if (nBeat > 1) {
-			int previousStep = nBeat-1;
+		if (nBeat > 2) {
+			int previousStep = nBeat-2;
 			if (level.isStepUseful (previousStep) && !successStep.Contains(previousStep)) {
 				failuresCount++;
 				this.notifyFailure();
