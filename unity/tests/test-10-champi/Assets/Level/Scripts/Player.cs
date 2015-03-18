@@ -8,16 +8,19 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 
 	private AudioSource clap;
 
-	public Transform animationTransform;
+	public Transform mainGaucheTransform;
+	public Transform mainDroiteTransform;
 	public Transform carapace;
 
-	private Animator handAnimation;
+	private Animator animGauche;
+	private Animator animDroite;
 
 	void Start () {
 		playerEventListener.connect (this);
 		playerActions.connect (this);
 		clap = GetComponent<AudioSource>();
-		handAnimation = animationTransform.GetComponent<Animator>();
+		animGauche = mainGaucheTransform.GetComponent<Animator>();
+		animDroite = mainDroiteTransform.GetComponent<Animator>();
 	}
 
 	public void changeColor(bool isGood) {
@@ -29,7 +32,15 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 	}
 
 	public void onFinger (int type) {
-		handAnimation.SetTrigger ("Move");
+		if (type == 1) {
+			animGauche.SetTrigger ("Move");
+		} else if (type == 2) {
+			animDroite.SetTrigger ("Move");
+		} else if (type == 3) {
+			animGauche.SetTrigger ("Move");
+			animDroite.SetTrigger ("Move");
+		}
+
 		carapace.GetComponent<Animator>().SetTrigger("Move");
 		clap.Play();
 		this.changeColor(playerActions.isGood(type));
