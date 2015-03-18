@@ -8,7 +8,7 @@ public class InterfacePauseGame : MonoBehaviour {
 
 	public void Reload() {
 		loadingScreen.SetActive(true);
-		// TODO
+		Application.LoadLevel(Application.loadedLevel);
 	}
 
 	public void UnPause() {
