@@ -16,7 +16,7 @@ public class Paralax : MonoBehaviour {
 	{
 		foreach (Transform s in transform) {
 			s.Translate(new Vector2(0.003f,0));
-			if (!s.renderer.IsVisibleFrom(Camera.main)) {
+			if (!s.GetComponent<Renderer>().IsVisibleFrom(Camera.main)) {
 				s.localPosition = positionFirst;
 			}
 		}
