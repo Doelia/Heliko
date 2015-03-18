@@ -6,34 +6,30 @@
 (struct time-signature (nn dd cc bb) #:transparent)
 (struct set-tempo (tempo) #:transparent)
 (struct sequence-name (name) #:transparent)
-(struct midi-event (delta instruction arg1 arg2) #:transparent)
 
 (define time-signature-event '(255 88 4))
 (define set-tempo-event '(255 81 3))
 (define sequence-name-event '(255 3))
 
+;(define (get-length l)
+  
+
 (define (sublist? l1 l2)
   (andmap (λ (i j)
-            (= i j)) l1 (take l2 (length l1))))
+           (= i j)) l1 (take l2 (length l1))))
 
-(define (interpret-midi-events e)
-  (let* ([l (drop e 2)]
-         [s (sequence-name (to-string (take (cdr l) (car l))))]
-         [l (reverse (foldl (λ (i l)
-                  (if (< (length (car l)) 4)
-                      (append `(,(append (car l) `(,i)))  (cdr l) )
-                      (cons `(,i) l))) '(()) (drop (cdr l) (car l))))])
-    (map (λ (i)
-           (if (= (length i) 4)
-               (midi-event (car i) (cadr i) (caddr i) (cadddr i)) '())) l)))
+(define (interpret-midi-event e)
+  (display e))
 
 (define (interpret-event e)
   (cond ([sublist? time-signature-event e] [let ([l (drop e 3)])
                                              (time-signature (car l) (cadr l) (caddr l) (cadddr l))])
         ([sublist? set-tempo-event e] [let ([l (drop e 3)])
-                                        (set-tempo (to-int (take l 3)))])
-        (else (interpret-midi-events e))))
-
+                                             (set-tempo (to-int (take l 3)))])
+        ([sublist? sequence-name-event e] [let ([l (drop e 2)])
+                                                   (sequence-name (to-string (reverse (take (cdr l) (car l)))))])
+        (else e)))
+  
 
 (define (read-header in)
   (header (to-string (read-n-bytes in 4))
@@ -61,26 +57,26 @@
      (let ([x (read-byte in)])
        (set! length (- length 1))
        (if (< x 128)
-           (to-int (append data `(,x)))
-           (f (append data `(,x))))))
+           (to-int (cons x data))
+           (f (cons x data)))))
    (let f([data '()] [length length])
      (if (= length 0)
-         (interpret-event data)
-         (f (append data `(,(read-byte in))) (- length 1))))))
+         (interpret-event (reverse data))
+         (f (cons (read-byte in) data) (- length 1))))))
 
 (define (read-n-bytes in n)
   (let f([data '()] [i 0])
     (if (= i n)
         data
         (let ([x (read-byte in)])
-          (f (append data `(,x)) (+ i 1))))))
+          (f (cons x data) (+ i 1))))))
 
 (define (to-string l)
-  (bytes->string/utf-8 (list->bytes l)))
+  (bytes->string/utf-8 (list->bytes (reverse l))))
 
 (define (to-int l)
   (let ([n 1])
-    (foldr (λ (i sum)
+    (foldl (λ (i sum)
              (let ([x (* i n)])
                (set! n (* n 256))
                (+ sum x))) 0 l)))
@@ -92,6 +88,7 @@
     (display chunks)))
 
 (define (main)
-  (read-midi-file (open-input-file "./test.mid" #:mode 'binary)))
+  (read-midi-file (open-input-file "/home/noe/Téléchargements/test.mid" #:mode 'binary)))
 
 (main)
+
