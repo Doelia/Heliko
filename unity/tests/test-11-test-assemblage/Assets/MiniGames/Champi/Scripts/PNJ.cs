@@ -5,16 +5,22 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver {
 
 	private Animator brasDroit;
 	private Animator brasGauche;
+	private Animator animCarapace;
+	private Animator animChampiPNJ;
+
 	public LevelScripted level;
 
 	public Transform brasGaucheTrasform;
 	public Transform brasDroitTrasform;
 	public Transform carapace;
+	public Transform champiPNJ;
 
 	public void Start () {
 		this.level.connect(this);
 		brasDroit = brasDroitTrasform.GetComponent<Animator>();
 		brasGauche = brasGaucheTrasform.GetComponent<Animator>();
+		animCarapace = carapace.GetComponent<Animator>();
+		animChampiPNJ = champiPNJ.GetComponent<Animator>();
 	}
 	
 	public void onAction (int type) {
@@ -26,7 +32,8 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver {
 			brasDroit.SetTrigger ("Down");
 			brasGauche.SetTrigger ("Down");
 		}
-		carapace.GetComponent<Animator>().SetTrigger("Move");
+		animCarapace.SetTrigger("Move");
+		animChampiPNJ.SetTrigger("Move");
 		this.GetComponent<AudioSource>().Play();
 		
 	}

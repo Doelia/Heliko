@@ -11,9 +11,12 @@ public class PlayerChampi : MonoBehaviour, PlayerEventReceiver, PlayerActionRece
 	public Transform mainGaucheTransform;
 	public Transform mainDroiteTransform;
 	public Transform carapace;
+	public Transform champiPlayer;
 
 	private Animator animGauche;
 	private Animator animDroite;
+	private Animator animCarapace;
+	private Animator animChampiPlayer;
 
 	void Start () {
 		playerEventListener.connect (this);
@@ -21,6 +24,8 @@ public class PlayerChampi : MonoBehaviour, PlayerEventReceiver, PlayerActionRece
 		clap = GetComponent<AudioSource>();
 		animGauche = mainGaucheTransform.GetComponent<Animator>();
 		animDroite = mainDroiteTransform.GetComponent<Animator>();
+		animChampiPlayer = champiPlayer.GetComponent<Animator>();
+		animCarapace = carapace.GetComponent<Animator>();
 	}
 
 	public void changeColor(bool isGood) {
@@ -41,7 +46,8 @@ public class PlayerChampi : MonoBehaviour, PlayerEventReceiver, PlayerActionRece
 			animDroite.SetTrigger ("Down");
 		}
 
-		carapace.GetComponent<Animator>().SetTrigger("Move");
+		animCarapace.SetTrigger("Move");
+		animChampiPlayer.SetTrigger("Move");
 		clap.Play();
 		this.changeColor(playerActions.isGood(type));
 	}
