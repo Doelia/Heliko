@@ -1,0 +1,299 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"beat",
+				"beatCounterGameObject"
+			],
+			[
+				"audo",
+				"audioBpm"
+			],
+			[
+				"sample",
+				"sampleDelay"
+			],
+			[
+				"sam",
+				"sampleDelay"
+			],
+			[
+				"freque",
+				"frequency	AudioClip.*"
+			],
+			[
+				"getTie",
+				"getTimeBeforeLastTick"
+			],
+			[
+				"notif",
+				"notifyChildren"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/Scripts/LevelScripted.cs",
+			"settings":
+			{
+				"buffer_size": 2404,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"unity",
+				"Set Syntax: Unity C#"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"linter set",
+				"Preferences: SublimeLinter Settings – User"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Scripts",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Scripts"
+	],
+	"file_history":
+	[
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/headMove.txt",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Level/Scripts/IAModel.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-8-phoques-v2/Assets/Scripts/BeatCounter.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Window.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/MusicTempo.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/WindowClose.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/WindowOpen.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Timer.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/Scripts/Player.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Level/level.txt",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/PlayerEventListener.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/BeatCounter.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/LevelScripted.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-moteur-v2/Assets/Scripts/Interfaces/TempoReceiver.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/WindowClose.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/Scripts/Player.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/PlayerEventListener.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/MusicTempo.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/BeatCounter.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/Timer.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/Scripts/Beat.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/Scripts/WindowBox.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/Interfaces/PlayerEventReceiver.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/my_project.sublime-project",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/Beat.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/Player.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/WindowOpen.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/Interfaces/TempoReceiver.cs",
+		"/Users/doelia/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/C1008000-9848-4FF1-9BE6-E9E96EA2D108/main_tp3_img.cpp",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Scripts/Interfaces/TempoReceiver.cs.meta",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Level/main.unity",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/MusicTempo.cs",
+		"/Users/doelia/Documents/dev/oufmania/unity/tests/test-7-time/Assets/Timer.cs",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/Assets/Scripts/LightBehavior.cs",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/Assets/Scripts/LightBehavior1.cs.meta",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/Assets/Scripts/BeatSynchronizer/PatternCounter.cs",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/Assets/Scripts/BeatSynchronizer/BeatCounter.cs",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/Assets/Scripts/BeatSynchronizer/BeatSynchronizer.cs",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/Assets/Scripts/BeatSynchronizer.meta",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/Assets/Scripts/BeatSynchronizer/SynchronizerData.cs",
+		"/Users/doelia/Downloads/beat-synchronizer-unity-master/beat-synchronizer-unity-master.sublime-project",
+		"/Users/doelia/Documents/bin/",
+		"/private/var/folders/3d/qvc82v6n7hj7znqp68576wwc0000gn/T/fz3temp-1/construction.php",
+		"/Users/doelia/Documents/dev/M1-3D/main.cpp",
+		"/Users/doelia/Documents/dev/M1-3D/TP5/opengl.cpp",
+		"/Users/doelia/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/doelia/Documents/dev/M1-3D/CMakeLists.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"window",
+			"	\n",
+			"msDelayStartCount"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/Scripts/LevelScripted.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								337,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "my_project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

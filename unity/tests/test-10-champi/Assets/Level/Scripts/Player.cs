@@ -33,12 +33,12 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 
 	public void onFinger (int type) {
 		if (type == 1) {
-			animGauche.SetTrigger ("Move");
+			animGauche.SetTrigger ("Down");
 		} else if (type == 2) {
-			animDroite.SetTrigger ("Move");
+			animDroite.SetTrigger ("Down");
 		} else if (type == 3) {
-			animGauche.SetTrigger ("Move");
-			animDroite.SetTrigger ("Move");
+			animGauche.SetTrigger ("Down");
+			animDroite.SetTrigger ("Down");
 		}
 
 		carapace.GetComponent<Animator>().SetTrigger("Move");
