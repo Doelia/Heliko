@@ -22,7 +22,12 @@ public class IAModel : MonoBehaviour, LevelScriptedReceiver {
 			brasDroit.SetTrigger ("Move");
 			this.GetComponent<AudioSource>().Play();
 			carapace.GetComponent<Animator>().SetTrigger("Move");
-		} else {
+		} else if (type == 2) {
+			brasGauche.SetTrigger ("Move");
+			this.GetComponent<AudioSource>().Play();
+			carapace.GetComponent<Animator>().SetTrigger("Move");
+		} else if (type == 3) {
+			brasDroit.SetTrigger ("Move");
 			brasGauche.SetTrigger ("Move");
 			this.GetComponent<AudioSource>().Play();
 			carapace.GetComponent<Animator>().SetTrigger("Move");
