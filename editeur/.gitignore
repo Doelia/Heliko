@@ -35,4 +35,5 @@ ehthumbs.db
 # Drracket generated #
 # ================== #
 \#.*
-
+/compiled
+*~
