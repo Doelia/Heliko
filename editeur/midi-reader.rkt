@@ -1,14 +1,17 @@
 #lang racket
 
 (provide parse-midi-file)
-(provide header)
+(provide header-division)
 (provide track-chunk?)
 (provide track-chunk-events)
 (provide track-event-event)
-(provide time-signature)
+(provide time-signature-cc)
 (provide set-tempo)
 (provide sequence-name)
 (provide midi-event?)
+(provide midi-event-delta)
+(provide midi-event-instruction)
+(provide to-int)
 
 (struct header (mthd length format n division) #:transparent)
 (struct track-chunk (mtrk length [events #:auto]) #:mutable #:auto-value '() #:transparent)
@@ -30,13 +33,15 @@
   (let* ([l (drop e 2)]
          [s (sequence-name (to-string (take (cdr l) (car l))))]
          [l (reverse (foldl (λ (i l)
-                              (cond [(and (= (length (car l)) 1) (> (car (flatten l)) 127))
-                                     (append `((,(cons i (car l)))) (cdr l))]
-                                    [(= (length (car l)) 4) (cons `(,i) l)]
-                                   [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) (drop (cdr l) (car l))))])
+                              (cond
+                                [(and (= (length (car l)) 1) (> (car (flatten l)) 127))
+                                 (append `((,(cons i (car l)))) (cdr l))]
+                                ;[(= (length (car l)) 1) (append `((,(cons i (car l)))) (cdr l))]
+                                [(= (length (car l)) 4) (cons `(,i) l)]
+                                [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) (drop (cdr l) (car l))))])
     (map (λ (i)
            (if (= (length i) 4)
-               (midi-event (car i) (cadr i) (caddr i) (cadddr i)) '())) l)))
+               (midi-event (flatten (list (car i))) (cadr i) (caddr i) (cadddr i)) '())) l)))
 
 (define (interpret-event e)
   (cond ([sublist? time-signature-event e] [let ([l (drop e 3)])
