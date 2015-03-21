@@ -26,6 +26,12 @@ public class PlayerEventListener : MonoBehaviour
 			}
 		}
 
+		if (Input.GetKeyDown (KeyCode.P) &&  Input.GetKeyDown (KeyCode.O))
+		foreach (PlayerEventReceiver e in this.observers) {
+			e.onFinger (3);
+			return;
+		}
+
 		if ((onKeyDown && Input.GetKeyDown (KeyCode.O)) || (!onKeyDown && Input.GetKey (KeyCode.O)))
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.onFinger (1);
@@ -36,9 +42,6 @@ public class PlayerEventListener : MonoBehaviour
 			e.onFinger (2);
 		}
 
-		if ((onKeyDown && Input.GetKeyDown (KeyCode.I)) || (!onKeyDown && Input.GetKey (KeyCode.I)))
-		foreach (PlayerEventReceiver e in this.observers) {
-			e.onFinger (3);
-		}
+
 	}
 }

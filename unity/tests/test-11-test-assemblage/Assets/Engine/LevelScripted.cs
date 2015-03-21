@@ -10,6 +10,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	public TextAsset levelData;
 	public BeatCounter beatCounter;
+	public int waitingStep; // Nombre de step à remplire par des 0 (utile pour les déclages)
 	
 	private int[] stepEvents;
 	private ArrayList observers;
@@ -37,14 +38,20 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 		string [] lineFour = s [3].Split (' ');
 
 		int nbrLines = 4;
-		int nbrActions = lineOne.Length * nbrLines;
+		int nbrZeroAdded = nbrLines * waitingStep;
+		int nbrActions = lineOne.Length * nbrLines + nbrZeroAdded;
 
 		int [] toReturn = new int[nbrActions];
-		for (int i = 0; i < nbrActions/nbrLines; i++) {
-			toReturn [i * nbrLines + 0] = int.Parse (lineOne [i]);
-			toReturn [i * nbrLines + 1] = int.Parse (lineTwo [i]);
-			toReturn [i * nbrLines + 2] = int.Parse (lineThree [i]);
-			toReturn [i * nbrLines + 3] = int.Parse (lineFour [i]);
+
+		for (int i = 0; i < nbrZeroAdded; i++) {
+			toReturn[i] = 0;
+		}
+
+		for (int i = 0; i < lineOne.Length; i++) {
+			toReturn [i * nbrLines + 0 + nbrZeroAdded] = int.Parse (lineOne [i]);
+			toReturn [i * nbrLines + 1 + nbrZeroAdded] = int.Parse (lineTwo [i]);
+			toReturn [i * nbrLines + 2 + nbrZeroAdded] = int.Parse (lineThree [i]);
+			toReturn [i * nbrLines + 3 + nbrZeroAdded] = int.Parse (lineFour [i]);
 		}
 
 		for (int i = 0; i < nbrActions; i++) {

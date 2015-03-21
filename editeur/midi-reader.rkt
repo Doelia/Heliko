@@ -1,5 +1,19 @@
 #lang racket
 
+(provide parse-midi-file)
+(provide header-division)
+(provide track-chunk?)
+(provide track-chunk-events)
+(provide track-event-event)
+(provide time-signature-cc)
+(provide set-tempo)
+(provide sequence-name)
+(provide midi-event?)
+(provide midi-event-delta)
+(provide midi-event-instruction)
+(provide midi-event-arg1)
+(provide to-int)
+
 (struct header (mthd length format n division) #:transparent)
 (struct track-chunk (mtrk length [events #:auto]) #:mutable #:auto-value '() #:transparent)
 (struct track-event (v-time event) #:transparent)
@@ -20,18 +34,21 @@
   (let* ([l (drop e 2)]
          [s (sequence-name (to-string (take (cdr l) (car l))))]
          [l (reverse (foldl (λ (i l)
-                  (if (< (length (car l)) 4)
-                      (append `(,(append (car l) `(,i)))  (cdr l) )
-                      (cons `(,i) l))) '(()) (drop (cdr l) (car l))))])
+                              (cond
+                                [(and (= (length (car l)) 1) (> (car (flatten l)) 127))
+                                 (append `((,(cons i (car l)))) (cdr l))]
+                                ;[(= (length (car l)) 1) (append `((,(cons i (car l)))) (cdr l))]
+                                [(= (length (car l)) 4) (cons `(,i) l)]
+                                [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) (drop (cdr l) (car l))))])
     (map (λ (i)
            (if (= (length i) 4)
-               (midi-event (car i) (cadr i) (caddr i) (cadddr i)) '())) l)))
+               (midi-event (flatten (list (car i))) (cadr i) (caddr i) (cadddr i)) '())) l)))
 
 (define (interpret-event e)
   (cond ([sublist? time-signature-event e] [let ([l (drop e 3)])
-                                             (time-signature (car l) (cadr l) (caddr l) (cadddr l))])
+                                             `(,(time-signature (car l) (cadr l) (caddr l) (cadddr l)))])
         ([sublist? set-tempo-event e] [let ([l (drop e 3)])
-                                        (set-tempo (to-int (take l 3)))])
+                                        `(,(set-tempo (to-int (take l 3))))])
         (else (interpret-midi-events e))))
 
 
@@ -85,13 +102,7 @@
                (set! n (* n 256))
                (+ sum x))) 0 l)))
 
-(define (read-midi-file in)
+(define (parse-midi-file in)
   (let* ([h (read-header in)]
          [chunks (read-chunks in)])
-    (displayln h)
-    (display chunks)))
-
-(define (main)
-  (read-midi-file (open-input-file "./test.mid" #:mode 'binary)))
-
-(main)
+    (cons h chunks)))
