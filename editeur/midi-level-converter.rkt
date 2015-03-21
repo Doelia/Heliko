@@ -3,7 +3,11 @@
 (require "midi-reader.rkt")
 
 (define one 60)
-
+(define notes (hash 60 1
+                    62 2
+                    64 3))
+                    
+                        
 (define (convert midi-data)
   (let ([division (header-division (car midi-data))]
         [delta-time (time-signature-cc (car (track-event-event (track-chunk-events (cadr midi-data)))))])    
@@ -37,7 +41,7 @@
                                               (car i)) l)))))))
 
 (define (event-to-level event delta-time)
-  (append (make-list (/ (vlq->int (midi-event-delta event)) delta-time) 0) '(1)))
+  (append (make-list (/ (vlq->int (midi-event-delta event)) delta-time) 0) `(,(hash-ref notes (midi-event-arg1 event) 0))))
 
 (define (export level out)
   (for-each (λ (i)

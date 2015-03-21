@@ -11,6 +11,7 @@
 (provide midi-event?)
 (provide midi-event-delta)
 (provide midi-event-instruction)
+(provide midi-event-arg1)
 (provide to-int)
 
 (struct header (mthd length format n division) #:transparent)
