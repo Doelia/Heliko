@@ -33,12 +33,11 @@
         sum
         (f (+ 1 i) (cdr l) (+ sum (* (if (> (car l) 127) (- (car l) 128) (car l)) (expt 128 i)))))))
 
-(define (transpose lists)
-  (let f ([l lists] [data '()])
-    (if (empty? (car l))
-        data
-        (f (map cdr l) (append data `(,(map (λ (i)
-                                              (car i)) l)))))))
+(define (transpose matrix)
+  (if (empty? (car matrix))
+      '()
+    (cons (map (λ (i)
+         (car i)) matrix) (transpose (map cdr matrix)))))
 
 (define (event-to-level event delta-time)
   (append (make-list (/ (vlq->int (midi-event-delta event)) delta-time) 0) `(,(hash-ref notes (midi-event-arg1 event) 0))))
