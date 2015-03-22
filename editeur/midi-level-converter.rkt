@@ -59,7 +59,8 @@
 (define (export level out)
   (for-each (λ (i)
               (for-each (λ (i)
-                          (write i out)) i) (write-char #\newline out)) level)
+                          (write i out)
+                          (write-char #\space out)) i) (write-char #\newline out)) level)
   (close-output-port out))
 
 (define (to-level events division delta-time)
