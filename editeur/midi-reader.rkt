@@ -47,7 +47,14 @@
     (if (> (car l) 127)
         (f (append delta `(,(car l))) (cdr l))
         (let ([delta (reverse (append delta `(,(car l))))])
-              `(,(midi-event delta (cadr l) (caddr l) (cadddr l)) ,(cddddr l))))))
+          (cond [(or (>= (cadr l) 240)
+                     (and (>= 176 (cadr l)) (<= (cadr l) 191) (>= (caddr l) 98) (<= (caddr l) 121)))
+                 `(,(midi-event delta (cadr l) (caddr l) -1) ,(cddddr l))]
+                [(and (>= (cadr l) 192) (< (cadr l) 224))
+                 `(,(midi-event delta (cadr l) (caddr l) -1) ,(cdddr l))]
+                [else 
+                 `(,(midi-event delta (cadr l) (caddr l) (cadddr l)) ,(cddddr l))])))))
+
 
 (define (read-sequence-name l)
   (let f ([length '()] [l l])

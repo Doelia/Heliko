@@ -89,6 +89,6 @@
 (define (main)
  (export (convert (parse-midi-file (open-input-file "./Tamborine_flstudio.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 ;(export (convert (parse-midi-file (open-input-file "./Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
- ; (export (convert (parse-midi-file (open-input-file "./test4.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+;  (export (convert (parse-midi-file (open-input-file "./test4.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 
 (main)
