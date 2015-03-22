@@ -21,7 +21,6 @@
                            '() (track-event-event (track-chunk-events i))) l)) '() midi-data)))
 
 (define (convert midi-data)
- ; (pretty-display midi-data)
   (let ([division (header-division (car midi-data))]
         [delta-time (time-signature-cc (get-time-signature midi-data))]
         [open? #f])
@@ -79,6 +78,6 @@
                 (f level delta-sum (cdr events)))))))
 
 (define (main)
-  (export (convert (parse-midi-file (open-input-file "/home/noe/Documents/oufmania/music/Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+  (export (convert (parse-midi-file (open-input-file "./../music/Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 
 (main)
