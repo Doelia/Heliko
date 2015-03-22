@@ -6,6 +6,7 @@
 (provide track-chunk-events)
 (provide track-event-event)
 (provide time-signature-cc)
+(provide time-signature?)
 (provide set-tempo)
 (provide sequence-name)
 (provide midi-event?)
@@ -20,35 +21,73 @@
 (struct time-signature (nn dd cc bb) #:transparent)
 (struct set-tempo (tempo) #:transparent)
 (struct sequence-name (name) #:transparent)
+(struct instrument-name (name) #:transparent)
 (struct midi-event (delta instruction arg1 arg2) #:transparent)
+(struct key-signature (sf mi) #:transparent)
+(struct smpte-offset (hr mn se fr ff) #:transparent)
 
 (define time-signature-event '(255 88 4))
 (define set-tempo-event '(255 81 3))
 (define sequence-name-event '(255 3))
+(define instrument-name-event '(255 4))
+(define key-signature-event '(255 89 02))
+(define smpte-offset-event '(255 84 05))
+
 
 (define (sublist? l1 l2)
   (andmap (λ (i j)
             (= i j)) l1 (take l2 (length l1))))
 
+(define (known-event? e1 e2)
+  (or (sublist? e1 e2) (sublist? e1 (cdr e2))))
+
 (define (interpret-midi-events e)
-  (let* ([l (drop e 2)]
-         [s (sequence-name (to-string (take (cdr l) (car l))))]
-         [l (reverse (foldl (λ (i l)
-                              (cond
-                                [(and (= (length (car l)) 1) (> (car (flatten l)) 127))
-                                 (append `((,(cons i (car l)))) (cdr l))]
-                                ;[(= (length (car l)) 1) (append `((,(cons i (car l)))) (cdr l))]
-                                [(= (length (car l)) 4) (cons `(,i) l)]
-                                [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) (drop (cdr l) (car l))))])
+  (let ([l (reverse (foldl (λ (i l)
+                             (cond
+                               [(and (= (length (car l)) 1) (> (car (flatten l)) 127))
+                                (append `((,(cons i (car l)))) (cdr l))]
+                               [(= (length (car l)) 4) (cons `(,i) l)]
+                               [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) e))])
     (map (λ (i)
            (if (= (length i) 4)
                (midi-event (flatten (list (car i))) (cadr i) (caddr i) (cadddr i)) '())) l)))
 
+(define (read-sequence-name l)
+  (let f ([length '()] [l l])
+    (if (> (car l) 127)
+        (f (append length `(,(car l))) (cdr l))
+        (let f ([length (to-int (append length `(,(car l))))] [data '()] [l (cdr l)])
+          (if (= length 0)
+              `(,(to-string data) ,l)
+              (f (- length 1) (append data `(,(car l))) (cdr l)))))))
+
 (define (interpret-event e)
-  (cond ([sublist? time-signature-event e] [let ([l (drop e 3)])
-                                             `(,(time-signature (car l) (cadr l) (caddr l) (cadddr l)))])
-        ([sublist? set-tempo-event e] [let ([l (drop e 3)])
-                                        `(,(set-tempo (to-int (take l 3))))])
+  (define (drop-zero l n)
+    (drop l (if (zero? (car l)) (+ 1 n) n)))
+  
+  (cond ([known-event? time-signature-event e] [let ([l (drop-zero e 3)])
+                                                 (cons 
+                                                  (time-signature (car l) (cadr l) (caddr l) (cadddr l))
+                                                  (interpret-event (drop l 4)))])
+        ([known-event? set-tempo-event e] [let ([l (drop-zero e 3)])
+                                            (cons
+                                             (set-tempo (to-int (take l 3)))
+                                             (interpret-event (drop l 3)))])
+        ([known-event? key-signature-event e] [let ([l (drop-zero e 3)])
+                                                (cons
+                                                 (key-signature (car l) (cadr l))
+                                                 (interpret-event (drop l 2)))])
+        ([known-event? smpte-offset-event e] [let ([l (drop-zero e 3)])
+                                               (cons
+                                                (smpte-offset (car l) (cadr l) (caddr l) (cadddr l) (cadr (cdddr l)))
+                                                (interpret-event (drop l 5)))])
+        ([known-event? sequence-name-event e] [let* ([l (drop-zero e 2)] [name (read-sequence-name l)])
+                                                (cons (sequence-name (car name))
+                                                      (interpret-event (cadr name)))])
+        ([known-event? instrument-name-event e] [let* ([l (drop-zero e 2)] [name (read-sequence-name l)])
+                                                  (cons (instrument-name (car name))
+                                                        (interpret-event (cadr name)))])
+        
         (else (interpret-midi-events e))))
 
 

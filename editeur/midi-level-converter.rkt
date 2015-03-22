@@ -12,17 +12,26 @@
                     74 3
                     75 4))
 
+(define (get-time-signature midi-data)
+  (car (foldr (λ (i l)
+                (if (track-chunk? i)
+                    (foldr (λ (i l)
+                             (if (time-signature? i)
+                                 `(,i) l))
+                           '() (track-event-event (track-chunk-events i))) l)) '() midi-data)))
 
 (define (convert midi-data)
+ ; (pretty-display midi-data)
   (let ([division (header-division (car midi-data))]
-        [delta-time (time-signature-cc (car (track-event-event (track-chunk-events (cadr midi-data)))))])    
-    (to-level (car (filter (λ (i) (not (empty? i)))
-                           (foldr (λ (i l)
-                                    (if (track-chunk? i)
-                                        (cons (foldr (λ (i l) 
-                                                       (if (midi-event? i)
-                                                           (cons i l) l)) '() (track-event-event (track-chunk-events i))) l)
-                                        l)) '() midi-data))) division delta-time)))
+        [delta-time (time-signature-cc (get-time-signature midi-data))]
+        [open? #f])
+    (to-level (filter (λ (i)
+                        (if (midi-event? i)
+                            (begin
+                              (when (= (midi-event-instruction i) 192) (set! open? (not open?)))
+                              open?)
+                            #f))
+                            (track-event-event (track-chunk-events (last midi-data)))) division delta-time)))
 
 (define (event-off? event)
   (and (> (midi-event-instruction event) 127)
@@ -44,8 +53,9 @@
       (cons (map (λ (i)
                    (car i)) matrix) (transpose (map cdr matrix)))))
 
-(define (event-to-level event delta-time)
-  (append (make-list (/ (vlq->int (midi-event-delta event)) delta-time) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?))))
+(define (event-to-level event division delta-sum)
+  (let ([n (- (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)) 1)])
+  (append (make-list (if (or (< n 0) (not (exact-nonnegative-integer? n))) 0 n) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
 (define (export level out)
   (for-each (λ (i)
@@ -57,18 +67,18 @@
   (let f ([level '()] [delta-sum 0] [events events])
     (if (empty? events)
         (transpose (filter (λ (i)
-                             (= (length i) (/ division delta-time)))
+                             (= (length i) 4))
                            (reverse
                             (foldl (λ (i l)
-                                     (cond[(= (length (car l)) (/ division delta-time)) (cons `(,i) l)]
+                                     (cond[(= (length (car l)) 4) (cons `(,i) l)]
                                           [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) level))))
         (if (event-on? (car events))
-            (f (append level (event-to-level (car events) delta-time)) 0 (cdr events))
+            (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events))
             (if (event-off? (car events))
-                (f (append level '(0)) (+ delta-time (to-int (midi-event-delta (car events)))) (cdr events))
-                (f level delta-time (cdr events)))))))
+                (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))
+                (f level delta-sum (cdr events)))))))
 
 (define (main)
-  (export (convert (parse-midi-file (open-input-file "./test.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+  (export (convert (parse-midi-file (open-input-file "/home/noe/Documents/oufmania/music/Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 
 (main)
