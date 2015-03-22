@@ -69,6 +69,6 @@
                 (f level delta-time (cdr events)))))))
 
 (define (main)
-  (export (convert (parse-midi-file (open-input-file "./test.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+  (export (convert (parse-midi-file (open-input-file "./../music/Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 
 (main)
