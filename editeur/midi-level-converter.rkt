@@ -28,12 +28,12 @@
     (to-level (filter midi-event?
                       (track-event-event (track-chunk-events (last midi-data)))) division delta-time)))
 
-(define (event-on? event)
-  (and (> (midi-event-instruction event) 127)
+(define (event-off? event)
+  (and (>= (midi-event-instruction event) 128)
        (< (midi-event-instruction event) 144)))
 
-(define (event-off? event)
-  (and (> (midi-event-instruction event) 143)
+(define (event-on? event)
+  (and (>= (midi-event-instruction event) 144)
        (< (midi-event-instruction event) 160)))
 
 (define (chan-change? event)
@@ -41,6 +41,7 @@
        (< (midi-event-instruction event) 208)))
 
 (define (vlq->int l)
+  (displayln l)
   (let f ([i 0] [l l] [sum 0])
     (if (empty? l)
         sum
@@ -53,9 +54,10 @@
                    (car i)) matrix) (transpose (map cdr matrix)))))
 
 (define (event-to-level event division delta-sum)
-  (displayln (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)))
+  (displayln delta-sum)
   (let ([n (- (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)) 1)])
-    (append (make-list (if (< n 0) 0 (inexact->exact (round n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
+    (displayln (~a n " -> " (if (exact-positive-integer? n) n 0)))
+    (append (make-list (if (exact-positive-integer? n) n 0) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
 (define (export level out)
   (define begin? #t)
@@ -69,7 +71,6 @@
 
 (define (to-level events division delta-time)
   (let f ([level '()] [delta-sum 0] [events events])
-    ;(displayln delta-sum)
     (if (empty? events)
         (transpose (filter (λ (i)
                              (= (length i) 4))
@@ -77,18 +78,13 @@
                             (foldl (λ (i l)
                                      (cond[(= (length (car l)) 4) (cons `(,i) l)]
                                           [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) level))))
-        (cond [(event-off? (car events))
+        (cond [(event-on? (car events))
                (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events))]
-              [(event-on? (car events))
-               (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]
-              [(chan-change? (car events))
-               (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]
-              [else 
-               (f level 0 (cdr events))]))))
+               [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]))))
 
 (define (main)
- (export (convert (parse-midi-file (open-input-file "./Tamborine_flstudio.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
-;(export (convert (parse-midi-file (open-input-file "./Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+; (export (convert (parse-midi-file (open-input-file "./Tamborine_flstudio.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+(export (convert (parse-midi-file (open-input-file "./Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 ;  (export (convert (parse-midi-file (open-input-file "./test4.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 
 (main)

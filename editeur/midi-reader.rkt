@@ -42,19 +42,23 @@
 (define (known-event? e1 e2)
   (or (sublist? e1 e2) (sublist? e1 (cdr e2))))
 
+(define last 0)
+(define rle? #f)
+
 (define (interpret-voice-message e)
   (let f ([delta '()] [l e])
-    (if (> (car l) 127)
-        (f (append delta `(,(car l))) (cdr l))
-        (let ([delta (reverse (append delta `(,(car l))))])
-          (cond [(or (>= (cadr l) 240)
-                     (and (>= 176 (cadr l)) (<= (cadr l) 191) (>= (caddr l) 98) (<= (caddr l) 121)))
-                 `(,(midi-event delta (cadr l) (caddr l) -1) ,(cddddr l))]
-                [(and (>= (cadr l) 192) (< (cadr l) 224))
-                 `(,(midi-event delta (cadr l) (caddr l) -1) ,(cdddr l))]
-                [else 
-                 `(,(midi-event delta (cadr l) (caddr l) (cadddr l)) ,(cddddr l))])))))
-
+    (cond [(and (= (car l) 0) (= (cadr l) 0))
+           (f (append delta `(,(car l))) (cdr l))]
+          [(> (car l) 127)
+           (f (append delta `(,(car l))) (cdr l))]
+          [else (let ([delta (reverse (append delta `(,(car l))))])
+                  (cond [(and (>= (cadr l) 192) (< (cadr l) 224))
+                         `(,(midi-event delta (cadr l) (caddr l) -1) ,(cdddr l))]
+                        [(>= (cadr l) 128)
+                         (set! last (cadr l))
+                         `(,(midi-event delta last (caddr l) (cadddr l)) ,(cddddr l))]
+                        [else
+                         `(,(midi-event delta last (cadr l) (caddr l)) ,(cdddr l))]))])))
 
 (define (read-sequence-name l)
   (let f ([length '()] [l l])
@@ -66,10 +70,10 @@
               (f (- length 1) (append data `(,(car l))) (cdr l)))))))
 
 (define (interpret-event e)
-  ;(displayln e)
+  ; (displayln e)
   (define (drop-zero l n)
     (drop l (if (zero? (car l)) (+ 1 n) n)))
-  (if (< (length e) 3)
+  (if (< (length e) 4)
       '()
       (cond ([known-event? time-signature-event e] [let ([l (drop-zero e 3)])
                                                      (cons 
