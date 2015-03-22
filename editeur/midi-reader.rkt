@@ -32,6 +32,7 @@
 (define instrument-name-event '(255 4))
 (define key-signature-event '(255 89 02))
 (define smpte-offset-event '(255 84 05))
+(define end-event '(255 47 0))
 
 
 (define (sublist? l1 l2)
@@ -41,16 +42,12 @@
 (define (known-event? e1 e2)
   (or (sublist? e1 e2) (sublist? e1 (cdr e2))))
 
-(define (interpret-midi-events e)
-  (let ([l (reverse (foldl (λ (i l)
-                             (cond
-                               [(and (= (length (car l)) 1) (> (car (flatten l)) 127))
-                                (append `((,(cons i (car l)))) (cdr l))]
-                               [(= (length (car l)) 4) (cons `(,i) l)]
-                               [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) e))])
-    (map (λ (i)
-           (if (= (length i) 4)
-               (midi-event (flatten (list (car i))) (cadr i) (caddr i) (cadddr i)) '())) l)))
+(define (interpret-voice-message e)
+  (let f ([delta '()] [l e])
+    (if (> (car l) 127)
+        (f (append delta `(,(car l))) (cdr l))
+        (let ([delta (reverse (append delta `(,(car l))))])
+              `(,(midi-event delta (cadr l) (caddr l) (cadddr l)) ,(cddddr l))))))
 
 (define (read-sequence-name l)
   (let f ([length '()] [l l])
@@ -62,33 +59,40 @@
               (f (- length 1) (append data `(,(car l))) (cdr l)))))))
 
 (define (interpret-event e)
+  ;(displayln e)
   (define (drop-zero l n)
     (drop l (if (zero? (car l)) (+ 1 n) n)))
-  
-  (cond ([known-event? time-signature-event e] [let ([l (drop-zero e 3)])
-                                                 (cons 
-                                                  (time-signature (car l) (cadr l) (caddr l) (cadddr l))
-                                                  (interpret-event (drop l 4)))])
-        ([known-event? set-tempo-event e] [let ([l (drop-zero e 3)])
-                                            (cons
-                                             (set-tempo (to-int (take l 3)))
-                                             (interpret-event (drop l 3)))])
-        ([known-event? key-signature-event e] [let ([l (drop-zero e 3)])
+  (if (< (length e) 3)
+      '()
+      (cond ([known-event? time-signature-event e] [let ([l (drop-zero e 3)])
+                                                     (cons 
+                                                      (time-signature (car l) (cadr l) (caddr l) (cadddr l))
+                                                      (interpret-event (drop l 4)))])
+            ([known-event? set-tempo-event e] [let ([l (drop-zero e 3)])
                                                 (cons
-                                                 (key-signature (car l) (cadr l))
-                                                 (interpret-event (drop l 2)))])
-        ([known-event? smpte-offset-event e] [let ([l (drop-zero e 3)])
-                                               (cons
-                                                (smpte-offset (car l) (cadr l) (caddr l) (cadddr l) (cadr (cdddr l)))
-                                                (interpret-event (drop l 5)))])
-        ([known-event? sequence-name-event e] [let* ([l (drop-zero e 2)] [name (read-sequence-name l)])
-                                                (cons (sequence-name (car name))
-                                                      (interpret-event (cadr name)))])
-        ([known-event? instrument-name-event e] [let* ([l (drop-zero e 2)] [name (read-sequence-name l)])
-                                                  (cons (instrument-name (car name))
-                                                        (interpret-event (cadr name)))])
-        
-        (else (interpret-midi-events e))))
+                                                 (set-tempo (to-int (take l 3)))
+                                                 (interpret-event (drop l 3)))])
+            ([known-event? key-signature-event e] [let ([l (drop-zero e 3)])
+                                                    (cons
+                                                     (key-signature (car l) (cadr l))
+                                                     (interpret-event (drop l 2)))])
+            ([known-event? smpte-offset-event e] [let ([l (drop-zero e 3)])
+                                                   (cons
+                                                    (smpte-offset (car l) (cadr l) (caddr l) (cadddr l) (cadr (cdddr l)))
+                                                    (interpret-event (drop l 5)))])
+            ([known-event? sequence-name-event e] [let* ([l (drop-zero e 2)] [name (read-sequence-name l)])
+                                                    (cons (sequence-name (car name))
+                                                          (interpret-event (cadr name)))])
+            ([known-event? instrument-name-event e] [let* ([l (drop-zero e 2)] [name (read-sequence-name l)])
+                                                      (cons (instrument-name (car name))
+                                                            (interpret-event (cadr name)))])
+            ([known-event? end-event e] '())
+            
+            (else [let ([event (interpret-voice-message e)])
+                    (cons (car event)
+                          (interpret-event (cadr event)))]))))
+
+; (interpret-midi-events e))))
 
 
 (define (read-header in)
