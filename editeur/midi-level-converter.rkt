@@ -61,15 +61,18 @@
       (when strict (displayln "le programme va quitter") (exit)))
     (append (make-list (if (< n 0) 0 (inexact->exact (round n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
-(define (export level out)
-  (define begin? #t)
-  (for-each (λ (i)
-              (set! begin? #t)
-              (for-each (λ (i)
-                          (unless begin? (write-char #\space out))
-                          (set! begin? #f)
-                          (write i out)) i) (write-char #\newline out)) level)
-  (close-output-port out))
+(define (export level out extra-zeros)
+  (let* ([extra (make-list extra-zeros 0)]
+        [level (map (λ (i)
+                      (append i extra)) level)])
+    (define begin? #t)
+    (for-each (λ (i)
+                (set! begin? #t)
+                (for-each (λ (i)
+                            (unless begin? (write-char #\space out))
+                            (set! begin? #f)
+                            (write i out)) i) (write-char #\newline out)) level)
+    (close-output-port out)))
 
 (define (to-level events division delta-time)
   (let f ([level '()] [delta-sum 0] [events events])
@@ -92,6 +95,12 @@
       (error (~a "format de fichier non reconnu : " input-file)))
     input-file))
 
+(define (get-extra-zeros args)
+  (let ([extra (string->number (cadr (member "-z" (vector->list args))))])
+    (unless extra
+      (error (~a "un entier est attendu: " extra)))
+    extra))
+
 (define (strict? args)
   (let ([s (member "--strict" (vector->list args))])
     (set! strict (list? s))))
@@ -102,6 +111,7 @@
 (define (display-help)
   (displayln (~a "utilisation : \n\t"
                  "-i <input-file>" "\n\t"
+                 "-z <integer>" " : zéros supplémentaires à la fin du fichier\n\t"
                  "--strict : " "arrêt en cas d'erreur dans le fichier")))
 
 (define (main args)
@@ -109,11 +119,12 @@
          (display-help)]
         [else 
          (strict? args)
-         (let ([input-file (get-input-file args)])
+         (let ([input-file (get-input-file args)] [extra-zeros (get-extra-zeros args)])
            (export (convert (parse-midi-file (open-input-file input-file #:mode 'binary)))
-                   (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)))]))
+                   (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)
+                   extra-zeros))]))
 
-;(main #("-i" "./logic4.mid"))
+;(main #("-i" "./logic4.mid" "-z" "8"))
 ;main #("-i" "./Tamborine.mid" "--strict"))
 ;(main #("./test.mid"))
 (main (current-command-line-arguments))
