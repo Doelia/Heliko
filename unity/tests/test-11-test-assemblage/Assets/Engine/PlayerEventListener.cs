@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerEventListener : MonoBehaviour
 {
 	public bool onKeyDown = true;
+	public BeatCounter bc;
 
 	void Start () {
 	}
@@ -18,6 +19,10 @@ public class PlayerEventListener : MonoBehaviour
 	}
 
 	void Update () {
+		if (bc.isInPause()) {
+			return;
+		}
+
 		foreach (Touch touch in Input.touches) {
 			if (touch.phase == TouchPhase.Began) {
 				foreach (PlayerEventReceiver e in this.observers) {
@@ -41,7 +46,7 @@ public class PlayerEventListener : MonoBehaviour
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.onFinger (2);
 		}
-
-
 	}
+
+
 }
