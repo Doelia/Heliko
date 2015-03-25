@@ -49,4 +49,8 @@ public class BeatCounter : Timer {
 		}
 	}
 
+	public bool isInPause() {
+		return !this.audioSource.isPlaying;
+	}
+
 }

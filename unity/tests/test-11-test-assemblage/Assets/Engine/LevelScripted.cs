@@ -25,7 +25,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 	
 	public void loadData () {
-		Debug.Log (levelData.text);
+		//Debug.Log (levelData.text);
 		string [] tracks = levelData.text.Split ('\n');
 		stepEvents = stringToIntEvents (tracks);
 	}
@@ -55,7 +55,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 		}
 
 		for (int i = 0; i < nbrActions; i++) {
-			Debug.Log (i + " : " + toReturn [i]);
+			//Debug.Log (i + " : " + toReturn [i]);
 		}
 
 		return toReturn;
