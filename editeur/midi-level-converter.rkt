@@ -59,7 +59,7 @@
     (unless (exact-nonnegative-integer? n)
       (displayln (~a "fichier mal formé : temps incorrects\n\tdelta = " n "\n\tindex : " cpt " \n\tevent : " event "\n"))
       (when strict (displayln "le programme va quitter") (exit)))
-    (append (make-list (if (< n 0) 0 (inexact->exact (ceiling n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
+    (append (make-list (if (< n 0) 0 (inexact->exact (round n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
 (define (export level out)
   (define begin? #t)
@@ -113,7 +113,7 @@
            (export (convert (parse-midi-file (open-input-file input-file #:mode 'binary)))
                    (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)))]))
 
-;(main #("-i" "./logic3.mid"))
-;(main #("-i" "./Tamborine.mid" "--strict"))
+;(main #("-i" "./logic4.mid"))
+;main #("-i" "./Tamborine.mid" "--strict"))
 ;(main #("./test.mid"))
 (main (current-command-line-arguments))

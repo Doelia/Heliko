@@ -49,12 +49,13 @@
 
 (define (interpret-voice-message e)
   (let f ([delta '()] [l e])
-    (cond [(and (= (car l) 0) (= (cadr l) 0))
+    (cond [(and (= last 192) (= (car l) 0) (= (cadr l) 0))
            (f (append delta `(,(car l))) (cdr l))]
           [(> (car l) 127)
            (f (append delta `(,(car l))) (cdr l))]
           [else (let ([delta (reverse (append delta `(,(car l))))])
                   (cond [(and (>= (cadr l) 192) (< (cadr l) 224))
+                         (set! last (cadr l))
                          `(,(midi-event delta (cadr l) (caddr l) -1) ,(cdddr l))]
                         [(>= (cadr l) 128)
                          (set! last (cadr l))
