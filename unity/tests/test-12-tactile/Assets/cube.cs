@@ -3,50 +3,32 @@ using System.Collections;
 
 public class cube : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public Transform evenement;
 
 	public void action1()
 	{
-		if (this.transform.localScale != Vector3.one * 3) {
-						this.transform.localScale = Vector3.one * 3;
-				} else {
-			this.transform.localScale = Vector3.one;
+		print ("1");
+		Transform myEvent= Transform.Instantiate(evenement) as Transform;
+		myEvent.GetComponent<TextMesh>().text = "1";
 
-		}
 	}
 	public void action2()
 	{
-		if (this.transform.localScale != Vector3.one / 3) {
-			this.transform.localScale = Vector3.one / 3;
-		} else {
-			this.transform.localScale = Vector3.one;
-			
-		}	}
+		print ("2");
+		Transform myEvent= Transform.Instantiate(evenement) as Transform;
+		myEvent.GetComponent<TextMesh>().text = "2";
+	}
 	public void action3()
 	{
-		if (this.transform.position != new Vector3 (1, 0, 0)) {
-						this.transform.position = new Vector3 (1, 0, 0);
-				} else {
-				this.transform.position = new Vector3 (0, 0, 0);
-
-				}
-		
+		print ("3");
+		Transform myEvent= Transform.Instantiate(evenement) as Transform;
+		myEvent.GetComponent<TextMesh>().text = "3";
 	}
 	public void action4()
 	{
-		if (this.transform.position != new Vector3 (-1, 0, 0)) {
-			this.transform.position = new Vector3 (-1, 0, 0);
-		} else {
-			this.transform.position = new Vector3 (0, 0, 0);
-			
-		}
+		print ("4");
+		Transform myEvent= Transform.Instantiate(evenement) as Transform;
+		myEvent.GetComponent<TextMesh>().text = "4";;
+
 	}
 }

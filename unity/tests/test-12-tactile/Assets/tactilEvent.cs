@@ -28,44 +28,49 @@ public class tactilEvent : MonoBehaviour {
 			{           
 				case TouchPhase.Began:
 					touchScreen=true;
-					break;  
+				break;  
 
 				case TouchPhase.Ended:
-				if(mouvement.magnitude>=4)
-				{
-					monCube.action4();
-				}
-				else if(timeTouchTotal>=timeBeforeLongTouch)
-				{
-					monCube.action3();
-				}
-				else
-				{
-					monCube.action1();
-				}
-				timeTouchTotal = 0F;
-				touchScreen=false; 
-				mouvement=Vector2.zero;
-					break;   
+					if(mouvement.magnitude>=12 && touchScreen)
+					{
+						monCube.action4();
+					}
+					else if(timeTouchTotal>=timeBeforeLongTouch)
+					{
+						monCube.action3();
+					}
+					else
+					{
+						monCube.action1();
+					}
+					timeTouchTotal = 0F;
+					touchScreen=false; 
+					mouvement=Vector2.zero;
+				break;  
+
+				case TouchPhase.Stationary: 
+					timeTouchTotal+=Time.deltaTime;
+					if(timeTouchTotal>=timeBeforeLongTouch && touchScreen)
+					{
+						monCube.action2();
+						touchScreen=false;
+					}
+				break;
 
 				case TouchPhase.Moved: 
-				mouvement+=Input.GetTouch(0).deltaPosition;	
-
-					break;                
+					mouvement+=Input.GetTouch(0).deltaPosition;	
+					if(mouvement.magnitude<=4)
+					{
+						timeTouchTotal+=Time.deltaTime;
+						if(timeTouchTotal>=timeBeforeLongTouch && touchScreen)
+						{
+							monCube.action2();
+							touchScreen=false;
+						}
+					}
+				break;                
 			}  		
 		}
-		if (touchScreen) {
-			timeTouchTotal+=Time.deltaTime;
-			if(timeTouchTotal>=timeBeforeLongTouch)
-			{
-				monCube.action2();
-				touchScreen=false;
-			}
-		}
-	}
-	
-	void StartAction(TouchPhase p) 
-	{  
-				
+
 	}
 }
