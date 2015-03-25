@@ -11,6 +11,7 @@
                     73 2
                     74 3
                     75 4))
+(define strict #f)
 
 (define (get-time-signature midi-data)
   (car (foldr (λ (i l)
@@ -53,13 +54,9 @@
                    (car i)) matrix) (transpose (map cdr matrix)))))
 
 (define (event-to-level event division delta-sum)
-  (displayln delta-sum)
-  (let ([n (- (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)) 1)])
-    (displayln (~a n " -> " (if (exact-positive-integer? n) n 0)))
-    (displayln (~a (+ delta-sum (vlq->int (midi-event-delta event))) " / " (/ division 4)))
-    (displayln (~a "q/r : " (quotient (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)) " et "
-                   (remainder (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4))))
-    
+  (let ([n (max 0 (- (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)) 1))])
+    (unless (exact-nonnegative-integer? n)
+      (error (~a "fichier mal formé : temps incorrects\nn = " n "\nevent : " event)))
     (append (make-list (if (< n 0) 0 (inexact->exact (round n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
 (define (export level out)
@@ -86,8 +83,8 @@
               [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]))))
 
 (define (main)
-  ; (export (convert (parse-midi-file (open-input-file "./Tamborine_flstudio.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
-  (export (convert (parse-midi-file (open-input-file "./Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
-;  (export (convert (parse-midi-file (open-input-file "./test4.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+   (export (convert (parse-midi-file (open-input-file "./tambourine_fl2.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+ ; (export (convert (parse-midi-file (open-input-file "./Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+ ; (export (convert (parse-midi-file (open-input-file "./test.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
 
 (main)
