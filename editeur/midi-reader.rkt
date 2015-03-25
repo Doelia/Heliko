@@ -45,7 +45,6 @@
   (or (sublist? e1 e2) (sublist? e1 (cdr e2))))
 
 (define last 0)
-(define rle? #f)
 
 (define (interpret-voice-message e)
   (let f ([delta '()] [l e])

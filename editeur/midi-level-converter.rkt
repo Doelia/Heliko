@@ -23,6 +23,7 @@
                            '() (track-event-event (track-chunk-events i))) l)) '() midi-data)))
 
 (define (convert midi-data)
+  (pretty-display midi-data)
   (let ([division (header-division (car midi-data))]
         [delta-time (time-signature-cc (get-time-signature midi-data))]
         [open? #f])
@@ -75,7 +76,7 @@
     (close-output-port out)))
 
 (define (to-level events division delta-time)
-  (let f ([level '()] [delta-sum 0] [events events])
+  (let f ([level '()] [delta-sum 0] [events events] [event-started? #f])
     (if (empty? events)
         (transpose (map (λ (i)
                           (if (< (length i) 4)
@@ -85,9 +86,10 @@
                          (foldl (λ (i l)
                                   (cond[(= (length (car l)) 4) (cons `(,i) l)]
                                        [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) level))))
-        (cond [(event-on? (car events))
-               (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events))]
-              [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]))))
+        (cond [(and (not event-started?) (event-on? (car events)))
+               (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events) #t)]
+              [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events)
+                       (if (or (event-on? (car events)) (event-off? (car events))) #f event-started?))]))))
 
 (define (get-input-file args)
   (let ([input-file (cadr (member "-i" (vector->list args)))])
@@ -124,7 +126,4 @@
                    (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)
                    extra-zeros))]))
 
-;(main #("-i" "./logic4.mid" "-z" "8"))
-;main #("-i" "./Tamborine.mid" "--strict"))
-;(main #("./test.mid"))
 (main (current-command-line-arguments))
