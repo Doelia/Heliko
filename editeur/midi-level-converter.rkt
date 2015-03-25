@@ -12,6 +12,7 @@
                     74 3
                     75 4))
 (define strict #f)
+(define cpt 0)
 
 (define (get-time-signature midi-data)
   (car (foldr (λ (i l)
@@ -22,6 +23,7 @@
                            '() (track-event-event (track-chunk-events i))) l)) '() midi-data)))
 
 (define (convert midi-data)
+  (pretty-display midi-data)
   (let ([division (header-division (car midi-data))]
         [delta-time (time-signature-cc (get-time-signature midi-data))]
         [open? #f])
@@ -53,9 +55,10 @@
                    (car i)) matrix) (transpose (map cdr matrix)))))
 
 (define (event-to-level event division delta-sum)
+  (set! cpt (+ 1 cpt))
   (let ([n (max 0 (- (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)) 1))])
     (unless (exact-nonnegative-integer? n)
-      (displayln (~a "fichier mal formé : temps incorrects\n\tdelta = " n "\n\tevent : " event "\n"))
+      (displayln (~a "fichier mal formé : temps incorrects\n\tdelta = " n "\n\tindex : " cpt " \n\tevent : " event "\n"))
       (when strict (displayln "le programme va quitter") (exit)))
     (append (make-list (if (< n 0) 0 (inexact->exact (round n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
@@ -109,7 +112,7 @@
            (export (convert (parse-midi-file (open-input-file input-file #:mode 'binary)))
                    (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)))]))
 
-;(main #("./tambourine_fl2.mid"))
+;(main #("-i" "./Tamborine.mid"))
 ;(main #("-i" "./Tamborine.mid" "--strict"))
 ;(main #("./test.mid"))
 (main (current-command-line-arguments))
