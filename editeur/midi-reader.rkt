@@ -70,7 +70,6 @@
               (f (- length 1) (append data `(,(car l))) (cdr l)))))))
 
 (define (interpret-event e)
-  ; (displayln e)
   (define (drop-zero l n)
     (drop l (if (zero? (car l)) (+ 1 n) n)))
   (if (< (length e) 4)
@@ -102,9 +101,6 @@
             (else [let ([event (interpret-voice-message e)])
                     (cons (car event)
                           (interpret-event (cadr event)))]))))
-
-; (interpret-midi-events e))))
-
 
 (define (read-header in)
   (header (to-string (read-n-bytes in 4))

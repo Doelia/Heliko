@@ -22,7 +22,6 @@
                            '() (track-event-event (track-chunk-events i))) l)) '() midi-data)))
 
 (define (convert midi-data)
-  (pretty-display midi-data)
   (let ([division (header-division (car midi-data))]
         [delta-time (time-signature-cc (get-time-signature midi-data))]
         [open? #f])
@@ -56,7 +55,8 @@
 (define (event-to-level event division delta-sum)
   (let ([n (max 0 (- (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4)) 1))])
     (unless (exact-nonnegative-integer? n)
-      (error (~a "fichier mal formé : temps incorrects\nn = " n "\nevent : " event)))
+      (displayln (~a "fichier mal formé : temps incorrects\n\tdelta = " n "\n\tevent : " event "\n"))
+      (when strict (displayln "le programme va quitter") (exit)))
     (append (make-list (if (< n 0) 0 (inexact->exact (round n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
 (define (export level out)
@@ -82,9 +82,34 @@
                (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events))]
               [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]))))
 
-(define (main)
-   (export (convert (parse-midi-file (open-input-file "./tambourine_fl2.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
- ; (export (convert (parse-midi-file (open-input-file "./Tamborine.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
- ; (export (convert (parse-midi-file (open-input-file "./test.mid" #:mode 'binary))) (open-output-file "out.txt" #:mode 'binary #:exists 'replace)))
+(define (get-input-file args)
+  (let ([input-file (cadr (member "-i" (vector->list args)))])
+    (unless (= 2 (length (string-split input-file ".")))
+      (error (~a "format de fichier non reconnu : " input-file)))
+    input-file))
 
-(main)
+(define (strict? args)
+  (let ([s (member "--strict" (vector->list args))])
+    (set! strict (list? s))))
+
+(define (help? args)
+  (list? (member "-h" (vector->list args))))
+
+(define (display-help)
+  (displayln (~a "utilisation : \n\t"
+      "-i <input-file>" "\n\t"
+      "--strict : " "arrêt en cas d'erreur dans le fichier")))
+
+(define (main args)
+  (cond [(or (< (vector-length args) 2) (help? args))
+         (display-help)]
+        [else 
+         (strict? args)
+         (let ([input-file (get-input-file args)])
+           (export (convert (parse-midi-file (open-input-file input-file #:mode 'binary)))
+                   (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)))]))
+
+;(main #("./tambourine_fl2.mid"))
+;(main #("-i" "./Tamborine.mid" "--strict"))
+;(main #("./test.mid"))
+(main (current-command-line-arguments))
