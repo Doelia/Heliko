@@ -23,7 +23,6 @@
                            '() (track-event-event (track-chunk-events i))) l)) '() midi-data)))
 
 (define (convert midi-data)
-  (pretty-display midi-data)
   (let ([division (header-division (car midi-data))]
         [delta-time (time-signature-cc (get-time-signature midi-data))]
         [open? #f])
@@ -60,7 +59,7 @@
     (unless (exact-nonnegative-integer? n)
       (displayln (~a "fichier mal formé : temps incorrects\n\tdelta = " n "\n\tindex : " cpt " \n\tevent : " event "\n"))
       (when strict (displayln "le programme va quitter") (exit)))
-    (append (make-list (if (< n 0) 0 (inexact->exact (round n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
+    (append (make-list (if (< n 0) 0 (inexact->exact (ceiling n))) 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
 
 (define (export level out)
   (define begin? #t)
@@ -75,12 +74,14 @@
 (define (to-level events division delta-time)
   (let f ([level '()] [delta-sum 0] [events events])
     (if (empty? events)
-        (transpose (filter (λ (i)
-                             (= (length i) 4))
-                           (reverse
-                            (foldl (λ (i l)
-                                     (cond[(= (length (car l)) 4) (cons `(,i) l)]
-                                          [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) level))))
+        (transpose (map (λ (i)
+                          (if (< (length i) 4)
+                              (append i (make-list (- 4 (length i)) 0))
+                              i))
+                        (reverse
+                         (foldl (λ (i l)
+                                  (cond[(= (length (car l)) 4) (cons `(,i) l)]
+                                       [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) level))))
         (cond [(event-on? (car events))
                (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events))]
               [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]))))
@@ -100,8 +101,8 @@
 
 (define (display-help)
   (displayln (~a "utilisation : \n\t"
-      "-i <input-file>" "\n\t"
-      "--strict : " "arrêt en cas d'erreur dans le fichier")))
+                 "-i <input-file>" "\n\t"
+                 "--strict : " "arrêt en cas d'erreur dans le fichier")))
 
 (define (main args)
   (cond [(or (< (vector-length args) 2) (help? args))
@@ -112,7 +113,7 @@
            (export (convert (parse-midi-file (open-input-file input-file #:mode 'binary)))
                    (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)))]))
 
-;(main #("-i" "./Tamborine.mid"))
+;(main #("-i" "./logic3.mid"))
 ;(main #("-i" "./Tamborine.mid" "--strict"))
 ;(main #("./test.mid"))
 (main (current-command-line-arguments))

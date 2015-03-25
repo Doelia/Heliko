@@ -25,6 +25,7 @@
 (struct midi-event (delta instruction arg1 arg2) #:transparent)
 (struct key-signature (sf mi) #:transparent)
 (struct smpte-offset (hr mn se fr ff) #:transparent)
+(struct midi-channel-prefix (cc) #:transparent)
 
 (define time-signature-event '(255 88 4))
 (define set-tempo-event '(255 81 3))
@@ -33,6 +34,7 @@
 (define key-signature-event '(255 89 02))
 (define smpte-offset-event '(255 84 05))
 (define end-event '(255 47 0))
+(define midi-channel-prefix-event '(255 32 01))
 
 
 (define (sublist? l1 l2)
@@ -82,6 +84,10 @@
                                                 (cons
                                                  (set-tempo (to-int (take l 3)))
                                                  (interpret-event (drop l 3)))])
+            ([known-event? midi-channel-prefix-event e] [let ([l (drop-zero e 3)])
+                                                          (cons
+                                                           (midi-channel-prefix (to-int (take l 1)))
+                                                           (interpret-event (drop l 1)))])
             ([known-event? key-signature-event e] [let ([l (drop-zero e 3)])
                                                     (cons
                                                      (key-signature (car l) (cadr l))
