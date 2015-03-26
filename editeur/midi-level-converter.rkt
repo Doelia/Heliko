@@ -23,7 +23,6 @@
                            '() (track-event-event (track-chunk-events i))) l)) '() midi-data)))
 
 (define (convert midi-data)
-  (pretty-display midi-data)
   (let ([division (header-division (car midi-data))]
         [delta-time (time-signature-cc (get-time-signature midi-data))]
         [open? #f])
@@ -37,10 +36,6 @@
 (define (event-on? event)
   (and (>= (midi-event-instruction event) 144)
        (< (midi-event-instruction event) 160)))
-
-(define (chan-change? event)
-  (and (> (midi-event-instruction event) 191)
-       (< (midi-event-instruction event) 208)))
 
 (define (vlq->int l)
   (let f ([i 0] [l l] [sum 0])
@@ -98,9 +93,10 @@
     input-file))
 
 (define (get-extra-zeros args)
-  (let ([extra (string->number (cadr (member "-z" (vector->list args))))])
+  (let* ([arg (member "-z" (vector->list args))]
+         [extra (if (and arg (> (length arg) 1)) (string->number (cadr arg)) 0)])
     (unless extra
-      (error (~a "un entier est attendu: " extra)))
+      (error (~a "-z : un entier est attendu: " extra)))
     extra))
 
 (define (strict? args)
