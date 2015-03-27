@@ -5,8 +5,18 @@ public class PlayerEventListener : MonoBehaviour
 {
 	public bool onKeyDown = true;
 	public BeatCounter bc;
+	
+	public float timeBeforeLongTouch;
+	private bool touchScreen;
+	private Vector2 mouvement;
+	private float timeTouchTotal;
 
-	void Start () {
+
+	void Start()
+	{
+		touchScreen = false;
+		timeTouchTotal = 0F;
+		mouvement = Vector2.zero;
 	}
 
 	public void Awake () {
@@ -22,15 +32,69 @@ public class PlayerEventListener : MonoBehaviour
 		if (bc.isInPause()) {
 			return;
 		}
+		#if UNITY_ANDROID || UNITY_IOS
+		if (Input.touchCount > 0) 
+		{           
+			switch (Input.GetTouch(0).phase) 
+			{           
+				case TouchPhase.Began:
+					touchScreen=true;
+				break;  
 
-		foreach (Touch touch in Input.touches) {
-			if (touch.phase == TouchPhase.Began) {
-				foreach (PlayerEventReceiver e in this.observers) {
-					e.onFinger (1);
-				}
-			}
+				case TouchPhase.Ended:
+					if(mouvement.magnitude>=12 && touchScreen)
+					{
+						foreach (PlayerEventReceiver e in this.observers) {
+							e.onFinger (4);
+						}		
+					}
+					else if(timeTouchTotal>=timeBeforeLongTouch)
+					{
+						foreach (PlayerEventReceiver e in this.observers) {
+							e.onFinger (3);
+						}	
+					}
+					else
+					{
+						foreach (PlayerEventReceiver e in this.observers) {
+							e.onFinger (1);
+						}	
+					}
+					timeTouchTotal = 0F;
+					touchScreen=false; 
+					mouvement=Vector2.zero;
+				break;  
+
+				case TouchPhase.Stationary: 
+					timeTouchTotal+=Time.deltaTime;
+					if(timeTouchTotal>=timeBeforeLongTouch && touchScreen)
+					{
+						foreach (PlayerEventReceiver e in this.observers) {
+							e.onFinger (2);
+						}	
+						touchScreen=false;
+					}
+				break;
+
+				case TouchPhase.Moved: 
+					mouvement+=Input.GetTouch(0).deltaPosition;	
+					if(mouvement.magnitude<=4)
+					{
+						timeTouchTotal+=Time.deltaTime;
+						if(timeTouchTotal>=timeBeforeLongTouch && touchScreen)
+						{
+							foreach (PlayerEventReceiver e in this.observers) {
+								e.onFinger (2);
+							}	
+							touchScreen=false;
+						}
+					}
+				break;                
+			}  		
 		}
-
+		#endif 
+		
+		#if UNITY_EDITOR
 		if (Input.GetKeyDown (KeyCode.P) &&  Input.GetKeyDown (KeyCode.O))
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.onFinger (3);
@@ -47,6 +111,7 @@ public class PlayerEventListener : MonoBehaviour
 			e.onFinger (2);
 		}
 	}
+	#endif
 
 
 }
