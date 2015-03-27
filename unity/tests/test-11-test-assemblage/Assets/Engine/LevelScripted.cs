@@ -25,7 +25,6 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 	
 	public void loadData () {
-		//Debug.Log (levelData.text);
 		string [] tracks = levelData.text.Split ('\n');
 		stepEvents = stringToIntEvents (tracks);
 	}
