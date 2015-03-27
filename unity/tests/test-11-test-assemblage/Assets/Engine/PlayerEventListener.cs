@@ -9,15 +9,19 @@ public class PlayerEventListener : MonoBehaviour
 
 	private ArrayList observers;
 
+	#if UNITY_ANDROID || UNITY_IOS
 	private bool touchScreen;
 	private Vector2 mouvement;
 	private float timeTouchTotal;
+	#endif
 
 	void Start()
 	{
+		#if UNITY_ANDROID || UNITY_IOS
 		touchScreen = false;
 		timeTouchTotal = 0F;
 		mouvement = Vector2.zero;
+		#endif
 	}
 
 	public void Awake () {
