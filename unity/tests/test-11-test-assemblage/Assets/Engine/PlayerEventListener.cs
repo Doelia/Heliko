@@ -32,37 +32,34 @@ public class PlayerEventListener : MonoBehaviour
 		this.observers.Add(r);
 	}
 
+	private void sendEvent(int type) {
+		foreach (PlayerEventReceiver e in this.observers) {
+			e.onFinger (type);
+		}
+	}
+
 	void Update () {
 		if (bc.isInPause()) {
 			return;
 		}
 		#if UNITY_ANDROID || UNITY_IOS
 		if (Input.touchCount > 0) 
-		{           
+		{
 			switch (Input.GetTouch(0).phase) 
-			{           
+			{
 				case TouchPhase.Began:
 					touchScreen=true;
 				break;  
 
 				case TouchPhase.Ended:
-					if(mouvement.magnitude>=12 && touchScreen)
-					{
-						foreach (PlayerEventReceiver e in this.observers) {
-							e.onFinger (4);
-						}		
+					if (mouvement.magnitude>=12 && touchScreen) {
+						sendEvent(4);
 					}
-					else if(timeTouchTotal>=timeBeforeLongTouch)
-					{
-						foreach (PlayerEventReceiver e in this.observers) {
-							e.onFinger (3);
-						}	
+					else if(timeTouchTotal>=timeBeforeLongTouch) {
+						sendEvent(3);
 					}
-					else
-					{
-						foreach (PlayerEventReceiver e in this.observers) {
-							e.onFinger (1);
-						}	
+					else {
+						sendEvent(1);
 					}
 					timeTouchTotal = 0F;
 					touchScreen=false; 
@@ -71,25 +68,18 @@ public class PlayerEventListener : MonoBehaviour
 
 				case TouchPhase.Stationary: 
 					timeTouchTotal+=Time.deltaTime;
-					if(timeTouchTotal>=timeBeforeLongTouch && touchScreen)
-					{
-						foreach (PlayerEventReceiver e in this.observers) {
-							e.onFinger (2);
-						}	
+					if (timeTouchTotal>=timeBeforeLongTouch && touchScreen) {
+						sendEvent(2);
 						touchScreen=false;
 					}
 				break;
 
 				case TouchPhase.Moved: 
 					mouvement+=Input.GetTouch(0).deltaPosition;	
-					if(mouvement.magnitude<=4)
-					{
-						timeTouchTotal+=Time.deltaTime;
-						if(timeTouchTotal>=timeBeforeLongTouch && touchScreen)
-						{
-							foreach (PlayerEventReceiver e in this.observers) {
-								e.onFinger (2);
-							}	
+					if (mouvement.magnitude <= 4) {
+						timeTouchTotal += Time.deltaTime;
+						if (timeTouchTotal >= timeBeforeLongTouch && touchScreen) {
+							sendEvent(2);
 							touchScreen=false;
 						}
 					}
@@ -100,20 +90,13 @@ public class PlayerEventListener : MonoBehaviour
 		
 		#if UNITY_EDITOR
 		if (Input.GetKeyDown (KeyCode.P) &&  Input.GetKeyDown (KeyCode.O))
-		foreach (PlayerEventReceiver e in this.observers) {
-			e.onFinger (3);
-			return;
-		}
+			sendEvent(3);
 
 		if ((onKeyDown && Input.GetKeyDown (KeyCode.O)) || (!onKeyDown && Input.GetKey (KeyCode.O)))
-		foreach (PlayerEventReceiver e in this.observers) {
-			e.onFinger (1);
-		}
+			sendEvent(1);
 
 		if ((onKeyDown && Input.GetKeyDown (KeyCode.P)) || (!onKeyDown && Input.GetKey (KeyCode.P)))
-		foreach (PlayerEventReceiver e in this.observers) {
-			e.onFinger (2);
-		}
+			sendEvent(2);
 		#endif
 		
 	}
