@@ -5,12 +5,13 @@ public class PlayerEventListener : MonoBehaviour
 {
 	public bool onKeyDown = true;
 	public BeatCounter bc;
-	
 	public float timeBeforeLongTouch;
+
+	private ArrayList observers;
+
 	private bool touchScreen;
 	private Vector2 mouvement;
 	private float timeTouchTotal;
-
 
 	void Start()
 	{
@@ -23,7 +24,6 @@ public class PlayerEventListener : MonoBehaviour
 		this.observers = new ArrayList ();
 	}
 
-	ArrayList observers;
 	public void connect (PlayerEventReceiver r) {
 		this.observers.Add(r);
 	}
@@ -110,8 +110,9 @@ public class PlayerEventListener : MonoBehaviour
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.onFinger (2);
 		}
+		#endif
+		
 	}
-	#endif
 
 
 }
