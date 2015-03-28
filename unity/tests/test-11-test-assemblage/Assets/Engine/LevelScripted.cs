@@ -10,7 +10,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	public TextAsset levelData;
 	public BeatCounter beatCounter;
-	public int waitingStep; // Nombre de step à remplire par des 0 (utile pour les déclages)
+	public int waitingStep; // Nombre de step à remplire par des 0 (utile pour les décalages)
 	
 	private int[] stepEvents;
 	private ArrayList observers;

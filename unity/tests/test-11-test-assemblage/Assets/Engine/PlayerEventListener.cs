@@ -99,7 +99,6 @@ public class PlayerEventListener : MonoBehaviour
 		*/
 		#endif 
 		
-		#if UNITY_EDITOR
 		if (Input.GetKeyDown (KeyCode.P) &&  Input.GetKeyDown (KeyCode.O))
 			sendEvent(3);
 
@@ -108,7 +107,6 @@ public class PlayerEventListener : MonoBehaviour
 
 		if ((onKeyDown && Input.GetKeyDown (KeyCode.P)) || (!onKeyDown && Input.GetKey (KeyCode.P)))
 			sendEvent(2);
-		#endif
 		
 	}
 
