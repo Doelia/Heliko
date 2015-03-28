@@ -61,6 +61,8 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 
 	public int getActionFromBeat(int nBeat) {
+		if (nBeat < 0)
+			return 0;
 		return stepEvents [getIndex (nBeat)];
 	}
 
