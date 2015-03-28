@@ -43,6 +43,16 @@ public class PlayerEventListener : MonoBehaviour
 			return;
 		}
 		#if UNITY_ANDROID || UNITY_IOS
+
+		foreach (Touch touch in Input.touches) {
+			if (touch.phase == TouchPhase.Began) {
+				foreach (PlayerEventReceiver e in this.observers) {
+					e.onFinger (1);
+				}
+			}
+		}
+
+		/*
 		if (Input.touchCount > 0) 
 		{
 			switch (Input.GetTouch(0).phase) 
@@ -86,6 +96,7 @@ public class PlayerEventListener : MonoBehaviour
 				break;                
 			}  		
 		}
+		*/
 		#endif 
 		
 		#if UNITY_EDITOR

@@ -5,6 +5,7 @@ public class IATesteur : MonoBehaviour, LevelScriptedReceiver {
 
 	private Animator anim;
 	public LevelScripted level;
+	public AudioSource clap;
 
 	public void Start () {
 		this.level.connect(this);
@@ -13,8 +14,8 @@ public class IATesteur : MonoBehaviour, LevelScriptedReceiver {
 	
 	public void onAction (int type) {
 		if (type == 1) {
-			Debug.Log ("change");
 			anim.SetTrigger ("change");
+			clap.Play();
 		}
 	}
 
