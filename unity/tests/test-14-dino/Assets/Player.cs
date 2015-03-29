@@ -14,10 +14,17 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.P)) {
+		if (Input.GetKeyDown (KeyCode.O)) {
 			anim1.SetTrigger("go");
+
+		}
+
+		if (Input.GetKeyDown (KeyCode.P)) {
+			anim1.SetTrigger("next");
 			anim2.SetTrigger("go");
 			anim3.SetTrigger("go");
 		}
+
+
 	}
 }
