@@ -10,6 +10,8 @@ public class InterfacePauseGame : MonoBehaviour {
 	public GameObject playIcon;
 
 	public AudioSource music;
+	public AudioSource openMenuSound;
+	public AudioSource closeMenuSound;
 
 	public void Reload() {
 		loadingScreen.SetActive(true);
@@ -17,6 +19,7 @@ public class InterfacePauseGame : MonoBehaviour {
 	}
 
 	public void UnPause() {
+		closeMenuSound.Play();
 		pauseMenu.SetActive(false);
 		music.Play();
 		playIcon.SetActive(false);
@@ -24,6 +27,7 @@ public class InterfacePauseGame : MonoBehaviour {
 	}
 
 	public void Pause() {
+		openMenuSound.Play();
 		music.Pause ();
 		pauseMenu.SetActive(true);
 		playIcon.SetActive(true);

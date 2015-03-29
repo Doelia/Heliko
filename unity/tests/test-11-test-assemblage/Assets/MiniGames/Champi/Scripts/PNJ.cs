@@ -15,6 +15,8 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver {
 	public Transform carapace;
 	public Transform champiPNJ;
 
+	public AudioSource sound;
+
 	public void Start () {
 		this.level.connect(this);
 		brasDroit = brasDroitTrasform.GetComponent<Animator>();
@@ -34,7 +36,7 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver {
 		}
 		animCarapace.SetTrigger("Move");
 		animChampiPNJ.SetTrigger("Move");
-		this.GetComponent<AudioSource>().Play();
+		sound.GetComponent<AudioSource>().Play();
 		
 	}
 
