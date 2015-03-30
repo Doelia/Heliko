@@ -21,7 +21,7 @@ public class GUIDebug : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		failures.text = "Échecs : " + p.getFailureCount();
+		failures.text = "Echecs : " + p.getFailureCount();
 		percentage.text = "Pourcentage : " + p.getSuccessPercencage();
 		avancement.value = bc.getMusic().getMusicPercentage();
 	}
