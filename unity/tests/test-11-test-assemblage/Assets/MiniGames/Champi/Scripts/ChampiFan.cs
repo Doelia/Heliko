@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChampiFan : MonoBehaviour,LevelScriptedReceiver  {
+public class ChampiFan : MonoBehaviour, LevelScriptedReceiver, PlayerActionReceiver  {
 
 	private Animator anim;
 	public LevelScripted level;
+
+	public Sprite content;
+	public Sprite pasContent;
 	
 	public void Start () {
 		this.level.connect(this);
@@ -19,6 +22,10 @@ public class ChampiFan : MonoBehaviour,LevelScriptedReceiver  {
 	
 	public void onFailure() {
 		
+	}
+
+	public void onSuccess() {
+
 	}
 
 }
