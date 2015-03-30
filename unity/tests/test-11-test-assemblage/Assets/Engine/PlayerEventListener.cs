@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerEventListener : MonoBehaviour
+public class PlayerEventListener : HelikoObject
 {
+	private BeatCounter bc;
+
 	public bool onKeyDown = true;
-	public BeatCounter bc;
 	public float timeBeforeLongTouch;
 
 	private ArrayList observers;
@@ -17,6 +18,8 @@ public class PlayerEventListener : MonoBehaviour
 
 	void Start()
 	{
+		bc = getBeatCounter();
+		
 		#if UNITY_ANDROID || UNITY_IOS
 		touchScreen = false;
 		timeTouchTotal = 0F;

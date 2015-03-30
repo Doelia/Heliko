@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MusicTempo : MonoBehaviour {
+public class MusicTempo : HelikoObject {
 
 	public float bpm = 133f;
 	public float scalar = 1f;

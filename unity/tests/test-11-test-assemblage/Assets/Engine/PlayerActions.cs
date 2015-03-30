@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver {
+public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver {
 
 	public LevelScripted level;
 
 	private ArrayList successStep;
 	private int failuresCount;
 	private int stepsCount;
+	private ArrayList observers;
 
-	ArrayList observers;
+	private BeatCounter bc;
 
 	public void Awake () {
 		this.observers = new ArrayList ();
@@ -20,16 +21,16 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 
 	public void Start() {
 		this.level.connect(this);
-		this.level.beatCounter.connect(this);
+		bc = getBeatCounter();
+		bc.connect(this);
 	}
 
 	public void connect (PlayerActionReceiver r) {
 		this.observers.Add(r);
 	}
 
-	// TODO améliorer
 	public bool isGood (int type) {
-		int stepTapped = level.beatCounter.getStepClosest();
+		int stepTapped = bc.getStepClosest();
 		if (level.getActionFromBeat(stepTapped) == type) {
 			this.successStep.Add(stepTapped);
 			notifySucces();

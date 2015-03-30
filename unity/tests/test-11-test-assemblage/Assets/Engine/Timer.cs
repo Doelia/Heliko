@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class Timer : MonoBehaviour {
+public abstract class Timer : HelikoObject {
 
 	public AudioSource audioSource;
 	public float loopTime = 30f; // Taux de rafraichisement. Si égal à zéro, refrech à chaque update

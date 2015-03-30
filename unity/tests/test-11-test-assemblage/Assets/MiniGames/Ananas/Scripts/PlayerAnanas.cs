@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerAnanas : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver  {
+public class PlayerAnanas : HelikoObject, PlayerEventReceiver, PlayerActionReceiver  {
+
+	private PlayerActions playerActions;
 
 	public AnanasManager parentAnanas;
-
 	public PlayerEventListener playerEventListener;
-	public PlayerActions playerActions;
-
 	public AudioSource good;
 	public AudioSource bad;
 
 	void Start () {
+		playerActions = getPlayerActions();
 		playerEventListener.connect (this);
 		playerActions.connect (this);
 	}

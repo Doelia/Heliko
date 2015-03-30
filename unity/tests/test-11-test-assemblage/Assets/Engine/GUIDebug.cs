@@ -2,17 +2,20 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class GUIDebug : MonoBehaviour {
-	public PlayerActions p;
+public class GUIDebug : HelikoObject {
+
+	private PlayerActions playerActions;
+	private BeatCounter bc;
+
 	public Text failures;
 	public Text percentage;
 	public Slider avancement;
 	public Slider slider;
-	public BeatCounter bc;
 
 	// Use this for initialization
 	void Start () {
-		
+		playerActions = getPlayerActions();
+		bc = getBeatCounter();
 	}
 
 	public void setMusicPercentage() {
@@ -21,8 +24,8 @@ public class GUIDebug : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		failures.text = "Echecs : " + p.getFailureCount();
-		percentage.text = "Pourcentage : " + p.getSuccessPercencage();
+		failures.text = "Echecs : " + playerActions.getFailureCount();
+		percentage.text = "Pourcentage : " + playerActions.getSuccessPercencage();
 		avancement.value = bc.getMusic().getMusicPercentage();
 	}
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Lanceur : MonoBehaviour,LevelScriptedReceiver {
+public class Lanceur : HelikoObject,LevelScriptedReceiver {
 
 	public Animator anim1;
 	public Animator anim2;
