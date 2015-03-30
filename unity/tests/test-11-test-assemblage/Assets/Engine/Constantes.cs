@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Constantes {
+public class Constantes : MonoBehaviour {
 
+	public bool showDebugGUI = false;
 
 }

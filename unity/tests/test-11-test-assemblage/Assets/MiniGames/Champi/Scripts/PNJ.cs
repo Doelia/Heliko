@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PNJ : MonoBehaviour, LevelScriptedReceiver, PlayerActionReceiver {
+public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 
 	private Animator brasDroit;
 	private Animator brasGauche;
@@ -9,7 +9,6 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver, PlayerActionReceiver {
 	private Animator animChampiPNJ;
 
 	public LevelScripted level;
-	public PlayerActions playerActions;
 
 	public Transform brasGaucheTrasform;
 	public Transform brasDroitTrasform;
@@ -22,8 +21,8 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver, PlayerActionReceiver {
 	public AudioSource sound;
 
 	public void Start () {
+		base.Start();
 		this.level.connect(this);
-		this.playerActions.connect(this);
 		brasDroit = brasDroitTrasform.GetComponent<Animator>();
 		brasGauche = brasGaucheTrasform.GetComponent<Animator>();
 		animCarapace = carapace.GetComponent<Animator>();
@@ -45,33 +44,8 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver, PlayerActionReceiver {
 		
 	}
 
-	Coroutine inProgress = null;
-
-	public void onFailure() {
-		if (inProgress != null) {
-			StopCoroutine(inProgress);
-			inProgress = null;
-		}
-		inProgress = StartCoroutine(animPasContent());
-	}
-
-	public void onSuccess() {
-		if (inProgress != null) {
-			StopCoroutine(inProgress);
-			inProgress = null;
-		}
-		this.setReaction(true);
-	}
-
-	IEnumerator animPasContent() {
-		this.setReaction(false);
-		yield return new WaitForSeconds(0.66f);
-		this.setReaction(true);
-	}
-
-	public void setReaction(bool isGood) {
+	public override void setReaction(bool isGood) {
 		champiPNJ.GetComponent<SpriteRenderer>().sprite = isGood?content:pasContent;
 	}
-
 
 }

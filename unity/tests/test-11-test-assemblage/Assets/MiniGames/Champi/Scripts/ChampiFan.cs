@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChampiFan : MonoBehaviour, LevelScriptedReceiver, PlayerActionReceiver  {
+public class ChampiFan : Feedback, LevelScriptedReceiver  {
 
 	private Animator anim;
 	public LevelScripted level;
@@ -10,6 +10,7 @@ public class ChampiFan : MonoBehaviour, LevelScriptedReceiver, PlayerActionRecei
 	public Sprite pasContent;
 	
 	public void Start () {
+		base.Start ();
 		this.level.connect(this);
 		anim = this.GetComponent<Animator>();
 	}
@@ -20,12 +21,8 @@ public class ChampiFan : MonoBehaviour, LevelScriptedReceiver, PlayerActionRecei
 		}
 	}
 	
-	public void onFailure() {
-		
-	}
-
-	public void onSuccess() {
-
+	public override void setReaction(bool isGood) {
+		this.GetComponent<SpriteRenderer>().sprite = isGood?content:pasContent;
 	}
 
 }

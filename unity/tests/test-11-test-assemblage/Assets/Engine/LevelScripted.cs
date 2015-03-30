@@ -20,6 +20,7 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 	}
 
 	public void Start () {
+		base.Start();
 		beatCounter = getBeatCounter();
 		loadData();
 		beatCounter.connect(this);

@@ -18,6 +18,7 @@ public class PlayerEventListener : HelikoObject
 
 	void Start()
 	{
+		base.Start();
 		bc = getBeatCounter();
 		
 		#if UNITY_ANDROID || UNITY_IOS

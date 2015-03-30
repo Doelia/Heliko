@@ -12,10 +12,12 @@ public class GUIDebug : HelikoObject {
 	public Slider avancement;
 	public Slider slider;
 
-	// Use this for initialization
 	void Start () {
+		base.Start();
 		playerActions = getPlayerActions();
 		bc = getBeatCounter();
+
+		gameObject.SetActive(constantes.showDebugGUI);
 	}
 
 	public void setMusicPercentage() {
