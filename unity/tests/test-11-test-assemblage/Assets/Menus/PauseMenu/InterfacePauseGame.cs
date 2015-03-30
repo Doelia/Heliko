@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InterfacePauseGame : MonoBehaviour {
+public class InterfacePauseGame : HelikoObject {
 
 	public GameObject loadingScreen;
 	public GameObject pauseMenu;
@@ -12,6 +12,11 @@ public class InterfacePauseGame : MonoBehaviour {
 	public AudioSource music;
 	public AudioSource openMenuSound;
 	public AudioSource closeMenuSound;
+
+	public void Start() {
+		base.Start();
+		//music = getBeatCounter().getMusic().GetComponent<AudioSource>();
+	}
 
 	public void Reload() {
 		loadingScreen.SetActive(true);
