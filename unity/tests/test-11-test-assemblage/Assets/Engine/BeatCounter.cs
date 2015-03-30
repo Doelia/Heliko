@@ -36,6 +36,10 @@ public class BeatCounter : Timer {
 		this.notifyChildren();
 	}
 
+	public bool isInPause() {
+		return !this.audioSource.isPlaying;
+	}
+
 	// NOTIFIEUR
 	ArrayList observers;
 
@@ -47,10 +51,6 @@ public class BeatCounter : Timer {
 		foreach (TempoReceiver e in this.observers) {
 			e.onStep (this.getNBeat());
 		}
-	}
-
-	public bool isInPause() {
-		return !this.audioSource.isPlaying;
 	}
 
 }

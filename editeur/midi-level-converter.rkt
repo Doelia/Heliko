@@ -37,10 +37,6 @@
   (and (>= (midi-event-instruction event) 144)
        (< (midi-event-instruction event) 160)))
 
-(define (chan-change? event)
-  (and (> (midi-event-instruction event) 191)
-       (< (midi-event-instruction event) 208)))
-
 (define (vlq->int l)
   (let f ([i 0] [l l] [sum 0])
     (if (empty? l)
@@ -75,7 +71,7 @@
     (close-output-port out)))
 
 (define (to-level events division delta-time)
-  (let f ([level '()] [delta-sum 0] [events events])
+  (let f ([level '()] [delta-sum 0] [events events] [event-started? #f])
     (if (empty? events)
         (transpose (map (λ (i)
                           (if (< (length i) 4)
@@ -85,9 +81,10 @@
                          (foldl (λ (i l)
                                   (cond[(= (length (car l)) 4) (cons `(,i) l)]
                                        [else (append `(,(append (car l) `(,i))) (cdr l))])) '(()) level))))
-        (cond [(event-on? (car events))
-               (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events))]
-              [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events))]))))
+        (cond [(and (not event-started?) (event-on? (car events)))
+               (f (append level (event-to-level (car events) division delta-sum)) 0 (cdr events) #t)]
+              [else (f level (+ delta-sum (vlq->int (midi-event-delta (car events)))) (cdr events)
+                       (if (or (event-on? (car events)) (event-off? (car events))) #f event-started?))]))))
 
 (define (get-input-file args)
   (let ([input-file (cadr (member "-i" (vector->list args)))])
@@ -96,9 +93,10 @@
     input-file))
 
 (define (get-extra-zeros args)
-  (let ([extra (string->number (cadr (member "-z" (vector->list args))))])
+  (let* ([arg (member "-z" (vector->list args))]
+         [extra (if (and arg (> (length arg) 1)) (string->number (cadr arg)) 0)])
     (unless extra
-      (error (~a "un entier est attendu: " extra)))
+      (error (~a "-z : un entier est attendu: " extra)))
     extra))
 
 (define (strict? args)
@@ -124,7 +122,4 @@
                    (open-output-file (~a (car (string-split input-file ".mid")) ".txt") #:mode 'binary #:exists 'replace)
                    extra-zeros))]))
 
-;(main #("-i" "./logic4.mid" "-z" "8"))
-;main #("-i" "./Tamborine.mid" "--strict"))
-;(main #("./test.mid"))
 (main (current-command-line-arguments))

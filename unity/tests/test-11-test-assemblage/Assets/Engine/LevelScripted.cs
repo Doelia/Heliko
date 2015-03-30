@@ -10,7 +10,7 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 
 	public TextAsset levelData;
 	public BeatCounter beatCounter;
-	public int waitingStep; // Nombre de step à remplire par des 0 (utile pour les déclages)
+	public int waitingStep; // Nombre de step à remplire par des 0 (utile pour les décalages)
 	
 	private int[] stepEvents;
 	private ArrayList observers;
@@ -25,7 +25,6 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 	
 	public void loadData () {
-		//Debug.Log (levelData.text);
 		string [] tracks = levelData.text.Split ('\n');
 		stepEvents = stringToIntEvents (tracks);
 	}
@@ -62,6 +61,8 @@ public class LevelScripted : MonoBehaviour, TempoReceiver {
 	}
 
 	public int getActionFromBeat(int nBeat) {
+		if (nBeat < 0)
+			return 0;
 		return stepEvents [getIndex (nBeat)];
 	}
 

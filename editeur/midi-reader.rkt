@@ -45,11 +45,10 @@
   (or (sublist? e1 e2) (sublist? e1 (cdr e2))))
 
 (define last 0)
-(define rle? #f)
 
 (define (interpret-voice-message e)
   (let f ([delta '()] [l e])
-    (cond [(and (= last 192) (= (car l) 0) (= (cadr l) 0))
+    (cond [(and (>= last 192) (< last 224) (= (car l) 0) (= (cadr l) 0))
            (f (append delta `(,(car l))) (cdr l))]
           [(> (car l) 127)
            (f (append delta `(,(car l))) (cdr l))]

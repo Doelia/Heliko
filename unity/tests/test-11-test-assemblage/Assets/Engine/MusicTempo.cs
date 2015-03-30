@@ -24,6 +24,15 @@ public class MusicTempo : MonoBehaviour {
 		return this.audioSource.clip.frequency;
 	}
 
+	public float getMusicPercentage() {
+		return ((float)audioSource.timeSamples / (float)audioSource.clip.samples);
+	}
+	
+	public void setMusicPercentage(float p) {
+		audioSource.timeSamples = (int)(audioSource.clip.samples * p);
+	}
+
+
 	/// <summary>
 	/// Retourne en millsecondes le temps passé
 	/// </summary>
