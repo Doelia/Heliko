@@ -31,10 +31,10 @@
 (define set-tempo-event '(255 81 3))
 (define sequence-name-event '(255 3))
 (define instrument-name-event '(255 4))
-(define key-signature-event '(255 89 02))
-(define smpte-offset-event '(255 84 05))
+(define key-signature-event '(255 89 2))
+(define smpte-offset-event '(255 84 5))
+(define midi-channel-prefix-event '(255 32 1))
 (define end-event '(255 47 0))
-(define midi-channel-prefix-event '(255 32 01))
 
 
 (define (sublist? l1 l2)
