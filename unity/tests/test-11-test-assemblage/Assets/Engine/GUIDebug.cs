@@ -16,7 +16,6 @@ public class GUIDebug : HelikoObject {
 		base.Start();
 		playerActions = getPlayerActions();
 		bc = getBeatCounter();
-
 		gameObject.SetActive(constantes.showDebugGUI);
 	}
 
@@ -24,7 +23,6 @@ public class GUIDebug : HelikoObject {
 		bc.getMusic().setMusicPercentage(slider.value / 100.0f);	
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		failures.text = "Echecs : " + playerActions.getFailureCount();
 		percentage.text = "Pourcentage : " + playerActions.getSuccessPercencage();
