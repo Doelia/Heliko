@@ -27,27 +27,38 @@ public class PlayerActions : MonoBehaviour, LevelScriptedReceiver, TempoReceiver
 		this.observers.Add(r);
 	}
 
+	// TODO améliorer
 	public bool isGood (int type) {
 		int stepTapped = level.beatCounter.getStepClosest();
 		if (level.getActionFromBeat(stepTapped) == type) {
 			this.successStep.Add(stepTapped);
+			notifySucces();
 			return true;
 		} else if (level.getActionFromBeat(stepTapped-1) == type ) {
 			this.successStep.Add(stepTapped-1);
+			notifySucces();
 			return true;
 		} else {
 			if (level.getActionFromBeat(stepTapped+1) == type ) {
 				this.successStep.Add(stepTapped+1);
+				notifySucces();
 				return true;
 			}
 		}
 		failuresCount++;
+		this.notifyFailure();
 		return false;
 	}
 
 	public void notifyFailure() {
 		foreach (PlayerActionReceiver e in this.observers) {
 			e.onFailure();
+		}
+	}
+
+	public void notifySucces() {
+		foreach (PlayerActionReceiver e in this.observers) {
+			e.onSuccess();
 		}
 	}
 

@@ -16,9 +16,9 @@ public class PlayerAnanas : MonoBehaviour, PlayerEventReceiver, PlayerActionRece
 		playerActions.connect (this);
 	}
 
-	public void onFailure() {
+	public void onFailure() { }
 
-	}
+	public void onSuccess() {}
 
 	public void onFinger (int type) {
 		if (type == 1) {

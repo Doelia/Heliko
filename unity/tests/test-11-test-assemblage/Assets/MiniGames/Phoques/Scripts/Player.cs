@@ -30,6 +30,8 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 		this.changeColor(false);
 	}
 
+	public void onSuccess() {}
+
 	public void onFinger (int type) {
 		anim.SetTrigger ("change");
 		clap.Play();

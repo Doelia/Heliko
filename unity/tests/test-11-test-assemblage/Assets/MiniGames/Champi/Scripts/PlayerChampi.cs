@@ -35,6 +35,8 @@ public class PlayerChampi : MonoBehaviour, PlayerEventReceiver, PlayerActionRece
 		this.changeColor(false);
 	}
 
+	public void onSuccess() {}
+
 	public void onFinger (int type) {
 		if (type == 1) {
 			animGauche.SetTrigger ("Down");

@@ -9,6 +9,7 @@ public class PlayerTesteur : MonoBehaviour, PlayerEventReceiver, PlayerActionRec
 
 	private Animator anim;
 
+
 	void Start () {
 		playerEventListener.connect (this);
 		playerActions.connect (this);
@@ -22,6 +23,8 @@ public class PlayerTesteur : MonoBehaviour, PlayerEventReceiver, PlayerActionRec
 	public void onFailure() {
 		this.changeColor(false);
 	}
+
+	public void onSuccess() {}
 
 	public void onFinger (int type) {
 		anim.SetTrigger ("change");
