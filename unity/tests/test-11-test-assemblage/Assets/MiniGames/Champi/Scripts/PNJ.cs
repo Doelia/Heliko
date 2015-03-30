@@ -15,6 +15,9 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver {
 	public Transform carapace;
 	public Transform champiPNJ;
 
+	public Sprite content;
+	public Sprite pasContent;
+
 	public AudioSource sound;
 
 	public void Start () {
@@ -41,7 +44,18 @@ public class PNJ : MonoBehaviour, LevelScriptedReceiver {
 	}
 
 	public void onFailure() {
-		
+		animPasContent();
 	}
+
+	IEnumerator animPasContent() {
+		this.setReaction(false);
+		yield return new WaitForSeconds(1.0f);
+		this.setReaction(true);
+	}
+
+	public void setReaction(bool isGood) {
+		champiPNJ.GetComponent<SpriteRenderer>().sprite = isGood?content:pasContent;
+	}
+
 
 }
