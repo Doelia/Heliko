@@ -17,7 +17,7 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	private Animator animCarapace;
 	private Animator animChampiPlayer;
 
-	void Start () {
+	public void Start () {
 		base.Start();
 		playerActions = getPlayerActions();
 

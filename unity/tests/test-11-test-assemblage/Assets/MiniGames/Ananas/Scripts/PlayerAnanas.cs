@@ -1,24 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerAnanas : HelikoObject, PlayerEventReceiver, PlayerActionReceiver  {
+public class PlayerAnanas : HelikoObject, PlayerEventReceiver  {
 
 	private PlayerActions playerActions;
 
 	public AnanasManager parentAnanas;
-	public PlayerEventListener playerEventListener;
 	public AudioSource good;
 	public AudioSource bad;
 
-	void Start () {
+	public void Start () {
 		playerActions = getPlayerActions();
-		playerEventListener.connect (this);
-		playerActions.connect (this);
+		getPlayerEventListener().connect (this);
 	}
-
-	public void onFailure() { }
-
-	public void onSuccess() {}
 
 	public void onFinger (int type) {
 		if (type == 1) {

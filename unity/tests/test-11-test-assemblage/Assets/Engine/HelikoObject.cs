@@ -11,7 +11,6 @@ public class HelikoObject : MonoBehaviour {
 		} else {
 			constantes = GameObject.Find ("Constantes").GetComponent<Constantes>();
 		}
-		Debug.Log (gameObject.name+" started");
 	}
 
 	public BeatCounter getBeatCounter() {
