@@ -4,7 +4,7 @@ using System.Collections;
 public abstract class Timer : HelikoObject {
 
 	public AudioSource audioSource;
-	public float loopTime = 30f; // Taux de rafraichisement. Si égal à zéro, refrech à chaque update
+	public float loopTime = 30f; // Temps d'attente entre chaque boucle en MS
 
 	private float nextBeatSample; // Le numéro du prochain sample à attendre pour un nouveau beat
 	protected float samplePeriod; // Le temps en samples d'un beat
@@ -32,6 +32,12 @@ public abstract class Timer : HelikoObject {
 	}
 
 	public void Start() {
+
+		base.Start();
+
+		if (constantes.instantCalcul)
+			loopTime = 0;
+		
 		music = audioSource.GetComponent<MusicTempo>();
 
 		Debug.Log("Time between ticks : "+music.getTimePeriod()*1000);
