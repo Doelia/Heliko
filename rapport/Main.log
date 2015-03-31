@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  31 MAR 2015 20:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  31 MAR 2015 20:50
 entering extended mode
 **Main.tex
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.tex"
@@ -641,55 +641,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 168--171
+[13] <./img/diagEtatTransition.png, id=583, 519.89232pt x 234.42581pt>
+File: ./img/diagEtatTransition.png Graphic file (type png)
+
+<use ./img/diagEtatTransition.png>
+Package pdftex.def Info: ./img/diagEtatTransition.png used on input line 163.
+(pdftex.def)             Requested size: 519.89105pt x 234.42523pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
+
+ []
+
+[14 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/diagEtatTr
+ansition.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
+Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
+Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
-
- []
-
-[14] <./img/diagramme_moteur.png, id=586, 487.3407pt x 337.5009pt>
+<./img/diagramme_moteur.png, id=588, 487.3407pt x 337.5009pt>
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
-Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 188.
+Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 192.
 (pdftex.def)             Requested size: 487.33951pt x 337.50008pt.
- [15 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/diagramme
-_moteur.png>]
+ [15] [16 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/diag
+ramme_moteur.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 207.
+(Font)              scaled to size 8.99994pt on input line 211.
 
-Overfull \hbox (3.00288pt too wide) in paragraph at lines 206--210
+Overfull \hbox (3.00288pt too wide) in paragraph at lines 210--214
 \T1/fvm/m/n/10 fichier midi = <header chunk> + <track chunk> [+ <track chunk> .
 ..] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--210
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
 
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 206--210
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 210--214
 \T1/fvm/m/n/10 header chunk = "MThd" + <header length> + <format> + <n> + <divi
 sion> 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--210
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
@@ -699,115 +706,113 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2014/03/04 1.5c listings language file
 )
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 220--224
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 224--228
 \T1/fvm/m/n/10 track chunk = "MTrk" + <length> + <track event> [+ <track event>
  ...] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 237--240
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 263--263
-[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
- []
-
-<./img/vlqOctet.png, id=595, 130.98938pt x 65.24374pt>
-File: ./img/vlqOctet.png Graphic file (type png)
-
-<use ./img/vlqOctet.png>
-Package pdftex.def Info: ./img/vlqOctet.png used on input line 263.
-(pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 267--267
+[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
+ []
+
+<./img/vlqOctet.png, id=600, 130.98938pt x 65.24374pt>
+File: ./img/vlqOctet.png Graphic file (type png)
+
+<use ./img/vlqOctet.png>
+Package pdftex.def Info: ./img/vlqOctet.png used on input line 267.
+(pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 [18 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/vlqOctet.p
 ng>]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
-<./img/logic_sound.png, id=603, 1439.3775pt x 354.32375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+<./img/logic_sound.png, id=605, 1439.3775pt x 354.32375pt>
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
-Package pdftex.def Info: ./img/logic_sound.png used on input line 297.
+Package pdftex.def Info: ./img/logic_sound.png used on input line 301.
 (pdftex.def)             Requested size: 312.9803pt x 77.04315pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-<./img/logic_midi.png, id=604, 1125.20375pt x 350.30875pt>
+<./img/logic_midi.png, id=609, 1125.20375pt x 350.30875pt>
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
-Package pdftex.def Info: ./img/logic_midi.png used on input line 302.
+Package pdftex.def Info: ./img/logic_midi.png used on input line 306.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
-<./img/logic_edit.png, id=605, 1039.885pt x 367.3725pt>
+<./img/logic_edit.png, id=610, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
 <use ./img/logic_edit.png>
-Package pdftex.def Info: ./img/logic_edit.png used on input line 307.
+Package pdftex.def Info: ./img/logic_edit.png used on input line 311.
 (pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
- [19 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic_sou
-nd.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic_
-midi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
@@ -815,25 +820,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--311
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
-Package pdftex.def Info: ./img/logic_export.png used on input line 312.
+Package pdftex.def Info: ./img/logic_export.png used on input line 316.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
-) [20 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic_ed
-it.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic_
-export.png>]
+) [20 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic_so
+und.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic
+_midi.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/log
+ic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/l
+ogic_export.png>] [21]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\ManuelUtilisation
-.tex") [21]
+.tex") [22]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Bilan.tex")
-[22] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Annexes.tex"
-) [23] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.aux")
+[23] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Annexes.tex"
+) [24] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.aux")
  ) 
 Here is how much of TeX's memory you used:
- 5984 strings out of 493921
- 80335 string characters out of 3147277
+ 5989 strings out of 493921
+ 80488 string characters out of 3147277
  200217 words of memory out of 3000000
- 9153 multiletter control sequences out of 15000+200000
+ 9157 multiletter control sequences out of 15000+200000
  20738 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 40i,18n,42p,915b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,18n,42p,915b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
 \Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.p
 k> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
@@ -853,9 +860,9 @@ ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/bera/fvmb8a.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/bera/fvmr8a.pfb>
-Output written on Main.pdf (26 pages, 2668529 bytes).
+Output written on Main.pdf (27 pages, 2690028 bytes).
 PDF statistics:
- 1146 PDF objects out of 1200 (max. 8388607)
+ 1152 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
