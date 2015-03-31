@@ -63,6 +63,7 @@ public class PlayerEventListener : HelikoObject
 			switch (Input.GetTouch(0).phase) 
 			{
 				case TouchPhase.Began:
+				touchScreen=true;
 				sendEvent(1);
 				break;  
 
