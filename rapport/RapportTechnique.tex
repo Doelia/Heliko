@@ -158,10 +158,14 @@ Les mouvements suivants sont définis :
 \item Relâchement appui long
 \item Swip (lancer)
 \end{enumerate}
+
+\noindent
+\makebox[\textwidth]{\includegraphics[scale=1]{./img/diagEtatTransition.png}}
+\begin{center}
+\textit{Diagramme d'états-transitions des évènements}
+\end{center}
+
 \paragraph{}
-
-%\includegraphics[scale=1]{./img/diagEtatTransitions.png}
-
 La gestion des évènements est délicate, dans le sens où elle se joue à quelques millisecondes prêt. Un temps d'attente trop long, et le joueur retrouve un décalage entre le moment où il appuie, et le moment où l'évènement est envoyé. Trop court, et le tap bref est interprété par un tap long, et le glissé n'a pas le temps de se faire. De même, une distance trop courte, et le moindre mouvement du doigt est interprété comme un lancement. Trop longue, et le risque qu'il soit interprété comme un évènement long, ou qu'un décalage se créé, apparaît. Ainsi de nombreux tests ont dû être effectués, nécessitant un mouvement infime des paramètres, et demandant à chaque fois de faire de nouveau une compilation, un transfert sur le téléphone et un test, puisque seule l'expérimentation permet de savoir si le réglage est bon.
 
 \paragraph{Détection de la réussite}

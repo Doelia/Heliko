@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  31 MAR 2015 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  31 MAR 2015 21:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,7 +407,7 @@ Package: beramono 2004/01/31 (WaS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-No file Main.aux.
+(./Main.aux)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -425,7 +425,7 @@ LaTeX Font Info:    ... okay on input line 32.
 LaTeX Info: Redefining \degres on input line 32.
 LaTeX Info: Redefining \dots on input line 32.
 LaTeX Info: Redefining \up on input line 32.
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen115
@@ -500,20 +500,28 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogoUM.png>]) [1] [2]
-No file Main.toc.
+ogoUM.png>]) [1] [2] (./Main.toc
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 42.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 42.
+)
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
-[1] (./Introduction.tex) [2] (./AnalyseProjet.tex
-<img/protoPlanete.png, id=28, 703.12688pt x 560.0925pt>
+ [1]
+(./Introduction.tex) [2] (./AnalyseProjet.tex
+<img/protoPlanete.png, id=31, 703.12688pt x 560.0925pt>
 File: img/protoPlanete.png Graphic file (type png)
 
 <use img/protoPlanete.png>
 Package pdftex.def Info: img/protoPlanete.png used on input line 22.
 (pdftex.def)             Requested size: 281.24576pt x 224.03302pt.
  [3]
-<img/rhythmParadise.png, id=35, 628.59843pt x 432.86719pt>
+<img/rhythmParadise.png, id=36, 628.59843pt x 432.86719pt>
 File: img/rhythmParadise.png Graphic file (type png)
 
 <use img/rhythmParadise.png>
@@ -524,7 +532,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
-[6] <./feuilleDeRoute/oufGantt3.pdf, id=48, 831.105pt x 2436.10126pt>
+[6] <./feuilleDeRoute/oufGantt3.pdf, id=49, 831.105pt x 2436.10126pt>
 File: ./feuilleDeRoute/oufGantt3.pdf Graphic file (type pdf)
 
 <use ./feuilleDeRoute/oufGantt3.pdf>
@@ -535,7 +543,7 @@ File: ./feuilleDeRoute/oufGantt3.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./feuilleDeRoute/oufGantt3.pdf used on input line 75.
 (pdftex.def)             Requested size: 831.10297pt x 2436.09535pt.
 
-<./feuilleDeRoute/oufGantt3.pdf, id=51, page=1, 831.105pt x 2436.10126pt>
+<./feuilleDeRoute/oufGantt3.pdf, id=52, page=1, 831.105pt x 2436.10126pt>
 File: ./feuilleDeRoute/oufGantt3.pdf Graphic file (type pdf)
 
 <use ./feuilleDeRoute/oufGantt3.pdf, page 1>
@@ -568,7 +576,7 @@ ne 75.
 (pdftex.def)             Requested size: 288.30405pt x 845.06517pt.
  [7 <./feuilleDeRoute/oufGantt3.pdf>]) (./RapportActivite.tex) [8] (./RapportTe
 chnique.tex
-<./img/Unity-3D.png, id=562, 1284.8pt x 847.165pt>
+<./img/Unity-3D.png, id=563, 1284.8pt x 847.165pt>
 File: ./img/Unity-3D.png Graphic file (type png)
  <use ./img/Unity-3D.png>
 Package pdftex.def Info: ./img/Unity-3D.png used on input line 7.
@@ -611,13 +619,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--100
  []
 
 [11]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 103.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 103.
-
 Underfull \hbox (badness 10000) in paragraph at lines 103--107
 
  []
@@ -670,54 +671,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 168--171
+[13] <./img/diagEtatTransition.png, id=586, 519.89232pt x 234.42581pt>
+File: ./img/diagEtatTransition.png Graphic file (type png)
+
+<use ./img/diagEtatTransition.png>
+Package pdftex.def Info: ./img/diagEtatTransition.png used on input line 163.
+(pdftex.def)             Requested size: 519.89105pt x 234.42523pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
+
+ []
+
+[14 <./img/diagEtatTransition.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
+Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
+Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
-
- []
-
-[14] <./img/diagramme_moteur.png, id=589, 487.3407pt x 337.5009pt>
+<./img/diagramme_moteur.png, id=591, 487.3407pt x 337.5009pt>
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
-Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 188.
+Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 192.
 (pdftex.def)             Requested size: 487.33951pt x 337.50008pt.
- [15 <./img/diagramme_moteur.png>]
+ [15] [16 <./img/diagramme_moteur.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 207.
+(Font)              scaled to size 8.99994pt on input line 211.
 
-Overfull \hbox (3.00288pt too wide) in paragraph at lines 206--210
+Overfull \hbox (3.00288pt too wide) in paragraph at lines 210--214
 \T1/fvm/m/n/10 fichier midi = <header chunk> + <track chunk> [+ <track chunk> .
 ..] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--210
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
 
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 206--210
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 210--214
 \T1/fvm/m/n/10 header chunk = "MThd" + <header length> + <format> + <n> + <divi
 sion> 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--210
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
@@ -727,112 +734,112 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2014/03/04 1.5c listings language file
 )
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 220--224
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 224--228
 \T1/fvm/m/n/10 track chunk = "MTrk" + <length> + <track event> [+ <track event>
  ...] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 237--240
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 263--263
-[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
- []
-
-<./img/vlqOctet.png, id=598, 130.98938pt x 65.24374pt>
-File: ./img/vlqOctet.png Graphic file (type png)
-
-<use ./img/vlqOctet.png>
-Package pdftex.def Info: ./img/vlqOctet.png used on input line 263.
-(pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 267--267
+[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
+ []
+
+<./img/vlqOctet.png, id=604, 130.98938pt x 65.24374pt>
+File: ./img/vlqOctet.png Graphic file (type png)
+
+<use ./img/vlqOctet.png>
+Package pdftex.def Info: ./img/vlqOctet.png used on input line 267.
+(pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 [18 <./img/vlqOctet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
-<./img/logic_sound.png, id=607, 1439.3775pt x 354.32375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+<./img/logic_sound.png, id=609, 1439.3775pt x 354.32375pt>
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
-Package pdftex.def Info: ./img/logic_sound.png used on input line 297.
+Package pdftex.def Info: ./img/logic_sound.png used on input line 301.
 (pdftex.def)             Requested size: 312.9803pt x 77.04315pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-<./img/logic_midi.png, id=608, 1125.20375pt x 350.30875pt>
+<./img/logic_midi.png, id=613, 1125.20375pt x 350.30875pt>
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
-Package pdftex.def Info: ./img/logic_midi.png used on input line 302.
+Package pdftex.def Info: ./img/logic_midi.png used on input line 306.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
-<./img/logic_edit.png, id=609, 1039.885pt x 367.3725pt>
+<./img/logic_edit.png, id=614, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
 <use ./img/logic_edit.png>
-Package pdftex.def Info: ./img/logic_edit.png used on input line 307.
+Package pdftex.def Info: ./img/logic_edit.png used on input line 311.
 (pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
- [19 <./img/logic_sound.png> <./img/logic_midi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
@@ -840,19 +847,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--311
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
-Package pdftex.def Info: ./img/logic_export.png used on input line 312.
+Package pdftex.def Info: ./img/logic_export.png used on input line 316.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
-) [20 <./img/logic_edit.png> <./img/logic_export.png>] (./ManuelUtilisation.tex
-) [21] (./Bilan.tex) [22] (./Annexes.tex) [23]
+) [20 <./img/logic_sound.png> <./img/logic_midi.png> <./img/logic_edit.png> <./
+img/logic_export.png>] [21]
+(./ManuelUtilisation.tex) [22] (./Bilan.tex) [23] (./Annexes.tex) [24]
 (./Main.aux) ) 
 Here is how much of TeX's memory you used:
- 6657 strings out of 493117
- 90294 string characters out of 6135433
- 211093 words of memory out of 5000000
- 9975 multiletter control sequences out of 15000+600000
+ 6666 strings out of 493117
+ 90483 string characters out of 6135433
+ 210468 words of memory out of 5000000
+ 9979 multiletter control sequences out of 15000+600000
  20738 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,18n,45p,915b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,18n,45p,915b,1444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{
 /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
 sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
@@ -871,10 +879,10 @@ nts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/public/cm-super/sfti1200.pfb>
-Output written on Main.pdf (26 pages, 2731265 bytes).
+Output written on Main.pdf (27 pages, 2751080 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 370 compressed objects within 4 object streams
+ 689 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
