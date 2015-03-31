@@ -4,7 +4,7 @@
 Unity est un logiciel, intégrant un moteur physique 2D et 3D, orienté pour le développement de jeux-vidéos. Sa particularité réside dans la possibilité d'exporter l'application développée sur de nombreuses plateformes (Web, Android, iOS, Consoles..). Nous avons réalisé notre projet avec la version 5 du produit.
 
 \paragraph{Pourquoi utiliser Unity ?}
-Nous avons choisi de développer en utilisant Unity pour plusieurs raisons. Dans un premier temps afin de pouvoir déployer notre jeu facilement sur les plateformes mobiles populaires (Android, iOS et Windows Phone), sans avoir à coder trois fois la même application dans un langage différent. De plus, l'utilisation du moteur d'Unity nous permet d'économiser le temps nécessaire à la création d'un moteur spécifique au projet, qui serait probablement mal optimisé. Enfin, la technologie Unity est de plus en plus populaire et de plus en plus de jeux voient le jour grâce à elle, nous avons donc profité du projet pour apprendre à l'utiliser.
+Nous avons choisi de développer en utilisant Unity pour plusieurs raisons. Dans un premier temps afin de pouvoir déployer notre jeu facilement sur les plateformes mobiles populaires (Android, iOS et Windows Phone), sans avoir à développer trois fois la même application dans un langage différent. De plus, l'utilisation du moteur d'Unity nous permet d'économiser le temps nécessaire à la création d'un moteur spécifique au projet, qui serait probablement mal optimisé. Enfin, la technologie Unity est de plus en plus populaire et de plus en plus de jeux voient le jour grâce à elle, nous avons donc profité du projet pour apprendre à l'utiliser.
  
 \paragraph{Fonctionnalités d’Unity}
 Dans notre projet, nous utilisons principalement Unity pour :
@@ -21,15 +21,17 @@ Ce que nous n'utilisons pas avec Unity :
 \item Le moteur physique (gravité, collisions, squelettes...)
 \item La 3D
 \end{itemize}
-Ainsi, il y a de nombreuses fonctionnalités nécessaires au développement de notre jeu qui ne sont pas gérées par Unity et que nous devons donc coder.
+Ainsi, il y a de nombreuses fonctionnalités nécessaires au développement de notre jeu qui ne sont pas gérées par Unity et que nous devons développer.
  
-\paragraph{Comment développer sous Unity}
-Lorsqu'un nouveau projet Unity est démarré, il faut d'abord ajouter un ou plusieurs objets à une scène. Cet objet peut être de tout type, comme un solide, une lumière, une caméra, un son, des particules... Ensuite, il est possible de greffer un script à cet objet. Ce script doit être codé en Javascript ou en C\#. Il est ainsi possible d'exécuter des instructions lors de la création de l'objet, de sa destruction ou en encore à chaque rafraîchissement de l'écran. Les informations de l'objet (taille, position...) sont accessibles et paramétrables directement dans le script. Enfin, les objets peuvent communiquer entre eux par le biais des scripts qui leur sont attachés.
+\paragraph{Principe de Unity}
+Lorsqu'un nouveau projet Unity est démarré, il faut d'abord ajouter un ou plusieurs objets à une scène. Cet objet peut être de tout type, comme un solide, une lumière, une caméra, un son, des particules... Ensuite, il est possible de greffer un script à cet objet. Ce script peut être developpé en Javascript ou en C\#. Il est ainsi possible d'exécuter des instructions lors de la création de l'objet, de sa destruction ou en encore à chaque rafraîchissement de l'écran. Les informations de l'objet (taille, position...) sont accessibles et paramétrables directement dans le script. Enfin, les objets peuvent communiquer entre eux par le biais des scripts qui leur sont attachés.
 
 
 \subsection{Moteur de jeu rythmique}
 
 Notre objectif premier est de réaliser un moteur de jeu de rythme sous Unity afin de pouvoir créer des mini-jeux aisément.
+
+\paragraph{}
 
 Nous définissons un jeu de rythme par les composantes suivantes :
 \begin{itemize}
@@ -38,6 +40,8 @@ Nous définissons un jeu de rythme par les composantes suivantes :
 \item Un décor animé et synchronisé sur la musique
 \item Un taux de réussite en \% calculé sur les performances du joueur
 \end{itemize}
+
+\paragraph{}
 
 Pour réaliser cela, les fonctionnalités attendues du moteur sont les suivantes :
 \begin{itemize}
@@ -62,6 +66,8 @@ Le principe du Beater est de déclencher un "tick" tout les quart de temps. Sur 
 samplePeriod = (60f / (tempo * scalar)) * audioSource.clip.frequency;
 \end{lstlisting}
 
+\paragraph{}
+
 Ainsi, notre \textit{beateur} boucle continuellement dans le temps et mesure le temps passé pour envoyer des événements tout les X \textit{samples} passés.
 
 \begin{lstlisting}
@@ -82,15 +88,15 @@ IEnumerator BeatCheck () {
 
 
 \paragraph{Difficulté technique}
-Sur Unity chaque itération de la boucle s'effectue à chaque \textit{Update} du moteur, soit 60 fois par secondes sur PC, et 30 fois sur mobile. 1 divisé par 30 = 0.03333333, soit 30ms entre chaque tick.\\
-Sur un tempo à 120 BPM un quart de temps dure 107 ms ce qui offre une marge de manœuvre faible, d'où la difficulté de synchronisation. Sans une bonne pratique et des calculs correctement réalisés, on perd rapidement la synchronisation avec la musique au bout de plusieurs minutes.\\
-Pour des raisons de performances, nous nous devons de limiter le nombre de calculs par seconde. Des paramètres sont disponibles dans notre moteur afin d'affiner ce genre de détails avant la mise en production.\\
+Sur Unity chaque itération de la boucle s'effectue à chaque \textit{Update} du moteur, soit 60 fois par secondes sur PC, et 30 fois sur mobile. 1 divisé par 30 = 0.03333333, soit 30ms entre chaque tick.\\\\
+Sur un tempo à 120 BPM un quart de temps dure 107 ms ce qui offre une marge de manœuvre faible, d'où la difficulté de synchronisation. Sans une bonne pratique et des calculs correctement réalisés, on perd rapidement la synchronisation avec la musique au bout de plusieurs minutes.\\\\
+Pour des raisons de performances, nous nous devons de limiter le nombre de calculs par seconde. Des paramètres sont disponibles dans notre moteur afin d'affiner ce genre de détails avant la mise en production.\\\\
 Dans le cadre de ce projet, nous avons passé de nombreuses heures avant d'arriver à détecter les \textit{beats} parfaitement sans aucune perte d'information sur une longue durée.
 
 
 \subsubsection{Autres fonctionnalités du \textit{beateur}}
 Une musique commence rarement son premier temps au temps 0, un paramètre "offset" \texttt{start} est disponible pour définir le temps à attendre avant de détecter le premier \textit{beat}. Ceci permet de synchroniser parfaitement les animations avec la musique.
-\\
+\\\\
 Pour les calculs de réussite ou calcul du score, on peut avoir besoin d'autres fonctionnalités de calculs, par exemple pour récupérer le numéro du tick le plus proche à un instant T.
 \\
 \begin{lstlisting}
@@ -109,7 +115,7 @@ Tous ces calculs prennent en compte le \texttt{sampleOffset}.
 
 \subsubsection{Le niveau (\texttt{LevelScripted})}
 Pour pouvoir réaliser des niveaux intéressants, il nous faut pouvoir les scripter les afin de définir sur quels "ticks" le joueur doit frapper. Il peut y avoir de longs blancs, ou des enchaînements rapides (avec une fréquence maximale équivalente au quart de temps).
-\\
+\\\\
 Nous avons décidé de représenter un niveau dans un fichier texte de la façon suivante :\\
 \begin{lstlisting}
 1 1 0 0 2 1 2 0 0 1 2 0 2 1 0 0 3 1 0 0 0
@@ -117,6 +123,7 @@ Nous avons décidé de représenter un niveau dans un fichier texte de la façon
 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1
 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 \end{lstlisting}
+\paragraph{}
 
 Le fichier se lit dans le temps de haut en bas, puis de gauche à droite. Les différentes colonnes correspondent aux différents quart de temps. Par exemple, si on veut simplement bouger un cube à chaque battement (temps fort), on écrit le fichier suivant :\\
 \begin{lstlisting}
@@ -129,16 +136,16 @@ Le fichier se lit dans le temps de haut en bas, puis de gauche à droite. Les di
 Un "0" correspond à "aucun évènement", et un chiffre correspond à un type d'évènement. Nous nommerons les chiffres supérieurs à zéro les \textbf{actions}.
 \\
 Une action peut être de type différent afin de pouvoir varier les attentes du joueur. En effet il peut y avoir plusieurs mouvements différents au niveau du tactile. Par exemple le "1" peut représenter un tap simple, le "2" un appui long, le "3" un relâchement, etc.
-\\
-Ce genre de fichier peut servir à scripter les actions attendues de la part du joueur, mais aussi à scripter n'importe quel autre élément dans un mini jeu, comme un personnage animé ou des déclenchements exceptionnels d'animations à certains instants clés de la musique.
-\\
+\\\\
+Ce type de fichier peut servir à scripter les actions attendues de la part du joueur, mais aussi à scripter n'importe quel autre élément dans un mini jeu, comme un personnage animé ou des déclenchements exceptionnels d'animations à certains instants clés de la musique.
+\\\\
 La classe \texttt{LevelScripted} est connectée au \textit{beater} pour recevoir les ticks, et filtre en lisant le fichier pour envoyer les actions de type 1, 2, 3... D'autres objets peuvent ensuite se connecter à un \texttt{LevelScripted} pour recevoir ces évènements.
-\\
+\\\\
 La longueur du fichier dépend de la longueur de la musique. On peut écrire de petits fichiers pour les boucler et créer des patterns, car le moteur répète automatique le fichier tout au long de la musique.
 
 \subsubsection{Évènements du joueur et calcul de la réussite}
 \paragraph{\texttt{EventPlayerListener}}
-Une classe est dédiée à écouter les évènements du joueur, afin de détecter des actions de type 1, 2, 3, 4... L'endroit où l'utilisateur appuie sur l'écran n'a aucune importance.\\
+Une classe est dédiée à écouter les évènements du joueur, afin de détecter des actions de type 1, 2, 3, 4... L'endroit où l'utilisateur appuie sur l'écran n'a aucune importance.\\\\
 Les mouvements suivants sont définis :
 \begin{enumerate}
 \item Tap bref (le plus commun)
@@ -146,6 +153,7 @@ Les mouvements suivants sont définis :
 \item Relâchement appui long
 \item Swip (lancer)
 \end{enumerate}
+\paragraph{}
 
 %\includegraphics[scale=1]{./img/diagEtatTransitions.png}
 
@@ -153,26 +161,27 @@ La gestion des évènements est délicate, dans le sens où elle se joue à quel
 
 \paragraph{Détection de la réussite}
 Une fois les évènements convertis en numéros d'action, il faut vérifier si ces numéros sont en cohésion avec le niveau chargé. On ne compte que les échecs, et à la fin du niveau on soustrait le nombre total d'actions à réaliser par le nombre d'échecs pour obtenir le \% de réussite sur le niveau.
-On ne met pas en place d'échelle de réussite comme on peut voir dans les autres jeux (mauvais, bon, parfait...). On considère que le joueur réussit ou rate un évènement.\\
+On ne met pas en place d'échelle de réussite comme on peut voir dans les autres jeux (mauvais, bon, parfait...). On considère que le joueur réussit ou rate un évènement.\\\\
 Il y a deux types d'évènements à tester :
 \begin{itemize}
 \item Au moment où le joueur appuie, il faut vérifier que le numéro d'action tapé correspond au numéro d'action courant du niveau. On incrémente le nombre d'échecs si ça ne correspond pas.
 \item Quand un évènement est passé, il vérifie si le joueur l'a réussi. Dans le cas où le joueur ne joue pas, il faut compter des erreurs.
 \end{itemize}
-
+\paragraph{}
 
 La phase complexe est de déterminer quand un évènement est trop tôt ou trop tard. Un joueur ne frappera jamais pile au moment réel de l'évènement : Il faut mettre en place un système de tolérance.
-
+\\\\
 Après de multiples tests, nous avons conclu que le délais d'un quart de temps est suffisant comme négligence. C'est à dire que le joueur dispose d'un quart de temps complet pour réaliser une action demandée.
-
+\\\\
 On stocke dans une liste les numéros des ticks où le joueur a réussi. Quand le \textit{beateur} envoie un évènement, on regarde si le joueur a réussi le précédent. Sans quoi, on envoie un évènement \texttt{onFailure}.
-
+\\\\
 N'importe quel objet Unity peut se connecter à ce contrôleur. Ceci permet de construire le feedback visuel, en jouant par exemple une animation quand on reçoit un évènement \texttt{onFailure}.
 
 \subsubsection{Résumé}
 
 \noindent
 \makebox[\textwidth]{\includegraphics[scale=1]{./img/diagramme_moteur.png}}
+\paragraph{}
 
 Pour résumer le fonctionnement du moteur :
 \begin{itemize}
