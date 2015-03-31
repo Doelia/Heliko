@@ -25,6 +25,7 @@ public class PlayerEventListener : HelikoObject
 		touchScreen = false;
 		timeTouchTotal = 0F;
 		mouvement = Vector2.zero;
+		timeBeforeLongTouch=0.18f;
 		#endif
 	}
 
@@ -48,15 +49,15 @@ public class PlayerEventListener : HelikoObject
 		}
 		#if UNITY_ANDROID || UNITY_IOS
 
-		foreach (Touch touch in Input.touches) {
+		/*foreach (Touch touch in Input.touches) {
 			if (touch.phase == TouchPhase.Began) {
 				foreach (PlayerEventReceiver e in this.observers) {
 					e.onFinger (1);
 				}
 			}
 		}
-
-		/*
+*/
+		
 		if (Input.touchCount > 0) 
 		{
 			switch (Input.GetTouch(0).phase) 
@@ -100,7 +101,6 @@ public class PlayerEventListener : HelikoObject
 				break;                
 			}  		
 		}
-		*/
 		#endif 
 		
 		if (Input.GetKeyDown (KeyCode.P) &&  Input.GetKeyDown (KeyCode.O))
