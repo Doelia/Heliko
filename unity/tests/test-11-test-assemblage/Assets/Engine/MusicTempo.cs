@@ -8,7 +8,7 @@ public class MusicTempo : HelikoObject {
 
 	private AudioSource audioSource;
 	
-	void Awake() {
+	public void Awake() {
 		this.audioSource = this.GetComponent<AudioSource>();
 	}
 

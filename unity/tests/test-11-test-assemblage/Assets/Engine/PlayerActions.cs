@@ -19,7 +19,7 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		stepsCount = 0;
 	}
 
-	public void Start() {
+	public new void Start() {
 		base.Start();
 		this.level.connect(this);
 		bc = getBeatCounter();

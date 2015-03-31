@@ -31,7 +31,7 @@ public abstract class Timer : HelikoObject {
 		return this.nBeat;
 	}
 
-	public void Start() {
+	public new void Start() {
 
 		base.Start();
 

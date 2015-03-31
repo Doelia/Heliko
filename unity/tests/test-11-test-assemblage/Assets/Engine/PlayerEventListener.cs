@@ -16,7 +16,7 @@ public class PlayerEventListener : HelikoObject
 	private float timeTouchTotal;
 	#endif
 
-	void Start()
+	public new void Start()
 	{
 		base.Start();
 		bc = getBeatCounter();
