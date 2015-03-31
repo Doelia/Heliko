@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  31 MAR 2015 15:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  31 MAR 2015 18:10
 entering extended mode
 **Main.tex
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.tex"
@@ -371,38 +371,83 @@ File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count94
 \AM@templatesizebox=\box27
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box28
+\shadowsize=\dimen110
+\@Sbox=\box29
+\do@VerbBox=\toks18
+\the@fancyput=\toks19
+\this@fancyput=\toks20
+\EndVerbatimTokens=\toks21
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count95
+\lst@gtempboxa=\box30
+\lst@token=\toks22
+\lst@length=\count96
+\lst@currlwidth=\dimen111
+\lst@column=\count97
+\lst@pos=\count98
+\lst@lostspace=\dimen112
+\lst@width=\dimen113
+\lst@newlines=\count99
+\lst@lineno=\count100
+\lst@maxwidth=\dimen114
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count101
+\lst@skipnumbers=\count102
+\lst@framebox=\box31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\beramono.sty"
+Package: beramono 2004/01/31 (WaS)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Info: Redefining \degres on input line 10.
-LaTeX Info: Redefining \dots on input line 10.
-LaTeX Info: Redefining \up on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Info: Redefining \degres on input line 32.
+LaTeX Info: Redefining \dots on input line 32.
+LaTeX Info: Redefining \up on input line 32.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count95
-\scratchdimen=\dimen110
-\scratchbox=\box28
-\nofMPsegments=\count96
-\nofMParguments=\count97
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count98
-\MPscratchDim=\dimen111
-\MPnumerator=\count99
-\makeMPintoPDFobject=\count100
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count103
+\scratchdimen=\dimen115
+\scratchbox=\box32
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen116
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks24
 )
-\AtBeginShipoutBox=\box29
+\AtBeginShipoutBox=\box33
+\c@lstlisting=\count109
  ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Title.tex"
 <./img/logoUM.png, id=1, 96.36pt x 96.36pt>
 File: ./img/logoUM.png Graphic file (type png)
@@ -419,10 +464,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Thibaut/Dropbox/
 M1 IMAGINA/TER_M1/oufmania/rapport/img/logoUM.png>]) [1] [2]
-("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.toc")
-\tf@toc=\write3
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.toc"
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 22.
 
-[1]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 22.
+)
+\tf@toc=\write4
+ [1]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Introduction.tex"
 ) [2]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\AnalyseProjet.tex
@@ -430,35 +482,245 @@ M1 IMAGINA/TER_M1/oufmania/rapport/img/logoUM.png>]) [1] [2]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\RapportActivite.t
 ex") [4]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\RapportTechnique.
-tex") [5]
+tex" [5]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[6]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
+
+ []
+
+[7]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 99.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 99.
+LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/fvm/b/n' tried instead on input line 110.
+LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 110.
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+[8] [9] <./img/diagramme_moteur.png, id=58, 487.3407pt x 337.5009pt>
+File: ./img/diagramme_moteur.png Graphic file (type png)
+
+<use ./img/diagramme_moteur.png>
+Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 173.
+(pdftex.def)             Requested size: 487.33951pt x 337.50008pt.
+
+Overfull \hbox (144.33951pt too wide) in paragraph at lines 173--174
+[][] 
+ []
+
+[10 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/diagramme_
+moteur.png>]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 191.
+
+Overfull \hbox (3.00288pt too wide) in paragraph at lines 190--194
+\T1/fvm/m/n/10 fichier midi = <header chunk> + <track chunk> [+ <track chunk> .
+..] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--194
+
+ []
+
+
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 190--194
+\T1/fvm/m/n/10 header chunk = "MThd" + <header length> + <format> + <n> + <divi
+sion> 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--194
+
+ []
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2014/03/04 1.5c listings language file
+)
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 204--208
+\T1/fvm/m/n/10 track chunk = "MTrk" + <length> + <track event> [+ <track event>
+ ...] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 247--247
+[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+<./img/logic_sound.png, id=70, 1439.3775pt x 354.32375pt>
+File: ./img/logic_sound.png Graphic file (type png)
+
+<use ./img/logic_sound.png>
+Package pdftex.def Info: ./img/logic_sound.png used on input line 281.
+(pdftex.def)             Requested size: 312.9803pt x 77.04315pt.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+<./img/logic_midi.png, id=74, 1125.20375pt x 350.30875pt>
+File: ./img/logic_midi.png Graphic file (type png)
+
+<use ./img/logic_midi.png>
+Package pdftex.def Info: ./img/logic_midi.png used on input line 286.
+(pdftex.def)             Requested size: 312.9803pt x 97.439pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+<./img/logic_edit.png, id=75, 1039.885pt x 367.3725pt>
+File: ./img/logic_edit.png Graphic file (type png)
+
+<use ./img/logic_edit.png>
+Package pdftex.def Info: ./img/logic_edit.png used on input line 291.
+(pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+<./img/logic_export.png, id=76, 703.62875pt x 117.43875pt>
+File: ./img/logic_export.png Graphic file (type png)
+
+<use ./img/logic_export.png>
+Package pdftex.def Info: ./img/logic_export.png used on input line 296.
+(pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
+) [14 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic_so
+und.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/logic
+_midi.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/log
+ic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/oufmania/rapport/img/l
+ogic_export.png>] [15]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\ManuelUtilisation
-.tex") [6]
+.tex") [16]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Bilan.tex")
-[7] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Annexes.tex")
-[8] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.aux") ) 
+[17] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Annexes.tex"
+) [18] ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\oufmania\rapport\Main.aux")
+ ) 
 Here is how much of TeX's memory you used:
- 3527 strings out of 493921
- 47786 string characters out of 3147277
- 111663 words of memory out of 3000000
- 6753 multiletter control sequences out of 15000+200000
- 15949 words of font info for 36 fonts, out of 3000000 for 9000
+ 5953 strings out of 493921
+ 79585 string characters out of 3147277
+ 217217 words of memory out of 3000000
+ 9130 multiletter control sequences out of 15000+200000
+ 20738 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,6n,39p,237b,280s stack positions out of 5000i,500n,10000p,200000b,50000s
- 
-<C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\ecrm1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Thibaut\AppData\Local
-\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\Thibaut\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Use
-rs\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200
-.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
-600\ecbx2074.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\eccc1728.pk>
-Output written on Main.pdf (11 pages, 152410 bytes).
+ 37i,7n,40p,749b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
+\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.p
+k> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecrm1000.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbi1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Thibaut\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Thibau
+t\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\
+Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
+440.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
+dpi600\eccc1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thibaut\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\Thibaut\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/bera/fvmb8a.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/bera/fvmr8a.pfb>
+Output written on Main.pdf (21 pages, 553012 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
+ 580 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
