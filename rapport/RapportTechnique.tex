@@ -147,8 +147,9 @@ Les mouvements suivants sont définis :
 \item Swip (lancer)
 \end{enumerate}
 
-%\includegraphics[scale=1]{./img/diagEtatTransitions.png} sans fautes svp :3
+%\includegraphics[scale=1]{./img/diagEtatTransitions.png}
 
+La gestion des évènements est délicate, dans le sens où elle se joue à quelques millisecondes prêt. Un temps d'attente trop long, et le joueur retrouve un décalage entre le moment où il appuie, et le moment où l'évènement est envoyé. Trop court, et le tap bref est interprété par un tap long, et le glissé n'a pas le temps de se faire. De même, une distance trop courte, et le moindre mouvement du doigt est interprété comme un lancement. Trop longue, et le risque qu'il soit interprété comme un évènement long, ou qu'un décalage se créé, apparaît. Ainsi de nombreux tests ont dû être effectués, nécessitant un mouvement infime des paramètres, et demandant à chaque fois de faire de nouveau une compilation, un transfert sur le téléphone et un test, puisque seule l'expérimentation permet de savoir si le réglage est bon.
 
 \paragraph{Détection de la réussite}
 Une fois les évènements convertis en numéros d'action, il faut vérifier si ces numéros sont en cohésion avec le niveau chargé. On ne compte que les échecs, et à la fin du niveau on soustrait le nombre total d'actions à réaliser par le nombre d'échecs pour obtenir le \% de réussite sur le niveau.
@@ -170,7 +171,8 @@ N'importe quel objet Unity peut se connecter à ce contrôleur. Ceci permet de c
 
 \subsubsection{Résumé}
 
-\includegraphics[scale=1]{./img/diagramme_moteur.png}
+\noindent
+\makebox[\textwidth]{\includegraphics[scale=1]{./img/diagramme_moteur.png}}
 
 Pour résumer le fonctionnement du moteur :
 \begin{itemize}
@@ -241,7 +243,7 @@ Le delta time est codé avec une quantité à longueur variable. Le delta time n
 \fbox{\parbox{11cm}
 {\textbf{Note technique sur la quantité à longueur variable (\textit{variable-length quantity})}\\La vlq permet de représenter de manière compacte des quantités supérieures à un octet.
 
-%\includegraphics[scale=1]{./img/vlqOctet.png}\\ à rajouter
+\includegraphics[scale=1]{./img/vlqOctet.png}\\
 Si \texttt{A} est égal à 0, c'est que c'est le dernier octet de la quantité. Si c'est 1, un autre octet vlq suit.\\
 \texttt{B} est un nombre de 7 bits, et \texttt{n} est la position de l'octet où \texttt{B0} est l’octet de poids faible.}
 }\\\\
