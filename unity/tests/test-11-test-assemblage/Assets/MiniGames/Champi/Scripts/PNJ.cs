@@ -32,9 +32,9 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	public void onAction (int type) {
 		if (type == 1) {
 			brasDroit.SetTrigger ("Down");
-		} else if (type == 4) {
-			brasGauche.SetTrigger ("Down");
 		} else if (type == 2) {
+			brasGauche.SetTrigger ("Down");
+		} else if (type == 3) {
 			brasDroit.SetTrigger ("Down");
 			brasGauche.SetTrigger ("Down");
 		}

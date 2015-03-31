@@ -63,18 +63,15 @@ public class PlayerEventListener : HelikoObject
 			switch (Input.GetTouch(0).phase) 
 			{
 				case TouchPhase.Began:
-					touchScreen=true;
+				sendEvent(1);
 				break;  
 
 				case TouchPhase.Ended:
 					if (mouvement.magnitude>=12 && touchScreen) {
-						sendEvent(4);
-					}
-					else if(timeTouchTotal>=timeBeforeLongTouch) {
 						sendEvent(3);
 					}
-					else {
-						sendEvent(1);
+					else if(timeTouchTotal>=timeBeforeLongTouch) {
+						sendEvent(2);
 					}
 					timeTouchTotal = 0F;
 					touchScreen=false; 

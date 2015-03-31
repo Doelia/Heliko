@@ -31,9 +31,9 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	public void onFinger (int type) {
 		if (type == 1) {
 			animGauche.SetTrigger ("Down");
-		} else if (type == 4) {
-			animDroite.SetTrigger ("Down");
 		} else if (type == 2) {
+			animDroite.SetTrigger ("Down");
+		} else if (type == 3) {
 			animGauche.SetTrigger ("Down");
 			animDroite.SetTrigger ("Down");
 		}
