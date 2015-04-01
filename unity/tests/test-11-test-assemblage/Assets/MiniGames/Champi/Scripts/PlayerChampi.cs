@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 
-	public PlayerActions playerActions;
 	public Transform soundGood;
 	public Transform soundBad;
 
@@ -16,6 +15,8 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	private Animator animDroite;
 	private Animator animCarapace;
 	private Animator animChampiPlayer;
+
+	private PlayerActions playerActions;
 
 	public void Start () {
 		base.Start();
