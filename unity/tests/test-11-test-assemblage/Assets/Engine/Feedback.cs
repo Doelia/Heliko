@@ -3,7 +3,8 @@ using System.Collections;
 
 public abstract class Feedback : HelikoObject, PlayerActionReceiver {
 
-	public void Start () {
+	public new void Start () {
+		base.Start();
 		getPlayerActions().connect(this);
 	}
 
