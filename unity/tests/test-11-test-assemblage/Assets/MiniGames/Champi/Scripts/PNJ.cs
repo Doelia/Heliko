@@ -8,7 +8,7 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	private Animator animCarapace;
 	private Animator animChampiPNJ;
 
-	public LevelScripted level;
+	public LevelScripted level; // utilisé pour se connecter uniquement
 
 	public Transform brasGaucheTrasform;
 	public Transform brasDroitTrasform;
@@ -22,7 +22,8 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 
 	public void Start () {
 		base.Start();
-		this.level.connect(this);
+		if (level != null)
+			this.level.connect(this);
 		brasDroit = brasDroitTrasform.GetComponent<Animator>();
 		brasGauche = brasGaucheTrasform.GetComponent<Animator>();
 		animCarapace = carapace.GetComponent<Animator>();

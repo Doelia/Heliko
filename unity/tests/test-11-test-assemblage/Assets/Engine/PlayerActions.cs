@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver {
 
-	public LevelScripted level;
+	public LevelScripted level; // Utilisé pour le connect et pour tester le good
 
 	private ArrayList successStep;
 	private int failuresCount;
@@ -21,7 +21,8 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 
 	public new void Start() {
 		base.Start();
-		this.level.connect(this);
+		if (level != null)
+			this.level.connect(this);
 		bc = getBeatCounter();
 		bc.connect(this);
 	}
