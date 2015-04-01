@@ -5,5 +5,6 @@ public interface PlayerActionReceiver
 {
 	void onFailure();
 	void onSuccess();
+	void onSuccessLoop();
 }
 

@@ -80,11 +80,18 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 		return getIndex(this.beatCounter.getNBeat());
 	}
 
+	public void notifyEnd() {
+		notifyChildren(-1);
+	}
+
 	// EVENTS
 
 	public void onStep (int nBeat) {
 		if (isStepUseful(nBeat)) {
 			notifyChildren (getActionFromBeat(nBeat));
+		}
+		if (getIndex(nBeat) == stepEvents.Length-1) {
+			notifyEnd();
 		}
 	}
 

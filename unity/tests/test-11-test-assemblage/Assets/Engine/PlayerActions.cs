@@ -12,11 +12,14 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 
 	private BeatCounter bc;
 
+	int nbrFailInLoop = 0;
+
 	public void Awake () {
 		this.observers = new ArrayList ();
 		this.successStep = new ArrayList();
 		failuresCount = 0;
 		stepsCount = 0;
+		nbrFailInLoop = 0;
 	}
 
 	public new void Start() {
@@ -65,8 +68,21 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		}
 	}
 
-	public void onAction(int action){
-		stepsCount++;
+	public void notifySuccesLoop() {
+		foreach (PlayerActionReceiver e in this.observers) {
+			e.onSuccessLoop();
+		}
+	}
+
+	public void onAction(int action) {
+		if (action == -1) {
+			if (nbrFailInLoop == 0) {
+				notifySuccesLoop();
+			}
+			nbrFailInLoop = 0;
+		} else {
+			stepsCount++;
+		}
 	}
 
 	public void onStep (int nBeat) {

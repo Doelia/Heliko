@@ -31,6 +31,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 	}
 
 	public void onSuccess() {}
+	public void onSuccessLoop() {}
 
 	public void onFinger (int type) {
 		anim.SetTrigger ("change");

@@ -27,6 +27,8 @@ public abstract class Feedback : HelikoObject, PlayerActionReceiver {
 		}
 		this.setReaction(true);
 	}
+
+	public void onSuccessLoop() {}
 	
 	IEnumerator animPasContent() {
 		this.setReaction(false);
