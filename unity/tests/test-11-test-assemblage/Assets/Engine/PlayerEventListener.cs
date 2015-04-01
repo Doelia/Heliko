@@ -100,8 +100,6 @@ public class PlayerEventListener : HelikoObject
 		}
 		#endif 
 		
-		if (Input.GetKeyDown (KeyCode.P) &&  Input.GetKeyDown (KeyCode.O))
-			sendEvent(3);
 
 		if ((onKeyDown && Input.GetKeyDown (KeyCode.O)) || (!onKeyDown && Input.GetKey (KeyCode.O)))
 			sendEvent(1);
