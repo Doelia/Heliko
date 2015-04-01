@@ -7,8 +7,7 @@ public class LoadOnClick : MonoBehaviour {
 
 	public void LoadScene(int level) {
 		loadingScreen.SetActive(true);
-		Application.LoadLevel(level);
+		Application.LoadLevelAsync(level);
 	}
-
 }
 
