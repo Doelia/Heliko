@@ -47,7 +47,9 @@ public abstract class Timer : HelikoObject {
 		sampleDelay = ((float) delayMS / 1000f) * music.getFrequency();
 		samplePeriod = music.getSamplePeriod();
 		nextBeatSample = sampleDelay;
+	}
 
+	public void StartCount() {
 		audioSource.Play();
 		StartCoroutine(BeatCheck());
 	}

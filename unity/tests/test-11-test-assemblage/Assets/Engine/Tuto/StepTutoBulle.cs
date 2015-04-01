@@ -8,7 +8,6 @@ public class StepTutoBulle : StepTuto {
 	}
 
 	public void closeIt() {
-		Debug.Log ("close "+gameObject.name);
 		gameObject.SetActive(false);
 		this.endStep();
 	} 
