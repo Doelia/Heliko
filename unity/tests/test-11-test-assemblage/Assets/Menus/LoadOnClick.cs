@@ -9,4 +9,6 @@ public class LoadOnClick : MonoBehaviour {
 		loadingScreen.SetActive(true);
 		Application.LoadLevel(level);
 	}
+
 }
+
