@@ -64,15 +64,23 @@ public class PlayerEventListener : HelikoObject
 			{
 				case TouchPhase.Began:
 				touchScreen=true;
-				sendEvent(1);
+				Vector2 pos = Camera.main.ScreenToWorldPoint(new Vector2(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y));
+				if(pos.x>0)
+				{
+					sendEvent(1);
+				}
+				else
+				{
+					sendEvent(2);
+				}
 				break;  
 
 				case TouchPhase.Ended:
 					if (mouvement.magnitude>=12 && touchScreen) {
-						sendEvent(3);
+						sendEvent(4);
 					}
 					else if(timeTouchTotal>=timeBeforeLongTouch) {
-						sendEvent(2);
+						sendEvent(3);
 					}
 					timeTouchTotal = 0F;
 					touchScreen=false; 
