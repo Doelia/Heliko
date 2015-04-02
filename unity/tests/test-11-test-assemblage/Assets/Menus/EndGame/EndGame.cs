@@ -14,7 +14,8 @@ public class EndGame : HelikoObject {
 	// Pour le test (mode dev)
 	public void testIt() {
 		this.Start ();
-		this.setValues(80,4);
+		this.setValues(80,2);
+		Debug.Log ("Rank = "+getRank ());
 		this.startShowing();
 	}
 
@@ -27,10 +28,10 @@ public class EndGame : HelikoObject {
 		if (nbrErreurs == 0) {
 			return 3;
 		}
-		if (pourcent > 90) {
+		if (pourcent >= 90) {
 			return 2;
 		}
-		if (pourcent > 75) {
+		if (pourcent >= 75) {
 			return 1;
 		}
 		return 0;
@@ -80,7 +81,7 @@ public class EndGame : HelikoObject {
 
 	private void showStars() {
 		for (int i = 1; i <= 3; i++) {
-			if (getRank() > i) {
+			if (getRank() >= i) {
 				GameObject.Find ("Star"+i).SetActive(true);
 			} else {
 				GameObject.Find ("Star"+i).SetActive(false);
