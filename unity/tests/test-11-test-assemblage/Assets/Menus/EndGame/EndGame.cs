@@ -7,6 +7,10 @@ public class EndGame : HelikoObject {
 	private int pourcent;
 	private int nbrErreurs;
 
+	public void Awake() {
+		this.gameObject.SetActive(true);
+	}
+
 	public new void Start() {
 		base.Start();
 		closeIt();
@@ -14,7 +18,6 @@ public class EndGame : HelikoObject {
 
 	// Pour le test (mode dev)
 	public void testIt() {
-		this.Start ();
 		this.setValues(95,1);
 		Debug.Log ("Rank = "+getRank ());
 		this.getBeatCounter().getMusic().pauseMusic();
