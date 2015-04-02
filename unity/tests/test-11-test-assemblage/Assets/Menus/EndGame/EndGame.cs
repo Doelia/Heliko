@@ -15,10 +15,11 @@ public class EndGame : HelikoObject {
 	// Pour le test (mode dev)
 	public void testIt() {
 		this.Start ();
-		this.setValues(100,0);
+		this.setValues(95,1);
 		Debug.Log ("Rank = "+getRank ());
 		this.getBeatCounter().getMusic().pauseMusic();
-		this.startShowing();
+		this.gameObject.SetActive(true);
+		StartCoroutine(this.startShowing());
 	}
 
 	public void setValues(int p_pourcent, int p_nbrErreurs) {
@@ -45,15 +46,25 @@ public class EndGame : HelikoObject {
 
 	// AFFICHAGE (animations, etc)
 
-	public void startShowing() {
-		this.gameObject.SetActive(true);
+	IEnumerator startShowing() {
 		GameObject bg = GameObject.Find ("ContainerEndGame");
 		bg.GetComponent<AnimationGUI>().animIt();
-		this.showStars();
+		yield return new WaitForSeconds(.4f);
+		StartCoroutine(showStars());
+		yield return new WaitForSeconds(1);
 		this.showSuccessText();
-		if (constantes.showDetailOnEndGame) {
+		/*if (constantes.showDetailOnEndGame) {
 			showTauxReussite();
 			showNombreErreurs();
+		}*/
+	}
+
+	IEnumerator showStars() {
+		for (int i = 1; i <= 3; i++) {
+			if (getRank() >= i) {
+				GameObject.Find ("Star"+i).GetComponent<AnimationGUI>().animIt();
+				yield return new WaitForSeconds(.3f);
+			}
 		}
 	}
 
@@ -66,36 +77,10 @@ public class EndGame : HelikoObject {
 	}
 
 	private void showSuccessText() {
-		/*
-		string txt = "undefined";
-		switch (getRank ()) {
-			case 0:
-				txt = "Veuillez réésayer...";
-				break;
-			case 1:
-				txt = "Niveau réussi, bravo !";
-				break;
-			case 2:
-				txt = "Excelent !";
-				break;
-			case 3:
-				txt = "Score parfait !!";
-				break;
-		}
-		GameObject.Find ("SuccessText").GetComponent<Text>().text = txt;
-		*/
 		GameObject.Find ("SuccessText").GetComponent<GUISpriteSwitcher>().setSprite(getRank());
 	}
 
-	private void showStars() {
-		for (int i = 1; i <= 3; i++) {
-			if (getRank() >= i) {
-				GameObject.Find ("Star"+i).SetActive(true);
-			} else {
-				GameObject.Find ("Star"+i).SetActive(false);
-			}
-		}
-	}
+
 
 
 }
