@@ -13,7 +13,7 @@ public class InterfacePauseGame : HelikoObject {
 	public AudioSource openMenuSound;
 	public AudioSource closeMenuSound;
 
-	public void Start() {
+	public new void Start() {
 		base.Start();
 		//music = getBeatCounter().getMusic().GetComponent<AudioSource>();
 	}

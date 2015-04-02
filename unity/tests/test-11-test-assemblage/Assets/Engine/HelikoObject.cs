@@ -6,6 +6,7 @@ public class HelikoObject : MonoBehaviour {
 	protected Constantes constantes;
 
 	public void Start() {
+		//Debug.Log ("Starting "+this.gameObject.name);
 		if (GameObject.Find ("Constantes") == null) {
 			Debug.LogError("Impossible de trouver l'objet Constantes dans la scène");
 		} else {

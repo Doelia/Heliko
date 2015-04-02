@@ -6,7 +6,7 @@ public class Tuto : HelikoObject {
 	public StepTuto[] steps;
 	int nStep = 0;
 
-	public void Start() {
+	public new void Start() {
 		initTuto();
 		startTuto();
 	}

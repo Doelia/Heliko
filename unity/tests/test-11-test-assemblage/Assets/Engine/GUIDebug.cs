@@ -12,7 +12,7 @@ public class GUIDebug : HelikoObject {
 	public Slider avancement;
 	public Slider slider;
 
-	void Start () {
+	public new void Start () {
 		base.Start();
 		playerActions = getPlayerActions();
 		bc = getBeatCounter();
