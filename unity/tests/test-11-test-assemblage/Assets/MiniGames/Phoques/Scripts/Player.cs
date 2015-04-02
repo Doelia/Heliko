@@ -32,7 +32,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 
 	public void onSuccess() {}
 	public void onSuccessLoop() {
-		Debug.Log ("good Loop!");
+		//Debug.Log ("good Loop!");
 	}
 
 	public void onFinger (int type) {
