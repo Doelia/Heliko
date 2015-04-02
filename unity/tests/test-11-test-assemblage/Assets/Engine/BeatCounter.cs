@@ -37,7 +37,7 @@ public class BeatCounter : Timer {
 	}
 
 	public bool isInPause() {
-		return !this.audioSource.isPlaying;
+		return stopIt || !this.audioSource.isPlaying;
 	}
 
 	// NOTIFIEUR

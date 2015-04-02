@@ -32,6 +32,10 @@ public class MusicTempo : HelikoObject {
 		audioSource.timeSamples = (int)(audioSource.clip.samples * p);
 	}
 
+	public void pauseMusic() {
+		this.audioSource.Pause();
+	}
+
 
 	/// <summary>
 	/// Retourne en millsecondes le temps passé

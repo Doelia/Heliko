@@ -17,6 +17,7 @@ public class EndGame : HelikoObject {
 		this.Start ();
 		this.setValues(100,0);
 		Debug.Log ("Rank = "+getRank ());
+		this.getBeatCounter().getMusic().pauseMusic();
 		this.startShowing();
 	}
 

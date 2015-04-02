@@ -4,6 +4,7 @@ using System.Collections;
 public abstract class Timer : HelikoObject {
 
 	public bool startCountAtLoad = true;
+	protected bool stopIt = false;
 
 	public AudioSource audioSource;
 	public float loopTime = 30f; // Temps d'attente entre chaque boucle en MS
@@ -60,8 +61,13 @@ public abstract class Timer : HelikoObject {
 		StartCoroutine(BeatCheck());
 	}
 
+	// Stop complétement le thread de comptage
+	public void stopCount() {
+		this.stopIt = true;
+	}
+
  	IEnumerator BeatCheck () {
-		while (true) {
+		while (!stopIt) {
 			if (audioSource.isPlaying) {
 				float currentSample = audioSource.timeSamples;
 				if (currentSample >= (nextBeatSample)) {
