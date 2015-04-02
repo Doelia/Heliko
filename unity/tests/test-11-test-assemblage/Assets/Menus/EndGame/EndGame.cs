@@ -47,6 +47,8 @@ public class EndGame : HelikoObject {
 
 	public void startShowing() {
 		this.gameObject.SetActive(true);
+		GameObject bg = GameObject.Find ("ContainerEndGame");
+		bg.GetComponent<AnimationGUI>().animIt();
 		this.showStars();
 		this.showSuccessText();
 		if (constantes.showDetailOnEndGame) {
