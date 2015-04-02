@@ -9,12 +9,13 @@ public class EndGame : HelikoObject {
 
 	public new void Start() {
 		base.Start();
+		closeIt();
 	}
 
 	// Pour le test (mode dev)
 	public void testIt() {
 		this.Start ();
-		this.setValues(80,2);
+		this.setValues(100,0);
 		Debug.Log ("Rank = "+getRank ());
 		this.startShowing();
 	}
@@ -46,6 +47,7 @@ public class EndGame : HelikoObject {
 	public void startShowing() {
 		this.gameObject.SetActive(true);
 		this.showStars();
+		this.showSuccessText();
 		if (constantes.showDetailOnEndGame) {
 			showTauxReussite();
 			showNombreErreurs();
@@ -61,6 +63,7 @@ public class EndGame : HelikoObject {
 	}
 
 	private void showSuccessText() {
+		/*
 		string txt = "undefined";
 		switch (getRank ()) {
 			case 0:
@@ -77,6 +80,8 @@ public class EndGame : HelikoObject {
 				break;
 		}
 		GameObject.Find ("SuccessText").GetComponent<Text>().text = txt;
+		*/
+		GameObject.Find ("SuccessText").GetComponent<GUISpriteSwitcher>().setSprite(getRank());
 	}
 
 	private void showStars() {

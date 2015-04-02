@@ -18,11 +18,6 @@ public class InterfacePauseGame : HelikoObject {
 		//music = getBeatCounter().getMusic().GetComponent<AudioSource>();
 	}
 
-	public void Reload() {
-		loadingScreen.SetActive(true);
-		Application.LoadLevel(Application.loadedLevel);
-	}
-
 	public void UnPause() {
 		closeMenuSound.Play();
 		pauseMenu.SetActive(false);

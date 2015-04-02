@@ -9,5 +9,10 @@ public class LoadOnClick : MonoBehaviour {
 		loadingScreen.SetActive(true);
 		Application.LoadLevelAsync(level);
 	}
+
+	public void ReloadScene() {
+		loadingScreen.SetActive(true);
+		Application.LoadLevel(Application.loadedLevel);
+	}
 }
 
