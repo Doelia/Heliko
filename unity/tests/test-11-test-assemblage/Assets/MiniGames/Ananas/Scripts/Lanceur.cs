@@ -12,7 +12,7 @@ public class Lanceur : HelikoObject,LevelScriptedReceiver {
 	public AudioSource preparerSound;
 	public AudioSource lancerSound;
 
-	public void Start () {
+	public new void Start () {
 		this.level.connect(this);
 	}
 

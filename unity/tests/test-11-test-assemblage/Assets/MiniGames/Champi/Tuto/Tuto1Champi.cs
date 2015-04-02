@@ -10,7 +10,7 @@ public class Tuto1Champi : StepTuto, LevelScriptedReceiver, PlayerEventReceiver 
 	public AudioSource tic;
 	public AudioSource tac;
 
-	public void Start() {
+	public new void Start() {
 		levelMetronome.connect(this);
 	}
 

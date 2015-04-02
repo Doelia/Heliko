@@ -9,7 +9,7 @@ public class PlayerAnanas : HelikoObject, PlayerEventReceiver  {
 	public AudioSource good;
 	public AudioSource bad;
 
-	public void Start () {
+	public new void Start () {
 		playerActions = getPlayerActions();
 		getPlayerEventListener().connect (this);
 	}

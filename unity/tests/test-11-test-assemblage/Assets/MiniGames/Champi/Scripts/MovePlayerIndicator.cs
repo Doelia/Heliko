@@ -8,7 +8,7 @@ public class MovePlayerIndicator : HelikoObject, LevelScriptedReceiver {
 	
 	public Transform champiTransform;
 	
-	public void Start () {
+	public new void Start () {
 		if (level != null)
 			this.level.connect(this);
 		anim = champiTransform.GetComponent<Animator>();

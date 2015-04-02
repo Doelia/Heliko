@@ -82,6 +82,8 @@ public class EndGame : HelikoObject {
 		for (int i = 1; i <= 3; i++) {
 			if (getRank() > i) {
 				GameObject.Find ("Star"+i).SetActive(true);
+			} else {
+				GameObject.Find ("Star"+i).SetActive(false);
 			}
 		}
 	}

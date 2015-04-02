@@ -18,7 +18,7 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 
 	private PlayerActions playerActions;
 
-	public void Start () {
+	public new void Start () {
 		base.Start();
 		playerActions = getPlayerActions();
 

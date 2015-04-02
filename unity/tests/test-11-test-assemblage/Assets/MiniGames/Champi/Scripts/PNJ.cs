@@ -20,7 +20,7 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 
 	public AudioSource sound;
 
-	public void Start () {
+	public new void Start () {
 		base.Start();
 		if (level != null)
 			this.level.connect(this);

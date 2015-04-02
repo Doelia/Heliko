@@ -9,7 +9,7 @@ public class ChampiFan : Feedback, LevelScriptedReceiver  {
 	public Sprite content;
 	public Sprite pasContent;
 	
-	public void Start () {
+	public new void Start () {
 		base.Start ();
 		this.level.connect(this);
 		anim = this.GetComponent<Animator>();
