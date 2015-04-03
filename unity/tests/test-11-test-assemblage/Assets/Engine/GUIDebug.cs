@@ -16,7 +16,6 @@ public class GUIDebug : HelikoObject {
 		base.Start();
 		playerActions = getPlayerActions();
 		bc = getBeatCounter();
-		gameObject.SetActive(constantes.showDebugGUI);
 	}
 
 	public void setMusicPercentage() {

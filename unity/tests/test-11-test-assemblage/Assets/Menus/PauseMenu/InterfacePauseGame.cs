@@ -15,7 +15,7 @@ public class InterfacePauseGame : HelikoObject {
 
 	public new void Start() {
 		base.Start();
-		//music = getBeatCounter().getMusic().GetComponent<AudioSource>();
+		music = getBeatCounter().getMusic().GetComponent<AudioSource>();
 	}
 
 	public void UnPause() {
