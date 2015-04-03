@@ -15,7 +15,7 @@ public class EndGame : HelikoObject {
 	public new void Start() {
 		base.Start();
 		closeIt();
-		EndGameParameters endGameInformations = GameObject.Find ("EndGameInfos").GetComponent<EndGameParameters>();
+		EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
 		if (endGameInformations != null) {
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
 		} else {
@@ -25,7 +25,7 @@ public class EndGame : HelikoObject {
 
 	// Pour le test (mode dev)
 	public void testIt() {
-		this.setValues(95,1,2);
+		//this.setValues(95,1,2);
 		Debug.Log ("Rank = "+getRank ());
 		this.gameObject.SetActive(true);
 		StartCoroutine(this.startShowing());

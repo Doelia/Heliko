@@ -12,6 +12,12 @@ public class Constantes : MonoBehaviour {
 
 	public bool devMode = true;
 
+	[HideInInspector]
+
+	public int getNumSceneEndGame() {
+		return 4;
+	}
+
 	public void Awake() {
 		if (devMode) {
 			showDebugGUI = true;

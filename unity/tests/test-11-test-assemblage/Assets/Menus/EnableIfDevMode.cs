@@ -3,9 +3,9 @@ using System.Collections;
 
 public class EnableIfDevMode : HelikoObject {
 
-	public void Start () {
+	public new void Start () {
+		if (isStart) return;
 		base.Start();
-		Debug.Log ("Start "+gameObject.name);
 		this.gameObject.SetActive(constantes.showDebugGUI);
 	}
 	

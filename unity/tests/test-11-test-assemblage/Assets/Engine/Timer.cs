@@ -35,6 +35,7 @@ public abstract class Timer : HelikoObject {
 	}
 
 	public new void Start() {
+		if (isStart) return;
 
 		base.Start();
 

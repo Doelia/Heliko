@@ -4,8 +4,11 @@ using System.Collections;
 public class HelikoObject : MonoBehaviour {
 
 	protected Constantes constantes;
+	protected bool isStart = false;
 
 	public void Start() {
+		if (isStart) return;
+		isStart = true;
 		//Debug.Log ("Starting "+this.gameObject.name);
 		if (GameObject.Find ("Constantes") == null) {
 			Debug.LogError("Impossible de trouver l'objet Constantes dans la scène");
@@ -18,7 +21,9 @@ public class HelikoObject : MonoBehaviour {
 		if (GameObject.Find ("BeatCounter") == null) {
 			Debug.LogError("Impossible de trouver l'objet BeatCounter dans la scène");
 		}
-		return GameObject.Find ("BeatCounter").GetComponent<BeatCounter>();
+		BeatCounter o = GameObject.Find ("BeatCounter").GetComponent<BeatCounter>();
+		o.Start ();
+		return o;
 	}
 
 	public PlayerActions getPlayerActions() {
