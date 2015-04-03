@@ -6,6 +6,7 @@ public class EndGame : HelikoObject {
 
 	private int pourcent;
 	private int nbrErreurs;
+	private int idMiniGame;
 
 	public void Awake() {
 		this.gameObject.SetActive(true);
@@ -14,20 +15,26 @@ public class EndGame : HelikoObject {
 	public new void Start() {
 		base.Start();
 		closeIt();
+		EndGameParameters endGameInformations = GameObject.Find ("EndGameInfos").GetComponent<EndGameParameters>();
+		if (endGameInformations != null) {
+			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
+		} else {
+			Debug.LogWarning("Impossible de trouver l'objet EndGameParameters");
+		}
 	}
 
 	// Pour le test (mode dev)
 	public void testIt() {
-		this.setValues(95,1);
+		this.setValues(95,1,2);
 		Debug.Log ("Rank = "+getRank ());
-		this.getBeatCounter().getMusic().pauseMusic();
 		this.gameObject.SetActive(true);
 		StartCoroutine(this.startShowing());
 	}
 
-	public void setValues(int p_pourcent, int p_nbrErreurs) {
+	public void setValues(int p_pourcent, int p_nbrErreurs, int p_idMiniGame) {
 		this.pourcent = p_pourcent;
 		this.nbrErreurs = p_nbrErreurs;
+		this.idMiniGame = p_idMiniGame;
 	}
 
 	public int getRank() {
@@ -56,10 +63,13 @@ public class EndGame : HelikoObject {
 		StartCoroutine(showStars());
 		yield return new WaitForSeconds(1);
 		this.showSuccessText();
-		/*if (constantes.showDetailOnEndGame) {
+		if (constantes.showDetailOnEndGame) {
 			showTauxReussite();
 			showNombreErreurs();
-		}*/
+		} else {
+			GameObject.Find ("PReussite").SetActive(false);
+			GameObject.Find ("NErrors").SetActive(false);
+		}
 	}
 
 	IEnumerator showStars() {
@@ -81,6 +91,10 @@ public class EndGame : HelikoObject {
 
 	private void showSuccessText() {
 		GameObject.Find ("SuccessText").GetComponent<GUISpriteSwitcher>().setSprite(getRank());
+	}
+
+	public void restartMiniGame() {
+		this.GetComponent<LoadOnClick>().LoadScene(constantes.getNumSceneFromIdMiniGame(idMiniGame));
 	}
 
 

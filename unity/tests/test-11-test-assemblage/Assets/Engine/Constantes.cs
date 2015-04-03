@@ -20,4 +20,12 @@ public class Constantes : MonoBehaviour {
 		}
 	}
 
+	public int getNumSceneFromIdMiniGame(int id) {
+		return id;
+	}
+
+	public int getIdMiniGameFromNumScene(int numScene) {
+		return numScene;
+	}
+
 }
