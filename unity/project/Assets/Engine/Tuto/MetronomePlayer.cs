@@ -4,8 +4,7 @@ using System.Collections;
 public class MetronomePlayer : HelikoObject, LevelScriptedReceiver {
 
 	private LevelScripted levelMetronome;
-	public AudioSource tic;
-	public AudioSource tac;
+	public AudioSource snd;
 
 	public new void Start() {
 		if (isStart) return;
@@ -16,9 +15,7 @@ public class MetronomePlayer : HelikoObject, LevelScriptedReceiver {
 
 	public void OnAction(int type) {
 		if (type == 1) {
-			tic.Play();
-		} else if (type == 2) {
-			tac.Play();
+			snd.Play();
 		}
 	}
 }
