@@ -11,7 +11,12 @@ public class LoadOnClick : HelikoObject {
 	}
 
 	public void LoadScene(int level) {
-		loadingScreen.openLoadingScene();
+		Debug.Log ("LoadScene");
+		StartCoroutine(loadLevel(level));
+	}
+
+	public IEnumerator loadLevel(int level) {
+		yield return StartCoroutine(loadingScreen.openLoadingScene());
 		loadingScreen.keepItAfterLoading();
 		Application.LoadLevelAsync(level);
 	}
