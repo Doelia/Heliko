@@ -7,21 +7,24 @@ public class PlayerAnanas : HelikoObject, PlayerEventReceiver  {
 
 	public AnanasManager parentAnanas;
 	public AudioSource good;
-	public AudioSource bad;
+
+	private Animator animBody;
+	public Animator animLangue;
 
 	public new void Start () {
 		playerActions = GetPlayerActions();
 		GetPlayerEventListener().connect (this);
+		animBody = GetComponent<Animator>();
 	}
 
 	public void OnFinger (int type) {
-		if (type == 1) {
+		if (type == 1 || type == 2) {
+			animBody.SetTrigger("go");
+			animLangue.SetTrigger("go");
 			parentAnanas.removeLast();
-			bool ok = playerActions.IsGood(type);
+			bool ok = playerActions.IsGood(1);
 			if (ok) {
 				good.Play();
-			} else {
-				bad.Play();
 			}
 		}
 
