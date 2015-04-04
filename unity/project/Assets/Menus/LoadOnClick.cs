@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class LoadOnClick : HelikoObject {
@@ -19,7 +19,7 @@ public class LoadOnClick : HelikoObject {
 	}
 
 	public IEnumerator loadLevel(int level) {
-		yield return StartCoroutine(loadingScreen.OpenLoadingScene());
+		yield return StartCoroutine(loadingScreen.FadeInBlackScreen());
 		loadingScreen.KeepItAfterLoading();
 		Application.LoadLevelAsync(level);
 	}
