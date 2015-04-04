@@ -35,6 +35,8 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 			brasDroit.SetTrigger ("Down");
 		} else if (type == 2) {
 			brasGauche.SetTrigger ("Down");
+		} else {
+			return;
 		}
 		animCarapace.SetTrigger("Move");
 		animChampiPNJ.SetTrigger("Move");

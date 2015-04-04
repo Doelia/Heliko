@@ -1,17 +1,14 @@
 using UnityEngine;
 using System.Collections;
 
-public class Tuto1Champi : StepTuto, LevelScriptedReceiver, PlayerEventReceiver {
+public class Tuto1Champi : StepTuto, PlayerEventReceiver {
 
-	public LevelScripted levelMetronome;
 	public LevelScripted levelPlayer;
 	public LevelScripted levelIA;
 
-	public AudioSource tic;
-	public AudioSource tac;
-
 	public new void Start() {
-		levelMetronome.connect(this);
+		if (isStart) return;
+		base.Start ();
 	}
 
 	public override void play () {
@@ -28,12 +25,5 @@ public class Tuto1Champi : StepTuto, LevelScriptedReceiver, PlayerEventReceiver 
 		GetPlayerActions().IsGood(type);
 	}
 
-	public void OnAction(int type) {
-		if (type == 1) {
-			tic.Play();
-		} else {
-			tac.Play();
-		}
-	}
 
 }
