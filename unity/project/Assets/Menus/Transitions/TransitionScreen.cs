@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class TransitionScreen : HelikoObject {
 
 	public Transform loadingImage;
+	public Transform loadingText;
 
 	public new void Start() {
 		if (isStart) return;
@@ -24,10 +25,13 @@ public class TransitionScreen : HelikoObject {
 			img.color = c;
 			yield return null;
 		}
+		loadingText.gameObject.SetActive(true);
 	}
 
 	public IEnumerator closeLoadingScene() {
 		this.GetComponent<Canvas>().enabled = true;
+		loadingText.gameObject.SetActive(false);
+		yield return null;
 		Image img = loadingImage.GetComponent<Image>();
 		for (float f = 1f; f >= 0; f -= 0.1f) {
 			Color c = img.color;
