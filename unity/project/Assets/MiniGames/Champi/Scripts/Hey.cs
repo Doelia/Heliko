@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Hey : MonoBehaviour, LevelScriptedReceiver {
@@ -16,7 +16,7 @@ public class Hey : MonoBehaviour, LevelScriptedReceiver {
 		brasGauche = brasGaucheTrasform.GetComponent<Animator>();
 	}
 	
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		if (type == 1) {
 			brasDroit.SetTrigger ("Up");
 			brasGauche.SetTrigger ("Up");

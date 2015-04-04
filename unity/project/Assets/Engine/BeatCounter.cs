@@ -33,7 +33,7 @@ public class BeatCounter : Timer {
 	}
 
 	protected override void beat() {
-		this.notifyChildren();
+		this.NotifyChildren();
 	}
 
 	public bool isInPause() {
@@ -43,13 +43,13 @@ public class BeatCounter : Timer {
 	// NOTIFIEUR
 	ArrayList observers;
 
-	public void connect (TempoReceiver r) {
+	public void Connect (TempoReceiver r) {
 		this.observers.Add (r);
 	}
 
-	private void notifyChildren () {
+	private void NotifyChildren () {
 		foreach (TempoReceiver e in this.observers) {
-			e.onStep (this.getNBeat());
+			e.OnStep (this.getNBeat());
 		}
 	}
 

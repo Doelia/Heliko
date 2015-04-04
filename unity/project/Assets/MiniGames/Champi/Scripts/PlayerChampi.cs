@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerChampi : HelikoObject, PlayerEventReceiver {
@@ -20,16 +20,16 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 
 	public new void Start () {
 		base.Start();
-		playerActions = getPlayerActions();
+		playerActions = GetPlayerActions();
 
-		getPlayerEventListener().connect (this);
+		GetPlayerEventListener().connect (this);
 		animGauche = mainGaucheTransform.GetComponent<Animator>();
 		animDroite = mainDroiteTransform.GetComponent<Animator>();
 		animChampiPlayer = champiPlayer.GetComponent<Animator>();
 		animCarapace = carapace.GetComponent<Animator>();
 	}
 
-	public void onFinger (int type) {
+	public void OnFinger (int type) {
 		if (type == 1) {
 			animGauche.SetTrigger ("Down");
 		} else if (type == 2) {
@@ -41,7 +41,7 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 		animCarapace.SetTrigger("Move");
 		animChampiPlayer.SetTrigger("Move");
 
-		bool isGood = playerActions.isGood(type);
+		bool isGood = playerActions.IsGood(type);
 		if (isGood) {
 			soundGood.GetComponent<AudioSource>().Play();
 		} else {

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class HelikoObject : MonoBehaviour {
@@ -17,7 +17,7 @@ public class HelikoObject : MonoBehaviour {
 		}
 	}
 
-	public TransitionScreen getTransitionScreen() {
+	public TransitionScreen GetTransitionScreen() {
 		if (GameObject.Find ("TransitionScreen") == null) {
 			Debug.LogError("Impossible de trouver l'objet TransitionScreen dans la scène");
 		}
@@ -26,7 +26,7 @@ public class HelikoObject : MonoBehaviour {
 		return o;
 	}
 
-	public BeatCounter getBeatCounter() {
+	public BeatCounter GetBeatCounter() {
 		if (GameObject.Find ("BeatCounter") == null) {
 			Debug.LogError("Impossible de trouver l'objet BeatCounter dans la scène");
 		}
@@ -35,14 +35,14 @@ public class HelikoObject : MonoBehaviour {
 		return o;
 	}
 
-	public PlayerActions getPlayerActions() {
+	public PlayerActions GetPlayerActions() {
 		if (GameObject.Find ("PlayerActions") == null) {
 			Debug.LogError("Impossible de trouver l'objet PlayerActions dans la scène");
 		}
 		return GameObject.Find ("PlayerActions").GetComponent<PlayerActions>();
 	}
 
-	public PlayerEventListener getPlayerEventListener() {
+	public PlayerEventListener GetPlayerEventListener() {
 		if (GameObject.Find ("PlayerEventListener") == null) {
 			Debug.LogError("Impossible de trouver l'objet PlayerEventListener dans la scène");
 		}

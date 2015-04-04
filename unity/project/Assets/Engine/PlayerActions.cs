@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver {
@@ -26,15 +26,15 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		base.Start();
 		if (level != null)
 			this.level.connect(this);
-		bc = getBeatCounter();
-		bc.connect(this);
+		bc = GetBeatCounter();
+		bc.Connect(this);
 	}
 
-	public void connect (PlayerActionReceiver r) {
+	public void Connect (PlayerActionReceiver r) {
 		this.observers.Add(r);
 	}
 
-	public bool isGood (int type) {
+	public bool IsGood (int type) {
 		int stepTapped = bc.getStepClosest();
 		if (level.getActionFromBeat(stepTapped) == type) {
 			this.successStep.Add(stepTapped);
@@ -58,23 +58,23 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 
 	public void notifyFailure() {
 		foreach (PlayerActionReceiver e in this.observers) {
-			e.onFailure();
+			e.OnFailure();
 		}
 	}
 
 	public void notifySucces() {
 		foreach (PlayerActionReceiver e in this.observers) {
-			e.onSuccess();
+			e.OnSuccess();
 		}
 	}
 
 	public void notifySuccesLoop() {
 		foreach (PlayerActionReceiver e in this.observers) {
-			e.onSuccessLoop();
+			e.OnSuccessLoop();
 		}
 	}
 
-	public void onAction(int action) {
+	public void OnAction(int action) {
 		if (action == -1) {
 			if (nbrFailInLoop == 0) {
 				notifySuccesLoop();
@@ -85,7 +85,7 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		}
 	}
 
-	public void onStep (int nBeat) {
+	public void OnStep (int nBeat) {
 		if (nBeat > 2) {
 			int previousStep = nBeat-2;
 			if (level.isStepUseful (previousStep) && !successStep.Contains(previousStep)) {

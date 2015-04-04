@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerTesteur : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
@@ -12,7 +12,7 @@ public class PlayerTesteur : MonoBehaviour, PlayerEventReceiver, PlayerActionRec
 
 	void Start () {
 		playerEventListener.connect (this);
-		playerActions.connect (this);
+		playerActions.Connect (this);
 		anim = GetComponent < Animator >();
 	}
 
@@ -20,17 +20,17 @@ public class PlayerTesteur : MonoBehaviour, PlayerEventReceiver, PlayerActionRec
 		this.GetComponent<SpriteRenderer>().color = isGood ? new Color(0.3f,1,0.3f) : new Color(1,.3f,.3f);
 	}
 
-	public void onFailure() {
+	public void OnFailure() {
 		this.changeColor(false);
 	}
 
-	public void onSuccess() {}
-	public void onSuccessLoop() {}
+	public void OnSuccess() {}
+	public void OnSuccessLoop() {}
 
-	public void onFinger (int type) {
+	public void OnFinger (int type) {
 		anim.SetTrigger ("change");
 		clap.Play();
-		this.changeColor(playerActions.isGood(type));
+		this.changeColor(playerActions.IsGood(type));
 	}
 
 }

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class IAModel : MonoBehaviour, LevelScriptedReceiver {
@@ -11,7 +11,7 @@ public class IAModel : MonoBehaviour, LevelScriptedReceiver {
 		anim = GetComponent < Animator >();
 	}
 	
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		if (type == 1) {
 			anim.SetTrigger ("change");
 		}

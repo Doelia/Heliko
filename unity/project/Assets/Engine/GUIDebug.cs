@@ -14,11 +14,11 @@ public class GUIDebug : HelikoObject {
 
 	public new void Start () {
 		base.Start();
-		playerActions = getPlayerActions();
-		bc = getBeatCounter();
+		playerActions = GetPlayerActions();
+		bc = GetBeatCounter();
 	}
 
-	public void setMusicPercentage() {
+	public void SetMusicPercentage() {
 		bc.getMusic().setMusicPercentage(slider.value / 100.0f);	
 	}
 	

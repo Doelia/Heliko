@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 
 	void Start () {
 		playerEventListener.connect (this);
-		playerActions.connect (this);
+		playerActions.Connect (this);
 		clap = GetComponent<AudioSource>();
 
 		foreach (Transform s in transform) {
@@ -26,19 +26,19 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 		tete.GetComponent<SpriteRenderer>().color = isGood ? new Color(0.7f,1,0.7f) : new Color(1,.7f,.7f);
 	}
 
-	public void onFailure() {
+	public void OnFailure() {
 		this.changeColor(false);
 	}
 
-	public void onSuccess() {}
-	public void onSuccessLoop() {
+	public void OnSuccess() {}
+	public void OnSuccessLoop() {
 		//Debug.Log ("good Loop!");
 	}
 
-	public void onFinger (int type) {
+	public void OnFinger (int type) {
 		anim.SetTrigger ("change");
 		clap.Play();
-		this.changeColor(playerActions.isGood(type));
+		this.changeColor(playerActions.IsGood(type));
 	}
 
 }

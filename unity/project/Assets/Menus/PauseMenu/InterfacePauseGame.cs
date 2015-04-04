@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class InterfacePauseGame : HelikoObject {
@@ -14,7 +14,7 @@ public class InterfacePauseGame : HelikoObject {
 
 	public new void Start() {
 		base.Start();
-		music = getBeatCounter().getMusic().GetComponent<AudioSource>();
+		music = GetBeatCounter().getMusic().GetComponent<AudioSource>();
 	}
 
 	public void UnPause() {

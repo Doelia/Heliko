@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Tuto1Champi : StepTuto, LevelScriptedReceiver, PlayerEventReceiver {
@@ -17,18 +17,18 @@ public class Tuto1Champi : StepTuto, LevelScriptedReceiver, PlayerEventReceiver 
 	public override void play () {
 		levelIA.connect(GameObject.Find("IA").GetComponent<PNJ>());
 
-		getPlayerActions().level = levelPlayer;
-		getPlayerActions().level.connect (getPlayerActions());
+		GetPlayerActions().level = levelPlayer;
+		GetPlayerActions().level.connect (GetPlayerActions());
 
-		getPlayerEventListener().connect(this);
-		getBeatCounter().StartCount();
+		GetPlayerEventListener().connect(this);
+		GetBeatCounter().StartCount();
 	}
 
-	public void onFinger(int type) {
-		getPlayerActions().isGood(type);
+	public void OnFinger(int type) {
+		GetPlayerActions().IsGood(type);
 	}
 
-	public void onAction(int type) {
+	public void OnAction(int type) {
 		if (type == 1) {
 			tic.Play();
 		} else {

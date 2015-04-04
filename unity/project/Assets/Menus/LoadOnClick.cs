@@ -7,7 +7,7 @@ public class LoadOnClick : HelikoObject {
 
 	public new void Start() {
 		base.Start ();
-		loadingScreen = this.getTransitionScreen();
+		loadingScreen = this.GetTransitionScreen();
 	}
 
 	public void LoadScene(int level) {
@@ -19,8 +19,8 @@ public class LoadOnClick : HelikoObject {
 	}
 
 	public IEnumerator loadLevel(int level) {
-		yield return StartCoroutine(loadingScreen.openLoadingScene());
-		loadingScreen.keepItAfterLoading();
+		yield return StartCoroutine(loadingScreen.OpenLoadingScene());
+		loadingScreen.KeepItAfterLoading();
 		Application.LoadLevelAsync(level);
 	}
 

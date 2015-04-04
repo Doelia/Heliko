@@ -5,35 +5,35 @@ public abstract class Feedback : HelikoObject, PlayerActionReceiver {
 
 	public new void Start () {
 		base.Start();
-		getPlayerActions().connect(this);
+		GetPlayerActions().Connect(this);
 	}
 
-	abstract public void setReaction(bool isGood);
+	abstract public void SetReaction(bool isGood);
 
 	private Coroutine inProgress = null;
 	
-	public void onFailure() {
+	public void OnFailure() {
 		if (inProgress != null) {
 			StopCoroutine(inProgress);
 			inProgress = null;
 		}
-		inProgress = StartCoroutine(animPasContent());
+		inProgress = StartCoroutine(AnimPasContent());
 	}
 	
-	public void onSuccess() {
+	public void OnSuccess() {
 		if (inProgress != null) {
 			StopCoroutine(inProgress);
 			inProgress = null;
 		}
-		this.setReaction(true);
+		this.SetReaction(true);
 	}
 
-	public void onSuccessLoop() {}
+	public void OnSuccessLoop() {}
 	
-	IEnumerator animPasContent() {
-		this.setReaction(false);
+	IEnumerator AnimPasContent() {
+		this.SetReaction(false);
 		yield return new WaitForSeconds(0.66f);
-		this.setReaction(true);
+		this.SetReaction(true);
 	}
 	
 

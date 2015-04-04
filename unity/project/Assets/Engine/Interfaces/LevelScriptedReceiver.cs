@@ -3,5 +3,5 @@ using System.Collections;
 
 public interface LevelScriptedReceiver
 {
-	void onAction (int type);
+	void OnAction (int type);
 }

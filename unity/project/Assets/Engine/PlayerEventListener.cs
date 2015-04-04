@@ -19,7 +19,7 @@ public class PlayerEventListener : HelikoObject
 	public new void Start()
 	{
 		base.Start();
-		bc = getBeatCounter();
+		bc = GetBeatCounter();
 		
 		#if UNITY_ANDROID || UNITY_IOS
 		touchScreen = false;
@@ -39,7 +39,7 @@ public class PlayerEventListener : HelikoObject
 
 	private void sendEvent(int type) {
 		foreach (PlayerEventReceiver e in this.observers) {
-			e.onFinger (type);
+			e.OnFinger (type);
 		}
 	}
 

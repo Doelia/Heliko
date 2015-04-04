@@ -15,9 +15,9 @@ public class EnterScene : HelikoObject {
 
 	public new void Start() {
 		base.Start ();
-		loadingScreen = this.getTransitionScreen();
+		loadingScreen = this.GetTransitionScreen();
 		if (loadingScreen.LoadingScreenIsOpen())
-			StartCoroutine(loadingScreen.closeLoadingScene());
+			StartCoroutine(loadingScreen.CloseLoadingScene());
 	}
 
 	

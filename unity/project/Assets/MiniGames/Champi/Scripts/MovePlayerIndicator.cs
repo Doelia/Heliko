@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class MovePlayerIndicator : HelikoObject, LevelScriptedReceiver {
@@ -14,7 +14,7 @@ public class MovePlayerIndicator : HelikoObject, LevelScriptedReceiver {
 		anim = champiTransform.GetComponent<Animator>();
 	}
 	
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		anim.SetTrigger ("Move");
 	}
 	

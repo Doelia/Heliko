@@ -21,9 +21,9 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 
 	public new void Start () {
 		base.Start();
-		beatCounter = getBeatCounter();
+		beatCounter = GetBeatCounter();
 		loadData();
-		beatCounter.connect(this);
+		beatCounter.Connect(this);
 	}
 	
 	public void loadData () {
@@ -86,7 +86,7 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 
 	// EVENTS
 
-	public void onStep (int nBeat) {
+	public void OnStep (int nBeat) {
 		if (isStepUseful(nBeat)) {
 			notifyChildren (getActionFromBeat(nBeat));
 		}
@@ -103,7 +103,7 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 
 	private void notifyChildren (int type) {
 		foreach (LevelScriptedReceiver e in this.observers) {
-			e.onAction (type);
+			e.OnAction (type);
 		}
 	}
 }

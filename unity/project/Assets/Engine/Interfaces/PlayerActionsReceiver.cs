@@ -3,8 +3,8 @@ using System.Collections;
 
 public interface PlayerActionReceiver
 {
-	void onFailure();
-	void onSuccess();
-	void onSuccessLoop();
+	void OnFailure();
+	void OnSuccess();
+	void OnSuccessLoop();
 }
 

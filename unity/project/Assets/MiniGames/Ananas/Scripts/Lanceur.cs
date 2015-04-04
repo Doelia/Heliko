@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Lanceur : HelikoObject,LevelScriptedReceiver {
@@ -23,7 +23,7 @@ public class Lanceur : HelikoObject,LevelScriptedReceiver {
 		ananas.GetComponent<Animator>().SetTrigger("go");
 	}
 
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		if (type == 1) {
 			anim1.SetTrigger("go");
 			preparerSound.Play();

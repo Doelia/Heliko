@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
@@ -30,7 +30,7 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 		animChampiPNJ = champiPNJ.GetComponent<Animator>();
 	}
 	
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		if (type == 1) {
 			brasDroit.SetTrigger ("Down");
 		} else if (type == 2) {
@@ -42,7 +42,7 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 		
 	}
 
-	public override void setReaction(bool isGood) {
+	public override void SetReaction(bool isGood) {
 		champiPNJ.GetComponent<SpriteRenderer>().sprite = isGood?content:pasContent;
 	}
 

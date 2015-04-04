@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ChampiFan : Feedback, LevelScriptedReceiver  {
@@ -15,13 +15,13 @@ public class ChampiFan : Feedback, LevelScriptedReceiver  {
 		anim = this.GetComponent<Animator>();
 	}
 	
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		if (type == 1) {
 			anim.SetTrigger ("Move");
 		}
 	}
 	
-	public override void setReaction(bool isGood) {
+	public override void SetReaction(bool isGood) {
 		this.GetComponent<SpriteRenderer>().sprite = isGood?content:pasContent;
 	}
 

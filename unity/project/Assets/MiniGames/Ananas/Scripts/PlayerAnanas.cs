@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerAnanas : HelikoObject, PlayerEventReceiver  {
@@ -10,14 +10,14 @@ public class PlayerAnanas : HelikoObject, PlayerEventReceiver  {
 	public AudioSource bad;
 
 	public new void Start () {
-		playerActions = getPlayerActions();
-		getPlayerEventListener().connect (this);
+		playerActions = GetPlayerActions();
+		GetPlayerEventListener().connect (this);
 	}
 
-	public void onFinger (int type) {
+	public void OnFinger (int type) {
 		if (type == 1) {
 			parentAnanas.removeLast();
-			bool ok = playerActions.isGood(type);
+			bool ok = playerActions.IsGood(type);
 			if (ok) {
 				good.Play();
 			} else {

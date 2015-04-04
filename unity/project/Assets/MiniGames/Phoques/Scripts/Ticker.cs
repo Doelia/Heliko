@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Ticker : MonoBehaviour, LevelScriptedReceiver {
@@ -11,7 +11,7 @@ public class Ticker : MonoBehaviour, LevelScriptedReceiver {
 		tick = GetComponent < AudioSource >();
 	}
 	
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		if (type == 1) {
 			tick.Play();
 		}

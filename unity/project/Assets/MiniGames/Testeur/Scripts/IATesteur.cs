@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class IATesteur : MonoBehaviour, LevelScriptedReceiver {
@@ -12,7 +12,7 @@ public class IATesteur : MonoBehaviour, LevelScriptedReceiver {
 		anim = GetComponent < Animator >();
 	}
 	
-	public void onAction (int type) {
+	public void OnAction (int type) {
 		if (type == 1) {
 			anim.SetTrigger ("change");
 			clap.Play();

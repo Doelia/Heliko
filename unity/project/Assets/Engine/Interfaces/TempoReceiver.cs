@@ -3,5 +3,5 @@ using System.Collections;
 
 public interface TempoReceiver
 {
-	void onStep (int nStep);
+	void OnStep (int nStep);
 }
