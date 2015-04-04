@@ -3,7 +3,6 @@ using System.Collections;
 
 public class InterfacePauseGame : HelikoObject {
 
-	public GameObject loadingScreen;
 	public GameObject pauseMenu;
 
 	public GameObject pauseIcon;

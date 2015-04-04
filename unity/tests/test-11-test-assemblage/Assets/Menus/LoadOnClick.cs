@@ -1,17 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LoadOnClick : MonoBehaviour {
+public class LoadOnClick : HelikoObject {
 
-	public GameObject loadingScreen;
+	private TransitionScreen loadingScreen;
+
+	public new void Start() {
+		base.Start ();
+		loadingScreen = this.getTransitionScreen();
+	}
 
 	public void LoadScene(int level) {
-		loadingScreen.SetActive(true);
+		loadingScreen.openLoadingScene();
+		loadingScreen.keepItAfterLoading();
 		Application.LoadLevelAsync(level);
 	}
 
 	public void ReloadScene() {
-		loadingScreen.SetActive(true);
+		loadingScreen.openLoadingScene();
+		loadingScreen.keepItAfterLoading();
 		Application.LoadLevel(Application.loadedLevel);
 	}
 }

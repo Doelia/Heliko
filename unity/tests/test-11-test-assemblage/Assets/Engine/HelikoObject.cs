@@ -17,12 +17,21 @@ public class HelikoObject : MonoBehaviour {
 		}
 	}
 
+	public TransitionScreen getTransitionScreen() {
+		if (GameObject.Find ("TransitionScreen") == null) {
+			Debug.LogError("Impossible de trouver l'objet TransitionScreen dans la scène");
+		}
+		TransitionScreen o = GameObject.Find ("TransitionScreen").GetComponent<TransitionScreen>();
+		if (!o.isStart) o.Start ();
+		return o;
+	}
+
 	public BeatCounter getBeatCounter() {
 		if (GameObject.Find ("BeatCounter") == null) {
 			Debug.LogError("Impossible de trouver l'objet BeatCounter dans la scène");
 		}
 		BeatCounter o = GameObject.Find ("BeatCounter").GetComponent<BeatCounter>();
-		o.Start ();
+		if (!o.isStart) o.Start ();
 		return o;
 	}
 
