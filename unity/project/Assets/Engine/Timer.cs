@@ -44,12 +44,12 @@ public abstract class Timer : HelikoObject {
 		
 		music = audioSource.GetComponent<MusicTempo>();
 
-		Debug.Log("Time between ticks : "+music.getTimePeriod()*1000);
+		//Debug.Log("Time between ticks : "+music.getTimePeriod()*1000);
 
-		float delayMS = myMsDelayStartCount + (myDelayTicks*music.getTimePeriod()*1000f);
+		float delayMS = myMsDelayStartCount + (myDelayTicks*music.GetTimePeriod()*1000f);
 
-		sampleDelay = ((float) delayMS / 1000f) * music.getFrequency();
-		samplePeriod = music.getSamplePeriod();
+		sampleDelay = ((float) delayMS / 1000f) * music.GetFrequency();
+		samplePeriod = music.GetSamplePeriod();
 		nextBeatSample = sampleDelay;
 
 		if (startCountAtLoad) {

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -19,12 +19,12 @@ public class GUIDebug : HelikoObject {
 	}
 
 	public void SetMusicPercentage() {
-		bc.getMusic().setMusicPercentage(slider.value / 100.0f);	
+		bc.getMusic().SetMusicPercentage(slider.value / 100.0f);	
 	}
 	
 	void Update () {
 		failures.text = "Echecs : " + playerActions.getFailureCount();
 		percentage.text = "Pourcentage : " + playerActions.getSuccessPercencage();
-		avancement.value = bc.getMusic().getMusicPercentage();
+		avancement.value = bc.getMusic().GetMusicPercentage();
 	}
 }

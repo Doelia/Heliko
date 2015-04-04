@@ -49,28 +49,15 @@ public class PlayerEventListener : HelikoObject
 		}
 		#if UNITY_ANDROID || UNITY_IOS
 
-		/*foreach (Touch touch in Input.touches) {
-			if (touch.phase == TouchPhase.Began) {
-				foreach (PlayerEventReceiver e in this.observers) {
-					e.onFinger (1);
-				}
-			}
-		}
-*/
-		
-		if (Input.touchCount > 0) 
-		{
-			switch (Input.GetTouch(0).phase) 
-			{
+		if (Input.touchCount > 0) {
+			switch (Input.GetTouch(0).phase) {
 				case TouchPhase.Began:
-				touchScreen=true;
+				touchScreen = true;
 				Vector2 pos = Camera.main.ScreenToWorldPoint(new Vector2(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y));
-				if(pos.x>0)
-				{
+				if (pos.x > 0) {
 					sendEvent(1);
 				}
-				else
-				{
+				else {
 					sendEvent(2);
 				}
 				break;  

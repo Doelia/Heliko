@@ -6,13 +6,12 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 	public LevelScripted level; // Utilisé pour le connect et pour tester le good
 
 	private ArrayList successStep;
-	private int failuresCount;
+	private int failuresCount; // Nombre de fail total
 	private int stepsCount;
+	private int nbrFailInLoop = 0; // Nombre de fail dans une loop
 	private ArrayList observers;
 
 	private BeatCounter bc;
-
-	int nbrFailInLoop = 0;
 
 	public void Awake () {
 		this.observers = new ArrayList ();
@@ -51,9 +50,14 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 				return true;
 			}
 		}
+		addFail();
+		return false;
+	}
+
+	private void addFail() {
+		nbrFailInLoop++;
 		failuresCount++;
 		this.notifyFailure();
-		return false;
 	}
 
 	public void notifyFailure() {
@@ -71,27 +75,6 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 	public void notifySuccesLoop() {
 		foreach (PlayerActionReceiver e in this.observers) {
 			e.OnSuccessLoop();
-		}
-	}
-
-	public void OnAction(int action) {
-		if (action == -1) {
-			if (nbrFailInLoop == 0) {
-				notifySuccesLoop();
-			}
-			nbrFailInLoop = 0;
-		} else {
-			stepsCount++;
-		}
-	}
-
-	public void OnStep (int nBeat) {
-		if (nBeat > 2) {
-			int previousStep = nBeat-2;
-			if (level.isStepUseful (previousStep) && !successStep.Contains(previousStep)) {
-				failuresCount++;
-				this.notifyFailure();
-			}
 		}
 	}
 
@@ -113,4 +96,26 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		}
 		return (int) (100 * (1.0f - ((float)failuresCount) / ((float)stepsCount)));
 	}
+
+	// EVENT RECEIVER
+	public void OnAction(int action) {
+		if (action == -1) { // Fin de la boucle
+			if (nbrFailInLoop == 0) {
+				notifySuccesLoop();
+			}
+			nbrFailInLoop = 0;
+		} else {
+			stepsCount++;
+		}
+	}
+	
+	public void OnStep (int nBeat) {
+		if (nBeat > 2) {
+			int previousStep = nBeat-2;
+			if (level.isStepUseful (previousStep) && !successStep.Contains(previousStep)) {
+				this.addFail();
+			}
+		}
+	}
+
 }

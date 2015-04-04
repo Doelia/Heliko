@@ -15,7 +15,7 @@ public class BeatCounter : Timer {
 	public float getScore() {
 		float currentSample = audioSource.timeSamples - sampleDelay;
 		float score = currentSample % samplePeriod;
-		if(score > samplePeriod / 2)
+		if (score > samplePeriod / 2)
 			return Mathf.Abs(score - samplePeriod);
 		else
 			return score;

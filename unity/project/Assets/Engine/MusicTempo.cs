@@ -12,27 +12,27 @@ public class MusicTempo : HelikoObject {
 		this.audioSource = this.GetComponent<AudioSource>();
 	}
 
-	public float getTimePeriod() {
+	public float GetTimePeriod() {
 		return 60f / (bpm * scalar);
 	}
 
-	public float getSamplePeriod() {
+	public float GetSamplePeriod() {
 		return (60f / (bpm * scalar)) * audioSource.clip.frequency;
 	}
 
-	public int getFrequency() {
+	public int GetFrequency() {
 		return this.audioSource.clip.frequency;
 	}
 
-	public float getMusicPercentage() {
+	public float GetMusicPercentage() {
 		return ((float)audioSource.timeSamples / (float)audioSource.clip.samples);
 	}
 	
-	public void setMusicPercentage(float p) {
+	public void SetMusicPercentage(float p) {
 		audioSource.timeSamples = (int)(audioSource.clip.samples * p);
 	}
 
-	public void pauseMusic() {
+	public void PauseMusic() {
 		this.audioSource.Pause();
 	}
 
@@ -42,7 +42,7 @@ public class MusicTempo : HelikoObject {
 	/// </summary>
 	/// <returns>The time passed in MS</returns>
 	public float getTimePassed() {
-		return (float) this.audioSource.timeSamples / (float) getFrequency() * 1000;
+		return (float) this.audioSource.timeSamples / (float) GetFrequency() * 1000;
 	}
 	
 }
