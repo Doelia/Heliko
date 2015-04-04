@@ -3,17 +3,27 @@ using System.Collections;
 
 public class TransitionScreen : HelikoObject {
 
+	public Transform loadingImage;
+
 	public new void Start() {
+		if (isStart) return;
 		base.Start ();
-		this.gameObject.SetActive(false);
+	}
+
+	public bool LoadingScreenIsOpen() {
+		return this.GetComponent<Canvas>().enabled;
 	}
 
 	public void openLoadingScene() {
-		this.gameObject.SetActive(true);
+		Debug.Log ("openLoadingScene");
+		this.GetComponent<Canvas>().enabled = true;
+		loadingImage.GetComponent<Animator>().SetTrigger("show");
 	}
 
 	public void closeLoadingScene() {
-		this.gameObject.SetActive(false);
+		Debug.Log ("closeLoadingScene");
+		loadingImage.GetComponent<Animator>().SetTrigger("hide");
+		//this.GetComponent<Canvas>().enabled = false;
 	}
 
 	public void fadeInCartoon() {

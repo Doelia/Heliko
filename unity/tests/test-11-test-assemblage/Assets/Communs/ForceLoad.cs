@@ -5,7 +5,7 @@ public class ForceLoad : MonoBehaviour {
 
 	public GameObject[] objects;
 
-	public void Start () {
+	public void Awake () {
 		foreach (GameObject item in objects) {
 			item.SetActive(true);
 		}
