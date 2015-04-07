@@ -1,7 +1,7 @@
 ## Réalisation d'un jeu 2D pour mobile
 *Team OufMania*
 
-![heliko](https://github.com/Doelia/oufmania/blob/master/graphismes/escargotBest.png "Heliko")
+![heliko](https://github.com/Doelia/oufmania/blob/master/graphismes/others/icon2.png "Heliko")
 
 ### Mini-blog
 <!--A compléter au fur et à mesure pour le gantt final-->
