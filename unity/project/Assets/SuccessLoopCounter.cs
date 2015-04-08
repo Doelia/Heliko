@@ -23,11 +23,16 @@ public class SuccessLoopCounter : MonoBehaviour {
 	}
 
 	private void updateDisplay() {
-		this.GetComponent<Text>().text = nbrSuccess+"/"+max;
+		this.GetComponent<Text>().text = "Encore "+(max-nbrSuccess)+" fois";
+	}
+
+	private void zoomIt() {
+		this.GetComponent<Animator>().SetTrigger("zoom");
 	}
 
 	public void AddSuccess() {
 		this.nbrSuccess++;
+		this.zoomIt();
 		updateDisplay();
 	}
 
@@ -37,5 +42,11 @@ public class SuccessLoopCounter : MonoBehaviour {
 
 	public void Show() {
 		this.gameObject.SetActive(true);
-	} 
+	}
+
+	public void Update() {
+		if (Input.GetKeyDown(KeyCode.N)) {
+			this.AddSuccess();
+		}
+	}
 }

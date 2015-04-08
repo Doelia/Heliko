@@ -18,7 +18,6 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 		successLoopCounter.Reset (3);
 		successLoopCounter.Show ();
 
-
 		levelIA.connect(GameObject.Find("IA").GetComponent<PNJ>());
 
 		GetPlayerActions().level = levelPlayer;
@@ -50,6 +49,7 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	private void StopStep() {
 		GetBeatCounter().getMusic ().PauseMusic();
 		endStep();
+		successLoopCounter.Hide();
 	}
 
 
