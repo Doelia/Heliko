@@ -12,6 +12,7 @@ public class CartoonTransition : MonoBehaviour {
 	public Transform west;
 
 	public float pauseDuration = 0;
+	int force = 100000;
 
 	private float elapsedTime;
 
@@ -38,16 +39,22 @@ public class CartoonTransition : MonoBehaviour {
 	public IEnumerator goAnim() {
 		while (true) {
 			if(rond != null) {
-				if (cpt * reduceFactor >= 1 - (1 * reduceFactor)) {
+				if (cpt * reduceFactor >= 1 - (0 * reduceFactor)) {
 					break;
 				}
 
 				ignoreCollisions();
 				
 				if ((cpt*reduceFactor <= minSize) ||
-				    (elapsedTime > pauseDuration && cpt * reduceFactor < 1 - (1 * reduceFactor))) {
-					cpt++;
-					int force = 1000;
+				    (elapsedTime > pauseDuration && cpt * reduceFactor < 1 - (0 * reduceFactor))) {
+
+					if((elapsedTime > pauseDuration && cpt * reduceFactor < 1 - (0 * reduceFactor))) {
+						cpt += Time.deltaTime * 0.2f;
+					} else {
+						cpt += Time.deltaTime;
+					}
+					Debug.Log ("cpt : " + (Time.deltaTime / reduceFactor));
+
 					Vector3 forceDirection = new Vector3(0, -force, 0);
 					north.GetComponent<Rigidbody2D>().velocity = forceDirection;
 					
