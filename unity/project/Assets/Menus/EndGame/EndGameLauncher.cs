@@ -19,8 +19,8 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 	}
 
 	public void testEndGame() {
-		nbFails = 10;
-		pourcentSuccess = 90;
+		nbFails = 0;
+		pourcentSuccess = 100;
 		this.goEndGame();
 	}
 

@@ -18,15 +18,27 @@ public class EndGame : HelikoObject {
 		EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
 		if (endGameInformations != null) {
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
+			this.gameObject.SetActive(true);
+			StartCoroutine(this.startShowing());
 		} else {
 			Debug.LogWarning("Impossible de trouver l'objet EndGameParameters");
 		}
+	}
+
+	// Pour le test (mode dev)
+	public void testIt() {
+		//this.setValues(95,1,2);
+		Debug.Log ("Rank = "+getRank ());
+		this.gameObject.SetActive(true);
+		StartCoroutine(this.startShowing());
 	}
 
 	public void setValues(int p_pourcent, int p_nbrErreurs, int p_idMiniGame) {
 		this.pourcent = p_pourcent;
 		this.nbrErreurs = p_nbrErreurs;
 		this.idMiniGame = p_idMiniGame;
+
+		Debug.Log ("idMiniGame = "+idMiniGame+", nbrErreurs="+nbrErreurs+", pourcent="+pourcent);
 		
 		//enregistrement résultat
 		int nbrEtoiles = getRank();
