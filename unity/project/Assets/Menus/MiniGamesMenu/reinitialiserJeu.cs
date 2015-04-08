@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class reinitialiserJeu : MonoBehaviour {
+public class ReinitialiserJeu : MonoBehaviour {
 
 	// Use this for initialization
 	public void Reinitialiser () {
