@@ -36,40 +36,38 @@ public class CartoonTransition : MonoBehaviour {
 		Physics2D.IgnoreCollision(east.GetComponent<BoxCollider2D>(), west.GetComponent<BoxCollider2D>());*/
 	}
 
+	void moveElements() {
+		Vector3 forceDirection = new Vector3(0, -force, 0);
+		north.GetComponent<Rigidbody2D>().velocity = forceDirection;
+		
+		forceDirection = new Vector3(0, force, 0);
+		south.GetComponent<Rigidbody2D>().velocity = forceDirection;
+		
+		forceDirection = new Vector3(force, 0, 0);
+		east.GetComponent<Rigidbody2D>().velocity = forceDirection;
+		
+		forceDirection = new Vector3(-force, 0, 0);
+		west.GetComponent<Rigidbody2D>().velocity = forceDirection;
+		
+		rond.localScale = new Vector3(1 - reduceFactor * cpt,
+		                              1 - reduceFactor * cpt,
+		                              1);
+	}
+
 	public IEnumerator goAnim() {
 		while (true) {
 			if(rond != null) {
 				if (cpt * reduceFactor >= 1 - (0 * reduceFactor)) {
 					break;
 				}
-
 				ignoreCollisions();
 				
-				if ((cpt*reduceFactor <= minSize) ||
-				    (elapsedTime > pauseDuration && cpt * reduceFactor < 1 - (0 * reduceFactor))) {
-
-					if((elapsedTime > pauseDuration && cpt * reduceFactor < 1 - (0 * reduceFactor))) {
-						cpt += Time.deltaTime * 0.2f;
-					} else {
-						cpt += Time.deltaTime;
-					}
-					Debug.Log ("cpt : " + (Time.deltaTime / reduceFactor));
-
-					Vector3 forceDirection = new Vector3(0, -force, 0);
-					north.GetComponent<Rigidbody2D>().velocity = forceDirection;
-					
-					forceDirection = new Vector3(0, force, 0);
-					south.GetComponent<Rigidbody2D>().velocity = forceDirection;
-					
-					forceDirection = new Vector3(force, 0, 0);
-					east.GetComponent<Rigidbody2D>().velocity = forceDirection;
-					
-					forceDirection = new Vector3(-force, 0, 0);
-					west.GetComponent<Rigidbody2D>().velocity = forceDirection;
-					
-					rond.localScale = new Vector3(1 - reduceFactor * cpt,
-					                              1 - reduceFactor * cpt,
-					                              1);
+				if (cpt*reduceFactor <= minSize) {
+					cpt += Time.deltaTime;
+					moveElements();
+				} else if(elapsedTime > pauseDuration && cpt * reduceFactor < 1 - (0 * reduceFactor)) {
+					cpt += Time.deltaTime * 0.2f;
+					moveElements();
 				} else {
 					elapsedTime += Time.deltaTime;
 				}
