@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class numSceneLevel : MonoBehaviour {
+public class NumSceneLevel : MonoBehaviour {
 
 	public int numLevel;
 }
