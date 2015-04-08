@@ -5,6 +5,7 @@ public class Tuto : HelikoObject {
 
 	public StepTuto[] steps;
 	int nStep = 0;
+	public int idGame;
 
 	public new void Start() {
 		initTuto();
@@ -25,5 +26,13 @@ public class Tuto : HelikoObject {
 		steps[nStep].play();
 		nStep++;
 	}
+
+	private void startLevel() {
+		this.GetComponent<LoadOnClick>().LoadScene(constantes.getNumSceneFromIdMiniGame(idGame));
+	}
+
+	public void skipTuto() {
+		this.startLevel();
+	} 
 
 }
