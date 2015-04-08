@@ -118,4 +118,6 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		}
 	}
 
+	public void OnEndMusic() { }
+
 }

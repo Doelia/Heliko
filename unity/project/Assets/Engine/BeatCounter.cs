@@ -36,6 +36,10 @@ public class BeatCounter : Timer {
 		this.NotifyChildren();
 	}
 
+	protected override void endMusic() {
+		this.NotifyChildrenEndMusic();
+	}
+
 	public bool isInPause() {
 		return stopIt || !this.audioSource.isPlaying;
 	}
@@ -50,6 +54,12 @@ public class BeatCounter : Timer {
 	private void NotifyChildren () {
 		foreach (TempoReceiver e in this.observers) {
 			e.OnStep (this.getNBeat());
+		}
+	}
+
+	private void NotifyChildrenEndMusic () {
+		foreach (TempoReceiver e in this.observers) {
+			e.OnEndMusic();
 		}
 	}
 

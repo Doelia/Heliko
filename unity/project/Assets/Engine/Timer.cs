@@ -20,6 +20,7 @@ public abstract class Timer : HelikoObject {
 	private int nBeat = 0;
 
 	protected abstract void beat();
+	protected abstract void endMusic();
 
 	protected void setSampleDelay(int msDelayStartCount, int delayTicks) {
 		myMsDelayStartCount = msDelayStartCount;
@@ -76,6 +77,9 @@ public abstract class Timer : HelikoObject {
 					nBeat++;
 					nextBeatSample += samplePeriod;
 				}
+			}
+			if (music.IsFinished()) {
+				this.endMusic();
 			}
 			yield return new WaitForSeconds(loopTime / 1000f);
 		}

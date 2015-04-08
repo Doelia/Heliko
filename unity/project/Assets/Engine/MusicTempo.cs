@@ -27,6 +27,10 @@ public class MusicTempo : HelikoObject {
 	public float GetMusicPercentage() {
 		return ((float)audioSource.timeSamples / (float)audioSource.clip.samples);
 	}
+
+	public bool IsFinished() {
+		return (audioSource.timeSamples >= audioSource.clip.samples);
+	}
 	
 	public void SetMusicPercentage(float p) {
 		audioSource.timeSamples = (int)(audioSource.clip.samples * p);
@@ -44,5 +48,7 @@ public class MusicTempo : HelikoObject {
 	public float getTimePassed() {
 		return (float) this.audioSource.timeSamples / (float) GetFrequency() * 1000;
 	}
+
+
 	
 }

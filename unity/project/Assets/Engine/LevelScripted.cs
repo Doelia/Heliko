@@ -95,6 +95,10 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 		}
 	}
 
+	public void OnEndMusic() {
+
+	}
+
 	// NOTIFICATIONS
 
 	public void connect (LevelScriptedReceiver r) {
