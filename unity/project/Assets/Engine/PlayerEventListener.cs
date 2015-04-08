@@ -5,6 +5,7 @@ public class PlayerEventListener : HelikoObject
 {
 	private BeatCounter bc;
 
+
 	public bool onKeyDown = true;
 	public float timeBeforeLongTouch;
 
@@ -14,14 +15,35 @@ public class PlayerEventListener : HelikoObject
 	private bool touchScreen;
 	private Vector2 mouvement;
 	private float timeTouchTotal;
+	private Rect rectanglePause;
 	#endif
+	
 
 	public new void Start()
 	{
 		base.Start();
 		bc = GetBeatCounter();
-		
+
+
+
 		#if UNITY_ANDROID || UNITY_IOS
+		RectTransform pauseIcon=null;
+
+		if (GameObject.Find ("PauseIcon") == null) {
+			Debug.LogError("Impossible de trouver l'objet PauseIcon dans la scène");
+		}
+		else
+		{
+			pauseIcon=GameObject.Find ("PauseIcon").GetComponent<RectTransform>();
+		}
+		Vector3[] coinsPauseIcons;
+		coinsPauseIcons=new Vector3[4];
+		pauseIcon.GetWorldCorners(coinsPauseIcons);
+		rectanglePause= new Rect();
+		rectanglePause.xMin=coinsPauseIcons[0].x;
+		rectanglePause.xMax=coinsPauseIcons[2].x;
+		rectanglePause.yMin=coinsPauseIcons[0].y;
+		rectanglePause.yMax=coinsPauseIcons[1].y;
 		touchScreen = false;
 		timeTouchTotal = 0F;
 		mouvement = Vector2.zero;
@@ -50,11 +72,19 @@ public class PlayerEventListener : HelikoObject
 		#if UNITY_ANDROID || UNITY_IOS
 
 		if (Input.touchCount > 0) {
+		
+
 			switch (Input.GetTouch(0).phase) {
 				case TouchPhase.Began:
+				Vector2 posDoigt = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+
+				//si c'est sur le bouton Pause
+				if(rectanglePause.Contains(Input.GetTouch(0).position))
+				{
+					return;
+				}
 				touchScreen = true;
-				Vector2 pos = Camera.main.ScreenToWorldPoint(new Vector2(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y));
-				if (pos.x > 0) {
+				if (posDoigt.x > 0) {
 					sendEvent(1);
 				}
 				else {
