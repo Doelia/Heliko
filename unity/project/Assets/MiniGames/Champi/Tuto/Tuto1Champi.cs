@@ -6,7 +6,7 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	public LevelScripted levelPlayer;
 	public LevelScripted levelIA;
 
-	int nbrLoopSucces = 0;
+	public SuccessLoopCounter successLoopCounter;
 
 	public new void Start() {
 		if (isStart) return;
@@ -15,6 +15,9 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	}
 
 	public override void play () {
+		successLoopCounter.Reset (3);
+		successLoopCounter.Show ();
+
 		levelIA.connect(GameObject.Find("IA").GetComponent<PNJ>());
 
 		GetPlayerActions().level = levelPlayer;
@@ -37,15 +40,16 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	}
 
 	public void OnSuccessLoop() {
-		nbrLoopSucces++;
-		if (nbrLoopSucces >= 1) {
-			this.stopStep();
+		successLoopCounter.AddSuccess();
+		if (successLoopCounter.AllSuccess()) {
+			this.StopStep();
 		}
 	}
 
-	private void stopStep() {
+	private void StopStep() {
 		GetBeatCounter().getMusic ().PauseMusic();
 		endStep();
+		successLoopCounter.Hide();
 	}
 
 
