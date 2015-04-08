@@ -19,8 +19,6 @@ public class Ending : MonoBehaviour {
 			cpt++;
 		}
 
-		//sprite.position = new Vector3(x, getBounds(rond).center.y - getBounds(rond).center.y * cpt * reduceFactor, 0);
-
 		container.localScale = new Vector3(1 - reduceFactor * cpt,
 		                              1 - reduceFactor * cpt,
 		                              1);
