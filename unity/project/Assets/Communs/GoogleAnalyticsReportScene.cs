@@ -8,10 +8,8 @@ public class GoogleAnalyticsReportScene : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	googleAnalytics.LogScreen(nomScene);
+			/*googleAnalytics.LogScreen(new AppViewHitBuilder()
+		                          .SetScreenName(nomScene));*/
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
