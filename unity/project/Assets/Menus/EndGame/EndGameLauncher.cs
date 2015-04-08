@@ -14,7 +14,7 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 
 	public void goEndGame() {
 		GameObject.DontDestroyOnLoad(this.gameObject);
-		this.GetComponent<LoadOnClick>().LoadScene(4);
+		this.GetComponent<LoadOnClick>().LoadScene(constantes.getNumSceneEndGame());
 	}
 
 	public void OnEndMusic() {
