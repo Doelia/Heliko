@@ -7,7 +7,7 @@ public class LoadOnClick : HelikoObject {
 
 	public new void Start() {
 		base.Start ();
-		loadingScreen = this.GetTransitionScreen();
+		loadingScreen = this.GetTransitionScreen(); // Auto créé s'il n'existe pas
 	}
 
 	public void LoadScene(int level) {
