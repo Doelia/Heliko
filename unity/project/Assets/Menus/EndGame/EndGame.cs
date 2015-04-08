@@ -35,6 +35,15 @@ public class EndGame : HelikoObject {
 		this.pourcent = p_pourcent;
 		this.nbrErreurs = p_nbrErreurs;
 		this.idMiniGame = p_idMiniGame;
+		
+		//enregistrement résultat
+		int nbrEtoiles= getRank();
+		if(nbrEtoiles> PlayerPrefs.GetInt("etoileLevel"+p_idMiniGame,-1))
+		{
+			PlayerPrefs.SetInt("etoileLevel"+p_idMiniGame,nbrEtoiles);
+		}
+		
+		
 	}
 
 	public int getRank() {
