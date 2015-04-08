@@ -15,7 +15,6 @@ public class CartoonTransition : MonoBehaviour {
 
 	private float elapsedTime;
 
-	private bool started = false;
 	private float cpt = 0;
 	public float reduceFactor = 0.01f;
 	
