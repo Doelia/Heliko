@@ -23,26 +23,16 @@ public class EndGame : HelikoObject {
 		}
 	}
 
-	// Pour le test (mode dev)
-	public void testIt() {
-		//this.setValues(95,1,2);
-		Debug.Log ("Rank = "+getRank ());
-		this.gameObject.SetActive(true);
-		StartCoroutine(this.startShowing());
-	}
-
 	public void setValues(int p_pourcent, int p_nbrErreurs, int p_idMiniGame) {
 		this.pourcent = p_pourcent;
 		this.nbrErreurs = p_nbrErreurs;
 		this.idMiniGame = p_idMiniGame;
 		
 		//enregistrement résultat
-		int nbrEtoiles= getRank();
-		if(nbrEtoiles> PlayerPrefs.GetInt("etoileLevel"+p_idMiniGame,-1))
-		{
+		int nbrEtoiles = getRank();
+		if (nbrEtoiles > PlayerPrefs.GetInt("etoileLevel"+p_idMiniGame,-1)) {
 			PlayerPrefs.SetInt("etoileLevel"+p_idMiniGame,nbrEtoiles);
 		}
-		
 		
 	}
 

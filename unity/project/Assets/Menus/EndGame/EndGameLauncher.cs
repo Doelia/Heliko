@@ -4,6 +4,8 @@ using System.Collections;
 public class EndGameLauncher : HelikoObject, TempoReceiver  {
 
 	public int idMiniGame;
+	public CartoonTransition cartoonTransition;
+
 	[HideInInspector] public int nbFails;
 	[HideInInspector] public int pourcentSuccess;
 
@@ -12,8 +14,21 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 		GetBeatCounter().Connect(this);
 	}
 
-	public void goEndGame() {
+	private void goEndGame() {
+		StartCoroutine(endGame ());
+	}
+
+	public void testEndGame() {
+		nbFails = 10;
+		pourcentSuccess = 90;
+		this.goEndGame();
+	}
+
+	private IEnumerator endGame() {
 		GameObject.DontDestroyOnLoad(this.gameObject);
+		cartoonTransition.gameObject.SetActive(true);
+		yield return StartCoroutine(cartoonTransition.goAnim());
+		yield return null;
 		this.GetComponent<LoadOnClick>().LoadScene(constantes.getNumSceneEndGame());
 	}
 
