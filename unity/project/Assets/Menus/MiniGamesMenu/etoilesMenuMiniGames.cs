@@ -2,17 +2,18 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class etoilesMenuMiniGames : MonoBehaviour {
+public class etoilesMenuMiniGames : HelikoObject {
 
 	private int nbrEtoiles;
 	private int idMiniGame;
 	// Use this for initialization
-	void Start () {
-		idMiniGame=this.transform.parent.GetComponent<numSceneLevel>().numLevel;
+	new void Start () {
+		base.Start();
+		idMiniGame=constantes.getIdMiniGameFromNumScene(this.transform.parent.GetComponent<numSceneLevel>().numLevel);
 		nbrEtoiles=PlayerPrefs.GetInt("etoileLevel"+idMiniGame,0);
-		for(int i=nbrEtoiles+1;i<=3;i++)
+		for(int i=nbrEtoiles;i<3;i++)
 		{
-			GameObject.Find ("s"+i).GetComponent<Image>().enabled=false;
+			GetComponentsInChildren<Image>()[i].enabled=false;
 		}
 	}
 	
