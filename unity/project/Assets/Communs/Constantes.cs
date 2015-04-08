@@ -30,6 +30,13 @@ public class Constantes : MonoBehaviour {
 		return id;
 	}
 
+	public int getTutoNumSceneFromIdMinigame(int id) {
+		if (id == 2) {
+			return 5;
+		}
+		return id;
+	}
+
 	public int getIdMiniGameFromNumScene(int numScene) {
 		return numScene;
 	}

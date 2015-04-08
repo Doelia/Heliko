@@ -8,6 +8,7 @@ public class Tuto : HelikoObject {
 	public int idGame;
 
 	public new void Start() {
+		base.Start ();
 		initTuto();
 		startTuto();
 	}
@@ -23,6 +24,9 @@ public class Tuto : HelikoObject {
 	}
 
 	public void next() {
+		if (nStep >= steps.Length) {
+			startLevel();
+		}
 		steps[nStep].play();
 		nStep++;
 	}
