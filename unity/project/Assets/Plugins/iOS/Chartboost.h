@@ -1,7 +1,7 @@
 /*
  * Chartboost.h
  * Chartboost
- * 5.2.0
+ * VERSION
  *
  * Copyright 2011 Chartboost. All rights reserved.
  */
@@ -26,8 +26,6 @@ typedef NS_ENUM(NSUInteger, CBFramework) {
     CBFrameworkCordova,
     /*! CocoonJS. */
     CBFrameworkCocoonJS,
-    /*! Cocos2d-x. */
-    CBFrameworkCocos2dx,
     /*! MoPub. */
     CBFrameworkMoPub,
     /*! Fyber. */
@@ -63,8 +61,6 @@ typedef NS_ENUM(NSUInteger, CBLoadError) {
     CBLoadErrorUserCancellation,
     /*! No location detected. */
     CBLoadErrorNoLocationFound,
-    /*! Video Prefetching is not finished */
-    CBLoadErrorPrefetchingIncomplete,
 };
 
 /*!
@@ -496,14 +492,6 @@ extern CBLocation const CBLocationDefault;
  developer to manage the caching behavior of Chartboost impressions.
  */
 + (BOOL)getAutoCacheAds;
-
-/*!
- @abstract
- Close any visible chartboost impressions (interstitials, more apps, rewarded video, etc..) and the loading view (if visible)
- 
- @discussion There are some use cases when this functionality is useful.
- */
-+ (void)closeImpression;
 
 /*!
  @abstract

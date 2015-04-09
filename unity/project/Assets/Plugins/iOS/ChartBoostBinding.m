@@ -235,17 +235,12 @@ void _chartBoostSetShouldPrefetchVideoContent(BOOL shouldPrefetch)
 
 void _chartBoostTrackInAppPurchaseEvent(const char * receipt, const char * productTitle, const char * productDescription, const char * productPrice, const char * productCurrency, const char * productIdentifier)
 {
-    // The API was vague previously about what the receipt string meant.
-    // We now expect a base64 encoded string.
-    [CBAnalytics trackInAppPurchaseEventWithString:GetStringParamOrNil(receipt) productTitle:GetStringParamOrNil(productTitle) productDescription:GetStringParamOrNil(productDescription) productPrice:[NSDecimalNumber decimalNumberWithString:GetStringParamOrNil(productPrice)] productCurrency:GetStringParamOrNil(productCurrency) productIdentifier:GetStringParamOrNil(productIdentifier)];
+    [CBAnalytics trackInAppPurchaseEvent:[GetStringParamOrNil(receipt) dataUsingEncoding:NSUTF8StringEncoding] productTitle:GetStringParamOrNil(productTitle) productDescription:GetStringParamOrNil(productDescription) productPrice:[NSDecimalNumber decimalNumberWithString:GetStringParamOrNil(productPrice)] productCurrency:GetStringParamOrNil(productCurrency) productIdentifier:GetStringParamOrNil(productIdentifier)];
 }
+
 
 void _chartBoostSetGameObjectName(const char *name)
 {
     [ChartBoostManager sharedManager].gameObjectName = GetStringParam(name);
 }
 
-void _chartBoostTrackLevelInfo(const char * eventLabel, int levelType, int mainLevel, int subLevel, const char * description)
-{
-    [CBAnalytics trackLevelInfo:GetStringParamOrNil(eventLabel) eventField:(CBLevelType)levelType mainLevel:mainLevel subLevel:subLevel description:GetStringParamOrNil(description)];
-}

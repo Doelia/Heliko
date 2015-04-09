@@ -174,17 +174,7 @@ namespace ChartboostSDK {
 		public static void setShouldPrefetchVideoContent(bool shouldPrefetch) {
 			Log("Unity : setShouldPrefetchVideoContent with value = " + shouldPrefetch);
 		}
-
-		public static void trackLevelInfo(String eventLabel, CBLevelType type, int mainLevel, int subLevel, String description) {
-			int levelType = (int)type;
-			Log(String.Format("Unity : PIA Level Tracking:\n\teventLabel = {0}\n\ttype = {1}\n\tmainLevel = {2}\n\tsubLevel = {3}\n\tdescription = {4}", eventLabel, levelType, mainLevel, subLevel, description));
-		}
-
-        public static void trackLevelInfo(String eventLabel, CBLevelType type, int mainLevel, String description) {
-        	int levelType = (int)type;
-            Log(String.Format("Unity : PIA Level Tracking:\n\teventLabel = {0}\n\ttype = {1}\n\tmainLevel = {2}\n\tdescription = {3}", eventLabel, levelType, mainLevel, description));
-        }
-
+		
 		public static void pause(bool paused) {
 			Log("Unity : pause");
 		}
@@ -279,8 +269,6 @@ namespace ChartboostSDK {
 		private static extern void _chartBoostSetGameObjectName(string name);
 		[DllImport("__Internal")]
 		private static extern void _chartBoostSetStatusBarBehavior(CBStatusBarBehavior statusBarBehavior);
-		[DllImport("__Internal")]
-		private static extern void _chartBoostTrackLevelInfo(String eventLabel, int levelType, int mainLevel, int subLevel, String description);
 		
 		/// Initializes the Chartboost plugin.
 		/// This must be called before using any other Chartboost features.
@@ -292,6 +280,7 @@ namespace ChartboostSDK {
 			if (Application.platform == RuntimePlatform.IPhonePlayer)
 				_chartBoostInit(appID, appSecret);
 			initialized = true;
+			Log("iOS : init (ID:" + appID + ", Signature: " + appSecret + ")");
 		}
 
 		/// Check to see if any chartboost ad or view is visible
@@ -563,25 +552,9 @@ namespace ChartboostSDK {
 		/// Sets whether to prefetch videos or not
 		public static void setShouldPrefetchVideoContent(bool shouldPrefetch) {
 			_chartBoostSetShouldPrefetchVideoContent(shouldPrefetch);
-			Log("iOS : Set setShouldPrefetchVideoContent to = " + shouldPrefetch);
+			Log("iOS : Set setShouldPrefetchVideoContent  to = " + shouldPrefetch);
 		}
-
-		/// PIA Level Tracking info call
-		public static void trackLevelInfo(String eventLabel, CBLevelType type, int mainLevel, int subLevel, String description) {
-			int levelType = (int)type;
-			_chartBoostTrackLevelInfo(eventLabel, levelType, mainLevel, subLevel, description);
-			
-			Log(String.Format("iOS : PIA Level Tracking:\n\teventLabel = {0}\n\ttype = {1}\n\tmainLevel = {2}\n\tsubLevel = {3}\n\tdescription = {4}", eventLabel, levelType, mainLevel, subLevel, description));
-		}
-
-        /// PIA Level Tracking info call
-        public static void trackLevelInfo(String eventLabel, CBLevelType type, int mainLevel, String description) {
-            int levelType = (int)type;
-            _chartBoostTrackLevelInfo(eventLabel, levelType, mainLevel, 0, description);
-            
-            Log(String.Format("iOS : PIA Level Tracking:\n\teventLabel = {0}\n\ttype = {1}\n\tmainLevel = {2}\n\tdescription = {3}", eventLabel, levelType, mainLevel, description));
-        }
-
+		
 		/// IAP Tracking call
 		public static void trackInAppAppleStorePurchaseEvent(string receipt, string productTitle, string productDescription, string productPrice, string productCurrency, string productIdentifier) {
 			_chartBoostTrackInAppPurchaseEvent(receipt, productTitle, productDescription, productPrice, productCurrency, productIdentifier);
@@ -603,6 +576,7 @@ namespace ChartboostSDK {
 				_plugin = pluginClass.CallStatic<AndroidJavaObject>("instance");
 			_plugin.Call("init", appID, appSecret);
 			initialized = true;
+			Log("Android : init (ID:" + appID + ", Signature: " + appSecret + ")");
 		}
 
 		/// Check to see if any chartboost ad or view is visible
@@ -826,23 +800,7 @@ namespace ChartboostSDK {
 		public static void setShouldPrefetchVideoContent(bool shouldPrefetch) {
 			_plugin.Call ("setShouldPrefetchVideoContent", shouldPrefetch);
 		}
-
-		/// PIA Level Tracking info call
-		public static void trackLevelInfo(String eventLabel, CBLevelType type, int mainLevel, int subLevel, String description) {;
-			int levelType = (int)type;
-			_plugin.Call ("trackLevelInfo", eventLabel, levelType, mainLevel, subLevel, description);
-
-			Log(String.Format("Android : PIA Level Tracking:\n\teventLabel = {0}\n\ttype = {1}\n\tmainLevel = {2}\n\tsubLevel = {3}\n\tdescription = {4}", eventLabel, levelType, mainLevel, subLevel, description));
-		}
-
-        /// PIA Level Tracking info call
-        public static void trackLevelInfo(String eventLabel, CBLevelType type, int mainLevel, String description) {;
-            int levelType = (int)type;
-            _plugin.Call ("trackLevelInfo", eventLabel, levelType, mainLevel, description);
-
-            Log(String.Format("Android : PIA Level Tracking:\n\teventLabel = {0}\n\ttype = {1}\n\tmainLevel = {2}\n\tdescription = {3}", eventLabel, levelType, mainLevel, description));
-        }
-
+		
 		/// Sets the name of the game object to be used by the Chartboost Android SDK
 		public static void setGameObjectName(string name) {
 			_plugin.Call("setGameObjectName", name);
