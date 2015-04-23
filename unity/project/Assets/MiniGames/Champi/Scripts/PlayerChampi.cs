@@ -11,12 +11,16 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	public Transform carapace;
 	public Transform champiPlayer;
 
+	public ParticleSystem leftParticles;
+	public ParticleSystem rightParticles;
+
 	private Animator animGauche;
 	private Animator animDroite;
 	private Animator animCarapace;
 	private Animator animChampiPlayer;
 
 	private PlayerActions playerActions;
+	private bool leftPlayed;
 
 	public new void Start () {
 		base.Start();
@@ -32,11 +36,15 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	public void OnFinger (int type) {
 		if (type == 1) {
 			animGauche.SetTrigger ("Down");
+			leftPlayed = false;
 		} else if (type == 2) {
 			animDroite.SetTrigger ("Down");
+			leftPlayed = true;
 		} else {
 			return;
 		}
+		
+
 
 		animCarapace.SetTrigger("Move");
 		animChampiPlayer.SetTrigger("Move");
@@ -44,6 +52,11 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 		bool isGood = playerActions.IsGood(type);
 		if (isGood) {
 			soundGood.GetComponent<AudioSource>().Play();
+			if(leftPlayed) {
+				leftParticles.Play();
+			} else {
+				rightParticles.Play();
+			}
 		} else {
 			soundBad.GetComponent<AudioSource>().Play();
 		}
