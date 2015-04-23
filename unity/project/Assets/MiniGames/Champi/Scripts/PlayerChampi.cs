@@ -13,6 +13,8 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 
 	public ParticleSystem leftParticles;
 	public ParticleSystem rightParticles;
+	public ParticleSystem rightFailParticles;
+	public ParticleSystem leftFailParticles;
 
 	private Animator animGauche;
 	private Animator animDroite;
@@ -59,6 +61,11 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 			}
 		} else {
 			soundBad.GetComponent<AudioSource>().Play();
+			if(leftPlayed) {
+				leftFailParticles.Play();
+			} else {
+				rightFailParticles.Play();
+			}
 		}
 	}
 
