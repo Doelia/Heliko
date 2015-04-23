@@ -18,6 +18,9 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	public Sprite content;
 	public Sprite pasContent;
 
+	public ParticleSystem rightParticles;
+	public ParticleSystem leftParticles;
+
 	public AudioSource sound;
 
 	public new void Start () {
@@ -33,8 +36,10 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	public void OnAction (int type) {
 		if (type == 1) {
 			brasDroit.SetTrigger ("Down");
+			leftParticles.Play();
 		} else if (type == 2) {
 			brasGauche.SetTrigger ("Down");
+			rightParticles.Play();
 		} else {
 			return;
 		}
