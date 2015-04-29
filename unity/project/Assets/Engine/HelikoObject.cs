@@ -5,6 +5,7 @@ public class HelikoObject : MonoBehaviour {
 
 	protected Constantes constantes;
 	protected bool isStart = false;
+	protected UnLockerManager unlockerManager = null;
 
 	public void Start() {
 		if (isStart) return;
@@ -49,5 +50,10 @@ public class HelikoObject : MonoBehaviour {
 		return GameObject.Find ("PlayerEventListener").GetComponent<PlayerEventListener>();
 	}
 
+	public UnLockerManager GetUnlockerManager() {
+		if (unlockerManager == null)
+			unlockerManager = new UnLockerManager();
+		return unlockerManager;
+	}
 
 }
