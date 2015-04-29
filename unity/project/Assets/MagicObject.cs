@@ -7,7 +7,7 @@ public class MagicObject : MonoBehaviour {
 
 	public void ChangeObject(int n) {
 		Sprite sp;
-		sp = sprites[n+1];
+		sp = sprites[n-1];
 		this.GetComponent<SpriteRenderer>().sprite = sp;
 	}
 }

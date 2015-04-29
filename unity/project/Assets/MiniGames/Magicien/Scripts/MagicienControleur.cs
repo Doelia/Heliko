@@ -22,6 +22,5 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver {
 		} else {
 			animBras.SetTrigger ("down");
 		}
-
 	}
 }
