@@ -9,7 +9,7 @@ public class EtoilesMenuMiniGames : HelikoObject {
 
 	public new void Start () {
 		base.Start();
-		idMiniGame = constantes.getIdMiniGameFromNumScene(this.transform.parent.GetComponent<NumSceneLevel>().numLevel);
+		idMiniGame = this.transform.parent.GetComponent<IdMiniGame>().id;
 		nbrEtoiles = PlayerPrefs.GetInt("etoileLevel"+idMiniGame, 0);
 		for (int i = nbrEtoiles; i < 3; i++) {
 			GetComponentsInChildren<Image>()[i].enabled=false;

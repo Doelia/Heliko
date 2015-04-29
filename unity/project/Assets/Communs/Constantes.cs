@@ -15,7 +15,7 @@ public class Constantes : MonoBehaviour {
 	[HideInInspector]
 
 	public int getNumSceneEndGame() {
-		return 4;
+		return 5;
 	}
 
 	public void Awake() {
@@ -27,18 +27,40 @@ public class Constantes : MonoBehaviour {
 	}
 
 	public int getNumSceneFromIdMiniGame(int id) {
-		return id;
-	}
-
-	public int getTutoNumSceneFromIdMinigame(int id) {
-		if (id == 2) {
-			return 5;
+		switch (id) {
+		case 1: // Champi
+			return 1;
+		case 2: // Ananas
+			return 2;
+		case 3: // Magicien
+			return 3;
+		case 4: // Phoques
+			return 4;
 		}
+		Debug.LogWarning("Le jeu #"+id+" n'a pas de scène associé");
 		return id;
 	}
 
 	public int getIdMiniGameFromNumScene(int numScene) {
+		switch (numScene) {
+		case 1: // Champi
+			return 1;
+		case 2: // Ananas
+			return 2;
+		case 3: // Magicien
+			return 3;
+		case 4: // Phoques
+			return 4;
+		}
+		Debug.LogWarning("La scène #"+numScene+" n'a pas de mini jeu associé");
 		return numScene;
+	}
+
+	public int getTutoNumSceneFromIdMinigame(int id) {
+		if (id == 1) {
+			return 6;
+		}
+		return id;
 	}
 
 }
