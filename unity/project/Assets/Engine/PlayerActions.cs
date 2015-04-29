@@ -94,7 +94,7 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		if(failuresCount == 0 || stepsCount == 0) {
 			return 100;
 		}
-		return (int) (100 * (1.0f - ((float)failuresCount) / ((float)stepsCount)));
+		return (int) (100 * Mathf.Max(0, (1.0f - ((float)failuresCount) / ((float)stepsCount))));
 	}
 
 	// EVENT RECEIVER
