@@ -31,6 +31,5 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver {
 			animBras.SetTrigger ("down");
 			animObjet.SetTrigger ("down");
 		}
-
 	}
 }
