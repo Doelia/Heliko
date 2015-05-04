@@ -5,7 +5,9 @@ public class MagicObject : MonoBehaviour {
 
 	public Sprite[] sprites;
 	public ParticleSystem stars;
+
 	private int idCurentObject = 0;
+
 
 	// int n = 1, 2 ou 3
 	// Jouer l'animation d'apparition
