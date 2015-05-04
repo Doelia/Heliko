@@ -10,8 +10,6 @@ public class AnimationTriggerer : HelikoObject, LevelScriptedReceiver {
 	public void OnAction (int type) {
 		if (type > 0 && type < 4) {
 			animObjet.SetTrigger("fade");
-		} else {
-			animObjet.ResetTrigger("reset");
 		}
 	}
 	

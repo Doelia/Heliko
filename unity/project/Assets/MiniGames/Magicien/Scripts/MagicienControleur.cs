@@ -25,7 +25,7 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 	}
 
 	public void OnFailure() {
-		
+
 	}
 
 	public void OnSuccess() {
@@ -38,13 +38,12 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 	
 	public void OnFinger (int type) {
 		animObjet.ResetTrigger("reset");
-		animObjet.ResetTrigger("fade");
-		
 		if (type == 1) {
 			animBras.ResetTrigger("down");
 			animObjet.ResetTrigger("down");
 			animBras.SetTrigger ("up");
 			animObjet.SetTrigger ("up");
+			animObjet.ResetTrigger("fade");
 			soundWoosh.GetComponent<AudioSource>().Play();
 			bool isGood = playerActions.IsGood (2);
 			if (isGood) {
@@ -62,6 +61,5 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 			soundWoosh.GetComponent<AudioSource>().Play();
 			playerActions.IsGood (1);
 		}
-
 	}
 }
