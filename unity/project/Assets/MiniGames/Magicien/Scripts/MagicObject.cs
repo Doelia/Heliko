@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MagicObject : MonoBehaviour {
+public class MagicObject : HelikoObject {
 
 	public Sprite[] sprites;
 	public ParticleSystem stars;
@@ -11,6 +11,7 @@ public class MagicObject : MonoBehaviour {
 	private Animator animObjet;
 
 	public new void Start() {
+		base.Start();
 		animObjet = this.GetComponent<Animator>();
 	}
 
