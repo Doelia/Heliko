@@ -17,7 +17,7 @@ public class MagicObject : MonoBehaviour {
 	// Jouer animation pour transformer, puis le faire disparaitre peu après
 	// Pour la disparition, jouer avec la transparence du SpriteRender ?
 	public void transform(bool isGood) {
-		int iNTab = 7;
+		int iNTab = 6;
 		if (isGood) {
 			iNTab = idCurentObject + 3;
 		}
