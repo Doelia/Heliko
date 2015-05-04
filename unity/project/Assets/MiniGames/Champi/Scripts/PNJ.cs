@@ -38,11 +38,11 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 		if (type == 1) {
 			brasDroit.SetTrigger ("Down");
 			leftParticles.Play();
-			soundOrange.GetComponent<AudioSource>().Play();
+			soundBlue.GetComponent<AudioSource>().Play();
 		} else if (type == 2) {
 			brasGauche.SetTrigger ("Down");
 			rightParticles.Play();
-			soundBlue.GetComponent<AudioSource>().Play();
+			soundOrange.GetComponent<AudioSource>().Play();
 		} else {
 			return;
 		}

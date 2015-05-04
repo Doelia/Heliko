@@ -55,10 +55,10 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 		bool isGood = playerActions.IsGood(type);
 		if (isGood) {
 			if(leftPlayed) {
-				soundGoodBlue.Play();
+				soundGoodOrange.Play();
 				leftParticles.Play();
 			} else {
-				soundGoodOrange.Play();
+				soundGoodBlue.Play();
 				rightParticles.Play();
 			}
 		} else {
