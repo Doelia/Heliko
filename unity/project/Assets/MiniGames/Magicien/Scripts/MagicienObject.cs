@@ -3,11 +3,12 @@ using System.Collections;
 
 public class MagicienObject :  Feedback, LevelScriptedReceiver {
 
-	private Animator anim;
 	public LevelScripted level;
 	
 	public Sprite content;
 	public Sprite pasContent;
+
+	private Animator anim;
 	
 	public new void Start () {
 		base.Start ();
