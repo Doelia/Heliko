@@ -19,7 +19,7 @@ public class MagicObject : MonoBehaviour {
 	public void Transformer(bool isGood) {
 		int iNTab = 6;
 		if (isGood) {
-			iNTab = idCurentObject + 3;
+			iNTab = idCurentObject + 2;
 		}
 		changeSprite(iNTab);
 	}
