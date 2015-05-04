@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MagicienControleur : HelikoObject, PlayerEventReceiver {
+public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActionReceiver {
 
 	private PlayerActions playerActions;
 	public Transform bras;
@@ -13,10 +13,23 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver {
 	public new void Start () {
 		base.Start();
 		playerActions = GetPlayerActions();
+		playerActions.Connect (this);
 		
 		GetPlayerEventListener().connect (this);
 		animBras = bras.GetComponent<Animator>();
 		animObjet = objet.GetComponent<Animator>();
+	}
+
+	public void OnFailure() {
+		
+	}
+
+	public void OnSuccess() {
+
+	}
+
+	public void OnSuccessLoop() {
+
 	}
 	
 	public void OnFinger (int type) {
@@ -25,9 +38,9 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver {
 			animObjet.ResetTrigger("down");
 			animBras.SetTrigger ("up");
 			animObjet.SetTrigger ("up");
-			bool isGood = this.GetPlayerActions().IsGood(2);
+			bool isGood = playerActions.IsGood (2);
 			MagicObject o = GameObject.Find ("magicObject").GetComponent<MagicObject>();
-			o.transform(true);
+			o.Transformer(isGood);
 		} else {
 			animBras.ResetTrigger("up");
 			animObjet.ResetTrigger("up");

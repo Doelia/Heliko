@@ -97,6 +97,7 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		return (int) (100 * Mathf.Max(0, (1.0f - ((float)failuresCount) / ((float)stepsCount))));
 	}
 
+
 	// EVENT RECEIVER
 	public void OnAction(int action) {
 		if (action == -1) { // Fin de la boucle
