@@ -6,6 +6,8 @@ public class MagicObject : MonoBehaviour {
 	public Sprite[] sprites;
 	public ParticleSystem stars;
 
+	public AudioSource sonApparition;
+
 	private Animator animObjet;
 
 	public new void Start() {
@@ -22,6 +24,7 @@ public class MagicObject : MonoBehaviour {
 		int iInTab = n-1;
 		changeSprite(iInTab);
 		animObjet.SetTrigger("reset");
+		sonApparition.GetComponent<AudioSource>().Play();
 		//animObjet.ResetTrigger("fade");
 		//animObjet.ResetTrigger("down");
 		//animObjet.ResetTrigger ("up");
