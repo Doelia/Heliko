@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MagicObject : MonoBehaviour {
+public class MagicObject : HelikoObject {
 
 	public Sprite[] sprites;
 	public ParticleSystem stars;
 	public ParticleSystem apparition;
 
+	public AudioSource sonApparition;
+
 	private Animator animObjet;
 
 	public new void Start() {
+		base.Start();
 		animObjet = this.GetComponent<Animator>();
 	}
 
@@ -24,6 +27,7 @@ public class MagicObject : MonoBehaviour {
 		changeSprite(iInTab);
 		animObjet.SetTrigger("reset");
 		apparition.Play();
+		sonApparition.GetComponent<AudioSource>().Play();
 	}
 
 	// Jouer animation pour transformer, puis le faire disparaitre peu après

@@ -20,8 +20,9 @@ public class EndGame : HelikoObject {
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
 			this.gameObject.SetActive(true);
 			StartCoroutine(this.startShowing());
+			Destroy(endGameInformations.gameObject);
 		} else {
-			Debug.LogWarning("Impossible de trouver l'objet EndGameParameters");
+			Debug.LogWarning("Impossible de trouver l'objet EndGameLauncher");
 		}
 	}
 
