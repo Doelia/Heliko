@@ -21,7 +21,8 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	public ParticleSystem rightParticles;
 	public ParticleSystem leftParticles;
 
-	public AudioSource sound;
+	public AudioSource soundBlue;
+	public AudioSource soundOrange;
 
 	public new void Start () {
 		base.Start();
@@ -37,15 +38,17 @@ public class PNJ : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 		if (type == 1) {
 			brasDroit.SetTrigger ("Down");
 			leftParticles.Play();
+			soundOrange.GetComponent<AudioSource>().Play();
 		} else if (type == 2) {
 			brasGauche.SetTrigger ("Down");
 			rightParticles.Play();
+			soundBlue.GetComponent<AudioSource>().Play();
 		} else {
 			return;
 		}
 		animCarapace.SetTrigger("Move");
 		animChampiPNJ.SetTrigger("Move");
-		sound.GetComponent<AudioSource>().Play();
+
 		
 	}
 
