@@ -3,8 +3,9 @@ using System.Collections;
 
 public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 
-	public Transform soundGood;
-	public Transform soundBad;
+	public AudioSource soundGoodBlue;
+	public AudioSource soundGoodOrange;
+	public AudioSource soundBad;
 
 	public Transform mainGaucheTransform;
 	public Transform mainDroiteTransform;
@@ -53,10 +54,11 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 
 		bool isGood = playerActions.IsGood(type);
 		if (isGood) {
-			soundGood.GetComponent<AudioSource>().Play();
 			if(leftPlayed) {
+				soundGoodOrange.Play();
 				leftParticles.Play();
 			} else {
+				soundGoodBlue.Play();
 				rightParticles.Play();
 			}
 		} else {

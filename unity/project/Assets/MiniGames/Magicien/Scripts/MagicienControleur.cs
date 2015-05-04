@@ -3,6 +3,10 @@ using System.Collections;
 
 public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActionReceiver {
 
+	public Transform soundWin;
+	public Transform soundFail;
+	public Transform soundWoosh;
+
 	private PlayerActions playerActions;
 	public Transform bras;
 	public Transform objet;
@@ -41,7 +45,13 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 			animObjet.ResetTrigger("down");
 			animBras.SetTrigger ("up");
 			animObjet.SetTrigger ("up");
+			soundWoosh.GetComponent<AudioSource>().Play();
 			bool isGood = playerActions.IsGood (2);
+			if (isGood) {
+				soundWin.GetComponent<AudioSource>().Play();
+			} else {
+				soundFail.GetComponent<AudioSource>().Play();
+			}
 			MagicObject o = GameObject.Find ("magicObject").GetComponent<MagicObject>();
 			o.Transformer(isGood);
 		} else if (type == 2) {
@@ -49,7 +59,9 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 			animObjet.ResetTrigger("up");
 			animBras.SetTrigger ("down");
 			animObjet.SetTrigger ("down");
+			soundWoosh.GetComponent<AudioSource>().Play();
 			playerActions.IsGood (1);
 		}
+
 	}
 }
