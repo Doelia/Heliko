@@ -6,6 +6,12 @@ public class MagicObject : MonoBehaviour {
 	public Sprite[] sprites;
 	public ParticleSystem stars;
 
+	private Animator animObjet;
+
+	public new void Start() {
+		animObjet = this.GetComponent<Animator>();
+	}
+
 	private int idCurentObject = 0;
 
 
@@ -15,6 +21,9 @@ public class MagicObject : MonoBehaviour {
 		idCurentObject = n;
 		int iInTab = n-1;
 		changeSprite(iInTab);
+		animObjet.SetTrigger("reset");
+		animObjet.ResetTrigger("down");
+		//animObjet.ResetTrigger ("up");
 	}
 
 	// Jouer animation pour transformer, puis le faire disparaitre peu après
