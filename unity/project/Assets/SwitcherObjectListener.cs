@@ -7,7 +7,7 @@ public class SwitcherObjectListener : HelikoObject, LevelScriptedReceiver {
 	public LevelScripted level;
 
 	public void OnAction (int type) {
-		if (type > 0) {
+		if (type > 0 && type < 4) {
 			magicObject.ChangeObject(type);
 		}
 	}
