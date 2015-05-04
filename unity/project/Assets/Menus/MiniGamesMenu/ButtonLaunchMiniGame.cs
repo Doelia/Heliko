@@ -10,7 +10,9 @@ public class ButtonLaunchMiniGame : HelikoObject {
 	public int idMiniGame;
 
 	public void click() {
-		GameObject.Find ("Mini jeux").GetComponent<MiniGameLoader>().loadMiniGame(idMiniGame);
+		if (GetUnlockerManager().isUnlocked(idMiniGame)) {
+			GameObject.Find ("Mini jeux").GetComponent<MiniGameLoader>().loadMiniGame(idMiniGame);
+		}
 	}
 
 	public new void Start() {
