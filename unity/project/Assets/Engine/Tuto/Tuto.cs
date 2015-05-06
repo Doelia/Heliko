@@ -6,6 +6,7 @@ public class Tuto : HelikoObject {
 	public StepTuto[] steps;
 	int nStep = 0;
 	public int idGame;
+	public GoogleAnalyticsV3 googleAnalytics;
 
 	public new void Start() {
 		base.Start ();
@@ -36,6 +37,11 @@ public class Tuto : HelikoObject {
 	}
 
 	public void skipTuto() {
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		.SetEventCategory("Tuto")
+		.SetEventAction("Skip")
+		.SetEventLabel("skip the tuto")
+		.SetEventValue(nStep));
 		this.startLevel();
 	} 
 
