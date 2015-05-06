@@ -11,7 +11,10 @@ public class ButtonLaunchMiniGame : HelikoObject {
 
 	public void click() {
 		if (GetUnlockerManager().isUnlocked(idMiniGame)) {
+			GameObject.Find ("go").GetComponent<AudioSource>().Play();
 			GameObject.Find ("Mini jeux").GetComponent<MiniGameLoader>().loadMiniGame(idMiniGame);
+		} else {
+			GameObject.Find ("bad").GetComponent<AudioSource>().Play();
 		}
 	}
 
