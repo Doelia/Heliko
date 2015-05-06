@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using ChartboostSDK;
 
 /*
  * Contient un script de niveau, reçoit les évenements rythmique du BPMControlor
@@ -24,6 +25,7 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 		beatCounter = GetBeatCounter();
 		loadData();
 		beatCounter.Connect(this);
+		chargeAdvertise();
 	}
 	
 	public void loadData () {
@@ -82,6 +84,11 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 
 	public void notifyEnd() {
 		notifyChildren(-1);
+	}
+	
+	public void chargeAdvertise()
+	{
+			Chartboost.cacheInterstitial(CBLocation.GameOver);
 	}
 
 	// EVENTS
