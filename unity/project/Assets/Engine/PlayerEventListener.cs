@@ -101,6 +101,10 @@ public class PlayerEventListener : HelikoObject
 					else if(timeTouchTotal>=timeBeforeLongTouch) {
 						sendEvent(3);
 					}
+					else 
+					{
+						sendEvent(5);
+					}
 					timeTouchTotal = 0F;
 					touchScreen=false; 
 					mouvement=Vector2.zero;
