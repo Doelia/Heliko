@@ -53,7 +53,7 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 			}
 			MagicObject o = GameObject.Find ("magicObject").GetComponent<MagicObject>();
 			o.Transformer(isGood);
-		} else if (type == 1) {
+		} else if (type == 1 || type==2) {
 			animBras.ResetTrigger("up");
 			animObjet.ResetTrigger("up");
 			animBras.SetTrigger ("down");
