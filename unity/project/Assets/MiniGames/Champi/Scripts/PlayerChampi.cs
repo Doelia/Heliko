@@ -39,14 +39,16 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	}
 
 	public void OnFinger (int type) {
+
 		if (disableOrange && type == 2) {
+
 			type = 1;
 		}
 
 		if (type == 1) {
 			animGauche.SetTrigger ("Down");
 			leftPlayed = false;
-		} else if (type == 2) {
+		} else if (type == 1) {
 			animDroite.SetTrigger ("Down");
 			leftPlayed = true;
 		} else {
