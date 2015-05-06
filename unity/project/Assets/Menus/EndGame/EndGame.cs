@@ -19,10 +19,9 @@ public class EndGame : HelikoObject {
 		base.Start();
 		closeIt();
 		EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
-		showAdvertise();
 		if (endGameInformations != null) {
+			showAdvertise();
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
-			sendGoogleAnnalyticsInfo();
 			this.gameObject.SetActive(true);
 			StartCoroutine(this.startShowing());
 			Destroy(endGameInformations.gameObject);
@@ -51,6 +50,8 @@ public class EndGame : HelikoObject {
 		if (nbrEtoiles > PlayerPrefs.GetInt("etoileLevel"+p_idMiniGame,-1)) {
 			PlayerPrefs.SetInt("etoileLevel"+p_idMiniGame,nbrEtoiles);
 		}
+		sendGoogleAnnalyticsInfo();
+
 		
 	}
 	
