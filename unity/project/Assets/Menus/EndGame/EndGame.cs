@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using ChartboostSDK;
+
 
 public class EndGame : HelikoObject {
 
@@ -16,6 +18,7 @@ public class EndGame : HelikoObject {
 		base.Start();
 		closeIt();
 		EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
+		showAdvertise();
 		if (endGameInformations != null) {
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
 			this.gameObject.SetActive(true);
@@ -47,6 +50,11 @@ public class EndGame : HelikoObject {
 			PlayerPrefs.SetInt("etoileLevel"+p_idMiniGame,nbrEtoiles);
 		}
 		
+	}
+	
+	public void showAdvertise()
+	{
+		Chartboost.showInterstitial(CBLocation.GameOver);
 	}
 
 	public int getRank() {
