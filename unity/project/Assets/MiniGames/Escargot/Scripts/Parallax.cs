@@ -19,10 +19,11 @@ public class Parallax : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Move (speed * Time.deltaTime);
+		Move (Time.deltaTime);
 	}
 
-	void Move(float amplitude) {
+	public void Move(float amplitude) {
+		amplitude *= speed;
 		int i = 0;
 		foreach(Transform e in 	transform) {
 			e.Translate(amplitude , 0, 0);

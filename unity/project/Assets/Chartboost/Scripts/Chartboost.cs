@@ -140,7 +140,7 @@ namespace ChartboostSDK {
 	///  please visit our help site documentation at https://help.chartboost.com
 	/// </summary>
 	public class Chartboost: MonoBehaviour {
-
+		static bool alreadyAwake=false;
 
 		//////////////////////////////////////////////////////
 		/// Events to subscribe to for callbacks
@@ -702,9 +702,17 @@ namespace ChartboostSDK {
 		//////////////////////////////////////////////////////
 
 		void Awake() {
-			CBExternal.init();
-			CBExternal.setGameObjectName(gameObject.name);
-			DontDestroyOnLoad(gameObject);
+			if(alreadyAwake)
+			{
+				GameObject.Destroy(this.gameObject);
+			}
+			else
+			{
+				CBExternal.init();
+				CBExternal.setGameObjectName(gameObject.name);
+				DontDestroyOnLoad(gameObject);
+				alreadyAwake=true;
+			}
 		}
 
 		void Update() {

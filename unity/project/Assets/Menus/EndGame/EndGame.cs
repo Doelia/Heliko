@@ -18,8 +18,8 @@ public class EndGame : HelikoObject {
 	public new void Start() {
 		base.Start();
 		closeIt();
-		EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
-		if (endGameInformations != null) {
+		if (GameObject.Find ("EndGameLauncher")!= null) {
+			EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
 			showAdvertise();
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
 			this.gameObject.SetActive(true);
@@ -78,6 +78,10 @@ public class EndGame : HelikoObject {
 		.SetEventValue(idMiniGame));
 	}
 
+	private void playSoundStar(int i) {
+		GameObject.Find ("soundStar"+i).GetComponent<AudioSource>().Play();
+	}
+
 	public int getRank() {
 		if (nbrErreurs == 0) {
 			return 3;
@@ -117,6 +121,7 @@ public class EndGame : HelikoObject {
 		for (int i = 1; i <= 3; i++) {
 			if (getRank() >= i) {
 				GameObject.Find ("Star"+i).GetComponent<AnimationGUI>().animIt();
+				playSoundStar(i);
 				yield return new WaitForSeconds(.3f);
 			}
 		}
