@@ -36,12 +36,9 @@ public class Player : MonoBehaviour, PlayerEventReceiver, PlayerActionReceiver {
 	}
 
 	public void OnFinger (int type) {
-		if(type==1 || type==2)
-		{
-			anim.SetTrigger ("change");
-			clap.Play();
-			this.changeColor(playerActions.IsGood(type));
-		}
+		anim.SetTrigger ("change");
+		clap.Play();
+		this.changeColor(playerActions.IsGood(type));
 	}
 
 }
