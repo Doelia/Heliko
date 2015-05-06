@@ -38,7 +38,7 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 	
 	public void OnFinger (int type) {
 		animObjet.ResetTrigger("reset");
-		if (type == 1) {
+		if (type == 3) {
 			animBras.ResetTrigger("down");
 			animObjet.ResetTrigger("down");
 			animBras.SetTrigger ("up");
@@ -53,7 +53,7 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 			}
 			MagicObject o = GameObject.Find ("magicObject").GetComponent<MagicObject>();
 			o.Transformer(isGood);
-		} else if (type == 3) {
+		} else if (type == 1) {
 			animBras.ResetTrigger("up");
 			animObjet.ResetTrigger("up");
 			animBras.SetTrigger ("down");
