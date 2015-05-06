@@ -38,7 +38,7 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 	
 	public void OnFinger (int type) {
 		animObjet.ResetTrigger("reset");
-		if (type == 3) {
+		if (type == 3 || type==5) {
 			animBras.ResetTrigger("down");
 			animObjet.ResetTrigger("down");
 			animBras.SetTrigger ("up");
