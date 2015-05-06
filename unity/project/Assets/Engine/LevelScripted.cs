@@ -112,6 +112,10 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 		this.observers.Add (r);
 	}
 
+	public void Disconnect (LevelScriptedReceiver r) {
+		this.observers.Remove (r);
+	}
+
 	private void notifyChildren (int type) {
 		foreach (LevelScriptedReceiver e in this.observers) {
 			e.OnAction (type);

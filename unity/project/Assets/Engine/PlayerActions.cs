@@ -33,6 +33,10 @@ public class PlayerActions : HelikoObject, LevelScriptedReceiver, TempoReceiver 
 		this.observers.Add(r);
 	}
 
+	public void Disconnect(PlayerActionReceiver r) {
+		this.observers.Remove(r);
+	}
+
 	public bool IsGood (int type) {
 		int stepTapped = bc.getStepClosest();
 		if (level.getActionFromBeat(stepTapped) == type) {

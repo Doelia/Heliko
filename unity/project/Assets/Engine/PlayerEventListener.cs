@@ -60,6 +60,11 @@ public class PlayerEventListener : HelikoObject
 		this.observers.Add(r);
 	}
 
+	public void Disconnect (PlayerEventReceiver r) {
+		this.observers.Remove(r);
+	}
+
+
 	private void sendEvent(int type) {
 		foreach (PlayerEventReceiver e in this.observers) {
 			e.OnFinger (type);
