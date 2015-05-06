@@ -7,6 +7,8 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	public LevelScripted levelIA;
 
 	public SuccessLoopCounter successLoopCounter;
+	public AudioSource successStep;
+	public AudioSource successLoop;
 
 	public new void Start() {
 		if (isStart) return;
@@ -47,6 +49,7 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public void OnSuccessLoop() {
 		successLoopCounter.AddSuccess();
+		successLoop.Play ();
 		if (successLoopCounter.AllSuccess()) {
 			this.StopStep();
 		}
@@ -55,6 +58,7 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	private void StopStep() {
 		GetBeatCounter().getMusic ().PauseMusic();
 		endStep();
+		successStep.Play();
 		successLoopCounter.Hide();
 	}
 
