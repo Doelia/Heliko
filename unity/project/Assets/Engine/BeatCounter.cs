@@ -44,6 +44,8 @@ public class BeatCounter : Timer {
 		return stopIt || !this.audioSource.isPlaying;
 	}
 
+
+
 	// NOTIFIEUR
 	ArrayList observers;
 

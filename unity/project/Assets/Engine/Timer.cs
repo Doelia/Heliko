@@ -73,6 +73,7 @@ public abstract class Timer : HelikoObject {
 		this.stopIt = true;
 	}
 
+
  	IEnumerator BeatCheck () {
 		while (!stopIt) {
 			if (audioSource.isPlaying) {

@@ -10,15 +10,18 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	public AudioSource successStep;
 	public AudioSource successLoop;
 
+	public Canvas buttons;
+
 	public new void Start() {
 		if (isStart) return;
 		base.Start ();
 	}
 
 	public override void play () {
-		Debug.Log ("Start playing Tuto2Champi");
 		successLoopCounter.Reset (3);
 		successLoopCounter.Show ();
+
+		showButtons();
 
 		levelIA.connect(GameObject.Find("IA").GetComponent<PNJ>());
 
@@ -45,6 +48,11 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public void OnSuccess() {
 
+	}
+
+	public void showButtons() {
+		GameObject.Find ("Player").GetComponent<PlayerChampi>().disableOrange = false;
+		buttons.gameObject.SetActive(true);
 	}
 
 	public void OnSuccessLoop() {
