@@ -60,6 +60,9 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 		endStep();
 		successStep.Play();
 		successLoopCounter.Hide();
+		GetPlayerActions().Disconnect(this);
+		GetPlayerEventListener().Disconnect(this);
+		GetPlayerActions().level.Disconnect(GetPlayerActions());
 	}
 
 
