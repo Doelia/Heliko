@@ -55,7 +55,7 @@
 			"No Ads", // name
 			"No More Ads!", // description
 			"no_ads", // item id
-			new PurchaseWithMarket(NO_ADS_LIFETIME_PRODUCT_ID, 0.99)); // the way this virtual good is purchased
+			new PurchaseWithMarket(NO_ADS_LIFETIME_PRODUCT_ID, 1.20)); // the way this virtual good is purchased
 		
 		/** Virtual Categories **/
 		// The muffin rush theme doesn't support categories, so we just put everything under a general category.
