@@ -4,7 +4,6 @@ using System.Collections;
 public class MoveScript : MonoBehaviour {
 
 	public Parallax [] parallax;
-	public AudioSource sound;
 
 	// Use this for initialization
 	void Start () {
@@ -16,10 +15,9 @@ public class MoveScript : MonoBehaviour {
 	
 	}
 
-	public void avancer(int n = 5) {
+	public void avancer(float n) {
 		foreach (Parallax p in parallax) {
 			p.Move(n);
 		}
-		sound.Play ();
 	}
 }
