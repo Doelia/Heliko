@@ -45,6 +45,11 @@ public abstract class Timer : HelikoObject {
 		
 		music = audioSource.GetComponent<MusicTempo>();
 
+		if (music == null) {
+			Debug.LogError ("MusicTempo component not found");
+			return;
+		}
+
 		//Debug.Log("Time between ticks : "+music.getTimePeriod()*1000);
 
 		float delayMS = myMsDelayStartCount + (myDelayTicks*music.GetTimePeriod()*1000f);
