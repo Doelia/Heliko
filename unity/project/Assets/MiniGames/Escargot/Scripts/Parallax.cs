@@ -29,7 +29,7 @@ public class Parallax : MonoBehaviour {
 			if(e.GetComponent<Renderer>().IsVisibleFrom(Camera.main)) {
 				visibleOnce[i] = true;
 			} else if (loop && visibleOnce[i]){
-				e.Translate(GetComponent<Renderer>().bounds.size.x * 2 * ((speed > 0)?-1:1), 0, 0);
+				e.Translate((GetComponent<Renderer>().bounds.size.x + e.GetComponent<Renderer>().bounds.size.x) * ((speed > 0)?-1:1), 0, 0);
 				visibleOnce[i] = false;
 			}
 			i++;
