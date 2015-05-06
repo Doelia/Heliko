@@ -1,19 +1,20 @@
 using UnityEngine;
 using System.Collections;
 
-public class Hey : MonoBehaviour, LevelScriptedReceiver {
+public class Hey : HelikoObject, LevelScriptedReceiver {
 
 	public LevelScripted level;
 
-	public Sprite signal;
+	public AudioSource soundSignal;
 	
 	public void Start () {
+		//base.Start();
 		this.level.connect(this);
 	}
 	
 	public void OnAction (int type) {
 		if (type == 1) {
-			this.GetComponent<SpriteRenderer>().sprite = signal;
+			soundSignal.GetComponent<AudioSource>().Play();
 		}
 	}
 	
