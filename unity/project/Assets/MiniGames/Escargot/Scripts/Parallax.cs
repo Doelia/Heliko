@@ -19,7 +19,7 @@ public class Parallax : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Move(speed * Time.deltaTime);
+		Move (speed * Time.deltaTime);
 	}
 
 	void Move(float amplitude) {

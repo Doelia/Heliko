@@ -26,8 +26,10 @@ public class MagicObject : HelikoObject {
 		int iInTab = n-1;
 		changeSprite(iInTab);
 		animObjet.SetTrigger("reset");
-		apparition.Play();
-		sonApparition.GetComponent<AudioSource>().Play();
+		if(!animObjet.GetCurrentAnimatorStateInfo(0).IsName("mvtObjetBas")) {
+			apparition.Play();
+			sonApparition.GetComponent<AudioSource>().Play();
+		}
 	}
 
 	// Jouer animation pour transformer, puis le faire disparaitre peu après
