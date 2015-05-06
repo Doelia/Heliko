@@ -9,6 +9,7 @@ public class EndGame : HelikoObject {
 	private int pourcent;
 	private int nbrErreurs;
 	private int idMiniGame;
+	public GoogleAnalyticsV3 googleAnalytics;
 
 	public void Awake() {
 		this.gameObject.SetActive(true);
@@ -21,6 +22,7 @@ public class EndGame : HelikoObject {
 		showAdvertise();
 		if (endGameInformations != null) {
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
+			sendGoogleAnnalyticsInfo();
 			this.gameObject.SetActive(true);
 			StartCoroutine(this.startShowing());
 			Destroy(endGameInformations.gameObject);
@@ -55,6 +57,24 @@ public class EndGame : HelikoObject {
 	public void showAdvertise()
 	{
 		Chartboost.showInterstitial(CBLocation.GameOver);
+	}
+	
+	public void sendGoogleAnnalyticsInfo()
+	{
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		.SetEventCategory("EndGame")
+		.SetEventAction("Pourcent")
+		.SetEventValue(pourcent));
+		
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		.SetEventCategory("EndGame")
+		.SetEventAction("nbrErreurs")
+		.SetEventValue(nbrErreurs));
+		
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		.SetEventCategory("EndGame")
+		.SetEventAction("EndingGame")
+		.SetEventValue(idMiniGame));
 	}
 
 	public int getRank() {

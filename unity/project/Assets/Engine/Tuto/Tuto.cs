@@ -33,6 +33,11 @@ public class Tuto : HelikoObject {
 	}
 
 	private void startLevel() {
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		.SetEventCategory("Tuto")
+		.SetEventAction("End")
+		.SetEventLabel("End the tuto")
+		.SetEventValue(nStep));
 		this.GetComponent<LoadOnClick>().LoadScene(constantes.getNumSceneFromIdMiniGame(idGame));
 	}
 
