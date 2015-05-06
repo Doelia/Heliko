@@ -5,6 +5,7 @@ public class UnLockerManager {
 
 	// Pour un mini jeu, donne le mini jeu qu'il faut débloquer (0 si aucun)
 	public int getUnlocker(int idMinigame) {
+		return 0;
 		switch (idMinigame) {
 		case 1: //Champi
 			return 4;
