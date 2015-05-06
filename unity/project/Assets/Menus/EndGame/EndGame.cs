@@ -57,7 +57,7 @@ public class EndGame : HelikoObject {
 	
 	public void showAdvertise()
 	{
-		Chartboost.showInterstitial(CBLocation.GameOver);
+		Chartboost.showInterstitial(CBLocation.Default);
 	}
 	
 	public void sendGoogleAnnalyticsInfo()

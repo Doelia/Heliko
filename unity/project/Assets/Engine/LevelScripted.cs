@@ -88,7 +88,7 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 	
 	public void chargeAdvertise()
 	{
-			Chartboost.cacheInterstitial(CBLocation.GameOver);
+			Chartboost.cacheInterstitial(CBLocation.Default);
 	}
 
 	// EVENTS
