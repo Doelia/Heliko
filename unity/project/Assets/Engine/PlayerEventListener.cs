@@ -30,20 +30,21 @@ public class PlayerEventListener : HelikoObject
 		RectTransform pauseIcon=null;
 
 		if (GameObject.Find ("PauseIcon") == null) {
-			Debug.LogError("Impossible de trouver l'objet PauseIcon dans la scène");
+			//Debug.LogError("Impossible de trouver l'objet PauseIcon dans la scène");
 		}
 		else
 		{
 			pauseIcon=GameObject.Find ("PauseIcon").GetComponent<RectTransform>();
+			Vector3[] coinsPauseIcons;
+			coinsPauseIcons=new Vector3[4];
+			pauseIcon.GetWorldCorners(coinsPauseIcons);
+			rectanglePause= new Rect();
+			rectanglePause.xMin=coinsPauseIcons[0].x;
+			rectanglePause.xMax=coinsPauseIcons[2].x;
+			rectanglePause.yMin=coinsPauseIcons[0].y;
+			rectanglePause.yMax=coinsPauseIcons[1].y;
 		}
-		Vector3[] coinsPauseIcons;
-		coinsPauseIcons=new Vector3[4];
-		pauseIcon.GetWorldCorners(coinsPauseIcons);
-		rectanglePause= new Rect();
-		rectanglePause.xMin=coinsPauseIcons[0].x;
-		rectanglePause.xMax=coinsPauseIcons[2].x;
-		rectanglePause.yMin=coinsPauseIcons[0].y;
-		rectanglePause.yMax=coinsPauseIcons[1].y;
+
 		touchScreen = false;
 		timeTouchTotal = 0F;
 		mouvement = Vector2.zero;
@@ -79,10 +80,11 @@ public class PlayerEventListener : HelikoObject
 				Vector2 posDoigt = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
 
 				//si c'est sur le bouton Pause
-				if(rectanglePause.Contains(Input.GetTouch(0).position))
-				{
-					return;
-				}
+					if(rectanglePause.Contains(Input.GetTouch(0).position))
+					{
+						return;
+					}
+			
 				touchScreen = true;
 				if (posDoigt.x > 0) {
 					sendEvent(1);
