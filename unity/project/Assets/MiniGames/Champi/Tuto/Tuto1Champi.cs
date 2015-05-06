@@ -36,6 +36,7 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	}
 
 	public void OnFinger(int type) {
+
 		GetPlayerActions().IsGood(1);
 	}
 
@@ -60,9 +61,10 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 		endStep();
 		successStep.Play();
 		successLoopCounter.Hide();
+		GetPlayerActions().level.Disconnect(GetPlayerActions());
 		GetPlayerActions().Disconnect(this);
 		GetPlayerEventListener().Disconnect(this);
-		GetPlayerActions().level.Disconnect(GetPlayerActions());
+		levelIA.Disconnect(GameObject.Find("IA").GetComponent<PNJ>());
 	}
 
 
