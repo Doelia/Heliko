@@ -25,6 +25,8 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	private PlayerActions playerActions;
 	private bool leftPlayed;
 
+	public bool disableOrange = false;
+
 	public new void Start () {
 		base.Start();
 		playerActions = GetPlayerActions();
@@ -37,6 +39,10 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 	}
 
 	public void OnFinger (int type) {
+		if (disableOrange && type == 2) {
+			type = 1;
+		}
+
 		if (type == 1) {
 			animGauche.SetTrigger ("Down");
 			leftPlayed = false;

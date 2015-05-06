@@ -33,10 +33,11 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 		// COmmencer à lire la musique
 		GetBeatCounter().StartCount();
+
+		GameObject.Find ("Player").GetComponent<PlayerChampi>().disableOrange = true;
 	}
 
 	public void OnFinger(int type) {
-
 		GetPlayerActions().IsGood(1);
 	}
 
