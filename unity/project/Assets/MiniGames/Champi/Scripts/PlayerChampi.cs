@@ -48,7 +48,7 @@ public class PlayerChampi : HelikoObject, PlayerEventReceiver {
 		if (type == 1) {
 			animGauche.SetTrigger ("Down");
 			leftPlayed = false;
-		} else if (type == 1) {
+		} else if (type == 2) {
 			animDroite.SetTrigger ("Down");
 			leftPlayed = true;
 		} else {
