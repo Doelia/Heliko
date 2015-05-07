@@ -92,10 +92,10 @@ public class PlayerEventListener : HelikoObject
 			
 				touchScreen = true;
 				if (posDoigt.x > 0) {
-					sendEvent(1);
+					sendEvent(2);
 				}
 				else {
-					sendEvent(2);
+					sendEvent(1);
 				}
 				break;  
 
