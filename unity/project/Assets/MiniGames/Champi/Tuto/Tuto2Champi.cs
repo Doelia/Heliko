@@ -5,6 +5,7 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public LevelScripted levelPlayer;
 	public LevelScripted levelIA;
+	public Transform skipTuto2;
 
 	public SuccessLoopCounter successLoopCounter;
 	public AudioSource successStep;
@@ -53,6 +54,8 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	public void showButtons() {
 		GameObject.Find ("Player").GetComponent<PlayerChampi>().disableOrange = false;
 		buttons.gameObject.SetActive(true);
+		GameObject.Find ("SkipTuto1").gameObject.SetActive(false);
+		skipTuto2.gameObject.SetActive(true);
 	}
 
 	public void OnSuccessLoop() {
