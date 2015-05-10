@@ -7,6 +7,7 @@ public class Tuto : HelikoObject {
 	int nStep = 0;
 	public int idGame;
 	public GoogleAnalyticsV3 googleAnalytics;
+	public Canvas skipTutoCanvas;
 
 	public new void Start() {
 		base.Start ();
@@ -48,6 +49,14 @@ public class Tuto : HelikoObject {
 		.SetEventLabel("skip the tuto")
 		.SetEventValue(nStep));
 		this.startLevel();
-	} 
+	}
+
+	public void openSkipPopup() {
+		skipTutoCanvas.gameObject.SetActive(true);
+	}
+
+	public void closeSkipPopup() {
+		skipTutoCanvas.gameObject.SetActive(false);
+	}
 
 }
