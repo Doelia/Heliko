@@ -53,6 +53,10 @@ public class Tuto : HelikoObject {
 
 	public void openSkipPopup() {
 		skipTutoCanvas.gameObject.SetActive(true);
+		GameObject go = GameObject.Find("OpenPopup");
+		if (go != null) {
+			go.GetComponent<AudioSource>().Play();
+		}
 	}
 
 	public void closeSkipPopup() {
