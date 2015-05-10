@@ -17,6 +17,7 @@ public class Sarge : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	}
 
 	private void moveSarge() {
+		sound.Play();
 		foreach(Transform a in sarge) {
 			foreach(Transform t in a) {
 				t.GetComponent<Animator>().SetTrigger("Move");
