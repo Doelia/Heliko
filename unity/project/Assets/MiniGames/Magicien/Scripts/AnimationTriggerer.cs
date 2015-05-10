@@ -9,7 +9,7 @@ public class AnimationTriggerer : HelikoObject, LevelScriptedReceiver {
 	
 	public void OnAction (int type) {
 		if (type > 0 && type < 4) {
-			animObjet.SetTrigger("fade");
+			hideObject();
 		}
 	}
 	
@@ -18,5 +18,9 @@ public class AnimationTriggerer : HelikoObject, LevelScriptedReceiver {
 		if (level != null)
 			this.level.connect(this);
 		animObjet = objet.GetComponent<Animator>();
+	}
+
+	public void hideObject() {
+		animObjet.SetTrigger("fade");
 	}
 }

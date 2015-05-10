@@ -78,6 +78,8 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 		successLoopCounter.Reset (3);
 		lastAction = 0;
 
+		animTriggerer.hideObject();
+
 		animTriggerer.level.Disconnect(animTriggerer);
 		switcher.level.Disconnect(switcher);
 		GetPlayerActions().level.Disconnect (GetPlayerActions());
