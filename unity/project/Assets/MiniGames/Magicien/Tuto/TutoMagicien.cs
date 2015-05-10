@@ -1,27 +1,37 @@
 using UnityEngine;
 using System.Collections;
 
-public class Tuto1 : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
+public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public LevelScripted level;
+	public LevelScripted itemLevel;
+	public LevelScripted animLevel;
+
+	public AnimationTriggerer animTriggerer;
+	public SwitcherObjectListener switcher;
 
 	public SuccessLoopCounter successLoopCounter;
 	public AudioSource successStep;
 	public AudioSource successLoop;
 
 	private int lastAction;
-	private int nbSuccess;
 
 	public new void Start() {
 		if (isStart) return;
 		base.Start ();
 		lastAction = 0;
-		nbSuccess = 0;
+		
+		successLoopCounter.Reset (3);
 	}
 
 	public override void play () {
 		successLoopCounter.Reset (3);
 		successLoopCounter.Show ();
+
+		animTriggerer.level = animLevel;
+		animTriggerer.level.connect(animTriggerer);
+		switcher.level = itemLevel;
+		switcher.level.connect(switcher);
 
 		// Pour que le playerAction connaise le niveau à vérifier
 		GetPlayerActions().level = level;
@@ -64,6 +74,15 @@ public class Tuto1 : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 		endStep();
 		successStep.Play();
 		successLoopCounter.Hide();
+		
+		successLoopCounter.Reset (3);
+		lastAction = 0;
+
+		animTriggerer.level.Disconnect(animTriggerer);
+		switcher.level.Disconnect(switcher);
+		GetPlayerActions().level.Disconnect (GetPlayerActions());
+		GetPlayerEventListener().Disconnect(this);
+		GetPlayerActions().Disconnect (this);
 	}
 
 
