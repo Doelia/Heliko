@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections;
 using ChartboostSDK;
+using Soomla.Store;
+using Soomla.Store.maBoutique;
+
 
 /*
  * Contient un script de niveau, reçoit les évenements rythmique du BPMControlor
@@ -88,7 +91,10 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 	
 	public void chargeAdvertise()
 	{
+		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
+		{
 			Chartboost.cacheInterstitial(CBLocation.Default);
+		}
 	}
 
 	// EVENTS

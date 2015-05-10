@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 using ChartboostSDK;
+using Soomla.Store;
+using Soomla.Store.maBoutique;
 
 
 public class EndGame : HelikoObject {
@@ -57,7 +59,10 @@ public class EndGame : HelikoObject {
 	
 	public void showAdvertise()
 	{
-		Chartboost.showInterstitial(CBLocation.Default);
+		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
+		{
+			Chartboost.showInterstitial(CBLocation.Default);
+		}
 	}
 	
 	public void sendGoogleAnnalyticsInfo()
