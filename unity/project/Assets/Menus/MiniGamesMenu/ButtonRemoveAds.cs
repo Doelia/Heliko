@@ -7,7 +7,7 @@ using System;
 public class ButtonRemoveAds : MonoBehaviour {
 
 	public GoogleAnalyticsV3 googleAnalytics;
-
+	public GameObject popUpErreur;
 	void Start()
 	{
 		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)>0)
@@ -31,6 +31,7 @@ public class ButtonRemoveAds : MonoBehaviour {
 			try {
 			StoreInventory.BuyItem (boutique.NO_ADS_LTVG.ItemId);
 			} catch (Exception e) {
+				popUpErreur.SetActive(true);
 				Debug.LogError ("SOOMLA/UNITY " + e.Message);
 			}
 		}
