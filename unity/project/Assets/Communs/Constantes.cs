@@ -65,7 +65,7 @@ public class Constantes : MonoBehaviour {
 		if (id == 3) {
 			return 6;
 		}
-		return id;
+		return this.getNumSceneFromIdMiniGame(id);
 	}
 
 }
