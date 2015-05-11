@@ -16,4 +16,10 @@ public class backMiniGames : MonoBehaviour {
 		}
 		
 	}
+	
+	public void click()
+	{
+				accueil.SetActive(true);
+			this.transform.gameObject.SetActive(false);
+	}
 }
