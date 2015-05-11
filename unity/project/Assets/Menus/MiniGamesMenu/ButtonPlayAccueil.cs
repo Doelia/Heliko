@@ -4,10 +4,14 @@ using System.Collections;
 public class ButtonPlayAccueil : MonoBehaviour {
 
 		public GameObject miniGamesMenu; 
-			public GoogleAnalyticsV3 googleAnalytics;
+		public GoogleAnalyticsV3 googleAnalytics;
+		public AudioSource playSound;
+
 
 		
 		public void click() {
+				playSound.Play();
+
 					googleAnalytics.LogEvent(new EventHitBuilder()
 		.SetEventCategory("Button")
 		.SetEventLabel("play")
