@@ -21,10 +21,12 @@ public class HelikoObject : MonoBehaviour {
 	public TransitionScreen GetTransitionScreen() {
 		if (GameObject.Find ("TransitionScreen") == null) {
 			Debug.LogError("Impossible de trouver l'objet TransitionScreen dans la scène");
+			return null;
+		} else {
+			TransitionScreen o = GameObject.Find ("TransitionScreen").GetComponent<TransitionScreen>();
+			if (!o.isStart) o.Start ();
+			return o;
 		}
-		TransitionScreen o = GameObject.Find ("TransitionScreen").GetComponent<TransitionScreen>();
-		if (!o.isStart) o.Start ();
-		return o;
 	}
 
 	public BeatCounter GetBeatCounter() {
