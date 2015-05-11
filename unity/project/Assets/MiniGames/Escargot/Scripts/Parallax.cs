@@ -9,11 +9,9 @@ public class Parallax : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		int i = 0;
 		visibleOnce = new bool[transform.childCount];
-		foreach(Transform t in transform) {
+		for(int i = 0; i < transform.childCount; i++) {
 			visibleOnce[i] = false;
-			i++;
 		}
 	}
 	

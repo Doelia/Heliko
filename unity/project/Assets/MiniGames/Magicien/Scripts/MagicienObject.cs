@@ -5,7 +5,6 @@ public class MagicienObject :  Feedback, LevelScriptedReceiver {
 
 	public LevelScripted level;
 
-	
 	public Sprite content;
 	public Sprite pasContent;
 
