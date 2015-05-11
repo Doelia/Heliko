@@ -21,7 +21,6 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 		base.Start ();
 		lastAction = 0;
 		successLoopCounter.Reset (3);
-		GetBeatCounter().reset();
 		GetBeatCounter().setLoop(true);
 	}
 

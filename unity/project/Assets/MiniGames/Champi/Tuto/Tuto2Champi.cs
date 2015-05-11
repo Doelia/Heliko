@@ -18,7 +18,6 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 		if (isStart) return;
 		base.Start ();
 		
-		GetBeatCounter().reset();
 		GetBeatCounter().setLoop(true);
 	}
 

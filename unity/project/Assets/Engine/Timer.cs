@@ -75,9 +75,14 @@ public abstract class Timer : HelikoObject {
 	}
 
 	public void reset() {
+		Debug.Log("reset!");
 		audioSource.Stop();
 		audioSource.Play();
 		nBeat = 0;
+
+		float delayMS = myMsDelayStartCount;
+		sampleDelay = ((float) delayMS / 1000f) * music.GetFrequency();
+		samplePeriod = music.GetSamplePeriod();
 		nextBeatSample = sampleDelay;
 	}
 
@@ -95,7 +100,7 @@ public abstract class Timer : HelikoObject {
 					nextBeatSample += samplePeriod;
 				}
 			}
-			if (music.IsFinished()) {
+			if (audioSource.timeSamples + 1000 >= audioSource.clip.samples) {
 				if(loop) {
 					reset();
 				} else {
