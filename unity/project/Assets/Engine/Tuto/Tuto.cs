@@ -34,6 +34,8 @@ public class Tuto : HelikoObject {
 	}
 
 	private void startLevel() {
+		PlayerPrefs.SetInt("niveauReussi"+idGame,1);
+
 		googleAnalytics.LogEvent(new EventHitBuilder()
 		.SetEventCategory("Tuto")
 		.SetEventAction("End")
