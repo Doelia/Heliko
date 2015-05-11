@@ -8,12 +8,19 @@ public class Sarge : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	public LevelScripted level; // utilisé pour se connecter uniquement
 	
 	public AudioSource sound;
+
+	public Sprite boucheWin;
+	public Sprite boucheFail;
+	public Sprite corpsWin;
+	public Sprite corpsFail;
+	public Transform bouche;
+	public Transform corps;
 	
 	public new void Start () {
 		base.Start();
-		if (level != null)
-			this.level.connect(this);
-
+		if (level != null) {
+			this.level.connect (this);
+		}
 	}
 
 	private void moveSarge() {
@@ -32,7 +39,8 @@ public class Sarge : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	}
 	
 	public override void SetReaction(bool isGood) {
-
+		bouche.GetComponent<SpriteRenderer>().sprite = isGood?boucheWin:boucheFail;
+		corps.GetComponent<SpriteRenderer>().sprite = isGood?corpsWin:corpsFail;
 	}
 	
 }
