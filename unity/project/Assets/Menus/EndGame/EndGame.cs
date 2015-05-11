@@ -20,7 +20,7 @@ public class EndGame : HelikoObject {
 	public new void Start() {
 		base.Start();
 		closeIt();
-		if (GameObject.Find ("EndGameLauncher")!= null) {
+		if (GameObject.Find ("EndGameLauncher") != null) {
 			EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
 			showAdvertise();
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);

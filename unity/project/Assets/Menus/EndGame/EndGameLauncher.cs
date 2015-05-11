@@ -15,7 +15,6 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 		base.Start ();
 		GetBeatCounter().Connect(this);
 		chargeAdvertise();
-
 	}
 
 	private void goEndGame() {
@@ -28,10 +27,8 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 		this.goEndGame();
 	}
 	
-	public void chargeAdvertise()
-	{
-		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
-		{
+	private void chargeAdvertise() {
+		if (StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId) <= 0) {
 			Chartboost.cacheInterstitial(CBLocation.Default);
 		}
 	}
