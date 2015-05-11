@@ -4,8 +4,7 @@ using System.Collections;
 public class UnLockerManager {
 
 	public bool haveSuccessTuto(int idMiniGame) {
-		return false;
-		//return PlayerPrefs.GetInt("niveauReussi"+idMiniGame,-1) <= 0;
+		return PlayerPrefs.GetInt("niveauReussi"+idMiniGame,-1) <= 0;
 	}
 
 	// Pour un mini jeu, donne le mini jeu qu'il faut débloquer (0 si aucun)
