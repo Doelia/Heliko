@@ -7,8 +7,6 @@ public class Sarge : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 
 	public LevelScripted level; // utilisé pour se connecter uniquement
 	
-	public AudioSource sound;
-
 	public Sprite boucheWin;
 	public Sprite boucheFail;
 	public Sprite corpsWin;
@@ -24,7 +22,6 @@ public class Sarge : Feedback, LevelScriptedReceiver, PlayerActionReceiver {
 	}
 
 	private void moveSarge() {
-		sound.Play();
 		foreach(Transform a in sarge) {
 			foreach(Transform t in a) {
 				t.GetComponent<Animator>().SetTrigger("Move");

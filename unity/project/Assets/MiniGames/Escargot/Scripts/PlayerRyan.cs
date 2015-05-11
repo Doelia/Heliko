@@ -18,7 +18,6 @@ public class PlayerRyan : HelikoObject, PlayerEventReceiver {
 	public new void Start () {
 		base.Start();
 		playerActions = GetPlayerActions();
-		
 		GetPlayerEventListener().connect (this);
 	}
 
@@ -33,6 +32,8 @@ public class PlayerRyan : HelikoObject, PlayerEventReceiver {
 	public void OnFinger (int type) {
 		moveRyan();
 		moveScript.avancer(amplitude);
+		bool isGood = playerActions.IsGood(1);
+		(isGood?soundGood:soundBad).GetComponent<AudioSource>().Play();
 	}
 	
 }
