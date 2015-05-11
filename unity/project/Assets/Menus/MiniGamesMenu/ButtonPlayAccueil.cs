@@ -15,4 +15,13 @@ public class ButtonPlayAccueil : MonoBehaviour {
 		miniGamesMenu.SetActive(true);
 		this.transform.parent.parent.gameObject.SetActive(false);
 	}
+	
+		void Update () {
+	
+		if (Input.GetKeyDown (KeyCode.Escape))
+		{
+			Application.Quit();
+		}
+		
+	}
 }
