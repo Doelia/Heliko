@@ -9,6 +9,8 @@ public class Constantes : MonoBehaviour {
 	public bool instantCalcul = false;
 	[HideInInspector]
 	public bool showDetailOnEndGame = false;
+	[HideInInspector]
+	public bool skipTutoAlwaysEnable = false;
 
 	public bool devMode = true;
 
@@ -23,6 +25,7 @@ public class Constantes : MonoBehaviour {
 			showDebugGUI = true;
 			instantCalcul = true;
 			showDetailOnEndGame = true;
+			skipTutoAlwaysEnable = true;
 		}
 	}
 
