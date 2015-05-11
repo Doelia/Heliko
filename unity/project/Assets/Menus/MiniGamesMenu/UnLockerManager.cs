@@ -3,6 +3,10 @@ using System.Collections;
 
 public class UnLockerManager {
 
+	public bool haveSuccessTuto(int idMiniGame) {
+		return PlayerPrefs.GetInt("niveauReussi"+idMiniGame,-1) <= 0;
+	}
+
 	// Pour un mini jeu, donne le mini jeu qu'il faut débloquer (0 si aucun)
 	public int getUnlocker(int idMinigame) {
 		return 0;

@@ -62,6 +62,14 @@ public class Tuto : HelikoObject {
 		}
 	}
 
+	public void OnWantSkip() {
+		if (GetUnlockerManager().haveSuccessTuto(idGame)) {
+			this.skipTuto();
+		} else {
+			this.GetComponent<LoadOnClick>().LoadScene(0);
+		}
+	}
+
 	public void closeSkipPopup() {
 		GetBeatCounter().getMusic().UnPauseMusic();
 		skipTutoCanvas.gameObject.SetActive(false);
