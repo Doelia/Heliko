@@ -32,6 +32,7 @@ public class InterfacePauseGame : HelikoObject {
 		openMenuSound.Play();
 		music.Pause ();
 		pauseMenu.SetActive(true);
+		pauseMenu.GetComponent<AnimationGUI>().animIt();
 		playIcon.SetActive(true);
 		pauseIcon.SetActive(false);
 	}
