@@ -8,7 +8,7 @@ public class EnterScene : HelikoObject {
 
 	public void Awake() {
 		if (GameObject.Find ("TransitionScreen") == null) {
-			GameObject o =Instantiate(prefab);
+			GameObject o = Instantiate(prefab);
 			o.name = "TransitionScreen";
 		}
 	}
