@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using ChartboostSDK;
+using Soomla.Store;
+using Soomla.Store.maBoutique;
 public class EndGameLauncher : HelikoObject, TempoReceiver  {
 
 	public int idMiniGame;
@@ -12,6 +14,8 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 	public new void Start() {
 		base.Start ();
 		GetBeatCounter().Connect(this);
+		chargeAdvertise();
+
 	}
 
 	private void goEndGame() {
@@ -22,6 +26,14 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 		nbFails = 0;
 		pourcentSuccess = 100;
 		this.goEndGame();
+	}
+	
+	public void chargeAdvertise()
+	{
+		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
+		{
+			Chartboost.cacheInterstitial(CBLocation.Default);
+		}
 	}
 
 	private IEnumerator endGame() {

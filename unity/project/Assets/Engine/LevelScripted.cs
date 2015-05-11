@@ -1,8 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using ChartboostSDK;
-using Soomla.Store;
-using Soomla.Store.maBoutique;
+
 
 
 /*
@@ -28,7 +26,6 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 		beatCounter = GetBeatCounter();
 		loadData();
 		beatCounter.Connect(this);
-		chargeAdvertise();
 	}
 	
 	public void loadData () {
@@ -89,13 +86,7 @@ public class LevelScripted : HelikoObject, TempoReceiver {
 		notifyChildren(-1);
 	}
 	
-	public void chargeAdvertise()
-	{
-		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
-		{
-			Chartboost.cacheInterstitial(CBLocation.Default);
-		}
-	}
+
 
 	// EVENTS
 
