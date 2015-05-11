@@ -52,6 +52,7 @@ public class Tuto : HelikoObject {
 	}
 
 	public void openSkipPopup() {
+		GetBeatCounter().getMusic().PauseMusic();
 		skipTutoCanvas.gameObject.SetActive(true);
 		GameObject go = GameObject.Find("OpenPopup");
 		if (go != null) {
@@ -60,6 +61,7 @@ public class Tuto : HelikoObject {
 	}
 
 	public void closeSkipPopup() {
+		GetBeatCounter().getMusic().UnPauseMusic();
 		skipTutoCanvas.gameObject.SetActive(false);
 	}
 
