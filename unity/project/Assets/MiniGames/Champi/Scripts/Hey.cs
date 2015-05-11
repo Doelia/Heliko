@@ -7,7 +7,7 @@ public class Hey : HelikoObject, LevelScriptedReceiver {
 
 	public AudioSource soundSignal;
 	
-	public void Start () {
+	public new void Start () {
 		//base.Start();
 		this.level.connect(this);
 	}

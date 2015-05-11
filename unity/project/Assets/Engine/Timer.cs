@@ -5,6 +5,7 @@ public abstract class Timer : HelikoObject {
 
 	public bool startCountAtLoad = true;
 	protected bool stopIt = false;
+	private bool loop;
 
 	public AudioSource audioSource;
 	public float loopTime = 30f; // Temps d'attente entre chaque boucle en MS
@@ -73,10 +74,25 @@ public abstract class Timer : HelikoObject {
 		this.stopIt = true;
 	}
 
+	public void reset() {
+		audioSource.Stop();
+		audioSource.Play();
+		nBeat = 0;
+		nextBeatSample = sampleDelay;
+		Debug.Log("reset!");
+		Debug.Log("nextBeatSample : " + nextBeatSample);
+		Debug.Log ("audioSource.timeSamples : " + audioSource.timeSamples);
+	}
+
+	public void setLoop(bool loop) {
+		this.loop = loop;
+	}
 
  	IEnumerator BeatCheck () {
 		while (!stopIt) {
 			if (audioSource.isPlaying) {
+				Debug.Log("nextBeatSample : " + nextBeatSample);
+				Debug.Log ("audioSource.timeSamples : " + audioSource.timeSamples);
 				float currentSample = audioSource.timeSamples;
 				if (currentSample >= (nextBeatSample)) {
 					this.beat();
@@ -85,7 +101,11 @@ public abstract class Timer : HelikoObject {
 				}
 			}
 			if (music.IsFinished()) {
-				this.endMusic();
+				if(loop) {
+					reset();
+				} else {
+					this.endMusic();
+				}
 			}
 			yield return new WaitForSeconds(loopTime / 1000f);
 		}
