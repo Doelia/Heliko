@@ -42,21 +42,11 @@ public class InterfacePauseGame : HelikoObject {
 		{
 			if(!pause)
 			{
-				pause=true;
-				openMenuSound.Play();
-				music.Pause ();
-				pauseMenu.SetActive(true);
-				playIcon.SetActive(true);
-				pauseIcon.SetActive(false);
+				Pause();
 			}
 			else
 			{
-				pause=false;
-				closeMenuSound.Play();
-				pauseMenu.SetActive(false);
-				music.Play();
-				playIcon.SetActive(false);
-				pauseIcon.SetActive(true);
+				UnPause();
 			}
 		}
 	}

@@ -40,6 +40,10 @@ public class MusicTempo : HelikoObject {
 		this.audioSource.Pause();
 	}
 
+	public void UnPauseMusic() {
+		this.audioSource.UnPause();
+	}
+
 
 	/// <summary>
 	/// Retourne en millsecondes le temps passé
