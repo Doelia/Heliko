@@ -13,6 +13,9 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	public new void Start() {
 		if (isStart) return;
 		base.Start ();
+		
+		GetBeatCounter().reset();
+		GetBeatCounter().setLoop(true);
 	}
 
 	public override void play () {

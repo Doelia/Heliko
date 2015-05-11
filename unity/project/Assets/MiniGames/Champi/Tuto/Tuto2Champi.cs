@@ -5,6 +5,7 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public LevelScripted levelPlayer;
 	public LevelScripted levelIA;
+	public Transform skipTuto1;
 	public Transform skipTuto2;
 
 	public SuccessLoopCounter successLoopCounter;
@@ -16,6 +17,9 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	public new void Start() {
 		if (isStart) return;
 		base.Start ();
+		
+		GetBeatCounter().reset();
+		GetBeatCounter().setLoop(true);
 	}
 
 	public override void play () {
@@ -54,7 +58,7 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	public void showButtons() {
 		GameObject.Find ("Player").GetComponent<PlayerChampi>().disableOrange = false;
 		buttons.gameObject.SetActive(true);
-		GameObject.Find ("SkipTuto1").gameObject.SetActive(false);
+		skipTuto1.gameObject.SetActive(false);
 		skipTuto2.gameObject.SetActive(true);
 	}
 

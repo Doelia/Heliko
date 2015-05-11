@@ -79,9 +79,6 @@ public abstract class Timer : HelikoObject {
 		audioSource.Play();
 		nBeat = 0;
 		nextBeatSample = sampleDelay;
-		Debug.Log("reset!");
-		Debug.Log("nextBeatSample : " + nextBeatSample);
-		Debug.Log ("audioSource.timeSamples : " + audioSource.timeSamples);
 	}
 
 	public void setLoop(bool loop) {
@@ -91,8 +88,6 @@ public abstract class Timer : HelikoObject {
  	IEnumerator BeatCheck () {
 		while (!stopIt) {
 			if (audioSource.isPlaying) {
-				Debug.Log("nextBeatSample : " + nextBeatSample);
-				Debug.Log ("audioSource.timeSamples : " + audioSource.timeSamples);
 				float currentSample = audioSource.timeSamples;
 				if (currentSample >= (nextBeatSample)) {
 					this.beat();
