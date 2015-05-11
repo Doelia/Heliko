@@ -4,6 +4,7 @@ using System.Collections;
 public class LoadOnClick : HelikoObject {
 
 	private TransitionScreen loadingScreen;
+	public AsyncOperation loadingScene;
 
 	public new void Start() {
 		base.Start ();
@@ -19,9 +20,9 @@ public class LoadOnClick : HelikoObject {
 	}
 
 	public IEnumerator loadLevel(int level) {
-		yield return StartCoroutine(loadingScreen.FadeInBlackScreen());
+		loadingScene = Application.LoadLevelAsync(level);
+		yield return StartCoroutine(loadingScreen.FadeInBlackScreen(loadingScene));
 		loadingScreen.KeepItAfterLoading();
-		Application.LoadLevelAsync(level);
 	}
 
 }
