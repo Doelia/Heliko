@@ -20,18 +20,12 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 		if (isStart) return;
 		base.Start ();
 		lastAction = 0;
-		
 		successLoopCounter.Reset (3);
 	}
 
 	public override void play () {
 		successLoopCounter.Reset (3);
 		successLoopCounter.Show ();
-
-		animTriggerer.level = animLevel;
-		animTriggerer.level.connect(animTriggerer);
-		switcher.level = itemLevel;
-		switcher.level.connect(switcher);
 
 		// Pour que le playerAction connaise le niveau à vérifier
 		GetPlayerActions().level = level;
@@ -42,13 +36,24 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 		// Pour recevoir la réussite et les echec du joueurs
 		GetPlayerActions().Connect (this);
 
-		// COmmencer à lire la musique
+		animTriggerer.level = animLevel;
+		animTriggerer.level.connect(animTriggerer);
+		switcher.level = itemLevel;
+		switcher.level.connect(switcher);
+
+		// Commencer à lire la musique
 		GetBeatCounter().StartCount();
 	}
 
+
 	public void OnFinger(int type) {
-		GetPlayerActions().IsGood(type);
+		if(type == 2) {
+			type = 1;
+		} else if (type == 3) {
+			type = 2;
+		}
 		lastAction = type;
+		GetPlayerActions().IsGood(type);
 	}
 
 	public void OnFailure() {
@@ -56,12 +61,13 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 	}
 
 	public void OnSuccess() {
-		if(lastAction == 1) {
+		if(lastAction == 2) {
 			successLoopCounter.AddSuccess();
 			successLoop.Play ();
 			if (successLoopCounter.AllSuccess()) {
 				this.StopStep();
 			}
+			lastAction = 0;
 		}
 	}
 
