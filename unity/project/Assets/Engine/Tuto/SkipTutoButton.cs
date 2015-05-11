@@ -9,13 +9,9 @@ public class SkipTutoButton : HelikoObject {
 
 		base.Start ();
 
-		if (constantes.skipTutoAlwaysEnable) {
-			return;
-		}
-	
 		idMiniGame = GameObject.Find ("Tutorial").GetComponent<Tuto>().idGame;
 
-		if (PlayerPrefs.GetInt("niveauReussi"+idMiniGame,-1) <= 0) {
+		if (GetUnlockerManager().haveSuccessTuto(idMiniGame)) {
 			GameObject.Destroy(this.transform.gameObject);
 		}
 	}
