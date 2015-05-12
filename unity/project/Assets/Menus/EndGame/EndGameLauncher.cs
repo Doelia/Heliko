@@ -34,10 +34,12 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 	}
 
 	private IEnumerator endGame() {
+		Debug.Log("Start end game...");
 		GameObject.DontDestroyOnLoad(this.gameObject);
 		cartoonTransition.gameObject.SetActive(true);
 		yield return StartCoroutine(cartoonTransition.goAnim());
 		yield return null;
+		Debug.Log("Animation cartoon OK. Chargement de la scène...");
 		this.GetComponent<LoadOnClick>().LoadScene(constantes.getNumSceneEndGame());
 	}
 

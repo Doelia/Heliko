@@ -26,7 +26,6 @@ public class TransitionScreen : HelikoObject {
 		Image img = loadingImage.GetComponent<Image>();
 
 		for (float f = 0f; f <= 1.1f; f += 0.1f) {
-			Debug.Log ("loading scene : " + loadingScene.progress.ToString());
 			Color c = img.color;
 			c.a = f;
 			img.color = c;
