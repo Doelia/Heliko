@@ -23,9 +23,9 @@ public class Constantes : MonoBehaviour {
 	public void Awake() {
 		if (devMode) {
 			showDebugGUI = true;
-			instantCalcul = true;
-			showDetailOnEndGame = true;
-			skipTutoAlwaysEnable = true;
+			instantCalcul = false;
+			showDetailOnEndGame = false;
+			skipTutoAlwaysEnable = false;
 		}
 	}
 
