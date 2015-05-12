@@ -62,7 +62,7 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 	}
 
 	public void OnSuccess() {
-		if(lastAction == 2) {
+		if (lastAction == 2) {
 			successLoopCounter.AddSuccess();
 			successLoop.Play ();
 			if (successLoopCounter.AllSuccess()) {

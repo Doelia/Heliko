@@ -43,7 +43,9 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 	}
 
 	public void OnFinger(int type) {
-		GetPlayerActions().IsGood(type);
+		if (type == 1 || type == 2) {
+			GetPlayerActions().IsGood(type);
+		}
 	}
 
 	public void OnFailure() {

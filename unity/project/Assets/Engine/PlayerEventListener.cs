@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class PlayerEventListener : HelikoObject
 {
 	private BeatCounter bc;
@@ -131,7 +132,7 @@ public class PlayerEventListener : HelikoObject
 						}
 					}
 				break;                
-			}  		
+			} 		
 		}
 		#endif 
 		
