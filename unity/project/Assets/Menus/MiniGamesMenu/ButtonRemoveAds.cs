@@ -10,6 +10,7 @@ public class ButtonRemoveAds : MonoBehaviour {
 	public GameObject popUpErreur;
 	void Start()
 	{
+		Debug.Log ("Bouton publicité caché");
 		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)>0)
 		{
 			GameObject.Destroy(this.gameObject);
