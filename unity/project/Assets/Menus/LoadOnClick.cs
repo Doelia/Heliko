@@ -20,9 +20,9 @@ public class LoadOnClick : HelikoObject {
 	}
 
 	public IEnumerator loadLevel(int level) {
+		loadingScreen.KeepItAfterLoading();
 		loadingScene = Application.LoadLevelAsync(level);
 		yield return StartCoroutine(loadingScreen.FadeInBlackScreen(loadingScene));
-		loadingScreen.KeepItAfterLoading();
 	}
 
 }

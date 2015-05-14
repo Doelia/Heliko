@@ -21,6 +21,7 @@ public class EndGame : HelikoObject {
 		base.Start();
 		closeIt();
 		if (GameObject.Find ("EndGameLauncher") != null) {
+			Debug.Log ("Launch EndGameLauncher OK");
 			EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
 			showAdvertise();
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
@@ -107,6 +108,7 @@ public class EndGame : HelikoObject {
 	// AFFICHAGE (animations, etc)
 
 	IEnumerator startShowing() {
+		Debug.Log ("startShowing");
 		GameObject bg = GameObject.Find ("ContainerEndGame");
 		bg.GetComponent<AnimationGUI>().animIt();
 		yield return new WaitForSeconds(.4f);
