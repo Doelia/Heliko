@@ -28,6 +28,7 @@ public class Tuto : HelikoObject {
 	public void next() {
 		if (nStep >= steps.Length) {
 			startLevel();
+			return;
 		}
 		steps[nStep].play();
 		nStep++;
