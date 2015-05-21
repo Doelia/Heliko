@@ -3,6 +3,8 @@ using System.Collections;
 using ChartboostSDK;
 using Soomla.Store;
 using Soomla.Store.maBoutique;
+using System;
+
 public class EndGameLauncher : HelikoObject, TempoReceiver  {
 
 	public int idMiniGame;
@@ -28,8 +30,15 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 	}
 	
 	private void chargeAdvertise() {
-		if (StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId) <= 0) {
-			Chartboost.cacheInterstitial(CBLocation.Default);
+		try
+		{
+			if (StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId) <= 0) {
+				Chartboost.cacheInterstitial(CBLocation.Default);
+			}
+		}
+		catch(Exception e)
+		{
+			Debug.Log ("SOOMLA/UNITY " + e.Message);
 		}
 	}
 
