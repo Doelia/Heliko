@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  22 MAY 2015 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  22 MAY 2015 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,15 +500,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogoUM.png>]) [1] (./Main.toc)
+ogoUM.png>]) (./Main.toc)
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
- [1] (./Content.tex
-[2] [3] <./img/trello.png, id=30, 280.54813pt x 297.11pt>
+ [1] (./Content.tex [2]
+[3] <./img/trello.png, id=27, 280.54813pt x 297.11pt>
 File: ./img/trello.png Graphic file (type png)
-
-<use ./img/trello.png>
+ <use ./img/trello.png>
 Package pdftex.def Info: ./img/trello.png used on input line 86.
 (pdftex.def)             Requested size: 280.54742pt x 297.10927pt.
 
@@ -516,7 +515,7 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 85--87
  [] [] 
  []
 
-<./img/trello_autres.png, id=31, 282.05376pt x 298.11375pt>
+<./img/trello_autres.png, id=28, 282.05376pt x 298.11375pt>
 File: ./img/trello_autres.png Graphic file (type png)
 
 <use ./img/trello_autres.png>
@@ -528,14 +527,14 @@ Overfull \hbox (6.42094pt too wide) in paragraph at lines 127--128
 à cause de la contrainte
  []
 
-<./img/list-tests.png, id=42, 102.3825pt x 137.01187pt>
+<./img/list-tests.png, id=38, 102.3825pt x 137.01187pt>
 File: ./img/list-tests.png Graphic file (type png)
 
 <use ./img/list-tests.png>
 Package pdftex.def Info: ./img/list-tests.png used on input line 146.
 (pdftex.def)             Requested size: 102.38225pt x 137.01154pt.
  [6 <./img/list-tests.png>]
-<./img/github_commits.png, id=47, 470.25688pt x 202.7575pt>
+<./img/github_commits.png, id=44, 470.25688pt x 202.7575pt>
 File: ./img/github_commits.png Graphic file (type png)
 
 <use ./img/github_commits.png>
@@ -546,25 +545,25 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 167--169
  [] [] 
  []
 
-<./img/punchcard.png, id=48, 474.27188pt x 255.95625pt>
+<./img/punchcard.png, id=45, 474.27188pt x 255.95625pt>
 File: ./img/punchcard.png Graphic file (type png)
 
 <use ./img/punchcard.png>
 Package pdftex.def Info: ./img/punchcard.png used on input line 179.
 (pdftex.def)             Requested size: 331.98805pt x 179.16814pt.
  [7 <./img/github_commits.png>]
-<./img/gource_over.png, id=53, 1004.75375pt x 598.235pt>
+<./img/gource_over.png, id=50, 1004.75375pt x 598.235pt>
 File: ./img/gource_over.png Graphic file (type png)
 
 <use ./img/gource_over.png>
-Package pdftex.def Info: ./img/gource_over.png used on input line 192.
+Package pdftex.def Info: ./img/gource_over.png used on input line 195.
 (pdftex.def)             Requested size: 401.89438pt x 239.28975pt.
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 191--193
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 194--196
  [] [] 
  []
 
-[8 <./img/punchcard.png> <./img/gource_over.png>]) [9] (./Main.aux) ) 
+[8 <./img/punchcard.png>]) [9 <./img/gource_over.png>] (./Main.aux) ) 
 Here is how much of TeX's memory you used:
  5799 strings out of 493117
  80522 string characters out of 6135433
@@ -585,10 +584,10 @@ e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Main.pdf (11 pages, 981870 bytes).
+Output written on Main.pdf (10 pages, 983222 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
