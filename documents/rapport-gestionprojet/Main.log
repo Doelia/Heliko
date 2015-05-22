@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  22 MAY 2015 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  22 MAY 2015 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -526,15 +526,14 @@ Overfull \hbox (10.88788pt too wide) in paragraph at lines 92--94
  [] [] 
  []
 
-[4 <./img/trello.png>]
-<./img/trello_autres.png, id=35, 282.05376pt x 298.11375pt>
+<./img/trello_autres.png, id=31, 282.05376pt x 298.11375pt>
 File: ./img/trello_autres.png Graphic file (type png)
 
 <use ./img/trello_autres.png>
 Package pdftex.def Info: ./img/trello_autres.png used on input line 102.
 (pdftex.def)             Requested size: 282.05305pt x 298.11302pt.
- [5 <./img/trello_autres.png>]
-<./img/list-tests.png, id=40, 102.3825pt x 137.01187pt>
+ [4 <./img/trello.png>] [5 <./img/trello_autres.png>] <./img/list-tests.png, id
+=40, 102.3825pt x 137.01187pt>
 File: ./img/list-tests.png Graphic file (type png)
 
 <use ./img/list-tests.png>
@@ -583,7 +582,7 @@ Here is how much of TeX's memory you used:
  9161 multiletter control sequences out of 15000+600000
  16638 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,40p,460b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,6n,40p,460b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/loca
 l/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/te
@@ -596,7 +595,7 @@ e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Main.pdf (10 pages, 1116965 bytes).
+Output written on Main.pdf (10 pages, 1116637 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
