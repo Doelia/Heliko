@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  22 MAY 2015 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  22 MAY 2015 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,30 +504,91 @@ ogoUM.png>]) [1] (./Main.toc)
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
- [1] (./Content.tex)
-[2] (./Main.aux) ) 
+ [1] (./Content.tex
+[2] [3] <./img/trello.png, id=30, 280.54813pt x 297.11pt>
+File: ./img/trello.png Graphic file (type png)
+
+<use ./img/trello.png>
+Package pdftex.def Info: ./img/trello.png used on input line 86.
+(pdftex.def)             Requested size: 280.54742pt x 297.10927pt.
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 85--87
+ [] [] 
+ []
+
+<./img/trello_autres.png, id=31, 282.05376pt x 298.11375pt>
+File: ./img/trello_autres.png Graphic file (type png)
+
+<use ./img/trello_autres.png>
+Package pdftex.def Info: ./img/trello_autres.png used on input line 95.
+(pdftex.def)             Requested size: 282.05305pt x 298.11302pt.
+ [4 <./img/trello.png>] [5 <./img/trello_autres.png>]
+Overfull \hbox (6.42094pt too wide) in paragraph at lines 127--128
+\T1/cmr/m/n/10.95 adapté pour le dé-ve-lop-pe-ment d'un jeu vi-déo et sur-tout 
+à cause de la contrainte
+ []
+
+<./img/list-tests.png, id=42, 102.3825pt x 137.01187pt>
+File: ./img/list-tests.png Graphic file (type png)
+
+<use ./img/list-tests.png>
+Package pdftex.def Info: ./img/list-tests.png used on input line 146.
+(pdftex.def)             Requested size: 102.38225pt x 137.01154pt.
+ [6 <./img/list-tests.png>]
+<./img/github_commits.png, id=47, 470.25688pt x 202.7575pt>
+File: ./img/github_commits.png Graphic file (type png)
+
+<use ./img/github_commits.png>
+Package pdftex.def Info: ./img/github_commits.png used on input line 168.
+(pdftex.def)             Requested size: 470.25574pt x 202.757pt.
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 167--169
+ [] [] 
+ []
+
+<./img/punchcard.png, id=48, 474.27188pt x 255.95625pt>
+File: ./img/punchcard.png Graphic file (type png)
+
+<use ./img/punchcard.png>
+Package pdftex.def Info: ./img/punchcard.png used on input line 179.
+(pdftex.def)             Requested size: 331.98805pt x 179.16814pt.
+ [7 <./img/github_commits.png>]
+<./img/gource_over.png, id=53, 1004.75375pt x 598.235pt>
+File: ./img/gource_over.png Graphic file (type png)
+
+<use ./img/gource_over.png>
+Package pdftex.def Info: ./img/gource_over.png used on input line 192.
+(pdftex.def)             Requested size: 401.89438pt x 239.28975pt.
+
+Overfull \hbox (10.88788pt too wide) in paragraph at lines 191--193
+ [] [] 
+ []
+
+[8 <./img/punchcard.png> <./img/gource_over.png>]) [9] (./Main.aux) ) 
 Here is how much of TeX's memory you used:
- 5764 strings out of 493117
- 79766 string characters out of 6135433
- 170984 words of memory out of 5000000
- 9129 multiletter control sequences out of 15000+600000
- 15949 words of font info for 36 fonts, out of 8000000 for 9000
+ 5799 strings out of 493117
+ 80522 string characters out of 6135433
+ 173984 words of memory out of 5000000
+ 9157 multiletter control sequences out of 15000+600000
+ 16638 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,40p,237b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/
-cm-super-t1.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super
-/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/s
-fbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfb
-x1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2
-074.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc120
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Main.pdf (4 pages, 168443 bytes).
+ 38i,6n,40p,460b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/loca
+l/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on Main.pdf (11 pages, 981870 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
