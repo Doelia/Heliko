@@ -6,6 +6,13 @@ Nous avons proposé ce projet dans l’optique de créer un jeu pour mobile (pla
 \paragraph{}
 La difficulté reléve dans un grand travail de recherche pour que le jeu soit intéressant et réalisable pour pouvoir le mettre en ligne dans le temps donné. La méthode de gestion de projet avait une grande importance.
 
+\paragraph{}
+\noindent
+\makebox[\textwidth]{\includegraphics[scale=1]{./img/game.png}}
+\begin{center}
+\textit{Extrait du jeu final}
+\end{center}
+
 \section{Analyse de départ}
 
 \paragraph{}
@@ -30,13 +37,13 @@ Et le projet est sous-divisé 3 grandes étapes :
 \end{itemize}
 
 \paragraph{}
-Ces 3 étapes demandant une gestion de projet différente, nous avons modifié notre méthode de travail au fil du temps.
+Ces 3 étapes demandant une gestion de projet différente, la méthode de travail a été modifiée au fil du développement.
 
 \paragraph{}
 Le \textbf{diagramme de Gantt} initial a été conçu dans l’optique de faire la totalité des couches énnoncés plus haut.
 
-\paragraph{}
-Pour ce qui est des rôles dans l’équipes, vu charge importante de travail et de la diversité des tâches, nous nous avons préférés nous accorder à chacun des responsabilités fixes :
+\paragraph{Rôles dans l’équipes}
+Vu charge importante de travail et de la diversité des tâches, nous nous avons préférés nous accorder à chacun des responsabilités fixes :
 
 \begin{itemize}
 \item \textbf{Stéphane Wouters}, chef de projet
@@ -67,7 +74,7 @@ Trello permet une gestion des tâches dans le Cloud avec de nombreuses fonctionn
 \end{itemize}
 
 \paragraph{}
-Nous avons adoptés un système de rangement vertical pour les types de tâches, et des labels de couleurs en fonction de l’avancement des tâches :
+Un système de rangement vertical a été adopté pour les types de tâches, et des labels de couleurs en fonction de l’avancement des tâches :
 
 \begin{itemize}
 \item \textbf{Bloquante} (tâche à réaliser rapidement, bloquant l’avancement du projet)
@@ -103,7 +110,7 @@ Cette méthode de travail avec Trello nous a permit d’être efficace 100\% du 
 \subsection{Réunions}
 
 \paragraph{}
-Même si Trello nous permettait de travailler de façon indépendante, nous nous réunions très régulièremement pour travailler ensemble et fixer les nouveaux objectifs, de une à deux fois par semaines.
+Même si Trello nous permet de travailler de façon indépendante, nous nous réunions très régulièremement pour travailler ensemble et fixer les nouveaux objectifs, de une à deux fois par semaines.
 
 \paragraph{}
 Pendant les longues séances de travail en collaboration (de 9h à 18h par exemple), nous utilisons un véritable tableau blanc pour noter les tâches en cours et les affecations.
@@ -123,33 +130,32 @@ De nombreuses heures de réunion étaient dédiés à la recherche de concept ou
 \subsection{Cycles itératifs}
 
 \paragraph{}
-Nous avons adopté dés le départ le développement par cycle itératif, bien adapté pour le développement d’un jeu vidéo et surtout à cause de la contrainte principale : notre liberté sur les choix.
+Dés le départ, ue développement par cycle itératif a été choisit. Bien adapté pour le développement d’un jeu vidéo et surtout à cause de la contrainte principale : notre liberté sur les choix.
 
 \paragraph{}
-Nous avons dédiés les premières semaines à la réalisation de prototypes et de tests en augmentant toujours la difficulés, dans l’objectif de produire un moteur de jeu de rythme fonctionnel qui correspond aux besoins définis dans le cahier des charges.
+Les premières semaines ont été dédiés à la réalisation de prototypes et de tests en augmentant toujours la difficulés, dans l’objectif de produire un moteur de jeu de rythme fonctionnel qui correspond aux besoins définis dans le cahier des charges.
 
 \begin{itemize}
-\item Prototype 1 - Réalisation d’une cube qui bat à un rythme constant (3 jours)
-\item Prototype 2 - Réalisation d’un prototype de test de réussite (2 jours)
-\item Prototype 3 - Création de la première version du moteur de rythme (6 jours)
-Prototype 3 - Réalisation d’un prototype d’animations, connectés au moteur de rythme (4 \item jours)
-\item -> Le moteur n’est pas assez précis et doit être revu
-\item Prototype 4 - Deuxième version du moteur de rythme (3 jours)
-\item Prototype 5 - Nouvelle tentative de connexion à des animations (1 jour)
-\item -> Test OK
--> On s’aperçoit que nous avons besoin de quart de temps dans le modèle et qu’il faut \item recommencer une nouvelle fois sa conception
+\item \textbf{Prototype 1} - Réalisation d’une cube qui bat à un rythme constant (3 jours)
+\item \textbf{Prototype 2} - Réalisation d’un prototype de test de réussite (2 jours)
+\item \textbf{Prototype 3} - Création de la première version du moteur de rythme (6 jours)
+\item \textbf{Prototype 4} - Réalisation d’un prototype d’animations, connectés au moteur de rythme (4 jours) \emph{-> Le moteur n’est pas assez précis et doit être revu}
+\item \textbf{Prototype 5} - Deuxième version du moteur de rythme (3 jours)
+\item \textbf{Prototype 6} - Nouvelle tentative de connexion à des animations (1 jour) \emph{-> Test OK. On s’aperçoit que nous avons besoin de quart de temps dans le modèle et qu’il faut recommencer une nouvelle fois sa conception}
+\item \textbf{Prototype 7} - Troisième version du moteur de rythme (4 jours)
 \item Etc.
 \end{itemize}
 
+\paragraph{}
 \noindent
 \makebox[\textwidth]{\includegraphics[scale=1]{./img/list-tests.png}}
 \begin{center}
-\textit{Nos différents projets Unity de tests
+\textit{Les différents projets Unity de tests
 }
 \end{center}
 
 \paragraph{}
-A chaque nouveau test, un nouveau projet Unity. Au test 14, nous avons jugés que le moteur correspondait à nos attente et nous avons ensuite itéré directement sur ce projet. C’est à ce moment (environs 1 mois après le début du projet) que le système de fonctionnement à changé et que nous avons fonctionné en micro-tâches.
+A chaque nouveau test, un nouveau projet Unity. Au \textbf{test 14}, nous avons jugés que le moteur correspondait à nos attente et nous avons ensuite itéré directement sur ce projet. C’est à ce moment (environs 1 mois après le début du projet) que le système de fonctionnement à changé et que nous avons fonctionné en micro-tâches.
 
 \paragraph{}
 Les dernières semaines ont été dédiés aux finitions sur le projet afin de rendre le jeu agréable avec un aspect “fini”.
@@ -157,7 +163,7 @@ Les dernières semaines ont été dédiés aux finitions sur le projet afin de r
 \subsection{Github}
 
 \paragraph{}
-Nous avons bien sûr utilisé un gestionnaire de version pour notre projet et nous avons choisis le gestionnaire GitHub qui offre de nombreux outils de statistiques très intéressants.
+Un gestionnaire de version pour notre projet a bien sur été utilisé et nous avons choisis le gestionnaire GitHub qui offre de nombreux outils de statistiques très intéressants.
 
 \paragraph{}
 Déjà habitués à Git, nous l'avons utilisé pleinement et nous avons envoyés des \emph{commits} pour chaque modification fonctionelle. Nous sommes ainsi arrivé en fin de projet avec un cumule de de \textbf{880 commits}, globalement bien répartis entre nous quatre. (Avec plus de 2 millions de modifications dans les fichiers...).
