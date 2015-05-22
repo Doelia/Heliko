@@ -202,12 +202,15 @@ Pour résumer le fonctionnement du moteur :
 
 \subsection{Outil de construction des niveaux}
 
-Même si notre système de fichier est suffisamment clair pour être lu et modifié, il est difficile de construire des niveaux de façon aisée avec ce système. Il est beaucoup plus intéressant de créer les actions du niveau dans un logiciel de musique. Nous avons donc développé un outil de conversion pour générer ce genre de fichier à partir de fichiers MIDI.
+Même si notre système de fichier texte est suffisamment clair pour être lu et modifié manuellement, il est tout de même fastidieux de construire des niveaux directement. Il est beaucoup plus intéressant de créer les actions du niveau dans un logiciel de musique. Nous avons donc développé un outil de conversion pour générer un niveau à partir de fichiers MIDI.
+
+\subsection{Choix du langage}
+La programmation est la représentation des données et la manipulation de ces représentations. Les fichiers midi sont représentés par des listes de listes. Quel meilleur langage qu'un lisp pour effectuer des opérations sur des listes ? Le Scheme s'est imposé comme choix naturel.
 
 \subsubsection{Structure d'un fichier midi}
 Les spécifications du midi sont lourdes et complexes, elles ne seront pas détaillées ici, seules seront détaillées les informations importantes à notre convertisseur de niveau.
 
-Un fichier midi est composé d'une suite de "chunks", eux mêmes composés d'évènements, il existe un certain nombre d'évènements différents, tels que le nom de la piste, le tempo, le nombre de pistes... Seuls un petit nombre de ces évènements nous sont utiles, ce sont ces évènements qui seront détaillés.\\
+Un fichier midi est composé d'une suite de "chunks", eux mêmes composés d'évènements, il existe un certain nombre d'évènements différents, tels que le nom de la piste, le tempo, le nombre de pistes... Nous détaillerons uniquement les événements pertinents à notre programme.\\
 {\small \texttt{fichier midi = <header chunk> + <track chunk> [+ <track chunk> ...]}}\\\\
 Un fichier midi commence par un \textit{header} formé de la manière suivante :\\
 {\small \texttt{header chunk = "MThd" + <header length> + <format> + <n> + <division>}}\\
@@ -216,10 +219,10 @@ Un fichier midi commence par un \textit{header} formé de la manière suivante :
 ;; lecture de l en-tete du fichier
 (define (read-header in)
     (header (to-string (read-n-bytes in 4))
-        (to-int (read-n-bytes in 4))
-        (to-int (read-n-bytes in 2))
-        (to-int (read-n-bytes in 2))
-        (to-int (read-n-bytes in 2))))
+            (to-int (read-n-bytes in 4))
+            (to-int (read-n-bytes in 2))
+            (to-int (read-n-bytes in 2))
+            (to-int (read-n-bytes in 2))))
 \end{lstlisting}
 {\small \texttt{track chunk = "MTrk" + <length> + <track event> [+ <track event> ...]}}\\\\
 Un \textit{event} se présent sous la forme suivante :\\
@@ -240,9 +243,9 @@ Les \textit{meta events} servent à donner des informations telles que le tempo,
 
 Les \textit{midi events} sont quand à eux des évènements directement en rapport avec la musique, le début ou la fin d'une note, ou encore le changement de canal.
 {\small \texttt{midi event = <status byte> + <data byte> + <data byte>}}\\\\
-Une fois lu, un fichier midi n'est rien d'autre qu'une suite d'octets, il est représenté dans notre programme comme valeurs de 0 à 255 : ‘(20 255 88 4 60 100 ...).
+Un fichier midi est un fichier binaire, à sa lecture, c'est une suite de valeurs hexadécimales, il est représenté dans notre programme comme une suite de valeurs de 0 à 255 : ‘(20 255 88 4 60 100 ...).
 
-En parcourant le fichier, on peut reconnaître la suite d'octets "255 88 4", qui fait partie de nos évènement connus, on connaît également la taille de cet évènement, on sait donc que les 4 octets suivants formeront un \textit{event} de type "time signature".\\
+En parcourant le fichier, on peut reconnaître par exemple la suite d'octets "255 88 4", qui fait partie de nos évènement connus, on connaît également la taille de cet évènement, on sait donc que les 4 octets suivants formeront un \textit{event} de type "time signature".\\
 
 \begin{lstlisting}[language=Lisp]
 ;;vrai si toutes les valeurs de l1 sont dans l2
@@ -256,7 +259,7 @@ En parcourant le fichier, on peut reconnaître la suite d'octets "255 88 4", qui
     (or (sublist? e data) (sublist? e (cdr data))))
 \end{lstlisting}
 
-Le delta time est codé avec une quantité à longueur variable. Le delta time n'est pas par rapport au début de la piste mais par rapport à l'évènement précédent.\\\\
+Le delta time est codé avec une quantité à longueur variable. Le delta time n'est pas par rapport au début de la piste mais par rapport à l'évènement précédent. C'est lui qui permettra à la musique dans le fichier midi d'avoir un rythme, par exemple, plus le delta time est long entre un évènement de début de note et un évènement de fin de note, plus la note sera tenue longtemps.\\\\
 
 \fbox{\parbox{11cm}
 {\textbf{Note technique sur la quantité à longueur variable (\textit{variable-length quantity})}\\La vlq permet de représenter de manière compacte des quantités supérieures à un octet.
@@ -286,10 +289,10 @@ L'action 1 correspond à la note C, l'action 2 à la note C\#, et l'action 3 à 
 ;; delta-sum est la somme des delta depuis le dernier event utile
 (define (event-to-level event division delta-sum)
     (let ([n (/ (+ delta-sum (vlq->int (midi-event-delta event))) (/ division 4))])
-    ; n est le nombre de temps ou rien ne se passe (0)
-    ; midi-event-arg1 est la note
-    ; notes est la hashmap ou sont faites les correspondances
-    (append (make-list n 0) `(,(hash-ref notes (midi-event-arg1 event) #\?)))))
+         ; n est le nombre de temps ou rien ne se passe (0)
+         ; midi-event-arg1 est la note
+         ; notes est la hashmap ou sont faites les correspondances
+         (append (make-list n 0) `(,(hash-ref notes (midi-event-arg1 event) ?)))))
 \end{lstlisting}
 
 
