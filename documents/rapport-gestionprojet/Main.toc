@@ -18,7 +18,8 @@
 \contentsline {paragraph}{}{4}
 \contentsline {paragraph}{}{4}
 \contentsline {paragraph}{}{4}
-\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
 \contentsline {paragraph}{}{5}
 \contentsline {subsection}{\numberline {3.2}R\IeC {\'e}unions}{5}
 \contentsline {paragraph}{}{5}
@@ -28,15 +29,21 @@
 \contentsline {subsection}{\numberline {3.3}Cycles it\IeC {\'e}ratifs}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {paragraph}{}{6}
-\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {subsection}{\numberline {3.4}Github}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {subsubsection}{\numberline {3.4.1}Ponctualit\IeC {\'e} hebdomadaire}{8}
-\contentsline {subsubsection}{\numberline {3.4.2}Mod\IeC {\'e}lisation Gource}{8}
 \contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {subsubsection}{\numberline {3.4.1}Ponctualit\IeC {\'e} hebdomadaire}{8}
+\contentsline {subsubsection}{\numberline {3.4.2}Mod\IeC {\'e}lisation Gource}{9}
 \contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {section}{\numberline {4}R\IeC {\'e}sultat et comparaison avec le pr\IeC {\'e}visionnel}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
