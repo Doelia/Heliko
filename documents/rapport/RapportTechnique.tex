@@ -352,3 +352,22 @@ Après avoir développé tout le contenu d'un mini-jeu, il faut évaluer sa diff
 \subsection{Les tutoriels}
 \subsection{Assemblage des jeux}
 \subsection{Mise en ligne}
+
+\subsubsection{Problème de synchronisation}
+
+\paragraph{}
+Lors de nos premiers tests sur mobile, nous nous sommes aperçu un peu tard de très gros problèmes de synchronisations.
+Quand le joueur frappait sur l'écran, il y avait un décalage entre le moment ou il appuyait sur l'écran et le moment ou les actions se jouaient. Si au début on pensait que ce n'était qu'une question d'optimisation de code, ou une habitude à prendre, il s'est avéré que c'était un très gros problème dans la jouabilité.
+
+\paragraph{}
+Après plusieurs heures de recherche sur les éléments de notre créations qui pouvaient provoquer ces décalages, nous avons terminé par créer une simple démo qui joue un son quand on tape l'écran. La conclusion était effrayante : Le décalage était réél (entre 300 et 500ms environs). Le problème nous semblait venir de Unity, il ne serait peut être pas adapté pour les jeux de rythme de précision. (Un peu tard à ce stade du développement).
+
+\paragraph{}
+Finalement nous avons terminé par trouver la raison du problème : Une simple case à cocher dans l'une des centaines de menu de Unity. Le moteur devient optimisé pour jouer les sons rapidement, et tout les problèmes de synchronisation disparaissent. Ce n'est qu'un simple exemple démontrant l'importance de la configuration de Unity pour l'exportation d'un jeu optimisé sur toutes les plateformes.
+
+\begin{center}
+\includegraphics[scale=1]{./img/opti_sound.png}\\
+\textit{Paramètre pour la synchronisation des sons}
+\end{center}
+
+
