@@ -331,7 +331,10 @@ Un des éléments les plus importants d'un jeu est son aspect visuel. Il est pr�
 
 Dans notre projet, nous avons voulu mettre en avant le côté simple et divertissant de notre thème en utilisant des graphismes 2D de type \textit{cartoon}. Nous avons créé nos propres graphismes, en utilisant des couleurs vives et des traits de contours très épais.
 
-[img]
+\begin{center}
+\includegraphics[scale=0.6]{./img/technique_graphismes.png}\\
+\textit{Exemple visuel de fichier graphique vectoriel}
+\end{center}
 
 Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des créations graphiques vectorielles. L'intérêt de travailler sur du vectoriel est qu'on peut rendre l'image dans la dimension voulue, et, de plus, il est plus facile d'apporter rapidement une petite modification un objet ou sa couleur, sans avoir tout à recommencer.
 
@@ -339,15 +342,24 @@ Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des cr�
 
 Les animations utilisées dans l'application sont gérées directement par Unity. Leur mise en place est classique, elle se fait via l'utilisation de clés sur une ligne de temps. 
 
-[img timeline avec courbes]
+\begin{center}
+\includegraphics[scale=0.55]{./img/technique_animation1.png}\\
+\textit{Exemple d'utilisation de clés sur une ligne temporelle}
+\end{center}
 
 Le principe étant de donner les caractéristiques de l'objet à animer (position, taille, rotation ...) à un temps donné, et de les stocker dans une clé. Une fois que deux clés ont étés crées, une interpolation linéaire est ensuite appliquée entre les deux clés afin d'obtenir un déplacement fluide sur les images intermédiaires. La courbe d'interpolation peut être modifiée afin d'obtenir l'effet voulu.
 
-[img d'exemple avec animation simple + explication dans la légende]
+\begin{center}
+\includegraphics[scale=0.55]{./img/technique_animation2.png}\\
+\textit{Interpolation simple entre trois clés définissant la position y de l'objet}
+\end{center}
 
-Unity possède la caractéristique de pouvoir créer un arbre de décision afin de jouer les différentes animations dans l'ordre désiré. Dans notre projet, nous avons utilisé cette fonctionnalité pour nous aligner sur le rythme de la musique. Pour cela, nous avons créé un arbre simple qui possède un état \textit{immobile} et un état \textit{mouvement}. A chaque fin d'une animation, c'est l'animation suivante qui sera jouée, en synchronisation avec les battements par minute de la musique.
+Unity possède la caractéristique de pouvoir créer un diagramme d'état afin de jouer les différentes animations dans l'ordre désiré. Dans notre projet, nous avons utilisé cette fonctionnalité pour nous aligner sur le rythme de la musique. Pour cela, nous avons créé un arbre simple qui possède un état \textit{immobile} et un état \textit{mouvement}. A chaque fin d'une animation, c'est l'animation suivante qui sera jouée, en synchronisation avec les battements par minute de la musique.
 
-[img arbre animation]
+\begin{center}
+\includegraphics[scale=0.8]{./img/technique_animation3.png}\\
+\textit{Diagramme d'état utilisé pour l'animation}
+\end{center}
 
 \subsubsection{Assemblage avec le moteur}
 

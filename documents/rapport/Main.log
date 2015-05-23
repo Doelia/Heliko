@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  23 MAY 2015 18:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  23 MAY 2015 20:12
 entering extended mode
 **Main.tex
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.tex"
@@ -828,20 +828,56 @@ Package pdftex.def Info: ./img/logic_export.png used on input line 319.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
  [22 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
 ogic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rap
-port/img/logic_export.png>] [23]) [24]
+port/img/logic_export.png>]
+<./img/technique_graphismes.png, id=626, 335.75438pt x 463.7325pt>
+File: ./img/technique_graphismes.png Graphic file (type png)
+
+<use ./img/technique_graphismes.png>
+Package pdftex.def Info: ./img/technique_graphismes.png used on input line 335.
+
+(pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
+
+<./img/technique_animation1.png, id=627, 625.58719pt x 139.27031pt>
+File: ./img/technique_animation1.png Graphic file (type png)
+
+<use ./img/technique_animation1.png>
+Package pdftex.def Info: ./img/technique_animation1.png used on input line 346.
+
+(pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
+ [23 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
+echnique_graphismes.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
+uments/rapport/img/technique_animation1.png>] <./img/technique_animation2.png, 
+id=632, 627.09282pt x 163.3603pt>
+File: ./img/technique_animation2.png Graphic file (type png)
+
+<use ./img/technique_animation2.png>
+Package pdftex.def Info: ./img/technique_animation2.png used on input line 353.
+
+(pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
+
+<./img/technique_animation3.png, id=633, 344.78813pt x 165.61874pt>
+File: ./img/technique_animation3.png Graphic file (type png)
+
+<use ./img/technique_animation3.png>
+Package pdftex.def Info: ./img/technique_animation3.png used on input line 360.
+
+(pdftex.def)             Requested size: 275.83087pt x 132.49516pt.
+ [24 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
+echnique_animation2.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
+uments/rapport/img/technique_animation3.png>]) [25]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\ManuelUti
-lisation.tex") [25]
+lisation.tex") [26]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Bilan.tex
-") [26]
+") [27]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Annexes.t
-ex") [27]
+ex") [28]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.aux"
 ) ) 
 Here is how much of TeX's memory you used:
- 5989 strings out of 493921
- 80696 string characters out of 3147277
+ 6009 strings out of 493921
+ 81348 string characters out of 3147277
  200217 words of memory out of 3000000
- 9157 multiletter control sequences out of 15000+200000
+ 9173 multiletter control sequences out of 15000+200000
  20738 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  40i,18n,42p,915b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -864,9 +900,9 @@ ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/bera/fvmb8a.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/bera/fvmr8a.pfb>
-Output written on Main.pdf (30 pages, 2715027 bytes).
+Output written on Main.pdf (31 pages, 2791076 bytes).
 PDF statistics:
- 1170 PDF objects out of 1200 (max. 8388607)
+ 1179 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
