@@ -329,16 +329,45 @@ Pour illustrer ces différentes étapes, des exemples seront tirés du mini-jeu 
 
 Un des éléments les plus importants d'un jeu est son aspect visuel. Il est préférable de commencer par avoir une base solide au niveau de ce que l'on veut que le joueur fasse. Ensuite, il s'agit d'imaginer une scène simple dans laquelle l'action du joueur ne serait pas aberrante. Par exemple, si le joueur doit répéter un motif sonore, alors il vaut mieux que les graphismes représentent au moins deux personnages frappant sur une surface, un représentant le modèle et l'autre le joueur.
 
+Dans notre projet, nous avons voulu mettre en avant le côté simple et divertissant de notre thème en utilisant des graphismes 2D de type \textit{cartoon}. Pour cela nous avons créé nos propres graphismes, en utilisant des couleurs vives et des traits de contours très épais.
+
 [img]
 
-Dans notre projet, nous avons voulu mettre en avant le côté simple et divertissant de notre thème en utilisant des graphismes 2D de type \textit{cartoon}. 
+Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des créations graphiques vectorielles. L'intérêt de travailler sur du vectoriel est qu'on peut rendre l'image dans la dimension voulue, et, de plus, il est plus facile d'apporter rapidement une petite modification un objet ou sa couleur, sans avoir tout à recommencer.
+
+\subsubsection{Les animations}
+
+Les animations utilisées dans l'application sont gérées directement par Unity. Leur mise en place est classique, elle se fait via l'utilisation de clés sur une ligne de temps. 
+
+[img timeline avec courbes]
+
+Le principe étant de donner les caractéristiques de l'objet à animer (position, taille, rotation ...) à un temps donné, et de les stocker dans une clé. Une fois que deux clés ont étés crées, une interpolation linéaire est ensuite appliquée entre les deux clés afin d'obtenir un déplacement fluide sur les images intermédiaires. La courbe d'interpolation peut être modifiée afin d'obtenir l'effet voulu.
+
+[img d'exemple avec animation simple + explication dans la légende]
+
+Unity possède la caractéristique de pouvoir créer un arbre de décision afin de jouer les différentes animations dans l'ordre désiré. Dans notre projet, nous avons utilisé cette fonctionnalité pour nous aligner sur le rythme de la musique. Pour cela, nous avons créé un arbre simple qui possède un état \textit{immobile} et un état \textit{mouvement}. A chaque fin d'une animation, c'est l'animation suivante qui sera jouée, en synchronisation avec les battements par minute de la musique.
+
+[img arbre animation]
+
+\subsubsection{Assemblage avec le moteur}
+
+%TODO
+
+\subsubsection{Le \textit{feedback}}
+
+Le \textit{feedback} est l'ensemble des signes visuels ou sonores que recevra le joueur en fonction de son action. Dans notre application, il permet de signaler la réussite ou l'échec d'une action de l'utilisateur. Ainsi un coup réussi jouera un son cohérent avec la scène et une animation gratifiante sera jouée, afin de récompenser rapidement le joueur. A l'inverse, une action ratée résultera à un son lié à un échec et des graphismes montrant le mécontentement.
+Le feedback retourné par l'application s'est avéré être un des points les plus difficiles à imaginer dans la création des scénarios des mini-jeux.
+
+\subsubsection{Le choix des sons}
+
+Maintenant que la plupart des éléments sont placés et fonctionnels dans la scène, il s'agit d'ajouter le plus important : la musique. Son rôle est important car c'est sur son rythme que l'utilisateur devra se synchroniser pour réussir le niveau. Elle se doit donc de comporter des rythmes prononcés et un thème en rapport avec la scène créée.
+Ne pouvant nous même pas composer notre propre musique, nous avons fait le choix d'ajouter dans notre jeu des musique proposées gratuitement et libres de droit sur Internet.
+
+\subsubsection{La difficulté}
+
+Après avoir développé tout le contenu d'un mini-jeu, il faut évaluer sa difficulté en se mettant dans la peau d'un joueur qui le découvre pour la première fois. Celle-ci ne doit être ni trop élevée, pour ne pas se décourager, ni trop simple, pour ne pas s'ennuyer. Pour répondre à ce problème, nous avons d'abord placé des motifs simple à réaliser, puis augmenté peu à peu leur difficulté au fur et à mesure de l'avancement du niveau. Ensuite, nous avons fait tester nos ébauches de niveau à des personnes externe au développement qui ont pu juger de la difficulté du jeu.
 
 
-
-
-
-
-
-\subsection{Tests}
-\subsubsection{Pendant le développement}
-\subsubsection{Sur la version pre-release}
+\subsection{Les tutoriels}
+\subsection{Assemblage des jeux}
+\subsection{Mise en ligne}
