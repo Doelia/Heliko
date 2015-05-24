@@ -117,7 +117,9 @@
 \contentsline {paragraph}{Les champignons}{34}{section*.72}
 \contentsline {chapter}{\numberline {6}Bilan du projet}{36}{chapter.6}
 \contentsline {section}{\numberline {6.1}Autocritique}{36}{section.6.1}
-\contentsline {section}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{36}{section.6.2}
-\contentsline {section}{\numberline {6.3}Perspectives}{36}{section.6.3}
-\contentsline {section}{\numberline {6.4}Conclusion}{36}{section.6.4}
-\contentsline {chapter}{\numberline {7}Annexes}{37}{chapter.7}
+\contentsline {paragraph}{}{36}{section*.73}
+\contentsline {paragraph}{}{36}{section*.74}
+\contentsline {section}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{37}{section.6.2}
+\contentsline {section}{\numberline {6.3}Perspectives}{37}{section.6.3}
+\contentsline {section}{\numberline {6.4}Conclusion}{37}{section.6.4}
+\contentsline {chapter}{\numberline {7}Annexes}{38}{chapter.7}
