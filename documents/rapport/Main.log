@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -427,6 +427,9 @@ LaTeX Warning: Label `transitions_scenes' multiply defined.
 LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
 
 
+LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
+
+
 LaTeX Warning: Label `transitions_scenes' multiply defined.
 
 
@@ -537,29 +540,29 @@ ogoUM.png> <./img/logo.png>]) [1] [2] (./Main.toc
 \openout4 = `Main.toc'.
 
  [2] (./Introduction.tex) [3] (./AnalyseProjet.tex [4]
-<img/protoPlanete.png, id=40, 703.12688pt x 560.0925pt>
-File: img/protoPlanete.png Graphic file (type png)
+<./img/protoPlanete.png, id=40, 703.12688pt x 560.0925pt>
+File: ./img/protoPlanete.png Graphic file (type png)
 
-<use img/protoPlanete.png>
-Package pdftex.def Info: img/protoPlanete.png used on input line 26.
+<use ./img/protoPlanete.png>
+Package pdftex.def Info: ./img/protoPlanete.png used on input line 27.
 (pdftex.def)             Requested size: 281.24576pt x 224.03302pt.
- [5 <./img/protoPlanete.png>]
-<img/rhythmParadise.png, id=45, 628.59843pt x 432.86719pt>
-File: img/rhythmParadise.png Graphic file (type png)
 
-<use img/rhythmParadise.png>
-Package pdftex.def Info: img/rhythmParadise.png used on input line 36.
+<./img/rhythmParadise.png, id=41, 628.59843pt x 432.86719pt>
+File: ./img/rhythmParadise.png Graphic file (type png)
+
+<use ./img/rhythmParadise.png>
+Package pdftex.def Info: ./img/rhythmParadise.png used on input line 40.
 (pdftex.def)             Requested size: 251.4349pt x 173.1438pt.
- [6 <./img/rhythmParadise.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+ [5 <./img/protoPlanete.png>] [6 <./img/rhythmParadise.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-) [7] (./RapportActivite.tex <./img/unity-3D.png, id=53, 1284.8pt x 847.165pt>
+) [7] (./RapportActivite.tex <./img/unity-3D.png, id=54, 1284.8pt x 847.165pt>
 File: ./img/unity-3D.png Graphic file (type png)
 
 <use ./img/unity-3D.png>
-Package pdftex.def Info: ./img/unity-3D.png used on input line 18.
+Package pdftex.def Info: ./img/unity-3D.png used on input line 19.
 (pdftex.def)             Requested size: 359.74155pt x 237.20457pt.
  [8 <./img/unity-3D.png>]) [9] (./RapportTechnique.tex
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
@@ -848,7 +851,7 @@ smes.png, id=126, 335.75438pt x 463.7325pt>
 File: ./img/technique_graphismes.png Graphic file (type png)
 
 <use ./img/technique_graphismes.png>
-Package pdftex.def Info: ./img/technique_graphismes.png used on input line 362.
+Package pdftex.def Info: ./img/technique_graphismes.png used on input line 361.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
  [23]
@@ -856,7 +859,7 @@ Package pdftex.def Info: ./img/technique_graphismes.png used on input line 362.
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
-Package pdftex.def Info: ./img/technique_animation1.png used on input line 374.
+Package pdftex.def Info: ./img/technique_animation1.png used on input line 373.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
  [24 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
@@ -872,69 +875,69 @@ Package pdftex.def Info: ./img/technique_animation2.png used on input line 381.
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
-Package pdftex.def Info: ./img/technique_animation3.png used on input line 388.
+Package pdftex.def Info: ./img/technique_animation3.png used on input line 389.
 
-(pdftex.def)             Requested size: 275.83087pt x 132.49516pt.
+(pdftex.def)             Requested size: 189.63405pt x 91.09058pt.
  [25 <./img/technique_animation2.png> <./img/technique_animation3.png>] [26]
 <./img/compteur_tuto.png, id=143, 679.78969pt x 322.95656pt>
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
-Package pdftex.def Info: ./img/compteur_tuto.png used on input line 435.
+Package pdftex.def Info: ./img/compteur_tuto.png used on input line 437.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
-
-<./img/skip_locked.png, id=144, 717.43031pt x 447.92343pt>
+ [27 <./img/compteur_tuto.png (PNG copy)>]
+<./img/skip_locked.png, id=147, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
-Package pdftex.def Info: ./img/skip_locked.png used on input line 445.
+Package pdftex.def Info: ./img/skip_locked.png used on input line 447.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_locked_popup.png, id=145, 717.43031pt x 447.92343pt>
+<./img/skip_locked_popup.png, id=148, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
-Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 450.
+Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 452.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_unlocked.png, id=146, 718.93594pt x 447.92343pt>
+<./img/skip_unlocked.png, id=149, 718.93594pt x 447.92343pt>
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
-Package pdftex.def Info: ./img/skip_unlocked.png used on input line 456.
+Package pdftex.def Info: ./img/skip_unlocked.png used on input line 458.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
-<./img/skip_unlocked_popup.png, id=147, 719.68875pt x 447.92343pt>
+<./img/skip_unlocked_popup.png, id=150, 719.68875pt x 447.92343pt>
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
-Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 461.
+Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 463.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
- [27 <./img/compteur_tuto.png (PNG copy)>]
+
 <./img/scenes-transitions.png, id=151, 339.1872pt x 247.6452pt>
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
-Package pdftex.def Info: ./img/scenes-transitions.png used on input line 475.
+Package pdftex.def Info: ./img/scenes-transitions.png used on input line 477.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
  [28 <./img/skip_locked.png> <./img/skip_locked_popup.png> <./img/skip_unlocked
 .png> <./img/skip_unlocked_popup.png>]
 <./img/loading.png, id=156, 532.99126pt x 255.20343pt>
 File: ./img/loading.png Graphic file (type png)
  <use ./img/loading.png>
-Package pdftex.def Info: ./img/loading.png used on input line 484.
+Package pdftex.def Info: ./img/loading.png used on input line 486.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
 
 <./img/scene.png, id=157, 718.93594pt x 448.67625pt>
 File: ./img/scene.png Graphic file (type png)
  <use ./img/scene.png>
-Package pdftex.def Info: ./img/scene.png used on input line 494.
+Package pdftex.def Info: ./img/scene.png used on input line 496.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
 <./img/cartoon.png, id=158, 718.93594pt x 448.67625pt>
 File: ./img/cartoon.png Graphic file (type png)
  <use ./img/cartoon.png>
-Package pdftex.def Info: ./img/cartoon.png used on input line 499.
+Package pdftex.def Info: ./img/cartoon.png used on input line 501.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
 [29 <./img/scenes-transitions.png (PNG copy)> <./img/loading.png (PNG copy)> <.
@@ -943,14 +946,14 @@ Package pdftex.def Info: ./img/cartoon.png used on input line 499.
 File: ./img/GoogleAnalytics.png Graphic file (type png)
 
 <use ./img/GoogleAnalytics.png>
-Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 515.
+Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 517.
 (pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
  [30] [31 <./img/GoogleAnalytics.png>] [32]
 <./img/opti_sound.png, id=173, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
-Package pdftex.def Info: ./img/opti_sound.png used on input line 547.
+Package pdftex.def Info: ./img/opti_sound.png used on input line 549.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
 ) [33 <./img/opti_sound.png>] (./Resultat.tex)
 [34] (./Bilan.tex) [35] (./Annexes.tex) [36] (./Main.aux)
@@ -959,10 +962,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6882 strings out of 493117
- 94393 string characters out of 6135433
- 232499 words of memory out of 5000000
- 10172 multiletter control sequences out of 15000+600000
+ 6887 strings out of 493117
+ 94508 string characters out of 6135433
+ 233547 words of memory out of 5000000
+ 10178 multiletter control sequences out of 15000+600000
  20179 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,40p,1255b,1444s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -986,7 +989,7 @@ m-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-su
 per/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb>
-Output written on Main.pdf (39 pages, 3975946 bytes).
+Output written on Main.pdf (39 pages, 3968959 bytes).
 PDF statistics:
  250 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
