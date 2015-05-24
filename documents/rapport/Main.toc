@@ -105,9 +105,17 @@
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
 \contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{35}
-\contentsline {section}{\numberline {6}Bilan du projet}{36}
-\contentsline {subsection}{\numberline {6.1}Autocritique}{36}
-\contentsline {subsection}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{36}
-\contentsline {subsection}{\numberline {6.3}Perspectives}{36}
-\contentsline {subsection}{\numberline {6.4}Conclusion}{36}
-\contentsline {section}{\numberline {7}Annexes}{37}
+\contentsline {paragraph}{L'\IeC {\'e}cran d'accueil}{35}
+\contentsline {paragraph}{Choix des niveaux}{35}
+\contentsline {paragraph}{Le menu pause}{35}
+\contentsline {paragraph}{L'\IeC {\'e}cran de fin de partie}{35}
+\contentsline {subsection}{\numberline {5.1}Les mini-jeux}{35}
+\contentsline {paragraph}{La marche de l'escargot}{35}
+\contentsline {paragraph}{Le magicien}{36}
+\contentsline {paragraph}{Les champignons}{36}
+\contentsline {section}{\numberline {6}Bilan du projet}{37}
+\contentsline {subsection}{\numberline {6.1}Autocritique}{37}
+\contentsline {subsection}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{37}
+\contentsline {subsection}{\numberline {6.3}Perspectives}{37}
+\contentsline {subsection}{\numberline {6.4}Conclusion}{37}
+\contentsline {section}{\numberline {7}Annexes}{38}
