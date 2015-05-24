@@ -191,7 +191,7 @@ Un fichier midi est composé d'une suite de "chunks", eux mêmes composés d'év
 Un fichier midi commence par un \textit{header} formé de la manière suivante :\\
 {\small \texttt{header chunk = "MThd" + <header length> + <format> + <n> + <division>}}\\
 
-\begin{lstlisting}[language=Lisp]
+\begin{lstlisting}[style=Scheme]
 ;; lecture de l en-tete du fichier
 (define (read-header in)
     (header (to-string (read-n-bytes in 4))
@@ -205,7 +205,7 @@ Un \textit{event} se présent sous la forme suivante :\\
 {\small \texttt{track event = <delta time> + <midi event> | <meta event>}}\\\\
 Les \textit{meta events} servent à donner des informations telles que le tempo, la division du tempo, ou la fin d'une \textit{track}.\\
 
-\begin{lstlisting}[language=Lisp]
+\begin{lstlisting}[style=Scheme]
 ;; events utilises
 (define time-signature-event '(255 88 4))
 (define set-tempo-event '(255 81 3))
@@ -223,7 +223,7 @@ Un fichier midi est un fichier binaire, à sa lecture, c'est une suite de valeur
 
 En parcourant le fichier, on peut reconnaître par exemple la suite d'octets "255 88 4", qui fait partie de nos évènement connus, on connaît également la taille de cet évènement, on sait donc que les 4 octets suivants formeront un \textit{event} de type "time signature".\\
 
-\begin{lstlisting}[language=Lisp]
+\begin{lstlisting}[style=Scheme]
 ;;vrai si toutes les valeurs de l1 sont dans l2
 (define (sublist? l1 l2)
     (andmap (lambda (i j)
@@ -259,7 +259,7 @@ Une fois les évènements extraits du fichier midi, nous sommes en mesure de les
 L'action 1 correspond à la note C, l'action 2 à la note C\#, et l'action 3 à la note D.
 À chaque évènement avec le \textit{status byte} "début de note" (de l'octet 0x90 à l'octet 0x9F), l'action correspondant à la note de l'évènement est ajoutée au niveau. Ces actions sont séparées avec des zéros, eux donnés par le \textit{delta time}.\\
 
-\begin{lstlisting}[language=Lisp]
+\begin{lstlisting}[style=Scheme]
 ;; transforme un evenement en donnees de niveau (0, 1, 2...)
 ;; division est le nombre de frames par secondes
 ;; delta-sum est la somme des delta depuis le dernier event utile

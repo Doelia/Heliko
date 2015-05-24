@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 19:33
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 19:31
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 17:04
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 18:50
+>>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
+>>>>>>> 99a47489ae7a08eccdb3bdff7058a69a63b717ab
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 entering extended mode
 **Main.tex
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.tex"
@@ -459,6 +471,7 @@ LaTeX Warning: Label `analytics' multiply defined.
 LaTeX Warning: Label `analytics' multiply defined.
 
 )
+<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
@@ -475,6 +488,26 @@ LaTeX Info: Redefining \degres on input line 35.
 LaTeX Info: Redefining \dots on input line 35.
 LaTeX Info: Redefining \up on input line 35.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+=======
+\openout1 = `Main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Info: Redefining \degres on input line 50.
+LaTeX Info: Redefining \dots on input line 50.
+LaTeX Info: Redefining \up on input line 50.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen115
@@ -724,7 +757,30 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2014/03/04 1.5c listings language file
+<<<<<<< HEAD
 ) [17]
+=======
+<<<<<<< HEAD
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 194.
+LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <9> not available
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 195.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 195.
+LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <9> not available
+(Font)              Font shape `T1/fvm/b/n' tried instead on input line 196.
+LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
+(Font)              scaled to size 8.09995pt on input line 196.
+ [16]
+=======
+<<<<<<< HEAD
+)
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 199--203
+=======
+) [16]
+>>>>>>> 99a47489ae7a08eccdb3bdff7058a69a63b717ab
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 Overfull \hbox (13.83879pt too wide) in paragraph at lines 203--207
 \T1/fvm/m/n/10 track chunk = "MTrk" + <length> + <track event> [+ <track event>
  ...] 
@@ -770,7 +826,11 @@ Underfull \hbox (badness 1552) in paragraph at lines 246--246
 []\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
  []
 
+<<<<<<< HEAD
 <./img/vlqOctet.png, id=100, 130.98938pt x 65.24374pt>
+=======
+<./img/vlqOctet.png, id=99, 130.98938pt x 65.24374pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/vlqOctet.png Graphic file (type png)
 
 <use ./img/vlqOctet.png>
@@ -797,7 +857,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
+<<<<<<< HEAD
 <./img/logic_sound.png, id=105, 1439.3775pt x 354.32375pt>
+=======
+<./img/logic_sound.png, id=104, 1439.3775pt x 354.32375pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
@@ -808,14 +872,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
+<<<<<<< HEAD
 <./img/logic_midi.png, id=106, 1125.20375pt x 350.30875pt>
+=======
+<./img/logic_midi.png, id=105, 1125.20375pt x 350.30875pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
 Package pdftex.def Info: ./img/logic_midi.png used on input line 291.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
+<<<<<<< HEAD
  [20 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
 ogic_sound.png>]
+=======
+ [19 <./img/logic_sound.png> <./img/logic_midi.png>]
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 <./img/logic_edit.png, id=111, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
@@ -829,45 +901,70 @@ File: ./img/logic_export.png Graphic file (type png)
 <use ./img/logic_export.png>
 Package pdftex.def Info: ./img/logic_export.png used on input line 310.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
+<<<<<<< HEAD
  [21 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
 ogic_midi.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rap
 port/img/logic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
 uments/rapport/img/logic_export.png>]
 <./img/MenuMort.png, id=119, 183.68625pt x 206.27063pt>
+=======
+ [20 <./img/logic_edit.png> <./img/logic_export.png>] <./img/MenuMort.png, id=1
+18, 183.68625pt x 206.27063pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/MenuMort.png Graphic file (type png)
 
 <use ./img/MenuMort.png>
 Package pdftex.def Info: ./img/MenuMort.png used on input line 333.
 (pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
+<<<<<<< HEAD
  [22]
 <./img/SelectionMiniJeu.png, id=124, 268.00125pt x 210.7875pt>
+=======
+
+<./img/SelectionMiniJeu.png, id=119, 268.00125pt x 210.7875pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/SelectionMiniJeu.png Graphic file (type png)
 
 <use ./img/SelectionMiniJeu.png>
 Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 343.
 (pdftex.def)             Requested size: 241.19888pt x 189.707pt.
+<<<<<<< HEAD
  [23 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/M
 enuMort.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rappo
 rt/img/SelectionMiniJeu.png>]
 <./img/technique_graphismes.png, id=128, 335.75438pt x 463.7325pt>
+=======
+ [21 <./img/MenuMort.png>]
+<./img/technique_graphismes.png, id=123, 335.75438pt x 463.7325pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/technique_graphismes.png Graphic file (type png)
 
 <use ./img/technique_graphismes.png>
 Package pdftex.def Info: ./img/technique_graphismes.png used on input line 361.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
+<<<<<<< HEAD
  [24]
 <./img/technique_animation1.png, id=132, 625.58719pt x 139.27031pt>
+=======
+ [22 <./img/SelectionMiniJeu.png>]
+<./img/technique_animation1.png, id=128, 625.58719pt x 139.27031pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
 Package pdftex.def Info: ./img/technique_animation1.png used on input line 373.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
+<<<<<<< HEAD
  [25 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
 echnique_graphismes.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
 uments/rapport/img/technique_animation1.png>] <./img/technique_animation2.png, 
 id=137, 627.09282pt x 163.3603pt>
+=======
+ [23 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
+<./img/technique_animation2.png, id=133, 627.09282pt x 163.3603pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/technique_animation2.png Graphic file (type png)
 
 <use ./img/technique_animation2.png>
@@ -875,81 +972,128 @@ Package pdftex.def Info: ./img/technique_animation2.png used on input line 381.
 
 (pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
 
+<<<<<<< HEAD
 <./img/technique_animation3.png, id=138, 344.78813pt x 165.61874pt>
+=======
+<./img/technique_animation3.png, id=134, 344.78813pt x 165.61874pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
 Package pdftex.def Info: ./img/technique_animation3.png used on input line 389.
 
 (pdftex.def)             Requested size: 189.63405pt x 91.09058pt.
+<<<<<<< HEAD
  [26 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
 echnique_animation2.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
 uments/rapport/img/technique_animation3.png>] [27] <./img/compteur_tuto.png, id
 =145, 679.78969pt x 322.95656pt>
+=======
+ [24 <./img/technique_animation2.png> <./img/technique_animation3.png>] [25]
+<./img/compteur_tuto.png, id=141, 679.78969pt x 322.95656pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
 Package pdftex.def Info: ./img/compteur_tuto.png used on input line 437.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
+<<<<<<< HEAD
  [28 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/c
 ompteur_tuto.png (PNG copy)>]
 <./img/skip_locked.png, id=150, 717.43031pt x 447.92343pt>
+=======
+ [26 <./img/compteur_tuto.png (PNG copy)>]
+<./img/skip_locked.png, id=145, 717.43031pt x 447.92343pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
 Package pdftex.def Info: ./img/skip_locked.png used on input line 447.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
+<<<<<<< HEAD
 <./img/skip_locked_popup.png, id=151, 717.43031pt x 447.92343pt>
+=======
+<./img/skip_locked_popup.png, id=146, 717.43031pt x 447.92343pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
 Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 452.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
+<<<<<<< HEAD
 <./img/skip_unlocked.png, id=152, 718.93594pt x 447.92343pt>
+=======
+<./img/skip_unlocked.png, id=147, 718.93594pt x 447.92343pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
 Package pdftex.def Info: ./img/skip_unlocked.png used on input line 458.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
+<<<<<<< HEAD
 <./img/skip_unlocked_popup.png, id=153, 719.68875pt x 447.92343pt>
+=======
+<./img/skip_unlocked_popup.png, id=148, 719.68875pt x 447.92343pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
 Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 463.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
 
+<<<<<<< HEAD
 <./img/scenes-transitions.png, id=154, 339.1872pt x 247.6452pt>
+=======
+<./img/scenes-transitions.png, id=149, 339.1872pt x 247.6452pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
 Package pdftex.def Info: ./img/scenes-transitions.png used on input line 477.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
+<<<<<<< HEAD
  [29 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/s
 kip_locked.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/ra
 pport/img/skip_locked_popup.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/He
 liko/documents/rapport/img/skip_unlocked.png> <C:/Users/Thibaut/Dropbox/M1 IMAG
 INA/TER_M1/Heliko/documents/rapport/img/skip_unlocked_popup.png>] <./img/loadin
 g.png, id=158, 532.99126pt x 255.20343pt>
+=======
+ [27 <./img/skip_locked.png> <./img/skip_locked_popup.png> <./img/skip_unlocked
+.png> <./img/skip_unlocked_popup.png>]
+<./img/loading.png, id=153, 532.99126pt x 255.20343pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/loading.png Graphic file (type png)
 
 <use ./img/loading.png>
 Package pdftex.def Info: ./img/loading.png used on input line 486.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
+<<<<<<< HEAD
  <./img/scene.png, id=159, 718.93594pt x 448.67625pt>
+=======
+
+<./img/scene.png, id=154, 718.93594pt x 448.67625pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/scene.png Graphic file (type png)
 
 <use ./img/scene.png>
 Package pdftex.def Info: ./img/scene.png used on input line 496.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
+<<<<<<< HEAD
  <./img/cartoon.png, id=160, 718.93594pt x 448.67625pt>
+=======
+
+<./img/cartoon.png, id=155, 718.93594pt x 448.67625pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/cartoon.png Graphic file (type png)
 
 <use ./img/cartoon.png>
 Package pdftex.def Info: ./img/cartoon.png used on input line 501.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
+<<<<<<< HEAD
  [30 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/s
 cenes-transitions.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/H
 eliko/documents/rapport/img/loading.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M
@@ -957,19 +1101,31 @@ eliko/documents/rapport/img/loading.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M
 hibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/cartoon.png (PNG 
 copy)>]
 <./img/GoogleAnalytics.png, id=164, 514.17094pt x 289.08pt>
+=======
+
+[28 <./img/scenes-transitions.png (PNG copy)> <./img/loading.png (PNG copy)> <.
+/img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
+<./img/GoogleAnalytics.png, id=160, 514.17094pt x 289.08pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/GoogleAnalytics.png Graphic file (type png)
 
 <use ./img/GoogleAnalytics.png>
 Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 520.
 (pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
+<<<<<<< HEAD
  [31] [32 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/
 img/GoogleAnalytics.png>] [33]
 <./img/opti_sound.png, id=175, 141.52875pt x 121.45375pt>
+=======
+ [29] [30 <./img/GoogleAnalytics.png>] [31]
+<./img/opti_sound.png, id=171, 141.52875pt x 121.45375pt>
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
 Package pdftex.def Info: ./img/opti_sound.png used on input line 562.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
+<<<<<<< HEAD
 ) [34 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/
 opti_sound.png>]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Resultat.
@@ -1019,11 +1175,16 @@ resultat_champis.png>]
 ex") [40]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.aux"
 )
+=======
+) [32 <./img/opti_sound.png>] (./Resultat.tex)
+[33] (./Bilan.tex) [34] (./Annexes.tex) [35] (./Main.aux)
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  6238 strings out of 493921
  85588 string characters out of 3147277
  220908 words of memory out of 3000000
@@ -1057,6 +1218,42 @@ eX 2.9/fonts/type1/bera/fvmr8a.pfb>
 Output written on Main.pdf (43 pages, 4416058 bytes).
 PDF statistics:
  766 PDF objects out of 1000 (max. 8388607)
+=======
+ 6929 strings out of 493104
+ 94462 string characters out of 6136932
+ 235444 words of memory out of 5000000
+ 10216 multiletter control sequences out of 15000+600000
+ 22839 words of font info for 53 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,12n,45p,1013b,1702s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ber
+a/fvmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfbi1095.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx10
+95.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc109
+5.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfti1200.pfb>
+Output written on Main.pdf (38 pages, 3972666 bytes).
+PDF statistics:
+<<<<<<< HEAD
+ 251 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+=======
+ 250 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+>>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
+>>>>>>> 99a47489ae7a08eccdb3bdff7058a69a63b717ab
+>>>>>>> 15a591b95454ace8c347caaa661011b7e1956401
  0 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
