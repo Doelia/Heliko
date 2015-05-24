@@ -290,6 +290,28 @@ Une fois le niveau construit, il ne reste plus qu'à exporter la piste au format
 \includegraphics[width=11cm]{./img/logic_export.png}\\
 \end{center}
 
+\subsection{Avancement du joueur}
+
+\subsubsection{Calcul du score dans un mini-jeu}
+
+Le calcul du score est fait sous la forme d'un pourcentage. En fait, seul le nombre d'erreur est regardé, puisque peu importe que le joueur fasse tout bon, si il se contente d'envoyer des évènements dans tous les sens en appuyant sur son tactile. C'est pourquoi le nombre de réussite n'est pas regardé à proprement parler. Cependant est considéré comme un échec:
+\begin{itemize}
+\item Un évènement envoyé à un moment non attendu
+\item Un évènement envoyé alors que c'est un autre qui est attendu
+\item Ne pas envoyer d'évènement alors qu'un évènement est attendu
+\end{itemize}
+Ainsi, même si les succès ne sont pas considérés, étant donné que l'absence de succès est considérée comme un échec, ne rien faire ou spammer le tactile ne donne en aucun cas un bon score, pas moyen de “tricher” pour gagner, la seule manière étant de jouer correctement.
+Ensuite, une fois les échecs additionnés, on se contente de calculer le pourcentage en divisant le nombre d'échec par le nombre d'évènement attendu. Ainsi, 0 correspond au fait de n'avoir fait aucun échec, 1 correspond au fait d'avoir fait autant d'échec que d'étapes à effectuer (plus voulant dire qu'on a fait plus d'erreurs que d'étapes). On soustrait ce nombre à 1, et on multiplie par 100 pour obtenir un pourcentage. On se retrouve donc à avoir 100\% si on n'a fait aucune erreur, 50\% si on a loupé la moitié des évènements, et on renvoie 0\% si on fait autant d'erreurs ou plus que d'évènements à faire. 
+
+\subsubsection{Enregistrement des scores}
+
+Même si le calcul des scores est fait sous la forme de pourcentage, ce qui est affiché au joueur et ce qui est enregistré est sous la forme d'étoiles. 3 étoiles correspond à 100\% de réussite, 2 étoiles à un score supérieur à 90\% et enfin 1 étoile à un score supérieur à 75\%. Le score est enregistré de manière très simple, unity permettant d'enregistrer des entiers, des chaines de caractères et des nombres flottants. Ainsi le score est enregistré dans une variable "int" s'appellant “etoileLevel[numéro du mini jeu]” et sa valeur correspond au nombre d'étoiles. A chaque fin d'un mini-jeu, on vérifie si le joueur n'a pas amélioré le nombre d'étoiles sur ce mini-jeu, et si oui, alors on écrase le précedent score avec le nouveau qui est meilleur.
+
+\subsubsection{Débloquage des mini-jeux}
+
+Certains jeux sont débloqués de base, d'autres nécessitent la réussite d'un autre mini-jeu pour celà. Un mini-jeu est considéré comme réussi du moment que le joueur a obtenu au moins une étoile sur ce jeu. Ainsi, si un mini-jeu n'est pas débloqué, dans le menu de sélection des mini-jeux, son icone est grisée, et il est inclicable. De plus, en dessous de l'icone de chaque mini-jeu est affiché le plus grand nombre d'étoiles obtenu dans le jeu correspondant.
+
+
 \subsection{Création d'un mini-jeu}
 
 Afin d'obtenir un niveau cohérent, le processus de création d'un mini-jeu doit se faire étape par étape. Le travail effectué sur le premier niveau a permis de peaufiner ce processus et de réaliser les mini-jeux suivants avec plus d'efficacité et de rapidité. Dans un premier temps, nous avons commencé à développer le niveau des champignons en suivant des étapes qui nous paraissaient logiques. Puis, après avoir développé la majeure partie du niveau, nous avons réalisé qu'il manquait des éléments importants au gameplay, tels que des sons cohérents correspondants au rythme et à l'image, ou un \textit{feedback} visuel montrant la réussite ou l'échec du joueur.
