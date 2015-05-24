@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,41 +419,25 @@ Package: beramono 2004/01/31 (WaS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./Main.aux
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
-
-
-LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-)
+No file Main.aux.
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Info: Redefining \degres on input line 34.
-LaTeX Info: Redefining \dots on input line 34.
-LaTeX Info: Redefining \up on input line 34.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Info: Redefining \degres on input line 51.
+LaTeX Info: Redefining \dots on input line 51.
+LaTeX Info: Redefining \up on input line 51.
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen115
@@ -534,12 +518,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogoUM.png> <./img/logo.png>]) [1] [2] (./Main.toc
-[1])
+ogoUM.png> <./img/logo.png>]) [1] [2]
+No file Main.toc.
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
- [2] (./Introduction.tex) [3] (./AnalyseProjet.tex [4]
+[1]
+No file Main.lof.
+\tf@lof=\write5
+\openout5 = `Main.lof'.
+
+[2] (./Introduction.tex) [3] (./AnalyseProjet.tex [4]
 <./img/protoPlanete.png, id=40, 703.12688pt x 560.0925pt>
 File: ./img/protoPlanete.png Graphic file (type png)
 
@@ -727,7 +716,18 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2014/03/04 1.5c listings language file
-) [17]
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 194.
+LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <9> not available
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 195.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 195.
+LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <9> not available
+(Font)              Font shape `T1/fvm/b/n' tried instead on input line 196.
+LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
+(Font)              scaled to size 8.09995pt on input line 196.
+ [17]
 Overfull \hbox (13.83879pt too wide) in paragraph at lines 203--207
 \T1/fvm/m/n/10 track chunk = "MTrk" + <length> + <track event> [+ <track event>
  ...] 
@@ -773,7 +773,7 @@ Underfull \hbox (badness 1552) in paragraph at lines 246--246
 []\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
  []
 
-<./img/vlqOctet.png, id=101, 130.98938pt x 65.24374pt>
+<./img/vlqOctet.png, id=102, 130.98938pt x 65.24374pt>
 File: ./img/vlqOctet.png Graphic file (type png)
 
 <use ./img/vlqOctet.png>
@@ -799,7 +799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-<./img/logic_sound.png, id=106, 1439.3775pt x 354.32375pt>
+<./img/logic_sound.png, id=107, 1439.3775pt x 354.32375pt>
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
@@ -810,58 +810,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
-<./img/logic_midi.png, id=107, 1125.20375pt x 350.30875pt>
+<./img/logic_midi.png, id=108, 1125.20375pt x 350.30875pt>
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
 Package pdftex.def Info: ./img/logic_midi.png used on input line 291.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
- [20 <./img/logic_sound.png>]
-<./img/logic_edit.png, id=112, 1039.885pt x 367.3725pt>
+ [20 <./img/logic_sound.png> <./img/logic_midi.png>]
+<./img/logic_edit.png, id=114, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
 <use ./img/logic_edit.png>
 Package pdftex.def Info: ./img/logic_edit.png used on input line 301.
 (pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
 
-<./img/logic_export.png, id=113, 703.62875pt x 117.43875pt>
+<./img/logic_export.png, id=115, 703.62875pt x 117.43875pt>
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
 Package pdftex.def Info: ./img/logic_export.png used on input line 310.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
- [21 <./img/logic_midi.png> <./img/logic_edit.png> <./img/logic_export.png>]
-<./img/MenuMort.png, id=120, 183.68625pt x 206.27063pt>
+ [21 <./img/logic_edit.png> <./img/logic_export.png>] <./img/MenuMort.png, id=1
+21, 183.68625pt x 206.27063pt>
 File: ./img/MenuMort.png Graphic file (type png)
 
 <use ./img/MenuMort.png>
 Package pdftex.def Info: ./img/MenuMort.png used on input line 333.
 (pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
- [22]
-<./img/SelectionMiniJeu.png, id=125, 268.00125pt x 210.7875pt>
+
+<./img/SelectionMiniJeu.png, id=122, 268.00125pt x 210.7875pt>
 File: ./img/SelectionMiniJeu.png Graphic file (type png)
 
 <use ./img/SelectionMiniJeu.png>
 Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 343.
 (pdftex.def)             Requested size: 241.19888pt x 189.707pt.
- [23 <./img/MenuMort.png> <./img/SelectionMiniJeu.png>] <./img/technique_graphi
-smes.png, id=129, 335.75438pt x 463.7325pt>
+ [22 <./img/MenuMort.png>]
+<./img/technique_graphismes.png, id=127, 335.75438pt x 463.7325pt>
 File: ./img/technique_graphismes.png Graphic file (type png)
 
 <use ./img/technique_graphismes.png>
 Package pdftex.def Info: ./img/technique_graphismes.png used on input line 361.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
- [24]
-<./img/technique_animation1.png, id=133, 625.58719pt x 139.27031pt>
+ [23 <./img/SelectionMiniJeu.png>]
+<./img/technique_animation1.png, id=131, 625.58719pt x 139.27031pt>
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
 Package pdftex.def Info: ./img/technique_animation1.png used on input line 373.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
- [25 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
-<./img/technique_animation2.png, id=138, 627.09282pt x 163.3603pt>
+ [24 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
+<./img/technique_animation2.png, id=136, 627.09282pt x 163.3603pt>
 File: ./img/technique_animation2.png Graphic file (type png)
 
 <use ./img/technique_animation2.png>
@@ -869,104 +869,164 @@ Package pdftex.def Info: ./img/technique_animation2.png used on input line 381.
 
 (pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
 
-<./img/technique_animation3.png, id=139, 344.78813pt x 165.61874pt>
+<./img/technique_animation3.png, id=137, 344.78813pt x 165.61874pt>
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
 Package pdftex.def Info: ./img/technique_animation3.png used on input line 389.
 
 (pdftex.def)             Requested size: 189.63405pt x 91.09058pt.
- [26 <./img/technique_animation2.png> <./img/technique_animation3.png>] [27]
-<./img/compteur_tuto.png, id=146, 679.78969pt x 322.95656pt>
+
+
+LaTeX Warning: Reference `engine_summary' on page 25 undefined on input line 39
+5.
+
+
+LaTeX Warning: Reference `anims' on page 25 undefined on input line 398.
+
+
+LaTeX Warning: Reference `simple_level' on page 25 undefined on input line 399.
+
+
+[25 <./img/technique_animation2.png> <./img/technique_animation3.png>] [26]
+
+LaTeX Warning: Reference `niveau' on page 27 undefined on input line 430.
+
+<./img/compteur_tuto.png, id=144, 679.78969pt x 322.95656pt>
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
 Package pdftex.def Info: ./img/compteur_tuto.png used on input line 437.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
- [28 <./img/compteur_tuto.png (PNG copy)>]
-<./img/skip_locked.png, id=151, 717.43031pt x 447.92343pt>
+ [27 <./img/compteur_tuto.png (PNG copy)>]
+<./img/skip_locked.png, id=148, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
 Package pdftex.def Info: ./img/skip_locked.png used on input line 447.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_locked_popup.png, id=152, 717.43031pt x 447.92343pt>
+<./img/skip_locked_popup.png, id=149, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
 Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 452.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_unlocked.png, id=153, 718.93594pt x 447.92343pt>
+<./img/skip_unlocked.png, id=150, 718.93594pt x 447.92343pt>
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
 Package pdftex.def Info: ./img/skip_unlocked.png used on input line 458.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
-<./img/skip_unlocked_popup.png, id=154, 719.68875pt x 447.92343pt>
+<./img/skip_unlocked_popup.png, id=151, 719.68875pt x 447.92343pt>
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
 Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 463.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
 
-<./img/scenes-transitions.png, id=155, 339.1872pt x 247.6452pt>
+
+LaTeX Warning: Reference `transitions_scenes' on page 28 undefined on input lin
+e 474.
+
+<./img/scenes-transitions.png, id=152, 339.1872pt x 247.6452pt>
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
 Package pdftex.def Info: ./img/scenes-transitions.png used on input line 477.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
- [29 <./img/skip_locked.png> <./img/skip_locked_popup.png> <./img/skip_unlocked
+ [28 <./img/skip_locked.png> <./img/skip_locked_popup.png> <./img/skip_unlocked
 .png> <./img/skip_unlocked_popup.png>]
-<./img/loading.png, id=159, 532.99126pt x 255.20343pt>
+<./img/loading.png, id=157, 532.99126pt x 255.20343pt>
 File: ./img/loading.png Graphic file (type png)
  <use ./img/loading.png>
 Package pdftex.def Info: ./img/loading.png used on input line 486.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
 
-<./img/scene.png, id=160, 718.93594pt x 448.67625pt>
+
+LaTeX Warning: Reference `cartoon' on page 29 undefined on input line 492.
+
+<./img/scene.png, id=158, 718.93594pt x 448.67625pt>
 File: ./img/scene.png Graphic file (type png)
  <use ./img/scene.png>
 Package pdftex.def Info: ./img/scene.png used on input line 496.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-<./img/cartoon.png, id=161, 718.93594pt x 448.67625pt>
+<./img/cartoon.png, id=159, 718.93594pt x 448.67625pt>
 File: ./img/cartoon.png Graphic file (type png)
  <use ./img/cartoon.png>
 Package pdftex.def Info: ./img/cartoon.png used on input line 501.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-[30 <./img/scenes-transitions.png (PNG copy)> <./img/loading.png (PNG copy)> <.
+[29 <./img/scenes-transitions.png (PNG copy)> <./img/loading.png (PNG copy)> <.
 /img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
-<./img/GoogleAnalytics.png, id=165, 514.17094pt x 289.08pt>
+<./img/GoogleAnalytics.png, id=163, 514.17094pt x 289.08pt>
 File: ./img/GoogleAnalytics.png Graphic file (type png)
 
 <use ./img/GoogleAnalytics.png>
 Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 520.
 (pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
- [31] [32 <./img/GoogleAnalytics.png>] [33]
-<./img/opti_sound.png, id=176, 141.52875pt x 121.45375pt>
+ [30] [31 <./img/GoogleAnalytics.png>] [32]
+<./img/opti_sound.png, id=174, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
 Package pdftex.def Info: ./img/opti_sound.png used on input line 562.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
-) [34 <./img/opti_sound.png>] (./Resultat.tex
-[35]) [36] (./Bilan.tex) [37] (./Annexes.tex) [38] (./Main.aux)
+) [33 <./img/opti_sound.png>] (./Resultat.tex
+<./img/resultat_accueil.png, id=179, 496.85625pt x 331.2375pt>
+File: ./img/resultat_accueil.png Graphic file (type png)
 
-LaTeX Warning: There were multiply-defined labels.
+<use ./img/resultat_accueil.png>
+Package pdftex.def Info: ./img/resultat_accueil.png used on input line 8.
+(pdftex.def)             Requested size: 298.11604pt x 198.74402pt.
+
+<./img/resultat_niveaux.png, id=180, 496.85625pt x 330.48468pt>
+File: ./img/resultat_niveaux.png Graphic file (type png)
+
+<use ./img/resultat_niveaux.png>
+Package pdftex.def Info: ./img/resultat_niveaux.png used on input line 16.
+(pdftex.def)             Requested size: 298.11604pt x 198.29233pt.
+ [34 <./img/resultat_accueil.png>]
+<./img/resultat_escargot.png, id=188, 628.59843pt x 353.06906pt>
+File: ./img/resultat_escargot.png Graphic file (type png)
+
+<use ./img/resultat_escargot.png>
+Package pdftex.def Info: ./img/resultat_escargot.png used on input line 38.
+(pdftex.def)             Requested size: 251.4349pt x 141.22511pt.
+ [35 <./img/resultat_niveaux.png>]
+<./img/resultat_magicien.png, id=193, 536.0025pt x 298.11375pt>
+File: ./img/resultat_magicien.png Graphic file (type png)
+
+<use ./img/resultat_magicien.png>
+Package pdftex.def Info: ./img/resultat_magicien.png used on input line 51.
+(pdftex.def)             Requested size: 268.0006pt x 149.0565pt.
+ [36 <./img/resultat_escargot.png> <./img/resultat_magicien.png>]
+<./img/resultat_champis.png, id=199, 534.49687pt x 297.36093pt>
+File: ./img/resultat_champis.png Graphic file (type png)
+
+<use ./img/resultat_champis.png>
+Package pdftex.def Info: ./img/resultat_champis.png used on input line 63.
+(pdftex.def)             Requested size: 267.24777pt x 148.6801pt.
+) [37 <./img/resultat_champis.png>]
+(./Bilan.tex) [38] (./Annexes.tex) [39] (./Main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6889 strings out of 493117
- 94531 string characters out of 6135433
- 233555 words of memory out of 5000000
- 10180 multiletter control sequences out of 15000+600000
- 20179 words of font info for 46 fonts, out of 8000000 for 9000
+ 6928 strings out of 493117
+ 95424 string characters out of 6135433
+ 233536 words of memory out of 5000000
+ 10212 multiletter control sequences out of 15000+600000
+ 22839 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,40p,1013b,1444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,45p,1013b,1702s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
@@ -975,24 +1035,25 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texlive/201
 4/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/cm-super/sfbx2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/cm-super/sfcc1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/cm-super/sfcc1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm
--super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super
-/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/s
-fti1200.pfb>
-Output written on Main.pdf (41 pages, 3989111 bytes).
+ts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/cm-super/sfbx1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/c
+m-super/sfbx2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-
+super/sfcc1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-su
+per/sfcc1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-supe
+r/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/
+sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sf
+rm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm
+1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti10
+95.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200
+.pfb>
+Output written on Main.pdf (42 pages, 4492199 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
+ 281 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
