@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  23 MAY 2015 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,43 +401,55 @@ File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count104
+\float@exts=\toks23
+\float@box=\box32
+\@float@everytoks=\toks24
+\@floatcapt=\box33
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./Main.aux)
+(./Main.aux
+
+LaTeX Warning: Label `trello' multiply defined.
+
+)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Info: Redefining \degres on input line 32.
-LaTeX Info: Redefining \dots on input line 32.
-LaTeX Info: Redefining \up on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Info: Redefining \degres on input line 33.
+LaTeX Info: Redefining \dots on input line 33.
+LaTeX Info: Redefining \up on input line 33.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
+\scratchcounter=\count105
 \scratchdimen=\dimen115
-\scratchbox=\box32
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count107
+\scratchbox=\box34
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count108
 \MPscratchDim=\dimen116
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -482,8 +494,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box33
-\c@lstlisting=\count110
+\AtBeginShipoutBox=\box35
+\c@lstlisting=\count111
 
 (./Title.tex <./img/logoUM.png, id=1, 96.36pt x 96.36pt>
 File: ./img/logoUM.png Graphic file (type png)
@@ -508,103 +520,95 @@ ogoUM.png>]) (./Main.toc)
 <./img/game.png, id=20, 264.48813pt x 165.11688pt>
 File: ./img/game.png Graphic file (type png)
  <use ./img/game.png>
-Package pdftex.def Info: ./img/game.png used on input line 11.
+Package pdftex.def Info: ./img/game.png used on input line 10.
 (pdftex.def)             Requested size: 264.48747pt x 165.11647pt.
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 10--12
- [] [] 
- []
 
 [2 <./img/game.png>] [3] <./img/trello.png, id=30, 280.54813pt x 297.11pt>
 File: ./img/trello.png Graphic file (type png)
 
 <use ./img/trello.png>
-Package pdftex.def Info: ./img/trello.png used on input line 94.
+Package pdftex.def Info: ./img/trello.png used on input line 92.
 (pdftex.def)             Requested size: 280.54742pt x 297.10927pt.
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 93--95
- [] [] 
- []
 
-[4 <./img/trello.png>]
-<./img/trello_autres.png, id=35, 282.05376pt x 298.11375pt>
+LaTeX Warning: Reference `trellomemo' on page 4 undefined on input line 98.
+
+<./img/trello_autres.png, id=31, 282.05376pt x 298.11375pt>
 File: ./img/trello_autres.png Graphic file (type png)
 
 <use ./img/trello_autres.png>
-Package pdftex.def Info: ./img/trello_autres.png used on input line 104.
+Package pdftex.def Info: ./img/trello_autres.png used on input line 101.
 (pdftex.def)             Requested size: 282.05305pt x 298.11302pt.
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 103--105
- [] [] 
- []
-
-[5 <./img/trello_autres.png>]
-<./img/list-tests.png, id=40, 102.3825pt x 137.01187pt>
+ [4 <./img/trello.png>] [5 <./img/trello_autres.png>] <./img/list-tests.png, id
+=41, 102.3825pt x 137.01187pt>
 File: ./img/list-tests.png Graphic file (type png)
 
 <use ./img/list-tests.png>
-Package pdftex.def Info: ./img/list-tests.png used on input line 153.
+Package pdftex.def Info: ./img/list-tests.png used on input line 149.
 (pdftex.def)             Requested size: 102.38225pt x 137.01154pt.
-
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 152--154
- [] [] 
- []
-
-[6] <./img/github_commits.png, id=45, 470.25688pt x 202.7575pt>
+ [6]
+<./img/github_commits.png, id=46, 470.25688pt x 202.7575pt>
 File: ./img/github_commits.png Graphic file (type png)
 
 <use ./img/github_commits.png>
-Package pdftex.def Info: ./img/github_commits.png used on input line 175.
-(pdftex.def)             Requested size: 470.25574pt x 202.757pt.
+Package pdftex.def Info: ./img/github_commits.png used on input line 169.
+(pdftex.def)             Requested size: 399.72025pt x 172.34468pt.
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 174--176
- [] [] 
+Overfull \hbox (39.72025pt too wide) in paragraph at lines 169--170
+ [][] 
  []
 
 [7 <./img/list-tests.png>]
-<./img/punchcard.png, id=50, 474.27188pt x 255.95625pt>
+<./img/punchcard.png, id=51, 474.27188pt x 255.95625pt>
 File: ./img/punchcard.png Graphic file (type png)
 
 <use ./img/punchcard.png>
-Package pdftex.def Info: ./img/punchcard.png used on input line 186.
-(pdftex.def)             Requested size: 331.98805pt x 179.16814pt.
- [8 <./img/github_commits.png> <./img/punchcard.png>]
-<./img/gource_over.png, id=56, 1004.75375pt x 598.235pt>
+Package pdftex.def Info: ./img/punchcard.png used on input line 180.
+(pdftex.def)             Requested size: 379.41801pt x 204.76526pt.
+
+Overfull \hbox (19.41801pt too wide) in paragraph at lines 180--181
+ [][] 
+ []
+
+[8 <./img/github_commits.png> <./img/punchcard.png>]
+<./img/gource_over.png, id=57, 1004.75375pt x 598.235pt>
 File: ./img/gource_over.png Graphic file (type png)
 
 <use ./img/gource_over.png>
-Package pdftex.def Info: ./img/gource_over.png used on input line 202.
-(pdftex.def)             Requested size: 401.89438pt x 239.28975pt.
+Package pdftex.def Info: ./img/gource_over.png used on input line 195.
+(pdftex.def)             Requested size: 301.42845pt x 179.47188pt.
+ [9 <./img/gource_over.png>]) [10] (./Main.aux)
 
-Overfull \hbox (10.88788pt too wide) in paragraph at lines 201--203
- [] [] 
- []
+LaTeX Warning: There were undefined references.
 
-[9 <./img/gource_over.png>]) [10] (./Main.aux) ) 
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5806 strings out of 493117
- 80628 string characters out of 6135433
- 173984 words of memory out of 5000000
- 9163 multiletter control sequences out of 15000+600000
+ 5870 strings out of 493117
+ 81452 string characters out of 6135433
+ 175351 words of memory out of 5000000
+ 9223 multiletter control sequences out of 15000+600000
  16638 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,40p,460b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-
-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/cm-super/sfti1200.pfb>
-Output written on Main.pdf (11 pages, 1120783 bytes).
+ 38i,10n,40p,463b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on Main.pdf (11 pages, 1128160 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
