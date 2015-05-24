@@ -2,111 +2,112 @@
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {paragraph}{}{3}
 \contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
 \contentsline {section}{\numberline {2}Analyse du projet}{4}
 \contentsline {subsection}{\numberline {2.1}Analyse de l'existant}{4}
 \contentsline {paragraph}{Jeux bas\IeC {\'e}s sur la musique}{4}
 \contentsline {paragraph}{Jeux bas\IeC {\'e}s sur l\IeC {\textquoteright }habilit\IeC {\'e} ryhtmique}{4}
 \contentsline {paragraph}{Jeu de type \IeC {\textquotedblleft }Runner\IeC {\textquotedblright }}{4}
 \contentsline {subsubsection}{\numberline {2.1.1}Principes d\IeC {\'e}gag\IeC {\'e}s}{4}
-\contentsline {subsection}{\numberline {2.2}Cahier des charges}{5}
-\contentsline {subsubsection}{\numberline {2.2.1}Principe de progression}{5}
+\contentsline {subsection}{\numberline {2.2}Objectifs du projet}{5}
+\contentsline {paragraph}{Couches incr\IeC {\'e}mentales}{5}
+\contentsline {subsection}{\numberline {2.3}Cahier des charges}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Principe de progression}{5}
 \contentsline {paragraph}{}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {subsubsection}{\numberline {2.2.2}Concept de mini-jeu}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {paragraph}{}{6}
-\contentsline {paragraph}{Notions techniques}{6}
-\contentsline {subsubsection}{\numberline {2.2.3}Niveau infini}{7}
+\contentsline {subsubsection}{\numberline {2.3.2}Concept de mini-jeu}{6}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
-\contentsline {subsubsection}{\numberline {2.2.4}Partage}{7}
-\contentsline {subsubsection}{\numberline {2.2.5}Mon\IeC {\'e}tisation}{7}
-\contentsline {subsection}{\numberline {2.3}Objectifs du projet}{7}
 \contentsline {paragraph}{}{7}
-\contentsline {section}{\numberline {3}Rapport d'activit\IeC {\'e}}{8}
-\contentsline {subsection}{\numberline {3.1}Organisation du travail}{8}
-\contentsline {subsection}{\numberline {3.2}Outils de d\IeC {\'e}veloppement}{8}
-\contentsline {subsubsection}{\numberline {3.2.1}Communication}{8}
-\contentsline {subsubsection}{\numberline {3.2.2}Unity}{8}
-\contentsline {paragraph}{Pourquoi utiliser Unity ?}{8}
-\contentsline {paragraph}{Fonctionnalit\IeC {\'e}s d'Unity}{9}
-\contentsline {paragraph}{Principe de Unity}{9}
-\contentsline {paragraph}{Co\IeC {\^u}t de Unity}{9}
-\contentsline {section}{\numberline {4}Rapport technique}{10}
-\contentsline {subsection}{\numberline {4.1}Moteur de jeu rythmique}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {subsubsection}{\numberline {4.1.1}Le \textit {beater}}{10}
+\contentsline {paragraph}{Notions techniques}{7}
+\contentsline {subsubsection}{\numberline {2.3.3}Niveau infini}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{8}
+\contentsline {subsubsection}{\numberline {2.3.4}Partage}{8}
+\contentsline {subsubsection}{\numberline {2.3.5}Mon\IeC {\'e}tisation}{8}
+\contentsline {section}{\numberline {3}Rapport d'activit\IeC {\'e}}{9}
+\contentsline {subsection}{\numberline {3.1}Organisation du travail}{9}
+\contentsline {subsection}{\numberline {3.2}Outils de d\IeC {\'e}veloppement}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}Communication}{9}
+\contentsline {subsubsection}{\numberline {3.2.2}Unity}{9}
+\contentsline {paragraph}{Pourquoi utiliser Unity ?}{9}
+\contentsline {paragraph}{Fonctionnalit\IeC {\'e}s d'Unity}{10}
+\contentsline {paragraph}{Principe de Unity}{10}
+\contentsline {paragraph}{Co\IeC {\^u}t de Unity}{10}
+\contentsline {section}{\numberline {4}Rapport technique}{11}
+\contentsline {subsection}{\numberline {4.1}Moteur de jeu rythmique}{11}
 \contentsline {paragraph}{}{11}
-\contentsline {paragraph}{Difficult\IeC {\'e} technique}{11}
-\contentsline {subsubsection}{\numberline {4.1.2}Autres fonctionnalit\IeC {\'e}s du \textit {beateur}}{12}
-\contentsline {subsubsection}{\numberline {4.1.3}Le niveau (\textit {LevelScripted})}{12}
-\contentsline {paragraph}{}{13}
-\contentsline {subsubsection}{\numberline {4.1.4}\IeC {\'E}v\IeC {\`e}nements du joueur et calcul de la r\IeC {\'e}ussite}{13}
-\contentsline {paragraph}{\texttt {EventPlayerListener}}{13}
+\contentsline {paragraph}{}{11}
+\contentsline {subsubsection}{\numberline {4.1.1}Le \textit {beater}}{11}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{Difficult\IeC {\'e} technique}{12}
+\contentsline {subsubsection}{\numberline {4.1.2}Autres fonctionnalit\IeC {\'e}s du \textit {beateur}}{13}
+\contentsline {subsubsection}{\numberline {4.1.3}Le niveau (\textit {LevelScripted})}{13}
 \contentsline {paragraph}{}{14}
-\contentsline {paragraph}{D\IeC {\'e}tection de la r\IeC {\'e}ussite}{14}
+\contentsline {subsubsection}{\numberline {4.1.4}\IeC {\'E}v\IeC {\`e}nements du joueur et calcul de la r\IeC {\'e}ussite}{14}
+\contentsline {paragraph}{\texttt {EventPlayerListener}}{14}
 \contentsline {paragraph}{}{15}
-\contentsline {subsubsection}{\numberline {4.1.5}R\IeC {\'e}sum\IeC {\'e}}{15}
+\contentsline {paragraph}{D\IeC {\'e}tection de la r\IeC {\'e}ussite}{15}
 \contentsline {paragraph}{}{16}
-\contentsline {subsection}{\numberline {4.2}Outil de construction des niveaux}{16}
-\contentsline {subsection}{\numberline {4.3}Choix du langage}{16}
-\contentsline {subsubsection}{\numberline {4.3.1}Structure d'un fichier midi}{16}
-\contentsline {subsubsection}{\numberline {4.3.2}Conversion en niveau}{18}
-\contentsline {subsubsection}{\numberline {4.3.3}Mise en pratique}{19}
-\contentsline {paragraph}{}{19}
-\contentsline {paragraph}{}{19}
+\contentsline {subsubsection}{\numberline {4.1.5}R\IeC {\'e}sum\IeC {\'e}}{16}
+\contentsline {paragraph}{}{17}
+\contentsline {subsection}{\numberline {4.2}Outil de construction des niveaux}{17}
+\contentsline {subsection}{\numberline {4.3}Choix du langage}{17}
+\contentsline {subsubsection}{\numberline {4.3.1}Structure d'un fichier midi}{17}
+\contentsline {subsubsection}{\numberline {4.3.2}Conversion en niveau}{19}
+\contentsline {subsubsection}{\numberline {4.3.3}Mise en pratique}{20}
 \contentsline {paragraph}{}{20}
 \contentsline {paragraph}{}{20}
-\contentsline {subsection}{\numberline {4.4}Avancement du joueur}{20}
-\contentsline {subsubsection}{\numberline {4.4.1}Calcul du score dans un mini-jeu}{20}
-\contentsline {subsubsection}{\numberline {4.4.2}Enregistrement des scores}{21}
-\contentsline {subsubsection}{\numberline {4.4.3}D\IeC {\'e}blocage des mini-jeux}{22}
-\contentsline {subsection}{\numberline {4.5}Cr\IeC {\'e}ation d'un mini-jeu}{23}
-\contentsline {subsubsection}{\numberline {4.5.1}Les graphismes}{23}
-\contentsline {subsubsection}{\numberline {4.5.2}Les animations}{24}
-\contentsline {subsubsection}{\numberline {4.5.3}Assemblage avec le moteur}{25}
-\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{21}
+\contentsline {paragraph}{}{21}
+\contentsline {subsection}{\numberline {4.4}Avancement du joueur}{21}
+\contentsline {subsubsection}{\numberline {4.4.1}Calcul du score dans un mini-jeu}{21}
+\contentsline {subsubsection}{\numberline {4.4.2}Enregistrement des scores}{22}
+\contentsline {subsubsection}{\numberline {4.4.3}D\IeC {\'e}blocage des mini-jeux}{23}
+\contentsline {subsection}{\numberline {4.5}Cr\IeC {\'e}ation d'un mini-jeu}{24}
+\contentsline {subsubsection}{\numberline {4.5.1}Les graphismes}{24}
+\contentsline {subsubsection}{\numberline {4.5.2}Les animations}{25}
+\contentsline {subsubsection}{\numberline {4.5.3}Assemblage avec le moteur}{26}
 \contentsline {paragraph}{}{26}
-\contentsline {subsubsection}{\numberline {4.5.4}Le \textit {feedback}}{26}
-\contentsline {subsubsection}{\numberline {4.5.5}Le choix des sons}{26}
-\contentsline {subsubsection}{\numberline {4.5.6}La difficult\IeC {\'e}}{26}
-\contentsline {subsection}{\numberline {4.6}Les tutoriels}{27}
 \contentsline {paragraph}{}{27}
-\contentsline {paragraph}{}{27}
-\contentsline {paragraph}{}{27}
-\contentsline {paragraph}{}{27}
-\contentsline {paragraph}{}{27}
+\contentsline {subsubsection}{\numberline {4.5.4}Le \textit {feedback}}{27}
+\contentsline {subsubsection}{\numberline {4.5.5}Le choix des sons}{27}
+\contentsline {subsubsection}{\numberline {4.5.6}La difficult\IeC {\'e}}{27}
+\contentsline {subsection}{\numberline {4.6}Les tutoriels}{28}
 \contentsline {paragraph}{}{28}
-\contentsline {subsection}{\numberline {4.7}Assemblage des jeux}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
 \contentsline {paragraph}{}{28}
 \contentsline {paragraph}{}{29}
+\contentsline {subsection}{\numberline {4.7}Assemblage des jeux}{29}
 \contentsline {paragraph}{}{29}
-\contentsline {subsection}{\numberline {4.8}Services externes}{30}
-\contentsline {subsubsection}{\numberline {4.8.1}Statistique et Analyse}{30}
 \contentsline {paragraph}{}{30}
 \contentsline {paragraph}{}{30}
-\contentsline {subsubsection}{\numberline {4.8.2}Publicit\IeC {\'e}}{31}
+\contentsline {subsection}{\numberline {4.8}Services externes}{31}
+\contentsline {subsubsection}{\numberline {4.8.1}Statistique et Analyse}{31}
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{31}
-\contentsline {subsubsection}{\numberline {4.8.3}Version payante sans pub}{31}
-\contentsline {paragraph}{}{31}
-\contentsline {paragraph}{}{32}
-\contentsline {subsection}{\numberline {4.9}Mise en ligne}{32}
+\contentsline {subsubsection}{\numberline {4.8.2}Publicit\IeC {\'e}}{32}
 \contentsline {paragraph}{}{32}
 \contentsline {paragraph}{}{32}
+\contentsline {subsubsection}{\numberline {4.8.3}Version payante sans pub}{32}
 \contentsline {paragraph}{}{32}
-\contentsline {subsubsection}{\numberline {4.9.1}Probl\IeC {\`e}me de synchronisation}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {subsection}{\numberline {4.9}Mise en ligne}{33}
 \contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
-\contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{34}
-\contentsline {section}{\numberline {6}Bilan du projet}{35}
-\contentsline {subsection}{\numberline {6.1}Autocritique}{35}
-\contentsline {subsection}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{35}
-\contentsline {subsection}{\numberline {6.3}Perspectives}{35}
-\contentsline {subsection}{\numberline {6.4}Conclusion}{35}
-\contentsline {section}{\numberline {7}Annexes}{36}
+\contentsline {subsubsection}{\numberline {4.9.1}Probl\IeC {\`e}me de synchronisation}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{35}
+\contentsline {section}{\numberline {6}Bilan du projet}{36}
+\contentsline {subsection}{\numberline {6.1}Autocritique}{36}
+\contentsline {subsection}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{36}
+\contentsline {subsection}{\numberline {6.3}Perspectives}{36}
+\contentsline {subsection}{\numberline {6.4}Conclusion}{36}
+\contentsline {section}{\numberline {7}Annexes}{37}
