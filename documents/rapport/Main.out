@@ -1,0 +1,53 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Analyse du projet}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Analyse de l'existant}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Principes d\351gag\351s}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{Objectifs du projet}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Cahier des charges}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.3.1}{Principe de progression}{section.2.3}% 7
+\BOOKMARK [2][-]{subsection.2.3.2}{Niveau infini}{section.2.3}% 8
+\BOOKMARK [2][-]{subsection.2.3.3}{Partage}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.4}{Mon\351tisation}{section.2.3}% 10
+\BOOKMARK [0][-]{chapter.3}{Rapport d'activit\351}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Organisation du travail}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Outils de d\351veloppement}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.2.1}{Communication}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.2}{Unity}{section.3.2}% 15
+\BOOKMARK [0][-]{chapter.4}{Rapport technique}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Moteur de jeu rythmique}{chapter.4}% 17
+\BOOKMARK [2][-]{subsection.4.1.1}{Le beater}{section.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.1.2}{Autres fonctionnalit\351s du beateur}{section.4.1}% 19
+\BOOKMARK [2][-]{subsection.4.1.3}{Le niveau \(LevelScripted\)}{section.4.1}% 20
+\BOOKMARK [2][-]{subsection.4.1.4}{\311v\350nements du joueur et calcul de la r\351ussite}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.5}{R\351sum\351}{section.4.1}% 22
+\BOOKMARK [1][-]{section.4.2}{Outil de construction des niveaux}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Choix du langage}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.3.1}{Structure d'un fichier midi}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.2}{Conversion en niveau}{section.4.3}% 26
+\BOOKMARK [2][-]{subsection.4.3.3}{Mise en pratique}{section.4.3}% 27
+\BOOKMARK [1][-]{section.4.4}{Avancement du joueur}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.4.1}{Calcul du score dans un mini-jeu}{section.4.4}% 29
+\BOOKMARK [2][-]{subsection.4.4.2}{Enregistrement des scores}{section.4.4}% 30
+\BOOKMARK [2][-]{subsection.4.4.3}{D\351blocage des mini-jeux}{section.4.4}% 31
+\BOOKMARK [1][-]{section.4.5}{Cr\351ation d'un mini-jeu}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.5.1}{Les graphismes}{section.4.5}% 33
+\BOOKMARK [2][-]{subsection.4.5.2}{Les animations}{section.4.5}% 34
+\BOOKMARK [2][-]{subsection.4.5.3}{Assemblage avec le moteur}{section.4.5}% 35
+\BOOKMARK [2][-]{subsection.4.5.4}{Le feedback}{section.4.5}% 36
+\BOOKMARK [2][-]{subsection.4.5.5}{Le choix des sons}{section.4.5}% 37
+\BOOKMARK [2][-]{subsection.4.5.6}{La difficult\351}{section.4.5}% 38
+\BOOKMARK [1][-]{section.4.6}{Les tutoriels}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.7}{Assemblage des jeux}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.8}{Services externes}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.8.1}{Statistique et Analyse}{section.4.8}% 42
+\BOOKMARK [2][-]{subsection.4.8.2}{Publicit\351}{section.4.8}% 43
+\BOOKMARK [2][-]{subsection.4.8.3}{Version payante sans pub}{section.4.8}% 44
+\BOOKMARK [1][-]{section.4.9}{Mise en ligne}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.9.1}{Probl\350me de synchronisation}{section.4.9}% 46
+\BOOKMARK [0][-]{chapter.5}{R\351sultat}{}% 47
+\BOOKMARK [0][-]{chapter.6}{Bilan du projet}{}% 48
+\BOOKMARK [1][-]{section.6.1}{Autocritique}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.2}{Enseignements tir\351s}{chapter.6}% 50
+\BOOKMARK [1][-]{section.6.3}{Perspectives}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 52
+\BOOKMARK [0][-]{chapter.7}{Annexes}{}% 53

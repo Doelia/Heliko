@@ -1,8 +1,8 @@
-\section{Analyse du projet} %cahier des charges
+\chapter{Analyse du projet} %cahier des charges
 
 Une bonne analyse est nécessaire au pilotage du projet. Il faut réaliser une analyse des jeux de rythmes déjà existants, concevoir le concept du jeu, définir les priorités et établire une planification avant de commencer tout développement.
 
-\subsection{Analyse de l'existant}
+\section{Analyse de l'existant}
 
 Plusieurs jeux au gameplay approchant celui visé par l’équipe ont été testés. Voici ce qu’il en ressort au niveau du gameplay.
 \paragraph{Jeux basés sur la musique}
@@ -15,11 +15,11 @@ Il existe aussi des jeux basés sur l’habileté de l’utilisateur et sa vites
 Enfin, certains jeux ne proposent qu’un gameplay rapide et de beaux graphismes, en ne prêtant que peu d’importance à la musique. Le contenu du jeu est ainsi plus fourni en niveaux, en personnages et fonctionnalités et les graphismes du jeu sont donc, en conséquence, plus approfondis. L’utilisateur ne joue qu’en fonction de ce qui apparaît à l’écran. La musique peut changer en fonction de l’avancée dans le niveau.\\
 \textit{Exemples : Temple Run sur mobile. Bit.Trip sur Wii et PC.}
 
-\subsubsection{Principes dégagés}
+\subsection{Principes dégagés}
 Le principe des jeux musicaux nous plait, mais nous ne pouvions pas nous permettre d'utiliser des catalogues de musique existants pour des questions de droits d'auteur. Générer les niveaux de façon procédurale par rapport à de la musique nous semblait intéressant mais nous avons préféré nous concentrer sur d'autres priorités, alors que créer de nombreux niveaux à la main aurait été une tâche fastidieuse que nous voulions éviter. Créer un jeu de type \textit{Runner} ne demande que très peu de travail sur le contenu (il y a beaucoup de génération aléatoire), mais le principe du jeu, trop simple, nous semblait peu intéressant sur le plan enseignement. Nous avons ainsi décidé de créer un moteur de mini-jeux rythmique générique, afin de créer des scènes complexes et difficiles qui demandent un apprentisage de la part de l'utilisateur. Ceci nous assure une durée de vie de jeu correcte, sans devoir créer trop de contenu.
 
 
-\subsection{Objectifs du projet}
+\section{Objectifs du projet}
 
 L'objectif premier du projet est de mettre en ligne un jeu de rythme pour téléphone mobile sur les plateforme Google Play et sur l'Apple Store. Le jeu doit être le plus intéressant et le plus complet possible.
 
@@ -39,9 +39,9 @@ La liste des fonctionnalités à réaliser en fonction de leur importance pour u
 \end{enumerate}
 
 
-\subsection{Cahier des charges}
+\section{Cahier des charges}
 
-\subsubsection{Principe de progression}
+\subsection{Principe de progression}
 \paragraph{} Le joueur lance le jeu et découvre un monde totalement vide sans aucune animation ni effet sonore. Un simple métronome qui frappe la mesure retentit, et la mascotte, un escargot, se déplace en rythme sur cette planète de façon circulaire.
 Le joueur doit débloquer des objets visuels et sonores dans des mini-jeux afin de rendre cette planète plus remplie et joyeuse.
 
@@ -77,15 +77,15 @@ Il existe plusieurs états pour un mini jeu :
 \paragraph{Notions techniques}
 Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’un nouveau concept rythmique. Il n’est pas possible de les générer à la volée. On mettra en place des mécaniques précises qu’on pourra réutiliser sur chacun des mini jeux pour les créer le plus facilement possible. Pour les graphismes, de très simples dessins en 2D seront utilisés,. 
 
-\subsubsection{Niveau infini}
+\subsection{Niveau infini}
 \paragraph{} Une fois tous les éléments débloqués, le joueur atteint le niveau final qui est un mode infini arcade sur la musique assemblée dans lequel il peut essayer de réaliser le meilleur score possible en incarnant l’escargot. (Qui s’approche de notre idée de départ, mais de façon moins importante).
 
 \paragraph{} La somme de ses scores réalisés au fil du temps est convertie sous la forme d’une monnaie avec laquelle il peut acheter des effets de lumières et décorations supplémentaires à disposer sur sa planète afin de la personnaliser.
 
-\subsubsection{Partage}
+\subsection{Partage}
 L’avancement des joueurs, et la personnalisation des planètes, est stockée dans le cloud. Un joueur peut montrer sa planète à ses amis afin de montrer son avancement et ses scores.
 
-\subsubsection{Monétisation}
+\subsection{Monétisation}
 En fonction de l’avancement final du projet, un système de monétisation sera choisi. Il pourra s’agir de la vente de monnaie supplémentaire pour la personnalisation par exemple, ou simplement de mettre en place un système de publicités judicieusement mis en place. Cette monétisation s'accompagnera d'une étude des différents services de paiements proposés pour les téléphones mobiles.
 
 

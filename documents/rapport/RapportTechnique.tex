@@ -1,7 +1,7 @@
-\section{Rapport technique}
+\chapter{Rapport technique}
 
 
-\subsection{Moteur de jeu rythmique}
+\section{Moteur de jeu rythmique}
 
 Notre objectif premier est de réaliser un moteur de jeu de rythme sous Unity afin de pouvoir créer des mini-jeux aisément.
 
@@ -27,7 +27,7 @@ Pour réaliser cela, les fonctionnalités attendues du moteur sont les suivantes
 \end{itemize}
 
 
-\subsubsection{Le \textit{beater}}
+\subsection{Le \textit{beater}}
 Le \textit{beater} lit la musique et doit déclencher des événements à chaque "tick" enregistré. Pour notre moteur, nous allons jusqu'à une précision d'un quart de temps. Un "tick" correspondra donc à chaque quart de temps de la musique.\\
 
 \fbox{\parbox{11cm}
@@ -69,7 +69,7 @@ Dans le cadre de ce projet, nous avons passé de nombreuses heures avant d'arriv
 D'autant plus que nos exigence ont changés avec le temps. On départ nous pensions que d'avoir la précision du double temps été suffisant, mais rapidement nous avions besoin de quarts de temps... Nous retenons ici qu'il vaut mieux voir au plus compliqué dans la conception, pour être certain que toutes les possibilités futures soient couvertes.
 
 
-\subsubsection{Autres fonctionnalités du \textit{beateur}}
+\subsection{Autres fonctionnalités du \textit{beateur}}
 Une musique commence rarement son premier temps au temps 0, un paramètre "offset" \texttt{start} est disponible pour définir le temps à attendre avant de détecter le premier \textit{beat}. Ceci permet de synchroniser parfaitement les animations avec la musique.
 \\\\
 Pour les calculs de réussite ou calcul du score, on peut avoir besoin d'autres fonctionnalités de calculs, par exemple pour récupérer le numéro du tick le plus proche à un instant T.
@@ -88,7 +88,7 @@ public int getStepClosest() {
 \end{lstlisting}
 Tous ces calculs prennent en compte le \texttt{sampleOffset}.
 
-\subsubsection{Le niveau (\textit{LevelScripted})}
+\subsection{Le niveau (\textit{LevelScripted})}
 \label{niveau}
 Pour pouvoir réaliser des niveaux intéressants, il nous faut pouvoir les scripter les afin de définir sur quels "ticks" le joueur doit frapper. Il peut y avoir de longs blancs, ou des enchaînements rapides (avec une fréquence maximale équivalente au quart de temps).
 \\\\
@@ -122,7 +122,7 @@ La classe \texttt{LevelScripted} est connectée au \textit{beater} pour recevoir
 \\\\
 La longueur du fichier dépend de la longueur de la musique. On peut écrire de petits fichiers pour les boucler et créer des patterns, car le moteur répète automatique le fichier tout au long de la musique.
 
-\subsubsection{Évènements du joueur et calcul de la réussite}
+\subsection{Évènements du joueur et calcul de la réussite}
 \paragraph{\texttt{EventPlayerListener}}
 Une classe est dédiée à écouter les évènements du joueur, afin de détecter des actions de type 1, 2, 3, 4... L'endroit où l'utilisateur appuie sur l'écran n'a aucune importance.\\\\
 Les mouvements suivants sont définis :
@@ -162,7 +162,7 @@ On stocke dans une liste les numéros des ticks où le joueur a réussi. Quand l
 \\\\
 N'importe quel objet Unity peut se connecter à ce contrôleur. Ceci permet de construire le feedback visuel, en jouant par exemple une animation quand on reçoit un évènement \texttt{onFailure}.
 
-\subsubsection{Résumé}
+\subsection{Résumé}
 \label{engine_summary}
 \noindent
 \makebox[\textwidth]{\includegraphics[scale=1]{./img/diagramme_moteur.png}}
@@ -176,14 +176,14 @@ Pour résumer le fonctionnement du moteur :
 \item Les actions du joueur sont validées par le \texttt{PlayerActions} qui enregistre si l'action correspond au fichier
 \end{itemize}
 
-\subsection{Outil de construction des niveaux}
+\section{Outil de construction des niveaux}
 
 Même si notre système de fichier texte est suffisamment clair pour être lu et modifié manuellement, il est tout de même fastidieux de construire des niveaux directement. Il est beaucoup plus intéressant de créer les actions du niveau dans un logiciel de musique. Nous avons donc développé un outil de conversion pour générer un niveau à partir de fichiers MIDI.
 
-\subsection{Choix du langage}
+\section{Choix du langage}
 La programmation est la représentation des données et la manipulation de ces représentations. Les fichiers midi sont représentés par des listes de listes. Quel meilleur langage qu'un LISP pour effectuer des opérations sur des listes ? Le Scheme s'est imposé comme choix naturel.
 
-\subsubsection{Structure d'un fichier midi}
+\subsection{Structure d'un fichier midi}
 Les spécifications du midi sont lourdes et complexes, elles ne seront pas détaillées ici, seules seront détaillées les informations importantes à notre convertisseur de niveau.
 
 Un fichier midi est composé d'une suite de "chunks", eux mêmes composés d'évènements, il existe un certain nombre d'évènements différents, tels que le nom de la piste, le tempo, le nombre de pistes... Nous détaillerons uniquement les événements pertinents à notre programme.\\
@@ -251,7 +251,7 @@ Le \textit{status byte} a une valeur comprise entre 128 et 255, les \textit{data
 
 Le "running status" consiste à ne pas répéter le \textit{status byte} s'il est identique à l'évènement précédent. L'utilisation du "running status" est triviale à détecter et implémenter. En lisant le fichier, si l'octet lu est inférieur à 128 alors que l'on attendait un \textit{status byte}, c'est qu'il faut utiliser le dernier \textit{status byte} rencontré.
 
-\subsubsection{Conversion en niveau}
+\subsection{Conversion en niveau}
 
 En possession des ces informations, et avec la table des codes midi (voir annexe), convertir le fichier midi en niveau n'est alors plus qu'une succession de transformation de représentations. D'abord en \textit{chunks}, puis en \textit{tracks}, et enfin en \textit{events}, en filtrant les évènements inutiles à notre cas d'utilisation.\\
 Une fois les évènements extraits du fichier midi, nous sommes en mesure de les convertir en actions pour notre jeu.
@@ -272,7 +272,7 @@ L'action 1 correspond à la note C, l'action 2 à la note C\#, et l'action 3 à 
 \end{lstlisting}
 
 
-\subsubsection{Mise en pratique}
+\subsection{Mise en pratique}
 On utilise dans cet exemple le logiciel Logic Pro X sous Mac OS X. N'importe quel autre séquenceur gérant les fichiers MIDI peut être utilisé.\\
 
 \paragraph{}
@@ -312,9 +312,9 @@ Une fois le niveau construit, il ne reste plus qu'à exporter la piste au format
   \label{level}
 \end{figure}
 
-\subsection{Avancement du joueur}
+\section{Avancement du joueur}
 
-\subsubsection{Calcul du score dans un mini-jeu}
+\subsection{Calcul du score dans un mini-jeu}
 
 Le calcul du score est fait sous la forme d'un pourcentage. En fait, seul le nombre d'erreur est regardé, puisque peu importe que le joueur fasse tout bon, si il se contente d'envoyer des évènements dans tous les sens en appuyant sur son tactile. C'est pourquoi le nombre de réussite n'est pas regardé à proprement parler. Cependant est considéré comme un échec:
 \begin{itemize}
@@ -325,7 +325,7 @@ Le calcul du score est fait sous la forme d'un pourcentage. En fait, seul le nom
 Ainsi, même si les succès ne sont pas considérés, étant donné que l'absence de succès est considérée comme un échec, ne rien faire ou spammer le tactile ne donne en aucun cas un bon score, pas moyen de “tricher” pour gagner, la seule manière étant de jouer correctement.
 Ensuite, une fois les échecs additionnés, on se contente de calculer le pourcentage en divisant le nombre d'échec par le nombre d'évènement attendu. Ainsi, 0 correspond au fait de n'avoir fait aucun échec, 1 correspond au fait d'avoir fait autant d'échec que d'étapes à effectuer (plus voulant dire qu'on a fait plus d'erreurs que d'étapes). On soustrait ce nombre à 1, et on multiplie par 100 pour obtenir un pourcentage. On se retrouve donc à avoir 100\% si on n'a fait aucune erreur, 50\% si on a loupé la moitié des évènements, et on renvoie 0\% si on fait autant d'erreurs ou plus que d'évènements à faire. 
 
-\subsubsection{Enregistrement des scores}
+\subsection{Enregistrement des scores}
 
 Même si le calcul des scores est fait sous la forme de pourcentage, ce qui est affiché au joueur et ce qui est enregistré est sous la forme d'étoiles. 3 étoiles correspond à 100\% de réussite, 2 étoiles à un score supérieur à 90\% et enfin 1 étoile à un score supérieur à 75\%. Le score est enregistré de manière très simple, Unity permettant d'enregistrer des entiers, des chaînes de caractères et des nombres flottants. Ainsi le score est enregistré dans une variable "int" s'appelant “etoileLevel[numéro du mini jeu]” et sa valeur correspond au nombre d'étoiles. A chaque fin d'un mini-jeu, on vérifie si le joueur n'a pas amélioré le nombre d'étoiles sur ce mini-jeu, et si oui, alors on écrase le précédent score avec le nouveau qui est meilleur.
 
@@ -335,7 +335,7 @@ Même si le calcul des scores est fait sous la forme de pourcentage, ce qui est 
   \label{SelectionMiniJeu}
 \end{figure}
 
-\subsubsection{Déblocage des mini-jeux}
+\subsection{Déblocage des mini-jeux}
 
 Certains jeux sont débloqués de base, d'autres nécessitent la réussite d'un autre mini-jeu pour cela. Un mini-jeu est considéré comme réussi du moment que le joueur a obtenu au moins une étoile sur ce jeu. Ainsi, si un mini-jeu n'est pas débloqué, dans le menu de sélection des mini-jeux, son icône est grisée, et il est inclicable. De plus, en dessous de l'icône de chaque mini-jeu est affiché le plus grand nombre d'étoiles obtenu dans le jeu correspondant.
 
@@ -345,13 +345,13 @@ Certains jeux sont débloqués de base, d'autres nécessitent la réussite d'un 
   \label{SelectionMiniJeu}
 \end{figure}
 
-\subsection{Création d'un mini-jeu}
+\section{Création d'un mini-jeu}
 
 Afin d'obtenir un niveau cohérent, le processus de création d'un mini-jeu doit se faire étape par étape. Le travail effectué sur le premier niveau a permis de peaufiner ce processus et de réaliser les mini-jeux suivants avec plus d'efficacité et de rapidité. Dans un premier temps, nous avons commencé à développer le niveau des champignons en suivant des étapes qui nous paraissaient logiques. Puis, après avoir développé la majeure partie du niveau, nous avons réalisé qu'il manquait des éléments importants au gameplay, tels que des sons cohérents correspondants au rythme et à l'image, ou un \textit{feedback} visuel montrant la réussite ou l'échec du joueur.
 
 Pour illustrer ces différentes étapes, des exemples seront tirés du mini-jeu des champignons.
 
-\subsubsection{Les graphismes}
+\subsection{Les graphismes}
 
 Un des éléments les plus importants d'un jeu est son aspect visuel. Il est préférable de commencer par avoir une base solide au niveau de ce que l'on veut que le joueur fasse. Ensuite, il s'agit d'imaginer une scène simple dans laquelle l'action du joueur ne serait pas aberrante. Par exemple, si le joueur doit répéter un motif sonore, alors il vaut mieux que les graphismes représentent au moins deux personnages frappant sur une surface, un représentant le modèle, et l'autre le joueur.
 
@@ -365,7 +365,7 @@ Dans notre projet, nous avons voulu mettre en avant le côté simple et divertis
 
 Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des créations graphiques vectorielles. L'intérêt de travailler sur du vectoriel est qu'on peut rendre l'image dans la dimension voulue, et, de plus, il est plus facile d'apporter rapidement une petite modification un objet ou sa couleur, sans avoir tout à recommencer.
 
-\subsubsection{Les animations}
+\subsection{Les animations}
 \label{anims}
 Les animations utilisées dans l'application sont gérées directement par Unity. Leur mise en place est classique, elle se fait via l'utilisation de clés sur une ligne de temps. 
 
@@ -391,7 +391,7 @@ Unity possède la caractéristique de pouvoir créer un diagramme d'état afin d
   \label{technique_animation3}
 \end{figure}
 
-\subsubsection{Assemblage avec le moteur}
+\subsection{Assemblage avec le moteur}
 On va donc brancher les différents éléments composants le jeu au moteur. Les différents éléments du moteurs sont détaillés partie \ref{engine_summary}.
 
 \paragraph{}
@@ -403,22 +403,22 @@ Les \textit{LevelScripted} sont évidemment reliés au \textit{BeatCounter} pour
 \paragraph{}
 Les animations du personnage joueur fonctionnent globalement de la même manière. La seul différence est que l'on va ajouter un \textit{PlayerActions} et un \textit{PlayerEventListener} qui vont se charger de récupérer les actions du joueur et d'interroger le \textit{LevelScripted} pour savoir si l'action du joueur correspond à l'action attendue, et ainsi envoyer le trigger correspondant. 
 
-\subsubsection{Le \textit{feedback}}
+\subsection{Le \textit{feedback}}
 
 Le \textit{feedback} est l'ensemble des signes visuels ou sonores que recevra le joueur en fonction de son action. Dans notre application, il permet de signaler la réussite ou l'échec d'une action de l'utilisateur. Ainsi un coup réussi jouera un son cohérent avec la scène et une animation gratifiante sera jouée, afin de récompenser rapidement le joueur. A l'inverse, une action ratée résultera à un son lié à un échec et des graphismes montrant le mécontentement.
 Le feedback retourné par l'application s'est avéré être un des points les plus difficiles à imaginer dans la création des scénarios des mini-jeux.
 
-\subsubsection{Le choix des sons}
+\subsection{Le choix des sons}
 
 Maintenant que la plupart des éléments sont placés et fonctionnels dans la scène, il s'agit d'ajouter le plus important : la musique. Son rôle est important car c'est sur son rythme que l'utilisateur devra se synchroniser pour réussir le niveau. Elle se doit donc de comporter des rythmes prononcés et un thème en rapport avec la scène créée.
 Ne pouvant nous même pas composer notre propre musique, nous avons fait le choix d'ajouter dans notre jeu des musique proposées gratuitement et libres de droit sur Internet.
 
-\subsubsection{La difficulté}
+\subsection{La difficulté}
 
 Après avoir développé tout le contenu d'un mini-jeu, il faut évaluer sa difficulté en se mettant dans la peau d'un joueur qui le découvre pour la première fois. Celle-ci ne doit être ni trop élevée, pour ne pas se décourager, ni trop simple, pour ne pas s'ennuyer. Pour répondre à ce problème, nous avons d'abord placé des motifs simple à réaliser, puis augmenté peu à peu leur difficulté au fur et à mesure de l'avancement du niveau. Ensuite, nous avons fait tester nos ébauches de niveau à des personnes externe au développement qui ont pu juger de la difficulté du jeu.
 
 
-\subsection{Les tutoriels}
+\section{Les tutoriels}
 
 \paragraph{}
 Le tutoriel est crucial dans la perception que le joueur a du jeu, c'est sa première interaction avec le gameplay, la plus importante, celle qui dictera si le joueur restera ou sera rebuté par un gameplay désagréable, inintéressant ou trop difficile. Un tutoriel se doit donc d'être ludique et accessible, tout en enseignant correctement les bases du jeu.
@@ -469,7 +469,7 @@ Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau es
 \paragraph{}
 En pratique, un tutoriel est composé d'un tableau de \textit{StepTuto}, chaque \textit{StepTuto} correspond à un élément du tutoriel : un texte ou une phase de jeu. Chaque classe implémentant \textit{StepTuto} possède une méthode \textit{endStep()} qui permettra au tutoriel de passer à l'étape suivante. Cette méthode est appelé lorsqu'un step est terminé, c'est à dire que le joueur a touché l'écran après avoir lu le texte ou qu'une phase de jeu a été réussie. Lorsque toutes les éléments du tableau ont été visités, c'est à dire que toutes les étapes du tutoriel sont achevées, le tutoriel est terminé.
 
-\subsection{Assemblage des jeux}
+\section{Assemblage des jeux}
 \paragraph{}
 Chaque jeu est en réalité une scène de Unity. La navigation entre les scènes se fait suivant le diagramme fig. \ref{transitions_scenes}. L'écran principal est un ``hub'' où sont regroupés tous les jeux, on accède bien évidemment au jeu en cliquant dessus. Le tutoriel est ensuite chargé, puis enfin le jeu, on peut remarquer que l'on peut à tout moment revenir à l'écran principal.
 
@@ -506,10 +506,10 @@ Les transitions entre les scènes se font donc par des écrans de chargements, m
 
 Il faut savoir qu'il n'y a pas de manière simple de réaliser cet effet dans Unity. L'approche logique aurait été de coller de grandes zones noires aux bords de l'image du cercle vide, mais il n'est pas possible de manipuler la position et la taille des éléments dans Unity, ces données sont modifiée par le \textit{scale} (échelle) de l'image. Difficile donc d'avoir un effet précis et fluide en multipliant la taille de l'image par un scalaire. C'est la solution de la physique qui a finalement été choisie, un centre de gravité au centre du cercle, et en soumettant les grandes zones noires à la physique, elle se déplacent de façon fluide en suivant le bord du cercle, qui lui a son scale diminué.
 
-\subsection{Services externes}
+\section{Services externes}
 Outre le jeu à proprement parler, nous avons intégré d'autres services externes afin de monétiser notre jeu, et d'obtenir des statistiques intéressantes.
 
-\subsubsection{Statistique et Analyse}
+\subsection{Statistique et Analyse}
 
 \paragraph{}
 La première priorité étant de pouvoir par la suite améliorer le jeu, et pour ce faire, nous avions besoin de savoir comment les utilisateurs interagissent avec notre application. Il se trouve que Google fourni une très bonne interface pour fournir des statistiques d'utilisation: “Google Analytics”. Et un pluggin permettant d'utiliser ces services avec Unity existe. "Google Analytics" est un service qui permet d'analyser le comportement des utilisateurs sur les applications. 
@@ -522,20 +522,20 @@ La première priorité étant de pouvoir par la suite améliorer le jeu, et pour
   \label{analytics}
 \end{figure}
 
-\subsubsection{Publicité}
+\subsection{Publicité}
 
 \paragraph{}Ensuite, la monétisation à proprement parler. Nous avons opté pour un jeu gratuit, sans boutique, mais monétisé à partir de la publicité. Sur le support mobile, 3 grandes régies publicitaires dominent, Admob (Google), Iad (Apple) et Chartboost. Nous avons choisis Chartboost, pour plusieurs raisons. La première étant qu'elle est réservée pour les jeux mobiles, ainsi nous étions sûr d'avoir des publicités ciblées, et adaptées à nos utilisateurs. Ensuite leur système de rémunération est assez intéressant, les gains étant plutôt important, bien que seulement au téléchargement (quand un joueur installe un autre jeu à partir du notre). Enfin, la possibilité de développer facilement des partenariats avec d'autres concepteurs de jeu, et ainsi de nous permettre d'avoir de nouvelles sources d'utilisateurs gratuitement. 
 \paragraph{}
 Nous ne voulions pas de pubs envahissantes, qui gênent l'utilisateur dans son utilisation de l'application, et perturbe la navigation dans le jeu. C'est la raison pour laquelle nous avons privilégié l'utilisation d'interstial en fin de partie, plutôt que d'une bannière tout au long du jeu. Une partie durant relativement longtemps, et sachant qu'un joueur fait plutôt peu de parties par session, nous avons décidé d'en mettre une à la fin de chaque partie, juste avant l'écran de fin lui indiquant le résultat obtenu lors du mini-jeu.
 
-\subsubsection{Version payante sans pub}
+\subsection{Version payante sans pub}
 
 \paragraph{}
 Enfin, sachant que certains utilisateurs sont retissant à la publicité, (ce qui est compréhensible), mais qu'ils peuvent vouloir soutenir les développeurs, nous avons donné la possibilité de payer une version payante afin d'obtenir le jeu, mais sans aucune publicité. Nous avons utilisé un pluggin utilisé normalement pour le conception de boutique (Achats in-app), afin de créer un bouton sur l'écran d'accueil, qui permet (contre la modeste somme de 1,20\euro) de supprimer définitivement toute publicité. Grâce à l'utilisation du pluggin, l'achat est simplifié, puisqu'il utilise directement les systèmes de paiement d'Android et d'iOS.  
 \paragraph{}
 L'idée n'étant pas d'escroquer les joueurs, simplement d'amortir les coûts de mise en ligne de l'application (voir "Mise en ligne"). Le pluggin utilisé est Soomla Store, un pluggin intéressant, puisqu'il est développé de manière collaboratif par qui veut apporter sa contribution, et qu'ils sont connus pour de nombreux pluggins Unity très intéressants. 
 
-\subsection{Mise en ligne}
+\section{Mise en ligne}
 
 \paragraph{}
 La mise en ligne d'une application tant sur Android que sur iOS n'est pas gratuite. Les deux systèmes utilisent la même formule, à savoir l'achat d'un compte développeur qui permet de mettre autant d'application souhaitée, pendant un ans. Une fois une application mise en ligne, elle reste disponible à vie, mais passé les un an, on ne peut ni rajouter d'application, ni faire de mise à jour (à moins de renouveler le compte développeur). Le prix étant de 25\$ pour Android, et de 99\$ pour iOS ! A noter aussi que pour Android le compte est nécessaire uniquement pour la publication, alors que chez iOS, il est impossible de tester la moindre application en cours de développement sans payer.
@@ -546,7 +546,7 @@ Chez Android, la publication d'une application est assez simple, il suffit de co
 \paragraph{}
 De plus, alors qu'une application Android peut être développé à partir de n'importe quel système, Apple étant un peu plus fermé, nécessite l'utilisation d'un Mac, sans quoi ce n'est pas possible. Fort heureusement nous en possédions un, nous permettant d'éviter l'installation d'un émulateur Mac sur PC (contournement possible). Enfin, alors que la compilation Android est extrêmement simple, pour iOS c'est encore un peu compliqué, puisqu'il nécessite l'ajout de bibliothèques externes, qui parfois comportent quelques conflits entre elles.
 
-\subsubsection{Problème de synchronisation}
+\subsection{Problème de synchronisation}
 
 \paragraph{}
 Lors de nos premiers tests sur mobile, nous nous sommes aperçu un peu tard de très gros problèmes de synchronisations.
