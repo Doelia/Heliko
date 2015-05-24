@@ -16,6 +16,7 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
+\usepackage{wrapfig}
 
 
 \usepackage[scaled]{beramono}
@@ -24,25 +25,26 @@
 \definecolor{redstrings}{rgb}{0.9,0,0}
 
 \lstset{language=[Sharp]C,
-showspaces=false,
-showtabs=false,
-breaklines=true,
-showstringspaces=false,
-breakatwhitespace=true,
-escapeinside={(*@}{@*)},
-basicstyle=\footnotesize\ttfamily,
-commentstyle=\color{greencomments},
-keywordstyle=\color{bluekeywords}\bfseries,
-stringstyle=\color{redstrings},
-frame=single,
-literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {à}{{\'a}}1
+  frame=l,
+  xleftmargin=\parindent,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  escapeinside={(*@}{@*)},
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\color{greencomments},
+  keywordstyle=\color{bluekeywords}\bfseries,
+  stringstyle=\color{redstrings},
+  literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {à}{{\'a}}1
 }
 
 \lstdefinestyle{Scheme} {
   language=Lisp,
   belowcaptionskip=1\baselineskip,
   breaklines=true,
-  %% frame=L,
+  frame=l,
   xleftmargin=\parindent,
   showstringspaces=false,
   basicstyle=\footnotesize\ttfamily,

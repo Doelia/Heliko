@@ -2,14 +2,175 @@
 
 \section{Organisation du travail}
 
+\subsection{Rôles dans l’équipe}
+Vu la charge importante de travail et la diversité des tâches, nous avons préféré nous attribuer des responsabilités fixes :
+ 
+\begin{itemize}
+\item \textbf{Stéphane Wouters}, chef de projet ;
+\item \textbf{Noé Le Philippe}, responsable développement technique ;
+\item \textbf{Thibaut Castanié}, responsable son et graphismes ;
+\item \textbf{Jolan Konig}, responsable intégration et publication.
+\end{itemize}
+ 
+\paragraph{}
+Nous avons fait le choix de travailler ensemble sur toutes les parties, et nous nous sommes affectés, au fil du projet, des micro tâches.
 
-\section{Outils de développement}
+\subsection{Cycles itératifs}
+ 
+\paragraph{}
+Dès le départ, un développement par cycles itératifs a été choisi. Bien adapté pour le développement d’un jeu vidéo et surtout à cause de notre contrainte principale : notre liberté sur les choix.
+ 
+\paragraph{}
+Les premières semaines ont été dédiées à la réalisation de prototypes et de tests en augmentant toujours la difficulté, dans l’objectif de produire un moteur de jeu de rythme fonctionnel qui correspond aux besoins définis dans le cahier des charges.
+ 
+\paragraph{}
+Liste du déroulement de nos prototypes :
 
+\begin{itemize}
+\item \textbf{Prototype 1} - Réalisation d’un cube qui bat à un rythme constant (3 jours)
+\item \textbf{Prototype 2} - Réalisation d’un prototype de test de réussite (2 jours)
+\item \textbf{Prototype 3} - Création de la première version du moteur de rythme (6 jours)
+\item \textbf{Prototype 4} - Réalisation d’un prototype d’animations, connectés au moteur de rythme (4 jours) \emph{-> Le moteur n’est pas assez précis et doit être revu}
+\item \textbf{Prototype 5} - Deuxième version du moteur de rythme (3 jours)
+\item \textbf{Prototype 6} - Nouvelle tentative de connexion à des animations (1 jour) \emph{-> Test OK. On s’aperçoit que nous avons besoin de quart de temps dans le modèle et qu’il faut recommencer une nouvelle fois sa conception}
+\item \textbf{Prototype 7} - Troisième version du moteur de rythme (4 jours)
+\item Etc.
+\end{itemize}
+ 
+\begin{figure}[H]\centering
+  \includegraphics[scale=1]{./img/list-tests.png}
+  \caption{Les différents projets Unity de tests}
+  \label{listte}
+\end{figure}
+ 
+\paragraph{}
+On voit sur la figure \ref{listte} l'ensemble de nos tests. A chaque nouveau test, un nouveau projet Unity. Au \textbf{test 14}, nous avons jugé que le moteur correspondait à nos attentes et nous avons ensuite itéré directement sur ce projet. C’est à ce moment (environ 1 mois après le début du projet) que le système de fonctionnement à changé et que nous avons fonctionné en micro tâches.
+ 
+\paragraph{}
+Les dernières semaines ont été dédiées aux finitions sur le projet afin de rendre le jeu agréable avec un aspect “fini”.
 
+\section{Méthodes et outils}
 
-\subsection{Communication}
+\subsection{Méthode de communication}
 
+\subsubsection{Gestionnaire de tâches}
+ 
+\paragraph{}
+Pour faire avancer le projet, nous avons utilisé toutes les capacités d’un gestionnaire de tâches en ligne, \textbf{Trello}, qui est un outil inspiré par la \textit{méthode Kanban}. Nous nous sommes imposé de visiter ce tableau tous les jours et ses outils de notifications nous ont permis d’être continuellement connectés.
+ 
+\paragraph{}
+Trello permet une gestion des tâches dans le Cloud avec de nombreuses fonctionnalités :
+\begin{itemize}
+\item Création de tâches, avec titre et description ;
+\item Choix d’une date de fin sur une tâche ;
+\item Affectation de membres à une tâche ;
+\item Labels (tags) personnalisés ;
+\item Commentaires sur chaque tâche pour discussion asynchrone entre les membres du groupe sur une tâche ;
+\item Application Android et iOS avec notifications par \textit{push}.
+\end{itemize}
+ 
+\paragraph{}
+Un système de rangement vertical a été adopté pour les types de tâches, et des labels de couleurs en fonction de l’avancement des tâches :
+ 
+\begin{itemize}
+\item \textbf{Bloquante} (tâche à réaliser rapidement, bloquant l’avancement du projet) ;
+\item \textbf{À discuter / en recherche} (tâche en cours de discussion, pour prise de décision) ;
+\item \textbf{À attribuer} (Tâche correctement spécifiée, en attente d’affectation à un membre de l’équipe ;
+\item \textbf{En réalisation} (tâche en cours de réalisation par un ou plusieurs membres de l’équipe) ;
+\item \textbf{À tester / à contrôler} (tâche réalisée, à tester pour confirmation) ;
+\item \textbf{Fait} (tâche réalisée et fonctionnelle, prête à être archivée).
+\end{itemize}
+ 
+\paragraph{}
+Les tâches sont classées dans des colonnes “TODO” triées par thèmes (développement, graphismes…), ou par cycle itératif (d’un jour à une semaine).
+ 
+\begin{figure}[H]\centering
+  \includegraphics[scale=1]{./img/trello.png}
+  \caption{Exemple de colonnes en fin de projet}
+  \label{trelloc}
+\end{figure}
+ 
+\paragraph{}
+Trello a aussi été utilisé comme mémo et pour archiver les ressources graphiques et sonores (figure \ref{trellomemo}).
+ 
+\begin{figure}[H]\centering
+  \includegraphics[scale=1]{./img/trello_autres.png}
+  \caption{Utilisation de Trello comme mémo et archives}
+  \label{trellomemo}
+\end{figure}
+ 
+\paragraph{}
+Cette méthode de travail avec Trello nous a permis d’être efficace 100\% du temps au travers d'Internet. Il n’y avait jamais de temps mort et nous étions toujours clairs dans notre direction tant que quelqu’un (chef de projet) s’occupait de créer des tâches et de les organiser.
+ 
+\subsubsection{Réunions}
+ 
+\paragraph{}
+Même si \textit{Trello} nous permet de travailler de façon indépendante, nous nous sommes réunis très régulièrement pour travailler ensemble et fixer les nouveaux objectifs, une à quatre fois par semaine.
+ 
+\paragraph{}
+Pendant les longues séances de travail en collaboration (de 9h à 18h par exemple), nous avons utilisé un véritable tableau blanc pour noter les tâches en cours et les affectations. Exemples de tâches :
+ 
+\begin{itemize}
+\item Réadapter la taille du logo \textit{pause} sur Android v4.1 en écran 16:10 ;
+\item Couper les 150ms du début du son \texttt{tic.wav} ;
+\item Revoir l’animation du bras gauche du champignon.
+\end{itemize}
+ 
+\paragraph{}
+Les tâches étant à 80\% de ce type (courtes et rapides), l’organisation est très importante pour être efficace.
+ 
+\paragraph{}
+De nombreuses heures de réunion étaient dédiées à la recherche de concept ou de remise en question des objectifs. Par exemple abandonner le développement d’un mini jeu trop complexe, ou en inventer de plus simples.
 
+\subsection{Github}
+ 
+\paragraph{}
+Un gestionnaire de version pour notre projet a bien sûr été utilisé et nous avons choisi le gestionnaire \emph{Github} qui offre de nombreux outils de statistiques très intéressants.
+ 
+\paragraph{}
+Déjà habitués à Git, nous l'avons utilisé pleinement et nous avons envoyé des \emph{commits} pour chaque modification fonctionnelle. Nous sommes ainsi arrivés en fin de projet avec un cumul de plus de \textbf{980 commits}, globalement bien répartis entre nous quatre. (Avec plus de 2 millions de modifications dans les fichiers...).
+ 
+\begin{figure}[H]\centering
+  \includegraphics[scale=.5]{./img/github_commits.png}
+  \caption{Répartition des commits dans le temps}
+  \label{github_commits}
+\end{figure}
+ 
+\paragraph{}
+On remarque d'après la figure \ref{github_commits} de nombreuses suppressions (presque autant que d’additions), prouvant l’évolution du projet et l’application des cycles itératifs. Le développement s’est fait continuellement dans le temps.
+ 
+\subsubsection{Ponctualité hebdomadaire}
+ 
+\begin{figure}[H]\centering
+  \includegraphics[scale=.8]{./img/punchcard.png}
+  \caption{Punch card de Github}
+  \label{punchcard}
+\end{figure}
+ 
+D’après les statistiques \emph{Github} (figure \ref{punchcard}), nous avons travaillé tous les jours de la semaine, avec une préférence pour le lundi et le mercredi en après-midi et jusqu’en fin de soirée.
+ 
+ 
+\subsubsection{Modélisation Gource}
+ 
+Gource est une application qui permet de tracer en vidéo l’historique des commits qui construit l’architecture des fichiers d’un projet GIT.
+ 
+\paragraph{}
+Cette capture (figure \ref{gource_over}) représente l’état final de l’architecture des fichiers du projet. La taille de la branche des tests démontre qu'ils ont effectivement constitué une grande partie du projet (Environs 30\%).
+ 
+\begin{figure}[H]\centering
+  \includegraphics[scale=.3]{./img/gource_over.png}
+  \caption{Modélisation Gource en fin de projet}
+  \label{gource_over}
+\end{figure}
+ 
+\section{Estimation du temps passé}
+ 
+\paragraph{Estimation globale}
+Nous nous sommes réunis au moins une fois par semaine pour travailler, sur des séances d'environ 8h sur une journée. Sur 4 mois, cela représente un total de 128 heures par personnes, et 512 heures au total. A cela nous pouvons y ajouter toutes les heures de travail individuels, que nous chiffrons facilement à 30\% du projet. Soit \textbf{665 heures} au total.
+ 
+\paragraph{Estimation assistée}
+Étant donné que nous envoyons très régulièrement des commits, nous avons essayé d'utiliser un outil de calcul :  \textbf{git-hours}. Il calcule les heures de travail en fonction des écarts entre les commits. (Mais ne compte évidemment que le temps de développement pure, les moments passés à discuter et débattre autour du projet en équipe ne sont donc pas comptabilisés. L'application retourne un total de \textbf{29822} minutes, soit \textbf{497 heures}. Ce qui semble totalement cohérent avec notre première estimation, en ajoutant les heures de débats en réunion.
+ 
 \subsection{Unity}
 
 Unity est un logiciel orienté pour le développement de jeux-vidéos intégrant un moteur physique 2D et 3D. Sa particularité réside dans la possibilité d'exporter l'application développée sur de nombreuses plateformes (Web, Android, iOS, Consoles..). Nous avons réalisé notre projet avec la version 5 du produit.
