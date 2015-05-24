@@ -89,6 +89,7 @@ public int getStepClosest() {
 Tous ces calculs prennent en compte le \texttt{sampleOffset}.
 
 \subsubsection{Le niveau (\texttt{LevelScripted})}
+\label{niveau}
 Pour pouvoir réaliser des niveaux intéressants, il nous faut pouvoir les scripter les afin de définir sur quels "ticks" le joueur doit frapper. Il peut y avoir de longs blancs, ou des enchaînements rapides (avec une fréquence maximale équivalente au quart de temps).
 \\\\
 Nous avons décidé de représenter un niveau dans un fichier texte de la façon suivante :\\
@@ -351,6 +352,55 @@ Après avoir développé tout le contenu d'un mini-jeu, il faut évaluer sa diff
 
 
 \subsection{Les tutoriels}
+
+\paragraph{}
+Le tutoriel est crucial dans la perception que le joueur a du jeu, c'est sa première interaction avec le gameplay, la plus importante, celle qui dictera si le joueur restera ou sera rebuté par un gameplay désagréable, inintéressant ou trop difficile. Un tutoriel se doit donc d'être ludique et accessible, tout en enseignant correctement les bases du jeu.
+
+\paragraph{}
+Nos tutoriels placent de plus le joueur dans le contexte du jeu, en lui donnant un semblant d'histoire. Le tutoriel est donc divisé en étapes successives, du texte, pour l'histoire et les explications, et une phase de jeu, dans laquelle le joueur applique ce qu'il vient d'apprendre dans la phase précédente. Cette boucle se répète autant de fois qu'il y a de notions à apprendre pour le jeu.
+
+\paragraph{}
+Comme expliqué section \ref{niveau}, les niveaux sont scriptés par des fichiers textes. La même technique est utilisée pour les tutoriels, qui ne sont rien d'autres que des niveaux normaux, un fichier texte par étape. À la première étape, le joueur apprendra par exemple le tap court, le fichier texte sera donc uniquement composé de ces évenements, puis lorsque cet élément sera appris, le moteur chargera un autre fichier texte contenant un autre élément de gameplay jusqu'à ce que le joueur les ai tous appris.
+
+\paragraph{}
+Pour être certain que le joueur maitrise un élément de gameplay, et ainsi pouvoir passé à l'étape suivante du tutoriel, il lui est demandé de le répéter trois fois. C'est pour s'assurer que le joueur n'a pas réussi par chance et est donc incapable de completer un niveau, ce qui pourrait entrainer de la frustration.
+
+
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[scale=0.28]{./img/compteur_tuto.png}}
+  \caption{Compteur du nombre de répétitions restantes}
+  \label{repetitions}
+\end{figure}
+
+\paragraph{}
+Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai completé au moins une fois
+
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}\centering
+     \frame{\includegraphics[scale=0.2]{./img/skip_locked.png}}
+     \caption{Bouton skip verrouillé}
+     \label{skip_locked}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}\centering
+     \frame{\includegraphics[scale=0.2]{./img/skip_locked_popup.png}}
+     \caption{Pop up correspondante}
+     \label{skip_locked_popup}
+   \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]\centering
+   \begin{minipage}{0.49\textwidth}\centering
+     \frame{\includegraphics[scale=0.2]{./img/skip_unlocked.png}}
+     \caption{Bouton skip déverrouillé}
+     \label{skip_unlocked}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}\centering
+     \frame{\includegraphics[scale=0.2]{./img/skip_unlocked_popup.png}}
+     \caption{Pop up correspondante}
+     \label{skip_unlocked_popup}
+   \end{minipage}
+\end{figure}
+
 \subsection{Assemblage des jeux}
 \subsection{Mise en ligne}
 
