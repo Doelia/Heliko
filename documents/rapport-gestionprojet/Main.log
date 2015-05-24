@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 19:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 19:46
 entering extended mode
 **Main.tex
 
@@ -488,6 +488,10 @@ g/logo.png>])
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport-gestionpr
 ojet\Main.toc")
 \tf@toc=\write4
+
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport-gestionpr
+ojet\Main.lof")
+\tf@lof=\write5
  [1]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport-gestionpr
 ojet\Content.tex" <./img/game.png, id=21, 264.48813pt x 165.11688pt>
@@ -558,13 +562,13 @@ nprojet/img/gource_over.png>]) [10]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport-gestionpr
 ojet\Main.aux") ) 
 Here is how much of TeX's memory you used:
- 5195 strings out of 493921
- 71091 string characters out of 3147277
+ 5198 strings out of 493921
+ 71275 string characters out of 3147277
  165584 words of memory out of 3000000
  8403 multiletter control sequences out of 15000+200000
  15962 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,10n,40p,463b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,7n,40p,463b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
 nappen\ec\dpi600\ecti1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\
 pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTe
@@ -578,9 +582,9 @@ ur\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\f
 onts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thibaut\AppData\Local\
 MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\Thibaut\Ap
 pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk>
-Output written on Main.pdf (11 pages, 1106138 bytes).
+Output written on Main.pdf (11 pages, 1106748 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
+ 425 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
