@@ -285,7 +285,7 @@ On importe la musique sur une piste, et on indique au logiciel son tempo (qui do
 \begin{figure}[H]\centering
   \includegraphics[width=11cm]{./img/logic_sound.png}
   \caption{Piste sonore}
-  \label{transitions_scenes}
+  % \label{transitions_scenes}
 \end{figure}
 
 \paragraph{}
@@ -294,7 +294,7 @@ On ajoute sur une seconde piste vide un instrument qui représente le niveau à 
 \begin{figure}[H]\centering
   \includegraphics[width=11cm]{./img/logic_midi.png}
   \caption{Piste MIDI}
-  \label{transitions_scenes}
+  % \label{transitions_scenes}
 \end{figure}
 
 
@@ -336,7 +336,7 @@ Même si le calcul des scores est fait sous la forme de pourcentage, ce qui est 
 \begin{figure}[H]\centering
   \includegraphics[scale=.9]{./img/MenuMort.png}
   \caption{Score du joueur affiché}
-  \label{SelectionMiniJeu}
+  % \label{SelectionMiniJeu}
 \end{figure}
 
 \subsection{Déblocage des mini-jeux}
@@ -364,7 +364,7 @@ Dans notre projet, nous avons voulu mettre en avant le côté simple et divertis
 \begin{figure}[H]\centering
   \includegraphics[scale=.6]{./img/technique_graphismes.png}
   \caption{Exemple visuel de fichier graphique vectoriel}
-  \label{SelectionMiniJeu}
+  % \label{SelectionMiniJeu}
 \end{figure}
 
 Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des créations graphiques vectorielles. L'intérêt de travailler sur du vectoriel est qu'on peut rendre l'image dans la dimension voulue, et, de plus, il est plus facile d'apporter rapidement une petite modification un objet ou sa couleur, sans avoir tout à recommencer.
@@ -396,7 +396,40 @@ Unity possède la caractéristique de pouvoir créer un diagramme d'état afin d
 \end{figure}
 
 \subsection{Assemblage avec le moteur}
-On va donc brancher les différents éléments composants le jeu au moteur. Les différents éléments du moteurs sont détaillés partie \ref{engine_summary}.
+On va donc brancher les différents éléments composants le jeu au moteur. Les composants du moteurs sont détaillés partie \ref{engine_summary}. 
+\subsubsection{Le passage de message}
+Plusieurs façons de faire passer des messages sont utilisées dans le moteur. 
+\paragraph{}
+Le passage de message par \textit{trigger} est employé pour déclencher les animations (voir partie \ref{anims}). Il est possible d'ajouter des \textit{triggers} aux animations comme montré figure \ref{trigger}. Lorsqu'un trigger est déclenché, on passe à l'état suivant de l'animation. Cela permet entre autre de ne pas spécifier qui est connecté à qui, mais de simplement envoyer des messages d'un coté et de les récupérer de l'autre sans se soucier de comment il y est arrivé.
+
+\begin{figure}[H]\centering
+  \includegraphics[scale=1]{./img/anims.png}
+  \caption{Exemple d'ajout de trigger}
+  \label{trigger}
+\end{figure}
+
+\paragraph{}
+Il est également possible de connecter directement des objets entre eux, pour que l'objet qui se connecte recoive des notifications de l'objet auquel il s'est connecté. C'est par exemple ainsi que le \textit{BeatCounter} notifiera le \textit{LevelScripted} qu'il y a eu un beat.
+
+\begin{figure}[H]\centering
+  \begin{lstlisting}
+    public void connect (LevelScriptedReceiver r) {
+      this.observers.Add (r);
+    }
+
+    public void Disconnect (LevelScriptedReceiver r) {
+      this.observers.Remove (r);
+    }
+
+    private void notifyChildren (int type) {
+      foreach (LevelScriptedReceiver e in this.observers) {
+        e.OnAction (type);
+      }
+    }
+  \end{lstlisting}
+\label{connection}
+\caption{Méthodes servant à la communication entre les objets}
+\end{figure}
 
 \paragraph{}
 Commençons par les éléments du décor et les personnages non-joueur. Ils seront reliés à un \textit{LevelScripted} auquel on passera en paramètre le fichier texte correspondant à leur mouvement. Les mouvements sont et les animations (voir partie \ref{anims}) déclenchés à l'aide de \textit{trigger} que le \textit{LevelScripted} va envoyer en fonction des évènements lus. \\
@@ -565,7 +598,7 @@ Finalement nous avons terminé par trouver la raison du problème : Une simple c
 \begin{figure}[H]\centering
   \includegraphics[scale=1]{./img/opti_sound.png}
   \caption{Paramètre pour la synchronisation des sons}
-  \label{transitions_scenes}
+  % \label{transitions_scenes}
 \end{figure}
 
 \subsection{Optimisation du poids de l'application}

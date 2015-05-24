@@ -72,55 +72,58 @@
 \contentsline {subsection}{\numberline {4.4.1}Les graphismes}{22}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Les animations}{23}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Assemblage avec le moteur}{24}{subsection.4.4.3}
-\contentsline {paragraph}{}{24}{section*.42}
+\contentsline {subsubsection}{Le passage de message}{24}{section*.42}
 \contentsline {paragraph}{}{24}{section*.43}
-\contentsline {subsection}{\numberline {4.4.4}Le \textit {feedback}}{24}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Le choix des sons}{24}{subsection.4.4.5}
-\contentsline {subsection}{\numberline {4.4.6}La difficult\IeC {\'e}}{24}{subsection.4.4.6}
-\contentsline {section}{\numberline {4.5}Les tutoriels}{25}{section.4.5}
-\contentsline {paragraph}{}{25}{section*.44}
-\contentsline {paragraph}{}{25}{section*.45}
+\contentsline {paragraph}{}{24}{section*.44}
+\contentsline {paragraph}{}{24}{section*.45}
 \contentsline {paragraph}{}{25}{section*.46}
+\contentsline {subsection}{\numberline {4.4.4}Le \textit {feedback}}{25}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Le choix des sons}{25}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}La difficult\IeC {\'e}}{25}{subsection.4.4.6}
+\contentsline {section}{\numberline {4.5}Les tutoriels}{25}{section.4.5}
 \contentsline {paragraph}{}{25}{section*.47}
 \contentsline {paragraph}{}{25}{section*.48}
 \contentsline {paragraph}{}{26}{section*.49}
-\contentsline {section}{\numberline {4.6}Assemblage des jeux}{26}{section.4.6}
 \contentsline {paragraph}{}{26}{section*.50}
-\contentsline {paragraph}{}{27}{section*.51}
+\contentsline {paragraph}{}{26}{section*.51}
 \contentsline {paragraph}{}{27}{section*.52}
-\contentsline {section}{\numberline {4.7}Services externes}{27}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Statistique et Analyse}{27}{subsection.4.7.1}
+\contentsline {section}{\numberline {4.6}Assemblage des jeux}{27}{section.4.6}
 \contentsline {paragraph}{}{27}{section*.53}
-\contentsline {paragraph}{}{28}{section*.54}
-\contentsline {subsection}{\numberline {4.7.2}Publicit\IeC {\'e}}{28}{subsection.4.7.2}
-\contentsline {paragraph}{}{28}{section*.55}
+\contentsline {paragraph}{}{27}{section*.54}
+\contentsline {paragraph}{}{27}{section*.55}
+\contentsline {section}{\numberline {4.7}Services externes}{28}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Statistique et Analyse}{28}{subsection.4.7.1}
 \contentsline {paragraph}{}{28}{section*.56}
-\contentsline {subsection}{\numberline {4.7.3}Version payante sans pub}{29}{subsection.4.7.3}
-\contentsline {paragraph}{}{29}{section*.57}
+\contentsline {paragraph}{}{28}{section*.57}
+\contentsline {subsection}{\numberline {4.7.2}Publicit\IeC {\'e}}{29}{subsection.4.7.2}
 \contentsline {paragraph}{}{29}{section*.58}
-\contentsline {section}{\numberline {4.8}Mise en ligne}{29}{section.4.8}
 \contentsline {paragraph}{}{29}{section*.59}
+\contentsline {subsection}{\numberline {4.7.3}Version payante sans pub}{29}{subsection.4.7.3}
 \contentsline {paragraph}{}{29}{section*.60}
-\contentsline {paragraph}{}{29}{section*.61}
-\contentsline {subsection}{\numberline {4.8.1}Probl\IeC {\`e}me de synchronisation}{29}{subsection.4.8.1}
-\contentsline {paragraph}{}{29}{section*.62}
+\contentsline {paragraph}{}{30}{section*.61}
+\contentsline {section}{\numberline {4.8}Mise en ligne}{30}{section.4.8}
+\contentsline {paragraph}{}{30}{section*.62}
 \contentsline {paragraph}{}{30}{section*.63}
 \contentsline {paragraph}{}{30}{section*.64}
-\contentsline {subsection}{\numberline {4.8.2}Optimisation du poids de l'application}{30}{subsection.4.8.2}
-\contentsline {chapter}{\numberline {5}R\IeC {\'e}sultat}{31}{chapter.5}
-\contentsline {paragraph}{L'\IeC {\'e}cran d'accueil}{31}{section*.65}
-\contentsline {paragraph}{Choix des niveaux}{31}{section*.66}
-\contentsline {paragraph}{Le menu pause}{32}{section*.67}
-\contentsline {paragraph}{L'\IeC {\'e}cran de fin de partie}{32}{section*.68}
-\contentsline {paragraph}{La marche de l'escargot}{32}{section*.70}
-\contentsline {paragraph}{Le magicien}{33}{section*.71}
-\contentsline {paragraph}{Les champignons}{33}{section*.72}
-\contentsline {chapter}{\numberline {6}Bilan du projet}{35}{chapter.6}
-\contentsline {section}{\numberline {6.1}Autocritique}{35}{section.6.1}
-\contentsline {paragraph}{}{35}{section*.73}
-\contentsline {paragraph}{}{35}{section*.74}
-\contentsline {section}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{36}{section.6.2}
-\contentsline {paragraph}{}{36}{section*.75}
-\contentsline {section}{\numberline {6.3}Perspectives}{36}{section.6.3}
-\contentsline {section}{\numberline {6.4}Conclusion}{36}{section.6.4}
-\contentsline {chapter}{\numberline {7}Annexes}{37}{chapter.7}
+\contentsline {subsection}{\numberline {4.8.1}Probl\IeC {\`e}me de synchronisation}{30}{subsection.4.8.1}
+\contentsline {paragraph}{}{30}{section*.65}
+\contentsline {paragraph}{}{30}{section*.66}
+\contentsline {paragraph}{}{30}{section*.67}
+\contentsline {subsection}{\numberline {4.8.2}Optimisation du poids de l'application}{31}{subsection.4.8.2}
+\contentsline {chapter}{\numberline {5}R\IeC {\'e}sultat}{32}{chapter.5}
+\contentsline {paragraph}{L'\IeC {\'e}cran d'accueil}{32}{section*.68}
+\contentsline {paragraph}{Choix des niveaux}{32}{section*.69}
+\contentsline {paragraph}{Le menu pause}{33}{section*.70}
+\contentsline {paragraph}{L'\IeC {\'e}cran de fin de partie}{33}{section*.71}
+\contentsline {paragraph}{La marche de l'escargot}{33}{section*.73}
+\contentsline {paragraph}{Le magicien}{34}{section*.74}
+\contentsline {paragraph}{Les champignons}{34}{section*.75}
+\contentsline {chapter}{\numberline {6}Bilan du projet}{36}{chapter.6}
+\contentsline {section}{\numberline {6.1}Autocritique}{36}{section.6.1}
+\contentsline {paragraph}{}{36}{section*.76}
+\contentsline {paragraph}{}{36}{section*.77}
+\contentsline {section}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{37}{section.6.2}
+\contentsline {paragraph}{}{37}{section*.78}
+\contentsline {section}{\numberline {6.3}Perspectives}{37}{section.6.3}
+\contentsline {section}{\numberline {6.4}Conclusion}{37}{section.6.4}
+\contentsline {chapter}{\numberline {7}Annexes}{38}{chapter.7}

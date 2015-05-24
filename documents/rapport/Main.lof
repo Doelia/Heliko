@@ -18,25 +18,27 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Exemple d'utilisation de cl\IeC {\'e}s sur une ligne temporelle}}{23}{figure.4.10}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Interpolation simple entre trois cl\IeC {\'e}s d\IeC {\'e}finissant la position y de l'objet}}{23}{figure.4.11}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Diagramme d'\IeC {\'e}tat utilis\IeC {\'e} pour l'animation}}{23}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Compteur du nombre de r\IeC {\'e}p\IeC {\'e}titions restantes}}{25}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Bouton skip verrouill\IeC {\'e}}}{26}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Pop up correspondante}}{26}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Bouton skip d\IeC {\'e}verrouill\IeC {\'e}}}{26}{figure.4.16}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Exemple d'ajout de trigger}}{24}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces M\IeC {\'e}thodes servant \IeC {\`a} la communication entre les objets}}{24}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Compteur du nombre de r\IeC {\'e}p\IeC {\'e}titions restantes}}{26}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Bouton skip verrouill\IeC {\'e}}}{26}{figure.4.16}
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Pop up correspondante}}{26}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Transitions entre les sc\IeC {\`e}nes du jeu}}{26}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces \IeC {\'E}cran de chargement}}{27}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Sc\IeC {\`e}ne normale}}{27}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Fermeture en cercle}}{27}{figure.4.21}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Aper\IeC {\c c}u des statistiques fournies pas Google Analytics}}{28}{figure.4.22}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Param\IeC {\`e}tre pour la synchronisation des sons}}{30}{figure.4.23}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Aper\IeC {\c c}u des r\IeC {\'e}glages de compression des textures}}{30}{figure.4.24}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Bouton skip d\IeC {\'e}verrouill\IeC {\'e}}}{26}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Pop up correspondante}}{26}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Transitions entre les sc\IeC {\`e}nes du jeu}}{27}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces \IeC {\'E}cran de chargement}}{27}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Sc\IeC {\`e}ne normale}}{28}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Fermeture en cercle}}{28}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Aper\IeC {\c c}u des statistiques fournies pas Google Analytics}}{29}{figure.4.24}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Param\IeC {\`e}tre pour la synchronisation des sons}}{31}{figure.4.25}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Aper\IeC {\c c}u des r\IeC {\'e}glages de compression des textures}}{31}{figure.4.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces L'\IeC {\'e}cran d'accueil de l'application}}{31}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces L'\IeC {\'e}cran de choix du niveau}}{32}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Le niveau de la Marche des escargots}}{33}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Le niveau du magicien}}{33}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Le niveau des champignons}}{34}{figure.5.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces L'\IeC {\'e}cran d'accueil de l'application}}{32}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces L'\IeC {\'e}cran de choix du niveau}}{33}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Le niveau de la Marche des escargots}}{34}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Le niveau du magicien}}{34}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Le niveau des champignons}}{35}{figure.5.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Concept du jeu du moulin}}{35}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Concept d'un jeu de chevaliers}}{35}{figure.6.2}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Concept du jeu du moulin}}{36}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Concept d'un jeu de chevaliers}}{36}{figure.6.2}
 \addvspace {10\p@ }
