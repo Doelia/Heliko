@@ -127,7 +127,7 @@ Les mouvements suivants sont définis :
 \item Tap bref (le plus commun)
 \item Commencement appui long
 \item Relâchement appui long
-\item Swip (lancer)
+\item Swipe (lancer)
 \end{enumerate}
 
 \noindent
@@ -176,7 +176,7 @@ Pour résumer le fonctionnement du moteur :
 Même si notre système de fichier texte est suffisamment clair pour être lu et modifié manuellement, il est tout de même fastidieux de construire des niveaux directement. Il est beaucoup plus intéressant de créer les actions du niveau dans un logiciel de musique. Nous avons donc développé un outil de conversion pour générer un niveau à partir de fichiers MIDI.
 
 \subsection{Choix du langage}
-La programmation est la représentation des données et la manipulation de ces représentations. Les fichiers midi sont représentés par des listes de listes. Quel meilleur langage qu'un lisp pour effectuer des opérations sur des listes ? Le Scheme s'est imposé comme choix naturel.
+La programmation est la représentation des données et la manipulation de ces représentations. Les fichiers midi sont représentés par des listes de listes. Quel meilleur langage qu'un LISP pour effectuer des opérations sur des listes ? Le Scheme s'est imposé comme choix naturel.
 
 \subsubsection{Structure d'un fichier midi}
 Les spécifications du midi sont lourdes et complexes, elles ne seront pas détaillées ici, seules seront détaillées les informations importantes à notre convertisseur de niveau.
@@ -360,10 +360,10 @@ Le tutoriel est crucial dans la perception que le joueur a du jeu, c'est sa prem
 Nos tutoriels placent de plus le joueur dans le contexte du jeu, en lui donnant un semblant d'histoire. Le tutoriel est donc divisé en étapes successives, du texte, pour l'histoire et les explications, et une phase de jeu, dans laquelle le joueur applique ce qu'il vient d'apprendre dans la phase précédente. Cette boucle se répète autant de fois qu'il y a de notions à apprendre pour le jeu.
 
 \paragraph{}
-Comme expliqué section \ref{niveau}, les niveaux sont scriptés par des fichiers textes. La même technique est utilisée pour les tutoriels, qui ne sont rien d'autres que des niveaux normaux, un fichier texte par étape. À la première étape, le joueur apprendra par exemple le tap court, le fichier texte sera donc uniquement composé de ces évenements, puis lorsque cet élément sera appris, le moteur chargera un autre fichier texte contenant un autre élément de gameplay jusqu'à ce que le joueur les ai tous appris.
+Comme expliqué section \ref{niveau}, les niveaux sont scriptés par des fichiers textes. La même technique est utilisée pour les tutoriels, qui ne sont rien d'autres que des niveaux normaux, un fichier texte par étape. À la première étape, le joueur apprendra par exemple le tap court, le fichier texte sera donc uniquement composé de ces évènements, puis lorsque cet élément sera appris, le moteur chargera un autre fichier texte contenant un autre élément de gameplay jusqu'à ce que le joueur les ai tous appris.
 
 \paragraph{}
-Pour être certain que le joueur maitrise un élément de gameplay, et ainsi pouvoir passé à l'étape suivante du tutoriel, il lui est demandé de le répéter trois fois. C'est pour s'assurer que le joueur n'a pas réussi par chance et est donc incapable de completer un niveau, ce qui pourrait entrainer de la frustration.
+Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi pouvoir passé à l'étape suivante du tutoriel, il lui est demandé de le répéter trois fois. C'est pour s'assurer que le joueur n'a pas réussi par chance et est donc incapable de completer un niveau, ce qui pourrait entraîner de la frustration.
 
 
 \begin{figure}[!htb]\centering
@@ -373,7 +373,7 @@ Pour être certain que le joueur maitrise un élément de gameplay, et ainsi pou
 \end{figure}
 
 \paragraph{}
-Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai completé au moins une fois
+Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai complété au moins une fois
 
 \begin{figure}[!htb]\centering
    \begin{minipage}{0.49\textwidth}\centering
@@ -411,7 +411,7 @@ Lors de nos premiers tests sur mobile, nous nous sommes aperçu un peu tard de t
 Quand le joueur frappait sur l'écran, il y avait un décalage entre le moment ou il appuyait sur l'écran et le moment ou les actions se jouaient. Si au début on pensait que ce n'était qu'une question d'optimisation de code, ou une habitude à prendre, il s'est avéré que c'était un très gros problème dans la jouabilité.
 
 \paragraph{}
-Après plusieurs heures de recherche sur les éléments de notre créations qui pouvaient provoquer ces décalages, nous avons terminé par créer une simple démo qui joue un son quand on tape l'écran. La conclusion était effrayante : Le décalage était réél (entre 300 et 500ms environs). Le problème nous semblait venir de Unity, il ne serait peut être pas adapté pour les jeux de rythme de précision. (Un peu tard à ce stade du développement).
+Après plusieurs heures de recherche sur les éléments de notre créations qui pouvaient provoquer ces décalages, nous avons terminé par créer une simple démo qui joue un son quand on tape l'écran. La conclusion était effrayante : Le décalage était réel (entre 300 et 500ms environs). Le problème nous semblait venir de Unity, il ne serait peut être pas adapté pour les jeux de rythme de précision. (Un peu tard à ce stade du développement).
 
 \paragraph{}
 Finalement nous avons terminé par trouver la raison du problème : Une simple case à cocher dans l'une des centaines de menu de Unity. Le moteur devient optimisé pour jouer les sons rapidement, et tout les problèmes de synchronisation disparaissent. Ce n'est qu'un simple exemple démontrant l'importance de la configuration de Unity pour l'exportation d'un jeu optimisé sur toutes les plateformes.
