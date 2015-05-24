@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 21:37
-=======
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 20:33
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 20:49
->>>>>>> Stashed changes
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 21:50
 entering extended mode
 **Main.tex
-<<<<<<< HEAD
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
@@ -25,14 +16,6 @@ ishmax, welsh, loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
-=======
-(./Main.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -48,7 +31,6 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
@@ -90,59 +72,13 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@posthook=\toks16
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/03/24 3.9k The Babel package
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-french/frenchb.ldf
-Language: frenchb 2014/04/18 v3.0c French support from the babel system
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/03/24 3.9k Babel common definitions
-\babel@savecnt=\count88
-\U@D=\dimen103
-)
-\l@acadian = a dialect from \language\l@french 
-\l@canadien = a dialect from \language\l@french 
-\FBcolonskip=\skip43
-\FBthinskip=\skip44
-\FB@interchartokenstateORI=\count89
-Package babel Info: Making : an active character on input line 371.
-Package babel Info: Making ; an active character on input line 372.
-Package babel Info: Making ! an active character on input line 373.
-Package babel Info: Making ? an active character on input line 374.
-\FBguillskip=\skip45
-\FB@Mht=\dimen104
-\std@mcc=\count90
-\dec@mcc=\count91
-\listindentFB=\skip46
-\labelwidthFB=\skip47
-\leftmarginFB=\skip48
-\parindentFFN=\dimen105
-))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -292,11 +228,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -327,11 +259,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -355,7 +283,6 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -402,67 +329,13 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count92
-\calc@Bcount=\count93
-\calc@Adimen=\dimen106
-\calc@Bdimen=\dimen107
-\calc@Askip=\skip49
-\calc@Bskip=\skip50
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count94
-\calc@Cskip=\skip51
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count94
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count95
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
@@ -474,7 +347,6 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -486,45 +358,21 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen108
 \Gin@req@width=\dimen109
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdfpages/pppdftex.def
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box26
 \AM@toc@title=\toks17
-<<<<<<< HEAD
 \c@AM@survey=\count95
 \AM@templatesizebox=\box27
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
-=======
-\c@AM@survey=\count96
-\AM@templatesizebox=\box27
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/fancybox/fancybox.sty
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -537,19 +385,11 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks21
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
-<<<<<<< HEAD
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box30
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
-=======
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/eurosym/eurosym.sty
-Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box30
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -564,20 +404,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.dfu
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -712,28 +544,16 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ieeepes\vmargin.sty"
 Package: vmargin 1999/06/01
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/vmargin/vmargin.sty
-Package: vmargin 2004/07/15 V2.5 set document margins (VK)
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 
 Package `vmargin', V2.2, <1999/06/01>
 \PaperWidth=\dimen111
 \PaperHeight=\dimen112
-<<<<<<< HEAD
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\dirtree\dirtree.sty"
 Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\dirtree\dirtree.tex"
-=======
-) (/usr/local/texlive/2014/texmf-dist/tex/generic/dirtree/dirtree.sty
-Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/dirtree/dirtree.tex
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 `dirtree' v0.32, 2012/12/11 (jcc)
 \DT@offset=\dimen113
 \DT@width=\dimen114
@@ -742,24 +562,16 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 \DT@rulewidth=\dimen117
 \DT@dotwidth=\dimen118
 \DTbaselineskip=\dimen119
-<<<<<<< HEAD
 \DT@counti=\count96
 \DT@countii=\count97
 \DT@countiii=\count98
 \DT@countiv=\count99
-=======
-\DT@counti=\count97
-\DT@countii=\count98
-\DT@countiii=\count99
-\DT@countiv=\count100
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 \DT@indent=\dimen120
 \DT@parskip=\dimen121
 \DT@baselineskip=\dimen122
 )
 File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\listingsutf8.sty"
 Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
 
@@ -784,49 +596,15 @@ File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \lst@framebox=\box32
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
-Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count101
-\lst@gtempboxa=\box31
-\lst@token=\toks22
-\lst@length=\count102
-\lst@currlwidth=\dimen123
-\lst@column=\count103
-\lst@pos=\count104
-\lst@lostspace=\dimen124
-\lst@width=\dimen125
-\lst@newlines=\count105
-\lst@lineno=\count106
-\lst@maxwidth=\dimen126
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-\c@lstnumber=\count107
-\lst@skipnumbers=\count108
-\lst@framebox=\box32
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -835,7 +613,6 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
 Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
 )
@@ -846,24 +623,11 @@ Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count108
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/stringenc.sty
-Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
-)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdfescape.sty
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-)))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count109
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 \float@exts=\toks23
 \float@box=\box33
 \@float@everytoks=\toks24
 \@floatcapt=\box34
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -874,18 +638,6 @@ Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
@@ -917,7 +669,6 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -932,35 +683,13 @@ Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 \Hy@pagecounter=\count110
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-)
-\@linkdim=\dimen127
-\Hy@linkcounter=\count110
-\Hy@pagecounter=\count111
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-<<<<<<< HEAD
 \Hy@SavedSpaceFactor=\count111
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
-=======
-\Hy@SavedSpaceFactor=\count112
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -970,25 +699,15 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-<<<<<<< HEAD
 \c@Hy@tempcnt=\count112
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
-=======
-\c@Hy@tempcnt=\count113
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen128
-<<<<<<< HEAD
 \Fld@menulength=\count113
-=======
-\Fld@menulength=\count114
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 \Field@Width=\dimen129
 \Fld@charsize=\dimen130
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1000,41 +719,25 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-<<<<<<< HEAD
 \Hy@abspage=\count114
 \c@Item=\count115
 \c@Hfootnote=\count116
-=======
-\Hy@abspage=\count115
-\c@Item=\count116
-\c@Hfootnote=\count117
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count117
 \c@bookmark@seq@number=\count118
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count118
-\c@bookmark@seq@number=\count119
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip46
 )
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip47
 \f@ncyO@elh=\skip48
@@ -1053,26 +756,6 @@ Package: beramono 2004/01/31 (WaS)
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.aux"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip53
-\f@ncyO@elh=\skip54
-\f@ncyO@erh=\skip55
-\f@ncyO@olh=\skip56
-\f@ncyO@orh=\skip57
-\f@ncyO@elf=\skip58
-\f@ncyO@erf=\skip59
-\f@ncyO@olf=\skip60
-\f@ncyO@orf=\skip61
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/beramono.sty
-Package: beramono 2004/01/31 (WaS)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-)
-(./Main.aux
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 
 LaTeX Warning: Label `transitions_scenes' multiply defined.
 
@@ -1088,41 +771,7 @@ LaTeX Warning: Label `transitions_scenes' multiply defined.
 
 LaTeX Warning: Label `transitions_scenes' multiply defined.
 
-
-LaTeX Warning: Label `analytics' multiply defined.
-
-
-LaTeX Warning: Label `analytics' multiply defined.
-
-
-LaTeX Warning: Label `analytics' multiply defined.
-
-
-LaTeX Warning: Label `analytics' multiply defined.
-
-
-LaTeX Warning: Label `analytics' multiply defined.
-
 )
-<<<<<<< HEAD
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 56.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
-=======
-\openout1 = `Main.aux'.
-
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
@@ -1137,8 +786,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 57.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 57.
@@ -1149,7 +797,6 @@ LaTeX Info: Redefining \dots on input line 57.
 LaTeX Info: Redefining \up on input line 57.
 \AtBeginShipoutBox=\box35
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
@@ -1165,7 +812,7 @@ LaTeX Info: Redefining \up on input line 57.
 \everyMPtoPDFconversion=\toks26
 )
 \c@lstlisting=\count125
-Package hyperref Info: Link coloring OFF on input line 56.
+Package hyperref Info: Link coloring OFF on input line 57.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1173,46 +820,6 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count126
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen131
-\scratchbox=\box36
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen132
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks26
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-)
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-\c@lstlisting=\count126
-Package hyperref Info: Link coloring OFF on input line 57.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
-)
-\c@section@level=\count127
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 )
 LaTeX Info: Redefining \ref on input line 57.
 LaTeX Info: Redefining \pageref on input line 57.
@@ -1244,7 +851,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [1
 
-<<<<<<< HEAD
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Thibaut/Dropbox/
 M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/logoUM.png> <C:/Users/Thibaut/Dr
 opbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/logo.png>])pdfTeX warning 
@@ -1252,38 +858,18 @@ opbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/logo.png>])pdfTeX warning
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.65 \newpage
+l.71 \newpage
               [1] [2]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.toc"
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
-=======
-<<<<<<< Updated upstream
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/logoUM.png> <./img/l
-ogo.png>])pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.1}) has been already used, duplicate ignored
-=======
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogoUM.png> <./img/logo.png>])pdfTeX warning (ext4): destination with the same i
-dentifier (name{page.1}) has been already used, duplicate ignored
->>>>>>> Stashed changes
 <to be read again> 
                    \relax 
-l.71 \newpage
-              [1] [2] (./Main.tocpdfTeX warning (ext4): destination with the sa
-me identifier (name{page.1}) has been already used, duplicate ignored
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
-<to be read again> 
-                   \relax 
-l.79 ...difficult\IeC {\'e}}{25}{subsection.4.5.6}
+l.80 ...difficult\IeC {\'e}}{25}{subsection.4.5.6}
                                                    [1
 
 ])
 \tf@toc=\write5
-<<<<<<< HEAD
-=======
-\openout5 = `Main.toc'.
-
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1291,20 +877,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-<<<<<<< HEAD
-l.79 \newpage
+l.89 \newpage
               [2]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.lof"
 )
-=======
-l.85 \newpage
-              [2] (./Main.lof)
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 \tf@lof=\write6
  [3
 
@@ -1320,20 +900,12 @@ ojet.tex"
 Chapitre 2.
 [5
 
-<<<<<<< HEAD
 ] <./img/protoPlanete.png, id=394, 703.12688pt x 560.0925pt>
-=======
-] <./img/protoPlanete.png, id=390, 703.12688pt x 560.0925pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/protoPlanete.png Graphic file (type png)
 
 <use ./img/protoPlanete.png>
 Package pdftex.def Info: ./img/protoPlanete.png used on input line 49.
 (pdftex.def)             Requested size: 281.24576pt x 224.03302pt.
-<<<<<<< HEAD
- [6]
-<./img/rhythmParadise.png, id=409, 628.59843pt x 432.86719pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1341,40 +913,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <./img/rhythmParadise.png, id=405, 628.59843pt x 432.86719pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[6] <./img/rhythmParadise.png, id=409, 628.59843pt x 432.86719pt>
 File: ./img/rhythmParadise.png Graphic file (type png)
 
 <use ./img/rhythmParadise.png>
 Package pdftex.def Info: ./img/rhythmParadise.png used on input line 62.
 (pdftex.def)             Requested size: 251.4349pt x 173.1438pt.
-<<<<<<< HEAD
- [7 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/pr
-otoPlanete.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/ra
-pport/img/rhythmParadise.png>]) [8]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/pro
+toPlanete.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rap
+port/img/rhythmParadise.png>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\RapportAc
 tivite.tex"
 Chapitre 3.
 <./img/unity-3D.png, id=431, 1284.8pt x 847.165pt>
-=======
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7 <./img/protoPlanete.png> <./img/rhythmParadise.png>])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8] (./RapportActivite.tex
-Chapitre 3.
-<./img/unity-3D.png, id=427, 1284.8pt x 847.165pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/unity-3D.png Graphic file (type png)
  <use ./img/unity-3D.png>
 Package pdftex.def Info: ./img/unity-3D.png used on input line 19.
@@ -1382,21 +947,17 @@ Package pdftex.def Info: ./img/unity-3D.png used on input line 19.
 
 [9
 
-<<<<<<< HEAD
  <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/unity
--3D.png>]) [10]
-("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\RapportTe
-chnique.tex"
-=======
- <./img/unity-3D.png>])
+-3D.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] (./RapportTechnique.tex
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[10]
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\RapportTe
+chnique.tex"
 Chapitre 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
@@ -1443,11 +1004,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 73.
-<<<<<<< HEAD
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
-=======
- (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
@@ -1507,20 +1064,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
-<<<<<<< HEAD
 <./img/diagEtatTransition.png, id=501, 519.89232pt x 234.42581pt>
-=======
-<./img/diagEtatTransition.png, id=498, 519.89232pt x 234.42581pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/diagEtatTransition.png Graphic file (type png)
 
 <use ./img/diagEtatTransition.png>
 Package pdftex.def Info: ./img/diagEtatTransition.png used on input line 138.
 (pdftex.def)             Requested size: 363.92215pt x 164.09694pt.
-<<<<<<< HEAD
- [14 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/d
-iagEtatTransition.png>]
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1528,8 +1077,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./img/diagEtatTransition.png>]
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[14 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/di
+agEtatTransition.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
@@ -1549,20 +1098,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--164
 
  []
 
-<<<<<<< HEAD
 <./img/diagramme_moteur.png, id=518, 487.3407pt x 337.5009pt>
-=======
-<./img/diagramme_moteur.png, id=515, 487.3407pt x 337.5009pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
 Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 168.
 (pdftex.def)             Requested size: 487.33951pt x 337.50008pt.
-<<<<<<< HEAD
- [15] [16 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/
-img/diagramme_moteur.png>]
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1577,8 +1118,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./img/diagramme_moteur.png>]
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[16 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/di
+agramme_moteur.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 190.
 
@@ -1591,17 +1132,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
-<<<<<<< HEAD
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
-=======
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang2.sty
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: lstlang2.sty 2014/03/04 1.5c listings language file
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
@@ -1660,11 +1194,7 @@ Underfull \hbox (badness 1552) in paragraph at lines 246--246
 []\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
  []
 
-<<<<<<< HEAD
 <./img/vlqOctet.png, id=556, 130.98938pt x 65.24374pt>
-=======
-<./img/vlqOctet.png, id=553, 130.98938pt x 65.24374pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/vlqOctet.png Graphic file (type png)
 
 <use ./img/vlqOctet.png>
@@ -1680,18 +1210,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
-<<<<<<< HEAD
-[18 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/vl
-qOctet.png>]
-=======
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./img/vlqOctet.png>]
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[18 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/vl
+qOctet.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
@@ -1701,11 +1227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-<<<<<<< HEAD
 <./img/logic_sound.png, id=573, 1439.3775pt x 354.32375pt>
-=======
-<./img/logic_sound.png, id=570, 1439.3775pt x 354.32375pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
@@ -1716,22 +1238,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
-<<<<<<< HEAD
 <./img/logic_midi.png, id=574, 1125.20375pt x 350.30875pt>
-=======
-<./img/logic_midi.png, id=571, 1125.20375pt x 350.30875pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
 Package pdftex.def Info: ./img/logic_midi.png used on input line 291.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
-<<<<<<< HEAD
- [19 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
-ogic_sound.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/ra
-pport/img/logic_midi.png>]
-<./img/logic_edit.png, id=593, 1039.885pt x 367.3725pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1739,31 +1251,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./img/logic_sound.png> <./img/logic_midi.png>]
-<./img/logic_edit.png, id=591, 1039.885pt x 367.3725pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[19 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/lo
+gic_sound.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rap
+port/img/logic_midi.png>]
+<./img/logic_edit.png, id=593, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
 <use ./img/logic_edit.png>
 Package pdftex.def Info: ./img/logic_edit.png used on input line 301.
 (pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
 
-<<<<<<< HEAD
 <./img/logic_export.png, id=594, 703.62875pt x 117.43875pt>
-=======
-<./img/logic_export.png, id=592, 703.62875pt x 117.43875pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
 Package pdftex.def Info: ./img/logic_export.png used on input line 310.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
-<<<<<<< HEAD
- [20 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
-ogic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rap
-port/img/logic_export.png>]
-<./img/MenuMort.png, id=603, 183.68625pt x 206.27063pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1771,30 +1274,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./img/logic_edit.png> <./img/logic_export.png>]
-<./img/MenuMort.png, id=601, 183.68625pt x 206.27063pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[20 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/lo
+gic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapp
+ort/img/logic_export.png>]
+<./img/MenuMort.png, id=603, 183.68625pt x 206.27063pt>
 File: ./img/MenuMort.png Graphic file (type png)
 
 <use ./img/MenuMort.png>
 Package pdftex.def Info: ./img/MenuMort.png used on input line 333.
 (pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
 
-<<<<<<< HEAD
-<./img/SelectionMiniJeu.png, id=604, 268.00125pt x 210.7875pt>
-=======
-<./img/SelectionMiniJeu.png, id=602, 255.95625pt x 210.7875pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+<./img/SelectionMiniJeu.png, id=604, 255.95625pt x 210.7875pt>
 File: ./img/SelectionMiniJeu.png Graphic file (type png)
 
 <use ./img/SelectionMiniJeu.png>
 Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 343.
-<<<<<<< HEAD
-(pdftex.def)             Requested size: 241.19888pt x 189.707pt.
- [21 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/M
-enuMort.png>]
-<./img/technique_graphismes.png, id=609, 335.75438pt x 463.7325pt>
-=======
 (pdftex.def)             Requested size: 230.35847pt x 189.707pt.
 
 
@@ -1803,20 +1297,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <./img/MenuMort.png>]
-<./img/technique_graphismes.png, id=607, 335.75438pt x 463.7325pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[21 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/Me
+nuMort.png>]
+<./img/technique_graphismes.png, id=609, 335.75438pt x 463.7325pt>
 File: ./img/technique_graphismes.png Graphic file (type png)
 
 <use ./img/technique_graphismes.png>
 Package pdftex.def Info: ./img/technique_graphismes.png used on input line 361.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
-<<<<<<< HEAD
- [22 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/S
-electionMiniJeu.png>]
-<./img/technique_animation1.png, id=615, 625.58719pt x 139.27031pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1824,9 +1313,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./img/SelectionMiniJeu.png (PNG copy)>]
-<./img/technique_animation1.png, id=613, 625.58719pt x 139.27031pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[22 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/Se
+lectionMiniJeu.png (PNG copy)>]
+<./img/technique_animation1.png, id=615, 625.58719pt x 139.27031pt>
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
@@ -1834,23 +1323,13 @@ Package pdftex.def Info: ./img/technique_animation1.png used on input line 373.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
 
-<<<<<<< HEAD
 <./img/technique_animation2.png, id=616, 627.09282pt x 163.3603pt>
-=======
-<./img/technique_animation2.png, id=614, 627.09282pt x 163.3603pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/technique_animation2.png Graphic file (type png)
 
 <use ./img/technique_animation2.png>
 Package pdftex.def Info: ./img/technique_animation2.png used on input line 381.
 
 (pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
-<<<<<<< HEAD
- [23 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
-echnique_graphismes.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
-uments/rapport/img/technique_animation1.png>] <./img/technique_animation3.png, 
-id=622, 344.78813pt x 165.61874pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1858,21 +1337,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
-<./img/technique_animation3.png, id=620, 344.78813pt x 165.61874pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[23 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/te
+chnique_graphismes.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/docu
+ments/rapport/img/technique_animation1.png>]
+<./img/technique_animation3.png, id=622, 344.78813pt x 165.61874pt>
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
 Package pdftex.def Info: ./img/technique_animation3.png used on input line 389.
 
 (pdftex.def)             Requested size: 189.63405pt x 91.09058pt.
-<<<<<<< HEAD
- [24 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
-echnique_animation2.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
-uments/rapport/img/technique_animation3.png>] [25] <./img/compteur_tuto.png, id
-=640, 679.78969pt x 322.95656pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1880,74 +1354,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./img/technique_animation2.png> <./img/technique_animation3.png>]
+[24 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/te
+chnique_animation2.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/docu
+ments/rapport/img/technique_animation3.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] <./img/compteur_tuto.png, id=638, 679.78969pt x 322.95656pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[25] <./img/compteur_tuto.png, id=640, 679.78969pt x 322.95656pt>
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
 Package pdftex.def Info: ./img/compteur_tuto.png used on input line 437.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
 
-<<<<<<< HEAD
 <./img/skip_locked.png, id=641, 717.43031pt x 447.92343pt>
-=======
-<./img/skip_locked.png, id=639, 717.43031pt x 447.92343pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
 Package pdftex.def Info: ./img/skip_locked.png used on input line 447.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<<<<<<< HEAD
 <./img/skip_locked_popup.png, id=642, 717.43031pt x 447.92343pt>
-=======
-<./img/skip_locked_popup.png, id=640, 717.43031pt x 447.92343pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
 Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 452.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<<<<<<< HEAD
 <./img/skip_unlocked.png, id=643, 718.93594pt x 447.92343pt>
-=======
-<./img/skip_unlocked.png, id=641, 718.93594pt x 447.92343pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
 Package pdftex.def Info: ./img/skip_unlocked.png used on input line 458.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
-<<<<<<< HEAD
 <./img/skip_unlocked_popup.png, id=644, 719.68875pt x 447.92343pt>
-=======
-<./img/skip_unlocked_popup.png, id=642, 719.68875pt x 447.92343pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
 Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 463.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
-<<<<<<< HEAD
- [26 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/c
-ompteur_tuto.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko
-/documents/rapport/img/skip_locked.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TE
-R_M1/Heliko/documents/rapport/img/skip_locked_popup.png> <C:/Users/Thibaut/Drop
-box/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/skip_unlocked.png> <C:/Users
-/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/skip_unlocked_p
-opup.png>]
-<./img/scenes-transitions.png, id=653, 339.1872pt x 247.6452pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1955,74 +1404,54 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./img/compteur_tuto.png (PNG copy)> <./img/skip_locked.png> <./img/skip_lo
-cked_popup.png> <./img/skip_unlocked.png> <./img/skip_unlocked_popup.png>]
-<./img/scenes-transitions.png, id=651, 339.1872pt x 247.6452pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[26 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/co
+mpteur_tuto.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/
+documents/rapport/img/skip_locked.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER
+_M1/Heliko/documents/rapport/img/skip_locked_popup.png> <C:/Users/Thibaut/Dropb
+ox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/skip_unlocked.png> <C:/Users/
+Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/skip_unlocked_po
+pup.png>] <./img/scenes-transitions.png, id=653, 339.1872pt x 247.6452pt>
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
 Package pdftex.def Info: ./img/scenes-transitions.png used on input line 477.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
 
-<<<<<<< HEAD
 <./img/loading.png, id=654, 532.99126pt x 255.20343pt>
-=======
-<./img/loading.png, id=652, 532.99126pt x 255.20343pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/loading.png Graphic file (type png)
  <use ./img/loading.png>
 Package pdftex.def Info: ./img/loading.png used on input line 486.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
 
-<<<<<<< HEAD
 <./img/scene.png, id=656, 718.93594pt x 448.67625pt>
-=======
-<./img/scene.png, id=654, 718.93594pt x 448.67625pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/scene.png Graphic file (type png)
  <use ./img/scene.png>
 Package pdftex.def Info: ./img/scene.png used on input line 496.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-<<<<<<< HEAD
 <./img/cartoon.png, id=657, 718.93594pt x 448.67625pt>
-=======
-<./img/cartoon.png, id=655, 718.93594pt x 448.67625pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/cartoon.png Graphic file (type png)
  <use ./img/cartoon.png>
 Package pdftex.def Info: ./img/cartoon.png used on input line 501.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-<<<<<<< HEAD
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [27 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/sc
 enes-transitions.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/He
 liko/documents/rapport/img/loading.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M1
  IMAGINA/TER_M1/Heliko/documents/rapport/img/scene.png (PNG copy)> <C:/Users/Th
 ibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/cartoon.png (PNG c
 opy)>] <./img/GoogleAnalytics.png, id=665, 514.17094pt x 289.08pt>
-=======
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27 <./img/scenes-transitions.png (PNG copy)> <./img/loading.png (PNG copy)> <.
-/img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
-<./img/GoogleAnalytics.png, id=663, 514.17094pt x 289.08pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/GoogleAnalytics.png Graphic file (type png)
 
 <use ./img/GoogleAnalytics.png>
 Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 520.
 (pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
-<<<<<<< HEAD
- [28 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/G
-oogleAnalytics.png>] [29]
-<./img/opti_sound.png, id=684, 141.52875pt x 121.45375pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2030,36 +1459,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./img/GoogleAnalytics.png>]
+[28 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/Go
+ogleAnalytics.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29] <./img/opti_sound.png, id=683, 141.52875pt x 121.45375pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[29] <./img/opti_sound.png, id=684, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
 Package pdftex.def Info: ./img/opti_sound.png used on input line 562.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
-<<<<<<< HEAD
- [30 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/o
-pti_sound.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/op
+ti_sound.png>]
 <./img/optimisation_poids.png, id=694, 285.31593pt x 73.77562pt>
 File: ./img/optimisation_poids.png Graphic file (type png)
 
 <use ./img/optimisation_poids.png>
 Package pdftex.def Info: ./img/optimisation_poids.png used on input line 575.
 (pdftex.def)             Requested size: 285.31523pt x 73.77542pt.
-) [31 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/
-optimisation_poids.png>]
-("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Resultat.
-tex"
-Chapitre 5.
-<./img/resultat_accueil.png, id=700, 496.85625pt x 331.2375pt>
-=======
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2067,21 +1495,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./img/opti_sound.png>] (./Resultat.tex
+[31 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/op
+timisation_poids.png>]
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Resultat.
+tex"
 Chapitre 5.
-<./img/resultat_accueil.png, id=693, 496.85625pt x 331.2375pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+<./img/resultat_accueil.png, id=700, 496.85625pt x 331.2375pt>
 File: ./img/resultat_accueil.png Graphic file (type png)
 
 <use ./img/resultat_accueil.png>
 Package pdftex.def Info: ./img/resultat_accueil.png used on input line 8.
 (pdftex.def)             Requested size: 298.11604pt x 198.74402pt.
 
-<<<<<<< HEAD
 <./img/resultat_niveaux.png, id=701, 496.85625pt x 330.48468pt>
-=======
-<./img/resultat_niveaux.png, id=694, 496.85625pt x 330.48468pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/resultat_niveaux.png Graphic file (type png)
 
 <use ./img/resultat_niveaux.png>
@@ -2089,24 +1515,14 @@ Package pdftex.def Info: ./img/resultat_niveaux.png used on input line 16.
 (pdftex.def)             Requested size: 298.11604pt x 198.29233pt.
  [32
 
-<<<<<<< HEAD
  <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/resul
 tat_accueil.png>]
 <./img/resultat_escargot.png, id=711, 628.59843pt x 353.06906pt>
-=======
- <./img/resultat_accueil.png>]
-<./img/resultat_escargot.png, id=704, 628.59843pt x 353.06906pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/resultat_escargot.png Graphic file (type png)
 
 <use ./img/resultat_escargot.png>
 Package pdftex.def Info: ./img/resultat_escargot.png used on input line 38.
 (pdftex.def)             Requested size: 251.4349pt x 141.22511pt.
-<<<<<<< HEAD
- [33 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/r
-esultat_niveaux.png>]
-<./img/resultat_magicien.png, id=721, 536.0025pt x 298.11375pt>
-=======
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2114,50 +1530,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <./img/resultat_niveaux.png>]
-<./img/resultat_magicien.png, id=714, 536.0025pt x 298.11375pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+[33 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/re
+sultat_niveaux.png>]
+<./img/resultat_magicien.png, id=721, 536.0025pt x 298.11375pt>
 File: ./img/resultat_magicien.png Graphic file (type png)
 
 <use ./img/resultat_magicien.png>
 Package pdftex.def Info: ./img/resultat_magicien.png used on input line 51.
 (pdftex.def)             Requested size: 268.0006pt x 149.0565pt.
 
-<<<<<<< HEAD
 <./img/resultat_champis.png, id=722, 534.49687pt x 297.36093pt>
-=======
-<./img/resultat_champis.png, id=715, 534.49687pt x 297.36093pt>
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 File: ./img/resultat_champis.png Graphic file (type png)
 
 <use ./img/resultat_champis.png>
 Package pdftex.def Info: ./img/resultat_champis.png used on input line 63.
 (pdftex.def)             Requested size: 267.24777pt x 148.6801pt.
-<<<<<<< HEAD
- [34 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/r
-esultat_escargot.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/docume
-nts/rapport/img/resultat_magicien.png>])
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/re
+sultat_escargot.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documen
+ts/rapport/img/resultat_magicien.png>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [35 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/re
 sultat_champis.png>]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Bilan.tex
 "
-=======
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33 <./img/resultat_escargot.png> <./img/resultat_magicien.png>])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34 <./img/resultat_champis.png>] (./Bilan.tex
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 Chapitre 6.
 ) [36
 
@@ -2166,44 +1573,32 @@ Chapitre 6.
 ex"
 Chapitre 7.
 )
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
  [37
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
 
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.aux"
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
-=======
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
- [36
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
- (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 91DB570915746D58E0885CF1128600DA;3757.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 11110 strings out of 493921
- 159434 string characters out of 3147277
+ 11115 strings out of 493921
+ 159513 string characters out of 3147277
  313881 words of memory out of 3000000
- 13873 multiletter control sequences out of 15000+200000
+ 13878 multiletter control sequences out of 15000+200000
  25419 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,9n,45p,1013b,1515s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,11n,45p,1013b,1515s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ecbi1095.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.en
 c} <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
@@ -2231,85 +1626,9 @@ ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/eurosym/feymr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/bera/fvm
 b8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/bera/fvmro8a.pfb>
-Output written on Main.pdf (40 pages, 4520650 bytes).
+Output written on Main.pdf (40 pages, 4519334 bytes).
 PDF statistics:
- 1413 PDF objects out of 1440 (max. 8388607)
+ 1415 PDF objects out of 1440 (max. 8388607)
  282 named destinations out of 1000 (max. 500000)
  608 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
- ) 
-Here is how much of TeX's memory you used:
-<<<<<<< Updated upstream
- 11573 strings out of 493104
- 163990 string characters out of 6136932
- 324375 words of memory out of 5000000
- 14505 multiletter control sequences out of 15000+600000
- 25419 words of font info for 57 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 37i,11n,45p,1013b,1517s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-s
-uper/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/bera/fvmro8a.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfbi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfti1200.pfb>
-Output written on Main.pdf (39 pages, 4579550 bytes).
-=======
- 11548 strings out of 493117
- 164456 string characters out of 6135433
- 323727 words of memory out of 5000000
- 14479 multiletter control sequences out of 15000+600000
- 25419 words of font info for 57 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 37i,11n,45p,1013b,1517s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/tex
-live/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/cm-super/sfbi1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/cm-super/sfbi1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/cm-super/sfbx1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm
--super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-sup
-er/sfbx2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super
-/sfcc1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/s
-fcc1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfc
-c1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1
-000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm109
-5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-
-Output written on Main.pdf (39 pages, 4553229 bytes).
->>>>>>> Stashed changes
-PDF statistics:
- 878 PDF objects out of 1000 (max. 8388607)
- 753 compressed objects within 8 object streams
- 279 named destinations out of 1000 (max. 500000)
- 595 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 59254cac91e33a40e8580adc186039661c1b696b
 
