@@ -31,6 +31,22 @@ basicstyle=\small,
 frame=single
 }
 
+\lstdefinestyle{Scheme} {
+  language=Lisp,
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  %% frame=L,
+  xleftmargin=\parindent,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{purple!40!black},
+  commentstyle=\itshape\color{green!40!black},
+  identifierstyle=\color{black},
+  stringstyle=\color{blue},
+  alsoletter={-, ->, define, ?},
+  morekeywords={andmap, lambda, take, to-string, to-int, header, read-n-bytes, sublist?, cdr, make-list, hash-ref, vlq->int, known-event?, define}
+}
+
 \begin{document}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \input{Title.tex}
