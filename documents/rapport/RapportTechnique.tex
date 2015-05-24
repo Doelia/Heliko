@@ -329,20 +329,21 @@ Ensuite, une fois les échecs additionnés, on se contente de calculer le pource
 
 Même si le calcul des scores est fait sous la forme de pourcentage, ce qui est affiché au joueur et ce qui est enregistré est sous la forme d'étoiles. 3 étoiles correspond à 100\% de réussite, 2 étoiles à un score supérieur à 90\% et enfin 1 étoile à un score supérieur à 75\%. Le score est enregistré de manière très simple, Unity permettant d'enregistrer des entiers, des chaînes de caractères et des nombres flottants. Ainsi le score est enregistré dans une variable "int" s'appelant “etoileLevel[numéro du mini jeu]” et sa valeur correspond au nombre d'étoiles. A chaque fin d'un mini-jeu, on vérifie si le joueur n'a pas amélioré le nombre d'étoiles sur ce mini-jeu, et si oui, alors on écrase le précédent score avec le nouveau qui est meilleur.
 
-\begin{center}
-\includegraphics[scale=0.9]{./img/MenuMort.png}\\
-\textit{Score du joueur affiché}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.9]{./img/MenuMort.png}}
+  \caption{Score du joueur affiché}
+  \label{SelectionMiniJeu}
+\end{figure}
 
 \subsubsection{Déblocage des mini-jeux}
 
 Certains jeux sont débloqués de base, d'autres nécessitent la réussite d'un autre mini-jeu pour cela. Un mini-jeu est considéré comme réussi du moment que le joueur a obtenu au moins une étoile sur ce jeu. Ainsi, si un mini-jeu n'est pas débloqué, dans le menu de sélection des mini-jeux, son icône est grisée, et il est inclicable. De plus, en dessous de l'icône de chaque mini-jeu est affiché le plus grand nombre d'étoiles obtenu dans le jeu correspondant.
 
-\begin{center}
-\includegraphics[scale=0.9]{./img/SelectionMiniJeu.png}\\
-\textit{Sélection des mini-jeux}
-\end{center}
-
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.9]{./img/SelectionMiniJeu.png}}
+  \caption{Sélection des mini-jeux}
+  \label{SelectionMiniJeu}
+\end{figure}
 
 \subsection{Création d'un mini-jeu}
 
@@ -356,10 +357,12 @@ Un des éléments les plus importants d'un jeu est son aspect visuel. Il est pr�
 
 Dans notre projet, nous avons voulu mettre en avant le côté simple et divertissant de notre thème en utilisant des graphismes 2D de type \textit{cartoon}. Nous avons créé nos propres graphismes, en utilisant des couleurs vives et des traits de contours très épais.
 
-\begin{center}
-\includegraphics[scale=0.6]{./img/technique_graphismes.png}\\
-\textit{Exemple visuel de fichier graphique vectoriel}
-\end{center}
+
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.6]{./img/technique_graphismes.png}}
+  \caption{Exemple visuel de fichier graphique vectoriel}
+  \label{SelectionMiniJeu}
+\end{figure}
 
 Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des créations graphiques vectorielles. L'intérêt de travailler sur du vectoriel est qu'on peut rendre l'image dans la dimension voulue, et, de plus, il est plus facile d'apporter rapidement une petite modification un objet ou sa couleur, sans avoir tout à recommencer.
 
@@ -428,7 +431,7 @@ Comme expliqué section \ref{niveau}, les niveaux sont scriptés par des fichier
 Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi pouvoir passé à l'étape suivante du tutoriel, il lui est demandé de le répéter trois fois. C'est pour s'assurer que le joueur n'a pas réussi par chance et est donc incapable de completer un niveau, ce qui pourrait entraîner de la frustration.
 
 
-\begin{figure}[!htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.28]{./img/compteur_tuto.png}}
   \caption{Compteur du nombre de répétitions restantes}
   \label{repetitions}
@@ -437,7 +440,7 @@ Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi po
 \paragraph{}
 Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai complété au moins une fois.
 
-\begin{figure}[Htb]\centering
+\begin{figure}[H]\centering
    \begin{minipage}{0.49\textwidth}\centering
      \frame{\includegraphics[scale=0.2]{./img/skip_locked.png}}
      \caption{Bouton skip verrouillé}
@@ -468,7 +471,7 @@ En pratique, un tutoriel est composé d'un tableau de \textit{StepTuto}, chaque 
 \paragraph{}
 Chaque jeu est en réalité une scène de Unity. La navigation entre les scènes se fait suivant le diagramme fig. \ref{transitions_scenes}. L'écran principal est un ``hub'' où sont regroupés tous les jeux, on accède bien évidemment au jeu en cliquant dessus. Le tutoriel est ensuite chargé, puis enfin le jeu, on peut remarquer que l'on peut à tout moment revenir à l'écran principal.
 
-\begin{figure}[Htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.7]{./img/scenes-transitions.png}}
   \caption{Transitions entre les scènes du jeu}
   \label{transitions_scenes}
@@ -477,7 +480,7 @@ Chaque jeu est en réalité une scène de Unity. La navigation entre les scènes
 \paragraph{}
 Les scènes ne se chargent pas instantanément, en Unity indique le pourcentage de la scène qui a été chargé, cela permet entre autre de réaliser des écrans de chargement animés. En plus de donner au joueur l'avancement du chargement, cela rend le jeu bien plus fluide que si le chargement était simplement un écran noir, comportement par défaut de Unity.
 
-\begin{figure}[!htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.3]{./img/loading.png}}
   \caption{Écran de chargement}
   \label{loading}
@@ -486,7 +489,7 @@ Les scènes ne se chargent pas instantanément, en Unity indique le pourcentage 
 \paragraph{}
 Les transitions entre les scènes se font donc par des écrans de chargements, mais il serait un peu brusque d'interrompre directement le jeu lorsqu'il est terminé. Nous avons décidé de faire une fermeture en cercle (voir fig. \ref{cartoon}) sur un élément de la scène pour donner un effet cartoon.
 
-\begin{figure}[Htb]\centering
+\begin{figure}[H]\centering
    \begin{minipage}{0.49\textwidth}\centering
      \frame{\includegraphics[scale=0.2]{./img/scene.png}}
      \caption{Scène normale}
@@ -508,7 +511,7 @@ Outre le jeu à proprement parler, nous avons intégré d'autres services extern
 
 La première priorité étant de pouvoir par la suite améliorer le jeu, et pour ce faire, nous avions besoin de savoir comment les utilisateurs interagissent avec notre application. Il se trouve que Google fourni une très bonne interface pour fournir des statistiques d'utilisation: “Google Analytics”. Et un pluggin permettant d'utiliser ces services avec Unity existe. "Google Analytics" est un service qui permet d'analyser le comportement des utilisateurs sur les applications. Il fournit différents outils, qui permettent de connaître la zone géographique de nos utilisateurs, le matériel utilisé, la durée moyenne d'utilisation de notre application, la manière dont ils ont trouvé l'application, mais aussi leurs habitudes d'utilisation, les écrans qu'ils visitent, leur passage ou non des tutos et pleins d'autres informations utiles. Bien utilisé, il permet donc de connaître vraiment le rapport qu'entretiennent les joueurs avec le jeu, et ainsi de donner des pistes sur les améliorations possibles, tant en terme de marketing que sur le jeu lui même. En gros, un outil indispensable pour qui souhaite améliorer son produit, et augmenter le nombre de téléchargements.
 
-\begin{figure}[!htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.7]{./img/GoogleAnalytics.png}}
   \caption{Aperçu des statistiques fournies pas Google Analytics}
   \label{analytics}
@@ -540,7 +543,7 @@ Après plusieurs heures de recherche sur les éléments de notre créations qui 
 \paragraph{}
 Finalement nous avons terminé par trouver la raison du problème : Une simple case à cocher dans l'une des centaines de menu de Unity. Le moteur devient optimisé pour jouer les sons rapidement, et tout les problèmes de synchronisation disparaissent. Ce n'est qu'un simple exemple démontrant l'importance de la configuration de Unity pour l'exportation d'un jeu optimisé sur toutes les plateformes.
 
-\begin{figure}[!htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=1]{./img/opti_sound.png}}
   \caption{Paramètre pour la synchronisation des sons}
   \label{transitions_scenes}
