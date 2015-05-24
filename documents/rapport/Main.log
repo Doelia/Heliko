@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 17:04
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 18:50
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 19:33
 entering extended mode
 **Main.tex
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.tex"
@@ -417,153 +413,83 @@ Package: listings 2014/03/04 1.5c (Carsten Heinz)
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box32
 )
-<<<<<<< HEAD
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\beramono.sty"
-=======
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count105
+\c@float@type=\count103
 \float@exts=\toks23
 \float@box=\box33
 \@float@everytoks=\toks24
 \@floatcapt=\box34
 )
-(/usr/share/texlive/texmf-dist/tex/latex/bera/beramono.sty
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\beramono.sty"
 Package: beramono 2004/01/31 (WaS)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
-<<<<<<< HEAD
 )
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.aux"
+
+LaTeX Warning: Label `transitions_scenes' multiply defined.
+
+
+LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
+
+
+LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
+
+
+LaTeX Warning: Label `transitions_scenes' multiply defined.
+
+
+LaTeX Warning: Label `transitions_scenes' multiply defined.
+
+
+LaTeX Warning: Label `analytics' multiply defined.
+
+
+LaTeX Warning: Label `analytics' multiply defined.
+
+
+LaTeX Warning: Label `analytics' multiply defined.
+
+
+LaTeX Warning: Label `analytics' multiply defined.
+
+
+LaTeX Warning: Label `analytics' multiply defined.
+
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Info: Redefining \degres on input line 33.
-LaTeX Info: Redefining \dots on input line 33.
-LaTeX Info: Redefining \up on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Info: Redefining \degres on input line 35.
+LaTeX Info: Redefining \dots on input line 35.
+LaTeX Info: Redefining \up on input line 35.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen115
-\scratchbox=\box33
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen116
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks24
-)
-\AtBeginShipoutBox=\box34
-\c@lstlisting=\count109
-=======
-) (./Main.aux
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
-
-
-LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-)
-\openout1 = `Main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Info: Redefining \degres on input line 34.
-LaTeX Info: Redefining \dots on input line 34.
-LaTeX Info: Redefining \up on input line 34.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count104
 \scratchdimen=\dimen115
 \scratchbox=\box35
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count105
+\nofMParguments=\count106
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count109
+\MPscratchCnt=\count107
 \MPscratchDim=\dimen116
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks26
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 \AtBeginShipoutBox=\box36
-\c@lstlisting=\count112
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
+\c@lstlisting=\count110
 
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Title.tex
 " <./img/logoUM.png, id=1, 96.36pt x 96.36pt>
@@ -585,74 +511,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 29.
  [1
 
-<<<<<<< HEAD
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Thibaut/Dropbox/
 M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/logoUM.png> <C:/Users/Thibaut/Dr
 opbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/logo.png>]) [1] [2]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.toc"
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 44.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 44.
- [1])
-=======
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/logoUM.png> <./img/l
-ogo.png>]) [1] [2] (./Main.toc [1])
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
+[1])
 \tf@toc=\write4
  [2]
-<<<<<<< HEAD
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.lof"
+)
+\tf@lof=\write5
+ [3]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Introduct
-ion.tex") [3]
+ion.tex") [4]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\AnalysePr
-ojet.tex" [4] <img/protoPlanete.png, id=40, 703.12688pt x 560.0925pt>
-File: img/protoPlanete.png Graphic file (type png)
-=======
-(./Introduction.tex) [3] (./AnalyseProjet.tex [4]
-<./img/protoPlanete.png, id=40, 703.12688pt x 560.0925pt>
+ojet.tex" [5] <./img/protoPlanete.png, id=42, 703.12688pt x 560.0925pt>
 File: ./img/protoPlanete.png Graphic file (type png)
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
 <use ./img/protoPlanete.png>
 Package pdftex.def Info: ./img/protoPlanete.png used on input line 27.
 (pdftex.def)             Requested size: 281.24576pt x 224.03302pt.
-<<<<<<< HEAD
- [5 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/pr
-otoPlanete.png>]
-<img/rhythmParadise.png, id=45, 628.59843pt x 432.86719pt>
-File: img/rhythmParadise.png Graphic file (type png)
-=======
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
-<./img/rhythmParadise.png, id=41, 628.59843pt x 432.86719pt>
+<./img/rhythmParadise.png, id=43, 628.59843pt x 432.86719pt>
 File: ./img/rhythmParadise.png Graphic file (type png)
 
 <use ./img/rhythmParadise.png>
 Package pdftex.def Info: ./img/rhythmParadise.png used on input line 40.
 (pdftex.def)             Requested size: 251.4349pt x 173.1438pt.
-<<<<<<< HEAD
- [6 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/rh
-ythmParadise.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-=======
- [5 <./img/protoPlanete.png>] [6 <./img/rhythmParadise.png>]
+ [6 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/pr
+otoPlanete.png>] [7 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/document
+s/rapport/img/rhythmParadise.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 76--78
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
-) [7]
+) [8]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\RapportAc
-tivite.tex" <./img/unity-3D.png, id=53, 1284.8pt x 847.165pt>
+tivite.tex" <./img/unity-3D.png, id=56, 1284.8pt x 847.165pt>
 File: ./img/unity-3D.png Graphic file (type png)
 
 <use ./img/unity-3D.png>
 Package pdftex.def Info: ./img/unity-3D.png used on input line 19.
 (pdftex.def)             Requested size: 359.74155pt x 237.20457pt.
- [8 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/un
-ity-3D.png>]) [9]
+ [9 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/un
+ity-3D.png>]) [10]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\RapportTe
 chnique.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
@@ -669,7 +571,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[10]
+[11]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -696,9 +598,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--70
 
  []
 
-[11]
+[12]
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 73.
- (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
@@ -742,7 +644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--124
 
  []
 
-[12]
+[13]
 LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fvm/b/n' tried instead on input line 127.
 LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
@@ -752,7 +654,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
-[13] <./img/diagEtatTransition.png, id=81, 519.89232pt x 234.42581pt>
+[14] <./img/diagEtatTransition.png, id=83, 519.89232pt x 234.42581pt>
 File: ./img/diagEtatTransition.png Graphic file (type png)
 
 <use ./img/diagEtatTransition.png>
@@ -763,27 +665,6 @@ Overfull \hbox (3.92215pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
-<<<<<<< HEAD
-<./img/diagEtatTransition.png, id=76, 519.89232pt x 234.42581pt>
-File: ./img/diagEtatTransition.png Graphic file (type png)
-
-<use ./img/diagEtatTransition.png>
-Package pdftex.def Info: ./img/diagEtatTransition.png used on input line 135.
-(pdftex.def)             Requested size: 519.89105pt x 234.42523pt.
-
-Overfull \hbox (17.0pt too wide) in paragraph at lines 135--136
-[][] 
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
-
- []
-
-[14 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/di
-agEtatTransition.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 153--160
-=======
 
 Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
@@ -791,84 +672,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 157--164
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 153--160
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 157--164
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
-
- []
-
-
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 153--160
-
- []
-
-<./img/diagramme_moteur.png, id=84, 487.3407pt x 337.5009pt>
-File: ./img/diagramme_moteur.png Graphic file (type png)
-
-<use ./img/diagramme_moteur.png>
-Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 164.
-(pdftex.def)             Requested size: 487.33951pt x 337.50008pt.
- [15] [16 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/
-img/diagramme_moteur.png>]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 186.
-
-Overfull \hbox (3.00288pt too wide) in paragraph at lines 185--189
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 157--164
 
  []
 
-[14 <./img/diagEtatTransition.png>]
-<./img/diagramme_moteur.png, id=86, 487.3407pt x 337.5009pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--164
+
+ []
+
+[15 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/di
+agEtatTransition.png>]
+<./img/diagramme_moteur.png, id=88, 487.3407pt x 337.5009pt>
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
 Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 168.
 (pdftex.def)             Requested size: 487.33951pt x 337.50008pt.
- [15 <./img/diagramme_moteur.png>]
+ [16 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/d
+iagramme_moteur.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 190.
 
 Overfull \hbox (3.00288pt too wide) in paragraph at lines 189--193
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 \T1/fvm/m/n/10 fichier midi = <header chunk> + <track chunk> [+ <track chunk> .
 ..] 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 185--189
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 189--193
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 185--189
-=======
 Overfull \hbox (13.83879pt too wide) in paragraph at lines 189--193
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 \T1/fvm/m/n/10 header chunk = "MThd" + <header length> + <format> + <n> + <divi
 sion> 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 185--189
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 189--193
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
@@ -877,363 +724,64 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2014/03/04 1.5c listings language file
-<<<<<<< HEAD
-)
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 199--203
-=======
-) [16]
+) [17]
 Overfull \hbox (13.83879pt too wide) in paragraph at lines 203--207
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 \T1/fvm/m/n/10 track chunk = "MTrk" + <length> + <track event> [+ <track event>
  ...] 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 203--207
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 203--207
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 203--207
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 220--223
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 224--225
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
-
- []
-
-
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
-
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 242--242
-[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
- []
-
-<./img/vlqOctet.png, id=96, 130.98938pt x 65.24374pt>
-File: ./img/vlqOctet.png Graphic file (type png)
- <use ./img/vlqOctet.png>
-Package pdftex.def Info: ./img/vlqOctet.png used on input line 242.
-(pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-[17]
-Underfull \hbox (badness 1552) in paragraph at lines 246--246
-[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
- []
 
-<./img/vlqOctet.png, id=98, 130.98938pt x 65.24374pt>
-File: ./img/vlqOctet.png Graphic file (type png)
- <use ./img/vlqOctet.png>
-Package pdftex.def Info: ./img/vlqOctet.png used on input line 246.
-(pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
-
- []
-
-
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+Underfull \hbox (badness 1552) in paragraph at lines 246--246
+[]\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
+ []
+
+<./img/vlqOctet.png, id=100, 130.98938pt x 65.24374pt>
+File: ./img/vlqOctet.png Graphic file (type png)
+
+<use ./img/vlqOctet.png>
+Package pdftex.def Info: ./img/vlqOctet.png used on input line 246.
+(pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
-[19 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/vl
-qOctet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
-
- []
-
-<./img/logic_sound.png, id=104, 1439.3775pt x 354.32375pt>
-File: ./img/logic_sound.png Graphic file (type png)
-
-<use ./img/logic_sound.png>
-Package pdftex.def Info: ./img/logic_sound.png used on input line 276.
-(pdftex.def)             Requested size: 312.9803pt x 77.04315pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-<./img/logic_midi.png, id=105, 1125.20375pt x 350.30875pt>
-File: ./img/logic_midi.png Graphic file (type png)
-
-<use ./img/logic_midi.png>
-Package pdftex.def Info: ./img/logic_midi.png used on input line 281.
-(pdftex.def)             Requested size: 312.9803pt x 97.439pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
-
- []
-
-<./img/logic_edit.png, id=106, 1039.885pt x 367.3725pt>
-File: ./img/logic_edit.png Graphic file (type png)
-
-<use ./img/logic_edit.png>
-Package pdftex.def Info: ./img/logic_edit.png used on input line 286.
-(pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
- [20 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
-ogic_sound.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/ra
-pport/img/logic_midi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
-
- []
-
-<./img/logic_export.png, id=112, 703.62875pt x 117.43875pt>
-File: ./img/logic_export.png Graphic file (type png)
-
-<use ./img/logic_export.png>
-Package pdftex.def Info: ./img/logic_export.png used on input line 291.
-(pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
- [21 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
-ogic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rap
-port/img/logic_export.png>]
-<./img/MenuMort.png, id=118, 183.68625pt x 206.27063pt>
-File: ./img/MenuMort.png Graphic file (type png)
-
-<use ./img/MenuMort.png>
-Package pdftex.def Info: ./img/MenuMort.png used on input line 312.
-(pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
-
-<./img/SelectionMiniJeu.png, id=119, 268.00125pt x 210.7875pt>
-File: ./img/SelectionMiniJeu.png Graphic file (type png)
-
-<use ./img/SelectionMiniJeu.png>
-Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 321.
-(pdftex.def)             Requested size: 241.19888pt x 189.707pt.
- [22 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/M
-enuMort.png>]
-<./img/technique_graphismes.png, id=124, 335.75438pt x 463.7325pt>
-File: ./img/technique_graphismes.png Graphic file (type png)
-
-<use ./img/technique_graphismes.png>
-Package pdftex.def Info: ./img/technique_graphismes.png used on input line 339.
-
-(pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
- [23 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/S
-electionMiniJeu.png>]
-<./img/technique_animation1.png, id=128, 625.58719pt x 139.27031pt>
-File: ./img/technique_animation1.png Graphic file (type png)
-
-<use ./img/technique_animation1.png>
-Package pdftex.def Info: ./img/technique_animation1.png used on input line 350.
-
-(pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
- [24 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
-echnique_graphismes.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
-uments/rapport/img/technique_animation1.png>] <./img/technique_animation2.png, 
-id=133, 627.09282pt x 163.3603pt>
-File: ./img/technique_animation2.png Graphic file (type png)
-
-<use ./img/technique_animation2.png>
-Package pdftex.def Info: ./img/technique_animation2.png used on input line 357.
-
-(pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
-
-<./img/technique_animation3.png, id=134, 344.78813pt x 165.61874pt>
-File: ./img/technique_animation3.png Graphic file (type png)
-
-<use ./img/technique_animation3.png>
-Package pdftex.def Info: ./img/technique_animation3.png used on input line 364.
-
-(pdftex.def)             Requested size: 275.83087pt x 132.49516pt.
- [25 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
-echnique_animation2.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
-uments/rapport/img/technique_animation3.png>] [26] <./img/compteur_tuto.png, id
-=141, 679.78969pt x 322.95656pt>
-File: ./img/compteur_tuto.png Graphic file (type png)
-
-<use ./img/compteur_tuto.png>
-Package pdftex.def Info: ./img/compteur_tuto.png used on input line 403.
-(pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
-
-<./img/skip_locked.png, id=142, 717.43031pt x 447.92343pt>
-File: ./img/skip_locked.png Graphic file (type png)
-
-<use ./img/skip_locked.png>
-Package pdftex.def Info: ./img/skip_locked.png used on input line 413.
-(pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
-
-<./img/skip_locked_popup.png, id=143, 717.43031pt x 447.92343pt>
-File: ./img/skip_locked_popup.png Graphic file (type png)
-
-<use ./img/skip_locked_popup.png>
-Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 418.
-(pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
-
-<./img/skip_unlocked.png, id=144, 718.93594pt x 447.92343pt>
-File: ./img/skip_unlocked.png Graphic file (type png)
-
-<use ./img/skip_unlocked.png>
-Package pdftex.def Info: ./img/skip_unlocked.png used on input line 424.
-(pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
-
-<./img/skip_unlocked_popup.png, id=145, 719.68875pt x 447.92343pt>
-File: ./img/skip_unlocked_popup.png Graphic file (type png)
-
-<use ./img/skip_unlocked_popup.png>
-Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 429.
-(pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
- [27 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/c
-ompteur_tuto.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko
-/documents/rapport/img/skip_locked.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TE
-R_M1/Heliko/documents/rapport/img/skip_locked_popup.png> <C:/Users/Thibaut/Drop
-box/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/skip_unlocked.png> <C:/Users
-/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/skip_unlocked_p
-opup.png>]
-<./img/scenes-transitions.png, id=150, 339.1872pt x 247.6452pt>
-File: ./img/scenes-transitions.png Graphic file (type png)
-
-<use ./img/scenes-transitions.png>
-Package pdftex.def Info: ./img/scenes-transitions.png used on input line 443.
-(pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
-
-<./img/loading.png, id=151, 532.99126pt x 255.20343pt>
-File: ./img/loading.png Graphic file (type png)
- <use ./img/loading.png>
-Package pdftex.def Info: ./img/loading.png used on input line 452.
-(pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
-
-<./img/scene.png, id=152, 718.93594pt x 448.67625pt>
-File: ./img/scene.png Graphic file (type png)
- <use ./img/scene.png>
-Package pdftex.def Info: ./img/scene.png used on input line 462.
-(pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
-
-<./img/cartoon.png, id=153, 718.93594pt x 448.67625pt>
-File: ./img/cartoon.png Graphic file (type png)
- <use ./img/cartoon.png>
-Package pdftex.def Info: ./img/cartoon.png used on input line 467.
-(pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
-
-[28 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/sc
-enes-transitions.png (PNG copy)>] [29 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_
-M1/Heliko/documents/rapport/img/loading.png (PNG copy)> <C:/Users/Thibaut/Dropb
-ox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/scene.png (PNG copy)> <C:/Use
-rs/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/cartoon.png (
-PNG copy)>] <./img/GoogleAnalytics.png, id=161, 514.17094pt x 289.08pt>
-File: ./img/GoogleAnalytics.png Graphic file (type png)
-
-<use ./img/GoogleAnalytics.png>
-Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 483.
-(pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
- [30 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/G
-oogleAnalytics.png>] [31]
-<./img/opti_sound.png, id=169, 141.52875pt x 121.45375pt>
-File: ./img/opti_sound.png Graphic file (type png)
-
-<use ./img/opti_sound.png>
-Package pdftex.def Info: ./img/opti_sound.png used on input line 515.
-(pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
-) [32 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/
-opti_sound.png>]
-("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Resultat.
-tex")
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 72.
- [33]
-("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Bilan.tex
-") [34]
-("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Annexes.t
-ex") [35]
-("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.aux"
-) ) 
-Here is how much of TeX's memory you used:
- 6146 strings out of 493921
- 83822 string characters out of 3147277
- 210541 words of memory out of 3000000
- 9294 multiletter control sequences out of 15000+200000
- 20434 words of font info for 47 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 37i,12n,40p,1255b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\eccc1095.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.e
-nc} <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\ecbx1000.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
-ppen\ec\dpi600\ecrm1000.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\jknappen\ec\dpi600\ecbi1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thibaut\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Thiba
-ut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:
-\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx
-1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecbx1440.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thibaut\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\
-Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/bera/fvmb8a.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/bera/fvmr8a.pfb>
-Output written on Main.pdf (38 pages, 3915470 bytes).
-PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
@@ -1243,12 +791,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
-[18 <./img/vlqOctet.png>]
+[19 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/vl
+qOctet.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-<./img/logic_sound.png, id=103, 1439.3775pt x 354.32375pt>
+<./img/logic_sound.png, id=105, 1439.3775pt x 354.32375pt>
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
@@ -1259,58 +808,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
-<./img/logic_midi.png, id=104, 1125.20375pt x 350.30875pt>
+<./img/logic_midi.png, id=106, 1125.20375pt x 350.30875pt>
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
 Package pdftex.def Info: ./img/logic_midi.png used on input line 291.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
- [19 <./img/logic_sound.png>]
-<./img/logic_edit.png, id=109, 1039.885pt x 367.3725pt>
+ [20 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
+ogic_sound.png>]
+<./img/logic_edit.png, id=111, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
 <use ./img/logic_edit.png>
 Package pdftex.def Info: ./img/logic_edit.png used on input line 301.
 (pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
 
-<./img/logic_export.png, id=110, 703.62875pt x 117.43875pt>
+<./img/logic_export.png, id=112, 703.62875pt x 117.43875pt>
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
 Package pdftex.def Info: ./img/logic_export.png used on input line 310.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
- [20 <./img/logic_midi.png> <./img/logic_edit.png> <./img/logic_export.png>]
-<./img/MenuMort.png, id=117, 183.68625pt x 206.27063pt>
+ [21 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/l
+ogic_midi.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rap
+port/img/logic_edit.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
+uments/rapport/img/logic_export.png>]
+<./img/MenuMort.png, id=119, 183.68625pt x 206.27063pt>
 File: ./img/MenuMort.png Graphic file (type png)
 
 <use ./img/MenuMort.png>
 Package pdftex.def Info: ./img/MenuMort.png used on input line 333.
 (pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
- [21]
-<./img/SelectionMiniJeu.png, id=121, 268.00125pt x 210.7875pt>
+ [22]
+<./img/SelectionMiniJeu.png, id=124, 268.00125pt x 210.7875pt>
 File: ./img/SelectionMiniJeu.png Graphic file (type png)
 
 <use ./img/SelectionMiniJeu.png>
 Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 343.
 (pdftex.def)             Requested size: 241.19888pt x 189.707pt.
- [22 <./img/MenuMort.png> <./img/SelectionMiniJeu.png>] <./img/technique_graphi
-smes.png, id=126, 335.75438pt x 463.7325pt>
+ [23 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/M
+enuMort.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rappo
+rt/img/SelectionMiniJeu.png>]
+<./img/technique_graphismes.png, id=128, 335.75438pt x 463.7325pt>
 File: ./img/technique_graphismes.png Graphic file (type png)
 
 <use ./img/technique_graphismes.png>
 Package pdftex.def Info: ./img/technique_graphismes.png used on input line 361.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
- [23]
-<./img/technique_animation1.png, id=130, 625.58719pt x 139.27031pt>
+ [24]
+<./img/technique_animation1.png, id=132, 625.58719pt x 139.27031pt>
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
 Package pdftex.def Info: ./img/technique_animation1.png used on input line 373.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
- [24 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
-<./img/technique_animation2.png, id=135, 627.09282pt x 163.3603pt>
+ [25 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
+echnique_graphismes.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
+uments/rapport/img/technique_animation1.png>] <./img/technique_animation2.png, 
+id=137, 627.09282pt x 163.3603pt>
 File: ./img/technique_animation2.png Graphic file (type png)
 
 <use ./img/technique_animation2.png>
@@ -1318,125 +875,188 @@ Package pdftex.def Info: ./img/technique_animation2.png used on input line 381.
 
 (pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
 
-<./img/technique_animation3.png, id=136, 344.78813pt x 165.61874pt>
+<./img/technique_animation3.png, id=138, 344.78813pt x 165.61874pt>
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
 Package pdftex.def Info: ./img/technique_animation3.png used on input line 389.
 
 (pdftex.def)             Requested size: 189.63405pt x 91.09058pt.
- [25 <./img/technique_animation2.png> <./img/technique_animation3.png>] [26]
-<./img/compteur_tuto.png, id=143, 679.78969pt x 322.95656pt>
+ [26 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/t
+echnique_animation2.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/doc
+uments/rapport/img/technique_animation3.png>] [27] <./img/compteur_tuto.png, id
+=145, 679.78969pt x 322.95656pt>
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
 Package pdftex.def Info: ./img/compteur_tuto.png used on input line 437.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
- [27 <./img/compteur_tuto.png (PNG copy)>]
-<./img/skip_locked.png, id=147, 717.43031pt x 447.92343pt>
+ [28 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/c
+ompteur_tuto.png (PNG copy)>]
+<./img/skip_locked.png, id=150, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
 Package pdftex.def Info: ./img/skip_locked.png used on input line 447.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_locked_popup.png, id=148, 717.43031pt x 447.92343pt>
+<./img/skip_locked_popup.png, id=151, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
 Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 452.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_unlocked.png, id=149, 718.93594pt x 447.92343pt>
+<./img/skip_unlocked.png, id=152, 718.93594pt x 447.92343pt>
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
 Package pdftex.def Info: ./img/skip_unlocked.png used on input line 458.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
-<./img/skip_unlocked_popup.png, id=150, 719.68875pt x 447.92343pt>
+<./img/skip_unlocked_popup.png, id=153, 719.68875pt x 447.92343pt>
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
 Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 463.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
 
-<./img/scenes-transitions.png, id=151, 339.1872pt x 247.6452pt>
+<./img/scenes-transitions.png, id=154, 339.1872pt x 247.6452pt>
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
 Package pdftex.def Info: ./img/scenes-transitions.png used on input line 477.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
- [28 <./img/skip_locked.png> <./img/skip_locked_popup.png> <./img/skip_unlocked
-.png> <./img/skip_unlocked_popup.png>]
-<./img/loading.png, id=156, 532.99126pt x 255.20343pt>
+ [29 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/s
+kip_locked.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/ra
+pport/img/skip_locked_popup.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/He
+liko/documents/rapport/img/skip_unlocked.png> <C:/Users/Thibaut/Dropbox/M1 IMAG
+INA/TER_M1/Heliko/documents/rapport/img/skip_unlocked_popup.png>] <./img/loadin
+g.png, id=158, 532.99126pt x 255.20343pt>
 File: ./img/loading.png Graphic file (type png)
- <use ./img/loading.png>
+
+<use ./img/loading.png>
 Package pdftex.def Info: ./img/loading.png used on input line 486.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
-
-<./img/scene.png, id=157, 718.93594pt x 448.67625pt>
+ <./img/scene.png, id=159, 718.93594pt x 448.67625pt>
 File: ./img/scene.png Graphic file (type png)
- <use ./img/scene.png>
+
+<use ./img/scene.png>
 Package pdftex.def Info: ./img/scene.png used on input line 496.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
-
-<./img/cartoon.png, id=158, 718.93594pt x 448.67625pt>
+ <./img/cartoon.png, id=160, 718.93594pt x 448.67625pt>
 File: ./img/cartoon.png Graphic file (type png)
- <use ./img/cartoon.png>
+
+<use ./img/cartoon.png>
 Package pdftex.def Info: ./img/cartoon.png used on input line 501.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
-
-[29 <./img/scenes-transitions.png (PNG copy)> <./img/loading.png (PNG copy)> <.
-/img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
-<./img/GoogleAnalytics.png, id=162, 514.17094pt x 289.08pt>
+ [30 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/s
+cenes-transitions.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/H
+eliko/documents/rapport/img/loading.png (PNG copy)> <C:/Users/Thibaut/Dropbox/M
+1 IMAGINA/TER_M1/Heliko/documents/rapport/img/scene.png (PNG copy)> <C:/Users/T
+hibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/cartoon.png (PNG 
+copy)>]
+<./img/GoogleAnalytics.png, id=164, 514.17094pt x 289.08pt>
 File: ./img/GoogleAnalytics.png Graphic file (type png)
 
 <use ./img/GoogleAnalytics.png>
 Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 520.
 (pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
- [30] [31 <./img/GoogleAnalytics.png>] [32]
-<./img/opti_sound.png, id=173, 141.52875pt x 121.45375pt>
+ [31] [32 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/
+img/GoogleAnalytics.png>] [33]
+<./img/opti_sound.png, id=175, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
 Package pdftex.def Info: ./img/opti_sound.png used on input line 562.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
-) [33 <./img/opti_sound.png>] (./Resultat.tex)
-[34] (./Bilan.tex) [35] (./Annexes.tex) [36] (./Main.aux)
+) [34 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/
+opti_sound.png>]
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Resultat.
+tex" <./img/resultat_accueil.png, id=181, 496.85625pt x 331.2375pt>
+File: ./img/resultat_accueil.png Graphic file (type png)
+
+<use ./img/resultat_accueil.png>
+Package pdftex.def Info: ./img/resultat_accueil.png used on input line 8.
+(pdftex.def)             Requested size: 298.11604pt x 198.74402pt.
+
+<./img/resultat_niveaux.png, id=182, 496.85625pt x 330.48468pt>
+File: ./img/resultat_niveaux.png Graphic file (type png)
+
+<use ./img/resultat_niveaux.png>
+Package pdftex.def Info: ./img/resultat_niveaux.png used on input line 16.
+(pdftex.def)             Requested size: 298.11604pt x 198.29233pt.
+ [35 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/r
+esultat_accueil.png>]
+<./img/resultat_escargot.png, id=189, 628.59843pt x 353.06906pt>
+File: ./img/resultat_escargot.png Graphic file (type png)
+
+<use ./img/resultat_escargot.png>
+Package pdftex.def Info: ./img/resultat_escargot.png used on input line 38.
+(pdftex.def)             Requested size: 251.4349pt x 141.22511pt.
+ [36 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/r
+esultat_niveaux.png>]
+<./img/resultat_magicien.png, id=194, 536.0025pt x 298.11375pt>
+File: ./img/resultat_magicien.png Graphic file (type png)
+
+<use ./img/resultat_magicien.png>
+Package pdftex.def Info: ./img/resultat_magicien.png used on input line 51.
+(pdftex.def)             Requested size: 268.0006pt x 149.0565pt.
+ [37 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/r
+esultat_escargot.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/docume
+nts/rapport/img/resultat_magicien.png>]
+<./img/resultat_champis.png, id=200, 534.49687pt x 297.36093pt>
+File: ./img/resultat_champis.png Graphic file (type png)
+
+<use ./img/resultat_champis.png>
+Package pdftex.def Info: ./img/resultat_champis.png used on input line 63.
+(pdftex.def)             Requested size: 267.24777pt x 148.6801pt.
+) [38 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport/img/
+resultat_champis.png>]
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Bilan.tex
+") [39]
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Annexes.t
+ex") [40]
+("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport\Main.aux"
+)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6912 strings out of 493104
- 94262 string characters out of 6136932
- 234185 words of memory out of 5000000
- 10204 multiletter control sequences out of 15000+600000
- 20179 words of font info for 46 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,12n,40p,1013b,1444s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ber
-a/fvmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfbi1095.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfti1200.pfb>
-Output written on Main.pdf (39 pages, 3969157 bytes).
+ 6238 strings out of 493921
+ 85588 string characters out of 3147277
+ 220908 words of memory out of 3000000
+ 9376 multiletter control sequences out of 15000+200000
+ 20179 words of font info for 46 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 37i,9n,40p,1013b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
+\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.p
+k> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecrm1000.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbi1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thibaut\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Thibau
+t\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\
+Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
+095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
+dpi600\ecbx1440.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\eccc1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thibaut\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\T
+hibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/bera/fvmb8a.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/bera/fvmr8a.pfb>
+Output written on Main.pdf (43 pages, 4416058 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
->>>>>>> cfccddb713a4a3b1c002b8dca9417442266f68b4
+ 766 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
