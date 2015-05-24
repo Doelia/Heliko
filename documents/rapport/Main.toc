@@ -41,17 +41,26 @@
 \contentsline {paragraph}{}{9}
 \contentsline {subsubsection}{\numberline {4.1.1}Le \textit {beater}}{9}
 \contentsline {paragraph}{}{10}
+<<<<<<< HEAD
 \contentsline {paragraph}{Difficult\IeC {\'e} technique}{10}
 \contentsline {subsubsection}{\numberline {4.1.2}Autres fonctionnalit\IeC {\'e}s du \textit {beateur}}{11}
 \contentsline {subsubsection}{\numberline {4.1.3}Le niveau (\texttt {LevelScripted})}{11}
 \contentsline {paragraph}{}{12}
 \contentsline {subsubsection}{\numberline {4.1.4}\IeC {\'E}v\IeC {\`e}nements du joueur et calcul de la r\IeC {\'e}ussite}{12}
 \contentsline {paragraph}{\texttt {EventPlayerListener}}{12}
+=======
+\contentsline {subsubsection}{\numberline {4.1.1}Le \textit {beater}}{10}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{Difficult\IeC {\'e} technique}{11}
+\contentsline {subsubsection}{\numberline {4.1.2}Autres fonctionnalit\IeC {\'e}s du \textit {beateur}}{12}
+\contentsline {subsubsection}{\numberline {4.1.3}Le niveau (\textit {LevelScripted})}{12}
+>>>>>>> origin/master
 \contentsline {paragraph}{}{13}
 \contentsline {paragraph}{D\IeC {\'e}tection de la r\IeC {\'e}ussite}{13}
 \contentsline {paragraph}{}{14}
 \contentsline {subsubsection}{\numberline {4.1.5}R\IeC {\'e}sum\IeC {\'e}}{14}
 \contentsline {paragraph}{}{15}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {4.2}Outil de construction des niveaux}{15}
 \contentsline {subsection}{\numberline {4.3}Choix du langage}{15}
 \contentsline {subsubsection}{\numberline {4.3.1}Structure d'un fichier midi}{15}
@@ -99,3 +108,52 @@
 \contentsline {subsection}{\numberline {6.3}Perspectives}{32}
 \contentsline {subsection}{\numberline {6.4}Conclusion}{32}
 \contentsline {section}{\numberline {7}Annexes}{33}
+=======
+\contentsline {subsubsection}{\numberline {4.1.5}R\IeC {\'e}sum\IeC {\'e}}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {subsection}{\numberline {4.2}Outil de construction des niveaux}{16}
+\contentsline {subsection}{\numberline {4.3}Choix du langage}{17}
+\contentsline {subsubsection}{\numberline {4.3.1}Structure d'un fichier midi}{17}
+\contentsline {subsubsection}{\numberline {4.3.2}Conversion en niveau}{19}
+\contentsline {subsubsection}{\numberline {4.3.3}Mise en pratique}{20}
+\contentsline {subsection}{\numberline {4.4}Avancement du joueur}{21}
+\contentsline {subsubsection}{\numberline {4.4.1}Calcul du score dans un mini-jeu}{21}
+\contentsline {subsubsection}{\numberline {4.4.2}Enregistrement des scores}{22}
+\contentsline {subsubsection}{\numberline {4.4.3}D\IeC {\'e}blocage des mini-jeux}{22}
+\contentsline {subsection}{\numberline {4.5}Cr\IeC {\'e}ation d'un mini-jeu}{23}
+\contentsline {subsubsection}{\numberline {4.5.1}Les graphismes}{23}
+\contentsline {subsubsection}{\numberline {4.5.2}Les animations}{24}
+\contentsline {subsubsection}{\numberline {4.5.3}Assemblage avec le moteur}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{26}
+\contentsline {subsubsection}{\numberline {4.5.4}Le \textit {feedback}}{26}
+\contentsline {subsubsection}{\numberline {4.5.5}Le choix des sons}{26}
+\contentsline {subsubsection}{\numberline {4.5.6}La difficult\IeC {\'e}}{26}
+\contentsline {subsection}{\numberline {4.6}Les tutoriels}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{28}
+\contentsline {subsection}{\numberline {4.7}Assemblage des jeux}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {subsection}{\numberline {4.8}Services externes}{30}
+\contentsline {subsubsection}{\numberline {4.8.1}Statistique et Analyse}{30}
+\contentsline {subsubsection}{\numberline {4.8.2}Publicit\IeC {\'e}}{31}
+\contentsline {subsubsection}{\numberline {4.8.3}Version payante sans pub}{31}
+\contentsline {subsection}{\numberline {4.9}Mise en ligne}{31}
+\contentsline {subsubsection}{\numberline {4.9.1}Probl\IeC {\`e}me de synchronisation}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{34}
+\contentsline {section}{\numberline {6}Bilan du projet}{35}
+\contentsline {subsection}{\numberline {6.1}Autocritique}{35}
+\contentsline {subsection}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{35}
+\contentsline {subsection}{\numberline {6.3}Perspectives}{35}
+\contentsline {subsection}{\numberline {6.4}Conclusion}{35}
+\contentsline {section}{\numberline {7}Annexes}{36}
+>>>>>>> origin/master

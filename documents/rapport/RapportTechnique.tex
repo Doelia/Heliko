@@ -88,7 +88,7 @@ public int getStepClosest() {
 \end{lstlisting}
 Tous ces calculs prennent en compte le \texttt{sampleOffset}.
 
-\subsubsection{Le niveau (\texttt{LevelScripted})}
+\subsubsection{Le niveau (\textit{LevelScripted})}
 \label{niveau}
 Pour pouvoir réaliser des niveaux intéressants, il nous faut pouvoir les scripter les afin de définir sur quels "ticks" le joueur doit frapper. Il peut y avoir de longs blancs, ou des enchaînements rapides (avec une fréquence maximale équivalente au quart de temps).
 \\\\
@@ -102,13 +102,16 @@ Nous avons décidé de représenter un niveau dans un fichier texte de la façon
 \paragraph{}
 
 Le fichier se lit dans le temps de haut en bas (pour chaque quart de temps), puis de gauche à droite (pour chaque temps plein). Les différentes colonnes correspondent aux différents quart de temps. Par exemple, si on veut simplement bouger un cube à chaque battement (temps fort), on écrit le fichier suivant :\\
-\begin{lstlisting}
-1 1 1 1 1 1
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-\end{lstlisting}
-
+\begin{figure}[!htb]
+  \begin{lstlisting}
+    1 1 1 1 1 1
+    0 0 0 0 0 0
+    0 0 0 0 0 0
+    0 0 0 0 0 0
+  \end{lstlisting}
+\caption{Exemple de niveau}
+\label{simple_level}
+\end{figure}
 Un "0" correspond à "aucun évènement", et un chiffre correspond à un type d'évènement. Nous nommerons les chiffres supérieurs à zéro les \textbf{actions}.
 \\
 Une action peut être de type différent afin de pouvoir varier les attentes du joueur. En effet il peut y avoir plusieurs mouvements différents au niveau du tactile. Par exemple le "1" peut représenter un tap simple, le "2" un appui long, le "3" un relâchement, etc.
@@ -160,7 +163,7 @@ On stocke dans une liste les numéros des ticks où le joueur a réussi. Quand l
 N'importe quel objet Unity peut se connecter à ce contrôleur. Ceci permet de construire le feedback visuel, en jouant par exemple une animation quand on reçoit un évènement \texttt{onFailure}.
 
 \subsubsection{Résumé}
-
+\label{engine_summary}
 \noindent
 \makebox[\textwidth]{\includegraphics[scale=1]{./img/diagramme_moteur.png}}
 \paragraph{}
@@ -361,7 +364,7 @@ Dans notre projet, nous avons voulu mettre en avant le côté simple et divertis
 Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des créations graphiques vectorielles. L'intérêt de travailler sur du vectoriel est qu'on peut rendre l'image dans la dimension voulue, et, de plus, il est plus facile d'apporter rapidement une petite modification un objet ou sa couleur, sans avoir tout à recommencer.
 
 \subsubsection{Les animations}
-
+\label{anims}
 Les animations utilisées dans l'application sont gérées directement par Unity. Leur mise en place est classique, elle se fait via l'utilisation de clés sur une ligne de temps. 
 
 \begin{center}
@@ -384,8 +387,16 @@ Unity possède la caractéristique de pouvoir créer un diagramme d'état afin d
 \end{center}
 
 \subsubsection{Assemblage avec le moteur}
+On va donc brancher les différents éléments composants le jeu au moteur. Les différents éléments du moteurs sont détaillés partie \ref{engine_summary}.
 
-%TODO
+\paragraph{}
+Commençons par les éléments du décor et les personnages non-joueur. Ils seront reliés à un \textit{LevelScripted} auquel on passera en paramètre le fichier texte correspondant à leur mouvement. Les mouvements sont et les animations (voir partie \ref{anims}) déclenchés à l'aide de \textit{trigger} que le \textit{LevelScripted} va envoyer en fonction des évènements lus. \\
+Typiquement on aura un \textit{LevelScripted} avec un fichier texte ressemblant à celui fig. \ref{simple_level} qui servira à battre la mesure et à indiquer le tempo au joueur.\\
+On aura ensuite un \textit{LevelScripted} avec un vrai niveau qui va scripter les mouvements d'un personnage non-joueur comme on peut le voir par exemple dans le niveau des champignons où le joueur doit répéter les mouvements du PNJ.\\
+Les \textit{LevelScripted} sont évidemment reliés au \textit{BeatCounter} pour que tous les mouvements du décor et des PNJ soient effectués en rythme.
+
+\paragraph{}
+Les animations du personnage joueur fonctionnent globalement de la même manière. La seul différence est que l'on va ajouter un \textit{PlayerActions} et un \textit{PlayerEventListener} qui vont se charger de recupérer les actions du joueur et d'interroger le \textit{LevelScripted} pour savoir si l'action du joueur correspond à l'action attendue, et ainsi envoyer le trigger correspondant. 
 
 \subsubsection{Le \textit{feedback}}
 
@@ -426,7 +437,7 @@ Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi po
 \paragraph{}
 Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai complété au moins une fois.
 
-\begin{figure}[!htb]\centering
+\begin{figure}[Htb]\centering
    \begin{minipage}{0.49\textwidth}\centering
      \frame{\includegraphics[scale=0.2]{./img/skip_locked.png}}
      \caption{Bouton skip verrouillé}
@@ -457,7 +468,7 @@ En pratique, un tutoriel est composé d'un tableau de \textit{StepTuto}, chaque 
 \paragraph{}
 Chaque jeu est en réalité une scène de Unity. La navigation entre les scènes se fait suivant le diagramme fig. \ref{transitions_scenes}. L'écran principal est un ``hub'' où sont regroupés tous les jeux, on accède bien évidemment au jeu en cliquant dessus. Le tutoriel est ensuite chargé, puis enfin le jeu, on peut remarquer que l'on peut à tout moment revenir à l'écran principal.
 
-\begin{figure}[!htb]\centering
+\begin{figure}[Htb]\centering
   \frame{\includegraphics[scale=0.7]{./img/scenes-transitions.png}}
   \caption{Transitions entre les scènes du jeu}
   \label{transitions_scenes}
@@ -466,7 +477,7 @@ Chaque jeu est en réalité une scène de Unity. La navigation entre les scènes
 \paragraph{}
 Les scènes ne se chargent pas instantanément, en Unity indique le pourcentage de la scène qui a été chargé, cela permet entre autre de réaliser des écrans de chargement animés. En plus de donner au joueur l'avancement du chargement, cela rend le jeu bien plus fluide que si le chargement était simplement un écran noir, comportement par défaut de Unity.
 
-\begin{figure}[!Htb]\centering
+\begin{figure}[!htb]\centering
   \frame{\includegraphics[scale=0.3]{./img/loading.png}}
   \caption{Écran de chargement}
   \label{loading}
@@ -475,7 +486,7 @@ Les scènes ne se chargent pas instantanément, en Unity indique le pourcentage 
 \paragraph{}
 Les transitions entre les scènes se font donc par des écrans de chargements, mais il serait un peu brusque d'interrompre directement le jeu lorsqu'il est terminé. Nous avons décidé de faire une fermeture en cercle (voir fig. \ref{cartoon}) sur un élément de la scène pour donner un effet cartoon.
 
-\begin{figure}[!Htb]\centering
+\begin{figure}[Htb]\centering
    \begin{minipage}{0.49\textwidth}\centering
      \frame{\includegraphics[scale=0.2]{./img/scene.png}}
      \caption{Scène normale}
