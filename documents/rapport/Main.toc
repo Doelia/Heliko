@@ -1,5 +1,7 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
 \contentsline {section}{\numberline {2}Analyse du projet}{4}
 \contentsline {subsection}{\numberline {2.1}Analyse de l'existant}{4}
 \contentsline {paragraph}{Jeux bas\IeC {\'e}s sur la musique}{4}
