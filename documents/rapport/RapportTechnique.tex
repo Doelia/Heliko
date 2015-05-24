@@ -3,26 +3,26 @@
 
 \section{Moteur de jeu rythmique}
 
-Notre objectif premier est de réaliser un moteur de jeu de rythme sous Unity afin de pouvoir créer des mini-jeux aisément.
+Notre objectif premier est de réaliser un moteur de jeu de rythme générique sous Unity afin de pouvoir créer des mini-jeux aisément.
 
 \paragraph{}
 
 Nous définissons un jeu de rythme par les composantes suivantes :
 \begin{itemize}
-\item Une musique, avec un tempo et une durée fixée
-\item Des actions à réaliser par l'utilisateur, qui peuvent être de différents types
-\item Un décor animé et synchronisé sur la musique
-\item Un taux de réussite en \% calculé sur les performances du joueur
+\item Une musique, avec un tempo et une durée fixée ;
+\item Des actions à réaliser par l'utilisateur, qui peuvent être de différents types ;
+\item Un décor animé et synchronisé sur la musique ;
+\item Un taux de réussite en \% calculé sur les performances du joueur.
 \end{itemize}
 
 \paragraph{}
 
 Pour réaliser cela, les fonctionnalités attendues du moteur sont les suivantes :
 \begin{itemize}
-\item Synchronisation parfaite d'un battement sur le tempo d'une musique, entrée de façon numérique manuellement.
-\item Détection des temps entiers sur la musique, des demi temps et des quarts de temps
-\item Scripting dans un fichier texte pour définir des actions sur les temps voulus. Que ce soit pour définir les comportements de l'environnement ou le comportement attendu de l'utilisateur.
-\item Analyse des actions de l'utilisateur, et détection de sa réussite à partir du niveau scripté, avec une certaine tolérance.
+\item Synchronisation parfaite d'un battement sur le tempo d'une musique, entrée de façon numérique manuellement ;
+\item Détection des temps entiers sur la musique, des demi temps et des quarts de temps ;
+\item Scripting dans un fichier texte pour définir des actions sur les temps voulus. Que ce soit pour définir les comportements de l'environnement ou le comportement attendu de l'utilisateur ;
+\item Analyse des actions de l'utilisateur, et détection de sa réussite à partir du niveau scripté, avec une certaine tolérance ;
 \item Connexion de tout ces événements à des objets de type Unity, pour pouvoir déclencher des animations et autres effets désirés.
 \end{itemize}
 
@@ -34,7 +34,7 @@ Le \textit{beater} lit la musique et doit déclencher des événements à chaque
 {\textbf{Note technique sur la musique}\\Un fichier son numérique est enregistré sur l'unité de temps du sample. A chaque sample, on récupère une valeur numérique en décibels. Sur un son classique, la fréquence est de 44100Hz, ce qui correspond à 44100 samples par secondes. Dans ce projet nous convertissons toutes nos durées en samples pour une précision optimale.\\Le tempo d’un morceau se mesure en BPM (battements par minutes). Il varie entre 80 et 160 BPM en moyenne sur des morceaux classiques, mais reste fixe tout au long de la musique.}
 }\\\\
 
-Le principe du Beater est de déclencher un "tick" tout les quart de temps. Sur un morceau à 120 BPM, on récupère la durée d’un tick en samples avec le calcul suivant :
+Le principe du Beater est de déclencher un "tick" tout les quarts de temps. Sur un morceau à 120 BPM, on récupère la durée d’un tick en samples avec le calcul suivant :
 
 \begin{lstlisting}
 samplePeriod = (60f / (tempo * scalar)) * audioSource.clip.frequency;
@@ -63,14 +63,14 @@ IEnumerator BeatCheck () {
 
 \paragraph{Difficulté technique}
 Sur Unity chaque itération de la boucle s'effectue à chaque \textit{Update} du moteur, soit 60 fois par secondes sur PC, et 30 fois sur téléphone. 1 divisé par 30 = 0.03333333, soit 30ms entre chaque tick.\\\\
-Sur un tempo à 120 BPM un quart de temps dure 107 ms ce qui offre une marge de manœuvre faible, d'où la difficulté de synchronisation. Sans une bonne pratique et des calculs correctement réalisés, on perd rapidement la synchronisation avec la musique au bout de plusieurs minutes.\\\\
+Sur un tempo à 120 BPM un quart de temps dure 107 ms ce qui offre une marge de manœuvre faible, d'où la difficulté de synchronisation. Sans une bonne pratique et des calculs correctement réalisés, le jeu perd rapidement la synchronisation avec la musique.\\\\
 Pour des raisons de performances, nous nous devons de limiter le nombre de calculs par seconde. Des paramètres sont disponibles dans notre moteur afin d'affiner ce genre de détails avant la mise en production.\\\\
 Dans le cadre de ce projet, nous avons passé de nombreuses heures avant d'arriver à détecter les \textit{beats} parfaitement sans aucune perte d'information sur une longue durée. La méthode que nous présentons ici semble simple et fonctionnelles, mais nous en avons essayé beaucoup d'autres avant d'arriver à ce résultat, qu'ils seraient inintéressant d'expliquer.\\\\
 D'autant plus que nos exigence ont changés avec le temps. On départ nous pensions que d'avoir la précision du double temps été suffisant, mais rapidement nous avions besoin de quarts de temps... Nous retenons ici qu'il vaut mieux voir au plus compliqué dans la conception, pour être certain que toutes les possibilités futures soient couvertes.
 
 
 \subsection{Autres fonctionnalités du \textit{beateur}}
-Une musique commence rarement son premier temps au temps 0, un paramètre "offset" \texttt{start} est disponible pour définir le temps à attendre avant de détecter le premier \textit{beat}. Ceci permet de synchroniser parfaitement les animations avec la musique.
+Une musique commence rarement sa première seconde au temps 0 de son tempo (il peut y avoir un léger blanc), un paramètre "offset" \texttt{start} est disponible dans notre moteur pour définir le temps à attendre avant de détecter le premier \textit{beat}. Ceci permet de synchroniser parfaitement les animations avec la musique.
 \\\\
 Pour les calculs de réussite ou calcul du score, on peut avoir besoin d'autres fonctionnalités de calculs, par exemple pour récupérer le numéro du tick le plus proche à un instant T.
 \\
@@ -127,10 +127,10 @@ La longueur du fichier dépend de la longueur de la musique. On peut écrire de 
 Une classe est dédiée à écouter les évènements du joueur, afin de détecter des actions de type 1, 2, 3, 4... L'endroit où l'utilisateur appuie sur l'écran n'a aucune importance.\\\\
 Les mouvements suivants sont définis :
 \begin{enumerate}
-\item Tap bref (le plus commun)
-\item Commencement appui long
-\item Relâchement appui long
-\item Swipe (lancer)
+\item Tap bref (le plus commun) ;
+\item Commencement appui long ;
+\item Relâchement appui long ;
+\item Swipe (lancer).
 \end{enumerate}
 
 
@@ -156,19 +156,19 @@ Il y a deux types d'évènements à tester :
 
 La phase complexe est de déterminer quand un évènement est trop tôt ou trop tard. Un joueur ne frappera jamais pile au moment réel de l'évènement : Il faut mettre en place un système de tolérance.
 \\\\
-Après de multiples tests, nous avons conclu que le délais d'un quart de temps est suffisant comme négligence. C'est à dire que le joueur dispose d'un quart de temps complet pour réaliser une action demandée.
+Après de multiples tests, nous avons conclu que le délais d'un quart de temps est suffisant comme négligence. C'est à dire que le joueur dispose d'un quart de temps complet pour réaliser une action demandée (représente environs 100ms).
 \\\\
 On stocke dans une liste les numéros des ticks où le joueur a réussi. Quand le \textit{beateur} envoie un évènement, on regarde si le joueur a réussi le précédent. Sans quoi, on envoie un évènement \texttt{onFailure}.
 \\\\
 N'importe quel objet Unity peut se connecter à ce contrôleur. Ceci permet de construire le feedback visuel, en jouant par exemple une animation quand on reçoit un évènement \texttt{onFailure}.
 
-\subsection{Résumé}
+\subsection{Résumé du fonctionnement du moteur}
 \label{engine_summary}
 \noindent
 \makebox[\textwidth]{\includegraphics[scale=1]{./img/diagramme_moteur.png}}
 \paragraph{}
 
-Pour résumer le fonctionnement du moteur :
+Pour résumer en s'appuiyant sur la figure \ref{engine_summary} :
 \begin{itemize}
 \item Le \texttt{BeatCounter} lit la musique et envoie des évènements \texttt{OnBeat()} à chaque quart de temps.
 \item Le \texttt{LevelScripted} filtre ces évènements en lisant le fichier, et envoie des évènements d'actions à tout les objets Unity qui l'écoutent
@@ -178,7 +178,7 @@ Pour résumer le fonctionnement du moteur :
 
 \section{Outil de construction des niveaux}
 
-Même si notre système de fichier texte est suffisamment clair pour être lu et modifié manuellement, il est tout de même fastidieux de construire des niveaux directement. Il est beaucoup plus intéressant de créer les actions du niveau dans un logiciel de musique. Nous avons donc développé un outil de conversion pour générer un niveau à partir de fichiers MIDI.
+Même si notre système de fichier texte est suffisamment clair pour être lu et modifié manuellement, il est tout de même fastidieux de construire des niveaux directement. Il est beaucoup plus intéressant de créer les actions du niveau dans un logiciel de musique. Nous avons donc développé un outil de conversion pour générer un niveau à partir de fichiers midi.
 
 \subsection{Choix du langage}
 La programmation est la représentation des données et la manipulation de ces représentations. Les fichiers midi sont représentés par des listes de listes. Quel meilleur langage qu'un LISP pour effectuer des opérations sur des listes ? Le Scheme s'est imposé comme choix naturel.
