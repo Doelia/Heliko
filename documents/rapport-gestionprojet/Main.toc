@@ -32,16 +32,16 @@
 \contentsline {paragraph}{}{9}
 \contentsline {paragraph}{}{9}
 \contentsline {paragraph}{}{10}
-\contentsline {subsubsection}{\numberline {3.4.1}Ponctualit\IeC {\'e} hebdomadaire}{10}
-\contentsline {subsubsection}{\numberline {3.4.2}Estimation du temps pass\IeC {\'e}}{11}
-\contentsline {paragraph}{Estimation globale}{11}
-\contentsline {paragraph}{Estimation assist\IeC {\'e}e}{11}
-\contentsline {paragraph}{Convesion en jours/hommes}{11}
-\contentsline {subsubsection}{\numberline {3.4.3}Mod\IeC {\'e}lisation Gource}{11}
+\contentsline {subsubsection}{\numberline {3.4.1}Ponctualit\IeC {\'e} hebdomadaire}{11}
+\contentsline {subsubsection}{\numberline {3.4.2}Mod\IeC {\'e}lisation Gource}{11}
 \contentsline {paragraph}{}{11}
-\contentsline {section}{\numberline {4}R\IeC {\'e}sultat et comparaison avec le pr\IeC {\'e}visionnel}{12}
+\contentsline {section}{\numberline {4}Estimation du temps pass\IeC {\'e}}{12}
+\contentsline {paragraph}{Estimation globale}{12}
+\contentsline {paragraph}{Estimation assist\IeC {\'e}e}{12}
+\contentsline {paragraph}{Conversion en jours/hommes}{12}
+\contentsline {section}{\numberline {5}R\IeC {\'e}sultat et comparaison avec le pr\IeC {\'e}visionnel}{12}
 \contentsline {paragraph}{}{12}
-\contentsline {paragraph}{}{12}
-\contentsline {paragraph}{}{12}
-\contentsline {paragraph}{}{12}
-\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
