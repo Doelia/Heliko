@@ -307,9 +307,19 @@ Ensuite, une fois les échecs additionnés, on se contente de calculer le pource
 
 Même si le calcul des scores est fait sous la forme de pourcentage, ce qui est affiché au joueur et ce qui est enregistré est sous la forme d'étoiles. 3 étoiles correspond à 100\% de réussite, 2 étoiles à un score supérieur à 90\% et enfin 1 étoile à un score supérieur à 75\%. Le score est enregistré de manière très simple, unity permettant d'enregistrer des entiers, des chaines de caractères et des nombres flottants. Ainsi le score est enregistré dans une variable "int" s'appellant “etoileLevel[numéro du mini jeu]” et sa valeur correspond au nombre d'étoiles. A chaque fin d'un mini-jeu, on vérifie si le joueur n'a pas amélioré le nombre d'étoiles sur ce mini-jeu, et si oui, alors on écrase le précedent score avec le nouveau qui est meilleur.
 
+\begin{center}
+\includegraphics[scale=0.9]{./img/MenuMort.png}\\
+\textit{Score du joueur affiché}
+\end{center}
+
 \subsubsection{Débloquage des mini-jeux}
 
 Certains jeux sont débloqués de base, d'autres nécessitent la réussite d'un autre mini-jeu pour celà. Un mini-jeu est considéré comme réussi du moment que le joueur a obtenu au moins une étoile sur ce jeu. Ainsi, si un mini-jeu n'est pas débloqué, dans le menu de sélection des mini-jeux, son icone est grisée, et il est inclicable. De plus, en dessous de l'icone de chaque mini-jeu est affiché le plus grand nombre d'étoiles obtenu dans le jeu correspondant.
+
+\begin{center}
+\includegraphics[scale=0.9]{./img/SelectionMiniJeu.png}\\
+\textit{Selection des mini-jeux}
+\end{center}
 
 
 \subsection{Création d'un mini-jeu}
@@ -424,6 +434,12 @@ Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau es
 \end{figure}
 
 \subsection{Assemblage des jeux}
+
+\subsection{Service externe}
+Outre le jeu à proprement parler, nous avons intégré d'autres services externes afin de monétiser notre jeu, et d'obtenir des statistiques intéressantes.
+
+\subsubsection{Statistique et Analyse}
+ 
 \subsection{Mise en ligne}
 
 \subsubsection{Problème de synchronisation}
