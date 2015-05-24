@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -402,6 +402,10 @@ File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box32
+)
 (/usr/share/texlive/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 )
@@ -410,27 +414,27 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 ) (./Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Info: Redefining \degres on input line 32.
-LaTeX Info: Redefining \dots on input line 32.
-LaTeX Info: Redefining \up on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Info: Redefining \degres on input line 33.
+LaTeX Info: Redefining \dots on input line 33.
+LaTeX Info: Redefining \up on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen115
-\scratchbox=\box32
+\scratchbox=\box33
 \nofMPsegments=\count106
 \nofMParguments=\count107
 \everyMPshowfont=\toks23
@@ -483,7 +487,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box33
+\AtBeginShipoutBox=\box34
 \c@lstlisting=\count111
 
 (./Title.tex <./img/logoUM.png, id=1, 96.36pt x 96.36pt>
@@ -491,38 +495,44 @@ File: ./img/logoUM.png Graphic file (type png)
 
 <use ./img/logoUM.png>
 Package pdftex.def Info: ./img/logoUM.png used on input line 5.
-(pdftex.def)             Requested size: 126.0022pt x 126.00165pt.
+(pdftex.def)             Requested size: 90.0pt x 89.99907pt.
+ <./img/logo.png, id=3, 894.34125pt x 848.16875pt>
+File: ./img/logo.png Graphic file (type png)
+
+<use ./img/logo.png>
+Package pdftex.def Info: ./img/logo.png used on input line 18.
+(pdftex.def)             Requested size: 143.9978pt x 136.56393pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 28.
+(Font)              <10.95> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
+(Font)              <8> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
+(Font)              <6> on input line 29.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/logoUM.png>]) [1] [2
-] (./Main.toc
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 43.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/logoUM.png> <./img/l
+ogo.png>]) [1] [2] (./Main.toc
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 43.
+(Font)              scaled to size 9.85492pt on input line 44.
  [1])
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
  [2]
 (./Introduction.tex) [3] (./AnalyseProjet.tex [4]
-<img/protoPlanete.png, id=39, 703.12688pt x 560.0925pt>
+<img/protoPlanete.png, id=41, 703.12688pt x 560.0925pt>
 File: img/protoPlanete.png Graphic file (type png)
 
 <use img/protoPlanete.png>
 Package pdftex.def Info: img/protoPlanete.png used on input line 26.
 (pdftex.def)             Requested size: 281.24576pt x 224.03302pt.
  [5 <./img/protoPlanete.png>]
-<img/rhythmParadise.png, id=44, 628.59843pt x 432.86719pt>
+<img/rhythmParadise.png, id=46, 628.59843pt x 432.86719pt>
 File: img/rhythmParadise.png Graphic file (type png)
 
 <use img/rhythmParadise.png>
@@ -533,7 +543,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
-) [7] (./RapportActivite.tex <./img/unity-3D.png, id=52, 1284.8pt x 847.165pt>
+) [7] (./RapportActivite.tex <./img/unity-3D.png, id=54, 1284.8pt x 847.165pt>
 File: ./img/unity-3D.png Graphic file (type png)
 
 <use ./img/unity-3D.png>
@@ -634,7 +644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-<./img/diagEtatTransition.png, id=75, 519.89232pt x 234.42581pt>
+<./img/diagEtatTransition.png, id=77, 519.89232pt x 234.42581pt>
 File: ./img/diagEtatTransition.png Graphic file (type png)
 
 <use ./img/diagEtatTransition.png>
@@ -660,7 +670,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--159
 
  []
 
-<./img/diagramme_moteur.png, id=83, 487.3407pt x 337.5009pt>
+<./img/diagramme_moteur.png, id=85, 487.3407pt x 337.5009pt>
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
@@ -742,7 +752,7 @@ Underfull \hbox (badness 1552) in paragraph at lines 241--241
 []\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
  []
 
-<./img/vlqOctet.png, id=95, 130.98938pt x 65.24374pt>
+<./img/vlqOctet.png, id=97, 130.98938pt x 65.24374pt>
 File: ./img/vlqOctet.png Graphic file (type png)
  <use ./img/vlqOctet.png>
 Package pdftex.def Info: ./img/vlqOctet.png used on input line 241.
@@ -772,7 +782,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
-<./img/logic_sound.png, id=103, 1439.3775pt x 354.32375pt>
+<./img/logic_sound.png, id=105, 1439.3775pt x 354.32375pt>
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
@@ -783,7 +793,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
-<./img/logic_midi.png, id=104, 1125.20375pt x 350.30875pt>
+<./img/logic_midi.png, id=106, 1125.20375pt x 350.30875pt>
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
@@ -794,7 +804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
-<./img/logic_edit.png, id=105, 1039.885pt x 367.3725pt>
+<./img/logic_edit.png, id=107, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
 <use ./img/logic_edit.png>
@@ -805,144 +815,169 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
-<./img/logic_export.png, id=111, 703.62875pt x 117.43875pt>
+<./img/logic_export.png, id=113, 703.62875pt x 117.43875pt>
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
 Package pdftex.def Info: ./img/logic_export.png used on input line 290.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
- [21 <./img/logic_edit.png> <./img/logic_export.png>] <./img/technique_graphism
-es.png, id=117, 335.75438pt x 463.7325pt>
+ [21 <./img/logic_edit.png> <./img/logic_export.png>] <./img/MenuMort.png, id=1
+19, 183.68625pt x 206.27063pt>
+File: ./img/MenuMort.png Graphic file (type png)
+
+<use ./img/MenuMort.png>
+Package pdftex.def Info: ./img/MenuMort.png used on input line 311.
+(pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
+
+<./img/SelectionMiniJeu.png, id=120, 268.00125pt x 210.7875pt>
+File: ./img/SelectionMiniJeu.png Graphic file (type png)
+
+<use ./img/SelectionMiniJeu.png>
+Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 320.
+(pdftex.def)             Requested size: 241.19888pt x 189.707pt.
+ [22 <./img/MenuMort.png>]
+<./img/technique_graphismes.png, id=125, 335.75438pt x 463.7325pt>
 File: ./img/technique_graphismes.png Graphic file (type png)
 
 <use ./img/technique_graphismes.png>
-Package pdftex.def Info: ./img/technique_graphismes.png used on input line 306.
+Package pdftex.def Info: ./img/technique_graphismes.png used on input line 338.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
-
-<./img/technique_animation1.png, id=118, 625.58719pt x 139.27031pt>
+ [23 <./img/SelectionMiniJeu.png>]
+<./img/technique_animation1.png, id=129, 625.58719pt x 139.27031pt>
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
-Package pdftex.def Info: ./img/technique_animation1.png used on input line 317.
+Package pdftex.def Info: ./img/technique_animation1.png used on input line 349.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
- [22 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
-<./img/technique_animation2.png, id=124, 627.09282pt x 163.3603pt>
+ [24 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
+<./img/technique_animation2.png, id=134, 627.09282pt x 163.3603pt>
 File: ./img/technique_animation2.png Graphic file (type png)
 
 <use ./img/technique_animation2.png>
-Package pdftex.def Info: ./img/technique_animation2.png used on input line 324.
+Package pdftex.def Info: ./img/technique_animation2.png used on input line 356.
 
 (pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
 
-<./img/technique_animation3.png, id=125, 344.78813pt x 165.61874pt>
+<./img/technique_animation3.png, id=135, 344.78813pt x 165.61874pt>
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
-Package pdftex.def Info: ./img/technique_animation3.png used on input line 331.
+Package pdftex.def Info: ./img/technique_animation3.png used on input line 363.
 
 (pdftex.def)             Requested size: 275.83087pt x 132.49516pt.
- [23 <./img/technique_animation2.png> <./img/technique_animation3.png>] [24]
-<./img/compteur_tuto.png, id=132, 679.78969pt x 322.95656pt>
+ [25 <./img/technique_animation2.png> <./img/technique_animation3.png>] [26]
+<./img/compteur_tuto.png, id=142, 679.78969pt x 322.95656pt>
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
-Package pdftex.def Info: ./img/compteur_tuto.png used on input line 370.
+Package pdftex.def Info: ./img/compteur_tuto.png used on input line 402.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
 
-<./img/skip_locked.png, id=133, 717.43031pt x 447.92343pt>
+<./img/skip_locked.png, id=143, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
-Package pdftex.def Info: ./img/skip_locked.png used on input line 380.
+Package pdftex.def Info: ./img/skip_locked.png used on input line 412.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_locked_popup.png, id=134, 717.43031pt x 447.92343pt>
+<./img/skip_locked_popup.png, id=144, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
-Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 385.
+Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 417.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_unlocked.png, id=135, 718.93594pt x 447.92343pt>
+<./img/skip_unlocked.png, id=145, 718.93594pt x 447.92343pt>
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
-Package pdftex.def Info: ./img/skip_unlocked.png used on input line 391.
+Package pdftex.def Info: ./img/skip_unlocked.png used on input line 423.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
-<./img/skip_unlocked_popup.png, id=136, 719.68875pt x 447.92343pt>
+<./img/skip_unlocked_popup.png, id=146, 719.68875pt x 447.92343pt>
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
-Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 396.
+Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 428.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
- [25 <./img/compteur_tuto.png (PNG copy)> <./img/skip_locked.png> <./img/skip_l
+ [27 <./img/compteur_tuto.png (PNG copy)> <./img/skip_locked.png> <./img/skip_l
 ocked_popup.png> <./img/skip_unlocked.png> <./img/skip_unlocked_popup.png>]
-<./img/scenes-transitions.png, id=141, 339.1872pt x 247.6452pt>
+<./img/scenes-transitions.png, id=151, 339.1872pt x 247.6452pt>
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
-Package pdftex.def Info: ./img/scenes-transitions.png used on input line 410.
+Package pdftex.def Info: ./img/scenes-transitions.png used on input line 442.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
 
-<./img/loading.png, id=142, 532.99126pt x 255.20343pt>
+<./img/loading.png, id=152, 532.99126pt x 255.20343pt>
 File: ./img/loading.png Graphic file (type png)
  <use ./img/loading.png>
-Package pdftex.def Info: ./img/loading.png used on input line 419.
+Package pdftex.def Info: ./img/loading.png used on input line 451.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
 
-<./img/scene.png, id=143, 718.93594pt x 448.67625pt>
+<./img/scene.png, id=153, 718.93594pt x 448.67625pt>
 File: ./img/scene.png Graphic file (type png)
  <use ./img/scene.png>
-Package pdftex.def Info: ./img/scene.png used on input line 429.
+Package pdftex.def Info: ./img/scene.png used on input line 461.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-<./img/cartoon.png, id=144, 718.93594pt x 448.67625pt>
+<./img/cartoon.png, id=154, 718.93594pt x 448.67625pt>
 File: ./img/cartoon.png Graphic file (type png)
  <use ./img/cartoon.png>
-Package pdftex.def Info: ./img/cartoon.png used on input line 434.
+Package pdftex.def Info: ./img/cartoon.png used on input line 466.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-[26 <./img/scenes-transitions.png (PNG copy)>] [27 <./img/loading.png (PNG copy
+[28 <./img/scenes-transitions.png (PNG copy)>] [29 <./img/loading.png (PNG copy
 )> <./img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
-<./img/opti_sound.png, id=151, 141.52875pt x 121.45375pt>
+<./img/GoogleAnalytics.png, id=162, 514.17094pt x 289.08pt>
+File: ./img/GoogleAnalytics.png Graphic file (type png)
+
+<use ./img/GoogleAnalytics.png>
+Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 482.
+(pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
+ [30 <./img/GoogleAnalytics.png>] [31]
+<./img/opti_sound.png, id=170, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
-Package pdftex.def Info: ./img/opti_sound.png used on input line 457.
+Package pdftex.def Info: ./img/opti_sound.png used on input line 514.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
-) [28 <./img/opti_sound.png>] (./Resultat.tex)
-[29] (./Bilan.tex) [30] (./Annexes.tex) [31] (./Main.aux) ) 
+) [32 <./img/opti_sound.png>] (./Resultat.tex)
+[33] (./Bilan.tex) [34] (./Annexes.tex) [35] (./Main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6761 strings out of 493104
- 91964 string characters out of 6136932
- 221401 words of memory out of 5000000
- 10064 multiletter control sequences out of 15000+600000
- 20738 words of font info for 46 fonts, out of 8000000 for 9000
+ 6843 strings out of 493104
+ 93322 string characters out of 6136932
+ 221780 words of memory out of 5000000
+ 10138 multiletter control sequences out of 15000+600000
+ 20179 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,40p,1066b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fo
-nts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc
-/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfbi1095.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx109
-5.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfti1200.pfb>
-Output written on Main.pdf (34 pages, 3770898 bytes).
+ 38i,12n,40p,1253b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ber
+a/fvmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfbi1095.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfti1200.pfb>
+Output written on Main.pdf (38 pages, 3990789 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
