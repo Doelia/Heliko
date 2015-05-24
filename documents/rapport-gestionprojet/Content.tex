@@ -42,6 +42,8 @@ Ces 3 étapes demandant une gestion de projet différente, la méthode de travai
 \paragraph{}
 Le \textbf{diagramme de Gantt} initial a été conçu dans l’optique de faire la totalité des couches énoncées plus haut.
 
+\includepdf{oufGantt3.pdf}
+
 \paragraph{Rôles dans l’équipe}
 Vu la charge importante de travail et la diversité des tâches, nous avons préféré nous attribuer des responsabilités fixes :
 
@@ -184,6 +186,17 @@ On remarque d'après la figure \ref{github_commits} de nombreuses suppressions (
 
 D’après les statistiques \emph{Github} (figure \ref{punchcard}), nous avons travaillé tous les jours de la semaine, avec une préférence pour le lundi et le mercredi en après-midi et jusqu’en fin de soirée.
 
+\subsubsection{Estimation du temps passé}
+
+\paragraph{Estimation globale}
+Nous nous sommes réunis au moins une fois par semaine pour travailler, sur des séances d'environ 8h sur une journée. Sur 4 mois, cela représente un total de 128 heures par personnes, et 512 heures au total. A cela nous pouvons y ajouter toutes les heures de travail indivuduels, que nous chiffrons facilement à 30\% du projet. Soit \textbf{665 heures} au total.
+
+\paragraph{Estimation assistée}
+Etant donné que nous envoyons très régulièrement des commits, nous avons essayés d'utiliser un outil de calcul :  \textbf{git-hours}. Il calcule les heures de travail en fonction des écarts entre les commits. (Mais ne compte évidemment que le temps de développement pure, les moments passés à disctuter et débattre autour du projet en équipe ne sont donc pas comptabilisés. L'application retourne un total de \textbf{29822} minutes, soit \textbf{497 heures}. Ce qui semble totalement cohérant avec notre première éstimation, en ajoutant les heures de débats en réunion.
+
+\paragraph{Convesion en jours/hommes}
+En prenant une base de 35h par semaines, cela représente un travail de \textbf{133 jours/homme} \textit{(665/35 * 7 jours)}.
+
 \subsubsection{Modélisation Gource}
 
 Gource est une application qui permet de tracer en vidéo l’historique des commits qui construit l’architecture des fichiers d’un projet GIT.
@@ -200,7 +213,7 @@ Cette capture (figure \ref{gource_over}) représente l’état final de l’arch
 \section{Résultat et comparaison avec le prévisionnel}
 
 \paragraph{}
-Globalement à 2 semaines avant la date finale, on peut juger que l'objectif a été atteint. 
+Globalement à 2 semaines avant la date finale, on peut admettre que l'objectif a été atteint. 
 Le jeu est jouable et tout est prêt pour qu'il soit mis en ligne sur l'Apple Store et le Play Store. Les tests auprès des utilisateurs ont été concluants.
 
 \paragraph{}
@@ -222,7 +235,7 @@ Les éléments suivants n'ont pas été développés, par choix :
 \end{itemize}
 
 \paragraph{}
-Ces choix de retrait se sont faits suffisamment tôt dans le projet (à mi-parcours pour être certain d'aboutir à un jeu fonctionnel. Nous avons préféré nous concentrer sur les tâches listées si dessus. Ce fut tout de même un travail important.
+Ces choix de retrait se sont faits suffisamment tôt dans le projet (à mi-parcours pour être certain d'aboutir à un jeu fonctionnel). Nous avons préféré nous concentrer sur les tâches listées si dessus. Ce fut tout de même un travail important.
 
 \paragraph{}
 Nous sommes globalement satisfaits de notre gestion du temps, et nous pensons que notre organisation y a beaucoup contribué.
