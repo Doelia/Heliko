@@ -564,5 +564,17 @@ Finalement nous avons terminé par trouver la raison du problème : Une simple c
   \label{transitions_scenes}
 \end{figure}
 
+\subsection{Optimisation du poids de l'application}
+
+Une application ne doit pas avoir un poids trop élevé si elle veut rester cohérente sur une vitrine.  Pour cela, Unity propose plusieurs façon de compresser les fichiers composant l'application. Ainsi, pour compresser les images utilisées dans les \textit{sprites}, il est possible de les compresser en diminuant leur taille initiale ou bien en choisissant un algorithme de compression différent.
+
+Bien entendu cela impacte la qualité de jeu de l'utilisateur sur des périphériques à grand écran comme les tablettes ou les derniers smartphones, c'est pour cela que Unity propose de n'appliquer les compressions voulues seulement sur un déploiement en particulier. Par exemple, il est possible de compresser les textures sur les systèmes Android et iOS, mais de garder les textures en haute-définition pour un déploiement PC.
+
+
+\begin{figure}[H]\centering
+  \includegraphics[scale=1]{./img/optimisation_poids.png}
+  \caption{Aperçu des réglages de compression des textures}
+  \label{optimisation_poids}
+\end{figure}
 
 
