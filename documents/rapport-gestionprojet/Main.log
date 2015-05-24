@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 20:09
+=======
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 19:06
 =======
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 19:46
 >>>>>>> origin/master
+>>>>>>> 19cbf667755db7d54c885805e523719072b2e7b6
 entering extended mode
 **Main.tex
 
@@ -512,33 +516,45 @@ Package pdftex.def Info: ./img/game.png used on input line 10.
 (pdftex.def)             Requested size: 264.48747pt x 165.11647pt.
  [2 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport-gestio
 nprojet/img/game.png>] [3]
-<./img/trello.png, id=31, 280.54813pt x 297.11pt>
+<./img/trello.png, id=32, 280.54813pt x 297.11pt>
 File: ./img/trello.png Graphic file (type png)
  <use ./img/trello.png>
 Package pdftex.def Info: ./img/trello.png used on input line 92.
 (pdftex.def)             Requested size: 280.54742pt x 297.10927pt.
 
 <<<<<<< HEAD
+<./img/trello_autres.png, id=33, 282.05376pt x 298.11375pt>
+=======
+<<<<<<< HEAD
 <./img/trello_autres.png, id=31, 282.05376pt x 298.11375pt>
 =======
 <./img/trello_autres.png, id=32, 282.05376pt x 298.11375pt>
 >>>>>>> origin/master
+>>>>>>> 19cbf667755db7d54c885805e523719072b2e7b6
 File: ./img/trello_autres.png Graphic file (type png)
 
 <use ./img/trello_autres.png>
 Package pdftex.def Info: ./img/trello_autres.png used on input line 101.
 (pdftex.def)             Requested size: 282.05305pt x 298.11302pt.
  [4 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport-gestio
-nprojet/img/trello.png>] [5 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/
-documents/rapport-gestionprojet/img/trello_autres.png>] <./img/list-tests.png, 
-id=42, 102.3825pt x 137.01187pt>
+nprojet/img/trello.png>]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 119.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 119.
+ [5 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport-gestio
+nprojet/img/trello_autres.png>] <./img/list-tests.png, id=43, 102.3825pt x 137.
+01187pt>
 File: ./img/list-tests.png Graphic file (type png)
 
 <use ./img/list-tests.png>
 Package pdftex.def Info: ./img/list-tests.png used on input line 149.
 (pdftex.def)             Requested size: 102.38225pt x 137.01154pt.
  [6]
-<./img/github_commits.png, id=47, 470.25688pt x 202.7575pt>
+<./img/github_commits.png, id=48, 470.25688pt x 202.7575pt>
 File: ./img/github_commits.png Graphic file (type png)
 
 <use ./img/github_commits.png>
@@ -551,7 +567,7 @@ Overfull \hbox (39.72025pt too wide) in paragraph at lines 169--170
 
 [7 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport-gestion
 projet/img/list-tests.png>]
-<./img/punchcard.png, id=52, 474.27188pt x 255.95625pt>
+<./img/punchcard.png, id=53, 474.27188pt x 255.95625pt>
 File: ./img/punchcard.png Graphic file (type png)
 
 <use ./img/punchcard.png>
@@ -565,7 +581,7 @@ Overfull \hbox (19.41801pt too wide) in paragraph at lines 180--181
 [8 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport-gestion
 projet/img/github_commits.png> <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heli
 ko/documents/rapport-gestionprojet/img/punchcard.png>]
-<./img/gource_over.png, id=58, 1004.75375pt x 598.235pt>
+<./img/gource_over.png, id=59, 1004.75375pt x 598.235pt>
 File: ./img/gource_over.png Graphic file (type png)
 
 <use ./img/gource_over.png>
@@ -601,20 +617,31 @@ nprojet/img/gource_over.png>]) [10]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport-gestionpr
 ojet\Main.aux") ) 
 Here is how much of TeX's memory you used:
- 5198 strings out of 493921
- 71275 string characters out of 3147277
+ 5223 strings out of 493921
+ 71658 string characters out of 3147277
  165584 words of memory out of 3000000
- 8403 multiletter control sequences out of 15000+200000
- 15962 words of font info for 36 fonts, out of 3000000 for 9000
+ 8423 multiletter control sequences out of 15000+200000
+ 16582 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  37i,7n,40p,463b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecti1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\Thibaut\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Thi
-baut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
+.enc} <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\ecti1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecbx1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\Thibaut\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Thibaut\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Thi
+baut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <
 C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+<<<<<<< HEAD
+cc1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\Thibaut\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb>
+Output written on Main.pdf (11 pages, 1109751 bytes).
+=======
 bx1440.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\eccc1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
 ur\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\f
@@ -623,8 +650,9 @@ MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\Thibaut\Ap
 pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk>
 Output written on Main.pdf (11 pages, 1106748 bytes).
 >>>>>>> origin/master
+>>>>>>> 19cbf667755db7d54c885805e523719072b2e7b6
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
+ 429 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
