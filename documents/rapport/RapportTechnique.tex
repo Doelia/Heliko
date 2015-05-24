@@ -130,12 +130,17 @@ Les mouvements suivants sont définis :
 \item Swipe (lancer)
 \end{enumerate}
 
-\noindent
 
-\makebox[\textwidth]{\includegraphics[scale=1]{./img/diagEtatTransition.png}}
-\begin{center}
-\textit{Diagramme d'états-transitions des évènements}
-\end{center}
+
+\noindent
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[scale=0.7]{./img/diagEtatTransition.png}}
+  \caption{Diagramme d'états-transitions des évènements}
+  \label{diagetattrans}
+\end{figure}
+
+
+
 
 \paragraph{}
 La gestion des évènements est délicate, dans le sens où elle se joue à quelques millisecondes prêt. Un temps d'attente trop long, et le joueur retrouve un décalage entre le moment où il appuie, et le moment où l'évènement est envoyé. Trop court, et le tap bref est interprété par un tap long, et le glissé n'a pas le temps de se faire. De même, une distance trop courte, et le moindre mouvement du doigt est interprété comme un lancement. Trop longue, et le risque qu'il soit interprété comme un évènement long, ou qu'un décalage se créé, apparaît. Ainsi de nombreux tests ont dû être effectués, nécessitant un mouvement infime des paramètres, et demandant à chaque fois de faire de nouveau une compilation, un transfert sur le téléphone et un test, puisque seule l'expérimentation permet de savoir si le réglage est bon.
@@ -272,24 +277,37 @@ L'action 1 correspond à la note C, l'action 2 à la note C\#, et l'action 3 à 
 On utilise dans cet exemple le logiciel Logic Pro X sous Mac OS X. N'importe quel autre séquenceur gérant les fichiers MIDI peut être utilisé.\\
 
 On importe la musique sur une piste, et on fixe le tempo de celle-ci.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_sound.png}\\
-\end{center}
+
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_sound.png}}
+  \caption{Piste sonore}
+  \label{transitions_scenes}
+\end{figure}
 
 On ajoute sur une seconde piste vide un instrument qui représente le niveau à créer, sur laquelle on va ajouter les actions.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_midi.png}\\
-\end{center}
+
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_midi.png}}
+  \caption{Piste MIDI}
+  \label{transitions_scenes}
+\end{figure}
+
 
 On pose ensuite les notes qui représentent les actions sur cette piste, puis on écoute le tout en temps réel pour superposer proprement chacune des actions sur la musique. On utilise des notes différentes pour chaque type d'action. Ici le DO pour une action 1, le DO\# pour une action 2, etc.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_edit.png}\\
-\end{center}
+
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_edit.png}}
+  \caption{Editeur de notes de Logic Pro}
+  \label{pianoroll}
+\end{figure}
 
 Une fois le niveau construit, il ne reste plus qu'à exporter la piste au format .midi, et de le passer au convertisseur pour obtenir le niveau au format .txt.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_export.png}\\
-\end{center}
+
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_export.png}}
+  \caption{Fichier .txt du niveau en sortie}
+  \label{level}
+\end{figure}
 
 \subsection{Avancement du joueur}
 
@@ -511,9 +529,11 @@ Après plusieurs heures de recherche sur les éléments de notre créations qui 
 \paragraph{}
 Finalement nous avons terminé par trouver la raison du problème : Une simple case à cocher dans l'une des centaines de menu de Unity. Le moteur devient optimisé pour jouer les sons rapidement, et tout les problèmes de synchronisation disparaissent. Ce n'est qu'un simple exemple démontrant l'importance de la configuration de Unity pour l'exportation d'un jeu optimisé sur toutes les plateformes.
 
-\begin{center}
-\includegraphics[scale=1]{./img/opti_sound.png}\\
-\textit{Paramètre pour la synchronisation des sons}
-\end{center}
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[scale=1]{./img/opti_sound.png}}
+  \caption{Paramètre pour la synchronisation des sons}
+  \label{transitions_scenes}
+\end{figure}
+
 
 
