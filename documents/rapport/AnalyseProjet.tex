@@ -64,16 +64,25 @@ Un mini jeu est constitué d’une scène unique et minimaliste animée par une 
   \label{rhythmParadise}
 \end{figure}
 
+\paragraph{} Sur la figure \ref{rhythmParadise}, le joueur doit attraper des petit pois en abaissant la fourchette au bon moment après un signal. C'est un bon exemple de mini jeu.
+
 \paragraph{} Le joueur doit apprendre quelques mouvements propres au mini jeu dans un entraînement. Une fois les mouvements acquis, le joueur peut tenter de réussir le mini jeu. La musique commence, et il doit réussir un maximum de mouvements dans le temps fixé (1mn30 - 2mn environ)
 \paragraph{} Ce mouvement peut être de nature varié : Il peut s’agir de tout simplement frapper un rythme synchronisé avec la musique, ou de répéter précisément une série de rythmes joués, ou de frapper après un signal avec un délai plus ou moins long, etc.
+
+
+
 \paragraph{} A la fin du niveau, un score est généré. S’il est supérieur à un certain seuil exigé, le mini jeu passe en mode “réussi” et le joueur débloque l’objet associé sur sa planète.
-Il existe plusieurs états pour un mini jeu :
+Il existe plusieurs issues pour un mini jeu :
 \begin{itemize}
 \item Non réalisé
 \item Réussi
-\item Super (Médaille)
+\item Bien réalisé 
 \item Parfait
 \end{itemize}
+
+\paragraph{}
+Ces issues seront représentées par un nombre d'étoile, allant de un à trois.
+
 \paragraph{Notions techniques}
 Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’un nouveau concept rythmique. Il n’est pas possible de les générer à la volée. On mettra en place des mécaniques précises qu’on pourra réutiliser sur chacun des mini jeux pour les créer le plus facilement possible. Pour les graphismes, de très simples dessins en 2D seront utilisés,. 
 
@@ -83,7 +92,7 @@ Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’
 \paragraph{} La somme de ses scores réalisés au fil du temps est convertie sous la forme d’une monnaie avec laquelle il peut acheter des effets de lumières et décorations supplémentaires à disposer sur sa planète afin de la personnaliser.
 
 \subsection{Partage}
-L’avancement des joueurs, et la personnalisation des planètes, est stockée dans le cloud. Un joueur peut montrer sa planète à ses amis afin de montrer son avancement et ses scores.
+L’avancement des joueurs, et la personnalisation des planètes, est stockée dans le cloud. Un joueur peut montrer sa planète à ses amis et leur faire découvrir son avancement et ses scores.
 
 \subsection{Monétisation}
 En fonction de l’avancement final du projet, un système de monétisation sera choisi. Il pourra s’agir de la vente de monnaie supplémentaire pour la personnalisation par exemple, ou simplement de mettre en place un système de publicités judicieusement mis en place. Cette monétisation s'accompagnera d'une étude des différents services de paiements proposés pour les téléphones mobiles.
