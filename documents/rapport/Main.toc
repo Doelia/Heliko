@@ -27,11 +27,12 @@
 \contentsline {section}{\numberline {3}Rapport d'activit\IeC {\'e}}{8}
 \contentsline {subsection}{\numberline {3.1}Organisation du travail}{8}
 \contentsline {subsection}{\numberline {3.2}Outils de d\IeC {\'e}veloppement}{8}
-\contentsline {subsubsection}{\numberline {3.2.1}Communcation}{8}
+\contentsline {subsubsection}{\numberline {3.2.1}Communication}{8}
 \contentsline {subsubsection}{\numberline {3.2.2}Unity}{8}
 \contentsline {paragraph}{Pourquoi utiliser Unity ?}{8}
 \contentsline {paragraph}{Fonctionnalit\IeC {\'e}s d'Unity}{9}
 \contentsline {paragraph}{Principe de Unity}{9}
+\contentsline {paragraph}{Co\IeC {\^u}t de Unity}{9}
 \contentsline {section}{\numberline {4}Rapport technique}{10}
 \contentsline {subsection}{\numberline {4.1}Moteur de jeu rythmique}{10}
 \contentsline {paragraph}{}{10}
@@ -67,10 +68,10 @@
 \contentsline {paragraph}{}{24}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
-\contentsline {subsection}{\numberline {4.6}Assemblage des jeux}{26}
-\contentsline {subsection}{\numberline {4.7}Mise en ligne}{26}
-\contentsline {subsubsection}{\numberline {4.7.1}Probl\IeC {\`e}me de synchronisation}{26}
-\contentsline {paragraph}{}{26}
+\contentsline {subsection}{\numberline {4.6}Assemblage des jeux}{25}
+\contentsline {subsection}{\numberline {4.7}Mise en ligne}{25}
+\contentsline {subsubsection}{\numberline {4.7.1}Probl\IeC {\`e}me de synchronisation}{25}
+\contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{27}
