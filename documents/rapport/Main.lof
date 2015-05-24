@@ -1,49 +1,49 @@
 \select@language {french}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Prototype de plan\IeC {\`e}te \IeC {\`a} remplir}}{8}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemple de mini jeu, pr\IeC {\'e}sent dans le jeu "Rhythm Paradize"}}{8}{figure.2.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Prototype de plan\IeC {\`e}te \IeC {\`a} remplir}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemple de mini jeu, pr\IeC {\'e}sent dans le jeu "Rhythm Paradize"}}{6}{figure.2.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Les diff\IeC {\'e}rents projets Unity de tests}}{11}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple de colonnes en fin de projet}}{12}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Utilisation de Trello comme m\IeC {\'e}mo et archives}}{13}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces R\IeC {\'e}partition des commits dans le temps}}{14}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Punch card de Github}}{15}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Mod\IeC {\'e}lisation Gource en fin de projet}}{15}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Interface de Unity}}{16}{figure.3.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Les diff\IeC {\'e}rents projets Unity de tests}}{9}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple de colonnes en fin de projet}}{10}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Utilisation de Trello comme m\IeC {\'e}mo et archives}}{11}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces R\IeC {\'e}partition des commits dans le temps}}{12}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Punch card de Github}}{13}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Mod\IeC {\'e}lisation Gource en fin de projet}}{13}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Interface de Unity}}{14}{figure.3.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemple de niveau}}{20}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme d'\IeC {\'e}tats-transitions des \IeC {\'e}v\IeC {\`e}nements}}{21}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Piste sonore}}{26}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Piste MIDI}}{26}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \IeC {\'E}diteur de notes de Logic Pro}}{27}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Fichier .txt du niveau en sortie}}{27}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Score du joueur affich\IeC {\'e}}}{28}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces S\IeC {\'e}lection des mini-jeux}}{28}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Exemple visuel de fichier graphique vectoriel}}{29}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Exemple d'utilisation de cl\IeC {\'e}s sur une ligne temporelle}}{30}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Interpolation simple entre trois cl\IeC {\'e}s d\IeC {\'e}finissant la position y de l'objet}}{30}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagramme d'\IeC {\'e}tat utilis\IeC {\'e} pour l'animation}}{30}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Compteur du nombre de r\IeC {\'e}p\IeC {\'e}titions restantes}}{32}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Bouton skip verrouill\IeC {\'e}}}{33}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Pop up correspondante}}{33}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Bouton skip d\IeC {\'e}verrouill\IeC {\'e}}}{33}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Pop up correspondante}}{33}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Transitions entre les sc\IeC {\`e}nes du jeu}}{33}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces \IeC {\'E}cran de chargement}}{34}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Sc\IeC {\`e}ne normale}}{34}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Fermeture en cercle}}{34}{figure.4.21}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Aper\IeC {\c c}u des statistiques fournies pas Google Analytics}}{35}{figure.4.22}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Param\IeC {\`e}tre pour la synchronisation des sons}}{37}{figure.4.23}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Aper\IeC {\c c}u des r\IeC {\'e}glages de compression des textures}}{37}{figure.4.24}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemple de niveau}}{18}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme d'\IeC {\'e}tats-transitions des \IeC {\'e}v\IeC {\`e}nements}}{19}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Piste sonore}}{24}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Piste MIDI}}{24}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \IeC {\'E}diteur de notes de Logic Pro}}{25}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Fichier .txt du niveau en sortie}}{25}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Score du joueur affich\IeC {\'e}}}{26}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces S\IeC {\'e}lection des mini-jeux}}{26}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Exemple visuel de fichier graphique vectoriel}}{27}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Exemple d'utilisation de cl\IeC {\'e}s sur une ligne temporelle}}{28}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Interpolation simple entre trois cl\IeC {\'e}s d\IeC {\'e}finissant la position y de l'objet}}{28}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagramme d'\IeC {\'e}tat utilis\IeC {\'e} pour l'animation}}{28}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Compteur du nombre de r\IeC {\'e}p\IeC {\'e}titions restantes}}{30}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Bouton skip verrouill\IeC {\'e}}}{31}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Pop up correspondante}}{31}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Bouton skip d\IeC {\'e}verrouill\IeC {\'e}}}{31}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Pop up correspondante}}{31}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Transitions entre les sc\IeC {\`e}nes du jeu}}{31}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \IeC {\'E}cran de chargement}}{32}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Sc\IeC {\`e}ne normale}}{32}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Fermeture en cercle}}{32}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Aper\IeC {\c c}u des statistiques fournies pas Google Analytics}}{33}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Param\IeC {\`e}tre pour la synchronisation des sons}}{35}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Aper\IeC {\c c}u des r\IeC {\'e}glages de compression des textures}}{35}{figure.4.24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces L'\IeC {\'e}cran d'accueil de l'application}}{38}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces L'\IeC {\'e}cran de choix du niveau}}{39}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Le niveau de la Marche des escargots}}{40}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Le niveau du magicien}}{40}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Le niveau des champignons}}{41}{figure.5.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces L'\IeC {\'e}cran d'accueil de l'application}}{36}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces L'\IeC {\'e}cran de choix du niveau}}{37}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Le niveau de la Marche des escargots}}{38}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Le niveau du magicien}}{38}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Le niveau des champignons}}{39}{figure.5.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Concept du jeu du moulin}}{42}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Concept d'un jeu de chevaliers}}{42}{figure.6.2}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Concept du jeu du moulin}}{40}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Concept d'un jeu de chevaliers}}{40}{figure.6.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
