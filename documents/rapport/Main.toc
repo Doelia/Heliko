@@ -87,11 +87,20 @@
 \contentsline {paragraph}{}{29}
 \contentsline {subsection}{\numberline {4.8}Services externes}{30}
 \contentsline {subsubsection}{\numberline {4.8.1}Statistique et Analyse}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
 \contentsline {subsubsection}{\numberline {4.8.2}Publicit\IeC {\'e}}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
 \contentsline {subsubsection}{\numberline {4.8.3}Version payante sans pub}{31}
-\contentsline {subsection}{\numberline {4.9}Mise en ligne}{32}
-\contentsline {subsubsection}{\numberline {4.9.1}Probl\IeC {\`e}me de synchronisation}{32}
+\contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{32}
+\contentsline {subsection}{\numberline {4.9}Mise en ligne}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {subsubsection}{\numberline {4.9.1}Probl\IeC {\`e}me de synchronisation}{33}
+\contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
 \contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{34}
