@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,53 +405,51 @@ Package: listings 2014/03/04 1.5c (Carsten Heinz)
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box32
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count104
+\float@exts=\toks23
+\float@box=\box33
+\@float@everytoks=\toks24
+\@floatcapt=\box34
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./Main.aux
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-)
+(./Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Info: Redefining \degres on input line 33.
-LaTeX Info: Redefining \dots on input line 33.
-LaTeX Info: Redefining \up on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Info: Redefining \degres on input line 34.
+LaTeX Info: Redefining \dots on input line 34.
+LaTeX Info: Redefining \up on input line 34.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
+\scratchcounter=\count105
 \scratchdimen=\dimen115
-\scratchbox=\box33
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count107
+\scratchbox=\box35
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count108
 \MPscratchDim=\dimen116
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -496,8 +494,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box34
-\c@lstlisting=\count110
+\AtBeginShipoutBox=\box36
+\c@lstlisting=\count111
 
 (./Title.tex <./img/logoUM.png, id=1, 96.36pt x 96.36pt>
 File: ./img/logoUM.png Graphic file (type png)
@@ -520,45 +518,37 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogoUM.png> <./img/logo.png>]) [1] [2] (./Main.toc
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 46.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 46.
- [1])
+ogoUM.png> <./img/logo.png>]) [1] [2] (./Main.toc)
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
- [2]
-(./Introduction.tex) [3] (./AnalyseProjet.tex [4]
-<img/protoPlanete.png, id=41, 703.12688pt x 560.0925pt>
+
+[1] (./Introduction.tex) [2] (./AnalyseProjet.tex [3]
+<img/protoPlanete.png, id=36, 703.12688pt x 560.0925pt>
 File: img/protoPlanete.png Graphic file (type png)
 
 <use img/protoPlanete.png>
 Package pdftex.def Info: img/protoPlanete.png used on input line 26.
 (pdftex.def)             Requested size: 281.24576pt x 224.03302pt.
- [5 <./img/protoPlanete.png>]
-<img/rhythmParadise.png, id=46, 628.59843pt x 432.86719pt>
+ [4 <./img/protoPlanete.png>]
+<img/rhythmParadise.png, id=42, 628.59843pt x 432.86719pt>
 File: img/rhythmParadise.png Graphic file (type png)
 
 <use img/rhythmParadise.png>
 Package pdftex.def Info: img/rhythmParadise.png used on input line 36.
 (pdftex.def)             Requested size: 251.4349pt x 173.1438pt.
- [6 <./img/rhythmParadise.png>]
+ [5 <./img/rhythmParadise.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
-) [7] (./RapportActivite.tex <./img/unity-3D.png, id=54, 1284.8pt x 847.165pt>
+) [6] (./RapportActivite.tex <./img/unity-3D.png, id=50, 1284.8pt x 847.165pt>
 File: ./img/unity-3D.png Graphic file (type png)
 
 <use ./img/unity-3D.png>
 Package pdftex.def Info: ./img/unity-3D.png used on input line 18.
 (pdftex.def)             Requested size: 359.74155pt x 237.20457pt.
- [8 <./img/unity-3D.png>]) [9] (./RapportTechnique.tex
+ [7 <./img/unity-3D.png>]) [8] (./RapportTechnique.tex
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
@@ -573,7 +563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[10]
+[9]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -600,7 +590,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--70
 
  []
 
-[11]
+[10]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 73.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 73.
+
 Underfull \hbox (badness 10000) in paragraph at lines 73--77
 
  []
@@ -633,7 +630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-[12]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 112--121
 
  []
@@ -653,66 +650,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-<./img/diagEtatTransition.png, id=77, 519.89232pt x 234.42581pt>
+<./img/diagEtatTransition.png, id=74, 519.89232pt x 234.42581pt>
 File: ./img/diagEtatTransition.png Graphic file (type png)
 
 <use ./img/diagEtatTransition.png>
-Package pdftex.def Info: ./img/diagEtatTransition.png used on input line 137.
+Package pdftex.def Info: ./img/diagEtatTransition.png used on input line 135.
 (pdftex.def)             Requested size: 363.92215pt x 164.09694pt.
 
-Overfull \hbox (3.92215pt too wide) in paragraph at lines 137--138
+Overfull \hbox (3.92215pt too wide) in paragraph at lines 135--136
  [][] 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--165
+Underfull \hbox (badness 10000) in paragraph at lines 154--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--165
+Underfull \hbox (badness 10000) in paragraph at lines 154--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--165
+Underfull \hbox (badness 10000) in paragraph at lines 154--161
 
  []
 
-[14 <./img/diagEtatTransition.png>]
-<./img/diagramme_moteur.png, id=86, 487.3407pt x 337.5009pt>
+[13 <./img/diagEtatTransition.png>]
+<./img/diagramme_moteur.png, id=83, 487.3407pt x 337.5009pt>
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
-Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 169.
+Package pdftex.def Info: ./img/diagramme_moteur.png used on input line 165.
 (pdftex.def)             Requested size: 487.33951pt x 337.50008pt.
- [15 <./img/diagramme_moteur.png>]
+ [14 <./img/diagramme_moteur.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 191.
+(Font)              scaled to size 8.99994pt on input line 187.
 
-Overfull \hbox (3.00288pt too wide) in paragraph at lines 190--194
+Overfull \hbox (3.00288pt too wide) in paragraph at lines 186--190
 \T1/fvm/m/n/10 fichier midi = <header chunk> + <track chunk> [+ <track chunk> .
 ..] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--194
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
 
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 190--194
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 186--190
 \T1/fvm/m/n/10 header chunk = "MThd" + <header length> + <format> + <n> + <divi
 sion> 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--194
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
@@ -721,137 +718,123 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2014/03/04 1.5c listings language file
-) [16]
-Overfull \hbox (13.83879pt too wide) in paragraph at lines 204--208
+) [15]
+Overfull \hbox (13.83879pt too wide) in paragraph at lines 200--204
 \T1/fvm/m/n/10 track chunk = "MTrk" + <length> + <track event> [+ <track event>
  ...] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--208
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--208
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--208
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--224
+Underfull \hbox (badness 10000) in paragraph at lines 217--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
-[17]
-Underfull \hbox (badness 1552) in paragraph at lines 247--247
+[16]
+Underfull \hbox (badness 1552) in paragraph at lines 243--243
 []\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
  []
 
-<./img/vlqOctet.png, id=98, 130.98938pt x 65.24374pt>
+<./img/vlqOctet.png, id=95, 130.98938pt x 65.24374pt>
 File: ./img/vlqOctet.png Graphic file (type png)
  <use ./img/vlqOctet.png>
-Package pdftex.def Info: ./img/vlqOctet.png used on input line 247.
+Package pdftex.def Info: ./img/vlqOctet.png used on input line 243.
 (pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
 
-[18 <./img/vlqOctet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+[17 <./img/vlqOctet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-<./img/logic_sound.png, id=103, 1439.3775pt x 354.32375pt>
+<./img/logic_sound.png, id=100, 1439.3775pt x 354.32375pt>
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
-Package pdftex.def Info: ./img/logic_sound.png used on input line 282.
+Package pdftex.def Info: ./img/logic_sound.png used on input line 279.
 (pdftex.def)             Requested size: 312.9803pt x 77.04315pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
-<./img/logic_midi.png, id=104, 1125.20375pt x 350.30875pt>
+<./img/logic_midi.png, id=101, 1125.20375pt x 350.30875pt>
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
-Package pdftex.def Info: ./img/logic_midi.png used on input line 290.
+Package pdftex.def Info: ./img/logic_midi.png used on input line 288.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
-
- []
-
-<./img/logic_edit.png, id=105, 1039.885pt x 367.3725pt>
+ [18 <./img/logic_sound.png>]
+<./img/logic_edit.png, id=106, 1039.885pt x 367.3725pt>
 File: ./img/logic_edit.png Graphic file (type png)
 
 <use ./img/logic_edit.png>
-Package pdftex.def Info: ./img/logic_edit.png used on input line 299.
+Package pdftex.def Info: ./img/logic_edit.png used on input line 298.
 (pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-
- []
-
-<./img/logic_export.png, id=106, 703.62875pt x 117.43875pt>
+<./img/logic_export.png, id=107, 703.62875pt x 117.43875pt>
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
 Package pdftex.def Info: ./img/logic_export.png used on input line 307.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
- [19 <./img/logic_sound.png>] [20 <./img/logic_midi.png> <./img/logic_edit.png>
- <./img/logic_export.png>]
-<./img/MenuMort.png, id=117, 183.68625pt x 206.27063pt>
+ [19 <./img/logic_midi.png> <./img/logic_edit.png> <./img/logic_export.png>]
+<./img/MenuMort.png, id=114, 183.68625pt x 206.27063pt>
 File: ./img/MenuMort.png Graphic file (type png)
 
 <use ./img/MenuMort.png>
 Package pdftex.def Info: ./img/MenuMort.png used on input line 330.
 (pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
-
+ [20 <./img/MenuMort.png>]
 <./img/SelectionMiniJeu.png, id=118, 268.00125pt x 210.7875pt>
 File: ./img/SelectionMiniJeu.png Graphic file (type png)
 
 <use ./img/SelectionMiniJeu.png>
 Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 339.
 (pdftex.def)             Requested size: 241.19888pt x 189.707pt.
- [21 <./img/MenuMort.png>]
+ [21 <./img/SelectionMiniJeu.png>]
 <./img/technique_graphismes.png, id=122, 335.75438pt x 463.7325pt>
 File: ./img/technique_graphismes.png Graphic file (type png)
 
@@ -859,16 +842,16 @@ File: ./img/technique_graphismes.png Graphic file (type png)
 Package pdftex.def Info: ./img/technique_graphismes.png used on input line 357.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
- [22 <./img/SelectionMiniJeu.png>]
-<./img/technique_animation1.png, id=127, 625.58719pt x 139.27031pt>
+
+<./img/technique_animation1.png, id=123, 625.58719pt x 139.27031pt>
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
 Package pdftex.def Info: ./img/technique_animation1.png used on input line 368.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
- [23 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
-<./img/technique_animation2.png, id=132, 627.09282pt x 163.3603pt>
+ [22 <./img/technique_graphismes.png>]
+<./img/technique_animation2.png, id=129, 627.09282pt x 163.3603pt>
 File: ./img/technique_animation2.png Graphic file (type png)
 
 <use ./img/technique_animation2.png>
@@ -876,62 +859,72 @@ Package pdftex.def Info: ./img/technique_animation2.png used on input line 375.
 
 (pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
 
-<./img/technique_animation3.png, id=133, 344.78813pt x 165.61874pt>
+<./img/technique_animation3.png, id=130, 344.78813pt x 165.61874pt>
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
 Package pdftex.def Info: ./img/technique_animation3.png used on input line 382.
 
 (pdftex.def)             Requested size: 275.83087pt x 132.49516pt.
- [24 <./img/technique_animation2.png> <./img/technique_animation3.png>] [25]
-<./img/compteur_tuto.png, id=140, 679.78969pt x 322.95656pt>
+ [23 <./img/technique_animation1.png> <./img/technique_animation2.png> <./img/t
+echnique_animation3.png>] [24]
+<./img/compteur_tuto.png, id=137, 679.78969pt x 322.95656pt>
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
 Package pdftex.def Info: ./img/compteur_tuto.png used on input line 421.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
 
-<./img/skip_locked.png, id=141, 717.43031pt x 447.92343pt>
+<./img/skip_locked.png, id=138, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
 Package pdftex.def Info: ./img/skip_locked.png used on input line 431.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_locked_popup.png, id=142, 717.43031pt x 447.92343pt>
+<./img/skip_locked_popup.png, id=139, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
 Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 436.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_unlocked.png, id=143, 718.93594pt x 447.92343pt>
+<./img/skip_unlocked.png, id=140, 718.93594pt x 447.92343pt>
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
 Package pdftex.def Info: ./img/skip_unlocked.png used on input line 442.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
-<./img/skip_unlocked_popup.png, id=144, 719.68875pt x 447.92343pt>
+<./img/skip_unlocked_popup.png, id=141, 719.68875pt x 447.92343pt>
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
 Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 447.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
- [26 <./img/compteur_tuto.png (PNG copy)> <./img/skip_locked.png> <./img/skip_l
-ocked_popup.png> <./img/skip_unlocked.png> <./img/skip_unlocked_popup.png>]
-<./img/scenes-transitions.png, id=148, 339.1872pt x 247.6452pt>
+
+
+LaTeX Warning: Reference `transitions_scenes' on page 25 undefined on input lin
+e 458.
+
+[25 <./img/compteur_tuto.png (PNG copy)>]
+<./img/scenes-transitions.png, id=145, 339.1872pt x 247.6452pt>
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
 Package pdftex.def Info: ./img/scenes-transitions.png used on input line 461.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
-
+ [26 <./img/skip_locked.png> <./img/skip_locked_popup.png> <./img/skip_unlocked
+.png> <./img/skip_unlocked_popup.png> <./img/scenes-transitions.png (PNG copy)>
+]
 <./img/loading.png, id=149, 532.99126pt x 255.20343pt>
 File: ./img/loading.png Graphic file (type png)
  <use ./img/loading.png>
 Package pdftex.def Info: ./img/loading.png used on input line 470.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
+
+
+LaTeX Warning: Reference `cartoon' on page 27 undefined on input line 476.
 
 <./img/scene.png, id=150, 718.93594pt x 448.67625pt>
 File: ./img/scene.png Graphic file (type png)
@@ -945,32 +938,34 @@ File: ./img/cartoon.png Graphic file (type png)
 Package pdftex.def Info: ./img/cartoon.png used on input line 485.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-[27 <./img/scenes-transitions.png (PNG copy)>] [28 <./img/loading.png (PNG copy
-)> <./img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
-<./img/GoogleAnalytics.png, id=159, 514.17094pt x 289.08pt>
+[27 <./img/loading.png (PNG copy)> <./img/scene.png (PNG copy)> <./img/cartoon.
+png (PNG copy)>] <./img/GoogleAnalytics.png, id=155, 514.17094pt x 289.08pt>
 File: ./img/GoogleAnalytics.png Graphic file (type png)
 
 <use ./img/GoogleAnalytics.png>
 Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 501.
 (pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
- [29 <./img/GoogleAnalytics.png>] [30]
-<./img/opti_sound.png, id=167, 141.52875pt x 121.45375pt>
+ [28 <./img/GoogleAnalytics.png>] [29]
+<./img/opti_sound.png, id=164, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
 Package pdftex.def Info: ./img/opti_sound.png used on input line 533.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
-) [31 <./img/opti_sound.png>] (./Resultat.tex)
-[32] (./Bilan.tex) [33] (./Annexes.tex) [34] (./Main.aux)
+) [30] (./Resultat.tex) [31 <./img/opti_sound.png>]
+(./Bilan.tex) [32] (./Annexes.tex) [33] (./Main.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6822 strings out of 493117
- 93597 string characters out of 6135433
- 222079 words of memory out of 5000000
- 10116 multiletter control sequences out of 15000+600000
+ 6878 strings out of 493117
+ 94338 string characters out of 6135433
+ 223297 words of memory out of 5000000
+ 10168 multiletter control sequences out of 15000+600000
  20179 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,40p,1255b,1444s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -994,10 +989,10 @@ m-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-su
 per/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb>
-Output written on Main.pdf (37 pages, 3973590 bytes).
+Output written on Main.pdf (36 pages, 3970952 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 238 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
