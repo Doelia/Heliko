@@ -6,12 +6,11 @@ Nous avons proposé notre propre projet dans l’optique de créer un jeu pour t
 \paragraph{}
 La difficulté relève dans un grand travail de recherche : le jeu doit être intéressant et être réalisable afin de pouvoir le mettre en ligne dans le temps donné. La méthode de gestion de projet avait une grande importance.
 
-\paragraph{}
-\noindent
-\makebox[\textwidth]{\includegraphics[scale=1]{./img/game.png}}
-\begin{center}
-\textit{Extrait du jeu final}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=1]{./img/game.png}}
+  \caption{Extrait du jeu final}
+  \label{game}
+\end{figure}
 
 \section{Analyse de départ}
 
@@ -89,22 +88,20 @@ Un système de rangement vertical a été adopté pour les types de tâches, et 
 \paragraph{}
 Les tâches sont classées dans des colonnes “TODO” triées par thèmes (développement, graphismes…), ou par cycle itératif (d’un jour à une semaine).
 
-\paragraph{}
-\noindent
-\makebox[\textwidth]{\includegraphics[scale=1]{./img/trello.png}}
-\begin{center}
-\textit{Exemple de colonnes en fin de projet}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=1]{./img/trello.png}}
+  \caption{Exemple de colonnes en fin de projet}
+  \label{trelloc}
+\end{figure}
 
 \paragraph{}
-Trello a aussi été utilisé comme mémo et pour archiver les ressources graphiques et sonores.
+Trello a aussi été utilisé comme mémo et pour archiver les ressources graphiques et sonores (figure \ref{trellomemo}).
 
-\paragraph{}
-\noindent
-\makebox[\textwidth]{\includegraphics[scale=1]{./img/trello_autres.png}}
-\begin{center}
-\textit{Utilisation de Trello comme mémo et archives }
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=1]{./img/trello_autres.png}}
+  \caption{Utilisation de Trello comme mémo et archives}
+  \label{trellomemo}
+\end{figure}
 
 \paragraph{}
 Cette méthode de travail avec Trello nous a permis d’être efficace 100\% du temps au travers d'Internet. Il n’y avait jamais de temps mort et nous étions toujours clair dans notre direction tant que quelqu’un (chef de projet) s’occupait de créer des tâches et de les organiser.
@@ -148,16 +145,14 @@ Les premières semaines ont été dédiés à la réalisation de prototypes et d
 \item Etc.
 \end{itemize}
 
-\paragraph{}
-\noindent
-\makebox[\textwidth]{\includegraphics[scale=1]{./img/list-tests.png}}
-\begin{center}
-\textit{Les différents projets Unity de tests
-}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=1]{./img/list-tests.png}}
+  \caption{Les différents projets Unity de tests}
+  \label{listte}
+\end{figure}
 
 \paragraph{}
-A chaque nouveau test, un nouveau projet Unity. Au \textbf{test 14}, nous avons jugés que le moteur correspondait à nos attentes et nous avons ensuite itéré directement sur ce projet. C’est à ce moment (environs 1 mois après le début du projet) que le système de fonctionnement à changé et que nous avons fonctionné en micro-tâches.
+On voit sur la figure \ref{listte} l'ensemble de nos tests. A chaque nouveau test, un nouveau projet Unity. Au \textbf{test 14}, nous avons jugés que le moteur correspondait à nos attentes et nous avons ensuite itéré directement sur ce projet. C’est à ce moment (environs 1 mois après le début du projet) que le système de fonctionnement à changé et que nous avons fonctionné en micro-tâches.
 
 \paragraph{}
 Les dernières semaines ont été dédiés aux finitions sur le projet afin de rendre le jeu agréable avec un aspect “fini”.
@@ -170,39 +165,37 @@ Un gestionnaire de version pour notre projet a bien sûr été utilisé et nous 
 \paragraph{}
 Déjà habitués à Git, nous l'avons utilisé pleinement et nous avons envoyés des \emph{commits} pour chaque modification fonctionnelle. Nous sommes ainsi arrivé en fin de projet avec un cumule de de \textbf{900 commits}, globalement bien répartis entre nous quatre. (Avec plus de 2 millions de modifications dans les fichiers...).
 
-\paragraph{}
-\noindent
-\makebox[\textwidth]{\includegraphics[scale=1]{./img/github_commits}}
-\begin{center}
-\textit{Répartition des commits dans le temps}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.85]{./img/github_commits.png}}
+  \caption{Répartition des commits dans le temps}
+  \label{github_commits}
+\end{figure}
 
 \paragraph{}
-On remarque de nombreuses suppressions (presque autant que d’additions), prouvant l’évolution du projet et l’application des cycles itératifs. Le développement s’est fait continuellement dans le temps.
+On remarque d'après la figure \ref{github_commits} de nombreuses suppressions (presque autant que d’additions), prouvant l’évolution du projet et l’application des cycles itératifs. Le développement s’est fait continuellement dans le temps.
 
 \subsubsection{Ponctualité hebdomadaire}
 
-\noindent
-\makebox[\textwidth]{\includegraphics[scale=.7]{./img/punchcard.png}}
-\begin{center}
-\textit{Punch card de Github}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.8]{./img/punchcard.png}}
+  \caption{Punch card de Github}
+  \label{punchcard}
+\end{figure}
 
-D’après les statistiques \emph{Github}, nous avons travaillé tous les jours de la semaine, avec une préférence pour le lundi et le mercredi en après midi et jusqu’en fin de soirée.
+D’après les statistiques \emph{Github} (figure \ref{punchcard}), nous avons travaillé tous les jours de la semaine, avec une préférence pour le lundi et le mercredi en après midi et jusqu’en fin de soirée.
 
 \subsubsection{Modélisation Gource}
 
 Gource est une application qui permet de tracer en vidéo l’historique des commits qui construit l’architecture des fichiers d’un projet GIT.
 
 \paragraph{}
-Cette capture représente l’état final de l’architecture des fichiers du projet. La taille de la branche des tests démontre qu'ils ont effectivement constituée une grande partie du projet (Environs 30\%).
+Cette capture (figure \ref{gource_over}) représente l’état final de l’architecture des fichiers du projet. La taille de la branche des tests démontre qu'ils ont effectivement constituée une grande partie du projet (Environs 30\%).
 
-\paragraph{}
-\noindent
-\makebox[\textwidth]{\includegraphics[scale=.4]{./img/gource_over.png}}
-\begin{center}
-\textit{Modélisation Gource en fin de projet}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.3]{./img/gource_over.png}}
+  \caption{Modélisation Gource en fin de projet}
+  \label{gource_over}
+\end{figure}
 
 \section{Résultat et comparaison avec le prévisionnel}
 
