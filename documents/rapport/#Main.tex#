@@ -53,32 +53,24 @@ frame=single
   morekeywords={andmap, lambda, take, to-string, to-int, header, read-n-bytes, sublist?, cdr, make-list, hash-ref, vlq->int, known-event?, define}
 }
 
-
-\begin{document}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-
 \pagestyle{fancy}
 \renewcommand\headrulewidth{1pt}
 \fancyhead[L]{}
 \fancyhead[R]{\leftmark}
 
+\begin{document}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
 \input{Title.tex}
 
 \newpage 
-~
+
 \thispagestyle{empty}
 
 \newpage
 
 \thispagestyle{empty}
 \section*{Remerciements}
-
-Nous remercions tout particulièrement M. Lafourcade de nous avoir encadrés, soutenus et prodigué de bons conseils, tout le long de la réalisation de ce projet
-
-Nous tenons à remercier M. Bourreau, ainsi que les intervenants de son cours, de nous avoir aidés à y voir plus clair dans notre organisation du projet.
-
-Nous remercions également toutes les personnes qui nous apportés des retours et de précieux conseils sur nos différentes versions de tests du jeu tout au long de son développement.
-
 
 \newpage
 
