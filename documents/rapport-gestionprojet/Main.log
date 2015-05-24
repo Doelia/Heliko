@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 20:09
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 19:06
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.5)  24 MAY 2015 19:46
+>>>>>>> origin/master
+>>>>>>> 19cbf667755db7d54c885805e523719072b2e7b6
 entering extended mode
 **Main.tex
 
@@ -425,8 +433,14 @@ Package: beramono 2004/01/31 (WaS)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
+<<<<<<< HEAD
+(./Main.aux)
+\openout1 = `Main.aux'.
+
+=======
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport-gestionpr
 ojet\Main.aux")
+>>>>>>> origin/master
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
@@ -508,7 +522,15 @@ File: ./img/trello.png Graphic file (type png)
 Package pdftex.def Info: ./img/trello.png used on input line 92.
 (pdftex.def)             Requested size: 280.54742pt x 297.10927pt.
 
+<<<<<<< HEAD
 <./img/trello_autres.png, id=33, 282.05376pt x 298.11375pt>
+=======
+<<<<<<< HEAD
+<./img/trello_autres.png, id=31, 282.05376pt x 298.11375pt>
+=======
+<./img/trello_autres.png, id=32, 282.05376pt x 298.11375pt>
+>>>>>>> origin/master
+>>>>>>> 19cbf667755db7d54c885805e523719072b2e7b6
 File: ./img/trello_autres.png Graphic file (type png)
 
 <use ./img/trello_autres.png>
@@ -565,6 +587,31 @@ File: ./img/gource_over.png Graphic file (type png)
 <use ./img/gource_over.png>
 Package pdftex.def Info: ./img/gource_over.png used on input line 195.
 (pdftex.def)             Requested size: 301.42845pt x 179.47188pt.
+<<<<<<< HEAD
+ [9 <./img/gource_over.png>]) [10] (./Main.aux) ) 
+Here is how much of TeX's memory you used:
+ 5869 strings out of 493117
+ 81444 string characters out of 6135433
+ 175351 words of memory out of 5000000
+ 9222 multiletter control sequences out of 15000+600000
+ 16638 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,10n,40p,463b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf
+-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/cm-super/sfti1200.pfb>
+Output written on Main.pdf (11 pages, 1127911 bytes).
+=======
  [9 <C:/Users/Thibaut/Dropbox/M1 IMAGINA/TER_M1/Heliko/documents/rapport-gestio
 nprojet/img/gource_over.png>]) [10]
 ("C:\Users\Thibaut\Dropbox\M1 IMAGINA\TER_M1\Heliko\documents\rapport-gestionpr
@@ -586,6 +633,7 @@ X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Thibaut\AppData
 \Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Thi
 baut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <
 C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+<<<<<<< HEAD
 cc1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
 ur\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\f
@@ -593,6 +641,16 @@ onts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\Thibaut\AppData\Local\
 MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb>
 Output written on Main.pdf (11 pages, 1109751 bytes).
+=======
+bx1440.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\eccc1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Thibaut\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Thibaut\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\Users\Thibaut\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk>
+Output written on Main.pdf (11 pages, 1106748 bytes).
+>>>>>>> origin/master
+>>>>>>> 19cbf667755db7d54c885805e523719072b2e7b6
 PDF statistics:
  429 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

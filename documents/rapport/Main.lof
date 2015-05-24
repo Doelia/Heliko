@@ -5,28 +5,28 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Exemple de niveau}}{14}
 \contentsline {figure}{\numberline {5}{\ignorespaces Diagramme d'\IeC {\'e}tats-transitions des \IeC {\'e}v\IeC {\`e}nements}}{15}
 \contentsline {figure}{\numberline {6}{\ignorespaces Piste sonore}}{20}
-\contentsline {figure}{\numberline {7}{\ignorespaces Piste MIDI}}{21}
+\contentsline {figure}{\numberline {7}{\ignorespaces Piste MIDI}}{20}
 \contentsline {figure}{\numberline {8}{\ignorespaces \IeC {\'E}diteur de notes de Logic Pro}}{21}
 \contentsline {figure}{\numberline {9}{\ignorespaces Fichier .txt du niveau en sortie}}{21}
-\contentsline {figure}{\numberline {10}{\ignorespaces Score du joueur affich\IeC {\'e}}}{23}
+\contentsline {figure}{\numberline {10}{\ignorespaces Score du joueur affich\IeC {\'e}}}{22}
 \contentsline {figure}{\numberline {11}{\ignorespaces S\IeC {\'e}lection des mini-jeux}}{23}
-\contentsline {figure}{\numberline {12}{\ignorespaces Exemple visuel de fichier graphique vectoriel}}{25}
-\contentsline {figure}{\numberline {13}{\ignorespaces Exemple d'utilisation de cl\IeC {\'e}s sur une ligne temporelle}}{25}
-\contentsline {figure}{\numberline {14}{\ignorespaces Interpolation simple entre trois cl\IeC {\'e}s d\IeC {\'e}finissant la position y de l'objet}}{26}
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagramme d'\IeC {\'e}tat utilis\IeC {\'e} pour l'animation}}{26}
-\contentsline {figure}{\numberline {16}{\ignorespaces Compteur du nombre de r\IeC {\'e}p\IeC {\'e}titions restantes}}{28}
-\contentsline {figure}{\numberline {17}{\ignorespaces Bouton skip verrouill\IeC {\'e}}}{29}
-\contentsline {figure}{\numberline {18}{\ignorespaces Pop up correspondante}}{29}
-\contentsline {figure}{\numberline {19}{\ignorespaces Bouton skip d\IeC {\'e}verrouill\IeC {\'e}}}{29}
-\contentsline {figure}{\numberline {20}{\ignorespaces Pop up correspondante}}{29}
-\contentsline {figure}{\numberline {21}{\ignorespaces Transitions entre les sc\IeC {\`e}nes du jeu}}{30}
-\contentsline {figure}{\numberline {22}{\ignorespaces \IeC {\'E}cran de chargement}}{30}
-\contentsline {figure}{\numberline {23}{\ignorespaces Sc\IeC {\`e}ne normale}}{30}
-\contentsline {figure}{\numberline {24}{\ignorespaces Fermeture en cercle}}{30}
-\contentsline {figure}{\numberline {25}{\ignorespaces Aper\IeC {\c c}u des statistiques fournies pas Google Analytics}}{32}
-\contentsline {figure}{\numberline {26}{\ignorespaces Param\IeC {\`e}tre pour la synchronisation des sons}}{34}
-\contentsline {figure}{\numberline {27}{\ignorespaces L'\IeC {\'e}cran d'accueil de l'application}}{35}
-\contentsline {figure}{\numberline {28}{\ignorespaces L'\IeC {\'e}cran de choix du niveau}}{36}
-\contentsline {figure}{\numberline {29}{\ignorespaces Le niveau de la Marche des escargots}}{37}
-\contentsline {figure}{\numberline {30}{\ignorespaces Le niveau du magicien}}{37}
-\contentsline {figure}{\numberline {31}{\ignorespaces Le niveau des champignons}}{38}
+\contentsline {figure}{\numberline {12}{\ignorespaces Exemple visuel de fichier graphique vectoriel}}{24}
+\contentsline {figure}{\numberline {13}{\ignorespaces Exemple d'utilisation de cl\IeC {\'e}s sur une ligne temporelle}}{24}
+\contentsline {figure}{\numberline {14}{\ignorespaces Interpolation simple entre trois cl\IeC {\'e}s d\IeC {\'e}finissant la position y de l'objet}}{25}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagramme d'\IeC {\'e}tat utilis\IeC {\'e} pour l'animation}}{25}
+\contentsline {figure}{\numberline {16}{\ignorespaces Compteur du nombre de r\IeC {\'e}p\IeC {\'e}titions restantes}}{27}
+\contentsline {figure}{\numberline {17}{\ignorespaces Bouton skip verrouill\IeC {\'e}}}{28}
+\contentsline {figure}{\numberline {18}{\ignorespaces Pop up correspondante}}{28}
+\contentsline {figure}{\numberline {19}{\ignorespaces Bouton skip d\IeC {\'e}verrouill\IeC {\'e}}}{28}
+\contentsline {figure}{\numberline {20}{\ignorespaces Pop up correspondante}}{28}
+\contentsline {figure}{\numberline {21}{\ignorespaces Transitions entre les sc\IeC {\`e}nes du jeu}}{29}
+\contentsline {figure}{\numberline {22}{\ignorespaces \IeC {\'E}cran de chargement}}{29}
+\contentsline {figure}{\numberline {23}{\ignorespaces Sc\IeC {\`e}ne normale}}{29}
+\contentsline {figure}{\numberline {24}{\ignorespaces Fermeture en cercle}}{29}
+\contentsline {figure}{\numberline {25}{\ignorespaces Aper\IeC {\c c}u des statistiques fournies pas Google Analytics}}{31}
+\contentsline {figure}{\numberline {26}{\ignorespaces Param\IeC {\`e}tre pour la synchronisation des sons}}{33}
+\contentsline {figure}{\numberline {27}{\ignorespaces L'\IeC {\'e}cran d'accueil de l'application}}{34}
+\contentsline {figure}{\numberline {28}{\ignorespaces L'\IeC {\'e}cran de choix du niveau}}{35}
+\contentsline {figure}{\numberline {29}{\ignorespaces Le niveau de la Marche des escargots}}{36}
+\contentsline {figure}{\numberline {30}{\ignorespaces Le niveau du magicien}}{36}
+\contentsline {figure}{\numberline {31}{\ignorespaces Le niveau des champignons}}{37}

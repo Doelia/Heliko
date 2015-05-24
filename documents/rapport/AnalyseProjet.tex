@@ -1,5 +1,7 @@
 \section{Analyse du projet} %cahier des charges
 
+Une bonne analyse est nécessaire au pilotage du projet. Il faut réaliser une analyse des jeux de rythmes déjà existants, concevoir le concept du jeu, définir les priorités et établire une planification avant de commencer tout développement.
+
 \subsection{Analyse de l'existant}
 
 Plusieurs jeux au gameplay approchant celui visé par l’équipe ont été testés. Voici ce qu’il en ressort au niveau du gameplay.
@@ -15,6 +17,26 @@ Enfin, certains jeux ne proposent qu’un gameplay rapide et de beaux graphismes
 
 \subsubsection{Principes dégagés}
 Le principe des jeux musicaux nous plait, mais nous ne pouvions pas nous permettre d'utiliser des catalogues de musique existants pour des questions de droits d'auteur. Générer les niveaux de façon procédurale par rapport à de la musique nous semblait intéressant mais nous avons préféré nous concentrer sur d'autres priorités, alors que créer de nombreux niveaux à la main aurait été une tâche fastidieuse que nous voulions éviter. Créer un jeu de type \textit{Runner} ne demande que très peu de travail sur le contenu (il y a beaucoup de génération aléatoire), mais le principe du jeu, trop simple, nous semblait peu intéressant sur le plan enseignement. Nous avons ainsi décidé de créer un moteur de mini-jeux rythmique générique, afin de créer des scènes complexes et difficiles qui demandent un apprentisage de la part de l'utilisateur. Ceci nous assure une durée de vie de jeu correcte, sans devoir créer trop de contenu.
+
+
+\subsection{Objectifs du projet}
+
+L'objectif premier du projet est de mettre en ligne un jeu de rythme pour téléphone mobile sur les plateforme Google Play et sur l'Apple Store. Le jeu doit être le plus intéressant et le plus complet possible.
+
+\paragraph{Contenu du jeu}
+Nous avons dès le départ conçu les parties du jeu pour qu’il soit jouable et en ligne au bout de 4 mois de travail. Étant donné notre légère expérience dans la gestion du temps, nous avons conçu des “couches” à développer pour former le jeu de façon incrémentale et ainsi être certain d’aboutir à un résultat (À condition de prendre en compte les tests, les finitions et la mise en ligne).
+
+\paragraph{Couches incrémentales}
+La liste des fonctionnalités à réaliser en fonction de leur importance pour un jeu jouable :
+\begin{enumerate}
+\item Créer un moteur de jeu de rythme Unity générique et créer un mini jeu jouable sur Android ;
+\item Rendre l’application jouable sur tous les supports mobiles ;
+\item Créer d’autres mini jeux ;
+\item Créer un moteur de tutoriel et les tutoriels associés ;
+\item Concevoir et ajouter une monétisation (gain de pièces dans les niveaux et personnalisation du jeu) ;
+\item Concevoir et ajouter un esprit communautaire (partage de l’avancement) ;
+\item Créer un éditeur public de niveaux contributif.
+\end{enumerate}
 
 
 \subsection{Cahier des charges}
@@ -64,20 +86,6 @@ Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’
 L’avancement des joueurs, et la personnalisation des planètes, est stockée dans le cloud. Un joueur peut montrer sa planète à ses amis afin de montrer son avancement et ses scores.
 
 \subsubsection{Monétisation}
-En fonction de l’avancement final du projet, un système de monétisation sera choisi. Il pourra s’agir de la vente de monnaie supplémentaire pour la personnalisation par exemple.
+En fonction de l’avancement final du projet, un système de monétisation sera choisi. Il pourra s’agir de la vente de monnaie supplémentaire pour la personnalisation par exemple, ou simplement de mettre en place un système de publicités judicieusement mis en place. Cette monétisation s'accompagnera d'une étude des différents services de paiements proposés pour les téléphones mobiles.
 
-\subsection{Objectifs du projet}
-
-\paragraph{}
-La liste des fonctionnalités à réaliser en fonction de leur importance pour un jeu jouable :
-\begin{enumerate}
-\item Réalisation de la planète animée et de ses éléments sonores (activables/désactivables)
-\item Réalisation du moteur de mini-jeux rythmiques
-\item Réalisation du mode de jeu infini/arcade
-\\\\Puis :
-\item Réalisation du système d’achat de lumières et de décorations supplémentaires avec la monnaie
-\item Réalisation du système de partage in-cloud des planètes
-\item Création d'un éditeur de niveau pour les utilisateurs
-\item Ajout d’autres planètes comprenant d’autres mini-jeux
-\end{enumerate}
 
