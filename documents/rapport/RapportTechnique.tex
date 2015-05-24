@@ -396,7 +396,7 @@ Unity possède la caractéristique de pouvoir créer un diagramme d'état afin d
 \end{figure}
 
 \subsection{Assemblage avec le moteur}
-On va donc brancher les différents éléments composants le jeu au moteur. Les composants du moteurs sont détaillés partie \ref{engine_summary}. 
+On va donc brancher les différents éléments composant le jeu au moteur. Les composants du moteurs sont détaillés partie \ref{engine_summary}. 
 \subsubsection{Le passage de message}
 Plusieurs façons de faire passer des messages sont utilisées dans le moteur. 
 \paragraph{}
@@ -430,6 +430,8 @@ Il est également possible de connecter directement des objets entre eux, pour q
 \label{connection}
 \caption{Méthodes servant à la communication entre les objets}
 \end{figure}
+
+\subsubsection{L'assemblage des éléments}
 
 \paragraph{}
 Commençons par les éléments du décor et les personnages non-joueur. Ils seront reliés à un \textit{LevelScripted} auquel on passera en paramètre le fichier texte correspondant à leur mouvement. Les mouvements sont et les animations (voir partie \ref{anims}) déclenchés à l'aide de \textit{trigger} que le \textit{LevelScripted} va envoyer en fonction des évènements lus. \\
