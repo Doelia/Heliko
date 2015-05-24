@@ -50,7 +50,7 @@
 \contentsline {paragraph}{}{13}{section*.32}
 \contentsline {subsection}{\numberline {4.1.4}\IeC {\'E}v\IeC {\`e}nements du joueur et calcul de la r\IeC {\'e}ussite}{14}{subsection.4.1.4}
 \contentsline {paragraph}{\texttt {EventPlayerListener}}{14}{section*.33}
-\contentsline {paragraph}{}{15}{section*.34}
+\contentsline {paragraph}{}{14}{section*.34}
 \contentsline {paragraph}{D\IeC {\'e}tection de la r\IeC {\'e}ussite}{15}{section*.35}
 \contentsline {paragraph}{}{15}{section*.36}
 \contentsline {subsection}{\numberline {4.1.5}R\IeC {\'e}sum\IeC {\'e}}{16}{subsection.4.1.5}
