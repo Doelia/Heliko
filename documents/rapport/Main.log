@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -747,23 +747,7 @@ Package: beramono 2004/01/31 (WaS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
-) (./Main.aux
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
-
-
-LaTeX Warning: Label `SelectionMiniJeu' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-
-LaTeX Warning: Label `transitions_scenes' multiply defined.
-
-)
+) (./Main.aux)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -780,7 +764,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 58.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 58.
@@ -839,13 +824,13 @@ LaTeX Info: Redefining \nameref on input line 58.
 \openout4 = `Main.out'.
 
  (./Title.tex
-<./img/logoUM.png, id=221, 96.36pt x 96.36pt>
+<./img/logoUM.png, id=104, 96.36pt x 96.36pt>
 File: ./img/logoUM.png Graphic file (type png)
  <use ./img/logoUM.png>
 Package pdftex.def Info: ./img/logoUM.png used on input line 5.
 (pdftex.def)             Requested size: 106.85788pt x 106.85791pt.
 
-<./img/logo.png, id=223, 894.34125pt x 848.16875pt>
+<./img/logo.png, id=106, 894.34125pt x 848.16875pt>
 File: ./img/logo.png Graphic file (type png)
  <use ./img/logo.png>
 Package pdftex.def Info: ./img/logo.png used on input line 18.
@@ -865,44 +850,37 @@ e.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.72 \newpage
-              [1] [2] (./Main.tocpdfTeX warning (ext4): destination with the sa
-me identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.79 ...difficult\IeC {\'e}}{25}{subsection.4.5.6}
-                                                   [1
-
-])
+              [1] [2] (./Main.toc)
 \tf@toc=\write5
 \openout5 = `Main.toc'.
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \newpage
+              [1
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+] (./Main.lof)
+\tf@lof=\write6
+\openout6 = `Main.lof'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 \newpage
-              [2] (./Main.lof)
-\tf@lof=\write6
-\openout6 = `Main.lof'.
-
- [3
+l.94 \newpage
+              [2
 
 ] (./Introduction.tex
 Chapitre 1.
-) [4
+) [3
 
 ] (./AnalyseProjet.tex
 Chapitre 2.
-[5
+[4
 
-] <./img/protoPlanete.png, id=397, 703.12688pt x 560.0925pt>
+] <./img/protoPlanete.png, id=157, 703.12688pt x 560.0925pt>
 File: ./img/protoPlanete.png Graphic file (type png)
 
 <use ./img/protoPlanete.png>
@@ -915,7 +893,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <./img/rhythmParadise.png, id=412, 628.59843pt x 432.86719pt>
+[5] <./img/rhythmParadise.png, id=173, 628.59843pt x 432.86719pt>
 File: ./img/rhythmParadise.png Graphic file (type png)
 
 <use ./img/rhythmParadise.png>
@@ -928,22 +906,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./img/protoPlanete.png> <./img/rhythmParadise.png>])
+[6 <./img/protoPlanete.png> <./img/rhythmParadise.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] (./RapportActivite.tex
+[7] (./RapportActivite.tex
 Chapitre 3.
-<./img/unity-3D.png, id=434, 1284.8pt x 847.165pt>
+<./img/unity-3D.png, id=197, 1284.8pt x 847.165pt>
 File: ./img/unity-3D.png Graphic file (type png)
  <use ./img/unity-3D.png>
 Package pdftex.def Info: ./img/unity-3D.png used on input line 19.
 (pdftex.def)             Requested size: 359.74155pt x 237.20457pt.
 
-[9
+[8
 
  <./img/unity-3D.png>])
 
@@ -952,7 +930,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] (./RapportTechnique.tex
+[9] (./RapportTechnique.tex
 Chapitre 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
@@ -969,7 +947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[11
+[10
 
 ]
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 39.
@@ -1008,7 +986,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
+[11]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 73.
 
@@ -1052,7 +1030,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[12]
 LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fvm/b/n' tried instead on input line 127.
 LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
@@ -1062,7 +1040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
-<./img/diagEtatTransition.png, id=502, 519.89232pt x 234.42581pt>
+<./img/diagEtatTransition.png, id=265, 519.89232pt x 234.42581pt>
 File: ./img/diagEtatTransition.png Graphic file (type png)
 
 <use ./img/diagEtatTransition.png>
@@ -1075,7 +1053,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./img/diagEtatTransition.png>]
+[13 <./img/diagEtatTransition.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
@@ -1095,7 +1073,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--164
 
  []
 
-<./img/diagramme_moteur.png, id=519, 487.3407pt x 337.5009pt>
+<./img/diagramme_moteur.png, id=285, 487.3407pt x 337.5009pt>
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
@@ -1108,14 +1086,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[14]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./img/diagramme_moteur.png>]
+[15 <./img/diagramme_moteur.png>]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 190.
 
@@ -1169,7 +1147,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
@@ -1180,23 +1158,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--239
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 246--246
+Underfull \hbox (badness 1552) in paragraph at lines 251--251
 []\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
  []
 
-<./img/vlqOctet.png, id=556, 130.98938pt x 65.24374pt>
+<./img/vlqOctet.png, id=322, 130.98938pt x 65.24374pt>
 File: ./img/vlqOctet.png Graphic file (type png)
 
 <use ./img/vlqOctet.png>
-Package pdftex.def Info: ./img/vlqOctet.png used on input line 246.
+Package pdftex.def Info: ./img/vlqOctet.png used on input line 251.
 (pdftex.def)             Requested size: 130.98904pt x 65.24358pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
+Overfull \hbox (326.29901pt too wide) in paragraph at lines 251--253
+[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
 
  []
 
@@ -1206,33 +1184,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./img/vlqOctet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+[17 <./img/vlqOctet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-
- []
-
-<./img/logic_sound.png, id=574, 1439.3775pt x 354.32375pt>
+<./img/logic_sound.png, id=342, 1439.3775pt x 354.32375pt>
 File: ./img/logic_sound.png Graphic file (type png)
 
 <use ./img/logic_sound.png>
-Package pdftex.def Info: ./img/logic_sound.png used on input line 282.
+Package pdftex.def Info: ./img/logic_sound.png used on input line 286.
 (pdftex.def)             Requested size: 312.9803pt x 77.04315pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-<./img/logic_midi.png, id=575, 1125.20375pt x 350.30875pt>
+<./img/logic_midi.png, id=343, 1125.20375pt x 350.30875pt>
 File: ./img/logic_midi.png Graphic file (type png)
 
 <use ./img/logic_midi.png>
-Package pdftex.def Info: ./img/logic_midi.png used on input line 291.
+Package pdftex.def Info: ./img/logic_midi.png used on input line 295.
 (pdftex.def)             Requested size: 312.9803pt x 97.439pt.
+
+<./img/logic_edit.png, id=344, 1039.885pt x 367.3725pt>
+File: ./img/logic_edit.png Graphic file (type png)
+
+<use ./img/logic_edit.png>
+Package pdftex.def Info: ./img/logic_edit.png used on input line 305.
+(pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1240,19 +1220,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./img/logic_sound.png> <./img/logic_midi.png>]
-<./img/logic_edit.png, id=594, 1039.885pt x 367.3725pt>
-File: ./img/logic_edit.png Graphic file (type png)
-
-<use ./img/logic_edit.png>
-Package pdftex.def Info: ./img/logic_edit.png used on input line 301.
-(pdftex.def)             Requested size: 312.9803pt x 110.56575pt.
-
-<./img/logic_export.png, id=595, 703.62875pt x 117.43875pt>
+[18 <./img/logic_sound.png> <./img/logic_midi.png>]
+<./img/logic_export.png, id=365, 703.62875pt x 117.43875pt>
 File: ./img/logic_export.png Graphic file (type png)
 
 <use ./img/logic_export.png>
-Package pdftex.def Info: ./img/logic_export.png used on input line 310.
+Package pdftex.def Info: ./img/logic_export.png used on input line 314.
 (pdftex.def)             Requested size: 312.9803pt x 52.23767pt.
 
 
@@ -1261,19 +1234,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./img/logic_edit.png> <./img/logic_export.png>]
-<./img/MenuMort.png, id=604, 183.68625pt x 206.27063pt>
+[19 <./img/logic_edit.png> <./img/logic_export.png>]
+<./img/MenuMort.png, id=378, 183.68625pt x 206.27063pt>
 File: ./img/MenuMort.png Graphic file (type png)
 
 <use ./img/MenuMort.png>
-Package pdftex.def Info: ./img/MenuMort.png used on input line 333.
+Package pdftex.def Info: ./img/MenuMort.png used on input line 337.
 (pdftex.def)             Requested size: 165.31607pt x 185.64183pt.
 
-<./img/SelectionMiniJeu.png, id=605, 255.95625pt x 210.7875pt>
+<./img/SelectionMiniJeu.png, id=379, 255.95625pt x 210.7875pt>
 File: ./img/SelectionMiniJeu.png Graphic file (type png)
 
 <use ./img/SelectionMiniJeu.png>
-Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 343.
+Package pdftex.def Info: ./img/SelectionMiniJeu.png used on input line 347.
 (pdftex.def)             Requested size: 230.35847pt x 189.707pt.
 
 
@@ -1282,12 +1255,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <./img/MenuMort.png>]
-<./img/technique_graphismes.png, id=610, 335.75438pt x 463.7325pt>
+[20 <./img/MenuMort.png> <./img/SelectionMiniJeu.png (PNG copy)>]
+<./img/technique_graphismes.png, id=387, 335.75438pt x 463.7325pt>
 File: ./img/technique_graphismes.png Graphic file (type png)
 
 <use ./img/technique_graphismes.png>
-Package pdftex.def Info: ./img/technique_graphismes.png used on input line 361.
+Package pdftex.def Info: ./img/technique_graphismes.png used on input line 365.
 
 (pdftex.def)             Requested size: 201.45418pt x 278.24164pt.
 
@@ -1297,35 +1270,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./img/SelectionMiniJeu.png (PNG copy)>]
-<./img/technique_animation1.png, id=616, 625.58719pt x 139.27031pt>
+[21 <./img/technique_graphismes.png>]
+<./img/technique_animation1.png, id=396, 625.58719pt x 139.27031pt>
 File: ./img/technique_animation1.png Graphic file (type png)
 
 <use ./img/technique_animation1.png>
-Package pdftex.def Info: ./img/technique_animation1.png used on input line 373.
+Package pdftex.def Info: ./img/technique_animation1.png used on input line 377.
 
 (pdftex.def)             Requested size: 344.07402pt x 76.59889pt.
 
-<./img/technique_animation2.png, id=617, 627.09282pt x 163.3603pt>
+<./img/technique_animation2.png, id=397, 627.09282pt x 163.3603pt>
 File: ./img/technique_animation2.png Graphic file (type png)
 
 <use ./img/technique_animation2.png>
-Package pdftex.def Info: ./img/technique_animation2.png used on input line 381.
+Package pdftex.def Info: ./img/technique_animation2.png used on input line 385.
 
 (pdftex.def)             Requested size: 344.90211pt x 89.84843pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23 <./img/technique_graphismes.png> <./img/technique_animation1.png>]
-<./img/technique_animation3.png, id=623, 344.78813pt x 165.61874pt>
+<./img/technique_animation3.png, id=398, 344.78813pt x 165.61874pt>
 File: ./img/technique_animation3.png Graphic file (type png)
 
 <use ./img/technique_animation3.png>
-Package pdftex.def Info: ./img/technique_animation3.png used on input line 389.
+Package pdftex.def Info: ./img/technique_animation3.png used on input line 393.
 
 (pdftex.def)             Requested size: 189.63405pt x 91.09058pt.
 
@@ -1335,46 +1301,50 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./img/technique_animation2.png> <./img/technique_animation3.png>]
+[22 <./img/technique_animation1.png> <./img/technique_animation2.png> <./img/te
+chnique_animation3.png>]
+
+LaTeX Warning: Reference `anims' on page 23 undefined on input line 402.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] <./img/compteur_tuto.png, id=641, 679.78969pt x 322.95656pt>
+[23] <./img/compteur_tuto.png, id=422, 679.78969pt x 322.95656pt>
 File: ./img/compteur_tuto.png Graphic file (type png)
 
 <use ./img/compteur_tuto.png>
-Package pdftex.def Info: ./img/compteur_tuto.png used on input line 437.
+Package pdftex.def Info: ./img/compteur_tuto.png used on input line 441.
 (pdftex.def)             Requested size: 190.33981pt x 90.42722pt.
 
-<./img/skip_locked.png, id=642, 717.43031pt x 447.92343pt>
+<./img/skip_locked.png, id=423, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked.png Graphic file (type png)
 
 <use ./img/skip_locked.png>
-Package pdftex.def Info: ./img/skip_locked.png used on input line 447.
+Package pdftex.def Info: ./img/skip_locked.png used on input line 451.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_locked_popup.png, id=643, 717.43031pt x 447.92343pt>
+<./img/skip_locked_popup.png, id=424, 717.43031pt x 447.92343pt>
 File: ./img/skip_locked_popup.png Graphic file (type png)
 
 <use ./img/skip_locked_popup.png>
-Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 452.
+Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 456.
 (pdftex.def)             Requested size: 143.48352pt x 89.5831pt.
 
-<./img/skip_unlocked.png, id=644, 718.93594pt x 447.92343pt>
+<./img/skip_unlocked.png, id=425, 718.93594pt x 447.92343pt>
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
-Package pdftex.def Info: ./img/skip_unlocked.png used on input line 458.
+Package pdftex.def Info: ./img/skip_unlocked.png used on input line 462.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
-<./img/skip_unlocked_popup.png, id=645, 719.68875pt x 447.92343pt>
+<./img/skip_unlocked_popup.png, id=426, 719.68875pt x 447.92343pt>
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
-Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 463.
+Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 467.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
 
 
@@ -1383,31 +1353,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./img/compteur_tuto.png (PNG copy)> <./img/skip_locked.png> <./img/skip_lo
-cked_popup.png> <./img/skip_unlocked.png> <./img/skip_unlocked_popup.png>]
-<./img/scenes-transitions.png, id=654, 339.1872pt x 247.6452pt>
+[24 <./img/compteur_tuto.png (PNG copy)>]
+
+LaTeX Warning: Reference `transitions_scenes' on page 25 undefined on input lin
+e 478.
+
+<./img/scenes-transitions.png, id=438, 339.1872pt x 247.6452pt>
 File: ./img/scenes-transitions.png Graphic file (type png)
 
 <use ./img/scenes-transitions.png>
-Package pdftex.def Info: ./img/scenes-transitions.png used on input line 477.
+Package pdftex.def Info: ./img/scenes-transitions.png used on input line 481.
 (pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
 
-<./img/loading.png, id=655, 532.99126pt x 255.20343pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./img/skip_locked.png> <./img/skip_locked_popup.png> <./img/skip_unlocked.
+png> <./img/skip_unlocked_popup.png> <./img/scenes-transitions.png (PNG copy)>]
+<./img/loading.png, id=451, 532.99126pt x 255.20343pt>
 File: ./img/loading.png Graphic file (type png)
  <use ./img/loading.png>
-Package pdftex.def Info: ./img/loading.png used on input line 486.
+Package pdftex.def Info: ./img/loading.png used on input line 490.
 (pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
 
-<./img/scene.png, id=657, 718.93594pt x 448.67625pt>
+
+LaTeX Warning: Reference `cartoon' on page 26 undefined on input line 496.
+
+<./img/scene.png, id=452, 718.93594pt x 448.67625pt>
 File: ./img/scene.png Graphic file (type png)
  <use ./img/scene.png>
-Package pdftex.def Info: ./img/scene.png used on input line 496.
+Package pdftex.def Info: ./img/scene.png used on input line 500.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
-<./img/cartoon.png, id=658, 718.93594pt x 448.67625pt>
+<./img/cartoon.png, id=453, 718.93594pt x 448.67625pt>
 File: ./img/cartoon.png Graphic file (type png)
  <use ./img/cartoon.png>
-Package pdftex.def Info: ./img/cartoon.png used on input line 501.
+Package pdftex.def Info: ./img/cartoon.png used on input line 505.
 (pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
 
 
@@ -1416,13 +1400,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./img/scenes-transitions.png (PNG copy)> <./img/loading.png (PNG copy)> <.
-/img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
-<./img/GoogleAnalytics.png, id=666, 514.17094pt x 289.08pt>
+[26 <./img/loading.png (PNG copy)> <./img/scene.png (PNG copy)> <./img/cartoon.
+png (PNG copy)>] <./img/GoogleAnalytics.png, id=466, 514.17094pt x 289.08pt>
 File: ./img/GoogleAnalytics.png Graphic file (type png)
 
 <use ./img/GoogleAnalytics.png>
-Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 520.
+Package pdftex.def Info: ./img/GoogleAnalytics.png used on input line 524.
 (pdftex.def)             Requested size: 359.9172pt x 202.35461pt.
 
 
@@ -1431,32 +1414,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./img/GoogleAnalytics.png>]
+[27 <./img/GoogleAnalytics.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29] <./img/opti_sound.png, id=686, 141.52875pt x 121.45375pt>
+[28] <./img/opti_sound.png, id=491, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
-Package pdftex.def Info: ./img/opti_sound.png used on input line 562.
+Package pdftex.def Info: ./img/opti_sound.png used on input line 566.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30 <./img/opti_sound.png>]
-<./img/optimisation_poids.png, id=696, 285.31593pt x 73.77562pt>
+<./img/optimisation_poids.png, id=492, 285.31593pt x 73.77562pt>
 File: ./img/optimisation_poids.png Graphic file (type png)
 
 <use ./img/optimisation_poids.png>
-Package pdftex.def Info: ./img/optimisation_poids.png used on input line 575.
+Package pdftex.def Info: ./img/optimisation_poids.png used on input line 579.
 (pdftex.def)             Requested size: 285.31523pt x 73.77542pt.
 )
 
@@ -1465,25 +1441,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31 <./img/optimisation_poids.png>] (./Resultat.tex
+[29 <./img/opti_sound.png> <./img/optimisation_poids.png>] (./Resultat.tex
 Chapitre 5.
-<./img/resultat_accueil.png, id=702, 496.85625pt x 331.2375pt>
+<./img/resultat_accueil.png, id=504, 496.85625pt x 331.2375pt>
 File: ./img/resultat_accueil.png Graphic file (type png)
 
 <use ./img/resultat_accueil.png>
 Package pdftex.def Info: ./img/resultat_accueil.png used on input line 8.
 (pdftex.def)             Requested size: 298.11604pt x 198.74402pt.
 
-<./img/resultat_niveaux.png, id=703, 496.85625pt x 330.48468pt>
+<./img/resultat_niveaux.png, id=505, 496.85625pt x 330.48468pt>
 File: ./img/resultat_niveaux.png Graphic file (type png)
 
 <use ./img/resultat_niveaux.png>
 Package pdftex.def Info: ./img/resultat_niveaux.png used on input line 16.
 (pdftex.def)             Requested size: 298.11604pt x 198.29233pt.
- [32
+ [30
 
  <./img/resultat_accueil.png>]
-<./img/resultat_escargot.png, id=713, 628.59843pt x 353.06906pt>
+<./img/resultat_escargot.png, id=517, 628.59843pt x 353.06906pt>
 File: ./img/resultat_escargot.png Graphic file (type png)
 
 <use ./img/resultat_escargot.png>
@@ -1496,15 +1472,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./img/resultat_niveaux.png>]
-<./img/resultat_magicien.png, id=723, 536.0025pt x 298.11375pt>
+[31 <./img/resultat_niveaux.png>]
+<./img/resultat_magicien.png, id=528, 536.0025pt x 298.11375pt>
 File: ./img/resultat_magicien.png Graphic file (type png)
 
 <use ./img/resultat_magicien.png>
 Package pdftex.def Info: ./img/resultat_magicien.png used on input line 51.
 (pdftex.def)             Requested size: 268.0006pt x 149.0565pt.
 
-<./img/resultat_champis.png, id=724, 534.49687pt x 297.36093pt>
+<./img/resultat_champis.png, id=529, 534.49687pt x 297.36093pt>
 File: ./img/resultat_champis.png Graphic file (type png)
 
 <use ./img/resultat_champis.png>
@@ -1517,20 +1493,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34 <./img/resultat_escargot.png> <./img/resultat_magicien.png>])
+[32 <./img/resultat_escargot.png> <./img/resultat_magicien.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <./img/resultat_champis.png>] (./Bilan.tex
+[33 <./img/resultat_champis.png>] (./Bilan.tex
 Chapitre 6.
-) [36
+) [34
 
 ] (./Annexes.tex
 Chapitre 7.
-(../../unity/project/Assets/Engine/Timer.cs [37
+(../../unity/project/Assets/Engine/Timer.cs [35
 
 ]
 
@@ -1539,14 +1515,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]) (../../unity/project/Assets/Engine/BeatCounter.cs
+[36]) (../../unity/project/Assets/Engine/BeatCounter.cs
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]))
+[37]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
 
 
@@ -1555,27 +1531,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
  (./Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
-Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 99F017580F8EAAC4A3270D829089701F;3703.
 
 
-LaTeX Warning: There were multiply-defined labels.
+Package rerunfilecheck Warning: File `Main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Main.out':
+(rerunfilecheck)             Before: 153D33D7B621863F3F6233BE997EDE58;1723
+(rerunfilecheck)             After:  99F017580F8EAAC4A3270D829089701F;3703.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 11837 strings out of 493104
- 168223 string characters out of 6136932
+ 11806 strings out of 493104
+ 167758 string characters out of 6136932
  338493 words of memory out of 5000000
- 14573 multiletter control sequences out of 15000+600000
+ 14544 multiletter control sequences out of 15000+600000
  24308 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,45p,1013b,1887s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,45p,1013b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -1594,10 +1579,10 @@ uper/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfti1200.pfb>
-Output written on Main.pdf (43 pages, 4561364 bytes).
+Output written on Main.pdf (41 pages, 4524295 bytes).
 PDF statistics:
- 1111 PDF objects out of 1200 (max. 8388607)
- 981 compressed objects within 10 object streams
- 468 named destinations out of 1000 (max. 500000)
- 608 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 924 PDF objects out of 1000 (max. 8388607)
+ 798 compressed objects within 8 object streams
+ 466 named destinations out of 1000 (max. 500000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 

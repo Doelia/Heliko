@@ -238,7 +238,6 @@ En parcourant le fichier, on peut reconnaître par exemple la suite d'octets "25
 Le delta time est codé avec une quantité à longueur variable. Le delta time n'est pas par rapport au début de la piste mais par rapport à l'évènement précédent. C'est lui qui permettra à la musique dans le fichier midi d'avoir un rythme, par exemple, plus le delta time est long entre un évènement de début de note et un évènement de fin de note, plus la note sera tenue longtemps.\\\\
 
 \fbox{\parbox{11cm}
-  {\textbf{Note technique sur la quantité à longueur variable (\textit{variable-length quantity})}\\La vlq permet de représenter de manière compacte des quantités supérieures à un octet.}
   \begin{minipage}{0.5\textwidth}
     \begin{figure}[H]
       \includegraphics{./img/vlqOctet.png}
@@ -249,6 +248,11 @@ Le delta time est codé avec une quantité à longueur variable. Le delta time n
     \texttt{B} est un nombre de 7 bits, et \texttt{n} est la position de l'octet où \texttt{B0} est l’octet de poids faible.
   \end{minipage}
 }
+
+\fbox{\parbox{11cm}
+{\textbf{Note technique sur la quantité à longueur variable (\textit{variable-length quantity})}\\La vlq permet de représenter de manière compacte des quantités supérieures à un octet.
+
+
 Certains éditeurs de fichiers midi utilisent une technique appelée le "running status" pour réduire la taille de leurs fichiers. Pour clairement comprendre son fonctionnement, une explication supplémentaire sur les \textit{midi events} s'impose.
 
 Le \textit{status byte} a une valeur comprise entre 128 et 255, les \textit{data bytes} ont, quant à eux, une valeur comprise entre 0 et 127.
@@ -568,17 +572,5 @@ Finalement nous avons terminé par trouver la raison du problème : Une simple c
   \label{transitions_scenes}
 \end{figure}
 
-\subsection{Optimisation du poids de l'application}
-
-Une application ne doit pas avoir un poids trop élevé si elle veut rester cohérente sur une vitrine.  Pour cela, Unity propose plusieurs façon de compresser les fichiers composant l'application. Ainsi, pour compresser les images utilisées dans les \textit{sprites}, il est possible de les compresser en diminuant leur taille initiale ou bien en choisissant un algorithme de compression différent.
-
-Bien entendu cela impacte la qualité de jeu de l'utilisateur sur des périphériques à grand écran comme les tablettes ou les derniers smartphones, c'est pour cela que Unity propose de n'appliquer les compressions voulues seulement sur un déploiement en particulier. Par exemple, il est possible de compresser les textures sur les systèmes Android et iOS, mais de garder les textures en haute-définition pour un déploiement PC.
-
-
-\begin{figure}[H]\centering
-  \includegraphics[scale=1]{./img/optimisation_poids.png}
-  \caption{Aperçu des réglages de compression des textures}
-  \label{optimisation_poids}
-\end{figure}
 
 
