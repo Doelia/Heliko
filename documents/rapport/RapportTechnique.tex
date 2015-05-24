@@ -88,7 +88,7 @@ public int getStepClosest() {
 \end{lstlisting}
 Tous ces calculs prennent en compte le \texttt{sampleOffset}.
 
-\subsubsection{Le niveau (\texttt{LevelScripted})}
+\subsubsection{Le niveau (\textit{LevelScripted})}
 \label{niveau}
 Pour pouvoir réaliser des niveaux intéressants, il nous faut pouvoir les scripter les afin de définir sur quels "ticks" le joueur doit frapper. Il peut y avoir de longs blancs, ou des enchaînements rapides (avec une fréquence maximale équivalente au quart de temps).
 \\\\
@@ -102,13 +102,16 @@ Nous avons décidé de représenter un niveau dans un fichier texte de la façon
 \paragraph{}
 
 Le fichier se lit dans le temps de haut en bas (pour chaque quart de temps), puis de gauche à droite (pour chaque temps plein). Les différentes colonnes correspondent aux différents quart de temps. Par exemple, si on veut simplement bouger un cube à chaque battement (temps fort), on écrit le fichier suivant :\\
-\begin{lstlisting}
-1 1 1 1 1 1
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-\end{lstlisting}
-
+\begin{figure}[!htb]
+  \begin{lstlisting}
+    1 1 1 1 1 1
+    0 0 0 0 0 0
+    0 0 0 0 0 0
+    0 0 0 0 0 0
+  \end{lstlisting}
+\caption{Exemple de niveau}
+\label{simple_level}
+\end{figure}
 Un "0" correspond à "aucun évènement", et un chiffre correspond à un type d'évènement. Nous nommerons les chiffres supérieurs à zéro les \textbf{actions}.
 \\
 Une action peut être de type différent afin de pouvoir varier les attentes du joueur. En effet il peut y avoir plusieurs mouvements différents au niveau du tactile. Par exemple le "1" peut représenter un tap simple, le "2" un appui long, le "3" un relâchement, etc.
@@ -130,12 +133,13 @@ Les mouvements suivants sont définis :
 \item Swipe (lancer)
 \end{enumerate}
 
-\noindent
 
-\makebox[\textwidth]{\includegraphics[scale=1]{./img/diagEtatTransition.png}}
-\begin{center}
-\textit{Diagramme d'états-transitions des évènements}
-\end{center}
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[scale=0.7]{./img/diagEtatTransition.png}}
+  \caption{Diagramme d'états-transitions des évènements}
+  \label{diagetattrans}
+\end{figure}
+
 
 \paragraph{}
 La gestion des évènements est délicate, dans le sens où elle se joue à quelques millisecondes prêt. Un temps d'attente trop long, et le joueur retrouve un décalage entre le moment où il appuie, et le moment où l'évènement est envoyé. Trop court, et le tap bref est interprété par un tap long, et le glissé n'a pas le temps de se faire. De même, une distance trop courte, et le moindre mouvement du doigt est interprété comme un lancement. Trop longue, et le risque qu'il soit interprété comme un évènement long, ou qu'un décalage se créé, apparaît. Ainsi de nombreux tests ont dû être effectués, nécessitant un mouvement infime des paramètres, et demandant à chaque fois de faire de nouveau une compilation, un transfert sur le téléphone et un test, puisque seule l'expérimentation permet de savoir si le réglage est bon.
@@ -159,7 +163,7 @@ On stocke dans une liste les numéros des ticks où le joueur a réussi. Quand l
 N'importe quel objet Unity peut se connecter à ce contrôleur. Ceci permet de construire le feedback visuel, en jouant par exemple une animation quand on reçoit un évènement \texttt{onFailure}.
 
 \subsubsection{Résumé}
-
+\label{engine_summary}
 \noindent
 \makebox[\textwidth]{\includegraphics[scale=1]{./img/diagramme_moteur.png}}
 \paragraph{}
@@ -271,25 +275,42 @@ L'action 1 correspond à la note C, l'action 2 à la note C\#, et l'action 3 à 
 \subsubsection{Mise en pratique}
 On utilise dans cet exemple le logiciel Logic Pro X sous Mac OS X. N'importe quel autre séquenceur gérant les fichiers MIDI peut être utilisé.\\
 
-On importe la musique sur une piste, et on fixe le tempo de celle-ci.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_sound.png}\\
-\end{center}
+\paragraph{}
+On importe la musique sur une piste, et on indique au logiciel son tempo (qui doit être connu, on peut utiliser un logiciel commit \textit{Audacity} pour le détecter).
 
+\begin{figure}[H]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_sound.png}}
+  \caption{Piste sonore}
+  \label{transitions_scenes}
+\end{figure}
+
+\paragraph{}
 On ajoute sur une seconde piste vide un instrument qui représente le niveau à créer, sur laquelle on va ajouter les actions.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_midi.png}\\
-\end{center}
 
-On pose ensuite les notes qui représentent les actions sur cette piste, puis on écoute le tout en temps réel pour superposer proprement chacune des actions sur la musique. On utilise des notes différentes pour chaque type d'action. Ici le DO pour une action 1, le DO\# pour une action 2, etc.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_edit.png}\\
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_midi.png}}
+  \caption{Piste MIDI}
+  \label{transitions_scenes}
+\end{figure}
 
-Une fois le niveau construit, il ne reste plus qu'à exporter la piste au format .midi, et de le passer au convertisseur pour obtenir le niveau au format .txt.\\
-\begin{center}
-\includegraphics[width=11cm]{./img/logic_export.png}\\
-\end{center}
+
+\paragraph{}
+On pose ensuite les notes qui représentent les actions sur cette piste, puis on écoute le tout en temps réel pour superposer proprement chacune des actions sur la musique. On utilise des notes différentes pour chaque type d'action. Ici le DO pour une action 1, le DO\# pour une action 2, etc.
+
+\begin{figure}[H]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_edit.png}}
+  \caption{Éditeur de notes de Logic Pro}
+  \label{pianoroll}
+\end{figure}
+
+\paragraph{}
+Une fois le niveau construit, il ne reste plus qu'à exporter la piste au format .midi, et de le passer au convertisseur pour obtenir le niveau au format .txt.
+
+\begin{figure}[H]\centering
+  \frame{\includegraphics[width=11cm]{./img/logic_export.png}}
+  \caption{Fichier .txt du niveau en sortie}
+  \label{level}
+\end{figure}
 
 \subsection{Avancement du joueur}
 
@@ -308,20 +329,21 @@ Ensuite, une fois les échecs additionnés, on se contente de calculer le pource
 
 Même si le calcul des scores est fait sous la forme de pourcentage, ce qui est affiché au joueur et ce qui est enregistré est sous la forme d'étoiles. 3 étoiles correspond à 100\% de réussite, 2 étoiles à un score supérieur à 90\% et enfin 1 étoile à un score supérieur à 75\%. Le score est enregistré de manière très simple, Unity permettant d'enregistrer des entiers, des chaînes de caractères et des nombres flottants. Ainsi le score est enregistré dans une variable "int" s'appelant “etoileLevel[numéro du mini jeu]” et sa valeur correspond au nombre d'étoiles. A chaque fin d'un mini-jeu, on vérifie si le joueur n'a pas amélioré le nombre d'étoiles sur ce mini-jeu, et si oui, alors on écrase le précédent score avec le nouveau qui est meilleur.
 
-\begin{center}
-\includegraphics[scale=0.9]{./img/MenuMort.png}\\
-\textit{Score du joueur affiché}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.9]{./img/MenuMort.png}}
+  \caption{Score du joueur affiché}
+  \label{SelectionMiniJeu}
+\end{figure}
 
 \subsubsection{Déblocage des mini-jeux}
 
 Certains jeux sont débloqués de base, d'autres nécessitent la réussite d'un autre mini-jeu pour cela. Un mini-jeu est considéré comme réussi du moment que le joueur a obtenu au moins une étoile sur ce jeu. Ainsi, si un mini-jeu n'est pas débloqué, dans le menu de sélection des mini-jeux, son icône est grisée, et il est inclicable. De plus, en dessous de l'icône de chaque mini-jeu est affiché le plus grand nombre d'étoiles obtenu dans le jeu correspondant.
 
-\begin{center}
-\includegraphics[scale=0.9]{./img/SelectionMiniJeu.png}\\
-\textit{Sélection des mini-jeux}
-\end{center}
-
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.9]{./img/SelectionMiniJeu.png}}
+  \caption{Sélection des mini-jeux}
+  \label{SelectionMiniJeu}
+\end{figure}
 
 \subsection{Création d'un mini-jeu}
 
@@ -335,39 +357,51 @@ Un des éléments les plus importants d'un jeu est son aspect visuel. Il est pr�
 
 Dans notre projet, nous avons voulu mettre en avant le côté simple et divertissant de notre thème en utilisant des graphismes 2D de type \textit{cartoon}. Nous avons créé nos propres graphismes, en utilisant des couleurs vives et des traits de contours très épais.
 
-\begin{center}
-\includegraphics[scale=0.6]{./img/technique_graphismes.png}\\
-\textit{Exemple visuel de fichier graphique vectoriel}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.6]{./img/technique_graphismes.png}}
+  \caption{Exemple visuel de fichier graphique vectoriel}
+  \label{SelectionMiniJeu}
+\end{figure}
 
 Pour cela nous avons utilisé Adobe Illustrator, qui permet de réaliser des créations graphiques vectorielles. L'intérêt de travailler sur du vectoriel est qu'on peut rendre l'image dans la dimension voulue, et, de plus, il est plus facile d'apporter rapidement une petite modification un objet ou sa couleur, sans avoir tout à recommencer.
 
 \subsubsection{Les animations}
-
+\label{anims}
 Les animations utilisées dans l'application sont gérées directement par Unity. Leur mise en place est classique, elle se fait via l'utilisation de clés sur une ligne de temps. 
 
-\begin{center}
-\includegraphics[scale=0.55]{./img/technique_animation1.png}\\
-\textit{Exemple d'utilisation de clés sur une ligne temporelle}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.55]{./img/technique_animation1.png}}
+  \caption{Exemple d'utilisation de clés sur une ligne temporelle}
+  \label{technique_animation1}
+\end{figure}
 
 Le principe étant de donner les caractéristiques de l'objet à animer (position, taille, rotation ...) à un temps donné, et de les stocker dans une clé. Une fois que deux clés ont étés crées, une interpolation linéaire est ensuite appliquée entre les deux clés afin d'obtenir un déplacement fluide sur les images intermédiaires. La courbe d'interpolation peut être modifiée afin d'obtenir l'effet voulu.
 
-\begin{center}
-\includegraphics[scale=0.55]{./img/technique_animation2.png}\\
-\textit{Interpolation simple entre trois clés définissant la position y de l'objet}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.55]{./img/technique_animation2.png}}
+  \caption{Interpolation simple entre trois clés définissant la position y de l'objet}
+  \label{technique_animation2}
+\end{figure}
 
 Unity possède la caractéristique de pouvoir créer un diagramme d'état afin de jouer les différentes animations dans l'ordre désiré. Dans notre projet, nous avons utilisé cette fonctionnalité pour nous aligner sur le rythme de la musique. Pour cela, nous avons créé un arbre simple qui possède un état \textit{immobile} et un état \textit{mouvement}. A chaque fin d'une animation, c'est l'animation suivante qui sera jouée, en synchronisation avec les battements par minute de la musique.
 
-\begin{center}
-\includegraphics[scale=0.8]{./img/technique_animation3.png}\\
-\textit{Diagramme d'état utilisé pour l'animation}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.55]{./img/technique_animation3.png}}
+  \caption{Diagramme d'état utilisé pour l'animation}
+  \label{technique_animation3}
+\end{figure}
 
 \subsubsection{Assemblage avec le moteur}
+On va donc brancher les différents éléments composants le jeu au moteur. Les différents éléments du moteurs sont détaillés partie \ref{engine_summary}.
 
-%TODO
+\paragraph{}
+Commençons par les éléments du décor et les personnages non-joueur. Ils seront reliés à un \textit{LevelScripted} auquel on passera en paramètre le fichier texte correspondant à leur mouvement. Les mouvements sont et les animations (voir partie \ref{anims}) déclenchés à l'aide de \textit{trigger} que le \textit{LevelScripted} va envoyer en fonction des évènements lus. \\
+Typiquement on aura un \textit{LevelScripted} avec un fichier texte ressemblant à celui fig. \ref{simple_level} qui servira à battre la mesure et à indiquer le tempo au joueur.\\
+On aura ensuite un \textit{LevelScripted} avec un vrai niveau qui va scripter les mouvements d'un personnage non-joueur comme on peut le voir par exemple dans le niveau des champignons où le joueur doit répéter les mouvements du PNJ.\\
+Les \textit{LevelScripted} sont évidemment reliés au \textit{BeatCounter} pour que tous les mouvements du décor et des PNJ soient effectués en rythme.
+
+\paragraph{}
+Les animations du personnage joueur fonctionnent globalement de la même manière. La seul différence est que l'on va ajouter un \textit{PlayerActions} et un \textit{PlayerEventListener} qui vont se charger de récupérer les actions du joueur et d'interroger le \textit{LevelScripted} pour savoir si l'action du joueur correspond à l'action attendue, et ainsi envoyer le trigger correspondant. 
 
 \subsubsection{Le \textit{feedback}}
 
@@ -399,7 +433,7 @@ Comme expliqué section \ref{niveau}, les niveaux sont scriptés par des fichier
 Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi pouvoir passé à l'étape suivante du tutoriel, il lui est demandé de le répéter trois fois. C'est pour s'assurer que le joueur n'a pas réussi par chance et est donc incapable de completer un niveau, ce qui pourrait entraîner de la frustration.
 
 
-\begin{figure}[!htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.28]{./img/compteur_tuto.png}}
   \caption{Compteur du nombre de répétitions restantes}
   \label{repetitions}
@@ -408,7 +442,7 @@ Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi po
 \paragraph{}
 Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai complété au moins une fois.
 
-\begin{figure}[!htb]\centering
+\begin{figure}[H]\centering
    \begin{minipage}{0.49\textwidth}\centering
      \frame{\includegraphics[scale=0.2]{./img/skip_locked.png}}
      \caption{Bouton skip verrouillé}
@@ -439,7 +473,7 @@ En pratique, un tutoriel est composé d'un tableau de \textit{StepTuto}, chaque 
 \paragraph{}
 Chaque jeu est en réalité une scène de Unity. La navigation entre les scènes se fait suivant le diagramme fig. \ref{transitions_scenes}. L'écran principal est un ``hub'' où sont regroupés tous les jeux, on accède bien évidemment au jeu en cliquant dessus. Le tutoriel est ensuite chargé, puis enfin le jeu, on peut remarquer que l'on peut à tout moment revenir à l'écran principal.
 
-\begin{figure}[!htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.7]{./img/scenes-transitions.png}}
   \caption{Transitions entre les scènes du jeu}
   \label{transitions_scenes}
@@ -448,7 +482,7 @@ Chaque jeu est en réalité une scène de Unity. La navigation entre les scènes
 \paragraph{}
 Les scènes ne se chargent pas instantanément, en Unity indique le pourcentage de la scène qui a été chargé, cela permet entre autre de réaliser des écrans de chargement animés. En plus de donner au joueur l'avancement du chargement, cela rend le jeu bien plus fluide que si le chargement était simplement un écran noir, comportement par défaut de Unity.
 
-\begin{figure}[!Htb]\centering
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.3]{./img/loading.png}}
   \caption{Écran de chargement}
   \label{loading}
@@ -457,7 +491,7 @@ Les scènes ne se chargent pas instantanément, en Unity indique le pourcentage 
 \paragraph{}
 Les transitions entre les scènes se font donc par des écrans de chargements, mais il serait un peu brusque d'interrompre directement le jeu lorsqu'il est terminé. Nous avons décidé de faire une fermeture en cercle (voir fig. \ref{cartoon}) sur un élément de la scène pour donner un effet cartoon.
 
-\begin{figure}[!Htb]\centering
+\begin{figure}[H]\centering
    \begin{minipage}{0.49\textwidth}\centering
      \frame{\includegraphics[scale=0.2]{./img/scene.png}}
      \caption{Scène normale}
@@ -477,9 +511,12 @@ Outre le jeu à proprement parler, nous avons intégré d'autres services extern
 
 \subsubsection{Statistique et Analyse}
 
-La première priorité étant de pouvoir par la suite améliorer le jeu, et pour ce faire, nous avions besoin de savoir comment les utilisateurs interagissent avec notre application. Il se trouve que Google fourni une très bonne interface pour fournir des statistiques d'utilisation: “Google Analytics”. Et un pluggin permettant d'utiliser ces services avec Unity existe. "Google Analytics" est un service qui permet d'analyser le comportement des utilisateurs sur les applications. Il fournit différents outils, qui permettent de connaître la zone géographique de nos utilisateurs, le matériel utilisé, la durée moyenne d'utilisation de notre application, la manière dont ils ont trouvé l'application, mais aussi leurs habitudes d'utilisation, les écrans qu'ils visitent, leur passage ou non des tutos et pleins d'autres informations utiles. Bien utilisé, il permet donc de connaître vraiment le rapport qu'entretiennent les joueurs avec le jeu, et ainsi de donner des pistes sur les améliorations possibles, tant en terme de marketing que sur le jeu lui même. En gros, un outil indispensable pour qui souhaite améliorer son produit, et augmenter le nombre de téléchargements.
+\paragraph{}
+La première priorité étant de pouvoir par la suite améliorer le jeu, et pour ce faire, nous avions besoin de savoir comment les utilisateurs interagissent avec notre application. Il se trouve que Google fourni une très bonne interface pour fournir des statistiques d'utilisation: “Google Analytics”. Et un pluggin permettant d'utiliser ces services avec Unity existe. "Google Analytics" est un service qui permet d'analyser le comportement des utilisateurs sur les applications. 
 
-\begin{figure}[!htb]\centering
+\paragraph{}Il fournit différents outils, qui permettent de connaître la zone géographique de nos utilisateurs, le matériel utilisé, la durée moyenne d'utilisation de notre application, la manière dont ils ont trouvé l'application, mais aussi leurs habitudes d'utilisation, les écrans qu'ils visitent, leur passage ou non des tutos et pleins d'autres informations utiles. Bien utilisé, il permet donc de connaître vraiment le rapport qu'entretiennent les joueurs avec le jeu, et ainsi de donner des pistes sur les améliorations possibles, tant en terme de marketing que sur le jeu lui même. En gros, un outil indispensable pour qui souhaite améliorer son produit, et augmenter le nombre de téléchargements.
+
+\begin{figure}[H]\centering
   \frame{\includegraphics[scale=0.7]{./img/GoogleAnalytics.png}}
   \caption{Aperçu des statistiques fournies pas Google Analytics}
   \label{analytics}
@@ -487,17 +524,27 @@ La première priorité étant de pouvoir par la suite améliorer le jeu, et pour
 
 \subsubsection{Publicité}
 
-Ensuite, la monétisation à proprement parler. Nous avons opté pour un jeu gratuit, sans boutique, mais monétisé à partir de la publicité. Sur le mobile, 3 grandes régies publicitaires dominent, Admob (Google), Iad (Apple) et Chartboost. Nous avons choisis Chartboost, pour plusieurs raisons. La première étant qu'elle est réservée pour les jeux mobiles, ainsi nous étions sûr d'avoir des publicités ciblées, et adaptées à nos utilisateurs. Ensuite leur système de rémunération est assez intéressant, les gains étant plutôt important, bien que seulement au téléchargement (quand un joueur installe un autre jeu à partir du notre). Enfin, la possibilité de développer facilement des partenariats avec d'autres concepteurs de jeu, et ainsi de nous permettre d'avoir de nouvelles sources d'utilisateurs gratuitement. 
+\paragraph{}Ensuite, la monétisation à proprement parler. Nous avons opté pour un jeu gratuit, sans boutique, mais monétisé à partir de la publicité. Sur le mobile, 3 grandes régies publicitaires dominent, Admob (Google), Iad (Apple) et Chartboost. Nous avons choisis Chartboost, pour plusieurs raisons. La première étant qu'elle est réservée pour les jeux mobiles, ainsi nous étions sûr d'avoir des publicités ciblées, et adaptées à nos utilisateurs. Ensuite leur système de rémunération est assez intéressant, les gains étant plutôt important, bien que seulement au téléchargement (quand un joueur installe un autre jeu à partir du notre). Enfin, la possibilité de développer facilement des partenariats avec d'autres concepteurs de jeu, et ainsi de nous permettre d'avoir de nouvelles sources d'utilisateurs gratuitement. 
+\paragraph{}
 Nous ne voulions pas de pubs envahissantes, qui gênent l'utilisateur dans son utilisation de l'application, et perturbe la navigation dans le jeu. C'est la raison pour laquelle nous avons privilégié l'utilisation d'interstial en fin de partie, plutôt que d'une bannière tout au long du jeu. Une partie durant relativement longtemps, et sachant qu'un joueur fait plutôt peu de parties par session, nous avons décidé d'en mettre une à la fin de chaque partie, juste avant l'écran de fin lui indiquant le résultat obtenu lors du mini-jeu.
 
 \subsubsection{Version payante sans pub}
 
-Enfin, sachant que certains utilisateurs sont retissant à la publicité, (ce qui est compréhensible), mais qu'ils peuvent vouloir soutenir les développeurs, nous avons donné la possibilité de payer une version payante afin d'obtenir le jeu, mais sans aucune publicité. Nous avons utilisé un pluggin utilisé normalement pour le conception de boutique (Achats in-app), afin de créer un bouton sur l'écran d'accueil, qui permet (contre la modeste somme de 0,40\euro) de supprimer définitivement toute publicité. Grâce à l'utilisation du pluggin, l'achat est simplifié, puisqu'il utilise directement les systèmes de paiement d'Android et d'iOS.  L'idée n'étant pas d'escroquer les joueurs, simplement d'amortir les coûts de mise en ligne de l'application (voir "Mise en ligne"). Le pluggin utilisé est Soomla Store, un pluggin intéressant, puisqu'il est développé de manière collaboratif par qui veut apporter sa contribution, et qu'ils sont connus pour de nombreux pluggins unity très intéressants. 
+\paragraph{}
+Enfin, sachant que certains utilisateurs sont retissant à la publicité, (ce qui est compréhensible), mais qu'ils peuvent vouloir soutenir les développeurs, nous avons donné la possibilité de payer une version payante afin d'obtenir le jeu, mais sans aucune publicité. Nous avons utilisé un pluggin utilisé normalement pour le conception de boutique (Achats in-app), afin de créer un bouton sur l'écran d'accueil, qui permet (contre la modeste somme de 1,20\euro) de supprimer définitivement toute publicité. Grâce à l'utilisation du pluggin, l'achat est simplifié, puisqu'il utilise directement les systèmes de paiement d'Android et d'iOS.  
+\paragraph{}
+L'idée n'étant pas d'escroquer les joueurs, simplement d'amortir les coûts de mise en ligne de l'application (voir "Mise en ligne"). Le pluggin utilisé est Soomla Store, un pluggin intéressant, puisqu'il est développé de manière collaboratif par qui veut apporter sa contribution, et qu'ils sont connus pour de nombreux pluggins Unity très intéressants. 
 
 \subsection{Mise en ligne}
 
-La mise en ligne d'une application tant sur Android que sur Ios n'est pas gratuite. Les deux systèmes utilisent la même formule, à savoir l'achat d'un compte développeur qui permet de mettre autant d'application souhaitée, pendant un ans. Une fois une application mise en ligne, elle reste disponible à vie, mais passé les un an, on ne peut ni rajouter d'application, ni faire de mise à jour (à moins de renouveller le compte développeur). Le prix étant de 25\$ pour android, et de 99\$ pour IOS ! A noter aussi que pour android le compte est nécessaire uniquement pour la publication, alors que chez ios, il est impossible de tester la moindre application en cours de développement sans payer.
-Chez Android, la publication d'une application est assez simple, il suffit de compiler l'application et d'uploader le fichier apk obtenu. Une ou deux heures après, l'application est disponible sur le store. Pour Ios, c'est un peu plus fastidieux, chaque application/ou mise à jour est scrupuleusement vérifiée. Ainsi, les délais de publication (à condition d'être accepté) peuvent durer selon les périodes entre 5 et 14 jours ! Il faut donc être bien prudent avant de publier une mise à jour, la moindre erreur laissée pouvant être extrèment  longue à corriger. De plus, alors qu'une application Android peut être dévellopé à partir de n'importe quel système, Apple étant un peu plus fermé, nécessite l'utilisation d'un Mac, sans quoi ce n'est pas possible. Fort heureusement nous en possédions un, nous permettant d'éviter l'instalation d'un émulateur Mac sur pc (contournement possible). Enfin, alors que la compilation android est extrèmement simple, pour Ios c'est encore un peu compliqué, puisqu'il nécessite l'ajout de bibliothèques externes, qui parfois comportent quelques conflits entre elles.
+\paragraph{}
+La mise en ligne d'une application tant sur Android que sur iOS n'est pas gratuite. Les deux systèmes utilisent la même formule, à savoir l'achat d'un compte développeur qui permet de mettre autant d'application souhaitée, pendant un ans. Une fois une application mise en ligne, elle reste disponible à vie, mais passé les un an, on ne peut ni rajouter d'application, ni faire de mise à jour (à moins de renouveler le compte développeur). Le prix étant de 25\$ pour Android, et de 99\$ pour iOS ! A noter aussi que pour Android le compte est nécessaire uniquement pour la publication, alors que chez iOS, il est impossible de tester la moindre application en cours de développement sans payer.
+
+\paragraph{}
+Chez Android, la publication d'une application est assez simple, il suffit de compiler l'application et d'uploader le fichier apk obtenu. Une ou deux heures après, l'application est disponible sur le store. Pour iOS, c'est un peu plus fastidieux, chaque application/ou mise à jour est scrupuleusement vérifiée. Ainsi, les délais de publication (à condition d'être accepté) peuvent durer selon les périodes entre 5 et 14 jours ! Il faut donc être bien prudent avant de publier une mise à jour, la moindre erreur laissée pouvant être extrêmement  longue à corriger. 
+
+\paragraph{}
+De plus, alors qu'une application Android peut être développé à partir de n'importe quel système, Apple étant un peu plus fermé, nécessite l'utilisation d'un Mac, sans quoi ce n'est pas possible. Fort heureusement nous en possédions un, nous permettant d'éviter l'installation d'un émulateur Mac sur PC (contournement possible). Enfin, alors que la compilation Android est extrêmement simple, pour iOS c'est encore un peu compliqué, puisqu'il nécessite l'ajout de bibliothèques externes, qui parfois comportent quelques conflits entre elles.
 
 \subsubsection{Problème de synchronisation}
 
@@ -511,9 +558,11 @@ Après plusieurs heures de recherche sur les éléments de notre créations qui 
 \paragraph{}
 Finalement nous avons terminé par trouver la raison du problème : Une simple case à cocher dans l'une des centaines de menu de Unity. Le moteur devient optimisé pour jouer les sons rapidement, et tout les problèmes de synchronisation disparaissent. Ce n'est qu'un simple exemple démontrant l'importance de la configuration de Unity pour l'exportation d'un jeu optimisé sur toutes les plateformes.
 
-\begin{center}
-\includegraphics[scale=1]{./img/opti_sound.png}\\
-\textit{Paramètre pour la synchronisation des sons}
-\end{center}
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=1]{./img/opti_sound.png}}
+  \caption{Paramètre pour la synchronisation des sons}
+  \label{transitions_scenes}
+\end{figure}
+
 
 

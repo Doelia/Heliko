@@ -14,7 +14,7 @@ Enfin, certains jeux ne proposent qu’un gameplay rapide et de beaux graphismes
 \textit{Exemples : Temple Run sur mobile. Bit.Trip sur Wii et PC.}
 
 \subsubsection{Principes dégagés}
-Le principe des jeux musicaux nous plait, mais nous ne pouvons pas nous permettre d'utiliser des catalogues de musique existants pour des questions de droits d'auteur. De plus, générer les niveaux de façon procédurale par rapport à de la musique nous semblait intéressant mais après de longues réfléxions nous avons préféré nous concentrer sur d'autres priorités. Autrement, créer de nombreux niveaux à la main aurait été une tâche fastidieuse que nous voulions éviter. A l'opposé, créer un jeu de type \textit{Runner} ne demande que très peu de travail sur le contenu (il y a beaucoup de génération aléatoire), mais le principe du jeu, trop simple, nous semblait peu intéressant sur le plan enseignement. Nous avons ainsi décidé de créer un moteur de mini-jeux rythmique générique, afin de créer des scènes complexes et difficiles qui demandent un apprentisage de la part de l'utilisateur. Ceci nous assure une durée de vie de jeu correcte, sans devoir créer trop de contenu.
+Le principe des jeux musicaux nous plait, mais nous ne pouvions pas nous permettre d'utiliser des catalogues de musique existants pour des questions de droits d'auteur. Générer les niveaux de façon procédurale par rapport à de la musique nous semblait intéressant mais nous avons préféré nous concentrer sur d'autres priorités, alors que créer de nombreux niveaux à la main aurait été une tâche fastidieuse que nous voulions éviter. Créer un jeu de type \textit{Runner} ne demande que très peu de travail sur le contenu (il y a beaucoup de génération aléatoire), mais le principe du jeu, trop simple, nous semblait peu intéressant sur le plan enseignement. Nous avons ainsi décidé de créer un moteur de mini-jeux rythmique générique, afin de créer des scènes complexes et difficiles qui demandent un apprentisage de la part de l'utilisateur. Ceci nous assure une durée de vie de jeu correcte, sans devoir créer trop de contenu.
 
 
 \subsection{Cahier des charges}
@@ -22,20 +22,26 @@ Le principe des jeux musicaux nous plait, mais nous ne pouvons pas nous permettr
 \subsubsection{Principe de progression}
 \paragraph{} Le joueur lance le jeu et découvre un monde totalement vide sans aucune animation ni effet sonore. Un simple métronome qui frappe la mesure retentit, et la mascotte, un escargot, se déplace en rythme sur cette planète de façon circulaire.
 Le joueur doit débloquer des objets visuels et sonores dans des mini-jeux afin de rendre cette planète plus remplie et joyeuse.
-\begin{center}
-\includegraphics[scale=0.4]{img/protoPlanete.png}\\
-\textit{Prototype de planète à remplir}
-\end{center}
+
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.4]{./img/protoPlanete.png}}
+  \caption{Prototype de planète à remplir}
+  \label{protoPlanete}
+\end{figure}
+
 \paragraph{} Un objet est constitué d’un élément visuel qui est animé en rythme sur le tempo de la planète, et est associé à un sample unique qui est une composante d’une musique propre au jeu.\
 \paragraph{}Ce sample peut être un kick, une basse, une mélodie... Le principe est de débloquer peu à peu chacun des éléments du morceau final. On compte entre 5 et 10 éléments (donc mini-jeux) pour compléter entièrement le morceau.
 \paragraph{}Cette planète sert de représentation visuelle pour l’avancement du joueur.
 
 \subsubsection{Concept de mini-jeu}
 Un mini jeu est constitué d’une scène unique et minimaliste animée par une musique de fond entraînante.
-\begin{center}
-\includegraphics[scale=0.4]{img/rhythmParadise.png}\\
-\textit{Exemple de mini jeu, présent dans le jeu "Rhythm Paradize"}
-\end{center}
+
+\begin{figure}[H]\centering
+  \frame{\includegraphics[scale=.4]{./img/rhythmParadise.png}}
+  \caption{Exemple de mini jeu, présent dans le jeu "Rhythm Paradize"}
+  \label{rhythmParadise}
+\end{figure}
+
 \paragraph{} Le joueur doit apprendre quelques mouvements propres au mini jeu dans un entraînement. Une fois les mouvements acquis, le joueur peut tenter de réussir le mini jeu. La musique commence, et il doit réussir un maximum de mouvements dans le temps fixé (1mn30 - 2mn environ)
 \paragraph{} Ce mouvement peut être de nature varié : Il peut s’agir de tout simplement frapper un rythme synchronisé avec la musique, ou de répéter précisément une série de rythmes joués, ou de frapper après un signal avec un délai plus ou moins long, etc.
 \paragraph{} A la fin du niveau, un score est généré. S’il est supérieur à un certain seuil exigé, le mini jeu passe en mode “réussi” et le joueur débloque l’objet associé sur sa planète.
@@ -71,6 +77,7 @@ La liste des fonctionnalités à réaliser en fonction de leur importance pour u
 \\\\Puis :
 \item Réalisation du système d’achat de lumières et de décorations supplémentaires avec la monnaie
 \item Réalisation du système de partage in-cloud des planètes
+\item Création d'un éditeur de niveau pour les utilisateurs
 \item Ajout d’autres planètes comprenant d’autres mini-jeux
 \end{enumerate}
 
