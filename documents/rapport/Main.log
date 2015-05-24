@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -869,30 +869,57 @@ Package pdftex.def Info: ./img/skip_locked_popup.png used on input line 385.
 File: ./img/skip_unlocked.png Graphic file (type png)
 
 <use ./img/skip_unlocked.png>
-Package pdftex.def Info: ./img/skip_unlocked.png used on input line 393.
+Package pdftex.def Info: ./img/skip_unlocked.png used on input line 391.
 (pdftex.def)             Requested size: 143.78464pt x 89.5831pt.
 
 <./img/skip_unlocked_popup.png, id=136, 719.68875pt x 447.92343pt>
 File: ./img/skip_unlocked_popup.png Graphic file (type png)
 
 <use ./img/skip_unlocked_popup.png>
-Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 398.
+Package pdftex.def Info: ./img/skip_unlocked_popup.png used on input line 396.
 (pdftex.def)             Requested size: 143.9352pt x 89.5831pt.
  [25 <./img/compteur_tuto.png (PNG copy)> <./img/skip_locked.png> <./img/skip_l
 ocked_popup.png> <./img/skip_unlocked.png> <./img/skip_unlocked_popup.png>]
-<./img/opti_sound.png, id=141, 141.52875pt x 121.45375pt>
+<./img/scenes-transitions.png, id=141, 339.1872pt x 247.6452pt>
+File: ./img/scenes-transitions.png Graphic file (type png)
+
+<use ./img/scenes-transitions.png>
+Package pdftex.def Info: ./img/scenes-transitions.png used on input line 410.
+(pdftex.def)             Requested size: 237.42941pt x 173.35043pt.
+
+<./img/loading.png, id=142, 532.99126pt x 255.20343pt>
+File: ./img/loading.png Graphic file (type png)
+ <use ./img/loading.png>
+Package pdftex.def Info: ./img/loading.png used on input line 419.
+(pdftex.def)             Requested size: 159.8986pt x 76.56161pt.
+
+<./img/scene.png, id=143, 718.93594pt x 448.67625pt>
+File: ./img/scene.png Graphic file (type png)
+ <use ./img/scene.png>
+Package pdftex.def Info: ./img/scene.png used on input line 429.
+(pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
+
+<./img/cartoon.png, id=144, 718.93594pt x 448.67625pt>
+File: ./img/cartoon.png Graphic file (type png)
+ <use ./img/cartoon.png>
+Package pdftex.def Info: ./img/cartoon.png used on input line 434.
+(pdftex.def)             Requested size: 143.78464pt x 89.73366pt.
+
+[26 <./img/scenes-transitions.png (PNG copy)>] [27 <./img/loading.png (PNG copy
+)> <./img/scene.png (PNG copy)> <./img/cartoon.png (PNG copy)>]
+<./img/opti_sound.png, id=151, 141.52875pt x 121.45375pt>
 File: ./img/opti_sound.png Graphic file (type png)
 
 <use ./img/opti_sound.png>
-Package pdftex.def Info: ./img/opti_sound.png used on input line 420.
+Package pdftex.def Info: ./img/opti_sound.png used on input line 457.
 (pdftex.def)             Requested size: 141.5284pt x 121.45343pt.
-) [26 <./img/opti_sound.png>] (./Resultat.tex)
-[27] (./Bilan.tex) [28] (./Annexes.tex) [29] (./Main.aux) ) 
+) [28 <./img/opti_sound.png>] (./Resultat.tex)
+[29] (./Bilan.tex) [30] (./Annexes.tex) [31] (./Main.aux) ) 
 Here is how much of TeX's memory you used:
- 6737 strings out of 493104
- 91474 string characters out of 6136932
- 221365 words of memory out of 5000000
- 10044 multiletter control sequences out of 15000+600000
+ 6761 strings out of 493104
+ 91964 string characters out of 6136932
+ 221401 words of memory out of 5000000
+ 10064 multiletter control sequences out of 15000+600000
  20738 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,40p,1066b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -912,10 +939,10 @@ c/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texm
 f/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfti1200.pfb>
-Output written on Main.pdf (32 pages, 3480061 bytes).
+Output written on Main.pdf (34 pages, 3770898 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 223 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

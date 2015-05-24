@@ -373,7 +373,7 @@ Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi po
 \end{figure}
 
 \paragraph{}
-Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai complété au moins une fois
+Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau est lancé, désagrément minime pour un joueur expérimenté, mais obligatoire pour un jeu destiné à être partagé et montré. Désagrément minime, mais seulement s'il est possible de passer le tutoriel. Il est donc donné au joueur la possibilité de passer le tutoriel après qu'il l'ai complété au moins une fois.
 
 \begin{figure}[!htb]\centering
    \begin{minipage}{0.49\textwidth}\centering
@@ -386,10 +386,8 @@ Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau es
      \caption{Pop up correspondante}
      \label{skip_locked_popup}
    \end{minipage}
-\end{figure}
 
-\begin{figure}[!htb]\centering
-   \begin{minipage}{0.49\textwidth}\centering
+ \begin{minipage}{0.49\textwidth}\centering
      \frame{\includegraphics[scale=0.2]{./img/skip_unlocked.png}}
      \caption{Bouton skip déverrouillé}
      \label{skip_unlocked}
@@ -401,7 +399,46 @@ Nous avons fait le choix de proposer le tutoriel à chaque fois que le niveau es
    \end{minipage}
 \end{figure}
 
+\paragraph{}
+En pratique, un tutoriel est composé d'un tableau de \textit{StepTuto}, chaque \textit{StepTuto} correspond à un élément du tutoriel : un texte ou une phase de jeu. Chaque classe implémentant \textit{StepTuto} possède une méthode \textit{endStep()} qui permettra au tutoriel de passer à l'étape suivante. Cette méthode est appelé lorsqu'un step est terminé, c'est à dire que le joueur a touché l'écran après avoir lu le texte ou qu'une phase de jeu a été réussie. Lorsque toutes les éléments du tableau ont été visités, c'est à dire que toutes les étapes du tutoriel sont achevées, le tutoriel est terminé.
+
 \subsection{Assemblage des jeux}
+\paragraph{}
+Chaque jeu est en réalité une scène de unity. La navigation entre les scènes se fait suivant le diagramme fig. \ref{transitions_scenes}. L'écran principal est un ``hub'' où sont regroupés tous les jeux, on accède bien évidemment au jeu en cliquant dessus. Le tutoriel est ensuite chargé, puis enfin le jeu, on peut remarquer que l'on peut à tout moment revenir à l'écran principal.
+
+\begin{figure}[!htb]\centering
+  \frame{\includegraphics[scale=0.7]{./img/scenes-transitions.png}}
+  \caption{Transitions entre les scènes du jeu}
+  \label{transitions_scenes}
+\end{figure}
+
+\paragraph{}
+Les scènes ne se chargent pas instantanément, en Unity indique le pourcentage de la scène qui a été chargé, cela permet entre autre de réaliser des écrans de chargement animés. En plus de donner au joueur l'avancement du chargement, cela rend le jeu bien plus fluide que si le chargement était simplement un écran noir, comportement par défaut de Unity.
+
+\begin{figure}[!Htb]\centering
+  \frame{\includegraphics[scale=0.3]{./img/loading.png}}
+  \caption{Écran de chargement}
+  \label{loading}
+\end{figure}
+
+\paragraph{}
+Les transitions entre les scènes se font donc par des écrans de chargements, mais il serait un peu brusque d'interrompre directement le jeu lorsqu'il est terminé. Nous avons décidé de faire une fermeture en cercle (voir fig. \ref{cartoon}) sur un élément de la scène pour donner un effet cartoon.
+
+\begin{figure}[!Htb]\centering
+   \begin{minipage}{0.49\textwidth}\centering
+     \frame{\includegraphics[scale=0.2]{./img/scene.png}}
+     \caption{Scène normale}
+     \label{regular_scene}
+   \end{minipage}
+   \begin {minipage}{0.49\textwidth}\centering
+     \frame{\includegraphics[scale=0.2]{./img/cartoon.png}}
+     \caption{Fermeture en cercle}
+     \label{cartoon}
+   \end{minipage}
+\end{figure}
+
+Il faut savoir qu'il n'y a pas de manière simple de réaliser cet effet dans Unity. L'approche logique aurait été de coller de grandes zones noires aux bords de l'image du cercle vide, mais il n'est pas possible de manipuler la position et la taille des éléments dans Unity, ces données sont modifiée par le \textit{scale} (échelle) de l'image. Difficile donc d'avoir un effet précis et fluide en multipliant la taille de l'image par un scalaire. C'est la solution de la physique qui a finalement été choisie, un centre de gravité au centre du cercle, et en soumettant les grandes zones noires à la physique, elle se déplacent de façon fluide en suivant le bord du cercle, qui lui a son scale diminué.
+
 \subsection{Mise en ligne}
 
 \subsubsection{Problème de synchronisation}

@@ -67,16 +67,20 @@
 \contentsline {paragraph}{}{24}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{26}
 \contentsline {subsection}{\numberline {4.6}Assemblage des jeux}{26}
-\contentsline {subsection}{\numberline {4.7}Mise en ligne}{26}
-\contentsline {subsubsection}{\numberline {4.7.1}Probl\IeC {\`e}me de synchronisation}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {paragraph}{}{26}
-\contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{27}
-\contentsline {section}{\numberline {6}Bilan du projet}{28}
-\contentsline {subsection}{\numberline {6.1}Autocritique}{28}
-\contentsline {subsection}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{28}
-\contentsline {subsection}{\numberline {6.3}Perspectives}{28}
-\contentsline {subsection}{\numberline {6.4}Conclusion}{28}
-\contentsline {section}{\numberline {7}Annexes}{29}
+\contentsline {subsection}{\numberline {4.7}Mise en ligne}{27}
+\contentsline {subsubsection}{\numberline {4.7.1}Probl\IeC {\`e}me de synchronisation}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{28}
+\contentsline {section}{\numberline {5}R\IeC {\'e}sultat}{29}
+\contentsline {section}{\numberline {6}Bilan du projet}{30}
+\contentsline {subsection}{\numberline {6.1}Autocritique}{30}
+\contentsline {subsection}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{30}
+\contentsline {subsection}{\numberline {6.3}Perspectives}{30}
+\contentsline {subsection}{\numberline {6.4}Conclusion}{30}
+\contentsline {section}{\numberline {7}Annexes}{31}
