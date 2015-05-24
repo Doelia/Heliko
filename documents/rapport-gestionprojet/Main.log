@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  24 MAY 2015 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -594,18 +594,13 @@ File: ./img/list-tests.png Graphic file (type png)
 Package pdftex.def Info: ./img/list-tests.png used on input line 151.
 (pdftex.def)             Requested size: 102.38225pt x 137.01154pt.
  [8]
-<./img/github_commits.png, id=563, 470.25688pt x 202.7575pt>
+<./img/github_commits.png, id=563, 463.7325pt x 803.0pt>
 File: ./img/github_commits.png Graphic file (type png)
 
 <use ./img/github_commits.png>
 Package pdftex.def Info: ./img/github_commits.png used on input line 171.
-(pdftex.def)             Requested size: 399.72025pt x 172.34468pt.
-
-Overfull \hbox (39.72025pt too wide) in paragraph at lines 171--172
- [][] 
- []
-
-[9 <./img/list-tests.png>]
+(pdftex.def)             Requested size: 231.86568pt x 401.49902pt.
+ [9 <./img/list-tests.png>]
 <./img/punchcard.png, id=568, 474.27188pt x 255.95625pt>
 File: ./img/punchcard.png Graphic file (type png)
 
@@ -617,14 +612,14 @@ Overfull \hbox (19.41801pt too wide) in paragraph at lines 182--183
  [][] 
  []
 
-[10 <./img/github_commits.png> <./img/punchcard.png>]
-<./img/gource_over.png, id=574, 1004.75375pt x 598.235pt>
+[10 <./img/github_commits.png>]
+<./img/gource_over.png, id=573, 1004.75375pt x 598.235pt>
 File: ./img/gource_over.png Graphic file (type png)
 
 <use ./img/gource_over.png>
-Package pdftex.def Info: ./img/gource_over.png used on input line 208.
+Package pdftex.def Info: ./img/gource_over.png used on input line 198.
 (pdftex.def)             Requested size: 301.42845pt x 179.47188pt.
- [11 <./img/gource_over.png>]) [12] (./Main.aux) ) 
+ [11 <./img/punchcard.png>] [12 <./img/gource_over.png>]) [13] (./Main.aux) ) 
 Here is how much of TeX's memory you used:
  5909 strings out of 493117
  82074 string characters out of 6135433
@@ -632,26 +627,26 @@ Here is how much of TeX's memory you used:
  9252 multiletter control sequences out of 15000+600000
  16582 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,18n,45p,636b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texm
-f-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2014/texmf-dist/fonts/en
-c/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/bera/fvmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/c
-m-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-
-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-su
-per/sfbx2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-supe
-r/sfcc1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/
-sfcc1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sf
-cc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm
-1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm12
-00.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.p
-fb>
-Output written on Main.pdf (13 pages, 1273051 bytes).
+ 41i,18n,45p,635b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/
+usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texli
+ve/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/cm-super/sfti1200.pfb>
+Output written on Main.pdf (14 pages, 1250237 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
+ 628 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
