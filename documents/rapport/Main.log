@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  25 MAY 2015 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.24)  25 MAY 2015 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -755,7 +755,7 @@ Package: beramono 2004/01/31 (WaS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./Main.aux)
+No file Main.aux.
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -772,7 +772,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 60.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 60.
@@ -831,13 +831,22 @@ LaTeX Info: Redefining \nameref on input line 60.
 \openout4 = `Main.out'.
 
  (./Title.tex
-<./img/logoUM.png, id=124, 96.36pt x 96.36pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<./img/logoUM.png, id=130, 96.36pt x 96.36pt>
 File: ./img/logoUM.png Graphic file (type png)
  <use ./img/logoUM.png>
 Package pdftex.def Info: ./img/logoUM.png used on input line 5.
 (pdftex.def)             Requested size: 106.85788pt x 106.85791pt.
 
-<./img/logo.png, id=126, 894.34125pt x 848.16875pt>
+<./img/logo.png, id=132, 894.34125pt x 848.16875pt>
 File: ./img/logo.png Graphic file (type png)
  <use ./img/logo.png>
 Package pdftex.def Info: ./img/logo.png used on input line 18.
@@ -848,16 +857,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 29.
-
-[1
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-ogoUM.png> <./img/logo.png>])pdfTeX warning (ext4): destination with the same i
-dentifier (name{page.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 \end{titlepage}
+                     [1 <./img/logoUM.png> <./img/logo.png>])pdfTeX warning (ex
+t4): destination with the same identifier (name{page.1}) has been already used,
+ duplicate ignored
 <to be read again> 
                    \relax 
 l.74 \newpage
-              [1] [2] (./Main.toc)
+              [1] [2]
 \tf@toc=\write5
 \openout5 = `Main.toc'.
 
@@ -868,7 +879,10 @@ been already used, duplicate ignored
 l.92 \newpage
               [1
 
-] (./Main.lof)
+]
+
+Package hyperref Warning: old lof file detected, not used; run LaTeX again.
+
 \tf@lof=\write6
 \openout6 = `Main.lof'.
 
@@ -894,7 +908,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapitre 2.
 [5
 
-] <./img/protoPlanete.png, id=188, 703.12688pt x 560.0925pt>
+] <./img/protoPlanete.png, id=191, 703.12688pt x 560.0925pt>
 File: ./img/protoPlanete.png Graphic file (type png)
 
 <use ./img/protoPlanete.png>
@@ -907,12 +921,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <./img/rhythmParadise.png, id=203, 628.59843pt x 432.86719pt>
+[6] <./img/rhythmParadise.png, id=206, 628.59843pt x 432.86719pt>
 File: ./img/rhythmParadise.png Graphic file (type png)
 
 <use ./img/rhythmParadise.png>
 Package pdftex.def Info: ./img/rhythmParadise.png used on input line 62.
 (pdftex.def)             Requested size: 251.4349pt x 173.1438pt.
+
+
+LaTeX Warning: Reference `rhythmParadise' on page 7 undefined on input line 67.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -936,7 +954,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9] (./RapportActivite.tex
 Chapitre 3.
-<./img/list-tests.png, id=234, 102.3825pt x 137.01187pt>
+<./img/list-tests.png, id=237, 102.3825pt x 137.01187pt>
 File: ./img/list-tests.png Graphic file (type png)
 
 <use ./img/list-tests.png>
@@ -946,17 +964,23 @@ Package pdftex.def Info: ./img/list-tests.png used on input line 41.
 
 ]
 
+LaTeX Warning: Reference `listte' on page 11 undefined on input line 47.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./img/list-tests.png>] <./img/trello.png, id=257, 280.54813pt x 297.11pt>
+[11 <./img/list-tests.png>] <./img/trello.png, id=258, 280.54813pt x 297.11pt>
 File: ./img/trello.png Graphic file (type png)
 
 <use ./img/trello.png>
 Package pdftex.def Info: ./img/trello.png used on input line 88.
 (pdftex.def)             Requested size: 280.54742pt x 297.10927pt.
+
+
+LaTeX Warning: Reference `trellomemo' on page 12 undefined on input line 94.
 
 <./img/trello_autres.png, id=259, 282.05376pt x 298.11375pt>
 File: ./img/trello_autres.png Graphic file (type png)
@@ -994,7 +1018,11 @@ File: ./img/github_commits.png Graphic file (type png)
 Package pdftex.def Info: ./img/github_commits.png used on input line 134.
 (pdftex.def)             Requested size: 231.86568pt x 401.49902pt.
 
-<./img/punchcard.png, id=283, 474.27188pt x 255.95625pt>
+
+LaTeX Warning: Reference `github_commits' on page 14 undefined on input line 14
+0.
+
+<./img/punchcard.png, id=282, 474.27188pt x 255.95625pt>
 File: ./img/punchcard.png Graphic file (type png)
 
 <use ./img/punchcard.png>
@@ -1008,7 +1036,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14 <./img/github_commits.png>]
-<./img/gource_over.png, id=295, 1004.75375pt x 598.235pt>
+
+LaTeX Warning: Reference `punchcard' on page 15 undefined on input line 150.
+
+
+LaTeX Warning: Reference `gource_over' on page 15 undefined on input line 158.
+
+<./img/gource_over.png, id=292, 1004.75375pt x 598.235pt>
 File: ./img/gource_over.png Graphic file (type png)
 
 <use ./img/gource_over.png>
@@ -1022,7 +1056,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15 <./img/punchcard.png> <./img/gource_over.png>]
-<./img/unity-3D.png, id=308, 1284.8pt x 847.165pt>
+<./img/unity-3D.png, id=306, 1284.8pt x 847.165pt>
 File: ./img/unity-3D.png Graphic file (type png)
  <use ./img/unity-3D.png>
 Package pdftex.def Info: ./img/unity-3D.png used on input line 173.
@@ -1144,7 +1178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
-<./img/diagEtatTransition.png, id=378, 519.89232pt x 234.42581pt>
+<./img/diagEtatTransition.png, id=375, 519.89232pt x 234.42581pt>
 File: ./img/diagEtatTransition.png Graphic file (type png)
 
 <use ./img/diagEtatTransition.png>
@@ -1177,7 +1211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--167
 
  []
 
-<./img/diagramme_moteur.png, id=397, 487.3407pt x 337.5009pt>
+<./img/diagramme_moteur.png, id=395, 487.3407pt x 337.5009pt>
 File: ./img/diagramme_moteur.png Graphic file (type png)
 
 <use ./img/diagramme_moteur.png>
@@ -1191,6 +1225,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
+
+LaTeX Warning: Reference `engine_summary' on page 23 undefined on input line 17
+4.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1266,7 +1304,7 @@ Underfull \hbox (badness 1552) in paragraph at lines 252--252
 []\T1/cmr/bx/n/10.95 Note tech-nique sur la quan-tité à lon-gueur va-riable
  []
 
-<./img/vlqOctet.png, id=436, 128.48pt x 65.24374pt>
+<./img/vlqOctet.png, id=432, 128.48pt x 65.24374pt>
 File: ./img/vlqOctet.png Graphic file (type png)
  <use ./img/vlqOctet.png>
 Package pdftex.def Info: ./img/vlqOctet.png used on input line 252.
@@ -1306,10 +1344,10 @@ l.270 ;; transforme un Ã©vÃ¨nement
 ? X
  
 Here is how much of TeX's memory you used:
- 11387 strings out of 493117
- 161100 string characters out of 6135433
+ 11375 strings out of 493117
+ 160979 string characters out of 6135433
  320111 words of memory out of 5000000
- 14411 multiletter control sequences out of 15000+600000
+ 14405 multiletter control sequences out of 15000+600000
  24191 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,45p,1022b,1515s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1332,10 +1370,10 @@ per/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-supe
 r/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/
 sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sf
 ti1200.pfb>
-Output written on Main.pdf (28 pages, 3253259 bytes).
+Output written on Main.pdf (29 pages, 3247425 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 475 compressed objects within 5 object streams
+ 551 PDF objects out of 1000 (max. 8388607)
+ 470 compressed objects within 5 object streams
  215 named destinations out of 1000 (max. 500000)
  311 words of extra memory for PDF output out of 10000 (max. 10000000)
 
