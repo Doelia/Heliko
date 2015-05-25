@@ -267,7 +267,7 @@ L'action 1 correspond à la note C, l'action 2 à la note C\#, et l'action 3 à 
 À chaque évènement avec le \textit{status byte} "début de note" (de l'octet 0x90 à l'octet 0x9F), l'action correspondant à la note de l'évènement est ajoutée au niveau. Ces actions sont séparées avec des zéros, eux donnés par le \textit{delta time}.\\
 
 \begin{lstlisting}[style=Scheme]
-;; transforme un évènement en donnees de niveau (0, 1, 2...)
+;; transforme un evenement en donnees de niveau (0, 1, 2...)
 ;; division est le nombre de frames par secondes
 ;; delta-sum est la somme des delta depuis le dernier event utile
 (define (event-to-level event division delta-sum)
