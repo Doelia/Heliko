@@ -1,6 +1,6 @@
 \chapter{Analyse du projet} %cahier des charges
 
-Une bonne analyse est nécessaire au pilotage du projet. Il faut réaliser une analyse des jeux de rythmes déjà existants, concevoir le concept du jeu, définir les priorités et établire une planification avant de commencer tout développement.
+Une bonne analyse est nécessaire pour le pilotage du projet. Il faut réaliser un examen des jeux de rythmes déjà existants, concevoir le concept du jeu, définir les priorités et établir une planification avant de commencer tout développement.
 
 \section{Analyse de l'existant}
 
@@ -8,23 +8,23 @@ Plusieurs jeux au gameplay approchant celui visé par l’équipe ont été test
 \paragraph{Jeux basés sur la musique}
 On y trouve souvent une musique par niveau. Il faut taper sur plusieurs notes en synchronisation avec la musique qui est jouée en arrière-plan. Les notes ont généralement été posées manuellement par les concepteurs, en fonction du niveau. Certains jeux permettent de charger directement ses propres MP3, la génération du niveau est donc faite à la volée en fonction du fichier.\\
 \textit{Exemples : Guitar Hero sur console, TapTap sur iOS et applications de promotions d’album.}
-\paragraph{Jeux basés sur l’habilité ryhtmique}
+\paragraph{Jeux basés sur l’habileté rythmique}
 Il existe aussi des jeux basés sur l’habileté de l’utilisateur et sa vitesse de réaction où le principe est de taper sur l’écran au bon moment et au bon endroit. L'accent est mis sur le style graphique, il n'y a pas une grande variété dans les musiques et elles n'ont pas de lien direct avec les niveaux. La musique n'est là que pour apporter du rythme ainsi qu’un élément addictif, si elle est agréable à l’oreille.\\
 \textit{Exemples : Geometry Dash, SineWave et Colorace sur smartphones.}
 \paragraph{Jeu de type “Runner”}
-Enfin, certains jeux ne proposent qu’un gameplay rapide et de beaux graphismes, en ne prêtant que peu d’importance à la musique. Le contenu du jeu est ainsi plus fourni en niveaux, en personnages et fonctionnalités et les graphismes du jeu sont donc, en conséquence, plus approfondis. L’utilisateur ne joue qu’en fonction de ce qui apparaît à l’écran. La musique peut changer en fonction de l’avancée dans le niveau.\\
+Enfin, certains jeux ne proposent qu’un gameplay rapide et de beaux graphismes, en ne prêtant que peu d’importance à la musique. Le contenu du jeu est ainsi plus fourni en niveaux, en personnages et fonctionnalités, et les graphismes du jeu sont donc, en conséquence, plus approfondis. L’utilisateur ne joue qu’en fonction de ce qui apparaît à l’écran. La musique peut changer en fonction de l’avancée dans le niveau.\\
 \textit{Exemples : Temple Run sur mobile. Bit.Trip sur Wii et PC.}
 
 \subsection{Principes dégagés}
-Le principe des jeux musicaux nous plait, mais nous ne pouvions pas nous permettre d'utiliser des catalogues de musique existants pour des questions de droits d'auteur. Générer les niveaux de façon procédurale par rapport à de la musique nous semblait intéressant mais nous avons préféré nous concentrer sur d'autres priorités, alors que créer de nombreux niveaux à la main aurait été une tâche fastidieuse que nous voulions éviter. Créer un jeu de type \textit{Runner} ne demande que très peu de travail sur le contenu (il y a beaucoup de génération aléatoire), mais le principe du jeu, trop simple, nous semblait peu intéressant sur le plan enseignement. Nous avons ainsi décidé de créer un moteur de mini-jeux rythmique générique, afin de créer des scènes complexes et difficiles qui demandent un apprentisage de la part de l'utilisateur. Ceci nous assure une durée de vie de jeu correcte, sans devoir créer trop de contenu.
+Le principe des jeux musicaux nous plait, mais nous ne pouvions pas nous permettre d'utiliser des catalogues de musique existants pour des questions de droits d'auteur. Générer les niveaux de façon procédurale par rapport à de la musique nous semblait intéressant, mais nous avons préféré nous concentrer sur d'autres priorités, alors que créer de nombreux niveaux à la main aurait été une tâche fastidieuse que nous voulions éviter. Créer un jeu de type \textit{Runner} ne demande que très peu de travail sur le contenu (il y a beaucoup de générations aléatoires), mais le principe du jeu, trop simple, nous semblait peu intéressant sur le plan de l'enseignement. Nous avons ainsi décidé de créer un moteur de mini-jeux rythmique générique, afin de créer des scènes complexes et difficiles qui demandent un apprentissage de la part de l'utilisateur. Ceci nous assure une durée de vie de jeu correcte, sans devoir créer trop de contenu.
 
 
 \section{Objectifs du projet}
 
-L'objectif premier du projet est de mettre en ligne un jeu de rythme pour téléphone mobile sur les plateforme Google Play et sur l'Apple Store. Le jeu doit être le plus intéressant et le plus complet possible.
+L'objectif premier du projet est de mettre en ligne un jeu de rythme pour téléphone mobile sur les plateformes Google Play et Apple Store. Le jeu doit être le plus intéressant et le plus complet possible.
 
 \paragraph{Contenu du jeu}
-Nous avons dès le départ conçu les parties du jeu pour qu’il soit jouable et en ligne au bout de 4 mois de travail. Étant donné notre légère expérience dans la gestion du temps, nous avons conçu des “couches” à développer pour former le jeu de façon incrémentale et ainsi être certain d’aboutir à un résultat (À condition de prendre en compte les tests, les finitions et la mise en ligne).
+Nous avons dès le départ conçu les parties du jeu pour qu’il soit jouable et en ligne au bout de 4 mois de travail. Étant donné notre légère expérience dans la gestion du temps, nous avons conçu des “couches” à développer pour former le jeu de façon incrémentale et ainsi être certain d’aboutir à un résultat (à condition de prendre en compte les tests, les finitions et la mise en ligne).
 
 \paragraph{Couches incrémentales}
 La liste des fonctionnalités à réaliser en fonction de leur importance pour un jeu jouable :
@@ -33,7 +33,7 @@ La liste des fonctionnalités à réaliser en fonction de leur importance pour u
 \item Rendre l’application jouable sur tous les supports mobiles ;
 \item Créer d’autres mini jeux ;
 \item Créer un moteur de tutoriel et les tutoriels associés ;
-\item Concevoir et ajouter une monétisation (gain de pièces dans les niveaux et personnalisation du jeu) ;
+\item Concevoir et ajouter une monétisation (gain de pièces dans les niveaux, personnalisation du jeu) ;
 \item Concevoir et ajouter un esprit communautaire (partage de l’avancement) ;
 \item Créer un éditeur public de niveaux contributif.
 \end{enumerate}
@@ -42,7 +42,7 @@ La liste des fonctionnalités à réaliser en fonction de leur importance pour u
 \section{Cahier des charges}
 
 \subsection{Principe de progression}
-\paragraph{} Le joueur lance le jeu et découvre un monde totalement vide sans aucune animation ni effet sonore. Un simple métronome qui frappe la mesure retentit, et la mascotte, un escargot, se déplace en rythme sur cette planète de façon circulaire.
+\paragraph{} Le joueur lance le jeu et découvre un monde totalement vide sans aucune animation ni aucun effet sonore. Un simple métronome qui frappe la mesure retentit, et la mascotte, un escargot, se déplace en rythme sur cette planète de façon circulaire.
 Le joueur doit débloquer des objets visuels et sonores dans des mini-jeux afin de rendre cette planète plus remplie et joyeuse.
 
 \begin{figure}[H]\centering
@@ -52,7 +52,7 @@ Le joueur doit débloquer des objets visuels et sonores dans des mini-jeux afin 
 \end{figure}
 
 \paragraph{} Un objet est constitué d’un élément visuel qui est animé en rythme sur le tempo de la planète, et est associé à un sample unique qui est une composante d’une musique propre au jeu.\
-\paragraph{}Ce sample peut être un kick, une basse, une mélodie... Le principe est de débloquer peu à peu chacun des éléments du morceau final. On compte entre 5 et 10 éléments (donc mini-jeux) pour compléter entièrement le morceau.
+\paragraph{}Ce sample peut être un kick, une basse, une mélodie... Le principe est de débloquer peu à peu chacun des éléments du morceau final. On compte entre 5 et 10 éléments (donc mini-jeux) pour achever le morceau.
 \paragraph{}Cette planète sert de représentation visuelle pour l’avancement du joueur.
 
 \subsubsection{Concept de mini-jeu}
@@ -64,15 +64,15 @@ Un mini jeu est constitué d’une scène unique et minimaliste animée par une 
   \label{rhythmParadise}
 \end{figure}
 
-\paragraph{} Sur la figure \ref{rhythmParadise}, le joueur doit attraper des petit pois en abaissant la fourchette au bon moment après un signal. C'est un bon exemple de mini jeu.
+\paragraph{} Sur la figure \ref{rhythmParadise}, le joueur doit attraper des petits pois en abaissant la fourchette au bon moment après un signal. C'est un bon exemple de mini jeu.
 
 \paragraph{} Le joueur doit apprendre quelques mouvements propres au mini jeu dans un entraînement. Une fois les mouvements acquis, le joueur peut tenter de réussir le mini jeu. La musique commence, et il doit réussir un maximum de mouvements dans le temps fixé (1mn30 - 2mn environ)
 \paragraph{} Ce mouvement peut être de nature varié : Il peut s’agir de tout simplement frapper un rythme synchronisé avec la musique, ou de répéter précisément une série de rythmes joués, ou de frapper après un signal avec un délai plus ou moins long, etc.
 
 
 
-\paragraph{} A la fin du niveau, un score est généré. S’il est supérieur à un certain seuil exigé, le mini jeu passe en mode “réussi” et le joueur débloque l’objet associé sur sa planète.
-Il existe plusieurs issues pour un mini jeu :
+\paragraph{} À la fin du niveau, un score est généré. S’il est supérieur à un certain seuil exigé, le mini-jeu passe en mode “réussi” et le joueur débloque l’objet associé sur sa planète.
+Il existe plusieurs issues pour un mini-jeu :
 \begin{itemize}
 \item Non réalisé
 \item Réussi
@@ -81,10 +81,10 @@ Il existe plusieurs issues pour un mini jeu :
 \end{itemize}
 
 \paragraph{}
-Ces issues seront représentées par un nombre d'étoile, allant de un à trois.
+Ces issues seront représentées par un nombre d'étoiles, allant d’une à trois.
 
 \paragraph{Notions techniques}
-Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’un nouveau concept rythmique. Il n’est pas possible de les générer à la volée. On mettra en place des mécaniques précises qu’on pourra réutiliser sur chacun des mini jeux pour les créer le plus facilement possible. Pour les graphismes, de très simples dessins en 2D seront utilisés,. 
+Les mini jeux sont uniques, c’est-à-dire qu’à chaque fois il s’agit d’un nouveau concept rythmique. Il n’est pas possible de les générer à la volée. On mettra en place des mécaniques précises qu’on pourra réutiliser sur chacun des mini jeux pour les créer le plus facilement possible. Pour les graphismes, de très simples dessins en 2D seront utilisés. 
 
 \subsection{Niveau infini}
 \paragraph{} Une fois tous les éléments débloqués, le joueur atteint le niveau final qui est un mode infini arcade sur la musique assemblée dans lequel il peut essayer de réaliser le meilleur score possible en incarnant l’escargot. (Qui s’approche de notre idée de départ, mais de façon moins importante).
@@ -92,9 +92,8 @@ Les mini jeux sont uniques, c’est à dire qu’à chaque fois il s’agit d’
 \paragraph{} La somme de ses scores réalisés au fil du temps est convertie sous la forme d’une monnaie avec laquelle il peut acheter des effets de lumières et décorations supplémentaires à disposer sur sa planète afin de la personnaliser.
 
 \subsection{Partage}
-L’avancement des joueurs, et la personnalisation des planètes, est stockée dans le cloud. Un joueur peut montrer sa planète à ses amis et leur faire découvrir son avancement et ses scores.
+L’avancement des joueurs, et la personnalisation des planètes sont stockés dans le cloud. Un joueur peut montrer sa planète à ses amis et leur faire découvrir son avancement et ses scores.
 
 \subsection{Monétisation}
 En fonction de l’avancement final du projet, un système de monétisation sera choisi. Il pourra s’agir de la vente de monnaie supplémentaire pour la personnalisation par exemple, ou simplement de mettre en place un système de publicités judicieusement mis en place. Cette monétisation s'accompagnera d'une étude des différents services de paiements proposés pour les téléphones mobiles.
-
 
