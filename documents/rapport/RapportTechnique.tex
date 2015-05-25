@@ -145,7 +145,7 @@ Les mouvements suivants sont définis :
 
 
 \paragraph{}
-La gestion des évènements est délicate, dans le sens où elle se joue à quelques millisecondes près. Un temps d'attente trop long, et le joueur retrouve un décalage entre le moment où il appuie, et le moment où l'évènement est envoyé. Trop court, et le tap bref est interprété par un tap long, et le glissé n'a pas le temps de se faire. De même, une distance trop courte, et le moindre mouvement du doigt est interprété comme un lancement. Trop longue, et le risque qu'il soit interprété comme un évènement long, ou qu'un décalage se créé, apparaît. Ainsi de nombreux tests ont dû être effectués, nécessitant un mouvement infime des paramètres, et demandant à chaque fois de faire de nouveau une compilation, un transfert sur le téléphone et un test, puisque seule l'expérimentation permet de savoir si le réglage est bon.
+La gestion des évènements est délicate, dans le sens où elle se joue à quelques millisecondes près. Un temps d'attente trop long, et le joueur retrouve un décalage entre le moment où il appuie, et le moment où l'évènement est envoyé. Trop court, et le tap bref est interprété par un tap long, et le glissé n'a pas le temps de se faire. De même, une distance trop courte, et le moindre mouvement du doigt est interprété comme un lancement. Trop longue, et le risque qu'il soit interprété comme un évènement long, ou qu'un décalage se crée, apparaît. Ainsi de nombreux tests ont dû être effectués, nécessitant un mouvement infime des paramètres, et demandant à chaque fois de faire de nouveau une compilation, un transfert sur le téléphone et un test, puisque seule l'expérimentation permet de savoir si le réglage est bon.
 
 \paragraph{Détection de la réussite}
 Une fois les évènements convertis en numéros d'action, il faut vérifier si ces numéros sont en cohésion avec le niveau chargé. On ne compte que les échecs, et à la fin du niveau on soustrait le nombre total d'actions à réaliser par le nombre d'échecs pour obtenir le \% de réussite sur le niveau.
@@ -187,7 +187,7 @@ Même si notre système de fichier texte est suffisamment clair pour être lu et
 La programmation est la représentation des données et la manipulation de ces représentations. Les fichiers midi sont représentés par des listes de listes. Quel meilleur langage qu'un LISP pour effectuer des opérations sur des listes ? Le Scheme s'est imposé comme choix naturel.
 
 \subsection{Structure d'un fichier midi}
-Les spécifications du midi sont lourdes et complexes, elles ne seront pas détaillées ici, seules seront détaillées les informations importantes à notre convertisseur de niveau.
+Les spécifications du midi sont lourdes et complexes, elles ne seront pas détaillées ici, seules seront détaillées les informations importantes à notre convertisseur de niveau. (Un extrait est fourni en annexe).
 
 Un fichier midi est composé d'une suite de "chunks", eux-mêmes composés d'évènements, il existe un certain nombre d'évènements différents, tels que le nom de la piste, le tempo, le nombre de pistes... Nous détaillerons uniquement les évènements pertinents à notre programme.\\
 {\small \texttt{fichier midi = <header chunk> + <track chunk> [+ <track chunk> ...]}}\\\\
