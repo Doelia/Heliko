@@ -137,7 +137,7 @@
 \contentsline {subsection}{\numberline {4.7.2}Publicit\IeC {\'e}}{38}{subsection.4.7.2}
 \contentsline {paragraph}{}{38}{section*.94}
 \contentsline {paragraph}{}{38}{section*.95}
-\contentsline {subsection}{\numberline {4.7.3}Version payante sans pub}{39}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.3}Version payante sans publicit\IeC {\'e}}{39}{subsection.4.7.3}
 \contentsline {paragraph}{}{39}{section*.96}
 \contentsline {paragraph}{}{39}{section*.97}
 \contentsline {section}{\numberline {4.8}Mise en ligne}{39}{section.4.8}
