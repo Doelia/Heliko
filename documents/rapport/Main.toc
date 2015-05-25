@@ -12,7 +12,7 @@
 \contentsline {chapter}{\numberline {2}Analyse du projet}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Analyse de l'existant}{7}{section.2.1}
 \contentsline {paragraph}{Jeux bas\IeC {\'e}s sur la musique}{7}{section*.14}
-\contentsline {paragraph}{Jeux bas\IeC {\'e}s sur l\IeC {\textquoteright }habilit\IeC {\'e} ryhtmique}{7}{section*.15}
+\contentsline {paragraph}{Jeux bas\IeC {\'e}s sur l\IeC {\textquoteright }habilet\IeC {\'e} rythmique}{7}{section*.15}
 \contentsline {paragraph}{Jeu de type \IeC {\textquotedblleft }Runner\IeC {\textquotedblright }}{7}{section*.16}
 \contentsline {subsection}{\numberline {2.1.1}Principes d\IeC {\'e}gag\IeC {\'e}s}{7}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}Objectifs du projet}{8}{section.2.2}
