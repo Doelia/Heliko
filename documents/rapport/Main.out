@@ -1,0 +1,58 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Analyse du projet}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Analyse de l'existant}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Principes d\351gag\351s}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{Objectifs du projet}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Cahier des charges}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.3.1}{Principe de progression}{section.2.3}% 7
+\BOOKMARK [2][-]{subsection.2.3.2}{Niveau infini}{section.2.3}% 8
+\BOOKMARK [2][-]{subsection.2.3.3}{Partage}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.4}{Mon\351tisation}{section.2.3}% 10
+\BOOKMARK [0][-]{chapter.3}{Rapport d'activit\351}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Organisation du travail}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{R\364les dans l\220\351quipe}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.2}{Cycles it\351ratifs}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{M\351thodes et outils}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{M\351thode de communication}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.2}{Github}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.3}{Unity}{section.3.2}% 18
+\BOOKMARK [1][-]{section.3.3}{Estimation du temps pass\351}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Rapport technique}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Moteur de jeu rythmique}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{Le beater}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.2}{Autres fonctionnalit\351s du beateur}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.3}{Le niveau \(LevelScripted\)}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.4}{\311v\350nements du joueur et calcul de la r\351ussite}{section.4.1}% 25
+\BOOKMARK [2][-]{subsection.4.1.5}{R\351sum\351 du fonctionnement du moteur}{section.4.1}% 26
+\BOOKMARK [1][-]{section.4.2}{Outil de construction des niveaux}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.2.1}{Choix du langage}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.2}{Structure d'un fichier midi}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.3}{Conversion en niveau}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.4}{Mise en pratique}{section.4.2}% 31
+\BOOKMARK [1][-]{section.4.3}{Avancement du joueur}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.3.1}{Calcul du score dans un mini-jeu}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.2}{Enregistrement des scores}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.3}{D\351blocage des mini-jeux}{section.4.3}% 35
+\BOOKMARK [1][-]{section.4.4}{Cr\351ation d'un mini-jeu}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.4.1}{Les graphismes}{section.4.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.2}{Les animations}{section.4.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.3}{Assemblage avec le moteur}{section.4.4}% 39
+\BOOKMARK [2][-]{subsection.4.4.4}{Le feedback}{section.4.4}% 40
+\BOOKMARK [2][-]{subsection.4.4.5}{Le choix des sons}{section.4.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.6}{La difficult\351}{section.4.4}% 42
+\BOOKMARK [1][-]{section.4.5}{Les tutoriels}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.6}{Assemblage des jeux}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.7}{Services externes}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.7.1}{Statistique et Analyse}{section.4.7}% 46
+\BOOKMARK [2][-]{subsection.4.7.2}{Publicit\351}{section.4.7}% 47
+\BOOKMARK [2][-]{subsection.4.7.3}{Version payante sans pub}{section.4.7}% 48
+\BOOKMARK [1][-]{section.4.8}{Mise en ligne}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.8.1}{Probl\350me de synchronisation}{section.4.8}% 50
+\BOOKMARK [2][-]{subsection.4.8.2}{Optimisation du poids de l'application}{section.4.8}% 51
+\BOOKMARK [0][-]{chapter.5}{R\351sultat}{}% 52
+\BOOKMARK [0][-]{chapter.6}{Bilan du projet}{}% 53
+\BOOKMARK [1][-]{section.6.1}{Autocritique}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{Enseignements tir\351s}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.3}{Perspectives}{chapter.6}% 56
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 57
+\BOOKMARK [0][-]{chapter.8}{Annexes}{}% 58
