@@ -34,7 +34,7 @@ Le \textit{beater} lit la musique et doit déclencher des événements à chaque
 {\textbf{Note technique sur la musique}\\Un fichier son numérique est enregistré sur l'unité de temps du sample. A chaque sample, on récupère une valeur numérique en décibels. Sur un son classique, la fréquence est de 44100Hz, ce qui correspond à 44100 samples par secondes. Dans ce projet nous convertissons toutes nos durées en samples pour une précision optimale.\\Le tempo d’un morceau se mesure en BPM (battements par minutes). Il varie entre 80 et 160 BPM en moyenne sur des morceaux classiques, mais reste fixe tout au long de la musique.}
 }\\\\
 
-Le principe du Beater est de déclencher un "tick" tout les quarts de temps. Sur un morceau à 120 BPM, on récupère la durée d’un tick en samples avec le calcul suivant :
+Le principe du Beater est de déclencher un "tick" tous les quarts de temps. Sur un morceau à 120 BPM, on récupère la durée d’un tick en samples avec le calcul suivant :
 
 \begin{lstlisting}
 samplePeriod = (60f / (tempo * scalar)) * audioSource.clip.frequency;
