@@ -27,32 +27,3 @@
 \BOOKMARK [1][-]{section.4.2}{Outil de construction des niveaux}{chapter.4}% 27
 \BOOKMARK [2][-]{subsection.4.2.1}{Choix du langage}{section.4.2}% 28
 \BOOKMARK [2][-]{subsection.4.2.2}{Structure d'un fichier midi}{section.4.2}% 29
-\BOOKMARK [2][-]{subsection.4.2.3}{Conversion en niveau}{section.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.2.4}{Mise en pratique}{section.4.2}% 31
-\BOOKMARK [1][-]{section.4.3}{Avancement du joueur}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.3.1}{Calcul du score dans un mini-jeu}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.2}{Enregistrement des scores}{section.4.3}% 34
-\BOOKMARK [2][-]{subsection.4.3.3}{D\351blocage des mini-jeux}{section.4.3}% 35
-\BOOKMARK [1][-]{section.4.4}{Cr\351ation d'un mini-jeu}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.4.1}{Les graphismes}{section.4.4}% 37
-\BOOKMARK [2][-]{subsection.4.4.2}{Les animations}{section.4.4}% 38
-\BOOKMARK [2][-]{subsection.4.4.3}{Assemblage avec le moteur}{section.4.4}% 39
-\BOOKMARK [2][-]{subsection.4.4.4}{Le feedback}{section.4.4}% 40
-\BOOKMARK [2][-]{subsection.4.4.5}{Le choix des sons}{section.4.4}% 41
-\BOOKMARK [2][-]{subsection.4.4.6}{La difficult\351}{section.4.4}% 42
-\BOOKMARK [1][-]{section.4.5}{Les tutoriels}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.6}{Assemblage des jeux}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.7}{Services externes}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.7.1}{Statistique et Analyse}{section.4.7}% 46
-\BOOKMARK [2][-]{subsection.4.7.2}{Publicit\351}{section.4.7}% 47
-\BOOKMARK [2][-]{subsection.4.7.3}{Version payante sans pub}{section.4.7}% 48
-\BOOKMARK [1][-]{section.4.8}{Mise en ligne}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.8.1}{Probl\350me de synchronisation}{section.4.8}% 50
-\BOOKMARK [2][-]{subsection.4.8.2}{Optimisation du poids de l'application}{section.4.8}% 51
-\BOOKMARK [0][-]{chapter.5}{R\351sultat}{}% 52
-\BOOKMARK [0][-]{chapter.6}{Bilan du projet}{}% 53
-\BOOKMARK [1][-]{section.6.1}{Autocritique}{chapter.6}% 54
-\BOOKMARK [1][-]{section.6.2}{Enseignements tir\351s}{chapter.6}% 55
-\BOOKMARK [1][-]{section.6.3}{Perspectives}{chapter.6}% 56
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 57
-\BOOKMARK [0][-]{chapter.8}{Annexes}{}% 58
