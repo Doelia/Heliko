@@ -472,7 +472,7 @@ Nos tutoriels placent de plus le joueur dans le contexte du jeu, en lui donnant 
 Comme expliqué section \ref{niveau}, les niveaux sont scriptés par des fichiers textes. La même technique est utilisée pour les tutoriels, qui ne sont rien d'autre que des niveaux normaux, un fichier texte par étape. À la première étape, le joueur apprendra par exemple le tap court, le fichier texte sera donc uniquement composé de ces évènements, puis lorsque cet élément sera appris, le moteur chargera un autre fichier texte contenant un autre élément de gameplay jusqu'à ce que le joueur les ait tous appris.
 
 \paragraph{}
-Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi pouvoir passé à l'étape suivante du tutoriel, il lui est demandé de le répéter trois fois. C'est pour s'assurer que le joueur n'a pas réussi par chance et est donc incapable de compléter un niveau, ce qui pourrait entraîner de la frustration.
+Pour être certain que le joueur maîtrise un élément de gameplay, et ainsi pouvoir passer à l'étape suivante du tutoriel, il lui est demandé de le répéter trois fois. C'est pour s'assurer que le joueur n'a pas réussi par chance et est donc incapable de compléter un niveau, ce qui pourrait entraîner de la frustration.
 
 
 \begin{figure}[H]\centering
@@ -566,14 +566,14 @@ La priorité étant de pouvoir par la suite améliorer le jeu, et pour ce faire,
 
 \subsection{Publicité}
 
-\paragraph{}Ensuite, la monétisation à proprement parler. Nous avons opté pour un jeu gratuit, sans boutique, mais monétisé à partir de la publicité. Sur le support mobile, 3 grandes régies publicitaires dominent, Admob (Google), Iad (Apple) et Chartboost. Nous avons choisi Chartboost, pour plusieurs raisons. La première étant qu'elle est réservée pour les jeux mobiles, ainsi nous étions sûrs d'avoir des publicités ciblées, et adaptées à nos utilisateurs. Ensuite leur système de rémunération est assez intéressant, les gains étant plutôt important, bien que seulement au téléchargement (quand un joueur installe un autre jeu à partir du nôtre). Enfin, la possibilité de développer facilement des partenariats avec d'autres concepteurs de jeu, et ainsi de nous permettre d'avoir de nouvelles sources d'utilisateurs gratuitement. 
+\paragraph{}Ensuite, la monétisation à proprement parler. Nous avons opté pour un jeu gratuit, sans boutique, mais monétisé à partir de la publicité. Sur le support mobile, 3 grandes régies publicitaires dominent, Admob (Google), Iad (Apple) et Chartboost. Nous avons choisi Chartboost, pour plusieurs raisons. La première étant qu'elle est réservée pour les jeux mobiles, ainsi nous étions sûrs d'avoir des publicités ciblées, et adaptées à nos utilisateurs. Ensuite leur système de rémunération est assez intéressant, les gains étant plutôt importants, bien que seulement au téléchargement (quand un joueur installe un autre jeu à partir du nôtre). Enfin, la possibilité de développer facilement des partenariats avec d'autres concepteurs de jeu, et ainsi de nous permettre d'avoir de nouvelles sources d'utilisateurs gratuitement. 
 \paragraph{}
-Nous ne voulions pas de pubs envahissantes, qui gênent l'utilisateur dans son utilisation de l'application, et perturbe la navigation dans le jeu. C'est la raison pour laquelle nous avons privilégié l'utilisation d'interstial en fin de partie, plutôt que d'une bannière tout au long du jeu. Une partie durant relativement longtemps, et sachant qu'un joueur fait plutôt peu de parties par session, nous avons décidé d'en mettre une à la fin de chaque partie, juste avant l'écran de fin lui indiquant le résultat obtenu lors du mini-jeu.
+Nous ne voulions pas de pubs envahissantes, qui gênent l'utilisateur dans son utilisation de l'application, et perturbent la navigation dans le jeu. C'est la raison pour laquelle nous avons privilégié l'utilisation d'interstial en fin de partie, plutôt que d'une bannière tout au long du jeu. Une partie durant relativement longtemps, et sachant qu'un joueur fait plutôt peu de parties par session, nous avons décidé d'en mettre une à la fin de chaque partie, juste avant l'écran de fin lui indiquant le résultat obtenu lors du mini-jeu.
 
-\subsection{Version payante sans pub}
+\subsection{Version payante sans publicité}
 
 \paragraph{}
-Enfin, sachant que certains utilisateurs sont retissant à la publicité (ce qui est compréhensible), mais qu'ils peuvent vouloir soutenir les développeurs, nous avons donné la possibilité de payer une version payante afin d'obtenir le jeu, mais sans aucune publicité. Nous avons utilisé un plug-in utilisé normalement pour la conception de boutique (Achats in-app), afin de créer un bouton sur l'écran d'accueil, qui permet (contre la modeste somme de 1,20\euro) de supprimer définitivement toute publicité. Grâce à l'utilisation du plug-in, l'achat est simplifié, puisqu'il utilise directement les systèmes de paiement d'Android et d'iOS.  
+Enfin, sachant que certains utilisateurs sont réticents à la publicité (ce qui est compréhensible), mais qu'ils peuvent vouloir soutenir les développeurs, nous avons donné la possibilité de payer une version payante afin d'obtenir le jeu, mais sans aucune publicité. Nous avons utilisé un plug-in utilisé normalement pour la conception de boutique (Achats in-app), afin de créer un bouton sur l'écran d'accueil, qui permet (contre la modeste somme de 1,20\euro) de supprimer définitivement toute publicité. Grâce à l'utilisation du plug-in, l'achat est simplifié, puisqu'il utilise directement les systèmes de paiement d'Android et d'iOS.  
 \paragraph{}
 L'idée n'étant pas d'escroquer les joueurs, simplement d'amortir les coûts de mise en ligne de l'application (voir "Mise en ligne"). Le plug-in utilisé est Soomla Store, un plug-in intéressant, puisqu'il est développé de manière collaborative par qui veut apporter sa contribution, et qu'ils sont connus pour de nombreux plug-ins Unity très intéressants. 
 
@@ -608,7 +608,7 @@ Finalement nous avons terminé par trouver la raison du problème : Une simple c
 
 \subsection{Optimisation du poids de l'application}
 
-Une application ne doit pas avoir un poids trop élevé si elle veut rester cohérente sur une vitrine.  Pour cela, Unity propose plusieurs façons de compresser les fichiers composant l'application. Ainsi, pour compresser les images utilisées dans les \textit{sprites}, il est possible de les compresser en diminuant leur taille initiale ou bien en choisissant un algorithme de compression différent.
+Une application ne doit pas avoir un poids trop élevé si elle veut rester cohérente sur une vitrine.  Pour cela, Unity propose plusieurs façons de compresser les fichiers composant l'application. Ainsi, pour réduire le poids des images utilisées dans les \textit{sprites}, il est possible de les compresser en diminuant leur taille initiale ou bien en choisissant un algorithme de compression différent.
 
 Bien entendu cela impacte la qualité de jeu de l'utilisateur sur des périphériques à grand écran comme les tablettes ou les derniers smartphones, c'est pour cela que Unity propose d'appliquer les compressions voulues seulement sur un déploiement en particulier. Par exemple, il est possible de compresser les textures sur les systèmes Android et iOS, mais de garder les textures en haute définition pour un déploiement PC.
 
