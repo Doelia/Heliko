@@ -113,62 +113,63 @@
 \contentsline {subsubsection}{Le passage de message}{33}{section*.77}
 \contentsline {paragraph}{}{33}{section*.78}
 \contentsline {paragraph}{}{33}{section*.79}
-\contentsline {paragraph}{}{33}{section*.80}
-\contentsline {paragraph}{}{34}{section*.81}
+\contentsline {subsubsection}{L'assemblage des \IeC {\'e}l\IeC {\'e}ments}{33}{section*.80}
+\contentsline {paragraph}{}{33}{section*.81}
+\contentsline {paragraph}{}{34}{section*.82}
 \contentsline {subsection}{\numberline {4.4.4}Le \textit {feedback}}{34}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Le choix des sons}{34}{subsection.4.4.5}
 \contentsline {subsection}{\numberline {4.4.6}La difficult\IeC {\'e}}{34}{subsection.4.4.6}
 \contentsline {section}{\numberline {4.5}Les tutoriels}{34}{section.4.5}
-\contentsline {paragraph}{}{34}{section*.82}
 \contentsline {paragraph}{}{34}{section*.83}
 \contentsline {paragraph}{}{35}{section*.84}
 \contentsline {paragraph}{}{35}{section*.85}
 \contentsline {paragraph}{}{35}{section*.86}
-\contentsline {paragraph}{}{36}{section*.87}
-\contentsline {section}{\numberline {4.6}Assemblage des jeux}{36}{section.4.6}
+\contentsline {paragraph}{}{35}{section*.87}
 \contentsline {paragraph}{}{36}{section*.88}
+\contentsline {section}{\numberline {4.6}Assemblage des jeux}{36}{section.4.6}
 \contentsline {paragraph}{}{36}{section*.89}
-\contentsline {paragraph}{}{36}{section*.90}
+\contentsline {paragraph}{}{37}{section*.90}
+\contentsline {paragraph}{}{37}{section*.91}
 \contentsline {section}{\numberline {4.7}Services externes}{37}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Statistique et Analyse}{37}{subsection.4.7.1}
-\contentsline {paragraph}{}{37}{section*.91}
 \contentsline {paragraph}{}{37}{section*.92}
-\contentsline {subsection}{\numberline {4.7.2}Publicit\IeC {\'e}}{38}{subsection.4.7.2}
 \contentsline {paragraph}{}{38}{section*.93}
+\contentsline {subsection}{\numberline {4.7.2}Publicit\IeC {\'e}}{38}{subsection.4.7.2}
 \contentsline {paragraph}{}{38}{section*.94}
-\contentsline {subsection}{\numberline {4.7.3}Version payante sans pub}{38}{subsection.4.7.3}
 \contentsline {paragraph}{}{38}{section*.95}
+\contentsline {subsection}{\numberline {4.7.3}Version payante sans pub}{39}{subsection.4.7.3}
 \contentsline {paragraph}{}{39}{section*.96}
-\contentsline {section}{\numberline {4.8}Mise en ligne}{39}{section.4.8}
 \contentsline {paragraph}{}{39}{section*.97}
+\contentsline {section}{\numberline {4.8}Mise en ligne}{39}{section.4.8}
 \contentsline {paragraph}{}{39}{section*.98}
 \contentsline {paragraph}{}{39}{section*.99}
-\contentsline {subsection}{\numberline {4.8.1}Probl\IeC {\`e}me de synchronisation}{39}{subsection.4.8.1}
 \contentsline {paragraph}{}{39}{section*.100}
+\contentsline {subsection}{\numberline {4.8.1}Probl\IeC {\`e}me de synchronisation}{39}{subsection.4.8.1}
 \contentsline {paragraph}{}{39}{section*.101}
-\contentsline {paragraph}{}{39}{section*.102}
+\contentsline {paragraph}{}{40}{section*.102}
+\contentsline {paragraph}{}{40}{section*.103}
 \contentsline {subsection}{\numberline {4.8.2}Optimisation du poids de l'application}{40}{subsection.4.8.2}
 \contentsline {chapter}{\numberline {5}R\IeC {\'e}sultat}{41}{chapter.5}
-\contentsline {paragraph}{L'\IeC {\'e}cran d'accueil}{41}{section*.103}
-\contentsline {paragraph}{Choix des niveaux}{41}{section*.104}
-\contentsline {paragraph}{Le menu pause}{42}{section*.105}
-\contentsline {paragraph}{L'\IeC {\'e}cran de fin de partie}{42}{section*.106}
-\contentsline {paragraph}{La marche de l'escargot}{42}{section*.108}
-\contentsline {paragraph}{Le magicien}{43}{section*.109}
-\contentsline {paragraph}{Les champignons}{43}{section*.110}
+\contentsline {paragraph}{L'\IeC {\'e}cran d'accueil}{41}{section*.104}
+\contentsline {paragraph}{Choix des niveaux}{41}{section*.105}
+\contentsline {paragraph}{Le menu pause}{42}{section*.106}
+\contentsline {paragraph}{L'\IeC {\'e}cran de fin de partie}{42}{section*.107}
+\contentsline {paragraph}{La marche de l'escargot}{42}{section*.109}
+\contentsline {paragraph}{Le magicien}{43}{section*.110}
+\contentsline {paragraph}{Les champignons}{43}{section*.111}
 \contentsline {chapter}{\numberline {6}Bilan du projet}{45}{chapter.6}
 \contentsline {section}{\numberline {6.1}Autocritique}{45}{section.6.1}
-\contentsline {paragraph}{}{45}{section*.111}
 \contentsline {paragraph}{}{45}{section*.112}
 \contentsline {paragraph}{}{45}{section*.113}
+\contentsline {paragraph}{}{45}{section*.114}
 \contentsline {section}{\numberline {6.2}Enseignements tir\IeC {\'e}s}{46}{section.6.2}
-\contentsline {paragraph}{}{46}{section*.114}
-\contentsline {section}{\numberline {6.3}Perspectives}{46}{section.6.3}
 \contentsline {paragraph}{}{46}{section*.115}
+\contentsline {section}{\numberline {6.3}Perspectives}{46}{section.6.3}
+\contentsline {paragraph}{}{46}{section*.116}
 \contentsline {chapter}{\numberline {7}Conclusion}{47}{chapter.7}
-\contentsline {paragraph}{}{47}{section*.116}
 \contentsline {paragraph}{}{47}{section*.117}
 \contentsline {paragraph}{}{47}{section*.118}
 \contentsline {paragraph}{}{47}{section*.119}
 \contentsline {paragraph}{}{47}{section*.120}
+\contentsline {paragraph}{}{47}{section*.121}
 \contentsline {chapter}{\numberline {8}Annexes}{48}{chapter.8}
