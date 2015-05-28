@@ -32,6 +32,7 @@ public class HelikoObject : MonoBehaviour {
 	public BeatCounter GetBeatCounter() {
 		if (GameObject.Find ("BeatCounter") == null) {
 			Debug.LogError("Impossible de trouver l'objet BeatCounter dans la scène");
+			return null;
 		}
 		BeatCounter o = GameObject.Find ("BeatCounter").GetComponent<BeatCounter>();
 		if (!o.isStart) o.Start ();
