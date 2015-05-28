@@ -38,8 +38,15 @@ public class InterfacePauseGame : HelikoObject {
 	}
 
 	public void Restart() {
-		restartSound.Play();
+		closeMenuSound.Play ();
+		//GameObject.DontDestroyOnLoad(restartSound);
+		//GameObject.DontDestroyOnLoad(this);
 		this.GetComponent<LoadOnClick>().ReloadScene();
+	}
+
+	public void Quit() {
+		closeMenuSound.Play ();
+		this.GetComponent<LoadOnClick>().LoadScene(0);
 	}
 	
 	public void Update()
