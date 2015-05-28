@@ -70,6 +70,9 @@ public class Constantes : MonoBehaviour {
 		if (id == 3) {
 			return 6;
 		}
+		if (id == 5) { // escargot
+			return 7;
+		}
 		return this.getNumSceneFromIdMiniGame(id);
 	}
 
