@@ -21,6 +21,7 @@ public class TransitionScreen : HelikoObject {
 		return this.GetComponent<Canvas>().enabled;
 	}
 
+	// Commencer le chargement
 	public IEnumerator FadeInBlackScreen(AsyncOperation loadingScene) {
 		this.GetComponent<Canvas>().enabled = true;
 		Image img = loadingImage.GetComponent<Image>();
@@ -40,6 +41,7 @@ public class TransitionScreen : HelikoObject {
 		heliko.gameObject.SetActive(true);
 	}
 
+	// Finir le chargement
 	public IEnumerator FadeOutBlackScreen() {
 		this.GetComponent<Canvas>().enabled = true;
 		loadingText.gameObject.SetActive(false);
