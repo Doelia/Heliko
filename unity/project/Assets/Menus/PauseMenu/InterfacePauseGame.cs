@@ -11,6 +11,7 @@ public class InterfacePauseGame : HelikoObject {
 	public AudioSource music;
 	public AudioSource openMenuSound;
 	public AudioSource closeMenuSound;
+	public AudioSource restartSound;
 	
 	public bool pause;
 	public new void Start() {
@@ -34,6 +35,11 @@ public class InterfacePauseGame : HelikoObject {
 		pauseMenu.SetActive(true);
 		playIcon.SetActive(true);
 		pauseIcon.SetActive(false);
+	}
+
+	public void Restart() {
+		restartSound.Play();
+		this.GetComponent<LoadOnClick>().ReloadScene();
 	}
 	
 	public void Update()
