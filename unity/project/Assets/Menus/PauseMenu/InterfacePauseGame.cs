@@ -39,8 +39,6 @@ public class InterfacePauseGame : HelikoObject {
 
 	public void Restart() {
 		closeMenuSound.Play ();
-		//GameObject.DontDestroyOnLoad(restartSound);
-		//GameObject.DontDestroyOnLoad(this);
 		this.GetComponent<LoadOnClick>().ReloadScene();
 	}
 
