@@ -52,6 +52,9 @@ public class CartoonTransition : MonoBehaviour {
 		rond.localScale = new Vector3(1 - reduceFactor * cpt,
 		                              1 - reduceFactor * cpt,
 		                              1);
+		rond.localPosition= new Vector3(rond.localPosition.x,
+		                                rond.localPosition.y,
+		                                0);
 	}
 
 	public IEnumerator goAnim() {
