@@ -15,7 +15,7 @@ public class UnLockerManager : HelikoObject {
 	}
 
 	// Pour un mini jeu, donne le mini jeu qu'il faut débloquer (0 si aucun)ç
-	public int getUnlocker(int idMinigame) {
+		public int getUnlocker(int idMinigame) {
 		return 0;
 		switch (idMinigame) {
 		case 1: //Champi
