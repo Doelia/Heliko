@@ -17,7 +17,7 @@ public class ButtonPlayAccueil : MonoBehaviour {
 		.SetEventLabel("play")
 		.SetEventAction("click"));
 		miniGamesMenu.SetActive(true);
-				miniGamesMenu.GetComponent<AnimationGUI>().animIt();
+				miniGamesMenu.GetComponentInChildren<AnimationGUI>().animIt();
 
 		this.transform.parent.parent.gameObject.SetActive(false);
 	}
