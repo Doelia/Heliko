@@ -38,7 +38,7 @@ public class accesCheatZone : MonoBehaviour {
 		}
 		else if(etape==2)
 		{
-			if(numEvent==1)
+			if(numEvent==2)
 			{
 				etape++;
 			}
@@ -49,7 +49,7 @@ public class accesCheatZone : MonoBehaviour {
 		}
 		else if(etape==3)
 		{
-			if(numEvent==3)
+			if(numEvent==1)
 			{
 				etape++;
 			}
@@ -60,7 +60,18 @@ public class accesCheatZone : MonoBehaviour {
 		}
 		else if(etape==4)
 		{
-			if(numEvent==4)
+			if(numEvent==2)
+			{
+				etape++;
+			}
+			else
+			{
+				etape=0;
+			}
+		}
+		else if(etape==5)
+		{
+			if(numEvent==2)
 			{
 				Application.LoadLevel(8);
 			}
@@ -84,40 +95,7 @@ public class accesCheatZone : MonoBehaviour {
 					sendEvent(2);
 				}
 				break;  
-
-				case TouchPhase.Ended:
-
-					if(timeTouchTotal>=timeBeforeLongTouch) {
-						sendEvent(3);
-					}
-					else if (mouvement.magnitude>=12 && touchScreen) {
-						sendEvent(4);
-					}
-					else 
-					{
-						//sendEvent(5);
-					}
-					timeTouchTotal = 0F;
-					touchScreen=false; 
-					mouvement=Vector2.zero;
-				break;  
-
-				case TouchPhase.Stationary: 
-					timeTouchTotal+=Time.deltaTime;
-					if (timeTouchTotal>=timeBeforeLongTouch && touchScreen) {
-						touchScreen=false;
-					}
-				break;
-
-				case TouchPhase.Moved: 
-					mouvement+=Input.GetTouch(0).deltaPosition;	
-					if (mouvement.magnitude <= 4) {
-						timeTouchTotal += Time.deltaTime;
-						if (timeTouchTotal >= timeBeforeLongTouch && touchScreen) {
-							touchScreen=false;
-						}
-					}
-				break;                
+              
 			} 		
 		}
 	}
