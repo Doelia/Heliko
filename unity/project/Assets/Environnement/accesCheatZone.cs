@@ -42,25 +42,12 @@ public class accesCheatZone : MonoBehaviour {
 		}
 		else if(etape==2)
 		{
-			if(numEvent==4)
+			if(numEvent==1)
 			{
 				etape++;
 			}
-			else if(numEvent==1||numEvent==2)
-			{
-				if(nbrTouch==0)
-				{
-					nbrTouch++;
-				}
-				else
-				{
-					nbrTouch=0;
-					etape=0;
-				}
-			}
 			else
 			{
-				nbrTouch=0;
 				etape=0;
 			}
 		}
@@ -68,26 +55,21 @@ public class accesCheatZone : MonoBehaviour {
 		{
 			if(numEvent==3)
 			{
-				Application.LoadLevel("cheatZone");
-			}
-			else if(numEvent==1||numEvent==2)
-			{
-				if(nbrTouch==0)
-				{
-					nbrTouch++;
-				}
-				else
-				{
-					nbrTouch=0;
-					etape=0;
-				}
+				etape++;
 			}
 			else
 			{
-				nbrTouch=0;
 				etape=0;
 			}
 		}
+		else if(etape==4)
+		{
+			if(numEvent==4)
+			{
+				Application.LoadLevel(8);
+			}
+		}
+
 	}
 	
 	void Update () {
