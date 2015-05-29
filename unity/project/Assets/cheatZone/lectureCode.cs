@@ -17,7 +17,8 @@ public class lectureCode : HelikoObject {
 		else if(code.StartsWith("OUMH_04_UNLOCK_"))
 		{
 			int numLevelADebloquer;
-			numLevelADebloquer=GetUnlockerManager().getUnlocker(code[15]);
+			int numLevel=int.Parse(""+code[15]);
+			numLevelADebloquer=GetUnlockerManager().getUnlocker(numLevel);
 			if(numLevelADebloquer!=0)
 			{
 				PlayerPrefs.SetInt("etoileLevel"+numLevelADebloquer,3);

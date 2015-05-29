@@ -19,7 +19,7 @@ public class UnLockerManager : HelikoObject {
 		if (constantes.unlockAll)
 			return 0;
 
-		switch (idMinigame) {
+			switch (idMinigame) {
 		case 1: //Champi
 			return 3;
 		case 2: // ananas
