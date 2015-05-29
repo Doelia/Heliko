@@ -86,11 +86,12 @@ public class accesCheatZone : MonoBehaviour {
 				break;  
 
 				case TouchPhase.Ended:
-					if (mouvement.magnitude>=100 && touchScreen) {
-						sendEvent(4);
-					}
-					else if(timeTouchTotal>=timeBeforeLongTouch) {
+
+					if(timeTouchTotal>=timeBeforeLongTouch) {
 						sendEvent(3);
+					}
+					else if (mouvement.magnitude>=12 && touchScreen) {
+						sendEvent(4);
 					}
 					else 
 					{
