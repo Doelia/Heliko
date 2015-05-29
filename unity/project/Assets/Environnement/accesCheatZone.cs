@@ -87,7 +87,7 @@ public class accesCheatZone : MonoBehaviour {
 					}
 					else 
 					{
-						sendEvent(5);
+						//sendEvent(5);
 					}
 					timeTouchTotal = 0F;
 					touchScreen=false; 
