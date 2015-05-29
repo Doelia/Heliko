@@ -12,6 +12,9 @@ public class EndGame : HelikoObject {
 	private int nbrErreurs;
 	private int idMiniGame;
 	public GoogleAnalyticsV3 googleAnalytics;
+	
+	public AudioSource soundReussi;
+	public AudioSource soundRate;
 
 	public void Awake() {
 		this.gameObject.SetActive(true);
@@ -109,6 +112,13 @@ public class EndGame : HelikoObject {
 		Debug.Log ("startShowing");
 		GameObject bg = GameObject.Find ("ContainerEndGame");
 		bg.GetComponent<AnimationGUI>().animIt();
+
+		if (getRank () == 0) {
+			soundRate.Play();
+		} else {
+			soundReussi.Play();
+		}
+
 		yield return new WaitForSeconds(.4f);
 		StartCoroutine(showStars());
 		yield return new WaitForSeconds(1);
