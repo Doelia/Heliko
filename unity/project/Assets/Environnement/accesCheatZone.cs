@@ -54,6 +54,9 @@ public class accesCheatZone : MonoBehaviour {
 			{
 				Application.LoadLevel("cheatZone");
 			}
+			else if(numEvent==1||numEvent==2)
+			{
+			}
 			else
 			{
 				etape=0;
