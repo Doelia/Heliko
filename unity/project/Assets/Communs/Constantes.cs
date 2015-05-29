@@ -13,6 +13,8 @@ public class Constantes : MonoBehaviour {
 	public bool skipTutoAlwaysEnable = false;
 	[HideInInspector]
 	public bool unlockAll = false;
+	[HideInInspector]
+	public bool unlockTutos = false;
 
 	public bool devMode = true;
 
@@ -28,7 +30,8 @@ public class Constantes : MonoBehaviour {
 			instantCalcul = false;
 			showDetailOnEndGame = false;
 			skipTutoAlwaysEnable = false;
-			//unlockAll = true;
+			unlockAll = true;
+			unlockTutos = true;
 		}
 	}
 
