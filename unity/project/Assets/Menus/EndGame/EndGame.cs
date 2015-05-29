@@ -58,10 +58,8 @@ public class EndGame : HelikoObject {
 		
 	}
 	
-	public void showAdvertise()
-	{
-		if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
-		{
+	public void showAdvertise() {
+		if (StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0) {
 			Chartboost.showInterstitial(CBLocation.Default);
 		}
 	}
@@ -147,10 +145,9 @@ public class EndGame : HelikoObject {
 	}
 
 	public void restartMiniGame() {
+		if (constantes.devMode)
+			Debug.Log ("restartMiniGame "+idMiniGame);
 		this.GetComponent<LoadOnClick>().LoadScene(constantes.getNumSceneFromIdMiniGame(idMiniGame));
 	}
-
-
-
 
 }

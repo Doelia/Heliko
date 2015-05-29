@@ -43,7 +43,7 @@ public class EndGameLauncher : HelikoObject, TempoReceiver  {
 	}
 
 	private IEnumerator endGame() {
-		Debug.Log("Start end game...");
+		Debug.Log("Start end game  #"+idMiniGame+"...");
 		GameObject.DontDestroyOnLoad(this.gameObject);
 		cartoonTransition.gameObject.SetActive(true);
 		yield return StartCoroutine(cartoonTransition.goAnim());
