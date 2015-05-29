@@ -6,6 +6,8 @@ public class BeatCounter : Timer {
 	public int delayInMS = 0; // Délai avant de lancer le compteur
 	public int nbrTicksDelay = 0; // Nombre de beat à attendre avant de commencer à compter
 
+	private bool ended = false;
+
 	void Awake() {
 		this.observers = new ArrayList ();
 		this.setSampleDelay(delayInMS, nbrTicksDelay);
@@ -72,8 +74,11 @@ public class BeatCounter : Timer {
 	}
 
 	private void NotifyChildrenEndMusic () {
-		foreach (TempoReceiver e in this.observers) {
-			e.OnEndMusic();
+		if(!ended) {
+			foreach (TempoReceiver e in this.observers) {
+				e.OnEndMusic();
+			}
+			ended = true;
 		}
 	}
 
