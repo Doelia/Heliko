@@ -33,8 +33,7 @@ public class PlayerEventListener : HelikoObject
 		if (GameObject.Find ("PauseIcon") == null) {
 			//Debug.LogError("Impossible de trouver l'objet PauseIcon dans la scène");
 		}
-		else
-		{
+		else {
 			pauseIcon=GameObject.Find ("PauseIcon").GetComponent<RectTransform>();
 			Vector3[] coinsPauseIcons;
 			coinsPauseIcons=new Vector3[4];
@@ -86,10 +85,9 @@ public class PlayerEventListener : HelikoObject
 				Vector2 posDoigt = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
 
 				//si c'est sur le bouton Pause
-					if(rectanglePause.Contains(Input.GetTouch(0).position))
-					{
-						return;
-					}
+				if (rectanglePause.Contains(Input.GetTouch(0).position)) {
+					return;
+				}
 			
 				touchScreen = true;
 				if (posDoigt.x > 0) {
@@ -107,8 +105,7 @@ public class PlayerEventListener : HelikoObject
 					else if(timeTouchTotal>=timeBeforeLongTouch) {
 						sendEvent(3);
 					}
-					else 
-					{
+					else  {
 						sendEvent(5);
 					}
 					timeTouchTotal = 0F;
@@ -137,14 +134,13 @@ public class PlayerEventListener : HelikoObject
 		#endif 
 		
 
-		if ((onKeyDown && Input.GetKeyDown (KeyCode.O)) || (!onKeyDown && Input.GetKey (KeyCode.O)))
+		if (Input.GetKeyDown (KeyCode.O))
 			sendEvent(1);
-			
-		if ((onKeyDown && Input.GetKeyDown (KeyCode.I)) || (!onKeyDown && Input.GetKey (KeyCode.I)))
-			sendEvent(3);
-
-		if ((onKeyDown && Input.GetKeyDown (KeyCode.P)) || (!onKeyDown && Input.GetKey (KeyCode.P)))
+		if (Input.GetKeyDown (KeyCode.P))
 			sendEvent(2);
+		if (Input.GetKeyUp (KeyCode.O) || Input.GetKeyUp (KeyCode.P)) {
+			sendEvent(3);
+		}
 		
 	}
 
