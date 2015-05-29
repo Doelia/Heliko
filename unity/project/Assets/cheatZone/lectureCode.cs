@@ -23,6 +23,11 @@ public class lectureCode : HelikoObject {
 				PlayerPrefs.SetInt("etoileLevel"+numLevelADebloquer,3);
 			}
 		}
+		else if(code.StartsWith("OUMH_04_TUTO_"))
+		{
+			PlayerPrefs.SetInt("niveauReussi"+code[15],1);
+			
+		}
 		else if(code.Equals("OUMH_04_RESET"))
 		{
 			PlayerPrefs.DeleteAll();
