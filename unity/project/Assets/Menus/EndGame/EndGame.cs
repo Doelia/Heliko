@@ -93,10 +93,10 @@ public class EndGame : HelikoObject {
 		if (nbrErreurs == 0) {
 			return 3;
 		}
-		if (pourcent >= 90) {
+		if (pourcent >= 80) {
 			return 2;
 		}
-		if (pourcent >= 75) {
+		if (pourcent >= 60) {
 			return 1;
 		}
 		return 0;
