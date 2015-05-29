@@ -7,9 +7,6 @@ public class TransitionScreen : HelikoObject {
 	public Transform loadingImage;
 	public Transform loadingText;
 	public Transform heliko;
-	public Transform container;
-
-	private AsyncOperation loadingScene;
 
 	public new void Start() {
 		if (isStart) return;
@@ -22,7 +19,7 @@ public class TransitionScreen : HelikoObject {
 	}
 
 	// Commencer le chargement
-	public IEnumerator FadeInBlackScreen(AsyncOperation loadingScene) {
+	public IEnumerator FadeInBlackScreen() {
 		this.GetComponent<Canvas>().enabled = true;
 		Image img = loadingImage.GetComponent<Image>();
 
@@ -32,12 +29,7 @@ public class TransitionScreen : HelikoObject {
 			img.color = c;
 			yield return null;
 		}
-		yield return null;
 		loadingText.gameObject.SetActive(true);
-		yield return null;
-		this.loadingScene = loadingScene;
-		StartCoroutine(loop());
-		yield return null;
 		heliko.gameObject.SetActive(true);
 	}
 
@@ -68,17 +60,7 @@ public class TransitionScreen : HelikoObject {
 		GameObject.DontDestroyOnLoad(this);
 	}
 
-	public IEnumerator loop() {
-		while(!loadingScene.isDone) {
-			Debug.Log("move");
-			heliko.localPosition = new Vector3(container.GetComponent<RectTransform>().rect.size.x * 0.5f - container.GetComponent<RectTransform>().rect.size.x * loadingScene.progress,
-			                                   heliko.localPosition.y,
-			                                   heliko.localPosition.z);
-			yield return new WaitForSeconds(0.001f);
-		}
-		heliko.localPosition = new Vector3(container.GetComponent<RectTransform>().rect.size.x * 0.5f,
-								            heliko.localPosition.y,
-								            heliko.localPosition.z);
-		heliko.gameObject.SetActive(false);
+	public void Update() {
+
 	}
 }
