@@ -8,11 +8,14 @@ public class accesCheatZone : MonoBehaviour {
 	private Vector2 mouvement;
 	private float timeTouchTotal;
 		public float timeBeforeLongTouch;
+		
+	int nbrTouch;
 
 	
 	void Start()
 	{
 		etape=0;
+		nbrTouch=0;
 	}
 	
 	
@@ -43,8 +46,21 @@ public class accesCheatZone : MonoBehaviour {
 			{
 				etape++;
 			}
+			else if(numEvent==1||numEvent==2)
+			{
+				if(nbrTouch==0)
+				{
+					nbrTouch++;
+				}
+				else
+				{
+					nbrTouch=0;
+					etape=0;
+				}
+			}
 			else
 			{
+				nbrTouch=0;
 				etape=0;
 			}
 		}
@@ -54,8 +70,21 @@ public class accesCheatZone : MonoBehaviour {
 			{
 				Application.LoadLevel("cheatZone");
 			}
+			else if(numEvent==1||numEvent==2)
+			{
+				if(nbrTouch==0)
+				{
+					nbrTouch++;
+				}
+				else
+				{
+					nbrTouch=0;
+					etape=0;
+				}
+			}
 			else
 			{
+				nbrTouch=0;
 				etape=0;
 			}
 		}
@@ -87,7 +116,7 @@ public class accesCheatZone : MonoBehaviour {
 					}
 					else 
 					{
-						sendEvent(5);
+						//sendEvent(5);
 					}
 					timeTouchTotal = 0F;
 					touchScreen=false; 

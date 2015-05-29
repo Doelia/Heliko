@@ -38,7 +38,7 @@ public class EndGame : HelikoObject {
 
 	// Pour le test (mode dev)
 	public void testIt() {
-		//this.setValues(95,1,2);
+		this.setValues(60,1,2);
 		Debug.Log ("Rank = "+getRank ());
 		this.gameObject.SetActive(true);
 		StartCoroutine(this.startShowing());
@@ -151,7 +151,19 @@ public class EndGame : HelikoObject {
 	}
 
 	private void showSuccessText() {
-		GameObject.Find ("SuccessText").GetComponent<GUISpriteSwitcher>().setSprite(getRank());
+		string texte = "";
+		switch (getRank ()) {
+			case 3: // Parfait
+				texte = "PARFAIT !!"; break;
+			case 2: // Parfait
+				texte = "BRAVO !!"; break;
+			case 1: // Parfait
+				texte = "REUSSI !"; break;
+			case 0: // Parfait
+				texte = "PERDU..."; break;
+		} 
+
+		GameObject.Find ("SuccessText").GetComponent<Text>().text = texte;
 	}
 
 	public void restartMiniGame() {
