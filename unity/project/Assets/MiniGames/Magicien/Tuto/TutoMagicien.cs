@@ -13,6 +13,8 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 	public SuccessLoopCounter successLoopCounter;
 	public AudioSource successStep;
 
+	public int waitingTime = 10;
+
 	private int lastAction;
 
 	public new void Start() {
@@ -43,6 +45,10 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 
 		// Commencer à lire la musique
 		GetBeatCounter().StartCount();
+
+		CompteurMagicien cpt = GameObject.Find ("compteur").GetComponent<CompteurMagicien>();
+		cpt.setMax(waitingTime);
+
 	}
 
 

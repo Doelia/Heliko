@@ -10,7 +10,6 @@ public class StepTutoBulle : StepTuto {
 	}
 
 	public void closeIt() {
-		Debug.Log ("Close "+this.name+" ");
 		gameObject.SetActive(false);
 		if (clic != null) {
 			clic.Play ();
