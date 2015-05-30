@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿
+
+using UnityEngine;
 using System.Collections;
 using Soomla.Store;
 using Soomla.Store.maBoutique;
 using System;
 
 public class ButtonRemoveAds : MonoBehaviour {
-
+#if UNITY_EDITOR || UNITY_ANDROID || UNITY_IOS
 	public GoogleAnalyticsV3 googleAnalytics;
 	public GameObject popUpErreur;
 	void Start()
@@ -39,5 +41,5 @@ public class ButtonRemoveAds : MonoBehaviour {
 
 	}
 	
-
+#endif
 }

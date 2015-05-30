@@ -26,7 +26,7 @@ public class EndGame : HelikoObject {
 		if (GameObject.Find ("EndGameLauncher") != null) {
 			Debug.Log ("Launch EndGameLauncher OK");
 			EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
-			//showAdvertise(); // Retiré en attendant le debug // TODO jolan
+			showAdvertise();
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
 			this.gameObject.SetActive(true);
 			StartCoroutine(this.startShowing());
@@ -61,9 +61,11 @@ public class EndGame : HelikoObject {
 	}
 	
 	public void showAdvertise() {
+	#if UNITY_IOS || UNITY_ANDROID
 		if (StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0) {
 			Chartboost.showInterstitial(CBLocation.Default);
 		}
+	#endif
 	}
 	
 	public void sendGoogleAnnalyticsInfo()
