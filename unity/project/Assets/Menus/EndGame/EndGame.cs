@@ -26,7 +26,7 @@ public class EndGame : HelikoObject {
 		if (GameObject.Find ("EndGameLauncher") != null) {
 			Debug.Log ("Launch EndGameLauncher OK");
 			EndGameLauncher endGameInformations = GameObject.Find ("EndGameLauncher").GetComponent<EndGameLauncher>();
-			showAdvertise();
+			//showAdvertise(); // Retiré en attendant le debug // TODO jolan
 			this.setValues(endGameInformations.pourcentSuccess, endGameInformations.nbFails, endGameInformations.idMiniGame);
 			this.gameObject.SetActive(true);
 			StartCoroutine(this.startShowing());
@@ -38,7 +38,6 @@ public class EndGame : HelikoObject {
 
 	// Pour le test (mode dev)
 	public void testIt() {
-		showAdvertise();
 		this.setValues(20,1,2);
 		Debug.Log ("Rank = "+getRank ());
 		this.gameObject.SetActive(true);
@@ -58,7 +57,6 @@ public class EndGame : HelikoObject {
 			PlayerPrefs.SetInt("etoileLevel"+p_idMiniGame,nbrEtoiles);
 		}
 		sendGoogleAnnalyticsInfo();
-
 		
 	}
 	
