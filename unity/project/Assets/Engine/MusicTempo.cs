@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MusicTempo : HelikoObject {
 
 	public float bpm = 133f;
 	public float scalar = 1f;
+	public Slider progressBar = null;
 
 	private AudioSource audioSource;
+
 	
 	public void Awake() {
 		this.audioSource = this.GetComponent<AudioSource>();
@@ -44,6 +47,15 @@ public class MusicTempo : HelikoObject {
 		this.audioSource.UnPause();
 	}
 
+	private void SetAvancement() {
+		progressBar.value = this.GetMusicPercentage();
+	}
+
+	public void Update() {
+		if (this.progressBar != null) {
+			SetAvancement();
+		}
+	}
 
 	/// <summary>
 	/// Retourne en millsecondes le temps passé
