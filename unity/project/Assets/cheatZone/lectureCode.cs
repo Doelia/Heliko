@@ -2,9 +2,11 @@
 using System.Collections;
 using Soomla.Store;
 using Soomla.Store.maBoutique;
+using UnityEngine.UI;
 
 public class lectureCode : HelikoObject {
 	
+	public Text feedBack;
 	public void OnEndEdit(string code)
 	{
 		if(code.Equals("OUMH_04_AD"))
@@ -12,7 +14,7 @@ public class lectureCode : HelikoObject {
 			if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
 			{
 				StoreInventory.GiveItem(boutique.NO_ADS_LTVG.ItemId,1);
-				print("Suppression des pubs");
+				feedBack.text="Suppression des pubs";
 			}
 		}
 		else if(code.StartsWith("OUMH_04_UNLOCK_"))
@@ -21,7 +23,7 @@ public class lectureCode : HelikoObject {
 			int numLevel=int.Parse(""+code[15]);
 			print(numLevel);
 			numLevelADebloquer=GetUnlockerManager().getUnlocker(numLevel);
-			print("Debloquage du niveau n°"+numLevelADebloquer);
+			feedBack.text="Debloquage du niveau n°"+numLevelADebloquer;
 			if(numLevelADebloquer!=0)
 			{
 				PlayerPrefs.SetInt("etoileLevel"+numLevelADebloquer,3);
@@ -29,18 +31,18 @@ public class lectureCode : HelikoObject {
 		}
 		else if(code.StartsWith("OUMH_04_TUTO_"))
 		{
-			print("Debloquage du tuto n°"+code[15]);
+			feedBack.text="Debloquage du tuto n°"+code[15];
 			PlayerPrefs.SetInt("niveauReussi"+code[15],1);
 			
 		}
 		else if(code.Equals("OUMH_04_RESET"))
 		{
-			print("Réinitialisation du jeu");
+			feedBack.text="Réinitialisation du jeu";
 			PlayerPrefs.DeleteAll();
 		}
 		else 
 		{
-			print("mauvais code");
+			feedBack.text="mauvais code";
 		}
 	}
 }
