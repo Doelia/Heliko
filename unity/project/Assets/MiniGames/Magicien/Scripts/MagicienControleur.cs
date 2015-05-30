@@ -14,6 +14,8 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 	private Animator animBras;
 	private Animator animObjet;
 
+	public CompteurMagicien compteur = null;
+
 	public new void Start () {
 		base.Start();
 		playerActions = GetPlayerActions();
@@ -52,6 +54,9 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 				soundFail.GetComponent<AudioSource>().Play();
 			}
 			MagicObject o = GameObject.Find ("magicObject").GetComponent<MagicObject>();
+			if (compteur != null) {
+				compteur.setRed();
+			}
 			o.Transformer(isGood);
 		} else if (type == 1 || type==2) {
 			animBras.ResetTrigger("up");
@@ -60,6 +65,9 @@ public class MagicienControleur : HelikoObject, PlayerEventReceiver, PlayerActio
 			animObjet.SetTrigger ("down");
 			soundWoosh.GetComponent<AudioSource>().Play();
 			playerActions.IsGood (1);
+			if (compteur != null) {
+				compteur.setGreen();
+			}
 		}
 	}
 }

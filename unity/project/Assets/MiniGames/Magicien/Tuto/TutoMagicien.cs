@@ -91,6 +91,9 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 
 		animTriggerer.hideObject();
 
+		CompteurMagicien cpt = GameObject.Find ("compteur").GetComponent<CompteurMagicien>();
+		cpt.reset();
+
 		animTriggerer.level.Disconnect(animTriggerer);
 		switcher.level.Disconnect(switcher);
 		GetPlayerActions().level.Disconnect (GetPlayerActions());
