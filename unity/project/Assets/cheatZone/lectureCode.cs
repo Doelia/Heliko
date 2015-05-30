@@ -9,7 +9,7 @@ public class lectureCode : HelikoObject {
 	public Text feedBack;
 	public void OnEndEdit(string code)
 	{
-		if(code.Equals("OUMH_04_AD"))
+		if(code.StartsWith("OUMH_04_AD"))
 		{
 			#if UNITY_ANDROID || UNITY_EDITOR ||UNITY_IOS
 			if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)==0)
@@ -18,6 +18,7 @@ public class lectureCode : HelikoObject {
 				feedBack.text="Suppression des pubs";
 			}
 			#endif
+			feedBack.text="Suppression des pubs";
 		}
 		else if(code.StartsWith("OUMH_04_UNLOCK_"))
 		{
@@ -37,7 +38,7 @@ public class lectureCode : HelikoObject {
 			PlayerPrefs.SetInt("niveauReussi"+code[15],1);
 			
 		}
-		else if(code.Equals("OUMH_04_RESET"))
+		else if(code.StartsWith("OUMH_04_RESET"))
 		{
 			feedBack.text="Réinitialisation du jeu";
 			PlayerPrefs.DeleteAll();
