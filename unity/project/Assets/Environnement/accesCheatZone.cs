@@ -4,7 +4,6 @@ using System.Collections;
 public class accesCheatZone : MonoBehaviour {
 
 	private int etape;
-	private bool touchScreen;
 	private Vector2 mouvement;
 	private float timeTouchTotal;
 	public float timeBeforeLongTouch;
@@ -91,7 +90,6 @@ public class accesCheatZone : MonoBehaviour {
 				case TouchPhase.Began:
 				Vector2 posDoigt = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
 
-				touchScreen = true;
 				if (posDoigt.x > 0) {
 					sendEvent(1);
 				}

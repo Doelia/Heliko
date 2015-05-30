@@ -15,12 +15,9 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 
 	public int waitingTime = 10;
 
-	private int lastAction;
-
 	public new void Start() {
 		if (isStart) return;
 		base.Start ();
-		lastAction = 0;
 		successLoopCounter.Reset (3);
 		GetBeatCounter().setLoop(true);
 	}
@@ -58,24 +55,13 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 		} else if (type == 3) {
 			type = 2;
 		}
-		lastAction = type;
 		GetPlayerActions().IsGood(type);
 	}
 
 	public void OnFailure() {
-		lastAction = 0;
 	}
 
 	public void OnSuccess() {
-		/*
-		if (lastAction == 2) {
-			successLoopCounter.AddSuccess();
-			if (successLoopCounter.AllSuccess()) {
-				this.StopStep();
-			}
-			lastAction = 0;
-		}
-		*/
 	}
 
 	public void OnSuccessLoop() {
@@ -92,7 +78,6 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 		successLoopCounter.Hide();
 		
 		successLoopCounter.Reset (3);
-		lastAction = 0;
 
 		animTriggerer.hideObject();
 

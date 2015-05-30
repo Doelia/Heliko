@@ -38,6 +38,7 @@ public class EndGame : HelikoObject {
 
 	// Pour le test (mode dev)
 	public void testIt() {
+		showAdvertise();
 		this.setValues(20,1,2);
 		Debug.Log ("Rank = "+getRank ());
 		this.gameObject.SetActive(true);
