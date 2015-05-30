@@ -80,6 +80,12 @@ public class accesCheatZone : MonoBehaviour {
 	}
 	
 	void Update () {
+	#if UNITY_EDITOR
+			if (Input.GetKeyDown (KeyCode.O))
+			sendEvent(1);
+		if (Input.GetKeyDown (KeyCode.P))
+			sendEvent(2);
+			#endif
 	if (Input.touchCount > 0) {
 		
 
@@ -99,4 +105,5 @@ public class accesCheatZone : MonoBehaviour {
 			} 		
 		}
 	}
+	
 }
