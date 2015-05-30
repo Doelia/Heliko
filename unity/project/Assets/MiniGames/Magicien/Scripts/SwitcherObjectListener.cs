@@ -14,7 +14,7 @@ public class SwitcherObjectListener : HelikoObject, LevelScriptedReceiver {
 			if (compteur != null) {
 				compteur.startIncrement();
 			} else {
-				Debug.LogWarning("Compteur not found");
+				//Debug.LogWarning("Compteur not found");
 			}
 		}
 	}
