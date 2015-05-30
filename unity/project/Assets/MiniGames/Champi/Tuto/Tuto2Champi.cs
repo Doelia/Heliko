@@ -10,7 +10,6 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public SuccessLoopCounter successLoopCounter;
 	public AudioSource successStep;
-	public AudioSource successLoop;
 
 	public Canvas buttons;
 
@@ -65,7 +64,6 @@ public class Tuto2Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public void OnSuccessLoop() {
 		successLoopCounter.AddSuccess();
-		successLoop.Play ();
 		if (successLoopCounter.AllSuccess()) {
 			this.StopStep();
 		}

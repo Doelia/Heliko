@@ -6,6 +6,7 @@ public class SuccessLoopCounter : MonoBehaviour {
 
 	int max = 3;
 	int nbrSuccess = 0;
+	public AudioSource successLoop;
 
 	public void Start() {
 		this.Reset(3);
@@ -34,6 +35,9 @@ public class SuccessLoopCounter : MonoBehaviour {
 		this.nbrSuccess++;
 		this.zoomIt();
 		updateDisplay();
+		if (successLoop != null) {
+			successLoop.Play ();
+		}
 	}
 
 	public void Hide() {

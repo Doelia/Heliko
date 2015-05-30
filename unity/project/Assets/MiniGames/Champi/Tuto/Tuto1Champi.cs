@@ -8,7 +8,7 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public SuccessLoopCounter successLoopCounter;
 	public AudioSource successStep;
-	public AudioSource successLoop;
+
 
 	public new void Start() {
 		if (isStart) return;
@@ -53,7 +53,6 @@ public class Tuto1Champi : StepTuto, PlayerEventReceiver, PlayerActionReceiver {
 
 	public void OnSuccessLoop() {
 		successLoopCounter.AddSuccess();
-		successLoop.Play ();
 		if (successLoopCounter.AllSuccess()) {
 			this.StopStep();
 		}
