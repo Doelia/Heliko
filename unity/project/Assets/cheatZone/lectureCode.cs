@@ -11,11 +11,13 @@ public class lectureCode : HelikoObject {
 	{
 		if(code.Equals("OUMH_04_AD"))
 		{
-			if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)<=0)
+			#if UNITY_ANDROID || UNITY_EDITOR ||UNITY_IOS
+			if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)==0)
 			{
 				StoreInventory.GiveItem(boutique.NO_ADS_LTVG.ItemId,1);
 				feedBack.text="Suppression des pubs";
 			}
+			#endif
 		}
 		else if(code.StartsWith("OUMH_04_UNLOCK_"))
 		{
@@ -39,6 +41,12 @@ public class lectureCode : HelikoObject {
 		{
 			feedBack.text="Réinitialisation du jeu";
 			PlayerPrefs.DeleteAll();
+			#if UNITY_ANDROID || UNITY_EDITOR ||UNITY_IOS
+			if(StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId)>0)
+			{
+				StoreInventory.TakeItem(boutique.NO_ADS_LTVG.ItemId,StoreInventory.GetItemBalance(boutique.NO_ADS_LTVG.ItemId));
+			}
+			#endif
 		}
 		else 
 		{
