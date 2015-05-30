@@ -38,7 +38,7 @@ public class EndGame : HelikoObject {
 
 	// Pour le test (mode dev)
 	public void testIt() {
-		this.setValues(60,1,2);
+		this.setValues(20,1,2);
 		Debug.Log ("Rank = "+getRank ());
 		this.gameObject.SetActive(true);
 		StartCoroutine(this.startShowing());
