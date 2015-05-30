@@ -17,8 +17,8 @@ public class Constantes : MonoBehaviour {
 	public bool unlockTutos = false;
 
 	public bool devMode = true;
-
-	[HideInInspector]
+	[HideInInspector] public KeyCode buttonOne = KeyCode.O;
+	[HideInInspector] public KeyCode buttonTwo = KeyCode.P;
 
 	public int getNumSceneEndGame() {
 		return 4;

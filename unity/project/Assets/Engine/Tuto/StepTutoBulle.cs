@@ -16,4 +16,10 @@ public class StepTutoBulle : StepTuto {
 		}
 		this.endStep();
 	} 
+
+	public void Update() {
+		if (Input.GetKeyDown(constantes.buttonOne) ) {
+			closeIt();
+		}
+	}
 }

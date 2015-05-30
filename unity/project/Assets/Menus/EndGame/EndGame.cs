@@ -107,6 +107,8 @@ public class EndGame : HelikoObject {
 		this.gameObject.SetActive(false);
 	}
 
+
+
 	// AFFICHAGE (animations, etc)
 
 	IEnumerator startShowing() {
