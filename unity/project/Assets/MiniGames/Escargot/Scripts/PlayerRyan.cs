@@ -31,10 +31,10 @@ public class PlayerRyan : HelikoObject, PlayerEventReceiver {
 	
 	public void OnFinger (int type) {
 		if (type == 1 || type == 2) {
-			moveRyan();
-			moveScript.avancer(amplitude);
 			bool isGood = playerActions.IsGood(1);
 			(isGood?soundGood:soundBad).GetComponent<AudioSource>().Play();
+			moveRyan();
+			moveScript.avancer(amplitude);
 		}
 	}
 	
