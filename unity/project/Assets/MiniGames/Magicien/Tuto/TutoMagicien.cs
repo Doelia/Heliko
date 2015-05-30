@@ -67,6 +67,7 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 	}
 
 	public void OnSuccess() {
+		/*
 		if (lastAction == 2) {
 			successLoopCounter.AddSuccess();
 			if (successLoopCounter.AllSuccess()) {
@@ -74,10 +75,14 @@ public class TutoMagicien : StepTuto, PlayerEventReceiver, PlayerActionReceiver 
 			}
 			lastAction = 0;
 		}
+		*/
 	}
 
 	public void OnSuccessLoop() {
-
+		successLoopCounter.AddSuccess();
+		if (successLoopCounter.AllSuccess()) {
+			this.StopStep();
+		}
 	}
 
 	private void StopStep() {
