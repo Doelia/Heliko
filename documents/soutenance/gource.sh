@@ -1,0 +1,1 @@
+gource --seconds-per-day 0.2  --hide dirnames,filenames
